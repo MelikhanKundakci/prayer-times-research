@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "evidenceType": "independent-model-only-numerical-fixtures",
+  "sourceObservationsUsed": false,
+  "scope": "Independent Python calculation of documented solar equations and declared hybrid control, not Diyanet prayer times, source measurements, or institutional validation.",
+  "units": {
+    "julianDate": "UTC Julian days",
+    "declination": "degrees",
+    "rightAscension": "hours in [0,24)",
+    "equationOfTimeHours": "signed hours"
+  },
+  "suggestedAbsoluteTolerance": {
+    "declination": 1e-10,
+    "rightAscension": 1e-10,
+    "equationOfTimeHours": 1e-10
+  },
+  "independentImplementationSha256": "db4c4a620b56456fa11c1aa135535b6d7c42565cae0ac4ec2b4aaf8655798077",
+  "generatorSha256": "ed52a019108df0c2ae1e13bf1e006ddd1e2673b2ecaa4ebb674dfa20e22bc03c",
+  "variants": [
+    "current-atan2",
+    "legacy-atan2",
+    "legacy-series",
+    "current-series"
+  ],
+  "cases": [
+    {
+      "date": "2000-01-01",
+      "utc": "2000-01-01T00:00:00Z",
+      "julianDate": 2451544.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -23.07221334348428,
+          "rightAscension": 18.715503112551986,
+          "equationOfTimeHours": -0.051091357885319155
+        },
+        "legacy-atan2": {
+          "declination": -23.07214181004648,
+          "rightAscension": 18.71557291269684,
+          "equationOfTimeHours": -0.05109449269683708
+        },
+        "legacy-series": {
+          "declination": -23.07214181004648,
+          "rightAscension": 18.715482430216575,
+          "equationOfTimeHours": -0.05100401021657319
+        },
+        "current-series": {
+          "declination": -23.07221334348428,
+          "rightAscension": 18.715412635410082,
+          "equationOfTimeHours": -0.05100088074341613
+        }
+      }
+    },
+    {
+      "date": "2000-03-20",
+      "utc": "2000-03-20T00:00:00Z",
+      "julianDate": 2451623.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -0.12281277915324823,
+          "rightAscension": 23.981114907710257,
+          "equationOfTimeHours": -0.12562705704358734
+        },
+        "legacy-atan2": {
+          "declination": -0.12241696616055438,
+          "rightAscension": 23.981175770278302,
+          "equationOfTimeHours": -0.12562104361163762
+        },
+        "legacy-series": {
+          "declination": -0.12241696616055438,
+          "rightAscension": 23.98117263561265,
+          "equationOfTimeHours": -0.125617908945987
+        },
+        "current-series": {
+          "declination": -0.12281277915324823,
+          "rightAscension": 23.9811117629104,
+          "equationOfTimeHours": -0.1256239122437286
+        }
+      }
+    },
+    {
+      "date": "2026-03-20",
+      "utc": "2026-03-20T00:00:00Z",
+      "julianDate": 2461119.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -0.24163917293748094,
+          "rightAscension": 23.962836133489656,
+          "equationOfTimeHours": -0.12685957882297672
+        },
+        "legacy-atan2": {
+          "declination": -0.24108818879231192,
+          "rightAscension": 23.96292019874098,
+          "equationOfTimeHours": -0.126851445407695
+        },
+        "legacy-series": {
+          "declination": -0.24108818879231192,
+          "rightAscension": 23.962914033373124,
+          "equationOfTimeHours": -0.12684528003983786
+        },
+        "current-series": {
+          "declination": -0.24163917293748094,
+          "rightAscension": 23.962829953529965,
+          "equationOfTimeHours": -0.12685339886328606
+        }
+      }
+    },
+    {
+      "date": "2026-06-21",
+      "utc": "2026-06-21T00:00:00Z",
+      "julianDate": 2461212.5,
+      "variants": {
+        "current-atan2": {
+          "declination": 23.435093853915117,
+          "rightAscension": 5.975620797966359,
+          "equationOfTimeHours": -0.028630611299721664
+        },
+        "legacy-atan2": {
+          "declination": 23.43471073926457,
+          "rightAscension": 5.975723490012248,
+          "equationOfTimeHours": -0.028640856678958215
+        },
+        "legacy-series": {
+          "declination": 23.43471073926457,
+          "rightAscension": 5.975727195189559,
+          "equationOfTimeHours": -0.02864456185626807
+        },
+        "current-series": {
+          "declination": 23.435093853915117,
+          "rightAscension": 5.975624519184009,
+          "equationOfTimeHours": -0.028634332517370353
+        }
+      }
+    },
+    {
+      "date": "2026-09-23",
+      "utc": "2026-09-23T00:00:00Z",
+      "julianDate": 2461306.5,
+      "variants": {
+        "current-atan2": {
+          "declination": 0.005086309082702282,
+          "rightAscension": 11.99921774513233,
+          "equationOfTimeHours": 0.12449589753434331
+        },
+        "legacy-atan2": {
+          "declination": 0.004530884728691999,
+          "rightAscension": 11.999303154259469,
+          "equationOfTimeHours": 0.12450318574042107
+        },
+        "legacy-series": {
+          "declination": 0.004530884728691999,
+          "rightAscension": 11.999303038319145,
+          "equationOfTimeHours": 0.12450330168074508
+        },
+        "current-series": {
+          "declination": 0.005086309082702282,
+          "rightAscension": 11.999217614968169,
+          "equationOfTimeHours": 0.12449602769850543
+        }
+      }
+    },
+    {
+      "date": "2026-12-21",
+      "utc": "2026-12-21T00:00:00Z",
+      "julianDate": 2461395.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -23.43246936282157,
+          "rightAscension": 17.935460361780468,
+          "equationOfTimeHours": 0.03642761688621832
+        },
+        "legacy-atan2": {
+          "declination": -23.432084580693644,
+          "rightAscension": 17.935559909827766,
+          "equationOfTimeHours": 0.03642100350550237
+        },
+        "legacy-series": {
+          "declination": -23.432084580693644,
+          "rightAscension": 17.93556973231187,
+          "equationOfTimeHours": 0.03641118102139984
+        },
+        "current-series": {
+          "declination": -23.43246936282157,
+          "rightAscension": 17.935470200400367,
+          "equationOfTimeHours": 0.03641777826631909
+        }
+      }
+    },
+    {
+      "date": "2027-12-31",
+      "utc": "2027-12-31T00:00:00Z",
+      "julianDate": 2461770.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -23.126343087954353,
+          "rightAscension": 18.656730030505237,
+          "equationOfTimeHours": -0.04365805183848437
+        },
+        "legacy-atan2": {
+          "declination": -23.12584606071299,
+          "rightAscension": 18.656827986336797,
+          "equationOfTimeHours": -0.04366207300360614
+        },
+        "legacy-series": {
+          "declination": -23.12584606071299,
+          "rightAscension": 18.656742417310163,
+          "equationOfTimeHours": -0.04357650397697199
+        },
+        "current-series": {
+          "declination": -23.126343087954353,
+          "rightAscension": 18.656644460888682,
+          "equationOfTimeHours": -0.04357248222192922
+        }
+      }
+    },
+    {
+      "date": "2049-12-31",
+      "utc": "2049-12-31T00:00:00Z",
+      "julianDate": 2469806.5,
+      "variants": {
+        "current-atan2": {
+          "declination": -23.07611210289447,
+          "rightAscension": 18.70528849580936,
+          "equationOfTimeHours": -0.04807085314275383
+        },
+        "legacy-atan2": {
+          "declination": -23.075269288813164,
+          "rightAscension": 18.705408187627924,
+          "equationOfTimeHours": -0.048075180961280495
+        },
+        "legacy-series": {
+          "declination": -23.075269288813164,
+          "rightAscension": 18.705318664002302,
+          "equationOfTimeHours": -0.047985657335658516
+        },
+        "current-series": {
+          "declination": -23.07611210289447,
+          "rightAscension": 18.70519896441274,
+          "equationOfTimeHours": -0.04798132174613556
+        }
+      }
+    }
+  ]
+}

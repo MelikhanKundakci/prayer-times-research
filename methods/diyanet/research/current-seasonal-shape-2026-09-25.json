@@ -1,0 +1,1898 @@
+{
+  "createdAtUtc": "2026-09-25T19:57:20.090491+00:00",
+  "planSha256": "6640db6b48ff3be15c4f6c96db0170846a9444c7cb838694392732083d3d95c2",
+  "sourceExposure": "retrospective",
+  "forecastRuntime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "dateModesAreRepeatedSameObservations": true,
+  "numericalCandidate": null,
+  "publicRuntimeChanged": false,
+  "inputEvidence": [
+    {
+      "path": "research/diyanet-seasonal-audit-2026-09-25/plan.json",
+      "sha256": "6640db6b48ff3be15c4f6c96db0170846a9444c7cb838694392732083d3d95c2"
+    },
+    {
+      "path": "research/diyanet-seasonal-audit-2026-09-25/audit.py",
+      "sha256": "d753685f9c29825fe7275531602b195b33ca0f9e7b03c7825d030463bea41a46"
+    },
+    {
+      "path": "research/diyanet-seasonal-audit-2026-09-25/report.json",
+      "sha256": "cb14af1c8529e429d088c51119d452da7fa566418d0509533f86d890fe3b9ab5"
+    },
+    {
+      "path": "research/diyanet-seasonal-audit-2026-09-25/verification.json",
+      "sha256": "f0586761756a8342a942d7fd1fec7dfd66a446aefb3c61f1781fd27f251164a2"
+    }
+  ],
+  "modes": {
+    "printed-date-actual-IANA": {
+      "overall": {
+        "planned": 61320,
+        "compared": 61312,
+        "unresolvedSource": 8,
+        "unavailableForecast": 0,
+        "exact": 53215,
+        "withinOne": 61190,
+        "overOne": 122,
+        "maxAbsoluteMinutes": 1441,
+        "histogram": {
+          "-2": 24,
+          "-1": 3631,
+          "0": 53215,
+          "1": 4344,
+          "2": 21,
+          "1440": 76,
+          "1441": 1
+        }
+      },
+      "byCase": {
+        "berlin-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1897,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 288,
+            "0": 1897,
+            "1": 5
+          }
+        },
+        "berlin-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1912,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 262,
+            "0": 1912,
+            "1": 16
+          }
+        },
+        "frankfurt-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1759,
+          "withinOne": 2180,
+          "overOne": 10,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 10,
+            "-1": 340,
+            "0": 1759,
+            "1": 81
+          }
+        },
+        "oslo-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1514,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 674,
+            "0": 1514,
+            "1": 2
+          }
+        },
+        "stockholm-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1958,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 223,
+            "0": 1958,
+            "1": 9
+          }
+        },
+        "stockholm-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1950,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 233,
+            "0": 1950,
+            "1": 7
+          }
+        },
+        "helsinki-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2120,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 39,
+            "0": 2120,
+            "1": 31
+          }
+        },
+        "helsinki-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2133,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 28,
+            "0": 2133,
+            "1": 29
+          }
+        },
+        "tromso-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1997,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 123,
+            "0": 1997,
+            "1": 69
+          }
+        },
+        "tromso-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2030,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 100,
+            "0": 2030,
+            "1": 59
+          }
+        },
+        "bodo-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2076,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 58,
+            "0": 2076,
+            "1": 55
+          }
+        },
+        "bodo-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2046,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 91,
+            "0": 2046,
+            "1": 53
+          }
+        },
+        "kiruna-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2053,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 71,
+            "0": 2053,
+            "1": 66
+          }
+        },
+        "kiruna-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2031,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 87,
+            "0": 2031,
+            "1": 72
+          }
+        },
+        "reykjavik-2026": {
+          "planned": 2190,
+          "compared": 2184,
+          "unresolvedSource": 6,
+          "unavailableForecast": 0,
+          "exact": 2024,
+          "withinOne": 2146,
+          "overOne": 38,
+          "maxAbsoluteMinutes": 1440,
+          "histogram": {
+            "-1": 41,
+            "0": 2024,
+            "1": 81,
+            "1440": 38
+          }
+        },
+        "reykjavik-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1996,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 56,
+            "0": 1996,
+            "1": 138
+          }
+        },
+        "trondheim-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2040,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 3,
+            "0": 2040,
+            "1": 147
+          }
+        },
+        "trondheim-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2044,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 10,
+            "0": 2044,
+            "1": 136
+          }
+        },
+        "oulu-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1494,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 17,
+            "0": 1494,
+            "1": 678,
+            "2": 1
+          }
+        },
+        "oulu-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1456,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 4,
+            "0": 1456,
+            "1": 730
+          }
+        },
+        "zagreb-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1950,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 237,
+            "0": 1950,
+            "1": 3
+          }
+        },
+        "kuopio-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1747,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 7,
+            "0": 1747,
+            "1": 435,
+            "2": 1
+          }
+        },
+        "narvik-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1013,
+          "withinOne": 2161,
+          "overOne": 29,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 10,
+            "-1": 7,
+            "0": 1013,
+            "1": 1141,
+            "2": 19
+          }
+        },
+        "kirkenes-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1922,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 265,
+            "0": 1922,
+            "1": 2
+          }
+        },
+        "vienna-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1946,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 237,
+            "0": 1946,
+            "1": 7
+          }
+        },
+        "bremen-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2018,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 104,
+            "0": 2018,
+            "1": 68
+          }
+        },
+        "bergen-2027": {
+          "planned": 2190,
+          "compared": 2188,
+          "unresolvedSource": 2,
+          "unavailableForecast": 0,
+          "exact": 1961,
+          "withinOne": 2149,
+          "overOne": 39,
+          "maxAbsoluteMinutes": 1441,
+          "histogram": {
+            "0": 1961,
+            "1": 188,
+            "1440": 38,
+            "1441": 1
+          }
+        },
+        "rovaniemi-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2128,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 26,
+            "0": 2128,
+            "1": 36
+          }
+        }
+      },
+      "byEvent": {
+        "fajr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8390,
+          "withinOne": 10187,
+          "overOne": 33,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 14,
+            "-1": 1301,
+            "0": 8390,
+            "1": 496,
+            "2": 19
+          }
+        },
+        "sunrise": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9084,
+          "withinOne": 10219,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 562,
+            "0": 9084,
+            "1": 573,
+            "2": 1
+          }
+        },
+        "dhuhr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9219,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 423,
+            "0": 9219,
+            "1": 578
+          }
+        },
+        "asr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9078,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 461,
+            "0": 9078,
+            "1": 681
+          }
+        },
+        "maghrib": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9013,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 534,
+            "0": 9013,
+            "1": 673
+          }
+        },
+        "isha": {
+          "planned": 10220,
+          "compared": 10212,
+          "unresolvedSource": 8,
+          "unavailableForecast": 0,
+          "exact": 8431,
+          "withinOne": 10124,
+          "overOne": 88,
+          "maxAbsoluteMinutes": 1441,
+          "histogram": {
+            "-2": 10,
+            "-1": 350,
+            "0": 8431,
+            "1": 1343,
+            "2": 1,
+            "1440": 76,
+            "1441": 1
+          }
+        }
+      },
+      "byRule": {
+        "angle": {
+          "planned": 10842,
+          "compared": 10842,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9640,
+          "withinOne": 10842,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 601,
+            "0": 9640,
+            "1": 601
+          }
+        },
+        "autumn-linear-transition": {
+          "planned": 1313,
+          "compared": 1313,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 763,
+          "withinOne": 1275,
+          "overOne": 38,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 19,
+            "-1": 288,
+            "0": 763,
+            "1": 224,
+            "2": 19
+          }
+        },
+        "daily-declination-shadow1-plus4": {
+          "planned": 9878,
+          "compared": 9878,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8769,
+          "withinOne": 9878,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 452,
+            "0": 8769,
+            "1": 657
+          }
+        },
+        "five-hour-horizon-clamp": {
+          "planned": 78,
+          "compared": 78,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 56,
+          "withinOne": 78,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 22,
+            "0": 56
+          }
+        },
+        "five-hour-horizon-clamp-solstice-bound": {
+          "planned": 3266,
+          "compared": 3266,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2909,
+          "withinOne": 3265,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 85,
+            "0": 2909,
+            "1": 271,
+            "2": 1
+          }
+        },
+        "frozen-night-ratio": {
+          "planned": 5556,
+          "compared": 5548,
+          "unresolvedSource": 8,
+          "unavailableForecast": 0,
+          "exact": 4512,
+          "withinOne": 5511,
+          "overOne": 37,
+          "maxAbsoluteMinutes": 1441,
+          "histogram": {
+            "-2": 4,
+            "-1": 446,
+            "0": 4512,
+            "1": 553,
+            "2": 1,
+            "1440": 31,
+            "1441": 1
+          }
+        },
+        "frozen-night-ratio-solstice-clock-envelope": {
+          "planned": 1450,
+          "compared": 1450,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1084,
+          "withinOne": 1405,
+          "overOne": 45,
+          "maxAbsoluteMinutes": 1440,
+          "histogram": {
+            "-1": 95,
+            "0": 1084,
+            "1": 226,
+            "1440": 45
+          }
+        },
+        "missing-shadow-use-dhuhr": {
+          "planned": 342,
+          "compared": 342,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 309,
+          "withinOne": 342,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 9,
+            "0": 309,
+            "1": 24
+          }
+        },
+        "polar-day-5h-night-solstice-bound": {
+          "planned": 960,
+          "compared": 960,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 796,
+          "withinOne": 960,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 79,
+            "0": 796,
+            "1": 85
+          }
+        },
+        "polar-night-5h-day-solstice-bound": {
+          "planned": 442,
+          "compared": 442,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 388,
+          "withinOne": 442,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 18,
+            "0": 388,
+            "1": 36
+          }
+        },
+        "real-published-horizons": {
+          "planned": 6492,
+          "compared": 6492,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 5716,
+          "withinOne": 6492,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 759,
+            "0": 5716,
+            "1": 17
+          }
+        },
+        "real-published-horizons-solstice-bound": {
+          "planned": 9202,
+          "compared": 9202,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8232,
+          "withinOne": 9202,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 133,
+            "0": 8232,
+            "1": 837
+          }
+        },
+        "selected-ephemeris-transit-plus5": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9219,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 423,
+            "0": 9219,
+            "1": 578
+          }
+        },
+        "spring-linear-transition": {
+          "planned": 1279,
+          "compared": 1279,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 822,
+          "withinOne": 1278,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 221,
+            "0": 822,
+            "1": 235
+          }
+        }
+      },
+      "byCohort": {
+        "canonical4": {
+          "planned": 8760,
+          "compared": 8758,
+          "unresolvedSource": 2,
+          "unavailableForecast": 0,
+          "exact": 8053,
+          "withinOne": 8719,
+          "overOne": 39,
+          "maxAbsoluteMinutes": 1441,
+          "histogram": {
+            "-1": 367,
+            "0": 8053,
+            "1": 299,
+            "1440": 38,
+            "1441": 1
+          }
+        },
+        "known24": {
+          "planned": 52560,
+          "compared": 52554,
+          "unresolvedSource": 6,
+          "unavailableForecast": 0,
+          "exact": 45162,
+          "withinOne": 52471,
+          "overOne": 83,
+          "maxAbsoluteMinutes": 1440,
+          "histogram": {
+            "-2": 24,
+            "-1": 3264,
+            "0": 45162,
+            "1": 4045,
+            "2": 21,
+            "1440": 38
+          }
+        }
+      },
+      "affineSummary": {
+        "0": {
+          "segments": 112,
+          "retainedCells": 2592,
+          "removedCells": 0,
+          "statusCounts": {
+            "feasible": 111,
+            "tie-only-conflict": 1
+          }
+        },
+        "1": {
+          "segments": 112,
+          "retainedCells": 2368,
+          "removedCells": 224,
+          "statusCounts": {
+            "feasible": 112
+          }
+        },
+        "2": {
+          "segments": 112,
+          "retainedCells": 2144,
+          "removedCells": 448,
+          "statusCounts": {
+            "feasible": 112
+          }
+        }
+      },
+      "asrOrderingSummary": {
+        "rawReversals": 17,
+        "roundedReversals": 8,
+        "sourceEqual": 17
+      },
+      "affineConflicts": [
+        {
+          "city": "helsinki-2026",
+          "event": "isha",
+          "rule": "autumn-linear-transition",
+          "start": "2026-08-23",
+          "end": "2026-09-11",
+          "originalCount": 20,
+          "trims": {
+            "0": {
+              "status": "tie-only-conflict",
+              "n": 20,
+              "lowerStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": 0,
+                "denominator": 1,
+                "minutesPerDay": 0.0
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-11"
+              ],
+              "upperWitnessDates": [
+                "2026-08-23",
+                "2026-08-30"
+              ],
+              "removedCount": 0
+            },
+            "1": {
+              "status": "feasible",
+              "n": 18,
+              "lowerStrict": {
+                "numerator": -12,
+                "denominator": 11,
+                "minutesPerDay": -1.0909090909090908
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": -1,
+                "denominator": 11,
+                "minutesPerDay": -0.09090909090909091
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-10"
+              ],
+              "upperWitnessDates": [
+                "2026-08-24",
+                "2026-08-30"
+              ],
+              "removedCount": 2
+            },
+            "2": {
+              "status": "feasible",
+              "n": 16,
+              "lowerStrict": {
+                "numerator": -11,
+                "denominator": 10,
+                "minutesPerDay": -1.1
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": -1,
+                "denominator": 10,
+                "minutesPerDay": -0.1
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-09"
+              ],
+              "upperWitnessDates": [
+                "2026-08-25",
+                "2026-08-30"
+              ],
+              "removedCount": 4
+            }
+          }
+        }
+      ],
+      "maximumBaselineChordResidualSeconds": 3.576275275918306e-07
+    },
+    "conditional-isha-after-maghrib-actual-IANA": {
+      "overall": {
+        "planned": 61320,
+        "compared": 61312,
+        "unresolvedSource": 8,
+        "unavailableForecast": 0,
+        "exact": 53291,
+        "withinOne": 61267,
+        "overOne": 45,
+        "maxAbsoluteMinutes": 2,
+        "histogram": {
+          "-2": 24,
+          "-1": 3631,
+          "0": 53291,
+          "1": 4345,
+          "2": 21
+        }
+      },
+      "byCase": {
+        "berlin-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1897,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 288,
+            "0": 1897,
+            "1": 5
+          }
+        },
+        "berlin-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1912,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 262,
+            "0": 1912,
+            "1": 16
+          }
+        },
+        "frankfurt-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1759,
+          "withinOne": 2180,
+          "overOne": 10,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 10,
+            "-1": 340,
+            "0": 1759,
+            "1": 81
+          }
+        },
+        "oslo-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1514,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 674,
+            "0": 1514,
+            "1": 2
+          }
+        },
+        "stockholm-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1958,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 223,
+            "0": 1958,
+            "1": 9
+          }
+        },
+        "stockholm-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1950,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 233,
+            "0": 1950,
+            "1": 7
+          }
+        },
+        "helsinki-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2120,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 39,
+            "0": 2120,
+            "1": 31
+          }
+        },
+        "helsinki-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2133,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 28,
+            "0": 2133,
+            "1": 29
+          }
+        },
+        "tromso-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1997,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 123,
+            "0": 1997,
+            "1": 69
+          }
+        },
+        "tromso-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2030,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 100,
+            "0": 2030,
+            "1": 59
+          }
+        },
+        "bodo-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2076,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 58,
+            "0": 2076,
+            "1": 55
+          }
+        },
+        "bodo-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2046,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 91,
+            "0": 2046,
+            "1": 53
+          }
+        },
+        "kiruna-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2053,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 71,
+            "0": 2053,
+            "1": 66
+          }
+        },
+        "kiruna-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2031,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 87,
+            "0": 2031,
+            "1": 72
+          }
+        },
+        "reykjavik-2026": {
+          "planned": 2190,
+          "compared": 2184,
+          "unresolvedSource": 6,
+          "unavailableForecast": 0,
+          "exact": 2062,
+          "withinOne": 2184,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 41,
+            "0": 2062,
+            "1": 81
+          }
+        },
+        "reykjavik-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1996,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 56,
+            "0": 1996,
+            "1": 138
+          }
+        },
+        "trondheim-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2040,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 3,
+            "0": 2040,
+            "1": 147
+          }
+        },
+        "trondheim-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2044,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 10,
+            "0": 2044,
+            "1": 136
+          }
+        },
+        "oulu-2026": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1494,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 17,
+            "0": 1494,
+            "1": 678,
+            "2": 1
+          }
+        },
+        "oulu-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1456,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 4,
+            "0": 1456,
+            "1": 730
+          }
+        },
+        "zagreb-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1950,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 237,
+            "0": 1950,
+            "1": 3
+          }
+        },
+        "kuopio-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1747,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 7,
+            "0": 1747,
+            "1": 435,
+            "2": 1
+          }
+        },
+        "narvik-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1013,
+          "withinOne": 2161,
+          "overOne": 29,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 10,
+            "-1": 7,
+            "0": 1013,
+            "1": 1141,
+            "2": 19
+          }
+        },
+        "kirkenes-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1922,
+          "withinOne": 2189,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 265,
+            "0": 1922,
+            "1": 2
+          }
+        },
+        "vienna-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1946,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 237,
+            "0": 1946,
+            "1": 7
+          }
+        },
+        "bremen-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2018,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 104,
+            "0": 2018,
+            "1": 68
+          }
+        },
+        "bergen-2027": {
+          "planned": 2190,
+          "compared": 2188,
+          "unresolvedSource": 2,
+          "unavailableForecast": 0,
+          "exact": 1999,
+          "withinOne": 2188,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 1999,
+            "1": 189
+          }
+        },
+        "rovaniemi-2027": {
+          "planned": 2190,
+          "compared": 2190,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2128,
+          "withinOne": 2190,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 26,
+            "0": 2128,
+            "1": 36
+          }
+        }
+      },
+      "byEvent": {
+        "fajr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8390,
+          "withinOne": 10187,
+          "overOne": 33,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 14,
+            "-1": 1301,
+            "0": 8390,
+            "1": 496,
+            "2": 19
+          }
+        },
+        "sunrise": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9084,
+          "withinOne": 10219,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 562,
+            "0": 9084,
+            "1": 573,
+            "2": 1
+          }
+        },
+        "dhuhr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9219,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 423,
+            "0": 9219,
+            "1": 578
+          }
+        },
+        "asr": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9078,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 461,
+            "0": 9078,
+            "1": 681
+          }
+        },
+        "maghrib": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9013,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 534,
+            "0": 9013,
+            "1": 673
+          }
+        },
+        "isha": {
+          "planned": 10220,
+          "compared": 10212,
+          "unresolvedSource": 8,
+          "unavailableForecast": 0,
+          "exact": 8507,
+          "withinOne": 10201,
+          "overOne": 11,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 10,
+            "-1": 350,
+            "0": 8507,
+            "1": 1344,
+            "2": 1
+          }
+        }
+      },
+      "byRule": {
+        "angle": {
+          "planned": 10842,
+          "compared": 10842,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9640,
+          "withinOne": 10842,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 601,
+            "0": 9640,
+            "1": 601
+          }
+        },
+        "autumn-linear-transition": {
+          "planned": 1313,
+          "compared": 1313,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 763,
+          "withinOne": 1275,
+          "overOne": 38,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 19,
+            "-1": 288,
+            "0": 763,
+            "1": 224,
+            "2": 19
+          }
+        },
+        "daily-declination-shadow1-plus4": {
+          "planned": 9878,
+          "compared": 9878,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8769,
+          "withinOne": 9878,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 452,
+            "0": 8769,
+            "1": 657
+          }
+        },
+        "five-hour-horizon-clamp": {
+          "planned": 78,
+          "compared": 78,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 56,
+          "withinOne": 78,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 22,
+            "0": 56
+          }
+        },
+        "five-hour-horizon-clamp-solstice-bound": {
+          "planned": 3266,
+          "compared": 3266,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 2909,
+          "withinOne": 3265,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-1": 85,
+            "0": 2909,
+            "1": 271,
+            "2": 1
+          }
+        },
+        "frozen-night-ratio": {
+          "planned": 5556,
+          "compared": 5548,
+          "unresolvedSource": 8,
+          "unavailableForecast": 0,
+          "exact": 4543,
+          "withinOne": 5543,
+          "overOne": 5,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 4,
+            "-1": 446,
+            "0": 4543,
+            "1": 554,
+            "2": 1
+          }
+        },
+        "frozen-night-ratio-solstice-clock-envelope": {
+          "planned": 1450,
+          "compared": 1450,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 1129,
+          "withinOne": 1450,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 95,
+            "0": 1129,
+            "1": 226
+          }
+        },
+        "missing-shadow-use-dhuhr": {
+          "planned": 342,
+          "compared": 342,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 309,
+          "withinOne": 342,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 9,
+            "0": 309,
+            "1": 24
+          }
+        },
+        "polar-day-5h-night-solstice-bound": {
+          "planned": 960,
+          "compared": 960,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 796,
+          "withinOne": 960,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 79,
+            "0": 796,
+            "1": 85
+          }
+        },
+        "polar-night-5h-day-solstice-bound": {
+          "planned": 442,
+          "compared": 442,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 388,
+          "withinOne": 442,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 18,
+            "0": 388,
+            "1": 36
+          }
+        },
+        "real-published-horizons": {
+          "planned": 6492,
+          "compared": 6492,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 5716,
+          "withinOne": 6492,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 759,
+            "0": 5716,
+            "1": 17
+          }
+        },
+        "real-published-horizons-solstice-bound": {
+          "planned": 9202,
+          "compared": 9202,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 8232,
+          "withinOne": 9202,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 133,
+            "0": 8232,
+            "1": 837
+          }
+        },
+        "selected-ephemeris-transit-plus5": {
+          "planned": 10220,
+          "compared": 10220,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 9219,
+          "withinOne": 10220,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 423,
+            "0": 9219,
+            "1": 578
+          }
+        },
+        "spring-linear-transition": {
+          "planned": 1279,
+          "compared": 1279,
+          "unresolvedSource": 0,
+          "unavailableForecast": 0,
+          "exact": 822,
+          "withinOne": 1278,
+          "overOne": 1,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 1,
+            "-1": 221,
+            "0": 822,
+            "1": 235
+          }
+        }
+      },
+      "byCohort": {
+        "canonical4": {
+          "planned": 8760,
+          "compared": 8758,
+          "unresolvedSource": 2,
+          "unavailableForecast": 0,
+          "exact": 8091,
+          "withinOne": 8758,
+          "overOne": 0,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "-1": 367,
+            "0": 8091,
+            "1": 300
+          }
+        },
+        "known24": {
+          "planned": 52560,
+          "compared": 52554,
+          "unresolvedSource": 6,
+          "unavailableForecast": 0,
+          "exact": 45200,
+          "withinOne": 52509,
+          "overOne": 45,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "-2": 24,
+            "-1": 3264,
+            "0": 45200,
+            "1": 4045,
+            "2": 21
+          }
+        }
+      },
+      "affineSummary": {
+        "0": {
+          "segments": 112,
+          "retainedCells": 2592,
+          "removedCells": 0,
+          "statusCounts": {
+            "feasible": 111,
+            "tie-only-conflict": 1
+          }
+        },
+        "1": {
+          "segments": 112,
+          "retainedCells": 2368,
+          "removedCells": 224,
+          "statusCounts": {
+            "feasible": 112
+          }
+        },
+        "2": {
+          "segments": 112,
+          "retainedCells": 2144,
+          "removedCells": 448,
+          "statusCounts": {
+            "feasible": 112
+          }
+        }
+      },
+      "asrOrderingSummary": {
+        "rawReversals": 17,
+        "roundedReversals": 8,
+        "sourceEqual": 17
+      },
+      "affineConflicts": [
+        {
+          "city": "helsinki-2026",
+          "event": "isha",
+          "rule": "autumn-linear-transition",
+          "start": "2026-08-23",
+          "end": "2026-09-11",
+          "originalCount": 20,
+          "trims": {
+            "0": {
+              "status": "tie-only-conflict",
+              "n": 20,
+              "lowerStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": 0,
+                "denominator": 1,
+                "minutesPerDay": 0.0
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-11"
+              ],
+              "upperWitnessDates": [
+                "2026-08-23",
+                "2026-08-30"
+              ],
+              "removedCount": 0
+            },
+            "1": {
+              "status": "feasible",
+              "n": 18,
+              "lowerStrict": {
+                "numerator": -12,
+                "denominator": 11,
+                "minutesPerDay": -1.0909090909090908
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": -1,
+                "denominator": 11,
+                "minutesPerDay": -0.09090909090909091
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-10"
+              ],
+              "upperWitnessDates": [
+                "2026-08-24",
+                "2026-08-30"
+              ],
+              "removedCount": 2
+            },
+            "2": {
+              "status": "feasible",
+              "n": 16,
+              "lowerStrict": {
+                "numerator": -11,
+                "denominator": 10,
+                "minutesPerDay": -1.1
+              },
+              "upperStrict": {
+                "numerator": -1,
+                "denominator": 1,
+                "minutesPerDay": -1.0
+              },
+              "gap": {
+                "numerator": -1,
+                "denominator": 10,
+                "minutesPerDay": -0.1
+              },
+              "lowerWitnessDates": [
+                "2026-08-30",
+                "2026-09-09"
+              ],
+              "upperWitnessDates": [
+                "2026-08-25",
+                "2026-08-30"
+              ],
+              "removedCount": 4
+            }
+          }
+        }
+      ],
+      "maximumBaselineChordResidualSeconds": 3.576275275918306e-07
+    }
+  }
+}

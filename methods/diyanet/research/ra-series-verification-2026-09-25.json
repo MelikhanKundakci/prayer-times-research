@@ -1,0 +1,18 @@
+{
+  "verifiedUtc": "2026-09-25T20:00:38.396700+00:00",
+  "candidateSha256": "dd46f887f065e1e787cc615be857aa4558849a20f04c2413e11895255d4af2dc",
+  "reportSha256": "ac53260192c512b81591cd9cacbfc1691e3553ea6102f2c67a749a200888d948",
+  "independentSolarSha256": "db4c4a620b56456fa11c1aa135535b6d7c42565cae0ac4ec2b4aaf8655798077",
+  "verifierSha256": "9da86dad0b74c400d8bd315d62507b70636aa29ccde5d4b06febabf8d0b28396",
+  "rawFormulaComparisons": 70080,
+  "baselineReplays": 17520,
+  "maximumIndependentRawDifferenceMilliseconds": 0.000244140625,
+  "maximumIndependentScalarDifferenceSeconds": 7.105427357601002e-15,
+  "fittedCityNuisances": 48,
+  "intervalsVerified": 288,
+  "scoreBlocksVerified": 308,
+  "variantMinuteDecisionsVerified": 105120,
+  "allHashesAndScoresEqual": true,
+  "chronology": "Declared timestamps and current file ordering agree; candidate hashes pin inputs; fitter source reads training only. Not an external timestamp attestation.",
+  "finding": "Published legacy series and current-coefficient hybrid regress the retrospective temporal and geographic controls; no runtime promotion supported."
+}

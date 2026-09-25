@@ -1,0 +1,472 @@
+{
+  "scope": "Independent agent verification of frozen seasonal arithmetic, complete paired scoring, and exact rational transition constraints. Reuses archived parsed source assignments; no new institutional observations or source parsing.",
+  "reports": {
+    "math-review": {
+      "originalFileSha256": "4e6904b6e137d162c30b5a58baa5d15f9492beb24f77ced5b3d3f167c2a87175",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:04:03.393468+00:00",
+        "status": "pass",
+        "cases": 28,
+        "variantCount": 3,
+        "counts": {
+          "scalarValues": 61320,
+          "rules": 61320,
+          "ratios": 84,
+          "anchorIndices": 252,
+          "transitionFields": 1008,
+          "frozenAnchorCandidateUnchangedValues": 7006
+        },
+        "maxAbsoluteSeasonalDifferenceMinutes": 0,
+        "scope": "Independent Python seasonal arithmetic and frozen plan/hash checks, no new source parsing or astronomy",
+        "planSha256": "1452cba6959436fdda6d7a8ca40e6d6d01c1b00217dbf933c4f5fda9b841aafb",
+        "forecastSha256": "f7fdcc82d93f9b96feec705e92bc87cb1faf1ed8247a4ccceb0859009b60d75a"
+      }
+    },
+    "scoring-review": {
+      "originalFileSha256": "44df1f1e7e4a2e7075fa4116f0ce90846b7ca26c491223be8828347ad3147824",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:05:57.839863+00:00",
+        "status": "pass",
+        "scope": "Independent UTC-minute scoring over archived parsed sources; no new source parser or calendar data",
+        "decisions": 367920,
+        "unchangedOtherEventObjects": 81760,
+        "unchangedAngularEpochs": 40880,
+        "summaries": {
+          "printed-date-actual-IANA": {
+            "baseline": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53215,
+                "withinOne": 61190,
+                "maxAbsoluteMinutes": 1441,
+                "histogram": {
+                  "0": 53215,
+                  "1": 4344,
+                  "2": 21,
+                  "1440": 76,
+                  "1441": 1,
+                  "-1": 3631,
+                  "-2": 24
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45162,
+                  "withinOne": 52471,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 45162,
+                    "1": 4045,
+                    "2": 21,
+                    "1440": 38,
+                    "-1": 3264,
+                    "-2": 24
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8053,
+                  "withinOne": 8719,
+                  "maxAbsoluteMinutes": 1441,
+                  "histogram": {
+                    "0": 8053,
+                    "1": 299,
+                    "1440": 38,
+                    "1441": 1,
+                    "-1": 367
+                  }
+                }
+              },
+              "corrections": 0,
+              "regressions": 0
+            },
+            "rounded-ratio-inputs": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53260,
+                "withinOne": 61191,
+                "maxAbsoluteMinutes": 1440,
+                "histogram": {
+                  "0": 53260,
+                  "1": 4333,
+                  "2": 22,
+                  "1440": 77,
+                  "-1": 3598,
+                  "-2": 22
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45319,
+                  "withinOne": 52472,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 45319,
+                    "1": 3975,
+                    "2": 22,
+                    "1440": 38,
+                    "-1": 3178,
+                    "-2": 22
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 7941,
+                  "withinOne": 8719,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 7941,
+                    "1": 358,
+                    "1440": 39,
+                    "-1": 420
+                  }
+                }
+              },
+              "corrections": 435,
+              "regressions": 390,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 2,
+                "cityEventMaximumIncreases": 2,
+                "cityEventExactLosses": 28
+              }
+            },
+            "rounded-estimated-anchors": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53118,
+                "withinOne": 61172,
+                "maxAbsoluteMinutes": 1441,
+                "histogram": {
+                  "0": 53118,
+                  "1": 4361,
+                  "2": 37,
+                  "3": 1,
+                  "1440": 76,
+                  "1441": 1,
+                  "-1": 3693,
+                  "-2": 25
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45079,
+                  "withinOne": 52453,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 45079,
+                    "1": 4081,
+                    "2": 37,
+                    "3": 1,
+                    "1440": 38,
+                    "-1": 3293,
+                    "-2": 25
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8039,
+                  "withinOne": 8719,
+                  "maxAbsoluteMinutes": 1441,
+                  "histogram": {
+                    "0": 8039,
+                    "1": 280,
+                    "1440": 38,
+                    "1441": 1,
+                    "-1": 400
+                  }
+                }
+              },
+              "corrections": 203,
+              "regressions": 300,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 7,
+                "cityEventMaximumIncreases": 6,
+                "cityEventExactLosses": 30
+              }
+            }
+          },
+          "conditional-isha-after-maghrib-actual-IANA": {
+            "baseline": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53291,
+                "withinOne": 61267,
+                "maxAbsoluteMinutes": 2,
+                "histogram": {
+                  "0": 53291,
+                  "1": 4345,
+                  "2": 21,
+                  "-1": 3631,
+                  "-2": 24
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45200,
+                  "withinOne": 52509,
+                  "maxAbsoluteMinutes": 2,
+                  "histogram": {
+                    "0": 45200,
+                    "1": 4045,
+                    "2": 21,
+                    "-1": 3264,
+                    "-2": 24
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8091,
+                  "withinOne": 8758,
+                  "maxAbsoluteMinutes": 1,
+                  "histogram": {
+                    "0": 8091,
+                    "1": 300,
+                    "-1": 367
+                  }
+                }
+              },
+              "corrections": 0,
+              "regressions": 0
+            },
+            "rounded-ratio-inputs": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53337,
+                "withinOne": 61268,
+                "maxAbsoluteMinutes": 2,
+                "histogram": {
+                  "0": 53337,
+                  "1": 4333,
+                  "2": 22,
+                  "-1": 3598,
+                  "-2": 22
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45357,
+                  "withinOne": 52510,
+                  "maxAbsoluteMinutes": 2,
+                  "histogram": {
+                    "0": 45357,
+                    "1": 3975,
+                    "2": 22,
+                    "-1": 3178,
+                    "-2": 22
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 7980,
+                  "withinOne": 8758,
+                  "maxAbsoluteMinutes": 1,
+                  "histogram": {
+                    "0": 7980,
+                    "1": 358,
+                    "-1": 420
+                  }
+                }
+              },
+              "corrections": 436,
+              "regressions": 390,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 2,
+                "cityEventMaximumIncreases": 2,
+                "cityEventExactLosses": 28
+              }
+            },
+            "rounded-estimated-anchors": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53194,
+                "withinOne": 61249,
+                "maxAbsoluteMinutes": 3,
+                "histogram": {
+                  "0": 53194,
+                  "1": 4362,
+                  "2": 37,
+                  "3": 1,
+                  "-1": 3693,
+                  "-2": 25
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45117,
+                  "withinOne": 52491,
+                  "maxAbsoluteMinutes": 3,
+                  "histogram": {
+                    "0": 45117,
+                    "1": 4081,
+                    "2": 37,
+                    "3": 1,
+                    "-1": 3293,
+                    "-2": 25
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8077,
+                  "withinOne": 8758,
+                  "maxAbsoluteMinutes": 1,
+                  "histogram": {
+                    "0": 8077,
+                    "1": 281,
+                    "-1": 400
+                  }
+                }
+              },
+              "corrections": 203,
+              "regressions": 300,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 7,
+                "cityEventMaximumIncreases": 6,
+                "cityEventExactLosses": 30
+              }
+            }
+          }
+        },
+        "reportSha256": "11d27929e8cf3d8d1cb6656775ce1bfec21c9e9493f4bf2edf133288549cbc7a"
+      }
+    },
+    "affine-review": {
+      "originalFileSha256": "3f00b59b3940f8ffacc385b3878b5b71af481e3c3953e1949b5b51f0ed4bdfda",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:07:10.654754+00:00",
+        "status": "pass",
+        "scope": "Independent selection and exact rational bounds/certificates on reused parsed source UTC assignments",
+        "countsAcrossRepeatedDateModes": {
+          "feasible": 670,
+          "tie-only-conflict": 2
+        },
+        "summaries": {
+          "printed-date-actual-IANA": {
+            "0": {
+              "statusCounts": {
+                "feasible": 111,
+                "tie-only-conflict": 1
+              },
+              "retainedCells": 2592
+            },
+            "1": {
+              "statusCounts": {
+                "feasible": 112
+              },
+              "retainedCells": 2368
+            },
+            "2": {
+              "statusCounts": {
+                "feasible": 112
+              },
+              "retainedCells": 2144
+            }
+          },
+          "conditional-isha-after-maghrib-actual-IANA": {
+            "0": {
+              "statusCounts": {
+                "feasible": 111,
+                "tie-only-conflict": 1
+              },
+              "retainedCells": 2592
+            },
+            "1": {
+              "statusCounts": {
+                "feasible": 112
+              },
+              "retainedCells": 2368
+            },
+            "2": {
+              "statusCounts": {
+                "feasible": 112
+              },
+              "retainedCells": 2144
+            }
+          }
+        },
+        "reportSha256": "cb14af1c8529e429d088c51119d452da7fa566418d0509533f86d890fe3b9ab5"
+      }
+    }
+  }
+}

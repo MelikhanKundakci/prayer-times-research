@@ -6,6 +6,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
+The latest offline round tests a [published right-ascension series](RA-SERIES.md) and [two isolated seasonal-rounding hypotheses](SEASONAL-PRECISION.md). None passes its replacement checks. The current transition-shape audit also narrows the remaining problem without treating old-baseline contradictions as current defects.
+
 The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
 
 A new [fully offline inverse study](SHARED-NOON-INVERSE.md) learns two shared annual noon coefficients and fixed diagnostic city intercepts from 2026 alone. It matches all 4,380 fitting noons and 4,366/4,380 of the same cities' 2027 noons. The common correction alone regresses at the original proxies; fitted intercepts are not production coordinates, and this retrospective result changes no runtime default.
