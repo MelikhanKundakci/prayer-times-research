@@ -1,0 +1,646 @@
+{
+  "schemaVersion": 1,
+  "recordedAtUtc": "2026-09-25T14:45:39.167248+00:00",
+  "scope": "One prospective Tokyo2027 unchanged-calculator transfer comparison, bounded current primary-source audit, two unacquired southern2028 continuations; no global accuracy claim",
+  "frozenAtUtc": "2026-09-25T14:33:46.471Z",
+  "freezeSha256": "6f65a1c5d06626d7f82141168321e472b76c4ed1b4504db6a65ca3b951f03a55",
+  "modelChanged": false,
+  "official": false,
+  "notificationEligible": false,
+  "tokyo": {
+    "evaluatedAtUtc": "2026-09-25T14:38:02.180Z",
+    "city": "Tokyo",
+    "cityId": 14833,
+    "country": "Japan",
+    "year": 2027,
+    "options": {
+      "year": 2027,
+      "latitude": 35.68,
+      "longitude": 139.68,
+      "timeZone": "Asia/Tokyo"
+    },
+    "recipe": "unchanged public own USNO UTC00 low-latitude",
+    "exposure": "One new city-year after full numerical freeze and before first Diyanet Tokyo search exposure; no fitting",
+    "sourceDateRule": "Nonzero HH:mm on printed Gregorian date resolved uniquely with pinned Asia/Tokyo; no modulo or best-date selection",
+    "productionPointConfirmed": false,
+    "notificationEligible": false,
+    "overall": {
+      "planned": 2190,
+      "comparable": 2190,
+      "excluded": 0,
+      "exact": 1355,
+      "withinOne": 2190,
+      "maxAbs": 1,
+      "signedHistogram": {
+        "0": 1355,
+        "1": 835
+      },
+      "absoluteSum": 835
+    },
+    "events": {
+      "fajr": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 203,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 203,
+          "1": 162
+        },
+        "absoluteSum": 162
+      },
+      "sunrise": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 228,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 228,
+          "1": 137
+        },
+        "absoluteSum": 137
+      },
+      "dhuhr": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 225,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 225,
+          "1": 140
+        },
+        "absoluteSum": 140
+      },
+      "asr": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 238,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 238,
+          "1": 127
+        },
+        "absoluteSum": 127
+      },
+      "maghrib": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 224,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 224,
+          "1": 141
+        },
+        "absoluteSum": 141
+      },
+      "isha": {
+        "planned": 365,
+        "comparable": 365,
+        "excluded": 0,
+        "exact": 237,
+        "withinOne": 365,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 237,
+          "1": 128
+        },
+        "absoluteSum": 128
+      }
+    },
+    "months": {
+      "2027-01": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 119,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 119,
+          "1": 67
+        },
+        "absoluteSum": 67
+      },
+      "2027-02": {
+        "planned": 168,
+        "comparable": 168,
+        "excluded": 0,
+        "exact": 107,
+        "withinOne": 168,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 107,
+          "1": 61
+        },
+        "absoluteSum": 61
+      },
+      "2027-03": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 117,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 117,
+          "1": 69
+        },
+        "absoluteSum": 69
+      },
+      "2027-04": {
+        "planned": 180,
+        "comparable": 180,
+        "excluded": 0,
+        "exact": 105,
+        "withinOne": 180,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 105,
+          "1": 75
+        },
+        "absoluteSum": 75
+      },
+      "2027-05": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 110,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 110,
+          "1": 76
+        },
+        "absoluteSum": 76
+      },
+      "2027-06": {
+        "planned": 180,
+        "comparable": 180,
+        "excluded": 0,
+        "exact": 115,
+        "withinOne": 180,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 115,
+          "1": 65
+        },
+        "absoluteSum": 65
+      },
+      "2027-07": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 107,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 107,
+          "1": 79
+        },
+        "absoluteSum": 79
+      },
+      "2027-08": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 106,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 106,
+          "1": 80
+        },
+        "absoluteSum": 80
+      },
+      "2027-09": {
+        "planned": 180,
+        "comparable": 180,
+        "excluded": 0,
+        "exact": 112,
+        "withinOne": 180,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 112,
+          "1": 68
+        },
+        "absoluteSum": 68
+      },
+      "2027-10": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 126,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 126,
+          "1": 60
+        },
+        "absoluteSum": 60
+      },
+      "2027-11": {
+        "planned": 180,
+        "comparable": 180,
+        "excluded": 0,
+        "exact": 117,
+        "withinOne": 180,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 117,
+          "1": 63
+        },
+        "absoluteSum": 63
+      },
+      "2027-12": {
+        "planned": 186,
+        "comparable": 186,
+        "excluded": 0,
+        "exact": 114,
+        "withinOne": 186,
+        "maxAbs": 1,
+        "signedHistogram": {
+          "0": 114,
+          "1": 72
+        },
+        "absoluteSum": 72
+      }
+    },
+    "regressionComparison": null,
+    "regressionReason": "Unchanged calculator; this is transfer validation, not a new-versus-old candidate",
+    "southernContinuation": {
+      "planned": 4392,
+      "acquired": 0,
+      "reason": "Both unchanged annual2028 endpoints returned502; public HTML pages expose2027 only; no2028 link observed."
+    }
+  },
+  "verification": {
+    "verifiedAtUtc": "2026-09-25T14:39:48.600812+00:00",
+    "status": "PASS",
+    "freezePinsVerified": 14,
+    "independentHtmlParses": 3,
+    "tokyoLocaleCalendarParity": 2190,
+    "utcCellsRecounted": 4380,
+    "tokyo": {
+      "planned": 2190,
+      "comparable": 2190,
+      "excluded": 0,
+      "exact": 1355,
+      "withinOne": 2190,
+      "maxAbs": 1,
+      "signedHistogram": {
+        "0": 1355,
+        "1": 835
+      },
+      "absoluteSum": 835
+    },
+    "nairobi": {
+      "planned": 2190,
+      "comparable": 2190,
+      "excluded": 0,
+      "exact": 2093,
+      "withinOne": 2190,
+      "maxAbs": 1,
+      "signedHistogram": {
+        "-1": 97,
+        "0": 2093
+      },
+      "absoluteSum": 97
+    },
+    "scope": "Independent own HTML parser and Python zoneinfo UTC recount; no source-proven event-date meaning or physical astronomy verification. Zoneinfo is local system rules, separately cross-checking the frozen pinned-ICU timestamps for these constant-offset zones."
+  },
+  "southernHistoricalFreezeChecks": {
+    "verifiedAtUtc": "2026-09-25T14:43:32.400290+00:00",
+    "results": [
+      {
+        "freeze": "research/diyanet-south-own/freeze-identity-reviewed.json",
+        "pinsVerified": 41
+      },
+      {
+        "freeze": "research/diyanet-south-own/retry-freeze.json",
+        "pinsVerified": 6
+      }
+    ],
+    "calendar2028ValuesAcquired": 0,
+    "newHttp502": 2
+  },
+  "primaryFindings": {
+    "highLatitudeScope": "Official current report labels45degreesandnorth and2023start of2021congressdecisions; detailed44.5degree threshold remains incriteria. No operational southern mirror specified.",
+    "pointCoverage": {
+      "reportedPoints": 18642,
+      "existingPlaces": 8600,
+      "addedCoordinates": 10042,
+      "expansionYear": 2023,
+      "coordinateAccess": "Official activity text mentions a separate TurkishAirlinesrole; no normal publicproductionpointaccess established."
+    },
+    "sourceApi": {
+      "registrationRequired": true,
+      "dateRangeBearerRequired": true,
+      "dateRangeMonthlyRequestsPerPlace": 10,
+      "fields": [
+        "cityId",
+        "startDate",
+        "endDate"
+      ],
+      "responseSchema": "GenericIResult; no complete eventpayload contract"
+    },
+    "eventDateSemantics": "PDFdailyexample hasHH:mm, date-midnightISO andgreenwichMeanTimeZone, without per-eventUTC or after-midnightIsha dateownership.",
+    "publicExport": "PDF/Excel configured forloadedannualHTMLtable;2028unavailableinrequestedcases.",
+    "notFoundInBoundedSources": [
+      "completeoperationalephemeris",
+      "productioncoordinates/elevation",
+      "minute-roundingandadjustmentorder",
+      "exactnortherntransitionendpoints",
+      "per-eventdate/UTCcontract"
+    ],
+    "notFoundDoesNotMeanNonexistent": true
+  },
+  "evidencePins": [
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/PLAN.md",
+      "sha256": "05a5169bf5a37ab548eedd3448d3f18ad7c02caf849a572acce0921cb3215e28",
+      "bytes": 3493
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/freeze.mjs",
+      "sha256": "9a573078d453c0dc587cd86d7d5af5f885f7730d543390788ac4638a7f388ec9",
+      "bytes": 2521
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/freeze.json",
+      "sha256": "6f65a1c5d06626d7f82141168321e472b76c4ed1b4504db6a65ca3b951f03a55",
+      "bytes": 4193
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/forecast.json",
+      "sha256": "8953b5c66ad194fade2b5af6ec48af0dfec0159f08ff07ee036781e00c77c21b",
+      "bytes": 1601307
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/evaluate.mjs",
+      "sha256": "d2c33a2bfc095837e85aec4c6f032399cc4e788e3005ef12fd09fe10636424d6",
+      "bytes": 4173
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/reference.json",
+      "sha256": "3a7eac9d527f6ded3cedc14f80e6bb08c0e82fb868464c2a40f5f4391c228d47",
+      "bytes": 52561
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/rows.json",
+      "sha256": "6676cb0f9e95660aeed258f4bf4f68eb0132ce45d62ccc67eed5530a074bdca0",
+      "bytes": 556263
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/report.json",
+      "sha256": "1882e1dcc3386b2e77b3a64c2a7479f7c22dcdaf4428617da0d60c4c19a9ef6a",
+      "bytes": 5714
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/verify.py",
+      "sha256": "64465ca7863a24d24bfcbe5cfa0d20e20983318d6b58e1c92a909b2eae3ec4dd",
+      "bytes": 5797
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/verification.json",
+      "sha256": "12aa6309235c875121e71a8438b65cd404a5a159ae498db824d08e0aa5295d5b",
+      "bytes": 930
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/exposure.json",
+      "sha256": "bccf6c36a87506cb52ebe0b1b4aec0b596b5816906c978f0515364c81cbb0204",
+      "bytes": 2171
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/southern-freeze-check.json",
+      "sha256": "795c97f80537ed7f02fa8375362b656407c4e6dd586fc6ecb60ecaff84a0552c",
+      "bytes": 346
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-tr.html",
+      "sha256": "1610db2b8209950e3e60ba5c6df98f4824f1510e386ef068ae9e46e5fa69c631",
+      "bytes": 403843
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-page.html",
+      "sha256": "ae013c466ae9a88bde60ae9976dc0b16b4a7ac56ea457add66674cd060e5ce84",
+      "bytes": 396891
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-geography.html",
+      "sha256": "3cd0efd9dc5cc2e9371ecf27bc848a688a82c803cb0258b06c642d68b1c78f42",
+      "bytes": 22717
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/criteria-en.json",
+      "sha256": "63d14706cb9b1e4357b60f1442ffa9fa2ee0d2f592746f91cc2c2dea86099447",
+      "bytes": 13157
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/criteria-tr.json",
+      "sha256": "519ac6391e5b0111aa0965da78e173167013e6b01114b56602e7aff255c45e83",
+      "bytes": 15471
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/official-api.html",
+      "sha256": "e8fafeaabeafa872de9aa68b28b831781ab941e056b9576f5070c61c11479b1c",
+      "bytes": 32878
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/api-guide.pdf",
+      "sha256": "1a1974791baa4b2bec828f2d3235e8f333da7e40a78bc3fdd2a371e6e44176a3",
+      "bytes": 1311361
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/scalar.html",
+      "sha256": "ee3a3a4f1f83f9c5d2c43c86509344c1970d96a8f26600280d9dd87fd5ee9be0",
+      "bytes": 1079
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/scalar-integration.js",
+      "sha256": "33728da79ad3d2f92dd75d85e0cfc45c364bf412ad8b62a9737088b159492427",
+      "bytes": 2632
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/openapi-v1-resolved.json",
+      "sha256": "38605129eb2be81d4dd640b6afb2fd13e7aaf4fe728c407f6f4ee08eef2dca18",
+      "bytes": 64680
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/high-lat-activity.html",
+      "sha256": "8a1811bce6201da13d802f1b9c4b2033c7a40d94f58dad4cbb95bcb90068d5c4",
+      "bytes": 100026
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/calendar-activity.html",
+      "sha256": "e213779db7042c225f2815e42872d7d400578daa0b8a3ee2c25c18181c150d9d",
+      "bytes": 102435
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/sydney-page.html",
+      "sha256": "95e4e9d03f19d265a173683ea3ab9c59ef00d3f0deb2cdf16ba685ece4a679be",
+      "bytes": 423346
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/punta-arenas-page.html",
+      "sha256": "1f9682d573e9dcf48d8d6684914615c853c6c2830ecabc1bc5137f41cd83b3dd",
+      "bytes": 375364
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/api-guide.pdf.acquisition.json",
+      "sha256": "44b5783a8e1c6777d2bbe37505d77876dd07742803a613d12b35935abcf202ac",
+      "bytes": 571
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/awqat-criteria-en.html.acquisition.json",
+      "sha256": "d97a3e098cdfe9c35d2053ee268de7ee65d3f754c35fe7f57186fa95b4c088f3",
+      "bytes": 520
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/calendar-activity.html.acquisition.json",
+      "sha256": "38cdac2f9ff49f9bada9ddb0650f970ff9d011f17a6a60664f705b4290858875",
+      "bytes": 698
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/comparison.html.acquisition.json",
+      "sha256": "efe66c6d64906cf3ba4f2fa2a36ef333dd10fd3bbba838f9622a9240ed677455",
+      "bytes": 323
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/criteria-en.json.acquisition.json",
+      "sha256": "d807b29e8e8c72387a34e570bbd7cffa8371394cab1be36283c0497688b3970c",
+      "bytes": 536
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/criteria-tr.json.acquisition.json",
+      "sha256": "020bc22a726ee989fe6261b43cb2206353d7410a795141c21eb822b38a2efa1e",
+      "bytes": 536
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/high-lat-activity.html.acquisition.json",
+      "sha256": "29e092c87d5ef5156daebca9b626424d4dca056c704fd3bca3495b7c94494242",
+      "bytes": 694
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/imsak.html.acquisition.json",
+      "sha256": "49bcd5afc56d7a0792430dd50702b4254a67a20944279f90e81acea184aa77e0",
+      "bytes": 309
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/official-api.html.acquisition.json",
+      "sha256": "620ff90c03f9ab94dfad4f4028c5347d1b3e7e67447849f19e467b9824eaaa9d",
+      "bytes": 495
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/openapi-v1-resolved.json.acquisition.json",
+      "sha256": "9a28f05095fa75f9497e2d29af9704b50520933905e4272c64022769424ce192",
+      "bytes": 533
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/openapi-v1.json.acquisition.json",
+      "sha256": "47c2d214158798735874b7f462d95279771a7583404c51bd9dbabe90d6396224",
+      "bytes": 318
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/punta-arenas-2028.json.acquisition.json",
+      "sha256": "034fdc250dbf0e260670caaae7e349123357fc355bb13fba37db78a6871f6604",
+      "bytes": 344
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/punta-arenas-page.html.acquisition.json",
+      "sha256": "22854b07188128bf9f421ece2a6d4cda770dc77a26086fb4e0034560d8995d09",
+      "bytes": 584
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/scalar-integration.js.acquisition.json",
+      "sha256": "33997db8c21471fc689769a3f53a4eba025a855df470981a81f28263786716ad",
+      "bytes": 538
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/scalar.html.acquisition.json",
+      "sha256": "9b9160245f8d784da4de213d71e1717ba7ad89e12850184f847b2d75dc95ebf3",
+      "bytes": 481
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/sydney-2028-network.json.acquisition.json",
+      "sha256": "3bd8d31044a72831dd9d1e4c23ba2119a746725234c9ee0ff85cf20ef510c47d",
+      "bytes": 344
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/sydney-2028.json.acquisition.json",
+      "sha256": "a7f3abb97b1554c6ee15434ed112a902ca5545cd4b59e84822f3da2921e7668f",
+      "bytes": 398
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/sydney-page.html.acquisition.json",
+      "sha256": "9539a17d01b06d60f0e914bd7eee62f47e7a644cd828b5a9922d8fea86ce43e7",
+      "bytes": 566
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/temkin.html.acquisition.json",
+      "sha256": "0e533ad149364a5bd767efdb19959f2ef6da3ab8d6a79de6cc3912daa25a7bcc",
+      "bytes": 310
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-geography.html.acquisition.json",
+      "sha256": "5ee96d4a9a5075ada865dbf8184f4c78c66c4c9bd80d99f5348d249de720b641",
+      "bytes": 531
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-page.html.acquisition.json",
+      "sha256": "d9400189998b99d7cf02625717936c444ce4cbeb9bf60d689c146d57d98c0ed7",
+      "bytes": 563
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/tokyo-tr.html.acquisition.json",
+      "sha256": "60318abf049d18e3794a3a0a3a037ad72f2878f5b5e09d5c94d48c963a8f6cdd",
+      "bytes": 561
+    },
+    {
+      "path": "public/prayer-times-research/methods/diyanet/implementation/low-latitude/model.mjs",
+      "sha256": "1f6c00873f3082efa0ce9fa0807a0f2342c1891c437c6794cff8418e2450ebf2",
+      "bytes": 7894
+    },
+    {
+      "path": "public/prayer-times-research/core/astronomy/solar-usno-v2.mjs",
+      "sha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc",
+      "bytes": 2182
+    },
+    {
+      "path": "research/diyanet-low-latitude-own/parse-html.py",
+      "sha256": "4f99fd55f220a94bf2a4a01b71d89190e7f9bc81abc7ebd054f316eb411c76e2",
+      "bytes": 2215
+    },
+    {
+      "path": "research/diyanet-global-nairobi-2026-09-25/freeze.json",
+      "sha256": "4ce01078265f981eb3560a7d538fe135ea8230b638465dd618ec9e1647d47a82",
+      "bytes": 1611
+    },
+    {
+      "path": "research/diyanet-global-nairobi-2026-09-25/forecast.json",
+      "sha256": "af9724b9579f4894fc559738d2a6f734182852c16f74e48d82b8fcbe2de97d48",
+      "bytes": 418487
+    },
+    {
+      "path": "research/diyanet-global-nairobi-2026-09-25/nairobi-2027-page.html",
+      "sha256": "bd9158d46714cbd881a4efe2e112f70cbfc52ccaec9116dfded47b43ab751b89",
+      "bytes": 370655
+    },
+    {
+      "path": "research/diyanet-global-nairobi-2026-09-25/report.json",
+      "sha256": "78c9aebe616c0e58b7aa0825226e10ace591fad757607dcaacc71e1c15cfd877",
+      "bytes": 18756
+    }
+  ],
+  "rights": "Originalpublishercalendars andsourcebodies retainedprivately; this aggregate publishes no originalclockrows. Publicaccessdoesnotestablishredistributionrights.",
+  "reproducibilityLimit": "Privateevidencepaths are provenanceidentifiers, not publicpackagefiles. Hashesalone do not reproduceaccuracy without lawfulreferenceaccess."
+}
