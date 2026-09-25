@@ -1,6 +1,6 @@
 # Own dry-atmosphere ray integration
 
-**The opt-in `own-ray` experiment removes every two-minute discrepancy in the 9,684 already exposed comparison fields, using only our own JavaScript runtime.** It reproduces the earlier separate PAL experiment's rounded results without shipping or calling PAL. This is an independent implementation and retrospective comparison, not a new institutional holdout or a complete official UAE algorithm.
+**The opt-in `own-ray` experiment removes every two-minute discrepancy in the 9,684 already exposed comparison fields, using only our own JavaScript runtime.** It reproduces the earlier separate PAL experiment's rounded results without shipping or calling PAL. A later [pre-frozen February 2027 transfer](FEBRUARY-2027-TRANSFER.md) adds 504 new official-PDF comparisons: own-ray improves exact matches from 353 to 375 and removes all 17 V2 two-minute misses, with no city/event group loss. This remains one new month in the same three regions, not a confirmed official algorithm.
 
 ## Run it
 

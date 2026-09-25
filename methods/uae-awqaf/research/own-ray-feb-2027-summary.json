@@ -1,0 +1,453 @@
+{
+  "study": "Pre-frozen February 2027 Awqaf visitor-PDF transfer",
+  "forecastSha256": "a9f680e159f3ac1c3e50efa16c68fd28c1eb6a02cc30d2c243a49dfb80d81ce6",
+  "forecastFile": "own-ray-feb-2027-forecast.json",
+  "sourcePage": "https://www.awqaf.gov.ae/prayer-times",
+  "sources": [
+    {
+      "city": "abu-dhabi",
+      "websiteCityId": 1,
+      "pdfUrl": "https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201746.pdf",
+      "pdfSha256": "c3c2382f7f430bf7b1a543eaa293d3be79aa1b92e2989fb4e2c2edc7394f6d8d",
+      "sourceDays": 28
+    },
+    {
+      "city": "al-ain",
+      "websiteCityId": 2,
+      "pdfUrl": "https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201825.pdf",
+      "pdfSha256": "a44c46fc3982b4654905665690519c044293d8f3a532f53be22bfd2b96bc55ce",
+      "sourceDays": 28
+    },
+    {
+      "city": "zayed-city",
+      "websiteCityId": 25,
+      "pdfUrl": "https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201852.pdf",
+      "pdfSha256": "86b1be185a82dff500b5cf330e0db4017e72611f1b233198a6ebe7a116a9301f",
+      "sourceDays": 28
+    }
+  ],
+  "sourceFilesRedistributed": false,
+  "comparedFields": 504,
+  "totals": {
+    "v2": {
+      "n": 504,
+      "exact": 353,
+      "within1": 487,
+      "max": 2,
+      "signedMinutes": {
+        "-1": 45,
+        "0": 353,
+        "1": 89,
+        "2": 17
+      }
+    },
+    "ownRay": {
+      "n": 504,
+      "exact": 375,
+      "within1": 504,
+      "max": 1,
+      "signedMinutes": {
+        "-1": 24,
+        "0": 375,
+        "1": 105
+      }
+    }
+  },
+  "cityEventGroups": {
+    "abu-dhabi/fajr": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "abu-dhabi/sunrise": {
+      "v2": {
+        "n": 28,
+        "exact": 18,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 18,
+          "1": 10
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 22,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 6,
+          "0": 22
+        }
+      }
+    },
+    "abu-dhabi/dhuhr": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "abu-dhabi/asr": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "abu-dhabi/maghrib": {
+      "v2": {
+        "n": 28,
+        "exact": 20,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 8,
+          "0": 20
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 20,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 20,
+          "1": 8
+        }
+      }
+    },
+    "abu-dhabi/isha": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "al-ain/fajr": {
+      "v2": {
+        "n": 28,
+        "exact": 15,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 15,
+          "1": 13
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 15,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 15,
+          "1": 13
+        }
+      }
+    },
+    "al-ain/sunrise": {
+      "v2": {
+        "n": 28,
+        "exact": 0,
+        "within1": 16,
+        "max": 2,
+        "signedMinutes": {
+          "1": 16,
+          "2": 12
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 4,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 4,
+          "1": 24
+        }
+      }
+    },
+    "al-ain/dhuhr": {
+      "v2": {
+        "n": 28,
+        "exact": 24,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 4,
+          "0": 24
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 24,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 4,
+          "0": 24
+        }
+      }
+    },
+    "al-ain/asr": {
+      "v2": {
+        "n": 28,
+        "exact": 25,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 3,
+          "0": 25
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 25,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 3,
+          "0": 25
+        }
+      }
+    },
+    "al-ain/maghrib": {
+      "v2": {
+        "n": 28,
+        "exact": 18,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 10,
+          "0": 18
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 21,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 21,
+          "1": 7
+        }
+      }
+    },
+    "al-ain/isha": {
+      "v2": {
+        "n": 28,
+        "exact": 20,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 8,
+          "0": 20
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 20,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 8,
+          "0": 20
+        }
+      }
+    },
+    "zayed-city/fajr": {
+      "v2": {
+        "n": 28,
+        "exact": 1,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 1,
+          "1": 27
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 1,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 1,
+          "1": 27
+        }
+      }
+    },
+    "zayed-city/sunrise": {
+      "v2": {
+        "n": 28,
+        "exact": 0,
+        "within1": 23,
+        "max": 2,
+        "signedMinutes": {
+          "1": 23,
+          "2": 5
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 7,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 7,
+          "1": 21
+        }
+      }
+    },
+    "zayed-city/dhuhr": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "zayed-city/asr": {
+      "v2": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 28,
+        "within1": 28,
+        "max": 0,
+        "signedMinutes": {
+          "0": 28
+        }
+      }
+    },
+    "zayed-city/maghrib": {
+      "v2": {
+        "n": 28,
+        "exact": 19,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 9,
+          "0": 19
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 23,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "0": 23,
+          "1": 5
+        }
+      }
+    },
+    "zayed-city/isha": {
+      "v2": {
+        "n": 28,
+        "exact": 25,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 3,
+          "0": 25
+        }
+      },
+      "ownRay": {
+        "n": 28,
+        "exact": 25,
+        "within1": 28,
+        "max": 1,
+        "signedMinutes": {
+          "-1": 3,
+          "0": 25
+        }
+      }
+    }
+  },
+  "correctedCount": 65,
+  "regressedCount": 26,
+  "exactGains": 48,
+  "exactLosses": 26,
+  "passesPredeclaredNoGroupRegressionGate": true,
+  "limits": [
+    "Three pre-existing vendor-mapped region points, not publisher-confirmed production locations.",
+    "One new Gregorian month; no new geography.",
+    "PDFs have no printed city name; identity comes from observed visitor selector.",
+    "Displayed-minute agreement does not validate religious correctness or the exact official algorithm."
+  ]
+}

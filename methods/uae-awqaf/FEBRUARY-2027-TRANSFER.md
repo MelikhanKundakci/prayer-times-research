@@ -1,0 +1,24 @@
+# February 2027: pre-frozen Awqaf transfer
+
+**Result: the opt-in own-ray variant passes the predeclared no-group-regression gate on one previously unseen month, but remains a research variant.** Across 504 displayed prayer-time fields (three cities × 28 dates × six events), V2 matches the official visitor PDF exactly 353 times and within one minute 487 times; own-ray matches exactly 375 times and within one minute all 504 times. Maximum absolute deviation falls from two minutes to one. The result supports the near-horizon refraction candidate for these three mapped regions; it does not establish the publisher's algorithm, production coordinates or religious correctness.
+
+## Freeze before source access
+
+On 25 September 2026, before requesting *any* February 2027 Awqaf row or PDF, we fixed the year, month, three existing vendor-mapped points, all 28 dates, six events, and both unchanged model implementations. We generated a complete [forecast](research/own-ray-feb-2027-forecast.json) containing the displayed local clocks and UTC instants. Its SHA-256 is `a9f680e159f3ac1c3e50efa16c68fd28c1eb6a02cc30d2c243a49dfb80d81ce6`. The private acquisition ledger additionally pins the model files, point-metadata file, runtime (`Node 26.7.0`, ICU `78.3`, tzdb `2026d`) and freeze timestamp `2026-09-25T16:15:21.632Z`. The model output is public; the acquired publisher PDFs are not redistributed.
+
+The sole follow-up source was the ordinary [Awqaf prayer-times visitor interface](https://www.awqaf.gov.ae/prayer-times). We selected Gregorian February 2027, Emirate ID 1, then the visible area labels Abu Dhabi (city ID 1), Al Ain (ID 2), and Zayed City (ID 25). The generated one-page monthly PDFs contain 28 complete Gregorian rows each, six prayer-time columns, and weekday labels. They **do not print the selected city name**. City attribution therefore comes from the observed selector at download, not from the PDF. Original generated [Abu Dhabi](https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201746.pdf), [Al Ain](https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201825.pdf), and [Zayed City](https://mobileappapi.awqaf.gov.ae/APIS/TempUploads/20260925_201852.pdf) download URLs may expire; their exact byte hashes and all city/event aggregates are in the [machine-readable summary](research/own-ray-feb-2027-summary.json). No visitor API is used by the calculator.
+
+We parsed exactly 28 chronological days per PDF, verified weekday/date consistency, all six columns, monotonic clock order, and PDF hashes. The calculation's UTC instants were separately converted to `Asia/Dubai` and checked against their displayed date and minute. Thus 84 city-days and all 504 preplanned fields were scored; none was omitted or reclassified.
+
+## Results
+
+| Recipe | Exact | Within ±1 minute | More than 1 minute | Maximum |
+|---|---:|---:|---:|---:|
+| V2 default | 353/504 (70.04%) | 487/504 (96.63%) | 17 | 2 min |
+| Own-ray opt-in | 375/504 (74.40%) | 504/504 (100%) | 0 | 1 min |
+
+The own-ray variant improves 65 cells' absolute error and worsens 26. It gains 48 exact matches and loses 26 formerly exact matches, giving a net gain of 22. All 17 V2 two-minute errors are in sunrise (12 Al Ain, five Zayed City) and become at most one minute. Four other events remain identical by construction. Example: Abu Dhabi, 1 February, Maghrib is 18:11 in the source, 18:10 under V2 and 18:11 under own-ray. A regression also exists: Abu Dhabi, 2 February, Maghrib is 18:11 in the source and V2, but 18:12 under own-ray.
+
+The candidate has at least as many exact and within-one matches as V2 in **every** one of the 18 city/event groups. In particular, Al Ain sunrise moves from 0 to 4 exact and 16 to 28 within one; Zayed City sunrise moves from 0 to 7 exact and 23 to 28 within one. The [summary JSON](research/own-ray-feb-2027-summary.json) reports every group's signed-minute distribution, including unchanged groups. This was the predeclared promotion gate: net exact gain, no group loss in exact or within-one coverage, no worse maximum, and complete/date-consistent observations. It passes on this new month.
+
+The gate is necessary evidence for considering a new default, not proof that the three vendor points match Awqaf's production settings or that this model transfers to untested UAE cities. Earlier comparisons used these same three mapped regions in other seasons and were already exposed while the own-ray algorithm was developed. This is one new temporal test, **not** independent geographic validation. We therefore retain V2 as the public default and expose own-ray by `variant: "own-ray"` until more confirmed regions and independently acquired calendars support a wider release. Neither recipe should yet drive unqualified official-Awqaf notifications.

@@ -48,7 +48,7 @@ A supported input range is a mathematical contract, not a statement that every l
 
 ## New own-ray experiment
 
-The [own-ray implementation and study](OWN-RAY.md) improve exact agreement from **6,840 to 7,239 of 9,684** already exposed comparison fields and remove all **398** two-minute differences. All remaining differences in that sample are one minute. It corrects 883 values and regresses 484 previously exact values; this is not fresh institutional validation. It changes sunrise and Maghrib only, requires no API, PAL, native executable or reference calendars, and preserves the default V2 calculation.
+The [own-ray implementation and study](OWN-RAY.md) improve exact agreement from **6,840 to 7,239 of 9,684** already exposed comparison fields and remove all **398** two-minute differences. All remaining differences in that sample are one minute. It corrects 883 values and regresses 484 previously exact values. A later [pre-frozen February 2027 source comparison](FEBRUARY-2027-TRANSFER.md) adds 504 new fields from the same three regions: 353→375 exact, 487→504 within one minute, with all 17 two-minute V2 misses eliminated and no city/event-group loss. It changes sunrise and Maghrib only, requires no API, PAL, native executable or reference calendars, and preserves the default V2 calculation pending broader independent validation.
 
 ```sh
 node scripts/run.mjs uae-awqaf --input methods/uae-awqaf/examples/own-ray-input.json
