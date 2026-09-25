@@ -66,6 +66,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 ## Special rules and unresolved semantics
 
 - Only Fajr/Isha have the cited FCNA method evidence. Sunrise, Dhuhr, Asr, Maghrib and rounding assumptions require separate interpretation.
+- FCNA's country-specific angle recommendation can inform profile selection, but it does not specify a reproducible timetable engine. The Roseville 15°/15° residuals and limits on transferring its UTC-12/ceil compatibility variant are assessed in [the transferability review](TRANSFERABILITY.md).
 - No certified production coordinate is known for the Roseville publisher. Not every US or Canadian calendar is a method-confirmed FCNA reference.
 - No method-confirmed Canadian 13°/13° institution calendar has yet validated the Canada profile.
 - The annual Roseville download contained only 184 of 365 unique days:181 days/362twilight values were absent. A further 61 days/122 values have a printed-year conflict. The stronger 246-cell cohort below is only the method-and-year-confirmed subset, not the whole planned year.
