@@ -1,0 +1,1636 @@
+{
+  "schemaVersion": 1,
+  "status": "retrospective conditional exact-feasibility research; no point selection or production presets",
+  "calculationChanged": false,
+  "sourceAcquisition": false,
+  "exposure": "All 28 northern city-years and earlier fit results already known. Entire study retrospective; no prospective accuracy claim. Hobart 2027 source and comparison intentionally unopened.",
+  "assumptions": {
+    "noon": "USNO sampled at UTC00 of the verified civil-row carrier; transit +300 seconds; nearest minute; actual IANA source timestamps",
+    "horizon": "Same daily USNO declination, -50 arcminute altitude, sunrise -420 seconds and Maghrib +420 seconds; only verified unclamped normal-horizon dates in latitude boxes below 60 degrees",
+    "intervalSemantics": "Longitude lower bound open, upper bound closed. No observational tolerance or fitted offset. Classification numerical guard 1e-7 seconds."
+  },
+  "counts": {
+    "cityYears": 28,
+    "noonObservations": 10220,
+    "pairedCities": 9,
+    "pairedNoonObservations": 6570,
+    "yearlyFeasible": 18,
+    "pairedFeasible": 3
+  },
+  "yearlyIntervals": [
+    {
+      "id": "berlin-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 13.373937944001227,
+        "upperInclusive": 13.374720432379096,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.1877972106885295,
+        "widthDegrees": 0.0007824883778688729,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-06-13",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-12-11",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "berlin-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 13.372751885146256,
+        "upperInclusive": 13.37448971925096,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.4170801851289241,
+        "widthDegrees": 0.0017378341047038504,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-02-06",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-06",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "frankfurt-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 50.11666667,
+        "longitude": 8.683333333,
+        "timeZone": "Europe/Berlin"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 8.653616843147818,
+        "upperInclusive": 8.655157982710504,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.3698734950447147,
+        "widthDegrees": 0.0015411395626863111,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-03-15",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-12-07",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "oslo-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 59.9076424165,
+        "longitude": 10.840360556,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 10.763276855083193,
+        "upperInclusive": 10.763552636540075,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.06618754965160178,
+        "widthDegrees": 0.0002757814568816741,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-11-03",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-07-25",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "stockholm-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 18.034644732669463,
+        "upperInclusive": 18.035791038334477,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.2751133596032673,
+        "widthDegrees": 0.0011463056650136139,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-02-21",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-05-31",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "stockholm-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 18.03461927228294,
+        "upperInclusive": 18.034328556370685,
+        "status": "empty",
+        "signedWidthSeconds": -0.0697718189408647,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.0697718189408647,
+        "lowerWitness": {
+          "date": "2027-02-28",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-10-31",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "helsinki-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 24.94345003847484,
+        "upperInclusive": 24.945465712627993,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.4837617967567098,
+        "widthDegrees": 0.0020156741531529576,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-07",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-06-19",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "helsinki-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 24.946630423581215,
+        "upperInclusive": 24.945405607650354,
+        "status": "empty",
+        "signedWidthSeconds": -0.2939558234066908,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.2939558234066908,
+        "lowerWitness": {
+          "date": "2027-03-28",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-12-14",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "tromso-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 18.949537696941327,
+        "upperInclusive": 18.950286306719953,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.17966634687013538,
+        "widthDegrees": 0.0007486097786255641,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-30",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-08-11",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "tromso-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 18.949319134076966,
+        "upperInclusive": 18.950281472326303,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.23096117984096054,
+        "widthDegrees": 0.0009623382493373356,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-07-19",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-25",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "bodo-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 14.381425370995931,
+        "upperInclusive": 14.386941293284902,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 1.3238213493531248,
+        "widthDegrees": 0.005515922288971353,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-20",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-07-08",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "bodo-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 14.382134304818555,
+        "upperInclusive": 14.38408860715393,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.46903256048977937,
+        "widthDegrees": 0.0019543023353740807,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-10-07",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-10-26",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "kiruna-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 20.22759107228294,
+        "upperInclusive": 20.228539024600924,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.2275085563158541,
+        "widthDegrees": 0.0009479523179827254,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-14",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-06-29",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "kiruna-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 20.22740850262247,
+        "upperInclusive": 20.226631913335073,
+        "status": "empty",
+        "signedWidthSeconds": -0.1863814289754373,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.1863814289754373,
+        "lowerWitness": {
+          "date": "2027-03-06",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-01",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "reykjavik-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": -21.90185953564563,
+        "upperInclusive": -21.904271100432684,
+        "status": "empty",
+        "signedWidthSeconds": -0.578775548892736,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.578775548892736,
+        "lowerWitness": {
+          "date": "2026-04-26",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-22",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "reykjavik-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": -21.902495844827204,
+        "upperInclusive": -21.904139715354965,
+        "status": "empty",
+        "signedWidthSeconds": -0.3945289266627583,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.3945289266627583,
+        "lowerWitness": {
+          "date": "2027-03-26",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-11",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "trondheim-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 10.408016902638217,
+        "upperInclusive": 10.409168405618827,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.276360715346442,
+        "widthDegrees": 0.001151502980610175,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-04",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-30",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "trondheim-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 10.409266196098208,
+        "upperInclusive": 10.409324417978285,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.013973251218288851,
+        "widthDegrees": 5.822188007620355e-05,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-02-25",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-12-30",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "oulu-2026",
+      "year": 2026,
+      "proxy": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 25.471267597128524,
+        "upperInclusive": 25.469767859080306,
+        "status": "empty",
+        "signedWidthSeconds": -0.35993713157211005,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.35993713157211005,
+        "lowerWitness": {
+          "date": "2026-03-10",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-15",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "oulu-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 25.471851302016816,
+        "upperInclusive": 25.470623086047908,
+        "status": "empty",
+        "signedWidthSeconds": -0.2947718325378901,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.2947718325378901,
+        "lowerWitness": {
+          "date": "2027-03-21",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-01-08",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "zagreb-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 45.8131708,
+        "longitude": 15.9817349,
+        "timeZone": "Europe/Zagreb"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 15.954524274580914,
+        "upperInclusive": 15.955950490915196,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.34229192022777966,
+        "widthDegrees": 0.0014262163342824152,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-06-24",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-21",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "kuopio-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 62.89256,
+        "longitude": 27.63331,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 27.68094866142622,
+        "upperInclusive": 27.68150122926424,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.13261628112417156,
+        "widthDegrees": 0.0005525678380173815,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-04-15",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-27",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "narvik-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 68.438284479,
+        "longitude": 17.427768424,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 17.556059201793172,
+        "upperInclusive": 17.553670739133636,
+        "status": "empty",
+        "signedWidthSeconds": -0.5732310382884975,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.5732310382884975,
+        "lowerWitness": {
+          "date": "2027-04-13",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-07-13",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "kirkenes-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 69.727080887,
+        "longitude": 30.044998601,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 30.031461080292047,
+        "upperInclusive": 30.02987077757725,
+        "status": "empty",
+        "signedWidthSeconds": -0.3816726515509572,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.3816726515509572,
+        "lowerWitness": {
+          "date": "2027-04-06",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-12-31",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "vienna-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 16.34217096612853,
+        "upperInclusive": 16.345860284645035,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.8854364439608275,
+        "widthDegrees": 0.003689318516503448,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-05-04",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-11",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "bremen-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 8.806059201793172,
+        "upperInclusive": 8.803670739133638,
+        "status": "empty",
+        "signedWidthSeconds": -0.5732310382880712,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.5732310382880712,
+        "lowerWitness": {
+          "date": "2027-04-13",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-07-13",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "bergen-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 5.34217096612853,
+        "upperInclusive": 5.345860284645036,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.8854364439612539,
+        "widthDegrees": 0.0036893185165052245,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-05-04",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-11",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    },
+    {
+      "id": "rovaniemi-2027",
+      "year": 2027,
+      "proxy": {
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "interval": {
+        "observations": 365,
+        "lowerExclusive": 25.69113437642333,
+        "upperInclusive": 25.691185407381152,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.012247429876879323,
+        "widthDegrees": 5.1030957820330514e-05,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-03-18",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-09-24",
+          "event": "dhuhr"
+        }
+      },
+      "carrierVerifiedAcrossProxyBox": true
+    }
+  ],
+  "pairedIntervals": [
+    {
+      "city": "berlin",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 13.373937944001227,
+          "upperInclusive": 13.374720432379096,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.1877972106885295,
+          "widthDegrees": 0.0007824883778688729,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-06-13",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-12-11",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 13.372751885146256,
+          "upperInclusive": 13.37448971925096,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.4170801851289241,
+          "widthDegrees": 0.0017378341047038504,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2027-02-06",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-08-06",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 13.373937944001227,
+        "upperInclusive": 13.37448971925096,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.13242605993582401,
+        "widthDegrees": 0.0005517752497326001,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-06-13",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-06",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": true,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [],
+        "retainedFractionOf2026Width": 0.7051545624682299
+      }
+    },
+    {
+      "city": "stockholm",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 18.034644732669463,
+          "upperInclusive": 18.035791038334477,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.2751133596032673,
+          "widthDegrees": 0.0011463056650136139,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-02-21",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-05-31",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 18.03461927228294,
+          "upperInclusive": 18.034328556370685,
+          "status": "empty",
+          "signedWidthSeconds": -0.0697718189408647,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.0697718189408647,
+          "lowerWitness": {
+            "date": "2027-02-28",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-10-31",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 18.034644732669463,
+        "upperInclusive": 18.034328556370685,
+        "status": "empty",
+        "signedWidthSeconds": -0.07588231170672088,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.07588231170672088,
+        "lowerWitness": {
+          "date": "2026-02-21",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-10-31",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [
+          {
+            "date": "2027-10-31",
+            "event": "dhuhr"
+          }
+        ],
+        "retainedFractionOf2026Width": 0
+      }
+    },
+    {
+      "city": "helsinki",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 24.94345003847484,
+          "upperInclusive": 24.945465712627993,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.4837617967567098,
+          "widthDegrees": 0.0020156741531529576,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-04-07",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-06-19",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 24.946630423581215,
+          "upperInclusive": 24.945405607650354,
+          "status": "empty",
+          "signedWidthSeconds": -0.2939558234066908,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.2939558234066908,
+          "lowerWitness": {
+            "date": "2027-03-28",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-12-14",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 24.946630423581215,
+        "upperInclusive": 24.945405607650354,
+        "status": "empty",
+        "signedWidthSeconds": -0.2939558234066908,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.2939558234066908,
+        "lowerWitness": {
+          "date": "2027-03-28",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-12-14",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [
+          {
+            "date": "2027-03-28",
+            "event": "dhuhr"
+          },
+          {
+            "date": "2027-04-24",
+            "event": "dhuhr"
+          }
+        ],
+        "retainedFractionOf2026Width": 0
+      }
+    },
+    {
+      "city": "tromso",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 18.949537696941327,
+          "upperInclusive": 18.950286306719953,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.17966634687013538,
+          "widthDegrees": 0.0007486097786255641,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-04-30",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-08-11",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 18.949319134076966,
+          "upperInclusive": 18.950281472326303,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.23096117984096054,
+          "widthDegrees": 0.0009623382493373356,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2027-07-19",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-08-25",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 18.949537696941327,
+        "upperInclusive": 18.950281472326303,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.1785060923941728,
+        "widthDegrees": 0.00074377538497572,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2026-04-30",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-25",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": true,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [],
+        "retainedFractionOf2026Width": 0.993542171385044
+      }
+    },
+    {
+      "city": "bodo",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 14.381425370995931,
+          "upperInclusive": 14.386941293284902,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 1.3238213493531248,
+          "widthDegrees": 0.005515922288971353,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-04-20",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-07-08",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 14.382134304818555,
+          "upperInclusive": 14.38408860715393,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.46903256048977937,
+          "widthDegrees": 0.0019543023353740807,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2027-10-07",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-10-26",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 14.382134304818555,
+        "upperInclusive": 14.38408860715393,
+        "status": "conditional-feasible-longitude",
+        "signedWidthSeconds": 0.46903256048977937,
+        "widthDegrees": 0.0019543023353740807,
+        "contradictionGapSeconds": 0,
+        "lowerWitness": {
+          "date": "2027-10-07",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-10-26",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": true,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [],
+        "retainedFractionOf2026Width": 0.3543020066257192
+      }
+    },
+    {
+      "city": "kiruna",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 20.22759107228294,
+          "upperInclusive": 20.228539024600924,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.2275085563158541,
+          "widthDegrees": 0.0009479523179827254,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-04-14",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-06-29",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 20.22740850262247,
+          "upperInclusive": 20.226631913335073,
+          "status": "empty",
+          "signedWidthSeconds": -0.1863814289754373,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.1863814289754373,
+          "lowerWitness": {
+            "date": "2027-03-06",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-08-01",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 20.22759107228294,
+        "upperInclusive": 20.226631913335073,
+        "status": "empty",
+        "signedWidthSeconds": -0.23019814748835188,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.23019814748835188,
+        "lowerWitness": {
+          "date": "2026-04-14",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2027-08-01",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [
+          {
+            "date": "2027-08-01",
+            "event": "dhuhr"
+          },
+          {
+            "date": "2027-10-13",
+            "event": "dhuhr"
+          }
+        ],
+        "retainedFractionOf2026Width": 0
+      }
+    },
+    {
+      "city": "reykjavik",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": -21.90185953564563,
+          "upperInclusive": -21.904271100432684,
+          "status": "empty",
+          "signedWidthSeconds": -0.578775548892736,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.578775548892736,
+          "lowerWitness": {
+            "date": "2026-04-26",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-09-22",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": -21.902495844827204,
+          "upperInclusive": -21.904139715354965,
+          "status": "empty",
+          "signedWidthSeconds": -0.3945289266627583,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.3945289266627583,
+          "lowerWitness": {
+            "date": "2027-03-26",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-09-11",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": -21.90185953564563,
+        "upperInclusive": -21.904271100432684,
+        "status": "empty",
+        "signedWidthSeconds": -0.578775548892736,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.578775548892736,
+        "lowerWitness": {
+          "date": "2026-04-26",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-22",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": false,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": null,
+        "retainedFractionOf2026Width": null
+      }
+    },
+    {
+      "city": "trondheim",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 10.408016902638217,
+          "upperInclusive": 10.409168405618827,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.276360715346442,
+          "widthDegrees": 0.001151502980610175,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2026-04-04",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-09-30",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 10.409266196098208,
+          "upperInclusive": 10.409324417978285,
+          "status": "conditional-feasible-longitude",
+          "signedWidthSeconds": 0.013973251218288851,
+          "widthDegrees": 5.822188007620355e-05,
+          "contradictionGapSeconds": 0,
+          "lowerWitness": {
+            "date": "2027-02-25",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-12-30",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 10.409266196098208,
+        "upperInclusive": 10.409168405618827,
+        "status": "empty",
+        "signedWidthSeconds": -0.023469715051618323,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.023469715051618323,
+        "lowerWitness": {
+          "date": "2027-02-25",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-30",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": true,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": [
+          {
+            "date": "2027-02-25",
+            "event": "dhuhr"
+          }
+        ],
+        "retainedFractionOf2026Width": 0
+      }
+    },
+    {
+      "city": "oulu",
+      "years": [
+        2026,
+        2027
+      ],
+      "yearIntervals": [
+        {
+          "year": 2026,
+          "observations": 365,
+          "lowerExclusive": 25.471267597128524,
+          "upperInclusive": 25.469767859080306,
+          "status": "empty",
+          "signedWidthSeconds": -0.35993713157211005,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.35993713157211005,
+          "lowerWitness": {
+            "date": "2026-03-10",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2026-09-15",
+            "event": "dhuhr"
+          }
+        },
+        {
+          "year": 2027,
+          "observations": 365,
+          "lowerExclusive": 25.471851302016816,
+          "upperInclusive": 25.470623086047908,
+          "status": "empty",
+          "signedWidthSeconds": -0.2947718325378901,
+          "widthDegrees": 0,
+          "contradictionGapSeconds": 0.2947718325378901,
+          "lowerWitness": {
+            "date": "2027-03-21",
+            "event": "dhuhr"
+          },
+          "upperWitness": {
+            "date": "2027-01-08",
+            "event": "dhuhr"
+          }
+        }
+      ],
+      "joint": {
+        "observations": 730,
+        "lowerExclusive": 25.471851302016816,
+        "upperInclusive": 25.469767859080306,
+        "status": "empty",
+        "signedWidthSeconds": -0.5000263047622866,
+        "widthDegrees": 0,
+        "contradictionGapSeconds": 0.5000263047622866,
+        "lowerWitness": {
+          "date": "2027-03-21",
+          "event": "dhuhr"
+        },
+        "upperWitness": {
+          "date": "2026-09-15",
+          "event": "dhuhr"
+        }
+      },
+      "transfer": {
+        "exposure": "retrospective, already exposed source years",
+        "trainingIntervalFeasible": false,
+        "jointRemainsFeasible": false,
+        "individual2027ObservationsDisjointFromEntire2026Interval": null,
+        "retainedFractionOf2026Width": null
+      }
+    }
+  ],
+  "twoDimensional": [
+    {
+      "city": "berlin",
+      "years": [
+        2026
+      ],
+      "observations": 789,
+      "noonObservations": 365,
+      "horizonObservations": 424,
+      "latitudeBounds": [
+        52.27,
+        52.77
+      ],
+      "longitudeBounds": [
+        13.155,
+        13.655
+      ],
+      "minimumNormalHorizonMarginSeconds": 4806.248552037037,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 1.524798491001722,
+        "upperBound": 1.54124762732323
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 328.9827264301604,
+        "coverErrorBoundSeconds": 0.01644913632150802,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    },
+    {
+      "city": "berlin",
+      "years": [
+        2027
+      ],
+      "observations": 789,
+      "noonObservations": 365,
+      "horizonObservations": 424,
+      "latitudeBounds": [
+        52.27,
+        52.77
+      ],
+      "longitudeBounds": [
+        13.155,
+        13.655
+      ],
+      "minimumNormalHorizonMarginSeconds": 4806.301523763477,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 1.5742082673162725,
+        "upperBound": 1.5906572663078578
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 328.97997983170325,
+        "coverErrorBoundSeconds": 0.016448998991585164,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    },
+    {
+      "city": "berlin",
+      "years": [
+        2026,
+        2027
+      ],
+      "observations": 1578,
+      "noonObservations": 730,
+      "horizonObservations": 848,
+      "latitudeBounds": [
+        52.27,
+        52.77
+      ],
+      "longitudeBounds": [
+        13.155,
+        13.655
+      ],
+      "minimumNormalHorizonMarginSeconds": 4806.248552037037,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 1.708786331993768,
+        "upperBound": 1.725235468315276
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 328.9827264301604,
+        "coverErrorBoundSeconds": 0.01644913632150802,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    },
+    {
+      "city": "stockholm",
+      "years": [
+        2026
+      ],
+      "observations": 789,
+      "noonObservations": 365,
+      "horizonObservations": 424,
+      "latitudeBounds": [
+        59.07531504,
+        59.57531504
+      ],
+      "longitudeBounds": [
+        17.8103652,
+        18.3103652
+      ],
+      "minimumNormalHorizonMarginSeconds": 1925.8744190198358,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 1.8838977678009012,
+        "upperBound": 1.9116714409605606
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 555.47346319319,
+        "coverErrorBoundSeconds": 0.027773673159659503,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    },
+    {
+      "city": "stockholm",
+      "years": [
+        2027
+      ],
+      "observations": 789,
+      "noonObservations": 365,
+      "horizonObservations": 424,
+      "latitudeBounds": [
+        59.07531504,
+        59.57531504
+      ],
+      "longitudeBounds": [
+        17.8103652,
+        18.3103652
+      ],
+      "minimumNormalHorizonMarginSeconds": 1925.9557453829057,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 2.3806638376575693,
+        "upperBound": 2.4084371838875995
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 555.4669246006041,
+        "coverErrorBoundSeconds": 0.027773346230030208,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    },
+    {
+      "city": "stockholm",
+      "years": [
+        2026,
+        2027
+      ],
+      "observations": 1578,
+      "noonObservations": 730,
+      "horizonObservations": 848,
+      "latitudeBounds": [
+        59.07531504,
+        59.57531504
+      ],
+      "longitudeBounds": [
+        17.8103652,
+        18.3103652
+      ],
+      "minimumNormalHorizonMarginSeconds": 1925.8744190198358,
+      "exactRegionStatus": "certified-empty-under-model",
+      "minimumEnvelopeGapSeconds": {
+        "lowerBound": 2.425321477158688,
+        "upperBound": 2.4530951503183474
+      },
+      "certificate": {
+        "latitudeGridSegments": 10000,
+        "maximumEventDerivativeSecondsPerLatitudeDegree": 555.47346319319,
+        "coverErrorBoundSeconds": 0.027773673159659503,
+        "feasibleSampleCount": 0
+      },
+      "interpretation": "Envelope gap is incompatible-constraint separation; not fitted extra tolerance, point uncertainty, or source error. No point selected."
+    }
+  ],
+  "verification": {
+    "noonConstraintsRecomputed": 10220,
+    "sourceUtcAndClockTriplesChecked": 30660,
+    "maximumPythonNoonBoundDifferenceSeconds": 2.984279490192421e-11,
+    "latitudeGridNodesPerCertificate": 10001,
+    "certificateCount": 6,
+    "authorship": "Separate Python implementation by same researcher, plus independent-agent mathematical review; no claim of independent source acquisition."
+  },
+  "privateProvenance": {
+    "research/diyanet-feasible-points-2026-09-25/plan.json": "e6bac7cb85208af52bac2cf15c5d5c8ab42a2c8c449204291e8923f04c7bb759",
+    "research/diyanet-feasible-points-2026-09-25/analyze.mjs": "488596a2e7378eb49ddd0f3bb39ca52e9ef56f89e8a15765262a72397455c1c7",
+    "research/diyanet-feasible-points-2026-09-25/report.json": "891702d563c597f1816dcd212284ff623ea3f6ae97648ae4b799b67c1b90e0ea",
+    "research/diyanet-feasible-points-2026-09-25/verify.py": "9d9abd46e5b9762155814910f077ff3531ed78e61320c5e07965f5c083f794bd",
+    "research/diyanet-feasible-points-2026-09-25/verification.json": "34fe2b81ae8678a42a95fcc4118035f67e4fc37ab4daed61995cc27282cbd7a8",
+    "research/diyanet-feasible-points-2026-09-25/review/autumn-review.json": "f605b5eec6fcbde07919870c6342e803d9206cbbc66f8621cc474f15f956a039"
+  },
+  "limitations": [
+    "Longitude is confounded with any uniform clock shift; latitude with the adopted horizon/refraction, epoch and policy.",
+    "Empty intersection rejects this full model/coordinate/rounding combination; it does not prove bad publisher coordinates.",
+    "Feasible longitude interval cannot establish a full coordinate pair, official input point, worldwide policy, or notification safety.",
+    "No new source acquisition or fitted point, no source date repair."
+  ],
+  "decision": "Do not create local production points from these constraints. Three two-year noon intervals survive, but no full coordinate pair is established; the two tested ordinary-horizon boxes are empty. Default and notification eligibility unchanged."
+}
