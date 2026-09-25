@@ -40,6 +40,8 @@ No compared event is missing in these three years. Relative to the own physical 
 
 All twelve larger differences fall on 14 March and 7 November 2032 in New York, six markers per day. This is consistent with ARC retaining the preceding DST offset on the change date, repeating the older London/Stockholm pattern. Those dates follow the [current US DST rule](https://www.nist.gov/pml/time-and-frequency-division/popular-links/daylight-saving-time-dst) and the pinned timezone data. That inference does not prove server internals. The primary 60-minute maximum stays visible; a secondary exclusion of those twelve cells leaves all 6,564 within one minute. Midnight uses an explicitly circular clock comparison because the source supplies no event dates; none of this independently validates absolute UTC timing.
 
+A later [row-date offset diagnostic](DST-DIAGNOSTIC.md) explains the New York pattern but introduces 24 new hour-scale errors in Sydney and Auckland. It was rejected as a general correction; this calculator and the primary figures above are unchanged.
+
 ## Exposed development evidence and rejected alternatives
 
 On the eight previously known annuals, the unchanged compatibility recipe has **14,525 / 17,178 exact**, compared with **9,140 / 17,176** for the own-USNO profile. There are 17,532 planned fields: the own solver has 352 both-missing and four availability mismatches; compatibility has 354 both-missing and none. Missing pairs are not hits. Across commonly available pairs, 5,881 improve to exact and 497 regress. Twenty-four 59–61-minute DST disagreements remain in primary compatibility statistics. All other comparable fields are within one minute. These old calendars are development data, not fresh validation for this export.
