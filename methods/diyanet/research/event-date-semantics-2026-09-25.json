@@ -1,0 +1,897 @@
+{
+  "schemaVersion": 1,
+  "scope": "Conditional source-table Isha civil-date identifiability, 29 already exposed northern annuals; no numerical model used to select dates",
+  "recordedAtUtc": "2026-09-25T15:26:52.774771+00:00",
+  "allSourcesAlreadyExposed": true,
+  "newCalendarRequests": 0,
+  "ordinaryStaticScriptRequests": 3,
+  "modelChanged": false,
+  "official": false,
+  "notificationEligible": false,
+  "originalCalendarRedistributed": false,
+  "planSha256": "32feb30d75df05905675bac33eeaba91d5f7a4e3a3bc16e2b21dba53c84f3c74",
+  "assumptions": [
+    "Gregorian printed rows have Fajr and Maghrib on their printed civil date, with actual IANA time zone; these are explicit audit assumptions, not an inferred complete publisher contract.",
+    "For an ordinary evening prayer cycle associated with Maghrib(D), Isha is strictly after Maghrib(D) and before Fajr(D+1). This follows the public prayer-order explanation only after assuming row D labels that evening cycle.",
+    "Enumerate Isha wall-clock occurrences on D-1, D, D+1 and D+2 without any model prediction. Retain every candidate in the source interval. Missing adjacent source Fajr, gaps and folds remain separate.",
+    "Primary zero policy is unresolved: a displayed 00:00 does not itself distinguish literal midnight from absent/placeholder. A clearly secondary branch treats all nine anticipated zeros literally without selecting cases.",
+    "Join complete source years only by exact case stem and zone. No calculated next-year Fajr or inferred next-year calendar."
+  ],
+  "overall": {
+    "rows": 10585,
+    "nonzero": 10576,
+    "zeroUnresolved": 9,
+    "nonzeroStatus": {
+      "unique": 10556,
+      "missing-following-fajr": 20
+    },
+    "nonzeroUniqueDateShift": {
+      "0": 10406,
+      "1": 150
+    },
+    "literalZeroStatus": {
+      "unique": 9
+    },
+    "literalZeroDateShift": {
+      "1": 9
+    },
+    "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+  },
+  "byCase": {
+    "berlin-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "berlin-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "frankfurt-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "oslo-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "stockholm-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "stockholm-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "helsinki-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "helsinki-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "tromso-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "tromso-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "bodo-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "bodo-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "kiruna-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "kiruna-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "reykjavik-2026": {
+      "rows": 365,
+      "nonzero": 359,
+      "zeroUnresolved": 6,
+      "nonzeroStatus": {
+        "unique": 359
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 321,
+        "1": 38
+      },
+      "literalZeroStatus": {
+        "unique": 6
+      },
+      "literalZeroDateShift": {
+        "1": 6
+      },
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "reykjavik-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "trondheim-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "trondheim-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "oulu-2026": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 365
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 365
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "oulu-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "zagreb-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "kuopio-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "narvik-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "kirkenes-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "vienna-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "bremen-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "bergen-2027": {
+      "rows": 365,
+      "nonzero": 363,
+      "zeroUnresolved": 2,
+      "nonzeroStatus": {
+        "unique": 362,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 323,
+        "1": 39
+      },
+      "literalZeroStatus": {
+        "unique": 2
+      },
+      "literalZeroDateShift": {
+        "1": 2
+      },
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "rovaniemi-2027": {
+      "rows": 365,
+      "nonzero": 365,
+      "zeroUnresolved": 0,
+      "nonzeroStatus": {
+        "unique": 364,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 364
+      },
+      "literalZeroStatus": {},
+      "literalZeroDateShift": {},
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    },
+    "anchorage-2027": {
+      "rows": 365,
+      "nonzero": 364,
+      "zeroUnresolved": 1,
+      "nonzeroStatus": {
+        "unique": 363,
+        "missing-following-fajr": 1
+      },
+      "nonzeroUniqueDateShift": {
+        "0": 290,
+        "1": 73
+      },
+      "literalZeroStatus": {
+        "unique": 1
+      },
+      "literalZeroDateShift": {
+        "1": 1
+      },
+      "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+    }
+  },
+  "sourceWallCandidateMultiplicity": {
+    "1": 63510
+  },
+  "yearEnds": {
+    "rows": 29,
+    "nonzero": 29,
+    "zeroUnresolved": 0,
+    "nonzeroStatus": {
+      "unique": 9,
+      "missing-following-fajr": 20
+    },
+    "nonzeroUniqueDateShift": {
+      "0": 9
+    },
+    "literalZeroStatus": {},
+    "literalZeroDateShift": {},
+    "clockComparisonRuleAgreesForEveryUniqueNonzero": true
+  },
+  "sourceCompleteYearBoundaryIds": [
+    "berlin-2026",
+    "stockholm-2026",
+    "helsinki-2026",
+    "tromso-2026",
+    "bodo-2026",
+    "kiruna-2026",
+    "reykjavik-2026",
+    "trondheim-2026",
+    "oulu-2026"
+  ],
+  "dstSourceNights": {
+    "intervalsCrossingOffsetChange": 54,
+    "conditionalUnique": 54,
+    "byCase": {
+      "berlin-2026": 2,
+      "berlin-2027": 2,
+      "frankfurt-2027": 2,
+      "oslo-2027": 2,
+      "stockholm-2026": 2,
+      "stockholm-2027": 2,
+      "helsinki-2026": 2,
+      "helsinki-2027": 2,
+      "tromso-2026": 2,
+      "tromso-2027": 2,
+      "bodo-2026": 2,
+      "bodo-2027": 2,
+      "kiruna-2026": 2,
+      "kiruna-2027": 2,
+      "reykjavik-2026": 0,
+      "reykjavik-2027": 0,
+      "trondheim-2026": 2,
+      "trondheim-2027": 2,
+      "oulu-2026": 2,
+      "oulu-2027": 2,
+      "zagreb-2027": 2,
+      "kuopio-2027": 2,
+      "narvik-2027": 2,
+      "kirkenes-2027": 2,
+      "vienna-2027": 2,
+      "bremen-2027": 2,
+      "bergen-2027": 2,
+      "rovaniemi-2027": 2,
+      "anchorage-2027": 2
+    }
+  },
+  "unresolvedZeros": {
+    "count": 9,
+    "byCase": {
+      "reykjavik-2026": 6,
+      "bergen-2027": 2,
+      "anchorage-2027": 1
+    },
+    "literalBranch": "All nine have one next-midnight occurrence within the source night; retained unresolved in primary interpretation. Smooth source neighborhoods support but do not prove literal-zero semantics."
+  },
+  "verification": {
+    "status": "PASS",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "sourceWallFields": 63510,
+    "sourceAndHypotheticalDateResolutions": 95265,
+    "groups": [
+      {
+        "id": "berlin-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "berlin-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "frankfurt-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "oslo-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "stockholm-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "stockholm-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "helsinki-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "helsinki-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "tromso-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "tromso-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "bodo-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "bodo-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "kiruna-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "kiruna-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "reykjavik-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "reykjavik-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "trondheim-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "trondheim-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "oulu-2026",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "oulu-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "zagreb-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "kuopio-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "narvik-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "kirkenes-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "vienna-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "bremen-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "bergen-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "rovaniemi-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      },
+      {
+        "id": "anchorage-2027",
+        "sourceAndHypotheticalDateResolutions": 3285
+      }
+    ],
+    "limitation": "UTC resolution parity only: literal00:00 branch tests timezone mechanics, not publisher zero semantics or source event date. No model predictions used."
+  },
+  "syntheticCounterexamples": [
+    {
+      "id": "fallFold",
+      "date": "2027-11-07",
+      "clock": "01:30",
+      "timeZone": "America/Anchorage",
+      "status": "ambiguous-local-clock",
+      "utcCandidates": [
+        "2027-11-07T09:30:00.000Z",
+        "2027-11-07T10:30:00.000Z"
+      ]
+    },
+    {
+      "id": "springGap",
+      "date": "2027-03-14",
+      "clock": "02:30",
+      "timeZone": "America/Anchorage",
+      "status": "nonexistent-local-clock",
+      "utcCandidates": []
+    },
+    {
+      "id": "newYear",
+      "date": "2028-01-01",
+      "clock": "00:30",
+      "timeZone": "America/Anchorage",
+      "status": "resolved",
+      "utcCandidates": [
+        "2028-01-01T09:30:00.000Z"
+      ]
+    }
+  ],
+  "archivedReykjavikDateMetadata": [
+    {
+      "id": "reykjavik-2026",
+      "rows": 365,
+      "dateAndClockParityWithPinnedFixture": 365,
+      "isoDateFieldOffsetMinutes": {
+        "180.0": 365
+      },
+      "actualLocalMidnightOffsetMinutes": {
+        "0.0": 365
+      },
+      "sourceSha256": "06d2917b7907d3d4b8bd800c94400d38ace5680d2a13e2e0c5144a874c4c9382"
+    },
+    {
+      "id": "reykjavik-2027",
+      "rows": 365,
+      "dateAndClockParityWithPinnedFixture": 365,
+      "isoDateFieldOffsetMinutes": {
+        "180.0": 365
+      },
+      "actualLocalMidnightOffsetMinutes": {
+        "0.0": 365
+      },
+      "sourceSha256": "207c39056b958090923935ce5a0344e139d84b91aff5fd13c0cbec3b98eab8a4"
+    }
+  ],
+  "currentClientStaticFindings": {
+    "clockValuesParsedAsHourTimes3600PlusMinuteTimes60": true,
+    "onlyAppendedNextImsakGets86400SecondsAdded": true,
+    "ishaOwnDateCarryFound": false,
+    "zeroClockSentinelBranchFound": false,
+    "browserLocalDateGetHoursUsed": true,
+    "scope": "Today-widget home.js only, not proof of backend or annual table semantics"
+  },
+  "primarySourceLinks": {
+    "ordinaryIshaPeriod": "https://kurul.diyanet.gov.tr/tr/fetva/yatsi-namazi-ne-zamana-kadar-kilinabilir/0193c42d-4da2-7455-c923-9bdbc23c351c",
+    "anchorageAnnualPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/8584/anchorage-namaz-vakitleri",
+    "guide": "https://awqatsalah.diyanet.gov.tr/files/56d83ac4-f7f5-4f6e-9b9e-b1ffeebf1b6a.pdf",
+    "currentWidget": "https://namazvakitleri.diyanet.gov.tr/Assets/Themes/Diyanet/Scripts/home.js"
+  },
+  "sourceInterpretation": "Row ISO date is not a reliable local-midnight or per-event UTC timestamp. No tested response identifies sourceIsha event civil dates. Current client parsing00:00 as zero is evidence of client behavior only; after-midnight Isha carry is absent in this widget, so do not treat it as authoritative scheduling implementation.",
+  "limits": [
+    "The evening-cycle association is an explicit conditional interpretation, not a recovered publisher serialization contract.",
+    "All nine zero cells remain unresolved in the primary interpretation; no existing score denominator changes.",
+    "Unique UTC resolution under a supplied date and timezone does not certify publisher event date.",
+    "A missing next-source Fajr prevents this complete-night test, not every conceivable date inference.",
+    "Actual source DST cases are separate from synthetic fold/gap counterexamples.",
+    "No new forecast, accuracy improvement, timezone repair, default change or notification eligibility is claimed."
+  ],
+  "evidencePins": [
+    {
+      "path": "public/prayer-times-research/validation/index.mjs",
+      "sha256": "002221e2c8e3fa2b0f871c1943642ef876102d9d031992b7e9f654c510c9eadc"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/README.md",
+      "sha256": "a737d7ca27e109056a40d516df72566593c6d04eccf3d8039d68eccff1c6ca60"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/audit.py",
+      "sha256": "a7ba19e4aa79c2ed127f909c171d522bb3c4765af97d73c26b237e13400fa193"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/cases.json",
+      "sha256": "f0defc08b8073658c9c0bd75a754a9367b9e81c625e8903ebba49898a70c4b3e"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/plan-pin.json",
+      "sha256": "2e98c563fc2ca6b8630952cba5ad01f475656c570a65b9ec2f09258b85e0aba7"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/plan.json",
+      "sha256": "32feb30d75df05905675bac33eeaba91d5f7a4e3a3bc16e2b21dba53c84f3c74"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/publish.py",
+      "sha256": "d3cd2cd10c8c56e40ed72bd5ab2f8319228d349f476b994a87e1768192fbd3bd"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/report.json",
+      "sha256": "cfe9d9d7f9edd0128c56f72a75c0b5364de782b265e792b8345055221572caa3"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/review/points-logical-review.json",
+      "sha256": "ae842be893ba628c9c62cdf06898ebf96bddc2c64232bf0ea8c26deef6e8caf5"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/rows.json",
+      "sha256": "f1418b05a1901427b8231a1e5873963cb8e98c7839a886b3fd477643f3297b06"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/source-contract-plan.json",
+      "sha256": "abb12c488ba22cf336260a071df0e6c733ff6a8d5b1f1628335c38828872abb1"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/source-contract.json",
+      "sha256": "9a6778112eccec79926c3031f127f224ad1981d94926790b8bde90d2b0719c3e"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/source-contract.py",
+      "sha256": "285f5e74220166cf580e0255da1fc246a9386a59a314d746270fc2136fbc0dee"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/source-wall.json",
+      "sha256": "f01e9e954cba1d11f21fe5edfbc59862b6937a684392edd079422dcd2469ba10"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/sources/common.js",
+      "sha256": "d05bfc996394ee4fb618c6dce7f610fff71d35f1011e01e461bb2d8ab033c4dc"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/sources/home.js",
+      "sha256": "3ffa16a6a3df76c1bff97641b21acb19d1de70bad9c25c7f0c27b3b4e88556b3"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/sources/nvHomeTabs.js",
+      "sha256": "4557d51b87e6c727eeb2e680c99f52ba4ac07c272758926ca756d6d2ff2af915"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/static-source-log.json",
+      "sha256": "20e2a69107d4f6882f7921e89515bd108148ef4e6a2654cbb7e7bf6384f6da98"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/verification.json",
+      "sha256": "6ed36eeb54d0bd57ae8e8cfd7ab39258b3ad533596c27c87385ecf6416c455e3"
+    },
+    {
+      "path": "research/diyanet-eventdate-semantics-2026-09-25/verify.mjs",
+      "sha256": "d3ad6d62459ebaec7709eff42c542be1e8b1d27c3c864d0229cccbd6f5c27a59"
+    },
+    {
+      "path": "research/diyanet-global-anchorage-2026-09-25/anchorage-2027-page.html",
+      "sha256": "80a9406162bb9c46c9071526da3cd34dfba217827184202ddd45437714e10705"
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/anchorage-reference.json",
+      "sha256": "4b3d59a3e62c750aa7ab907f03715f8339b7e1d63d6c64ed6fc270976bc529b0"
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/api-guide.pdf",
+      "sha256": "1a1974791baa4b2bec828f2d3235e8f333da7e40a78bc3fdd2a371e6e44176a3"
+    },
+    {
+      "path": "research/diyanet-global-sources-2026-09-25/sources/criteria-tr.json",
+      "sha256": "519ac6391e5b0111aa0965da78e173167013e6b01114b56602e7aff255c45e83"
+    },
+    {
+      "path": "research/diyanet-north-canonical-followup/parsed-root/bergen-2027.json",
+      "sha256": "b0ad8bdc62d6f8524fc272af5c4bbb302a4278351d4f3e0a4349d6bfc85794e8"
+    },
+    {
+      "path": "research/diyanet-north-canonical-followup/parsed-root/bremen-2027.json",
+      "sha256": "f4f66abc4d4922730f72381254526dd3c330cfb12fa37b9a145dabcf3737518e"
+    },
+    {
+      "path": "research/diyanet-north-canonical-followup/parsed-root/rovaniemi-2027.json",
+      "sha256": "cbaa4841064cdf0f207be7010adb95a552b84bf5a8bc905b78333cfbd1c4a9ed"
+    },
+    {
+      "path": "research/diyanet-north-canonical-followup/parsed-root/vienna-2027.json",
+      "sha256": "058725065234d800025d21e7e22d8bd158edf2e3cb0d148f67b77806071982b4"
+    },
+    {
+      "path": "research/diyanet-north-continuous-twilight/data-contract/fixtures.json",
+      "sha256": "6d58a6473f1fd1b7f5bdeb17951bd13828aa563e31944b1becdb8182058cafeb"
+    },
+    {
+      "path": "research/diyanet-north-missing-window-prospective/forecast/forecast.json",
+      "sha256": "e408bb769b6fb3f430c51f7e66f78926ecc4196b1cd5397a059abe0612685e2c"
+    },
+    {
+      "path": "research/diyanet-v2/v3/sources/reykjavik-2026.json",
+      "sha256": "06d2917b7907d3d4b8bd800c94400d38ace5680d2a13e2e0c5144a874c4c9382"
+    },
+    {
+      "path": "research/diyanet-v2/v3/sources/reykjavik-2027.json",
+      "sha256": "207c39056b958090923935ce5a0344e139d84b91aff5fd13c0cbec3b98eab8a4"
+    }
+  ],
+  "rights": "Only derived counts, metadata, hashes and original analysis are published. Original prayer-clock rows, raw source bodies and individual source event timestamps remain private. Synthetic examples are labelled.",
+  "reproducibilityLimit": "Hashes bind the private evidence and diagnostic code; original calendar access is required for a full replay and is not granted by this repository."
+}
