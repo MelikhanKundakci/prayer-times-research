@@ -1,0 +1,133 @@
+{
+  "study": "Prospective Diyanet La Paz 2027 annual control",
+  "year": 2027,
+  "frozenAtUtc": "2026-09-25T18:09:45.773Z",
+  "forecastSha256": "9fdc1de7618da6a711fdda3bbc0cb65e08c018307156f4095d6556dc6684e9eb",
+  "planSha256": "3539d07c68a79e73e47930432c35574c51cb818441ee6f15db9eb0f42f3eacbb",
+  "modelSha256": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797",
+  "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/11958/la-paz-icin-namaz-vakti",
+  "officialCityId": "11958",
+  "annualRows": 365,
+  "sourceXlsxSha256": "92571873f41495bf6adf22e0f7f931f9998ee61657faf5a1438682968323fa85",
+  "namedCityProxy": {
+    "latitude": -16.481233644,
+    "longitude": -68.1257171577,
+    "timeZone": "America/La_Paz",
+    "source": "https://ungegn.un.org/dashboard/cities/details?id=183"
+  },
+  "comparison": "Absolute UTC via printed Gregorian row date and pinned IANA zone; original source 00:00 unresolved. No modulo-24 matching.",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "sourceZeroClocks": [],
+  "score": {
+    "slots": 2190,
+    "compared": 2190,
+    "notCompared": 0,
+    "exact": 1936,
+    "withinOneMinute": 2190,
+    "maxAbsoluteMinutes": 1,
+    "predictedDateDiffers": 0,
+    "histogram": {
+      "0": 1936,
+      "-1": 254
+    },
+    "unavailable": {}
+  },
+  "byField": {
+    "fajr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 317,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 317,
+        "-1": 48
+      },
+      "unavailable": {}
+    },
+    "sunrise": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 324,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 324,
+        "-1": 41
+      },
+      "unavailable": {}
+    },
+    "dhuhr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 321,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 321,
+        "-1": 44
+      },
+      "unavailable": {}
+    },
+    "asr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 331,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 331,
+        "-1": 34
+      },
+      "unavailable": {}
+    },
+    "maghrib": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 326,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 326,
+        "-1": 39
+      },
+      "unavailable": {}
+    },
+    "isha": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 317,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 317,
+        "-1": 48
+      },
+      "unavailable": {}
+    }
+  },
+  "carrierDates": {
+    "same": 365
+  },
+  "limitations": [
+    "Named-city proxy is not a confirmed Diyanet production point",
+    "Printed HH:mm and row date do not prove provider event-date semantics",
+    "No source seconds, height/horizon, or rounding internals are published"
+  ]
+}

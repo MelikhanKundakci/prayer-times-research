@@ -1,0 +1,245 @@
+{
+  "study": "Prospective Diyanet Suva 2027 annual control",
+  "year": 2027,
+  "frozenAtUtc": "2026-09-25T18:12:13.329Z",
+  "forecastSha256": "f47a7cf0dcfaa7a8d19a8dc1b47acec809998c643c40146a2a1b6b207be9e705",
+  "planSha256": "98f667fdc8a024883c6660f6b9e1b8f62423454ba35b49377149774a3ac1ac7f",
+  "modelSha256": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797",
+  "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/12821/suva-icin-namaz-vakti",
+  "officialCityId": "12821",
+  "annualRows": 365,
+  "sourceXlsxSha256": "158e864d59a5e525d1a5d7c516e79167077b8fdd3f013ceb1f493fc708ed6b9d",
+  "namedCityProxy": {
+    "latitude": -18.1179065976,
+    "longitude": 178.491287276,
+    "timeZone": "Pacific/Fiji",
+    "source": "https://ungegn.un.org/dashboard/cities/details?id=119"
+  },
+  "comparison": "Absolute UTC via printed Gregorian row date and pinned IANA zone; original source 00:00 unresolved. No modulo-24 matching.",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "sourceZeroClocks": [],
+  "carrierDates": {
+    "same": 365,
+    "different": 0
+  },
+  "baseline": {
+    "id": "Suva2027",
+    "score": {
+      "slots": 2190,
+      "compared": 2190,
+      "notCompared": 0,
+      "exact": 1657,
+      "withinOneMinute": 2190,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 1657,
+        "-1": 533
+      },
+      "unavailable": {}
+    },
+    "byField": {
+      "fajr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 284,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 284,
+          "-1": 81
+        },
+        "unavailable": {}
+      },
+      "sunrise": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 269,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 269,
+          "-1": 96
+        },
+        "unavailable": {}
+      },
+      "dhuhr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 280,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 280,
+          "-1": 85
+        },
+        "unavailable": {}
+      },
+      "asr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 279,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 279,
+          "-1": 86
+        },
+        "unavailable": {}
+      },
+      "maghrib": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 270,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 270,
+          "-1": 95
+        },
+        "unavailable": {}
+      },
+      "isha": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 275,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 275,
+          "-1": 90
+        },
+        "unavailable": {}
+      }
+    }
+  },
+  "candidate": {
+    "id": "Suva2027",
+    "score": {
+      "slots": 2190,
+      "compared": 2190,
+      "notCompared": 0,
+      "exact": 1657,
+      "withinOneMinute": 2190,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 1657,
+        "-1": 533
+      },
+      "unavailable": {}
+    },
+    "byField": {
+      "fajr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 284,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 284,
+          "-1": 81
+        },
+        "unavailable": {}
+      },
+      "sunrise": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 269,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 269,
+          "-1": 96
+        },
+        "unavailable": {}
+      },
+      "dhuhr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 280,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 280,
+          "-1": 85
+        },
+        "unavailable": {}
+      },
+      "asr": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 279,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 279,
+          "-1": 86
+        },
+        "unavailable": {}
+      },
+      "maghrib": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 270,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 270,
+          "-1": 95
+        },
+        "unavailable": {}
+      },
+      "isha": {
+        "slots": 365,
+        "compared": 365,
+        "notCompared": 0,
+        "exact": 275,
+        "withinOneMinute": 365,
+        "maxAbsoluteMinutes": 1,
+        "predictedDateDiffers": 0,
+        "histogram": {
+          "0": 275,
+          "-1": 90
+        },
+        "unavailable": {}
+      }
+    }
+  },
+  "changedForecastCells": 0,
+  "improved": 0,
+  "worsened": 0,
+  "newOverOneMinuteErrors": 0,
+  "resolvedOverOneMinuteErrors": 0,
+  "limitations": [
+    "Named-city proxy is not a confirmed Diyanet production point",
+    "Printed HH:mm and row date do not prove provider event-date semantics",
+    "No source seconds, height/horizon, or rounding internals are published"
+  ]
+}
