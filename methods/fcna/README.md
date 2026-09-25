@@ -1,6 +1,6 @@
 # FCNA — own published-angle profiles
 
-Separate FCNA USA15°/15° and Canada 13°/13° angle profiles. Other event geometry is declared auxiliary mathematics, not an FCNA prescription or proof that every North American mosque uses these rules.
+Separate FCNA USA15°/15° and Canada 13°/13° angle profiles. An opt-in Roseville experiment reconstructs one publisher's two twilight start columns at one fixed point. Other event geometry is declared auxiliary mathematics, not an FCNA prescription or proof that every North American mosque uses these rules.
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
@@ -31,7 +31,13 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 
 The uniform entry is [`calculate(options)`](index.mjs). **Default:** own reviewed; numerical={ephemeris:"usno",rounding:"nearest"}; profileId remains explicit.
 
-Public options retain the original input contract; optional numerical:{ephemeris:"usno",rounding:"nearest"} is passed as the separately validated numerical configuration.
+Public options retain the original input contract; optional numerical:{ephemeris:"usno",rounding:"nearest"} is passed as the separately validated numerical configuration. To run the **separate Roseville experiment**:
+
+```sh
+node scripts/run.mjs fcna --input methods/fcna/examples/roseville-input.json
+```
+
+Its [input](examples/roseville-input.json) is exactly `{ "variant": "roseville-utc12-ceil", "date": "2026-06-21" }`. Its [generated output](examples/roseville-output.json) contains **Fajr and Isha starts only**. The fixed location comes from a public address geocode, not a confirmed publisher calculation point. Arbitrary coordinates or numerical overrides are rejected for this variant. The generic FCNA model remains the default.
 
 ### Runnable implementations
 
@@ -40,10 +46,12 @@ The underlying signatures remain method-specific. These links point to the code 
 | Variant | Module / export |
 |---|---|
 | `own-reviewed` | [`calculateOwnFcnaReviewed`](implementation/asr-review/calculate.mjs) |
+| `roseville-utc12-ceil` | [`calculateRosevilleStartTimes`](implementation/roseville.mjs), opt-in fixed-point publisher experiment |
 
 ### Inputs and boundaries
 
-- **reviewed continuous own USNO/NOAA; selected published example uses usno/nearest:** `calculateOwnFcnaReviewed(input, configuration)`. Input: input: startDate,endDate?,latitude,longitude,timeZone,profileId: fcna-usa-15|fcna-canada-13,asr?: standard|hanafi; configuration: ephemeris usno|noaa,rounding nearest|ceil. Limits: 2000–2099; explicit IANA; global coordinate domain; missing twilight and shadow roots are unavailable, with no religious high-latitude replacement.
+- **reviewed continuous own USNO/NOAA; selected published example uses usno/nearest:** `calculateOwnFcnaReviewed(input, configuration)`. Input: startDate,endDate?,latitude,longitude,timeZone,profileId: fcna-usa-15|fcna-canada-13,asr?: standard|hanafi; configuration: ephemeris usno|noaa,rounding nearest|ceil. Limits: 2000–2099; explicit IANA; global coordinate domain; missing twilight and shadow roots are unavailable, with no religious high-latitude replacement.
+- **Roseville publisher compatibility only:** `calculateRosevilleStartTimes(date)` accepts a single Gregorian date in 2000–2099 and fixes the Census address proxy at 38.748266781311°N, −121.291128181358°E, `America/Los_Angeles`. It evaluates USNO coordinates at 12:00 UTC on the row date, uses 15°/15° and rounds both event instants upward to whole UTC minutes. It does not calculate Sunrise, Dhuhr, Asr or Maghrib. Its numerical convention is an empirical hypothesis, not an FCNA prescription.
 
 A supported input range is a mathematical contract, not a statement that every location/year in it has been institutionally validated. Check event status, reason and date as well as the clock.
 
@@ -61,7 +69,8 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 - No certified production coordinate is known for the Roseville publisher. Not every US or Canadian calendar is a method-confirmed FCNA reference.
 - No method-confirmed Canadian 13°/13° institution calendar has yet validated the Canada profile.
 - The annual Roseville download contained only 184 of 365 unique days:181 days/362twilight values were absent. A further 61 days/122 values have a printed-year conflict. The stronger 246-cell cohort below is only the method-and-year-confirmed subset, not the whole planned year.
-- A separate fixed-UTC12/ceil Roseville compatibility study is not the exported continuous model and must not be presented as a universal Isha correction.
+- The Roseville fixed-UTC12/ceil study is exported as an optional, narrower calculator. It is not the continuous default and cannot support a universal Isha correction. The publisher's calculation point and rounding rule remain unconfirmed.
+- On July–October 2025 development values, the fixed candidate raises combined exactness from 106/246 to 195/246, **but Fajr falls from 102/123 to 92/123**. In the year-conflicted November–December 2025-assumed cohort, combined exactness falls 73/122 to 69/122, including Isha 53/61 to 27/61. These regressions constrain where it should be used.
 
 ## Historical validation
 
@@ -83,12 +92,12 @@ These are archived research comparisons, **not results of the public snapshot te
 
 ### separate-roseville-fixed
 
-**Recipe:** NOT the exported model: separate USNO UTC12/ceil 15/15. **Sample:** Roseville March and June 2024,61 days.
+**Recipe:** Optional exported Roseville USNO UTC12/ceil 15/15 experiment, separate from the generic FCNA model. **Sample:** Roseville March and June 2024,61 days.
 
 **Compared markers:** Fajr Start and Isha Start, separately labeled from Iqama. **Date treatment:** Displayed-minute comparison; source does not supply event-specific UTC instants.
 
 - No new geography and no global FCNA claim.
-- Do not attribute this score to the exported continuous nearest model.
+- The same two publisher months improve from 70/122 exact with the previous continuous/nearest calculation to 90/122 exact with the fixed candidate. Both remain within one minute. Fajr improves 28/61→38/61 and Isha 42/61→52/61. Do not attribute this score to the default continuous model.
 
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 
@@ -99,6 +108,7 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 - [Primary Roseville calendar with method labels and year inconsistency in later pages](https://www.ispchome.com/downloads/Updated%20Annual%20Prayer%20Times%202025.pdf)
 - [Primary method-labeled March 2024 comparison for the separate fixed-epoch study](https://ispchome.com/downloads/ISPC%20March%20Prayer%20times_2024.pdf)
 - [Primary June 2024 comparison for that study](https://www.ispchome.com/downloads/ISPC%20June%20Prayer%20times_2024.pdf)
+- [US Census address geocode used as the Roseville point proxy](https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=616+Church+Street%2C+Roseville%2C+CA+95678&benchmark=Public_AR_Current&format=json); the `Current` benchmark can change and this is not the publisher's confirmed calculation point.
 
 Source websites and institution names are cited for attribution, not affiliation. Public access does not automatically allow redistribution. The repository license covers only material identified by its license notices.
 

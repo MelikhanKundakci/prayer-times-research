@@ -57,14 +57,14 @@ Examples return the native research result, including actual event dates, UTC in
 | [Banuri Town](methods/banuri-town/) | Published 18°/18° and Hanafi Asr rules; unresolved Zawal/Dhuhr semantics remain explicit. |
 | [Malaysia / JAKIM](methods/jakim/) | Single-point and multiple-point zone models, Selangor's two-point hypothesis, and a separate Kedah map interpretation. |
 | [Singapore / MUIS](methods/muis-singapore/) | Own solar calculations at a representative point, with documented rounding and remaining discrepancies. |
-| [FCNA recommendations](methods/fcna/) | Named 15°/15° and 13°/13° recommendation profiles and a physically reviewed Asr solver. |
+| [FCNA recommendations](methods/fcna/) | Named 15°/15° and 13°/13° recommendation profiles, a physically reviewed Asr solver, and an opt-in two-event Roseville publisher experiment. |
 | [Shia angle profiles](methods/shia-angles/) | Separately named Tehran, Leva, and ARC parameter profiles using own USNO or NOAA geometry. |
 | [Bayynat / Fadlallah](methods/bayynat/) | A source-table reconstruction with explicit civil-date handling and unresolved marker meanings. |
 | [Fazilet](methods/fazilet/) | A regional Temkin/horizon and event-rounding hypothesis, with independent comparisons. |
 | [Türkiye Takvimi](methods/turkiye-takvimi/) | A deliberately narrow Istanbul experiment and its negative results, retained as an open research problem. |
 <!-- METHOD_TABLE_END -->
 
-These are **15 research families**, not 15 religions or a complete list of Islamic traditions. A family can contain several versions or parameter profiles; this export has 22 selected native entry points. Additional profiles still need independently verified specifications and evidence; see [coverage still to establish](docs/ROADMAP.md#coverage-still-to-establish).
+These are **15 research families**, not 15 religions or a complete list of Islamic traditions. A family can contain several versions or parameter profiles; this export has 23 selected native entry points. Additional profiles still need independently verified specifications and evidence; see [coverage still to establish](docs/ROADMAP.md#coverage-still-to-establish).
 
 ## What the accuracy numbers mean
 
@@ -73,6 +73,7 @@ The strongest results are useful, but their scope matters. Examples from the res
 - **Moonsighting Committee:** 5,117/5,117 reference fields matched in two additional city-years obtained after fixing both the formula and timezone data. Both Asr variants are part of the seven-field reference set.
 - **Diyanet northern seasonal candidate:** 6,145/6,568 compared fields matched exactly in three subsequently acquired 2027 calendars; all compared fields were within one minute **under the conditional next-day interpretation of Isha**. Two original `00:00` values remain unresolved. Bremen lost 34 exact matches relative to the baseline. A reused Vienna response is reported separately.
 - **Selangor two-point hypothesis:** 1,922/2,020 previously unseen reference fields matched exactly, with all remaining fields within one minute. The 176 fields exposed before the formula freeze are excluded from this particular unseen-field result and reported separately.
+- **Roseville-specific 15°/15° experiment:** an opt-in fixed-UTC12/ceil calculation raised exact agreement from 70/122 to 90/122 in two same-publisher months acquired after its separate freeze. All 122 were within one minute. It remains restricted to one unconfirmed address-proxy point and two twilight starts; [FCNA's method page](methods/fcna/) reports development regressions and the separate generic model.
 
 These are historical research measurements, not results freshly downloaded by `npm test`. Original publisher calendars are not redistributed in this repository. Public tests cover the exported implementation, examples, structural invariants, and comparison semantics. The provenance and method documents distinguish those checks from institutional-calendar validation.
 

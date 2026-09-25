@@ -75,7 +75,23 @@ test('UAE requires environmental inputs instead of silently choosing a site', as
   assert.throws(() => calculate(missingWidth), /cityWidthKm/);
 });
 
-test('Geographic and seasonal publication matrix retains all 158 rendered results', async () => {
+test('Roseville experiment is opt-in, fixed to its declared point, and limited to two starts', async () => {
+  const fcna = await loadMethod('fcna');
+  const input = read('../methods/fcna/examples/roseville-input.json');
+  const expected = read('../methods/fcna/examples/roseville-output.json');
+  const actual = fcna.calculate(input);
+  assert.deepEqual(actual, fcna.calculateRosevilleStartTimes(input.date));
+  assert.deepEqual(actual, expected.output);
+  assert.equal(expected.evidenceType, 'generated-model-example-not-institutional-reference');
+  assert.deepEqual(Object.keys(actual.events).sort(), ['fajr', 'isha']);
+  assert.equal(actual.official, false);
+  assert.equal(actual.notificationEligible, false);
+  assert.throws(() => fcna.calculate({...input, latitude: 38.7}), /Unknown field/);
+  assert.throws(() => fcna.calculate({...input, numerical: {ephemeris: 'usno', rounding: 'nearest'}}), /Unknown field/);
+  assert.throws(() => fcna.calculate({...input, date: '2026-02-30'}), /Invalid Gregorian date/);
+});
+
+test('Geographic and seasonal publication matrix retains all 163 rendered results', async () => {
   const matrix = read('../provenance/wrapper-parity.json');
   assert.equal(matrix.cases, matrix.checks.length);
   for (const row of matrix.checks) {

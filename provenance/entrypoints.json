@@ -197,13 +197,22 @@
       "export": "calculateIstanbul",
       "contract": "{date, variant:\"noaa-continuous-nearest\"}; fixed Istanbul point; not a global entry",
       "official": false
+    },
+    {
+      "family": "fcna",
+      "variant": "roseville-utc12-ceil",
+      "source": "research/diyanet-improvement-2026-09-25/other/roseville.mjs",
+      "module": "methods/fcna/implementation/roseville.mjs",
+      "export": "calculateRosevilleStartTimes",
+      "contract": "(date); fixed Census proxy, 15\u00b0/15\u00b0, USNO UTC12, ceil; two twilight starts only",
+      "official": false
     }
   ],
   "counts": {
     "families": 15,
-    "entrypoints": 22,
-    "codeModules": 52,
+    "entrypoints": 23,
+    "codeModules": 53,
     "timezoneFiles": 10,
-    "totalBytes": 520516
+    "totalBytes": 523402
   }
 }

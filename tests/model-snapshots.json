@@ -113,6 +113,11 @@
       "sha256": "c90b11e48df83b741ebef656444b6eb4ce23935946d54dcde7b4d88af68cb45d"
     },
     {
+      "id": "fcna/roseville-utc12-ceil",
+      "projectedFields": 9,
+      "sha256": "fc6451953106c69fc324938625cd7d673282ddecc897a7313e37b7d852dfe5b3"
+    },
+    {
       "id": "turkiye-takvimi/istanbul",
       "projectedFields": 33,
       "sha256": "a4522a725b98a54028025ea88773c1bb2a3456ce9bdbae8d336d9cfa955e4491"

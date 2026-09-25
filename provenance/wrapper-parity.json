@@ -6,7 +6,7 @@
     "icu": "78.3",
     "tz": "2026d"
   },
-  "cases": 158,
+  "cases": 163,
   "checks": [
     {
       "id": "moonsighting-committee/usno-v4.2",
@@ -1265,6 +1265,56 @@
       "completeOutputDeepEqual": true,
       "renderedFields": 29,
       "renderedSha256": "db24fa8fe23818f90233cfb60b5b9cc0269d89c87ff01224bc0693950d288440"
+    },
+    {
+      "id": "fcna/roseville-utc12-ceil",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2024-02-29"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 9,
+      "renderedSha256": "984b62f4eb2b837675cf37dbca35c962fc29ee0db2a61561266beff75f8b5754"
+    },
+    {
+      "id": "fcna/roseville-utc12-ceil",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2026-03-21"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 9,
+      "renderedSha256": "3bc34235c2698b8a981c1757c0bf454500f5cd7f0bab574030decc0b8f504da3"
+    },
+    {
+      "id": "fcna/roseville-utc12-ceil",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2026-06-21"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 9,
+      "renderedSha256": "fc6451953106c69fc324938625cd7d673282ddecc897a7313e37b7d852dfe5b3"
+    },
+    {
+      "id": "fcna/roseville-utc12-ceil",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2026-09-21"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 9,
+      "renderedSha256": "87f52c6879f3c0fd6f95b7ff9409e72a52845858ec1f66ca1cce5a6dc5302381"
+    },
+    {
+      "id": "fcna/roseville-utc12-ceil",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2026-12-21"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 9,
+      "renderedSha256": "bcec9383018abdf4e197f21fd269f3bca7c4b62dbb69b256e1753de67cda2b94"
     },
     {
       "id": "turkiye-takvimi/istanbul",

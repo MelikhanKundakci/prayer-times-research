@@ -32,7 +32,7 @@
     "zlib": "1.2.12",
     "zstd": "1.5.7"
   },
-  "sourceMapSha256": "9af9ba05132d7e0e58130ce8b9e28b40c82f4613070b269cb7c3a5fbfc71d252",
+  "sourceMapSha256": "ff474dfa9ca67c13e79daa08a911981516709761d7e90b8e18063b1a69829719",
   "sourceAndExportHashes": [
     {
       "file": "core/astronomy/noaa-coordinates.mjs",
@@ -343,6 +343,11 @@
       "file": "core/timezones/sources/iana-africa.txt",
       "hashesMatch": true,
       "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fcna/implementation/roseville.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
     }
   ],
   "samples": [
@@ -639,6 +644,14 @@
           "date": "2026-06-21",
           "variant": "noaa-continuous-nearest"
         }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "fcna",
+      "variant": "roseville-utc12-ceil",
+      "parameters": [
+        "2026-06-21"
       ],
       "completeOutputDeepEqual": true
     }

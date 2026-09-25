@@ -56,7 +56,7 @@
     },
     {
       "id": "separate-roseville-fixed",
-      "recipe": "NOT the exported model: separate USNO UTC12/ceil15/15",
+      "recipe": "Opt-in exported Roseville-only USNO UTC12/ceil 15/15; separate from default FCNA continuous model",
       "exposure": "fresh same-publisher months after separate diagnostic freeze",
       "scope": "Roseville March and June2024,61days",
       "eventSet": "Fajr Start and Isha Start, separately labeled from Iqama",
@@ -73,8 +73,10 @@
       "denominator": "finite, unambiguous comparable slots; expected slots also retained",
       "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
       "caveats": [
-        "No new geography and no global FCNA claim.",
-        "Do not attribute this score to the exported continuous nearest model."
+        "Same-publisher March/June 2024 historical holdout after numerical candidate freeze, not new geography or an FCNA-wide rule.",
+        "Continuous/nearest comparator 70/122 exact; this selected candidate 90/122 exact, both within one minute.",
+        "Fajr development regressed 102/123 to92/123 while Isha development improved4/123 to103/123.",
+        "On separate Nov/Dec 2025-assumed pages with conflicting printed year, combined exactness regresses73/122 to69/122; do not merge into the year-confirmed cohort."
       ],
       "evidenceIdentifier": "research/north-america-own/isha-diagnostic/holdout-report.json"
     }
@@ -85,6 +87,12 @@
       "module": "methods/fcna/implementation/asr-review/calculate.mjs",
       "export": "calculateOwnFcnaReviewed",
       "sourceIdentifier": "research/north-america-own/asr-review/calculate.mjs"
+    },
+    {
+      "variant": "roseville-utc12-ceil",
+      "module": "methods/fcna/implementation/roseville.mjs",
+      "export": "calculateRosevilleStartTimes",
+      "sourceIdentifier": "research/diyanet-improvement-2026-09-25/other/roseville.mjs"
     }
   ],
   "historicalEvidence": [
@@ -123,6 +131,24 @@
       "sha256": "03d7e20312802ff3ca4cdc3c70345c4a274eacce3a905372b57fe60df5c69245",
       "bytes": 3037,
       "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-improvement-2026-09-25/other/roseville.mjs",
+      "sha256": "5f7307da9bc30e7d4ec45360fa1045e993ff540d333e2ff00c430664774654a5",
+      "bytes": 2875,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-improvement-2026-09-25/other/README.md",
+      "sha256": "875fc40651feea6fa6c8fb4db8943120465596279909b1a851a06915af5ff4a1",
+      "bytes": 6477,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-improvement-2026-09-25/other/roseville-audit.mjs",
+      "sha256": "8aba9aac0d7b1c2d88cc381bbb258889973f7f222120f9d74784f81e6858488f",
+      "bytes": 7052,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
     }
   ],
   "limitations": [
@@ -130,9 +156,11 @@
     "No certified production coordinate is known for the Roseville publisher. Not every US or Canadian calendar is a method-confirmed FCNA reference.",
     "No method-confirmed Canadian13°/13° institution calendar has yet validated the Canada profile.",
     "The annual Roseville download contained only184 of365 unique days:181days/362twilight values were absent. A further61days/122values have a printed-year conflict. The stronger246-cell cohort below is only the method-and-year-confirmed subset, not the whole planned year.",
-    "A separate fixed-UTC12/ceil Roseville compatibility study is not the exported continuous model and must not be presented as a universal Isha correction."
+    "The opt-in Roseville fixed-UTC12/ceil compatibility variant is limited to two twilight starts at one fixed address-proxy point. It is not the generic FCNA model, and the publisher calculation point and numerical algorithm remain unconfirmed."
   ],
-  "publicationNotes": [],
+  "publicationNotes": [
+    "Roseville variant added 25 September 2026 from an existing pre-frozen same-publisher comparison; the public addition does not create a new holdout or justify a universal method change."
+  ],
   "primaryAndSoftwareSources": [
     {
       "url": "https://fiqhcouncil.org/the-suggested-calculation-method-for-fajr-and-isha/",
@@ -153,6 +181,10 @@
     {
       "url": "https://www.ispchome.com/downloads/ISPC%20June%20Prayer%20times_2024.pdf",
       "role": "Primary June2024 comparison for that study"
+    },
+    {
+      "url": "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?address=616+Church+Street%2C+Roseville%2C+CA+95678&benchmark=Public_AR_Current&format=json",
+      "role": "Public address geocode used as an unconfirmed calculation-point proxy; Current benchmark may change"
     }
   ]
 }

@@ -232,6 +232,14 @@
       }
     },
     {
+      "id": "fcna/roseville-utc12-ceil",
+      "family": "fcna",
+      "input": {
+        "variant": "roseville-utc12-ceil",
+        "date": "2026-06-21"
+      }
+    },
+    {
       "id": "turkiye-takvimi/istanbul",
       "family": "turkiye-takvimi",
       "input": {

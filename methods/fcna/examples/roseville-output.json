@@ -1,0 +1,41 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "roseville-utc12-ceil",
+    "date": "2026-06-21"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "point": {
+      "latitude": 38.748266781311,
+      "longitude": -121.291128181358,
+      "timeZone": "America/Los_Angeles",
+      "provenance": "US Census interpolation of publisher address; calendar calculation point unconfirmed"
+    },
+    "recipe": "roseville-15-15-usno-utc12-ceil",
+    "events": {
+      "fajr": {
+        "time": "04:07",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T11:07:00.000Z",
+        "rawUtc": "2026-06-21T11:06:11.394Z",
+        "status": "calculated-experimental"
+      },
+      "isha": {
+        "time": "22:08",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-22T05:08:00.000Z",
+        "rawUtc": "2026-06-22T05:07:47.551Z",
+        "status": "calculated-experimental"
+      }
+    },
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false
+  }
+}

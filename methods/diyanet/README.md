@@ -4,6 +4,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+[Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies the official API fields needed for the next targeted comparison.
+
 ## Run the selected example
 
 Run from the repository root:

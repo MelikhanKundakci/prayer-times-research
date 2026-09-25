@@ -199,6 +199,15 @@
       "export": "calculateIstanbul",
       "contract": "{date, variant:\"noaa-continuous-nearest\"}; fixed Istanbul point; not a global entry",
       "official": false
+    },
+    {
+      "family": "fcna",
+      "variant": "roseville-utc12-ceil",
+      "source": "research/diyanet-improvement-2026-09-25/other/roseville.mjs",
+      "module": "methods/fcna/implementation/roseville.mjs",
+      "export": "calculateRosevilleStartTimes",
+      "contract": "(date); fixed Census proxy, 15\u00b0/15\u00b0, USNO UTC12, ceil; two twilight starts only",
+      "official": false
     }
   ],
   "files": [
@@ -1312,6 +1321,24 @@
       "destinationBytes": 58273,
       "transformations": [],
       "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/diyanet-improvement-2026-09-25/other/roseville.mjs",
+      "destination": "methods/fcna/implementation/roseville.mjs",
+      "sourceSha256": "5f7307da9bc30e7d4ec45360fa1045e993ff540d333e2ff00c430664774654a5",
+      "destinationSha256": "bc1d530d1d9d5be7a0c5d246b9ed50742ab8451be4f92e1d90550dd5795dc2fb",
+      "sourceBytes": 2875,
+      "destinationBytes": 2886,
+      "transformations": [
+        "relative-import-relocation-only"
+      ],
+      "imports": [
+        {
+          "before": "../../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
     }
   ],
   "dependencies": {
@@ -1337,9 +1364,9 @@
   ],
   "counts": {
     "families": 15,
-    "entrypoints": 22,
-    "codeModules": 52,
+    "entrypoints": 23,
+    "codeModules": 53,
     "timezoneFiles": 10,
-    "totalBytes": 520516
+    "totalBytes": 523402
   }
 }
