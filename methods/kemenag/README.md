@@ -54,7 +54,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 ## Special rules and unresolved semantics
 
 - The book’s worked recipe is better evidenced than its identity with current production software. Local markaz, point selection, heights and regional policy remain unknown.
-- The two regional calendar comparisons were reconstructed from indexed official-PDF text transcripts; raw PDF bytes and visual verification were unavailable. The book PDF itself was obtained and visually checked.
+- The two regional calendar comparisons were reconstructed from indexed official-PDF text transcripts; raw PDF bytes and visual verification were unavailable. A later access attempt and its exact limits are recorded in the [Bau-Bau PDF follow-up](REGIONAL-PDF-ACCESS-2026-09-25.md). The book PDF itself was obtained and visually checked.
 - BauBau Gregorian dates were tied to the published Ramadan-start decision; do not treat that mapping as an unspecified perpetual-calendar rule.
 
 ## Historical validation
