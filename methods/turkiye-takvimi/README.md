@@ -64,6 +64,8 @@ These are archived research comparisons, **not results of the public snapshot te
 | new-season-default | new 11months after all twelve variants were frozen | 0/2,010 (0.00%) | 100.00% | 935/2,010 (46.52%) | 53.48% | 4 min | 0/2,010 |
 | variable-temkin-known | known-data diagnosis only; no new sources | 480/2,190 (21.92%) | 78.08% | 1,408/2,190 (64.29%) | 35.71% | 4 min | 0/2,190 |
 
+The [default failure diagnosis](DEFAULT-FAILURE.md) separates the seasonal multi-minute bias from date/zone errors, rounding alternatives and unresolved Temkin/horizon assumptions. It also records why the much stronger table-plus-caution counterfactual is not promoted without a fresh holdout.
+
 ### new-season-default
 
 **Recipe:** noaa-continuous-nearest, fixed 10min. **Sample:** Istanbul 2026 excluding already-known September;335 days.
