@@ -1,0 +1,1787 @@
+{
+  "evaluatedAtUtc": "2026-09-25T14:00:25.598Z",
+  "frozenAtUtc": "2026-09-25T13:59:05.167Z",
+  "freezeSha256": "dd39475ba441f836eae4f41a9310baa12099a96ea00fdd7faf1f55d3e1af9724",
+  "forecastSha256": "0312c4031d664f38ea43925a3525a59c18b38836daada5da774608447a5cd63e",
+  "scope": "One retrospective common table-component+120s hypothesis on all365known Istanbul2026days; no holdout or parameter fit",
+  "sourceSha256": "872cce85708d4607819f4f511ede830c0530bfa097e68389d4f40c45db6cf0cd",
+  "sourceDateAndOffsetUnchanged": true,
+  "rawMinuteRounding": "absolute UTC nearest once",
+  "candidate": {
+    "tableSeconds": 559.16,
+    "cautionSeconds": 120,
+    "totalSeconds": 679.16,
+    "currentOperationalPointAndHeightNotEstablished": true,
+    "tableCautionInclusionNotEstablished": true,
+    "statedInclusiveMean600SecondsIsContraryEvidence": true
+  },
+  "physicalScaleCheck": {
+    "scope": "Only a dimensional source-example plausibility check, not table inversion or a selected formula",
+    "latitudeDegrees": 41,
+    "horizonDegrees": -1.4850555555555556,
+    "cases": [
+      {
+        "declinationDegrees": 0,
+        "geometricSeconds": 472.292274196343,
+        "with120Seconds": 592.292274196343
+      },
+      {
+        "declinationDegrees": 23.44,
+        "geometricSeconds": 560.4489480095924,
+        "with120Seconds": 680.4489480095924
+      },
+      {
+        "declinationDegrees": -23.44,
+        "geometricSeconds": 551.2987028677628,
+        "with120Seconds": 671.2987028677628
+      }
+    ]
+  },
+  "total": {
+    "models": {
+      "fixed600": {
+        "expected": 2190,
+        "compared": 2190,
+        "unavailable": 0,
+        "exact": 0,
+        "exactPercent": 0,
+        "withinOneMinute": 1020,
+        "withinOneMinutePercent": 46.57534246575342,
+        "minSignedMinutes": -4,
+        "maxSignedMinutes": 3,
+        "maxAbsoluteMinutes": 4,
+        "absoluteSumMinutes": 3946,
+        "meanAbsoluteMinutes": 1.801826484018265,
+        "histogram": {
+          "1": 246,
+          "2": 367,
+          "3": 117,
+          "-1": 774,
+          "-2": 324,
+          "-3": 255,
+          "-4": 107
+        }
+      },
+      "variable": {
+        "expected": 2190,
+        "compared": 2190,
+        "unavailable": 0,
+        "exact": 480,
+        "exactPercent": 21.91780821917808,
+        "withinOneMinute": 1408,
+        "withinOneMinutePercent": 64.29223744292237,
+        "minSignedMinutes": -4,
+        "maxSignedMinutes": 3,
+        "maxAbsoluteMinutes": 4,
+        "absoluteSumMinutes": 2819,
+        "meanAbsoluteMinutes": 1.2872146118721461,
+        "histogram": {
+          "0": 480,
+          "1": 322,
+          "2": 242,
+          "3": 52,
+          "-2": 259,
+          "-1": 606,
+          "-3": 183,
+          "-4": 46
+        }
+      },
+      "tablePlus120": {
+        "expected": 2190,
+        "compared": 2190,
+        "unavailable": 0,
+        "exact": 1423,
+        "exactPercent": 64.9771689497717,
+        "withinOneMinute": 1830,
+        "withinOneMinutePercent": 83.56164383561644,
+        "minSignedMinutes": -3,
+        "maxSignedMinutes": 2,
+        "maxAbsoluteMinutes": 3,
+        "absoluteSumMinutes": 1131,
+        "meanAbsoluteMinutes": 0.5164383561643836,
+        "histogram": {
+          "0": 1423,
+          "1": 389,
+          "2": 7,
+          "-2": 349,
+          "-1": 18,
+          "-3": 4
+        }
+      }
+    },
+    "paired": {
+      "fixed600": {
+        "compared": 2190,
+        "becameExact": 1423,
+        "lostExact": 0,
+        "improved": 2162,
+        "worsened": 0,
+        "unchangedAbsolute": 28
+      },
+      "variable": {
+        "compared": 2190,
+        "becameExact": 953,
+        "lostExact": 10,
+        "improved": 1438,
+        "worsened": 11,
+        "unchangedAbsolute": 741
+      }
+    }
+  },
+  "byEvent": {
+    "fajr": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 246,
+          "withinOneMinutePercent": 67.3972602739726,
+          "minSignedMinutes": 1,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 484,
+          "meanAbsoluteMinutes": 1.326027397260274,
+          "histogram": {
+            "1": 246,
+            "2": 119
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 115,
+          "exactPercent": 31.506849315068493,
+          "withinOneMinute": 322,
+          "withinOneMinutePercent": 88.21917808219177,
+          "minSignedMinutes": 0,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 293,
+          "meanAbsoluteMinutes": 0.8027397260273973,
+          "histogram": {
+            "0": 115,
+            "1": 207,
+            "2": 43
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 358,
+          "exactPercent": 98.08219178082192,
+          "withinOneMinute": 365,
+          "withinOneMinutePercent": 100,
+          "minSignedMinutes": -1,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 1,
+          "absoluteSumMinutes": 7,
+          "meanAbsoluteMinutes": 0.019178082191780823,
+          "histogram": {
+            "0": 358,
+            "1": 6,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 358,
+          "lostExact": 0,
+          "improved": 364,
+          "worsened": 0,
+          "unchangedAbsolute": 1
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 243,
+          "lostExact": 0,
+          "improved": 245,
+          "worsened": 0,
+          "unchangedAbsolute": 120
+        }
+      }
+    },
+    "sunrise": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 0,
+          "withinOneMinutePercent": 0,
+          "minSignedMinutes": 2,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 847,
+          "meanAbsoluteMinutes": 2.3205479452054796,
+          "histogram": {
+            "2": 248,
+            "3": 117
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 114,
+          "withinOneMinutePercent": 31.232876712328768,
+          "minSignedMinutes": 1,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 668,
+          "meanAbsoluteMinutes": 1.83013698630137,
+          "histogram": {
+            "1": 114,
+            "2": 199,
+            "3": 52
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 2,
+          "exactPercent": 0.547945205479452,
+          "withinOneMinute": 358,
+          "withinOneMinutePercent": 98.08219178082192,
+          "minSignedMinutes": 0,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 370,
+          "meanAbsoluteMinutes": 1.0136986301369864,
+          "histogram": {
+            "0": 2,
+            "1": 356,
+            "2": 7
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 2,
+          "lostExact": 0,
+          "improved": 365,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 2,
+          "lostExact": 0,
+          "improved": 247,
+          "worsened": 1,
+          "unchangedAbsolute": 117
+        }
+      }
+    },
+    "dhuhr": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 259,
+          "withinOneMinutePercent": 70.95890410958904,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": -1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 471,
+          "meanAbsoluteMinutes": 1.2904109589041095,
+          "histogram": {
+            "-1": 259,
+            "-2": 106
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 117,
+          "exactPercent": 32.054794520547944,
+          "withinOneMinute": 325,
+          "withinOneMinutePercent": 89.04109589041096,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 0,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 288,
+          "meanAbsoluteMinutes": 0.7890410958904109,
+          "histogram": {
+            "0": 117,
+            "-1": 208,
+            "-2": 40
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 355,
+          "exactPercent": 97.26027397260275,
+          "withinOneMinute": 365,
+          "withinOneMinutePercent": 100,
+          "minSignedMinutes": -1,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 1,
+          "absoluteSumMinutes": 10,
+          "meanAbsoluteMinutes": 0.0273972602739726,
+          "histogram": {
+            "0": 355,
+            "1": 8,
+            "-1": 2
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 355,
+          "lostExact": 0,
+          "improved": 357,
+          "worsened": 0,
+          "unchangedAbsolute": 8
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 241,
+          "lostExact": 3,
+          "improved": 243,
+          "worsened": 3,
+          "unchangedAbsolute": 119
+        }
+      }
+    },
+    "asr": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 256,
+          "withinOneMinutePercent": 70.13698630136986,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": -1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 474,
+          "meanAbsoluteMinutes": 1.2986301369863014,
+          "histogram": {
+            "-2": 109,
+            "-1": 256
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 121,
+          "exactPercent": 33.15068493150685,
+          "withinOneMinute": 323,
+          "withinOneMinutePercent": 88.4931506849315,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 0,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 286,
+          "meanAbsoluteMinutes": 0.7835616438356164,
+          "histogram": {
+            "0": 121,
+            "-1": 202,
+            "-2": 42
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 357,
+          "exactPercent": 97.8082191780822,
+          "withinOneMinute": 365,
+          "withinOneMinutePercent": 100,
+          "minSignedMinutes": -1,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 1,
+          "absoluteSumMinutes": 8,
+          "meanAbsoluteMinutes": 0.021917808219178082,
+          "histogram": {
+            "0": 357,
+            "1": 6,
+            "-1": 2
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 357,
+          "lostExact": 0,
+          "improved": 359,
+          "worsened": 0,
+          "unchangedAbsolute": 6
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 238,
+          "lostExact": 2,
+          "improved": 239,
+          "worsened": 2,
+          "unchangedAbsolute": 124
+        }
+      }
+    },
+    "maghrib": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 0,
+          "withinOneMinutePercent": 0,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": -2,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 1199,
+          "meanAbsoluteMinutes": 3.2849315068493152,
+          "histogram": {
+            "-3": 255,
+            "-4": 107,
+            "-2": 3
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 3,
+          "withinOneMinutePercent": 0.821917808219178,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": -1,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 1002,
+          "meanAbsoluteMinutes": 2.745205479452055,
+          "histogram": {
+            "-2": 133,
+            "-3": 183,
+            "-4": 46,
+            "-1": 3
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 12,
+          "withinOneMinutePercent": 3.287671232876712,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": -1,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 722,
+          "meanAbsoluteMinutes": 1.978082191780822,
+          "histogram": {
+            "-2": 349,
+            "-1": 12,
+            "-3": 4
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 0,
+          "lostExact": 0,
+          "improved": 365,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 0,
+          "lostExact": 0,
+          "improved": 234,
+          "worsened": 0,
+          "unchangedAbsolute": 131
+        }
+      }
+    },
+    "isha": {
+      "models": {
+        "fixed600": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 259,
+          "withinOneMinutePercent": 70.95890410958904,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": -1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 471,
+          "meanAbsoluteMinutes": 1.2904109589041095,
+          "histogram": {
+            "-1": 259,
+            "-2": 106
+          }
+        },
+        "variable": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 127,
+          "exactPercent": 34.794520547945204,
+          "withinOneMinute": 321,
+          "withinOneMinutePercent": 87.94520547945206,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 282,
+          "meanAbsoluteMinutes": 0.7726027397260274,
+          "histogram": {
+            "0": 127,
+            "1": 1,
+            "-1": 193,
+            "-2": 44
+          }
+        },
+        "tablePlus120": {
+          "expected": 365,
+          "compared": 365,
+          "unavailable": 0,
+          "exact": 351,
+          "exactPercent": 96.16438356164383,
+          "withinOneMinute": 365,
+          "withinOneMinutePercent": 100,
+          "minSignedMinutes": -1,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 1,
+          "absoluteSumMinutes": 14,
+          "meanAbsoluteMinutes": 0.038356164383561646,
+          "histogram": {
+            "0": 351,
+            "1": 13,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 365,
+          "becameExact": 351,
+          "lostExact": 0,
+          "improved": 352,
+          "worsened": 0,
+          "unchangedAbsolute": 13
+        },
+        "variable": {
+          "compared": 365,
+          "becameExact": 229,
+          "lostExact": 5,
+          "improved": 230,
+          "worsened": 5,
+          "unchangedAbsolute": 130
+        }
+      }
+    }
+  },
+  "byMonth": {
+    "2026-01": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 82,
+          "withinOneMinutePercent": 44.086021505376344,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 334,
+          "meanAbsoluteMinutes": 1.7956989247311828,
+          "histogram": {
+            "1": 21,
+            "2": 33,
+            "3": 8,
+            "-1": 61,
+            "-2": 32,
+            "-3": 26,
+            "-4": 5
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 72,
+          "exactPercent": 38.70967741935484,
+          "withinOneMinute": 141,
+          "withinOneMinutePercent": 75.80645161290323,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 170,
+          "meanAbsoluteMinutes": 0.9139784946236559,
+          "histogram": {
+            "0": 72,
+            "1": 30,
+            "2": 14,
+            "-2": 20,
+            "-1": 39,
+            "-3": 11
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 120,
+          "exactPercent": 64.51612903225806,
+          "withinOneMinute": 155,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 97,
+          "meanAbsoluteMinutes": 0.521505376344086,
+          "histogram": {
+            "0": 120,
+            "1": 35,
+            "-2": 31
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 120,
+          "lostExact": 0,
+          "improved": 183,
+          "worsened": 0,
+          "unchangedAbsolute": 3
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 51,
+          "lostExact": 3,
+          "improved": 76,
+          "worsened": 3,
+          "unchangedAbsolute": 107
+        }
+      }
+    },
+    "2026-02": {
+      "models": {
+        "fixed600": {
+          "expected": 168,
+          "compared": 168,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 86,
+          "withinOneMinutePercent": 51.19047619047619,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 298,
+          "meanAbsoluteMinutes": 1.7738095238095237,
+          "histogram": {
+            "1": 15,
+            "2": 29,
+            "3": 12,
+            "-1": 71,
+            "-3": 20,
+            "-4": 8,
+            "-2": 13
+          }
+        },
+        "variable": {
+          "expected": 168,
+          "compared": 168,
+          "unavailable": 0,
+          "exact": 5,
+          "exactPercent": 2.9761904761904763,
+          "withinOneMinute": 103,
+          "withinOneMinutePercent": 61.30952380952381,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 263,
+          "meanAbsoluteMinutes": 1.5654761904761905,
+          "histogram": {
+            "0": 5,
+            "1": 25,
+            "2": 26,
+            "3": 5,
+            "-1": 73,
+            "-2": 7,
+            "-3": 24,
+            "-4": 3
+          }
+        },
+        "tablePlus120": {
+          "expected": 168,
+          "compared": 168,
+          "unavailable": 0,
+          "exact": 101,
+          "exactPercent": 60.11904761904762,
+          "withinOneMinute": 139,
+          "withinOneMinutePercent": 82.73809523809524,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 96,
+          "meanAbsoluteMinutes": 0.5714285714285714,
+          "histogram": {
+            "0": 101,
+            "1": 38,
+            "2": 1,
+            "-2": 28
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 168,
+          "becameExact": 101,
+          "lostExact": 0,
+          "improved": 159,
+          "worsened": 0,
+          "unchangedAbsolute": 9
+        },
+        "variable": {
+          "compared": 168,
+          "becameExact": 99,
+          "lostExact": 3,
+          "improved": 155,
+          "worsened": 3,
+          "unchangedAbsolute": 10
+        }
+      }
+    },
+    "2026-03": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 86,
+          "withinOneMinutePercent": 46.236559139784944,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 336,
+          "meanAbsoluteMinutes": 1.8064516129032258,
+          "histogram": {
+            "1": 23,
+            "2": 29,
+            "3": 10,
+            "-2": 30,
+            "-4": 9,
+            "-1": 63,
+            "-3": 22
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 75,
+          "withinOneMinutePercent": 40.32258064516129,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 355,
+          "meanAbsoluteMinutes": 1.9086021505376345,
+          "histogram": {
+            "1": 19,
+            "2": 27,
+            "3": 16,
+            "-2": 37,
+            "-4": 11,
+            "-1": 56,
+            "-3": 20
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 122,
+          "exactPercent": 65.59139784946237,
+          "withinOneMinute": 155,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 95,
+          "meanAbsoluteMinutes": 0.510752688172043,
+          "histogram": {
+            "0": 122,
+            "1": 33,
+            "-2": 31
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 122,
+          "lostExact": 0,
+          "improved": 184,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 122,
+          "lostExact": 0,
+          "improved": 184,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        }
+      }
+    },
+    "2026-04": {
+      "models": {
+        "fixed600": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 86,
+          "withinOneMinutePercent": 47.77777777777778,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 324,
+          "meanAbsoluteMinutes": 1.8,
+          "histogram": {
+            "1": 21,
+            "2": 29,
+            "3": 10,
+            "-1": 65,
+            "-4": 10,
+            "-2": 25,
+            "-3": 20
+          }
+        },
+        "variable": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 104,
+          "withinOneMinutePercent": 57.77777777777778,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 300,
+          "meanAbsoluteMinutes": 1.6666666666666667,
+          "histogram": {
+            "1": 26,
+            "2": 26,
+            "3": 8,
+            "-1": 78,
+            "-2": 12,
+            "-4": 6,
+            "-3": 24
+          }
+        },
+        "tablePlus120": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 115,
+          "exactPercent": 63.888888888888886,
+          "withinOneMinute": 151,
+          "withinOneMinutePercent": 83.88888888888889,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 94,
+          "meanAbsoluteMinutes": 0.5222222222222223,
+          "histogram": {
+            "0": 115,
+            "1": 35,
+            "-2": 29,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 180,
+          "becameExact": 115,
+          "lostExact": 0,
+          "improved": 175,
+          "worsened": 0,
+          "unchangedAbsolute": 5
+        },
+        "variable": {
+          "compared": 180,
+          "becameExact": 115,
+          "lostExact": 0,
+          "improved": 175,
+          "worsened": 0,
+          "unchangedAbsolute": 5
+        }
+      }
+    },
+    "2026-05": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 81,
+          "withinOneMinutePercent": 43.54838709677419,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 334,
+          "meanAbsoluteMinutes": 1.7956989247311828,
+          "histogram": {
+            "1": 18,
+            "2": 35,
+            "3": 9,
+            "-1": 63,
+            "-3": 28,
+            "-2": 30,
+            "-4": 3
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 59,
+          "exactPercent": 31.72043010752688,
+          "withinOneMinute": 134,
+          "withinOneMinutePercent": 72.04301075268818,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 186,
+          "meanAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 59,
+            "1": 26,
+            "2": 21,
+            "-1": 49,
+            "-3": 7,
+            "-2": 24
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 120,
+          "exactPercent": 64.51612903225806,
+          "withinOneMinute": 155,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 97,
+          "meanAbsoluteMinutes": 0.521505376344086,
+          "histogram": {
+            "0": 120,
+            "1": 34,
+            "2": 1,
+            "-2": 30,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 120,
+          "lostExact": 0,
+          "improved": 183,
+          "worsened": 0,
+          "unchangedAbsolute": 3
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 64,
+          "lostExact": 3,
+          "improved": 92,
+          "worsened": 3,
+          "unchangedAbsolute": 91
+        }
+      }
+    },
+    "2026-06": {
+      "models": {
+        "fixed600": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 84,
+          "withinOneMinutePercent": 46.666666666666664,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 327,
+          "meanAbsoluteMinutes": 1.8166666666666667,
+          "histogram": {
+            "1": 23,
+            "2": 25,
+            "3": 12,
+            "-1": 61,
+            "-3": 21,
+            "-4": 9,
+            "-2": 29
+          }
+        },
+        "variable": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 114,
+          "exactPercent": 63.333333333333336,
+          "withinOneMinute": 150,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 96,
+          "meanAbsoluteMinutes": 0.5333333333333333,
+          "histogram": {
+            "0": 114,
+            "1": 32,
+            "-2": 30,
+            "-1": 4
+          }
+        },
+        "tablePlus120": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 118,
+          "exactPercent": 65.55555555555556,
+          "withinOneMinute": 149,
+          "withinOneMinutePercent": 82.77777777777777,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 93,
+          "meanAbsoluteMinutes": 0.5166666666666667,
+          "histogram": {
+            "0": 118,
+            "1": 31,
+            "2": 1,
+            "-2": 30
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 180,
+          "becameExact": 118,
+          "lostExact": 0,
+          "improved": 178,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        },
+        "variable": {
+          "compared": 180,
+          "becameExact": 5,
+          "lostExact": 1,
+          "improved": 5,
+          "worsened": 2,
+          "unchangedAbsolute": 173
+        }
+      }
+    },
+    "2026-07": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 90,
+          "withinOneMinutePercent": 48.38709677419355,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 332,
+          "meanAbsoluteMinutes": 1.7849462365591398,
+          "histogram": {
+            "1": 22,
+            "2": 29,
+            "3": 11,
+            "-1": 68,
+            "-2": 25,
+            "-3": 23,
+            "-4": 8
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 82,
+          "exactPercent": 44.086021505376344,
+          "withinOneMinute": 146,
+          "withinOneMinutePercent": 78.49462365591398,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 155,
+          "meanAbsoluteMinutes": 0.8333333333333334,
+          "histogram": {
+            "0": 82,
+            "1": 32,
+            "2": 9,
+            "-2": 20,
+            "-1": 32,
+            "-3": 11
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 124,
+          "exactPercent": 66.66666666666667,
+          "withinOneMinute": 156,
+          "withinOneMinutePercent": 83.87096774193549,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 92,
+          "meanAbsoluteMinutes": 0.4946236559139785,
+          "histogram": {
+            "0": 124,
+            "1": 31,
+            "-2": 30,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 124,
+          "lostExact": 0,
+          "improved": 186,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 42,
+          "lostExact": 0,
+          "improved": 63,
+          "worsened": 0,
+          "unchangedAbsolute": 123
+        }
+      }
+    },
+    "2026-08": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 82,
+          "withinOneMinutePercent": 44.086021505376344,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 337,
+          "meanAbsoluteMinutes": 1.8118279569892473,
+          "histogram": {
+            "1": 22,
+            "2": 36,
+            "3": 4,
+            "-2": 33,
+            "-4": 12,
+            "-1": 60,
+            "-3": 19
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 10,
+          "exactPercent": 5.376344086021505,
+          "withinOneMinute": 113,
+          "withinOneMinutePercent": 60.75268817204301,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 277,
+          "meanAbsoluteMinutes": 1.489247311827957,
+          "histogram": {
+            "0": 10,
+            "1": 26,
+            "2": 33,
+            "-1": 77,
+            "-3": 26,
+            "-2": 13,
+            "-4": 1
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 123,
+          "exactPercent": 66.12903225806451,
+          "withinOneMinute": 156,
+          "withinOneMinutePercent": 83.87096774193549,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 93,
+          "meanAbsoluteMinutes": 0.5,
+          "histogram": {
+            "0": 123,
+            "1": 31,
+            "-2": 30,
+            "-1": 2
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 123,
+          "lostExact": 0,
+          "improved": 186,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 113,
+          "lostExact": 0,
+          "improved": 172,
+          "worsened": 0,
+          "unchangedAbsolute": 14
+        }
+      }
+    },
+    "2026-09": {
+      "models": {
+        "fixed600": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 85,
+          "withinOneMinutePercent": 47.22222222222222,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 332,
+          "meanAbsoluteMinutes": 1.8444444444444446,
+          "histogram": {
+            "1": 20,
+            "2": 21,
+            "3": 19,
+            "-1": 65,
+            "-4": 8,
+            "-3": 22,
+            "-2": 25
+          }
+        },
+        "variable": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 77,
+          "withinOneMinutePercent": 42.77777777777778,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 344,
+          "meanAbsoluteMinutes": 1.9111111111111112,
+          "histogram": {
+            "1": 18,
+            "2": 23,
+            "3": 19,
+            "-1": 59,
+            "-4": 12,
+            "-3": 18,
+            "-2": 31
+          }
+        },
+        "tablePlus120": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 117,
+          "exactPercent": 65,
+          "withinOneMinute": 152,
+          "withinOneMinutePercent": 84.44444444444444,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 91,
+          "meanAbsoluteMinutes": 0.5055555555555555,
+          "histogram": {
+            "0": 117,
+            "1": 33,
+            "-2": 28,
+            "-1": 2
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 180,
+          "becameExact": 117,
+          "lostExact": 0,
+          "improved": 178,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        },
+        "variable": {
+          "compared": 180,
+          "becameExact": 117,
+          "lostExact": 0,
+          "improved": 178,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        }
+      }
+    },
+    "2026-10": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 83,
+          "withinOneMinutePercent": 44.623655913978496,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 338,
+          "meanAbsoluteMinutes": 1.8172043010752688,
+          "histogram": {
+            "1": 22,
+            "2": 34,
+            "3": 6,
+            "-1": 61,
+            "-2": 32,
+            "-3": 19,
+            "-4": 12
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 83,
+          "withinOneMinutePercent": 44.623655913978496,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 337,
+          "meanAbsoluteMinutes": 1.8118279569892473,
+          "histogram": {
+            "1": 21,
+            "2": 37,
+            "3": 4,
+            "-1": 62,
+            "-2": 31,
+            "-3": 18,
+            "-4": 13
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 120,
+          "exactPercent": 64.51612903225806,
+          "withinOneMinute": 155,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 101,
+          "meanAbsoluteMinutes": 0.543010752688172,
+          "histogram": {
+            "0": 120,
+            "1": 31,
+            "-2": 27,
+            "-3": 4,
+            "-1": 4
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 120,
+          "lostExact": 0,
+          "improved": 184,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 120,
+          "lostExact": 0,
+          "improved": 184,
+          "worsened": 0,
+          "unchangedAbsolute": 2
+        }
+      }
+    },
+    "2026-11": {
+      "models": {
+        "fixed600": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 82,
+          "withinOneMinutePercent": 45.55555555555556,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 330,
+          "meanAbsoluteMinutes": 1.8333333333333333,
+          "histogram": {
+            "1": 16,
+            "2": 38,
+            "3": 6,
+            "-1": 66,
+            "-4": 16,
+            "-3": 14,
+            "-2": 24
+          }
+        },
+        "variable": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 32,
+          "exactPercent": 17.77777777777778,
+          "withinOneMinute": 132,
+          "withinOneMinutePercent": 73.33333333333333,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 218,
+          "meanAbsoluteMinutes": 1.211111111111111,
+          "histogram": {
+            "0": 32,
+            "1": 38,
+            "2": 18,
+            "-1": 62,
+            "-3": 22,
+            "-2": 8
+          }
+        },
+        "tablePlus120": {
+          "expected": 180,
+          "compared": 180,
+          "unavailable": 0,
+          "exact": 120,
+          "exactPercent": 66.66666666666667,
+          "withinOneMinute": 150,
+          "withinOneMinutePercent": 83.33333333333333,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 1,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 90,
+          "meanAbsoluteMinutes": 0.5,
+          "histogram": {
+            "0": 120,
+            "1": 29,
+            "-2": 30,
+            "-1": 1
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 180,
+          "becameExact": 120,
+          "lostExact": 0,
+          "improved": 180,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 180,
+          "becameExact": 88,
+          "lostExact": 0,
+          "improved": 128,
+          "worsened": 0,
+          "unchangedAbsolute": 52
+        }
+      }
+    },
+    "2026-12": {
+      "models": {
+        "fixed600": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 0,
+          "exactPercent": 0,
+          "withinOneMinute": 93,
+          "withinOneMinutePercent": 50,
+          "minSignedMinutes": -4,
+          "maxSignedMinutes": 3,
+          "maxAbsoluteMinutes": 4,
+          "absoluteSumMinutes": 324,
+          "meanAbsoluteMinutes": 1.7419354838709677,
+          "histogram": {
+            "1": 23,
+            "2": 29,
+            "3": 10,
+            "-1": 70,
+            "-4": 7,
+            "-2": 26,
+            "-3": 21
+          }
+        },
+        "variable": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 106,
+          "exactPercent": 56.98924731182796,
+          "withinOneMinute": 150,
+          "withinOneMinutePercent": 80.64516129032258,
+          "minSignedMinutes": -3,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 3,
+          "absoluteSumMinutes": 118,
+          "meanAbsoluteMinutes": 0.6344086021505376,
+          "histogram": {
+            "0": 106,
+            "1": 29,
+            "2": 8,
+            "-3": 2,
+            "-1": 15,
+            "-2": 26
+          }
+        },
+        "tablePlus120": {
+          "expected": 186,
+          "compared": 186,
+          "unavailable": 0,
+          "exact": 123,
+          "exactPercent": 66.12903225806451,
+          "withinOneMinute": 157,
+          "withinOneMinutePercent": 84.40860215053763,
+          "minSignedMinutes": -2,
+          "maxSignedMinutes": 2,
+          "maxAbsoluteMinutes": 2,
+          "absoluteSumMinutes": 92,
+          "meanAbsoluteMinutes": 0.4946236559139785,
+          "histogram": {
+            "0": 123,
+            "1": 28,
+            "2": 4,
+            "-2": 25,
+            "-1": 6
+          }
+        }
+      },
+      "paired": {
+        "fixed600": {
+          "compared": 186,
+          "becameExact": 123,
+          "lostExact": 0,
+          "improved": 186,
+          "worsened": 0,
+          "unchangedAbsolute": 0
+        },
+        "variable": {
+          "compared": 186,
+          "becameExact": 17,
+          "lostExact": 0,
+          "improved": 26,
+          "worsened": 0,
+          "unchangedAbsolute": 160
+        }
+      }
+    }
+  },
+  "baselineCompleteParityDays": 365,
+  "previousVariableCompleteParityDays": 365,
+  "official": false,
+  "productionReady": false,
+  "notificationEligible": false,
+  "decision": "Diagnostic only. Existing common-horizon exclusions remain. No official recipe or transferable geographic accuracy identified.",
+  "schemaVersion": 1,
+  "publicDefaultUnchanged": true,
+  "exposure": "All365Istanbul2026days already exposed; one candidate frozen before this retrospective evaluation. No fresh accuracy or geographic transfer claim.",
+  "verification": {
+    "passed": true,
+    "originalSourceCellsIndependentlyParsed": 2190,
+    "candidateEpochsIndependentlyRecomputed": 2190,
+    "summaryGroupsRecounted": 19,
+    "freezePinsPreserved": 18,
+    "minimumRoundingBoundaryDistanceSeconds": 0.038244140625000256,
+    "tableCellsAndInterpolationVerified": true,
+    "full365DaysRetained": true,
+    "everyMonthAbsoluteErrorSumImprovesVsBothBaselines": true,
+    "limitation": "Independent arithmetic/source parsing, not independent solar ephemeris or confirmed production semantics."
+  },
+  "futureAvailability": {
+    "forecastFrozenAtUtc": "2026-09-25T14:04:50.327Z",
+    "expectedSlotsPerModel": 2190,
+    "comparedSlots": 0,
+    "unacquiredSlots": 2190,
+    "searchQueries": 1,
+    "pagesOpened": 0,
+    "newCalendarRequests": 0,
+    "newCalendarValuesObserved": 0,
+    "decision": "No normally advertised qualifying2027source discovered in this bounded lookup; no yearparameter guessing or othercityheight assumption. No fresh validation claimed.",
+    "limitation": "This negative bounded search is not proof that no future calendar exists anywhere."
+  },
+  "privateEvidence": [
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/PLAN.md",
+      "sha256": "4ada7b99c9371d66b78e433f5bf456e4227ceeede536cffb693ea7f271ec1585",
+      "bytes": 3416,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/candidate.mjs",
+      "sha256": "625cce8e5c69cc23bb0d76f7ad9c2d57ca80db6fc774b7015f82abd252e89df2",
+      "bytes": 1924,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/forecast.json",
+      "sha256": "0312c4031d664f38ea43925a3525a59c18b38836daada5da774608447a5cd63e",
+      "bytes": 7819802,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/freeze.json",
+      "sha256": "dd39475ba441f836eae4f41a9310baa12099a96ea00fdd7faf1f55d3e1af9724",
+      "bytes": 2456,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/evaluate.mjs",
+      "sha256": "f61c56130e3466ae7e1c66487bd42d5838067c0affdbac2c36dc975d7abd53f8",
+      "bytes": 7115,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/report.json",
+      "sha256": "bfddb7ee2b6bc863a48ebadee5d1e4ccaa8ebb6fae25ac097d2c01bc1908fa09",
+      "bytes": 1022265,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/verify.py",
+      "sha256": "94a4e521b83e0d19d53d68211adb48d1e15f9cd0cc49460ef35bc98bf067ebb2",
+      "bytes": 6624,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/verification.json",
+      "sha256": "e7767734027b3070ad69bb22208c0a1d2241428a4f940dc20789c6c42f085bd6",
+      "bytes": 1458,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/future-availability/PLAN.md",
+      "sha256": "4d3e5d7c61a9944439fbf204a460cd0eedd6d205a265adecd9ee6064f7ae4eb5",
+      "bytes": 1651,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/future-availability/freeze.json",
+      "sha256": "a6ebcb3312a30e1094c603fc2233d0a884e63879b28e9ce885ceb88e50f8e737",
+      "bytes": 2838,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/future-availability/outcome.json",
+      "sha256": "10431daa0fd107de8b0b5994a0516971e5772645efa173e98488ccf94ef31fe8",
+      "bytes": 917,
+      "distribution": "Private provenance artifact; original calendars and forecast rows are not bundled."
+    },
+    {
+      "identifier": "research/turkiye-takvimi/sources/prayer-calculation-tr.pdf",
+      "sha256": "59b2624cdb73356c60c96ff9102b945c97e396e4be61a07e32ef6a523d1a05a1",
+      "bytes": 1592351,
+      "distribution": "Private primary-source archive, not bundled."
+    },
+    {
+      "identifier": "research/turkiye-takvimi/sources/prayer-calculation-tr.txt",
+      "sha256": "6233a7ff8b51384ef4a65d3bfda6eaf64b17bea9091b67fb1c1d864b13b8041b",
+      "bytes": 157903,
+      "distribution": "Private primary-source archive, not bundled."
+    },
+    {
+      "identifier": "research/turkiye-takvimi/sources/temkin-explanation.txt",
+      "sha256": "b307cef92dc799212628e393cfdabde00bc19831258c2d2afd137bfd94526b79",
+      "bytes": 27074,
+      "distribution": "Private primary-source archive, not bundled."
+    },
+    {
+      "identifier": "research/method-priority-2026-09-25/turkiye/sources/temkin-table.html",
+      "sha256": "21fcfb020a71489e54356c40825c78be84d4ac5102248f6ef8adedc1706711de",
+      "bytes": 148859,
+      "distribution": "Private primary-source archive, not bundled."
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25b/source-review.md",
+      "sha256": "409e64160c3a1652b55ad8a718c7511e92fcb5d9e6cf2dae7e70ed54ebf441aa",
+      "bytes": 1342,
+      "distribution": "Private independent source review; no original calendar bundled."
+    }
+  ]
+}

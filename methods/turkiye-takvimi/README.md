@@ -88,6 +88,8 @@ A later [shared-horizon feasibility diagnostic](COMMON-HORIZON.md) allows arbitr
 
 An [exhaustive event-specific rounding follow-up](ROUNDING-POLICIES.md) then tests all **729** globally fixed nearest/floor/ceil policies. None satisfies every known day in that relaxed family; each retains at least three exclusions. The closest cases include two fragile sub-1.3-second discrepancies and a December 17 shared-horizon separation of about 0.109°. No rounding policy or daily correction is selected, and the exported clocks remain unchanged.
 
+A later [conditional table-plus-caution interpretation](TABLE-COMPONENT.md) raises known Istanbul 2026 agreement to **1,423/2,190 exact and 1,830 within one minute**, with a three-minute maximum. It derives one common 679.16-second value from the published table and historical 267 m example, then applies the separately stated caution. None of the fixed-ten-minute baseline's values worsens, but eleven worsen against the earlier variable experiment. Table caution inclusion and current production height remain unconfirmed, sunrise/Maghrib mismatches persist, and no fresh validation was obtained. This is a separate private diagnostic; the public default stays unchanged.
+
 ## Sources
 
 - [Primary calculation book](https://namazvakti.com/documents/tr.1.pdf)
