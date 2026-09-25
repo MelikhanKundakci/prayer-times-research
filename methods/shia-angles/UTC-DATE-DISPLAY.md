@@ -47,6 +47,16 @@ A separate conditional check attaches each source clock to the model-assigned lo
 
 The display candidate cannot fix these conditional UTC differences: it preserves the baseline instants exactly. Neither a high table-match percentage nor this diagnostic authorizes notifications.
 
+## Additional 2024 interface spot checks
+
+After the eleven-calendar evaluation, I generated 2024 annual tables through the live ARC interface for New York and Kiritimati. This is a retrospective same-publisher spot check, not an independent confirmation of ARC's timezone contract. The interface footer reports the selected map coordinates; its annual table contains Gregorian row dates and local clock columns, but no event UTC timestamps or event-specific dates.
+
+On New York's 10 March and 3 November 2024 transition rows, the ordinary event-time-IANA labels differ from ARC by 59–60 minutes across all twelve checked cells. The already-declared UTC-date display hypothesis yields eleven exact clocks and one within one minute; the unchanged baseline has none exact on these two rows. The source itself does not say whether this is a timezone-label convention or a publication defect, and these are the same publisher and the same already-known transition pattern.
+
+The Kiritimati table includes Thursday 29 February 2024 and Tuesday 31 December 2024. On the leap-day row, four of six markers are exact and two differ by one minute; the candidate is identical to baseline. On 31 December, all six match exactly and the candidate is again identical. Those model instants naturally fall on the previous UTC date for some events because Kiritimati is UTC+14; the table supplies local clocks and a Gregorian row date, not absolute timestamps. These checks show no demonstrated leap-year or date-line publication defect.
+
+The detailed selected-cell transcript and replay are private. [Public aggregate and provenance](research/arc-2024-spot-check-2026-09-25.json) retain only counts and evidence hashes. The 2024 samples do not change the disposition: keep the display rule unconfirmed and label-only; do not change runtime calculations or notification eligibility.
+
 ## Decision and next step
 
 Keep the successful rule as an **unconfirmed source-display hypothesis**. Do not use it as a local notification rule or promote it into the default model. The existing compatibility result retains `notificationEligible: false` and actual event-time IANA formatting.

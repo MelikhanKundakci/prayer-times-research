@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "methodId": "shia-angles",
+  "source": "https://arabic.nojumi.org/prayertimes",
+  "retrievedAt": "2026-09-25",
+  "scope": "Four selected rows from ARC 2024 annual tables: New York DST start and end, Kiritimati leap day and year end. Same publisher, retrospective check; not a full-year holdout or event-time contract confirmation.",
+  "events": ["fajr", "sunrise", "dhuhr", "sunset", "maghrib", "midnight"],
+  "candidate": "Preserve model UTC instant; display with IANA offset at Gregorian row-date 00:00 UTC. Label-only diagnostic; no runtime change.",
+  "results": {
+    "newYork2024March10": {
+      "fields": 6,
+      "baselineExact": 0,
+      "candidateExact": 6,
+      "candidateWithinOneMinute": 6,
+      "baselineDeltaMinutes": [60, 60, 60, 60, 60, 60],
+      "candidateDeltaMinutes": [0, 0, 0, 0, 0, 0]
+    },
+    "newYork2024November3": {
+      "fields": 6,
+      "baselineExact": 0,
+      "candidateExact": 5,
+      "candidateWithinOneMinute": 6,
+      "baselineDeltaMinutes": [-60, -60, -60, -60, -60, -59],
+      "candidateDeltaMinutes": [0, 0, 0, 0, 0, 1]
+    },
+    "kiritimati2024February29": {
+      "fields": 6,
+      "baselineExact": 4,
+      "candidateExact": 4,
+      "candidateWithinOneMinute": 6,
+      "baselineDeltaMinutes": [0, 0, 0, 1, 0, 1],
+      "candidateDeltaMinutes": [0, 0, 0, 1, 0, 1]
+    },
+    "kiritimati2024December31": {
+      "fields": 6,
+      "baselineExact": 6,
+      "candidateExact": 6,
+      "candidateWithinOneMinute": 6,
+      "baselineDeltaMinutes": [0, 0, 0, 0, 0, 0],
+      "candidateDeltaMinutes": [0, 0, 0, 0, 0, 0]
+    }
+  },
+  "sourceContractConfirmed": false,
+  "utcInstantsChanged": false,
+  "notificationsEligible": false,
+  "redistribution": "Raw selected clock cells and live-page records remain private. Counts and residual arrays only.",
+  "privateEvidence": {
+    "path": "research/arc-followup-2026-09-25c/spot-checks-private.json",
+    "sha256": "736b34f295e8f0f6928c919659f0c1e5f4510e4c3dca56efd6000eff5967cbfd"
+  }
+}
