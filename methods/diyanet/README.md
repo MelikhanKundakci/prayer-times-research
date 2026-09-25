@@ -30,6 +30,8 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 
 The uniform entry is [`calculate(options)`](index.mjs). **Default:** north-missing-window (annual); this is an explicit experimental default, not automatic religious or latitude-based method selection.
 
+The default includes an additive [chronology quality check](NOTIFICATION-READINESS.md). It flags raw or rounded reversed event order while preserving every timestamp. This closes a reporting gap around polar-night Asr; it does not change the calculation recipe or enable notifications.
+
 Public options.variant selects north-missing-window, north-reviewed, north-baseline, low-latitude or south. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
 
 ### Fully local calculation
@@ -46,7 +48,7 @@ The underlying signatures remain method-specific. These links point to the code 
 |---|---|
 | `north-reviewed` | [`calculateNorthernReviewed`](implementation/north/quality-model.mjs) |
 | `north-baseline` | [`calculateNorthernCalendar`](implementation/north/model.mjs) |
-| `north-missing-window` | [`calculateMissingWindowCalendar`](implementation/missing-window/model.mjs) |
+| `north-missing-window` | [`calculateMissingWindowReviewed`](implementation/missing-window/quality-model.mjs); unchanged native [`calculateMissingWindowCalendar`](implementation/missing-window/model.mjs) remains separately exported |
 | `low-latitude` | [`calculateDay`](implementation/low-latitude/model.mjs) |
 | `south` | [`calculateDay`](implementation/south/candidate.mjs) |
 
@@ -55,7 +57,7 @@ The underlying signatures remain method-specific. These links point to the code 
 - **low-latitude own USNO UTC00:** `calculateDay(input), calculateYear(input)`. Input: date or year, latitude, longitude, timeZone. Limits: 2000–2099; 0≤latitude<44.5; explicit IANA zone; one solar transit must match the requested civil day.
 - **southern own USNO UTC00:** `calculateDay(input), calculateYear(input)`. Input: date or year, latitude, longitude, timeZone. Limits: 2000–2099; −60≤latitude<0; explicit IANA zone; no northern seasonal rule mirrored south.
 - **reviewed northern V5:** `calculateNorthernReviewed(options)`. Input: year, latitude, longitude, timeZone. Limits: 2001–2098; 44.5≤latitude≤75; complete civil year needed for seasonal state.
-- **missing-window experiment; not an automatic replacement for reviewed V5:** `calculateMissingWindowCalendar(options)`. Input: year, latitude, longitude, timeZone. Limits: Same northern mathematical domain; unsupported seasonal/civil cases remain explicit.
+- **missing-window experiment; not an automatic replacement for reviewed V5:** `calculateMissingWindowReviewed(options)` adds quality flags to the unchanged native `calculateMissingWindowCalendar(options)`. Input: year, latitude, longitude, timeZone. Limits: Same northern mathematical domain; unsupported seasonal/civil cases remain explicit.
 
 A supported input range is a mathematical contract, not a statement that every location/year in it has been institutionally validated. Check event status, reason and date as well as the clock.
 
@@ -66,7 +68,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 - Low-latitude/southern routes use own USNO declination/equation of time at the selected solar carrier’s UTC00, Fajr −18°, Isha −17°, horizon −50′, shadow factor 1 and nearest UTC minute.
 - The corresponding minute adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0. Published Temkin evidence is kept separate from inferred ephemeris/rounding details.
 - Northern routes instead use the high-latitude 18°/16° criteria, the 44.5° boundary, five-hour minimum day/night, a ratio anchored at the last real Fajr day and transitions around ±20-minute differences. The implementation’s exact season construction and ≥60° solstice envelope remain reconstructions.
-- The missing-window experiment retains the same ratio anchor, but bounds the estimated seasonal phase by the first and last missing-Fajr calendar days rather than including the adjacent real-angle days. It does not add the separate inner-angle, moving-ephemeris or Asr-ordering experiments.
+- The missing-window experiment retains the same ratio anchor, but bounds the estimated seasonal phase by the first and last missing-Fajr calendar days rather than including the adjacent real-angle days. It does not add the separate inner-angle, moving-ephemeris or time-correcting Asr-ordering experiments. The default's quality adapter flags existing reversals without changing times.
 
 ## Special rules and unresolved semantics
 

@@ -96,7 +96,13 @@ test('Geographic and seasonal publication matrix retains all 163 rendered result
   assert.equal(matrix.cases, matrix.checks.length);
   for (const row of matrix.checks) {
     const family = row.id.split('/')[0];
-    const result = (await loadMethod(family)).calculate(row.input);
+    const method = await loadMethod(family);
+    // This historical matrix predates additive ordering flags on missing-window.
+    // Preserve its frozen native-output check; the dedicated quality suite checks
+    // the current default's unchanged instants and intentionally added flags.
+    const {variant, ...nativeInput} = row.input;
+    const result = family === 'diyanet' && variant === 'north-missing-window'
+      ? method.calculateMissingWindowCalendar(nativeInput) : method.calculate(row.input);
     const projection = renderedProjection(result);
     assert.equal(projection.length, row.renderedFields, row.id);
     assert.equal(createHash('sha256').update(JSON.stringify(projection)).digest('hex'), row.renderedSha256,

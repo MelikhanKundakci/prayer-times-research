@@ -15,7 +15,7 @@
   "output": {
     "profile": {
       "id": "diyanet-north-missing-window-usno00-diagnostic",
-      "version": "0.1.0-research",
+      "version": "0.1.1-quality-review",
       "official": false,
       "parameters": {
         "fajrAngle": 18,
@@ -33,7 +33,8 @@
         "extremeLatitudePolicy": "unconfirmed inherited reconstruction",
         "seasonalVariant": "missing-window"
       },
-      "selectionStatus": "One predeclared known-data hypothesis; not implied uniquely by boundary trimming or an institutional specification"
+      "selectionStatus": "One predeclared known-data hypothesis; not implied uniquely by boundary trimming or an institutional specification",
+      "frozenCalculationVersion": "0.1.0-research"
     },
     "engine": {
       "name": "independent-USNO-UTC00",
@@ -110,7 +111,8 @@
       "No inner-angle index rounding, continuous twilight or later Asr ordering correction is applied.",
       "A consistent interior after boundary trimming does not identify true institutional endpoint dates.",
       "Institutional production coordinates, source event dates and quantization remain unconfirmed.",
-      "No source-selected corrections, new original acquisition, API promotion or automatic notifications."
+      "No source-selected corrections, new original acquisition, API promotion or automatic notifications.",
+      "An ordering check cannot establish institutional accuracy or notification readiness; unchanged times with reversed order are explicitly flagged."
     ],
     "days": [
       {
@@ -560,6 +562,17 @@
       "ratioDayChanged": false,
       "otherFourEventObjectsChanged": false,
       "automaticPromotion": false
+    },
+    "qualityReview": {
+      "version": "0.1.1",
+      "unchangedEventInstants": true,
+      "checkedPairs": 1825,
+      "unavailablePairs": 0,
+      "affectedDays": 0,
+      "rawOrderingExceptions": 0,
+      "roundedOrderingExceptions": 0,
+      "scope": "Adjacent events within each returned solar-day row; not a cross-year or source-date certification.",
+      "policy": "Preserve research values and flag reversals; equality is allowed and no replacement time is inferred."
     },
     "preview": true,
     "totalDays": 365,
