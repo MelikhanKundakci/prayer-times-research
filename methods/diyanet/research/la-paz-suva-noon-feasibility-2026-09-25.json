@@ -29,6 +29,7 @@
       "maximumLowerBoundOpen": -68.15249584524068,
       "minimumUpperBoundClosed": -68.15413971527649,
       "exactFixedLongitudeFeasible": false,
+      "maximumRetrospectiveExactNoons": 364,
       "separationOfConstraintsSeconds": 0.3945288085935772,
       "activeLowerDate": "2027-03-26",
       "activeUpperDate": "2027-09-11"
@@ -53,6 +54,7 @@
       "maximumLowerBoundOpen": 178.43094866109115,
       "minimumUpperBoundClosed": 178.4292042142731,
       "exactFixedLongitudeFeasible": false,
+      "maximumRetrospectiveExactNoons": 364,
       "separationOfConstraintsSeconds": 0.418667236328929,
       "activeLowerDate": "2027-04-15",
       "activeUpperDate": "2027-09-30"

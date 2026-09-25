@@ -13,7 +13,7 @@ For a fixed row and carrier, adjusted raw noon time changes by **−240 seconds 
 | La Paz 2027 | −68.152495845° from 26 March | −68.154139715° from 11 September | 0.395 seconds |
 | Suva 2027 | +178.430948661° from 15 April | +178.429204214° from 30 September | 0.419 seconds |
 
-The lower bound exceeds the upper bound in both cases, so the fixed-longitude intersection is empty. The distances in the last column are separations between incompatible rounding constraints, **not** observed prayer-time errors, uncertainty intervals or instructions to add seconds. The two witness dates alone suffice to show the contradiction under this model.
+The lower bound exceeds the upper bound in both cases, so the fixed-longitude intersection is empty. The distances in the last column are separations between incompatible rounding constraints, **not** observed prayer-time errors, uncertainty intervals or instructions to add seconds. The two witness dates alone suffice to show the contradiction under this model. A sweep over all interval endpoints finds that the maximum retrospective fixed-longitude Dhuhr agreement is **364/365** in each city. These fitted longitudes are diagnostic and are not proposed as production points; the result underscores how small the incompatibility is.
 
 An independent Python calculation read the original Excel files with a second spreadsheet reader, resolved the printed noons using the named timezones, and reproduced both witness dates and positive gaps (0.394529 and 0.418667 seconds). The public aggregate retains full-precision bounds; original rows and the working script remain in private research.
 
