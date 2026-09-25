@@ -8,7 +8,7 @@ const root = new URL('../', import.meta.url);
 const file = relative => fileURLToPath(new URL(relative, root));
 const read = relative => JSON.parse(readFileSync(file(relative), 'utf8'));
 
-test('Every Diyanet variant computes offline without reference tables or external libraries', () => {
+test('The five original Diyanet variants compute offline without reference tables or external libraries', () => {
   const cases = read('tests/cases.json').cases.filter(c => c.family === 'diyanet');
   const snapshots = read('tests/model-snapshots.json').cases;
   assert.equal(cases.length, 5);

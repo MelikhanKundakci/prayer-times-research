@@ -8,11 +8,19 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart 2027](HOBART-2027.md), [Apia 2027 across the Pacific civil-time boundary](APIA-2027.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All five city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.
 
+The [exact coordinate-feasibility study](FEASIBLE-COORDINATES.md) goes beyond finding a best-fit point: under the unchanged UTC00 model, only three of nine paired 2026–2027 city calendars admit one fixed Dhuhr longitude. Berlin and Stockholm cannot satisfy tested noon, sunrise and Maghrib minutes jointly anywhere in their declared ±0.25° coordinate boxes. This rejects a **point-only exact fix under that recipe**; it does not identify Diyanet's actual points or prove the institution's astronomy wrong.
+
+The [northern source-only Isha date audit](EVENT-DATE-SEMANTICS.md) finds one conditional evening-to-next-dawn placement for all 10,556 complete nonzero Isha nights across 29 already known annuals, including 150 following-date placements. The publisher's row/date contract and nine `00:00` cells remain unresolved; those conditional instants are not alarm approval.
+
 The [second offline refinement study](RESEARCH-ROUND-2.md) raises retrospective Berlin/Stockholm agreement from **3,862 to 4,257 of 4,380 minutes** using fixed diagnostic points inferred from a separate year's observations. These are not verified institutional coordinates. Five seasonal hypotheses and two solar coefficient alternatives were rejected. The calculation defaults remain unchanged; a new [offline point-consistency tool](diagnostics/README.md) makes the diagnostic available to contributors.
 
 A [global Asr geometry diagnostic](GLOBAL-ASR-GEOMETRY.md) tested a fixed-noon-shadow continuous crossing across 47 known annuals. It reduced some polar ordering reversals but substantially worsened clock agreement, so it was rejected without changing the public calculations.
 
 A [global numerical alternatives study](GLOBAL-NUMERICS.md) rejected floor, ceiling, NOAA UTC00 and local-mean-midnight epochs across 50 already known annuals. It also checks that moving integer-minute Temkin before or after final rounding cannot resolve the residuals.
+
+An [audit of Diyanet's public intermediate examples](INTERMEDIATE-VALUES.md) found documented coordinates, seven-minute displayed horizon adjustments and one dated observational Isha example, but no identified production point with second-level solar intermediates or complete current ephemeris trace. Those sources do not justify another global numerical default.
+
+The [civil-row ephemeris study](CIVIL-EPHEMERIS-DATE.md) introduces an opt-in, fully local compatibility hypothesis for low-latitude and southern daily calculations. It samples solar declination and the equation of time at UTC00 of the requested civil calendar date while keeping the solar transit anchored to its existing UTC carrier; the transit clock itself can change. Across 51 already known city-years, only Apia changes: **1,519 → 2,112/2,190** exact displayed minutes, with all fields within one minute. In the separately frozen, previously unseen Nuku'alofa 2027 transfer, exact matches rise **1,299 → 2,174/2,190**, again with all fields within one minute. Six Tonga values that were exact become one-minute misses; the full comparison and source limitations are in the study. This is not a documented Diyanet production rule, a verified institutional point, or a notification-safety claim.
 
 ## Run the selected example
 
@@ -38,13 +46,13 @@ The uniform entry is [`calculate(options)`](index.mjs). **Default:** north-missi
 
 The default includes an additive [chronology quality check](NOTIFICATION-READINESS.md). It flags raw or rounded reversed event order while preserving every timestamp. This closes a reporting gap around polar-night Asr; it does not change the calculation recipe or enable notifications.
 
-Public options.variant selects north-missing-window, north-reviewed, north-baseline, low-latitude or south. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
+Public options.variant selects north-missing-window, north-reviewed, north-baseline, low-latitude, south, low-latitude-civil-row or south-civil-row. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
 
 ### Fully local calculation
 
 The Diyanet entry calculates from the supplied date/year, latitude, longitude and IANA timezone. It needs no API key, remote request, downloaded prayer calendar or third-party prayer-time library. Timezone rules are bundled locally. Source calendars are used only by separate research comparisons.
 
-The [offline regression test](../../tests/diyanet-offline.test.mjs) runs all five exported variants in a subprocess that denies network access and file access to calendar examples, test snapshots and `node_modules`. It reproduces the stored results under two host timezones. This verifies the local execution contract; matching an institution still depends on its actual calculation point and complete rules.
+The [offline regression test](../../tests/diyanet-offline.test.mjs) runs the five original variants in a subprocess that denies network access and file access to calendar examples, test snapshots and `node_modules`. The [civil-row tests](../../tests/diyanet-civil-ephemeris.test.mjs) independently check the two new opt-in variants and their offline behavior. Results are reproduced under two host timezones. This verifies the local execution contract; matching an institution still depends on its actual calculation point and complete rules.
 
 ### Runnable implementations
 
@@ -57,11 +65,14 @@ The underlying signatures remain method-specific. These links point to the code 
 | `north-missing-window` | [`calculateMissingWindowReviewed`](implementation/missing-window/quality-model.mjs); unchanged native [`calculateMissingWindowCalendar`](implementation/missing-window/model.mjs) remains separately exported |
 | `low-latitude` | [`calculateDay`](implementation/low-latitude/model.mjs) |
 | `south` | [`calculateDay`](implementation/south/candidate.mjs) |
+| `low-latitude-civil-row` | [`calculateLowLatitudeDay`](implementation/civil-ephemeris/candidate.mjs) |
+| `south-civil-row` | [`calculateSouthDay`](implementation/civil-ephemeris/candidate.mjs) |
 
 ### Inputs and boundaries
 
 - **low-latitude own USNO UTC00:** `calculateDay(input), calculateYear(input)`. Input: date or year, latitude, longitude, timeZone. Limits: 2000–2099; 0≤latitude<44.5; explicit IANA zone; one solar transit must match the requested civil day.
 - **southern own USNO UTC00:** `calculateDay(input), calculateYear(input)`. Input: date or year, latitude, longitude, timeZone. Limits: 2000–2099; −60≤latitude<0; explicit IANA zone; no northern seasonal rule mirrored south.
+- **opt-in civil-row daily variants:** `calculateLowLatitudeDay/Year(input)` and `calculateSouthDay/Year(input)` in the civil-row candidate module use the same four location/date or location/year inputs and geographic limits as their original routes. They retain separate UTC carrier dates and actual IANA event dates. Existing defaults are unchanged.
 - **reviewed northern V5:** `calculateNorthernReviewed(options)`. Input: year, latitude, longitude, timeZone. Limits: 2001–2098; 44.5≤latitude≤75; complete civil year needed for seasonal state.
 - **missing-window experiment; not an automatic replacement for reviewed V5:** `calculateMissingWindowReviewed(options)` adds quality flags to the unchanged native `calculateMissingWindowCalendar(options)`. Input: year, latitude, longitude, timeZone. Limits: Same northern mathematical domain; unsupported seasonal/civil cases remain explicit.
 
@@ -72,6 +83,7 @@ A supported input range is a mathematical contract, not a statement that every l
 For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.
 
 - Low-latitude/southern routes use own USNO declination/equation of time at the selected solar carrier’s UTC00, Fajr −18°, Isha −17°, horizon −50′, shadow factor 1 and nearest UTC minute.
+- The opt-in civil-row routes differ only when that solar carrier's UTC date differs from the requested civil date. They sample the daily USNO coordinates on the civil date; the UTC carrier, timezone, angles, minute adjustments and rounding procedure otherwise stay on the original route. The equation-of-time change can shift the transit instant.
 - The corresponding minute adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0. Published Temkin evidence is kept separate from inferred ephemeris/rounding details.
 - Northern routes instead use the high-latitude 18°/16° criteria, the 44.5° boundary, five-hour minimum day/night, a ratio anchored at the last real Fajr day and transitions around ±20-minute differences. The implementation’s exact season construction and ≥60° solstice envelope remain reconstructions.
 - The missing-window experiment retains the same ratio anchor, but bounds the estimated seasonal phase by the first and last missing-Fajr calendar days rather than including the adjacent real-angle days. It does not add the separate inner-angle, moving-ephemeris or time-correcting Asr-ordering experiments. The default's quality adapter flags existing reversals without changing times.
