@@ -1,0 +1,1972 @@
+{
+  "study": "Offline shared annual Dhuhr correction inferred on 2026 and retrospectively transferred to 2027",
+  "sourceAcquisition": false,
+  "runtimeChanged": false,
+  "exposure": "Retrospective split of already exposed archive",
+  "preflightExclusion": "Istanbul paired proxy changed between archived years; excluded under the declared same-point rule before fitting. Its 2027 proxy remains in geographic check.",
+  "manifest": {
+    "createdUtc": "2026-09-25T19:18:05.568Z",
+    "exposure": "Retrospective split of already exposed archive",
+    "pairedCities": [
+      "adana",
+      "berlin",
+      "bodo",
+      "cape-town",
+      "helsinki",
+      "kiruna",
+      "oulu",
+      "reykjavik",
+      "stockholm",
+      "tromso",
+      "trondheim",
+      "ushuaia"
+    ],
+    "counts": {
+      "train": 4380,
+      "test": 4380,
+      "geographic": 8760
+    },
+    "maxRawDisagreementMs": 0,
+    "inputs": [
+      {
+        "path": "research/diyanet-global-numerics-2026-09-25/catalog.json",
+        "sha256": "3b68f1429b4f7963b97bfd164b74eae3ff714db2dff195bab79a3c31ee07c409"
+      },
+      {
+        "path": "research/diyanet-global-numerics-2026-09-25/forecast.json",
+        "sha256": "afc706f4ba8b91e087af7da5594dfcf54b990d968c7737bb652157a8eabe8c8b"
+      },
+      {
+        "path": "research/diyanet-global-numerics-2026-09-25/references.json",
+        "sha256": "0168d8346e26f613205409ceb09b4dcc8a6df95d44363d1262b0c73bb9eea4b3"
+      }
+    ],
+    "planSha256": "5da7b5ee647832b284e4c0b268d89307a5d53779c02e3b14429728a82471a3ad",
+    "outputs": [
+      {
+        "file": "train.json",
+        "sha256": "faddfddda57044abe76864adaded06e81353ff82ea976bc017354207efff7b43"
+      },
+      {
+        "file": "test.json",
+        "sha256": "a39364f7dbe76e59051ec0a6d5b93c6ba836db649ec60d935d3e8c3f3e985c91"
+      },
+      {
+        "file": "geographic.json",
+        "sha256": "d5c91c6bffdc4b0b652edf5c1c3bfaaf2aab49240347641705a27130fda4fc87"
+      }
+    ]
+  },
+  "candidate": {
+    "sha256": "c0bee134cb3d9725b4efdf68c03f3a98de598756b866fbf16ee862d99cb8d263",
+    "frozenUtc": "2026-09-25T19:19:01.006231+00:00",
+    "study": "Retrospective 2026-only shared two-term Dhuhr shape fit",
+    "trainingObservations": 4380,
+    "cities": [
+      "adana",
+      "berlin",
+      "bodo",
+      "cape-town",
+      "helsinki",
+      "kiruna",
+      "oulu",
+      "reykjavik",
+      "stockholm",
+      "tromso",
+      "trondheim",
+      "ushuaia"
+    ],
+    "correctionSeconds": "cityNuisance + a*sin(USNO mean anomaly) + b*cos(USNO mean anomaly)",
+    "coefficients": {
+      "sin": -0.39880300108380506,
+      "cos": -0.1244568093546361
+    },
+    "cityNuisanceSeconds": {
+      "adana": 0.2849000090660496,
+      "berlin": 7.40590611986012,
+      "bodo": -0.43653370955301796,
+      "cape-town": -4.183882621651591,
+      "helsinki": -0.13531698199155784,
+      "kiruna": -0.5734715968932207,
+      "oulu": -18.524804607219224,
+      "reykjavik": -1.2757745145322659,
+      "stockholm": 6.107205561303871,
+      "tromso": 1.0504397735890976,
+      "trondheim": -4.4733122560390015,
+      "ushuaia": 2.196416416446006
+    },
+    "baselineCityNuisanceSeconds": {
+      "adana": 0.3120758056640618,
+      "berlin": 7.360994873046877,
+      "bodo": -0.2719997558593761,
+      "cape-town": -4.083863037109374,
+      "helsinki": 0.03170983886718659,
+      "kiruna": -0.7044116210937492,
+      "oulu": -18.544734741210938,
+      "reykjavik": -1.2323236083984366,
+      "stockholm": 6.03535546875,
+      "tromso": 1.2931195068359358,
+      "trondheim": -4.011036987304687,
+      "ushuaia": 2.3634432373046863
+    },
+    "objectiveMaximumResidualSeconds": 29.916539629912904,
+    "simplexIterations": 35,
+    "minimumFinalReducedCost": -2.015873084703512e-15,
+    "bounds": {
+      "coefficients": [
+        -5,
+        5
+      ],
+      "cityNuisance": [
+        -60,
+        60
+      ]
+    },
+    "inputHashes": {
+      "train.json": "faddfddda57044abe76864adaded06e81353ff82ea976bc017354207efff7b43",
+      "PLAN.md": "5da7b5ee647832b284e4c0b268d89307a5d53779c02e3b14429728a82471a3ad",
+      "fit.py": "9b725135c4d16cea9d791a3041e339bdb982fcca9101dae42c9ec5e1ebc9078a"
+    },
+    "limitations": [
+      "No 2027 source row loaded by fitter",
+      "All archived years previously exposed; split is retrospective",
+      "City nuisance is not an identified production point or runtime city preset",
+      "Only noon trained; no six-event replacement"
+    ],
+    "amplitudeSeconds": 0.4177718648595016
+  },
+  "results": {
+    "train": {
+      "summary": {
+        "proxy": {
+          "observations": 4380,
+          "exact": 4118,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 0,
+          "losses": 0
+        },
+        "cityOnly": {
+          "observations": 4380,
+          "exact": 4370,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 257,
+          "losses": 5
+        },
+        "sharedAndCity": {
+          "observations": 4380,
+          "exact": 4380,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 0,
+          "signedMinimumMinutes": 0,
+          "signedMaximumMinutes": 0,
+          "pairedAgainst": "cityOnly",
+          "gains": 10,
+          "losses": 0
+        },
+        "sharedOnly": {
+          "observations": 4380,
+          "exact": 4118,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 9,
+          "losses": 9
+        }
+      },
+      "cities": {
+        "berlin": {
+          "proxy": {
+            "observations": 365,
+            "exact": 327,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 38,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 326,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 2
+          }
+        },
+        "stockholm": {
+          "proxy": {
+            "observations": 365,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 30,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "helsinki": {
+          "proxy": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "tromso": {
+          "proxy": {
+            "observations": 365,
+            "exact": 356,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 9,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 355,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "bodo": {
+          "proxy": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "kiruna": {
+          "proxy": {
+            "observations": 365,
+            "exact": 361,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 4,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 361,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "reykjavik": {
+          "proxy": {
+            "observations": 365,
+            "exact": 359,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 5,
+            "losses": 1
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "trondheim": {
+          "proxy": {
+            "observations": 365,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 21,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 343,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "oulu": {
+          "proxy": {
+            "observations": 365,
+            "exact": 255,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 109,
+            "losses": 2
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 3,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 255,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "adana": {
+          "proxy": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 4,
+            "losses": 1
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 3,
+            "losses": 0
+          }
+        },
+        "cape-town": {
+          "proxy": {
+            "observations": 365,
+            "exact": 337,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 26,
+            "losses": 1
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 3,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 337,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "ushuaia": {
+          "proxy": {
+            "observations": 365,
+            "exact": 354,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 11,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 354,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        }
+      }
+    },
+    "test": {
+      "summary": {
+        "proxy": {
+          "observations": 4380,
+          "exact": 4116,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 0,
+          "losses": 0
+        },
+        "cityOnly": {
+          "observations": 4380,
+          "exact": 4358,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 256,
+          "losses": 14
+        },
+        "sharedAndCity": {
+          "observations": 4380,
+          "exact": 4366,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "cityOnly",
+          "gains": 18,
+          "losses": 10
+        },
+        "sharedOnly": {
+          "observations": 4380,
+          "exact": 4115,
+          "withinOneMinute": 4380,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 9,
+          "losses": 10
+        }
+      },
+      "cities": {
+        "berlin": {
+          "proxy": {
+            "observations": 365,
+            "exact": 328,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 37,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 328,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "stockholm": {
+          "proxy": {
+            "observations": 365,
+            "exact": 330,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 34,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 1,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 331,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 2,
+            "losses": 1
+          }
+        },
+        "helsinki": {
+          "proxy": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 1
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 361,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 2
+          }
+        },
+        "tromso": {
+          "proxy": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 5,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 1
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "bodo": {
+          "proxy": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 2
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 2
+          }
+        },
+        "kiruna": {
+          "proxy": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 3,
+            "losses": 2
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "reykjavik": {
+          "proxy": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 358,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 2,
+            "losses": 6
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 4,
+            "losses": 2
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 2,
+            "losses": 0
+          }
+        },
+        "trondheim": {
+          "proxy": {
+            "observations": 365,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 20,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 360,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 1,
+            "losses": 5
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 345,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "oulu": {
+          "proxy": {
+            "observations": 365,
+            "exact": 248,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 115,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 2,
+            "losses": 1
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 250,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 2,
+            "losses": 0
+          }
+        },
+        "adana": {
+          "proxy": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "cape-town": {
+          "proxy": {
+            "observations": 365,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 29,
+            "losses": 1
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "cityOnly",
+            "gains": 1,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 332,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 3
+          }
+        },
+        "ushuaia": {
+          "proxy": {
+            "observations": 365,
+            "exact": 355,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "cityOnly": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 10,
+            "losses": 3
+          },
+          "sharedAndCity": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "cityOnly",
+            "gains": 3,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 355,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        }
+      }
+    },
+    "geographic": {
+      "summary": {
+        "proxy": {
+          "observations": 8760,
+          "exact": 7806,
+          "withinOneMinute": 8760,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 0,
+          "losses": 0
+        },
+        "sharedOnly": {
+          "observations": 8760,
+          "exact": 7799,
+          "withinOneMinute": 8760,
+          "maximumAbsoluteMinutes": 1,
+          "signedMinimumMinutes": -1,
+          "signedMaximumMinutes": 1,
+          "pairedAgainst": "proxy",
+          "gains": 14,
+          "losses": 21
+        }
+      },
+      "cities": {
+        "frankfurt": {
+          "proxy": {
+            "observations": 365,
+            "exact": 315,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 314,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "oslo": {
+          "proxy": {
+            "observations": 365,
+            "exact": 251,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 251,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "zagreb": {
+          "proxy": {
+            "observations": 365,
+            "exact": 327,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 327,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "kuopio": {
+          "proxy": {
+            "observations": 365,
+            "exact": 291,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 290,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "narvik": {
+          "proxy": {
+            "observations": 365,
+            "exact": 172,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 171,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "kirkenes": {
+          "proxy": {
+            "observations": 365,
+            "exact": 343,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 342,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 2
+          }
+        },
+        "vienna": {
+          "proxy": {
+            "observations": 365,
+            "exact": 322,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 321,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 2
+          }
+        },
+        "bremen": {
+          "proxy": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        },
+        "bergen": {
+          "proxy": {
+            "observations": 365,
+            "exact": 343,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "rovaniemi": {
+          "proxy": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "istanbul": {
+          "proxy": {
+            "observations": 365,
+            "exact": 348,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 349,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "izmir": {
+          "proxy": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 361,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 2
+          }
+        },
+        "van": {
+          "proxy": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "ankara": {
+          "proxy": {
+            "observations": 365,
+            "exact": 356,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 357,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "karaman": {
+          "proxy": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "tekirdag": {
+          "proxy": {
+            "observations": 365,
+            "exact": 365,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 0,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 364,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "hatay": {
+          "proxy": {
+            "observations": 365,
+            "exact": 361,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 363,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 2,
+            "losses": 0
+          }
+        },
+        "mexico-city": {
+          "proxy": {
+            "observations": 365,
+            "exact": 336,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 336,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "new-delhi": {
+          "proxy": {
+            "observations": 365,
+            "exact": 251,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 248,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 3
+          }
+        },
+        "sydney": {
+          "proxy": {
+            "observations": 365,
+            "exact": 346,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 347,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 0
+          }
+        },
+        "punta-arenas": {
+          "proxy": {
+            "observations": 365,
+            "exact": 331,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 329,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 2
+          }
+        },
+        "tokyo": {
+          "proxy": {
+            "observations": 365,
+            "exact": 225,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 225,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 1,
+            "losses": 1
+          }
+        },
+        "nairobi": {
+          "proxy": {
+            "observations": 365,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 343,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": -1,
+            "signedMaximumMinutes": 0,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 1
+          }
+        },
+        "anchorage": {
+          "proxy": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          },
+          "sharedOnly": {
+            "observations": 365,
+            "exact": 362,
+            "withinOneMinute": 365,
+            "maximumAbsoluteMinutes": 1,
+            "signedMinimumMinutes": 0,
+            "signedMaximumMinutes": 1,
+            "pairedAgainst": "proxy",
+            "gains": 0,
+            "losses": 0
+          }
+        }
+      }
+    }
+  },
+  "verification": {
+    "verifiedUtc": "2026-09-25T19:21:44.947845+00:00",
+    "candidateSha256": "c0bee134cb3d9725b4efdf68c03f3a98de598756b866fbf16ee862d99cb8d263",
+    "verifiedVariantDecisions": 52560,
+    "maximumIndependentRawDisagreementMilliseconds": 0.000244140625,
+    "maximumIndependentBasisDifference": 2.8144153674247718e-14,
+    "allCohortAndCityScoresEqual": true,
+    "optimalityCertificate": {
+      "primalMaximumSeconds": 29.916539629913025,
+      "dualLowerBoundSeconds": 29.91653962991295,
+      "gapSeconds": 7.460698725481052e-14,
+      "minimumWeight": -4.688919764909525e-17,
+      "maximumStationarityResidual": 2.4147350785597155e-15,
+      "activeConstraints": 16
+    },
+    "verifierSha256": "6febc3df1d4278c2e36896497eb020268894e05172483fd842cde73ed0df8b55"
+  },
+  "limitations": [
+    "This fitted annual harmonic is a compatibility hypothesis, not an identified Diyanet solar equation",
+    "City nuisance coefficients are source-derived diagnostic shifts, not verified production points or deployable presets",
+    "One training minimax solution is frozen; nuisance intercepts need not be unique",
+    "Shared-only correction regresses original-proxy accuracy, so no general replacement is supported",
+    "Only Dhuhr tested; all other event rules and notification eligibility unchanged"
+  ]
+}

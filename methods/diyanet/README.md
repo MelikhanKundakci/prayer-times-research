@@ -6,6 +6,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
 
+A new [fully offline inverse study](SHARED-NOON-INVERSE.md) learns two shared annual noon coefficients and fixed diagnostic city intercepts from 2026 alone. It matches all 4,380 fitting noons and 4,366/4,380 of the same cities' 2027 noons. The common correction alone regresses at the original proxies; fitted intercepts are not production coordinates, and this retrospective result changes no runtime default.
+
 A [prospectively frozen Kathmandu 2027 full-year check](KATHMANDU-2027.md) tests the unchanged low-latitude recipe in a UTC+05:45 zone at an independent city proxy: 2,017/2,190 exact printed minutes, with all others one minute earlier than Diyanet. This does not establish its hidden production point or release eligibility.
 
 [La Paz and Suva 2027](LA-PAZ-SUVA-2027.md) add two prospective southern full-year city-proxy controls: 1,936/2,190 and 1,657/2,190 exact, with all other displayed minutes one minute earlier. Suva was preselected as a possible civil-row transfer test, but the frozen source-free forecast had `C=D` all year, so both variants are identical; no transfer claim is made.
