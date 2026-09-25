@@ -1,0 +1,47 @@
+{
+  "frozenAtUtc": "2026-09-25T16:15:21.632Z",
+  "forecastSha256": "a9f680e159f3ac1c3e50efa16c68fd28c1eb6a02cc30d2c243a49dfb80d81ce6",
+  "plannedCityDays": 84,
+  "plannedFields": 504,
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "pointsSource": "research/uae/v3-diagnostics/points.json",
+  "sourceExposure": "No February 2027 Awqaf prayer row or visitor download was requested before this freeze.",
+  "files": [
+    {
+      "path": "research/uae/v3-diagnostics/points.json",
+      "sha256": "31bfb02f01716e2c0c5ce91421fc162ab7b23619bfc0ede72d4ece030b2e4d6b"
+    },
+    {
+      "path": "research/uae-own-ray-feb2027/PLAN.md",
+      "sha256": "85b4c10d8e502b584d5ccbdfef221eafc0fdae8351674baed187af052c059931"
+    },
+    {
+      "path": "research/uae-own-ray-feb2027/freeze.mjs",
+      "sha256": "56740a74cdeeeefcb8e8104d0bf58b465ad23660410f16f7d649586050d026ca"
+    },
+    {
+      "path": "public/prayer-times-research/methods/uae-awqaf/implementation/api.mjs",
+      "sha256": "27022c49051b5daa5dc61fd4052e4d6e97341539d44a928457b36f00e00137d7"
+    },
+    {
+      "path": "public/prayer-times-research/methods/uae-awqaf/implementation/candidate.mjs",
+      "sha256": "e4211b79bac47e0d40ac789b699a540d4b0a899d80c7f28eaa906da72aaa3a5d"
+    },
+    {
+      "path": "public/prayer-times-research/methods/uae-awqaf/implementation/own-ray/candidate.mjs",
+      "sha256": "83adf13d39bf54e56537e8691d3166df75619d3f9bc203849d00ae63750f4116"
+    },
+    {
+      "path": "public/prayer-times-research/methods/uae-awqaf/implementation/own-ray/refraction.mjs",
+      "sha256": "72fc4d45e3ca0542785e3584434103a6a5ff73508c5deffad899c94ff2ea641f"
+    },
+    {
+      "path": "public/prayer-times-research/core/astronomy/solar-usno-v2.mjs",
+      "sha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc"
+    }
+  ]
+}
