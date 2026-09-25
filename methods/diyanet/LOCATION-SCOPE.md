@@ -10,6 +10,14 @@ The official [2020–2025 calendar activity report](https://kurul.diyanet.gov.tr
 
 The documents do not publish a complete production-coordinate table or an operational global rule for choosing the city, distance limit, administrative boundary, coordinate precision or fallback. The airline/ocean work does not establish a universal grid to apply to all users. Six older published Turkish example coordinates remain useful explanatory inputs, not a confirmed current production catalogue.
 
+## What the public location interface maps
+
+The inspected Diyanet visitor script does not send a user's GPS coordinates to a local point catalogue. It reverse-geocodes the position into country, first-level administrative area and second-level area names, then asks Diyanet's `/home/GetDestinationUrl` route for a destination. The response supplies an `IlceId` and URL, and the browser opens that named calendar page. The location dropdown follows a country → `SehirID` → `IlceID` hierarchy. In the captured Berlin response, the district record contains names, an ID and a URL, but no latitude or longitude. Here `Ilce` describes the site's selectable page identity; this evidence does not specify the geometry or extent of a district boundary.
+
+This is evidence of a server-side **GPS-to-calendar-page assignment** in that visitor flow, not a published GPS-to-production-coordinate rule. The inspected public code and files contain no offline boundary polygons, point table or global fallback policy from which to reproduce the assignment locally. An offline list of city names and IDs can identify calendars, but cannot by itself locate their calculation points. In the separate Awqat flow, coordinate parameters are accepted, but the bounded Berlin probe maps two inputs 0.1° apart to the same city ID and identical calendar rows; it likewise does not identify the internal point or establish behavior elsewhere.
+
+The existing validation profiles reinforce this distinction: e.g. Istanbul `9541`, Izmir `9560`, Van `9930` and Stockholm `14351` have calendar identities, while their recorded latitudes and longitudes are explicitly independent city/station proxies, not known Diyanet calculation coordinates. The Berlin `11002` and Apia `16182` examples likewise establish calendar identities, but their identity records do not establish production coordinates. These profiles are useful for reproducible named-calendar comparisons; they are not a local authority map for arbitrary GPS positions. Private source captures, acquisition records and the verification script are retained under `research/diyanet-production-points/` in the working repository.
+
 ## A bounded, measured example
 
 An earlier public location-contract probe fixed these two inputs before acquisition:
