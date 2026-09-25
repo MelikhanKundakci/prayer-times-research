@@ -112,6 +112,8 @@
       "denominator": "finite, unambiguous comparable slots; expected slots also retained",
       "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
       "caveats": [
+        "The frozen KDH03 2026 development comparison also stays within ±1 minute (1,599/2,190 exact); this is in-sample development, not fresh validation.",
+        "The 2025 holdout is the same zone, not a test of transfer to other zones.",
         "Not confirmation that R19 is an official current KDH03 calculation point."
       ],
       "evidenceIdentifier": "research/jakim-multipoint/map-candidate/holdout-report.json"

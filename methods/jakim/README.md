@@ -116,6 +116,8 @@ These are archived research comparisons, **not results of the public snapshot te
 - The full 2024calendar has 2196 cells; only 2020 were unexposed.
 - Do not combine overlapping variant tests into one overall accuracy rate.
 
+For KDH03, the 75 two-minute differences in the 2026 table-points comparison are all sunrise values, with the model two minutes later than e-Solat. A separately frozen map-plus-R19 hypothesis reduces the 2026 development comparison to a maximum one-minute difference (1,599/2,190 exact; all within ±1 minute). On the complete 2025 e-Solat year acquired after that freeze, it also stays within ±1 minute (1,577/2,190 exact). The 2025 calendar is a temporal holdout for the same zone, not an independent zone or a confirmation of the production point list. In the 2026 three-zone table-points comparison, PNG01 and KDH01 are entirely within ±1 minute; this does not validate untested zones or the transferred astronomical and rounding assumptions. R19 appears near the Zone 3/4 boundary on the JUPEM map but is tabulated under Zone 4; its use in KDH03 remains an optional, unconfirmed research variant. See the [full frozen investigation](../../../../research/jakim-multipoint/map-candidate/README.md).
+
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 
 ## Sources
