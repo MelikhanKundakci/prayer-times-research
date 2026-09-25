@@ -1,0 +1,807 @@
+{
+  "study": "Diyanet worldwide transfer workstream C",
+  "year": 2027,
+  "frozenAtUtc": "2026-09-25T16:59:16.963Z",
+  "forecastSha256": "339b38dd3ab8770092d6e0fbe7774788e36035955db4ea7af385ef66accb2cb0",
+  "comparisonRuntime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026a"
+  },
+  "scope": "Official annual page Excel exports compared against complete, prospectively frozen baseline and pre-existing civil-row forecast at independent named-city proxy points. Printed-date absolute IANA instants, no modulo-24 comparisons.",
+  "result": "Across these three C=D controls the candidate forecasts are identical to baseline. All 6,570 event slots resolve, have unchanged printed local event dates and differ from source by at most one minute. This does not test the candidate where C!=D and does not change any method default.",
+  "cities": {
+    "Jakarta": {
+      "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/12726/jakarta-icin-namaz-vakti",
+      "officialCityId": "12726",
+      "annualRows": 365,
+      "sourceXlsxSha256": "4c6ecf3b1fcca2cf70a7177bdc08fde0c0a3f7b6f9ba476a71a17cf16df4d1b5",
+      "namedCityProxy": {
+        "latitude": -6.17797994918,
+        "longitude": 106.774887126,
+        "timeZone": "Asia/Jakarta",
+        "pointSource": "https://ungegn.un.org/dashboard/cities/details?id=122",
+        "carrierDateCounts": {
+          "same": 365,
+          "previousUtcDate": 0
+        },
+        "forecastSha256": "b8e0ecadf876f09d1f8341e2c87d624dbd12c825fd0c54263555078db267a5a4"
+      },
+      "baseline": {
+        "id": "Jakarta2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 1660,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 1660,
+            "1": 530
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 266,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 266,
+              "1": 99
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 269,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 269,
+              "1": 96
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 279,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 279,
+              "1": 86
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 279,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 279,
+              "1": 86
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 282,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 282,
+              "1": 83
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 285,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 285,
+              "1": 80
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidate": {
+        "id": "Jakarta2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 1660,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 1660,
+            "1": 530
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 266,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 266,
+              "1": 99
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 269,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 269,
+              "1": 96
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 279,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 279,
+              "1": 86
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 279,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 279,
+              "1": 86
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 282,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 282,
+              "1": 83
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 285,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 285,
+              "1": 80
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidateChanges": {
+        "forecastCells": 0,
+        "improvedAbsoluteError": 0,
+        "worsenedAbsoluteError": 0,
+        "newOverOneMinuteErrors": 0,
+        "resolvedOverOneMinuteErrors": 0,
+        "localDateMismatchCells": 0
+      },
+      "signedDeltaMinutes": {
+        "0": 1660,
+        "1": 530
+      },
+      "signedDeltaByField": {
+        "fajr": {
+          "0": 266,
+          "1": 99
+        },
+        "sunrise": {
+          "0": 269,
+          "1": 96
+        },
+        "dhuhr": {
+          "0": 279,
+          "1": 86
+        },
+        "asr": {
+          "0": 279,
+          "1": 86
+        },
+        "maghrib": {
+          "0": 282,
+          "1": 83
+        },
+        "isha": {
+          "0": 285,
+          "1": 80
+        }
+      },
+      "sourceZeroClockCount": 0
+    },
+    "Cape Town": {
+      "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/13496/cape-town-icin-namaz-vakti",
+      "officialCityId": "13496",
+      "annualRows": 365,
+      "sourceXlsxSha256": "24bbbe04b277d3c5ebcd0ab18417e4a53b36f6757afc9b3ab34e0b8eb48e4a5b",
+      "namedCityProxy": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg",
+        "pointSource": "https://ungegn.un.org/dashboard/cities/details?id=2699",
+        "carrierDateCounts": {
+          "same": 365,
+          "previousUtcDate": 0
+        },
+        "forecastSha256": "fa6773216c35347852bd6f2f863f4fd5ad5a9aa3abc57b2ea2b026065c3a44cd"
+      },
+      "baseline": {
+        "id": "CapeTown2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 2045,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 2045,
+            "1": 145
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 341,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 341,
+              "1": 24
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 349,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 349,
+              "1": 16
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 335,
+              "1": 30
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 341,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 341,
+              "1": 24
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 340,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 340,
+              "1": 25
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 339,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 339,
+              "1": 26
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidate": {
+        "id": "CapeTown2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 2045,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 2045,
+            "1": 145
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 341,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 341,
+              "1": 24
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 349,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 349,
+              "1": 16
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 335,
+              "1": 30
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 341,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 341,
+              "1": 24
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 340,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 340,
+              "1": 25
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 339,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 339,
+              "1": 26
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidateChanges": {
+        "forecastCells": 0,
+        "improvedAbsoluteError": 0,
+        "worsenedAbsoluteError": 0,
+        "newOverOneMinuteErrors": 0,
+        "resolvedOverOneMinuteErrors": 0,
+        "localDateMismatchCells": 0
+      },
+      "signedDeltaMinutes": {
+        "0": 2045,
+        "1": 145
+      },
+      "signedDeltaByField": {
+        "fajr": {
+          "0": 341,
+          "1": 24
+        },
+        "sunrise": {
+          "0": 349,
+          "1": 16
+        },
+        "dhuhr": {
+          "0": 335,
+          "1": 30
+        },
+        "asr": {
+          "0": 341,
+          "1": 24
+        },
+        "maghrib": {
+          "0": 340,
+          "1": 25
+        },
+        "isha": {
+          "0": 339,
+          "1": 26
+        }
+      },
+      "sourceZeroClockCount": 0
+    },
+    "Auckland": {
+      "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/16640/auckland-icin-namaz-vakti",
+      "officialCityId": "16640",
+      "annualRows": 365,
+      "sourceXlsxSha256": "5f8ee42948b203623aa8e163a8a591a38e248bc7eda42e5f232dfdbde167c8bf",
+      "namedCityProxy": {
+        "latitude": -36.86666667,
+        "longitude": 174.7666667,
+        "timeZone": "Pacific/Auckland",
+        "pointSource": "https://ungegn.un.org/dashboard/cities/details?id=553",
+        "carrierDateCounts": {
+          "same": 365,
+          "previousUtcDate": 0
+        },
+        "forecastSha256": "8ef7e9bfb8fb5a26a6aad19a4d18cd9f8326ddfb7420930883180fb25c37f80b"
+      },
+      "baseline": {
+        "id": "Auckland2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 2072,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 2072,
+            "1": 2,
+            "-1": 116
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 335,
+              "-1": 30
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 346,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 346,
+              "-1": 19
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 346,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 346,
+              "-1": 19
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 344,
+              "-1": 21
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 352,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 352,
+              "-1": 13
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 349,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 349,
+              "1": 2,
+              "-1": 14
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidate": {
+        "id": "Auckland2027",
+        "score": {
+          "slots": 2190,
+          "compared": 2190,
+          "notCompared": 0,
+          "exact": 2072,
+          "withinOneMinute": 2190,
+          "maxAbsoluteMinutes": 1,
+          "predictedDateDiffers": 0,
+          "histogram": {
+            "0": 2072,
+            "1": 2,
+            "-1": 116
+          },
+          "unavailable": {}
+        },
+        "byField": {
+          "fajr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 335,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 335,
+              "-1": 30
+            },
+            "unavailable": {}
+          },
+          "sunrise": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 346,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 346,
+              "-1": 19
+            },
+            "unavailable": {}
+          },
+          "dhuhr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 346,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 346,
+              "-1": 19
+            },
+            "unavailable": {}
+          },
+          "asr": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 344,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 344,
+              "-1": 21
+            },
+            "unavailable": {}
+          },
+          "maghrib": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 352,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 352,
+              "-1": 13
+            },
+            "unavailable": {}
+          },
+          "isha": {
+            "slots": 365,
+            "compared": 365,
+            "notCompared": 0,
+            "exact": 349,
+            "withinOneMinute": 365,
+            "maxAbsoluteMinutes": 1,
+            "predictedDateDiffers": 0,
+            "histogram": {
+              "0": 349,
+              "1": 2,
+              "-1": 14
+            },
+            "unavailable": {}
+          }
+        }
+      },
+      "candidateChanges": {
+        "forecastCells": 0,
+        "improvedAbsoluteError": 0,
+        "worsenedAbsoluteError": 0,
+        "newOverOneMinuteErrors": 0,
+        "resolvedOverOneMinuteErrors": 0,
+        "localDateMismatchCells": 0
+      },
+      "signedDeltaMinutes": {
+        "0": 2072,
+        "1": 2,
+        "-1": 116
+      },
+      "signedDeltaByField": {
+        "fajr": {
+          "0": 335,
+          "-1": 30
+        },
+        "sunrise": {
+          "0": 346,
+          "-1": 19
+        },
+        "dhuhr": {
+          "0": 346,
+          "-1": 19
+        },
+        "asr": {
+          "0": 344,
+          "-1": 21
+        },
+        "maghrib": {
+          "0": 352,
+          "-1": 13
+        },
+        "isha": {
+          "0": 349,
+          "1": 2,
+          "-1": 14
+        }
+      },
+      "sourceZeroClockCount": 0
+    }
+  }
+}

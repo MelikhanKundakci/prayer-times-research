@@ -22,6 +22,8 @@ An [audit of Diyanet's public intermediate examples](INTERMEDIATE-VALUES.md) fou
 
 The [civil-row ephemeris study](CIVIL-EPHEMERIS-DATE.md) introduces an opt-in, fully local compatibility hypothesis for low-latitude and southern daily calculations. It samples solar declination and the equation of time at UTC00 of the requested civil calendar date while keeping the solar transit anchored to its existing UTC carrier; the transit clock itself can change. Across 51 already known city-years, only Apia changes: **1,519 → 2,112/2,190** exact displayed minutes, with all fields within one minute. In the separately frozen, previously unseen Nuku'alofa 2027 transfer, exact matches rise **1,299 → 2,174/2,190**, again with all fields within one minute. Six Tonga values that were exact become one-minute misses; the full comparison and source limitations are in the study. This is not a documented Diyanet production rule, a verified institutional point, or a notification-safety claim.
 
+A separate [three-city 2027 worldwide control](WORLDWIDE-TRANSFER-C-2027.md) compares official annual tables for Jakarta, Cape Town and Auckland against complete frozen baseline and civil-row forecasts. The candidate is unchanged across these `C=D` controls; all events match within one minute. This does not add evidence for candidate dates where `C≠D`; a [transparent erratum](research/worldwide-transfer-erratum-2026-09-25.md) records an incorrect Auckland carrier expectation in the initial plan.
+
 ## Run the selected example
 
 Run from the repository root:
