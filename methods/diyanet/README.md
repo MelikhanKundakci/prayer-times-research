@@ -6,7 +6,9 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
-The latest [autumn identification study](AUTUMN-IDENTIFICATION.md) discovers minute-compatible segments without model labels, rejects a universal replacement Fajr factor at the current anchors, and screens 16 horizon-stage assignments. It adds reusable exact diagnostics and 14 software invariant tests; it supplies no improved forecast or new timing default.
+The subsequent [joint autumn-anchor study](JOINT-AUTUMN-ANCHORS.md) computes two adjacent-row calendars and two adaptive night/boundary interactions; all fail their replacement gates. Exact discrete and continuous diagnoses show why anchor changes alone are insufficient under the declared assumptions. No timing default changes.
+
+The preceding [autumn identification study](AUTUMN-IDENTIFICATION.md) discovers minute-compatible segments without model labels, rejects a universal replacement Fajr factor at the current anchors, and screens 16 horizon-stage assignments. It adds reusable exact diagnostics and 14 software invariant tests; it supplies no improved forecast or new timing default.
 
 The latest [northern civil-row variant](NORTH-CIVIL-ROW.md) repairs a model-only antimeridian discontinuity while preserving all 61,320 raw event objects in the 28 previously studied northern years. It is an explicit opt-in with ordering quality flags, not a new institutional accuracy claim. The [autumn endpoint study](AUTUMN-ENDPOINTS.md) separately narrows the boundary/quotient uncertainty and records two rejected daily-gap candidates.
 

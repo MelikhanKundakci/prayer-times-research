@@ -1,0 +1,5165 @@
+{
+  "createdUtc": "2026-09-25T21:38:52.496468+00:00",
+  "planSha256": "71f6da60f171d3106d2fcbfc75977dda45c8b713aac07afa9319c300febb230c",
+  "scope": "Exact continuous common-anchor displacement diagnosis on28 exposed northern city-years; no calendar forecast or fitted parameters. Root implementation after agent established elimination derivation.",
+  "formula": "q0=unchanged frozen season.ratio (exact stored binaryrational); k0=18/16 exact. N(t)=1440+R(t)\u2212S(t), Hf(t)=R(t)\u2212q0*N(t)*k0, Hi(t)=S(t)+q0*N(t). q0 andk0constant, neitherinferredfromsource norrecomputedwhen tchanges.",
+  "interpretation": "Necessarycondition only. Even compatible t doesnotidentify sourcerule, outer20minute crossing, coordinates or completecalendar. Searchdomainfinite, no extrapolation to otherdates. No percitydeployment selection.",
+  "summary": {
+    "0": {
+      "cityYears": 28,
+      "anyJointDisplacementCases": 13,
+      "baselineCompatibleEvents": 21,
+      "baselineCompatibleCityYears": 3,
+      "commonDisplacementAcrossAllCases": []
+    },
+    "1": {
+      "cityYears": 28,
+      "anyJointDisplacementCases": 16,
+      "baselineCompatibleEvents": 25,
+      "baselineCompatibleCityYears": 5,
+      "commonDisplacementAcrossAllCases": []
+    },
+    "2": {
+      "cityYears": 28,
+      "anyJointDisplacementCases": 19,
+      "baselineCompatibleEvents": 29,
+      "baselineCompatibleCityYears": 7,
+      "commonDisplacementAcrossAllCases": []
+    }
+  },
+  "cases": [
+    {
+      "id": "berlin-2026",
+      "baselineAnchorDate": "2026-07-25",
+      "baselineAnchorIndex": 205,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1734071761566870481681536569414",
+                  "denominator": "2782022169211194411173593789891",
+                  "approximate": 0.6233134231487967
+                },
+                "upper": {
+                  "numerator": "4305124635132642514220669711965",
+                  "denominator": "4124309425537997793563835653644",
+                  "approximate": 1.0438413297690579
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-489123155979679973178639336435",
+                  "denominator": "258671769351735516391169438651",
+                  "approximate": -1.8909027344015354
+                },
+                "upper": {
+                  "numerator": "-62009168899667443492926610305",
+                  "denominator": "354942128842978965463154942341",
+                  "approximate": -0.17470219469805276
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1734071761566870481681536569414",
+                  "denominator": "2782022169211194411173593789891",
+                  "approximate": 0.6233134231487967
+                },
+                "upper": {
+                  "numerator": "4305124635132642514220669711965",
+                  "denominator": "4124309425537997793563835653644",
+                  "approximate": 1.0438413297690579
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-489123155979679973178639336435",
+                  "denominator": "258671769351735516391169438651",
+                  "approximate": -1.8909027344015354
+                },
+                "upper": {
+                  "numerator": "-62009168899667443492926610305",
+                  "denominator": "354942128842978965463154942341",
+                  "approximate": -0.17470219469805276
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1734071761566870481681536569414",
+                  "denominator": "2782022169211194411173593789891",
+                  "approximate": 0.6233134231487967
+                },
+                "upper": {
+                  "numerator": "4305124635132642514220669711965",
+                  "denominator": "4124309425537997793563835653644",
+                  "approximate": 1.0438413297690579
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-489123155979679973178639336435",
+                  "denominator": "258671769351735516391169438651",
+                  "approximate": -1.8909027344015354
+                },
+                "upper": {
+                  "numerator": "-62009168899667443492926610305",
+                  "denominator": "354942128842978965463154942341",
+                  "approximate": -0.17470219469805276
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin-2027",
+      "baselineAnchorDate": "2027-07-26",
+      "baselineAnchorIndex": 206,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "61089803200583015845346474475889",
+                  "denominator": "93278530458284799039309031047788",
+                  "approximate": 0.6549181564122417
+                },
+                "upper": {
+                  "numerator": "21603697172839284469525173275350",
+                  "denominator": "15999951296331424920321403489551",
+                  "approximate": 1.3502351833903847
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-43868440581045144580225596277",
+                  "denominator": "50333704336441294788284490550",
+                  "approximate": -0.8715519979975855
+                },
+                "upper": {
+                  "numerator": "3121489096113030323484611784597",
+                  "denominator": "5764048594767073096166591667356",
+                  "approximate": 0.5415445489038544
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "8321344430149758446941472224737",
+                  "denominator": "12929889152213726368806922343852",
+                  "approximate": 0.6435743054088798
+                },
+                "upper": {
+                  "numerator": "21603697172839284469525173275350",
+                  "denominator": "15999951296331424920321403489551",
+                  "approximate": 1.3502351833903847
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-4806461563948098189859227572472",
+                  "denominator": "4217663658036464560208708265761",
+                  "approximate": -1.1396028592250877
+                },
+                "upper": {
+                  "numerator": "3121489096113030323484611784597",
+                  "denominator": "5764048594767073096166591667356",
+                  "approximate": 0.5415445489038544
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "18483920357562415094003940934939",
+                  "denominator": "61880139368279917386374037078436",
+                  "approximate": 0.2987052153770256
+                },
+                "upper": {
+                  "numerator": "21603697172839284469525173275350",
+                  "denominator": "15999951296331424920321403489551",
+                  "approximate": 1.3502351833903847
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-4806461563948098189859227572472",
+                  "denominator": "4217663658036464560208708265761",
+                  "approximate": -1.1396028592250877
+                },
+                "upper": {
+                  "numerator": "3121489096113030323484611784597",
+                  "denominator": "5764048594767073096166591667356",
+                  "approximate": 0.5415445489038544
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "18483920357562415094003940934939",
+                "denominator": "61880139368279917386374037078436",
+                "approximate": 0.2987052153770256
+              },
+              "upper": {
+                "numerator": "3121489096113030323484611784597",
+                "denominator": "5764048594767073096166591667356",
+                "approximate": 0.5415445489038544
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt-2027",
+      "baselineAnchorDate": "2027-07-13",
+      "baselineAnchorIndex": 193,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [],
+            "isha": []
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [],
+            "isha": []
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [],
+            "isha": []
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo-2027",
+      "baselineAnchorDate": "2027-08-21",
+      "baselineAnchorIndex": 232,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "58644766403801070938263061327236",
+                  "denominator": "64260637931213568549860995691663",
+                  "approximate": 0.9126079088504554
+                },
+                "upper": {
+                  "numerator": "8050758693429674044935968771512",
+                  "denominator": "6025991268192533206633283666617",
+                  "approximate": 1.3360057018211478
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-25431974771204913693842905322039",
+                  "denominator": "21236881054275120344477793618410",
+                  "approximate": -1.1975381274777774
+                },
+                "upper": {
+                  "numerator": "903110383531483400611017058244",
+                  "denominator": "24331323013078406004475414867199",
+                  "approximate": 0.0371171918208496
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "37379912946655684864242805186412",
+                  "denominator": "52115921725455381758432922582133",
+                  "approximate": 0.7172455500944911
+                },
+                "upper": {
+                  "numerator": "8050758693429674044935968771512",
+                  "denominator": "6025991268192533206633283666617",
+                  "approximate": 1.3360057018211478
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-24156012300804018432987376725661",
+                  "denominator": "18867982985380030897533109742222",
+                  "approximate": -1.2802646853943767
+                },
+                "upper": {
+                  "numerator": "2209133638148843960095687226476",
+                  "denominator": "21903568022252071625214497850165",
+                  "approximate": 0.10085725010210944
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "37379912946655684864242805186412",
+                  "denominator": "52115921725455381758432922582133",
+                  "approximate": 0.7172455500944911
+                },
+                "upper": {
+                  "numerator": "8050758693429674044935968771512",
+                  "denominator": "6025991268192533206633283666617",
+                  "approximate": 1.3360057018211478
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-22880049830403123172131848129283",
+                  "denominator": "16499084916484941450588425866034",
+                  "approximate": -1.3867465951122349
+                },
+                "upper": {
+                  "numerator": "3515156892766204519580357394708",
+                  "denominator": "19475813031425737245953580833131",
+                  "approximate": 0.18048832606342163
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "stockholm-2026",
+      "baselineAnchorDate": "2026-08-19",
+      "baselineAnchorIndex": 230,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "25416131067326778448843538047405",
+                  "denominator": "47885723396944801429079268339772",
+                  "approximate": 0.530766359247449
+                },
+                "upper": {
+                  "numerator": "50592002575422384111675685940541",
+                  "denominator": "44844249954667495310623452170662",
+                  "approximate": 1.128171451781783
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-841837659713990790122519243383",
+                  "denominator": "1717844056290281281426018533533",
+                  "approximate": -0.4900547617412701
+                },
+                "upper": {
+                  "numerator": "461853692929764003510241954737",
+                  "denominator": "534034089870466580377793440492",
+                  "approximate": 0.8648393458211434
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "25416131067326778448843538047405",
+                "denominator": "47885723396944801429079268339772",
+                "approximate": 0.530766359247449
+              },
+              "upper": {
+                "numerator": "461853692929764003510241954737",
+                "denominator": "534034089870466580377793440492",
+                "approximate": 0.8648393458211434
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1149927641290407097492706421049",
+                  "denominator": "2265181464137511622795480597068",
+                  "approximate": 0.5076536513723647
+                },
+                "upper": {
+                  "numerator": "50592002575422384111675685940541",
+                  "denominator": "44844249954667495310623452170662",
+                  "approximate": 1.128171451781783
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1493683336035868186938899842443",
+                  "denominator": "2313704381299741988274191109241",
+                  "approximate": -0.6455808910197851
+                },
+                "upper": {
+                  "numerator": "461853692929764003510241954737",
+                  "denominator": "534034089870466580377793440492",
+                  "approximate": 0.8648393458211434
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1149927641290407097492706421049",
+                "denominator": "2265181464137511622795480597068",
+                "approximate": 0.5076536513723647
+              },
+              "upper": {
+                "numerator": "461853692929764003510241954737",
+                "denominator": "534034089870466580377793440492",
+                "approximate": 0.8648393458211434
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1149927641290407097492706421049",
+                  "denominator": "2265181464137511622795480597068",
+                  "approximate": 0.5076536513723647
+                },
+                "upper": {
+                  "numerator": "19306343370012578041931412296713",
+                  "denominator": "16655002678059417156703030084494",
+                  "approximate": 1.1591918502328387
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-3449220365001500377388041639623",
+                  "denominator": "4101285356328124108818708836365",
+                  "approximate": -0.8410096019482007
+                },
+                "upper": {
+                  "numerator": "461853692929764003510241954737",
+                  "denominator": "534034089870466580377793440492",
+                  "approximate": 0.8648393458211434
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1149927641290407097492706421049",
+                "denominator": "2265181464137511622795480597068",
+                "approximate": 0.5076536513723647
+              },
+              "upper": {
+                "numerator": "461853692929764003510241954737",
+                "denominator": "534034089870466580377793440492",
+                "approximate": 0.8648393458211434
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "stockholm-2027",
+      "baselineAnchorDate": "2027-08-19",
+      "baselineAnchorIndex": 230,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "5042869205825345667557344890147",
+                  "denominator": "23067003061735914985864520042447",
+                  "approximate": 0.2186183091201204
+                },
+                "upper": {
+                  "numerator": "17601287836189481828898925965429",
+                  "denominator": "21835974656030193102636815813929",
+                  "approximate": 0.8060683396758173
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-342408823251004794243001664995",
+                  "denominator": "692326100529014419370399382317",
+                  "approximate": -0.4945773718329646
+                },
+                "upper": {
+                  "numerator": "229185763144810531491023229791",
+                  "denominator": "261166030352356239049562796411",
+                  "approximate": 0.8775481360864619
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5042869205825345667557344890147",
+                "denominator": "23067003061735914985864520042447",
+                "approximate": 0.2186183091201204
+              },
+              "upper": {
+                "numerator": "17601287836189481828898925965429",
+                "denominator": "21835974656030193102636815813929",
+                "approximate": 0.8060683396758173
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "5042869205825345667557344890147",
+                  "denominator": "23067003061735914985864520042447",
+                  "approximate": 0.2186183091201204
+                },
+                "upper": {
+                  "numerator": "17601287836189481828898925965429",
+                  "denominator": "21835974656030193102636815813929",
+                  "approximate": 0.8060683396758173
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1598821056148829708463029889771",
+                  "denominator": "2512119647768298091826949751717",
+                  "approximate": -0.6364430362897646
+                },
+                "upper": {
+                  "numerator": "229185763144810531491023229791",
+                  "denominator": "261166030352356239049562796411",
+                  "approximate": 0.8775481360864619
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5042869205825345667557344890147",
+                "denominator": "23067003061735914985864520042447",
+                "approximate": 0.2186183091201204
+              },
+              "upper": {
+                "numerator": "17601287836189481828898925965429",
+                "denominator": "21835974656030193102636815813929",
+                "approximate": 0.8060683396758173
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "217500010987607601999813389911",
+                  "denominator": "1090883177938446967175115816275",
+                  "approximate": 0.19937974605002115
+                },
+                "upper": {
+                  "numerator": "17601287836189481828898925965429",
+                  "denominator": "21835974656030193102636815813929",
+                  "approximate": 0.8060683396758173
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-914003409646820119977026559781",
+                  "denominator": "1127467446710269253086150987083",
+                  "approximate": -0.8106694453251881
+                },
+                "upper": {
+                  "numerator": "229185763144810531491023229791",
+                  "denominator": "261166030352356239049562796411",
+                  "approximate": 0.8775481360864619
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "217500010987607601999813389911",
+                "denominator": "1090883177938446967175115816275",
+                "approximate": 0.19937974605002115
+              },
+              "upper": {
+                "numerator": "17601287836189481828898925965429",
+                "denominator": "21835974656030193102636815813929",
+                "approximate": 0.8060683396758173
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "helsinki-2026",
+      "baselineAnchorDate": "2026-08-22",
+      "baselineAnchorIndex": 233,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-5923314402350352800865937159002",
+                  "denominator": "13614172768746053094293594832835",
+                  "approximate": -0.4350844155546827
+                },
+                "upper": {
+                  "numerator": "-1892378358321428568437613349802",
+                  "denominator": "26279059941066202245441991664411",
+                  "approximate": -0.07201088480962803
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": []
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-5923314402350352800865937159002",
+                  "denominator": "13614172768746053094293594832835",
+                  "approximate": -0.4350844155546827
+                },
+                "upper": {
+                  "numerator": "-1892378358321428568437613349802",
+                  "denominator": "26279059941066202245441991664411",
+                  "approximate": -0.07201088480962803
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1569553787851856164059012906366",
+                  "denominator": "3126428245409250197369024706577",
+                  "approximate": -0.5020277660798836
+                },
+                "upper": {
+                  "numerator": "351180877310764595976143092504",
+                  "denominator": "1265545099921889965034029460403",
+                  "approximate": 0.27749376717782687
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-5923314402350352800865937159002",
+                "denominator": "13614172768746053094293594832835",
+                "approximate": -0.4350844155546827
+              },
+              "upper": {
+                "numerator": "-1892378358321428568437613349802",
+                "denominator": "26279059941066202245441991664411",
+                "approximate": -0.07201088480962803
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-5923314402350352800865937159002",
+                  "denominator": "13614172768746053094293594832835",
+                  "approximate": -0.4350844155546827
+                },
+                "upper": {
+                  "numerator": "747817421786232714717458699224",
+                  "denominator": "6284464445869414507240667056459",
+                  "approximate": 0.11899461413577575
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-828674503589773656526524339746",
+                  "denominator": "1406698627456156573787094148383",
+                  "approximate": -0.5890917126210116
+                },
+                "upper": {
+                  "numerator": "351180877310764595976143092504",
+                  "denominator": "1265545099921889965034029460403",
+                  "approximate": 0.27749376717782687
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-5923314402350352800865937159002",
+                "denominator": "13614172768746053094293594832835",
+                "approximate": -0.4350844155546827
+              },
+              "upper": {
+                "numerator": "747817421786232714717458699224",
+                "denominator": "6284464445869414507240667056459",
+                "approximate": 0.11899461413577575
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "helsinki-2027",
+      "baselineAnchorDate": "2027-08-22",
+      "baselineAnchorIndex": 233,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-487721779809187099771271417318",
+                  "denominator": "1337061105469402080845001461543",
+                  "approximate": -0.36477149609251597
+                },
+                "upper": {
+                  "numerator": "298383442971655739059164228391",
+                  "denominator": "2066605653883775890180515491773",
+                  "approximate": 0.14438334783944057
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1072750501519068523785470056234",
+                  "denominator": "4215435666030525872498718218561",
+                  "approximate": -0.2544815261121578
+                },
+                "upper": {
+                  "numerator": "133261729979794969406711425509",
+                  "denominator": "152765315485565287143904754951",
+                  "approximate": 0.8723297533620241
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-1072750501519068523785470056234",
+                "denominator": "4215435666030525872498718218561",
+                "approximate": -0.2544815261121578
+              },
+              "upper": {
+                "numerator": "298383442971655739059164228391",
+                "denominator": "2066605653883775890180515491773",
+                "approximate": 0.14438334783944057
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-487721779809187099771271417318",
+                  "denominator": "1337061105469402080845001461543",
+                  "approximate": -0.36477149609251597
+                },
+                "upper": {
+                  "numerator": "1382872108724154316948764102491",
+                  "denominator": "4874898634071653302150232114361",
+                  "approximate": 0.28367197197885946
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-51510536979948402407649727202",
+                  "denominator": "150510735062487961191302254509",
+                  "approximate": -0.34223829256140853
+                },
+                "upper": {
+                  "numerator": "133261729979794969406711425509",
+                  "denominator": "152765315485565287143904754951",
+                  "approximate": 0.8723297533620241
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-51510536979948402407649727202",
+                "denominator": "150510735062487961191302254509",
+                "approximate": -0.34223829256140853
+              },
+              "upper": {
+                "numerator": "1382872108724154316948764102491",
+                "denominator": "4874898634071653302150232114361",
+                "approximate": 0.28367197197885946
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-487721779809187099771271417318",
+                  "denominator": "1337061105469402080845001461543",
+                  "approximate": -0.36477149609251597
+                },
+                "upper": {
+                  "numerator": "1382872108724154316948764102491",
+                  "denominator": "4874898634071653302150232114361",
+                  "approximate": 0.28367197197885946
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1605797421438248401412315758270",
+                  "denominator": "3611122557218848109448999015907",
+                  "approximate": -0.4446809533584409
+                },
+                "upper": {
+                  "numerator": "133261729979794969406711425509",
+                  "denominator": "152765315485565287143904754951",
+                  "approximate": 0.8723297533620241
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-487721779809187099771271417318",
+                "denominator": "1337061105469402080845001461543",
+                "approximate": -0.36477149609251597
+              },
+              "upper": {
+                "numerator": "1382872108724154316948764102491",
+                "denominator": "4874898634071653302150232114361",
+                "approximate": 0.28367197197885946
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso-2026",
+      "baselineAnchorDate": "2026-09-16",
+      "baselineAnchorIndex": 258,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "531919388804446826783129310999",
+                  "denominator": "2281558043088764614885482231365",
+                  "approximate": 0.23313866172097747
+                },
+                "upper": {
+                  "numerator": "1678813939816721420573988355025",
+                  "denominator": "3855415513490783916538166352499",
+                  "approximate": 0.43544306286631185
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "255158844355928972291170421703",
+                  "denominator": "1607453433175855491093870437461",
+                  "approximate": 0.15873482807636305
+                },
+                "upper": {
+                  "numerator": "342437815758919204170617428211",
+                  "denominator": "1044532592706707404585247719385",
+                  "approximate": 0.32783832515130695
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "531919388804446826783129310999",
+                "denominator": "2281558043088764614885482231365",
+                "approximate": 0.23313866172097747
+              },
+              "upper": {
+                "numerator": "342437815758919204170617428211",
+                "denominator": "1044532592706707404585247719385",
+                "approximate": 0.32783832515130695
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "531919388804446826783129310999",
+                  "denominator": "2281558043088764614885482231365",
+                  "approximate": 0.23313866172097747
+                },
+                "upper": {
+                  "numerator": "1678813939816721420573988355025",
+                  "denominator": "3855415513490783916538166352499",
+                  "approximate": 0.43544306286631185
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "29550570146224800939393154953",
+                  "denominator": "723458091215001192534164385179",
+                  "approximate": 0.04084627776654834
+                },
+                "upper": {
+                  "numerator": "342437815758919204170617428211",
+                  "denominator": "1044532592706707404585247719385",
+                  "approximate": 0.32783832515130695
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "531919388804446826783129310999",
+                "denominator": "2281558043088764614885482231365",
+                "approximate": 0.23313866172097747
+              },
+              "upper": {
+                "numerator": "342437815758919204170617428211",
+                "denominator": "1044532592706707404585247719385",
+                "approximate": 0.32783832515130695
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-298062512150770416633553931683",
+                  "denominator": "710541555946271935146827837999",
+                  "approximate": -0.4194863898619163
+                },
+                "upper": {
+                  "numerator": "1678813939816721420573988355025",
+                  "denominator": "3855415513490783916538166352499",
+                  "approximate": 0.43544306286631185
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "29550570146224800939393154953",
+                  "denominator": "723458091215001192534164385179",
+                  "approximate": 0.04084627776654834
+                },
+                "upper": {
+                  "numerator": "342437815758919204170617428211",
+                  "denominator": "1044532592706707404585247719385",
+                  "approximate": 0.32783832515130695
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "29550570146224800939393154953",
+                "denominator": "723458091215001192534164385179",
+                "approximate": 0.04084627776654834
+              },
+              "upper": {
+                "numerator": "342437815758919204170617428211",
+                "denominator": "1044532592706707404585247719385",
+                "approximate": 0.32783832515130695
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso-2027",
+      "baselineAnchorDate": "2027-09-17",
+      "baselineAnchorIndex": 259,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-7336057943209604194642606904251",
+                  "denominator": "11014700990767256641138408935238",
+                  "approximate": -0.6660242478991336
+                },
+                "upper": {
+                  "numerator": "19096336693994072692641906515289",
+                  "denominator": "59951246181490297441633677906014",
+                  "approximate": 0.3185311050279717
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "100890452427140689130441307251",
+                  "denominator": "32872712904704832857583367412426",
+                  "approximate": 0.003069124617722104
+                },
+                "upper": {
+                  "numerator": "4370546312232264378567055682629",
+                  "denominator": "20230687982914191475148701729606",
+                  "approximate": 0.2160354761994948
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "100890452427140689130441307251",
+                "denominator": "32872712904704832857583367412426",
+                "approximate": 0.003069124617722104
+              },
+              "upper": {
+                "numerator": "4370546312232264378567055682629",
+                "denominator": "20230687982914191475148701729606",
+                "approximate": 0.2160354761994948
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-7336057943209604194642606904251",
+                  "denominator": "11014700990767256641138408935238",
+                  "approximate": -0.6660242478991336
+                },
+                "upper": {
+                  "numerator": "45528731331197749579926419934829",
+                  "denominator": "108926363606865118916137982795126",
+                  "approximate": 0.4179771528545573
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1389588469125994333435391022709",
+                  "denominator": "15206004680132229127786677525018",
+                  "approximate": -0.09138419317610723
+                },
+                "upper": {
+                  "numerator": "4370546312232264378567055682629",
+                  "denominator": "20230687982914191475148701729606",
+                  "approximate": 0.2160354761994948
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-1389588469125994333435391022709",
+                "denominator": "15206004680132229127786677525018",
+                "approximate": -0.09138419317610723
+              },
+              "upper": {
+                "numerator": "4370546312232264378567055682629",
+                "denominator": "20230687982914191475148701729606",
+                "approximate": 0.2160354761994948
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-7336057943209604194642606904251",
+                  "denominator": "11014700990767256641138408935238",
+                  "approximate": -0.6660242478991336
+                },
+                "upper": {
+                  "numerator": "6608098659300919221821128354885",
+                  "denominator": "12243779356343705368626076222278",
+                  "approximate": 0.5397106944660149
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1389588469125994333435391022709",
+                  "denominator": "15206004680132229127786677525018",
+                  "approximate": -0.09138419317610723
+                },
+                "upper": {
+                  "numerator": "4370546312232264378567055682629",
+                  "denominator": "20230687982914191475148701729606",
+                  "approximate": 0.2160354761994948
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-1389588469125994333435391022709",
+                "denominator": "15206004680132229127786677525018",
+                "approximate": -0.09138419317610723
+              },
+              "upper": {
+                "numerator": "4370546312232264378567055682629",
+                "denominator": "20230687982914191475148701729606",
+                "approximate": 0.2160354761994948
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "bodo-2026",
+      "baselineAnchorDate": "2026-09-10",
+      "baselineAnchorIndex": 252,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1851119361359393746263031838799",
+                  "denominator": "28147580705231011152779516610167",
+                  "approximate": 0.06576477675807418
+                },
+                "upper": {
+                  "numerator": "13226403737424824789078678707673",
+                  "denominator": "47757734908870504855630329820529",
+                  "approximate": 0.27694788629868955
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-764029727398963141102108671151",
+                  "denominator": "9627042735621669363555162382524",
+                  "approximate": -0.07936286857561412
+                },
+                "upper": {
+                  "numerator": "935997823811674456985108323223",
+                  "denominator": "5896465789705901130248367174271",
+                  "approximate": 0.1587387864516652
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1851119361359393746263031838799",
+                "denominator": "28147580705231011152779516610167",
+                "approximate": 0.06576477675807418
+              },
+              "upper": {
+                "numerator": "935997823811674456985108323223",
+                "denominator": "5896465789705901130248367174271",
+                "approximate": 0.1587387864516652
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1851119361359393746263031838799",
+                  "denominator": "28147580705231011152779516610167",
+                  "approximate": 0.06576477675807418
+                },
+                "upper": {
+                  "numerator": "13226403737424824789078678707673",
+                  "denominator": "47757734908870504855630329820529",
+                  "approximate": 0.27694788629868955
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-764029727398963141102108671151",
+                  "denominator": "9627042735621669363555162382524",
+                  "approximate": -0.07936286857561412
+                },
+                "upper": {
+                  "numerator": "935997823811674456985108323223",
+                  "denominator": "5896465789705901130248367174271",
+                  "approximate": 0.1587387864516652
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1851119361359393746263031838799",
+                "denominator": "28147580705231011152779516610167",
+                "approximate": 0.06576477675807418
+              },
+              "upper": {
+                "numerator": "935997823811674456985108323223",
+                "denominator": "5896465789705901130248367174271",
+                "approximate": 0.1587387864516652
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1851119361359393746263031838799",
+                  "denominator": "28147580705231011152779516610167",
+                  "approximate": 0.06576477675807418
+                },
+                "upper": {
+                  "numerator": "13226403737424824789078678707673",
+                  "denominator": "47757734908870504855630329820529",
+                  "approximate": 0.27694788629868955
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-2896434229592008935779839454523",
+                  "denominator": "17075146804073358974099951647468",
+                  "approximate": -0.16962865753523423
+                },
+                "upper": {
+                  "numerator": "935997823811674456985108323223",
+                  "denominator": "5896465789705901130248367174271",
+                  "approximate": 0.1587387864516652
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1851119361359393746263031838799",
+                "denominator": "28147580705231011152779516610167",
+                "approximate": 0.06576477675807418
+              },
+              "upper": {
+                "numerator": "935997823811674456985108323223",
+                "denominator": "5896465789705901130248367174271",
+                "approximate": 0.1587387864516652
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "bodo-2027",
+      "baselineAnchorDate": "2027-09-11",
+      "baselineAnchorIndex": 253,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-625077731739313711705863772682",
+                  "denominator": "690249686275899087629760340429",
+                  "approximate": -0.9055820584458252
+                },
+                "upper": {
+                  "numerator": "2292742881585209859480377164459",
+                  "denominator": "6249723982196132115372225499621",
+                  "approximate": 0.3668550624182202
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "16537350569160055814434555621",
+                  "denominator": "353498046389139555179856840587",
+                  "approximate": 0.04678201403963439
+                },
+                "upper": {
+                  "numerator": "871470134386229773968638863253",
+                  "denominator": "3010823651962079233862681808859",
+                  "approximate": 0.28944575807962525
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "16537350569160055814434555621",
+                "denominator": "353498046389139555179856840587",
+                "approximate": 0.04678201403963439
+              },
+              "upper": {
+                "numerator": "871470134386229773968638863253",
+                "denominator": "3010823651962079233862681808859",
+                "approximate": 0.28944575807962525
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-625077731739313711705863772682",
+                  "denominator": "690249686275899087629760340429",
+                  "approximate": -0.9055820584458252
+                },
+                "upper": {
+                  "numerator": "488490327647787509124995447025",
+                  "denominator": "1107552947594274157865307085247",
+                  "approximate": 0.44105370195514515
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "16537350569160055814434555621",
+                  "denominator": "353498046389139555179856840587",
+                  "approximate": 0.04678201403963439
+                },
+                "upper": {
+                  "numerator": "871470134386229773968638863253",
+                  "denominator": "3010823651962079233862681808859",
+                  "approximate": 0.28944575807962525
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "16537350569160055814434555621",
+                "denominator": "353498046389139555179856840587",
+                "approximate": 0.04678201403963439
+              },
+              "upper": {
+                "numerator": "871470134386229773968638863253",
+                "denominator": "3010823651962079233862681808859",
+                "approximate": 0.28944575807962525
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-625077731739313711705863772682",
+                  "denominator": "690249686275899087629760340429",
+                  "approximate": -0.9055820584458252
+                },
+                "upper": {
+                  "numerator": "8753461839973570713558722811423",
+                  "denominator": "16692522376428376705573150229041",
+                  "approximate": 0.5243941953514702
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "16537350569160055814434555621",
+                  "denominator": "353498046389139555179856840587",
+                  "approximate": 0.04678201403963439
+                },
+                "upper": {
+                  "numerator": "542392938262779719078745279053",
+                  "denominator": "1182386993066727193822121911203",
+                  "approximate": 0.45872708465439804
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "16537350569160055814434555621",
+                "denominator": "353498046389139555179856840587",
+                "approximate": 0.04678201403963439
+              },
+              "upper": {
+                "numerator": "542392938262779719078745279053",
+                "denominator": "1182386993066727193822121911203",
+                "approximate": 0.45872708465439804
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "kiruna-2026",
+      "baselineAnchorDate": "2026-09-12",
+      "baselineAnchorIndex": 254,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "145991437278658070007158767108",
+                  "denominator": "697348791100368601437755486347",
+                  "approximate": 0.20935210491767484
+                },
+                "upper": {
+                  "numerator": "1814221686093249865985550873116",
+                  "denominator": "4960669700216844547657832354765",
+                  "approximate": 0.36572112148767844
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "906699182288514795439648556",
+                  "denominator": "12452584697038613615383495609",
+                  "approximate": 0.07281212730913122
+                },
+                "upper": {
+                  "numerator": "139000137854415693541917614708",
+                  "denominator": "694795678651406791045285252287",
+                  "approximate": 0.20005901321121328
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "145991437278658070007158767108",
+                  "denominator": "697348791100368601437755486347",
+                  "approximate": 0.20935210491767484
+                },
+                "upper": {
+                  "numerator": "1814221686093249865985550873116",
+                  "denominator": "4960669700216844547657832354765",
+                  "approximate": 0.36572112148767844
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "906699182288514795439648556",
+                  "denominator": "12452584697038613615383495609",
+                  "approximate": 0.07281212730913122
+                },
+                "upper": {
+                  "numerator": "139000137854415693541917614708",
+                  "denominator": "694795678651406791045285252287",
+                  "approximate": 0.20005901321121328
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "145991437278658070007158767108",
+                  "denominator": "697348791100368601437755486347",
+                  "approximate": 0.20935210491767484
+                },
+                "upper": {
+                  "numerator": "1814221686093249865985550873116",
+                  "denominator": "4960669700216844547657832354765",
+                  "approximate": 0.36572112148767844
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "906699182288514795439648556",
+                  "denominator": "12452584697038613615383495609",
+                  "approximate": 0.07281212730913122
+                },
+                "upper": {
+                  "numerator": "139000137854415693541917614708",
+                  "denominator": "694795678651406791045285252287",
+                  "approximate": 0.20005901321121328
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "kiruna-2027",
+      "baselineAnchorDate": "2027-09-12",
+      "baselineAnchorIndex": 254,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1202847898395230148967798568567",
+                  "denominator": "10709458291741138974775933813187",
+                  "approximate": 0.11231640906831261
+                },
+                "upper": {
+                  "numerator": "19828790690820675656244918828353",
+                  "denominator": "76233858642416202224928239897685",
+                  "approximate": 0.2601047755411402
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-93452447063297972862481273733",
+                  "denominator": "10246383147498369993941888357374",
+                  "approximate": -0.009120530212274384
+                },
+                "upper": {
+                  "numerator": "958049011944604737479873800061",
+                  "denominator": "6265262971940617659810554538817",
+                  "approximate": 0.15291441336705078
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1202847898395230148967798568567",
+                "denominator": "10709458291741138974775933813187",
+                "approximate": 0.11231640906831261
+              },
+              "upper": {
+                "numerator": "958049011944604737479873800061",
+                "denominator": "6265262971940617659810554538817",
+                "approximate": 0.15291441336705078
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1202847898395230148967798568567",
+                  "denominator": "10709458291741138974775933813187",
+                  "approximate": 0.11231640906831261
+                },
+                "upper": {
+                  "numerator": "19828790690820675656244918828353",
+                  "denominator": "76233858642416202224928239897685",
+                  "approximate": 0.2601047755411402
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-93452447063297972862481273733",
+                  "denominator": "10246383147498369993941888357374",
+                  "approximate": -0.009120530212274384
+                },
+                "upper": {
+                  "numerator": "958049011944604737479873800061",
+                  "denominator": "6265262971940617659810554538817",
+                  "approximate": 0.15291441336705078
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1202847898395230148967798568567",
+                "denominator": "10709458291741138974775933813187",
+                "approximate": 0.11231640906831261
+              },
+              "upper": {
+                "numerator": "958049011944604737479873800061",
+                "denominator": "6265262971940617659810554538817",
+                "approximate": 0.15291441336705078
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1202847898395230148967798568567",
+                  "denominator": "10709458291741138974775933813187",
+                  "approximate": 0.11231640906831261
+                },
+                "upper": {
+                  "numerator": "60004793687126020988965993579531",
+                  "denominator": "143025909593319494876577249187559",
+                  "approximate": 0.41953792748281704
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-93452447063297972862481273733",
+                  "denominator": "10246383147498369993941888357374",
+                  "approximate": -0.009120530212274384
+                },
+                "upper": {
+                  "numerator": "958049011944604737479873800061",
+                  "denominator": "6265262971940617659810554538817",
+                  "approximate": 0.15291441336705078
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1202847898395230148967798568567",
+                "denominator": "10709458291741138974775933813187",
+                "approximate": 0.11231640906831261
+              },
+              "upper": {
+                "numerator": "958049011944604737479873800061",
+                "denominator": "6265262971940617659810554538817",
+                "approximate": 0.15291441336705078
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik-2026",
+      "baselineAnchorDate": "2026-09-02",
+      "baselineAnchorIndex": 244,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1731995773044727613573889305494",
+                  "denominator": "9428717674857857146977186503611",
+                  "approximate": 0.1836936721165361
+                },
+                "upper": {
+                  "numerator": "7112161622501977360945492860410",
+                  "denominator": "16137079658172505045460878574477",
+                  "approximate": 0.4407341212386019
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-79630226596359743936490481494",
+                  "denominator": "3592243330380866309920954203347",
+                  "approximate": -0.02216726966207965
+                },
+                "upper": {
+                  "numerator": "459282104133475914236786993254",
+                  "denominator": "2224549412755494042890360530595",
+                  "approximate": 0.20646073380072713
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1731995773044727613573889305494",
+                "denominator": "9428717674857857146977186503611",
+                "approximate": 0.1836936721165361
+              },
+              "upper": {
+                "numerator": "459282104133475914236786993254",
+                "denominator": "2224549412755494042890360530595",
+                "approximate": 0.20646073380072713
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1731995773044727613573889305494",
+                  "denominator": "9428717674857857146977186503611",
+                  "approximate": 0.1836936721165361
+                },
+                "upper": {
+                  "numerator": "7112161622501977360945492860410",
+                  "denominator": "16137079658172505045460878574477",
+                  "approximate": 0.4407341212386019
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-79630226596359743936490481494",
+                  "denominator": "3592243330380866309920954203347",
+                  "approximate": -0.02216726966207965
+                },
+                "upper": {
+                  "numerator": "459282104133475914236786993254",
+                  "denominator": "2224549412755494042890360530595",
+                  "approximate": 0.20646073380072713
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1731995773044727613573889305494",
+                "denominator": "9428717674857857146977186503611",
+                "approximate": 0.1836936721165361
+              },
+              "upper": {
+                "numerator": "459282104133475914236786993254",
+                "denominator": "2224549412755494042890360530595",
+                "approximate": 0.20646073380072713
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1731995773044727613573889305494",
+                  "denominator": "9428717674857857146977186503611",
+                  "approximate": 0.1836936721165361
+                },
+                "upper": {
+                  "numerator": "7112161622501977360945492860410",
+                  "denominator": "16137079658172505045460878574477",
+                  "approximate": 0.4407341212386019
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-79630226596359743936490481494",
+                  "denominator": "3592243330380866309920954203347",
+                  "approximate": -0.02216726966207965
+                },
+                "upper": {
+                  "numerator": "850194647748126033877330019066",
+                  "denominator": "1765417615482835072289633279501",
+                  "approximate": 0.48158273730354784
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1731995773044727613573889305494",
+                "denominator": "9428717674857857146977186503611",
+                "approximate": 0.1836936721165361
+              },
+              "upper": {
+                "numerator": "7112161622501977360945492860410",
+                "denominator": "16137079658172505045460878574477",
+                "approximate": 0.4407341212386019
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik-2027",
+      "baselineAnchorDate": "2027-09-02",
+      "baselineAnchorIndex": 244,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "12752180890473892554986713460030",
+                  "denominator": "37582772161825662130342214842361",
+                  "approximate": 0.33930921422094557
+                },
+                "upper": {
+                  "numerator": "20616992524713254254806272166442",
+                  "denominator": "34427312313356579422830425830771",
+                  "approximate": 0.598855709009692
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "75461091370554189095944459194",
+                  "denominator": "407501969290911576553220723179",
+                  "approximate": 0.18517969741805904
+                },
+                "upper": {
+                  "numerator": "99174015272832613693414013902",
+                  "denominator": "296731989673098578794696513009",
+                  "approximate": 0.3342208414471587
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "12752180890473892554986713460030",
+                  "denominator": "37582772161825662130342214842361",
+                  "approximate": 0.33930921422094557
+                },
+                "upper": {
+                  "numerator": "20616992524713254254806272166442",
+                  "denominator": "34427312313356579422830425830771",
+                  "approximate": 0.598855709009692
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "75461091370554189095944459194",
+                  "denominator": "407501969290911576553220723179",
+                  "approximate": 0.18517969741805904
+                },
+                "upper": {
+                  "numerator": "99174015272832613693414013902",
+                  "denominator": "296731989673098578794696513009",
+                  "approximate": 0.3342208414471587
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "5923001387714472018524512650242",
+                  "denominator": "25581091415961955204813441396839",
+                  "approximate": 0.23153825970140854
+                },
+                "upper": {
+                  "numerator": "20616992524713254254806272166442",
+                  "denominator": "34427312313356579422830425830771",
+                  "approximate": 0.598855709009692
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "75461091370554189095944459194",
+                  "denominator": "407501969290911576553220723179",
+                  "approximate": 0.18517969741805904
+                },
+                "upper": {
+                  "numerator": "99174015272832613693414013902",
+                  "denominator": "296731989673098578794696513009",
+                  "approximate": 0.3342208414471587
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5923001387714472018524512650242",
+                "denominator": "25581091415961955204813441396839",
+                "approximate": 0.23153825970140854
+              },
+              "upper": {
+                "numerator": "99174015272832613693414013902",
+                "denominator": "296731989673098578794696513009",
+                "approximate": 0.3342208414471587
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "trondheim-2026",
+      "baselineAnchorDate": "2026-08-31",
+      "baselineAnchorIndex": 242,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-2023231922228479155096540102668",
+                  "denominator": "3501159855081585183928997321399",
+                  "approximate": -0.5778747632136703
+                },
+                "upper": {
+                  "numerator": "-1048027103295711355750277627924",
+                  "denominator": "6046541525174013540131112736561",
+                  "approximate": -0.17332670236901254
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-24616162995598843574026582852",
+                  "denominator": "945387904664018818321825617357",
+                  "approximate": -0.026038161556918984
+                },
+                "upper": {
+                  "numerator": "244605459690841805644756775972",
+                  "denominator": "1150514747506027332297606241775",
+                  "approximate": 0.2126052362397557
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-2023231922228479155096540102668",
+                  "denominator": "3501159855081585183928997321399",
+                  "approximate": -0.5778747632136703
+                },
+                "upper": {
+                  "numerator": "187001005250390381448112149836",
+                  "denominator": "2836285523600933617823219048405",
+                  "approximate": 0.06593165733644998
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-24616162995598843574026582852",
+                  "denominator": "945387904664018818321825617357",
+                  "approximate": -0.026038161556918984
+                },
+                "upper": {
+                  "numerator": "244605459690841805644756775972",
+                  "denominator": "1150514747506027332297606241775",
+                  "approximate": 0.2126052362397557
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-24616162995598843574026582852",
+                "denominator": "945387904664018818321825617357",
+                "approximate": -0.026038161556918984
+              },
+              "upper": {
+                "numerator": "187001005250390381448112149836",
+                "denominator": "2836285523600933617823219048405",
+                "approximate": 0.06593165733644998
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-2023231922228479155096540102668",
+                  "denominator": "3501159855081585183928997321399",
+                  "approximate": -0.5778747632136703
+                },
+                "upper": {
+                  "numerator": "187001005250390381448112149836",
+                  "denominator": "2836285523600933617823219048405",
+                  "approximate": 0.06593165733644998
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-24616162995598843574026582852",
+                  "denominator": "945387904664018818321825617357",
+                  "approximate": -0.026038161556918984
+                },
+                "upper": {
+                  "numerator": "149994054259898896330302252524",
+                  "denominator": "625602415004342743359752895597",
+                  "approximate": 0.2397593913681706
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-24616162995598843574026582852",
+                "denominator": "945387904664018818321825617357",
+                "approximate": -0.026038161556918984
+              },
+              "upper": {
+                "numerator": "187001005250390381448112149836",
+                "denominator": "2836285523600933617823219048405",
+                "approximate": 0.06593165733644998
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "trondheim-2027",
+      "baselineAnchorDate": "2027-08-31",
+      "baselineAnchorIndex": 242,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-13172373415638816171658206504531",
+                  "denominator": "20997966321066012792315689010985",
+                  "approximate": -0.6273166274404277
+                },
+                "upper": {
+                  "numerator": "-5398515717737558661898189400261",
+                  "denominator": "19481074519146670393617700802463",
+                  "approximate": -0.27711591126206675
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-387106283389778874170654122303",
+                  "denominator": "3475970473143030626545969791661",
+                  "approximate": -0.11136639001416801
+                },
+                "upper": {
+                  "numerator": "-1376345751621990662676045509",
+                  "denominator": "71263270552383515720256033183",
+                  "approximate": -0.01931353614496657
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-13172373415638816171658206504531",
+                  "denominator": "20997966321066012792315689010985",
+                  "approximate": -0.6273166274404277
+                },
+                "upper": {
+                  "numerator": "-5398515717737558661898189400261",
+                  "denominator": "19481074519146670393617700802463",
+                  "approximate": -0.27711591126206675
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-3419439697633150912344874873",
+                  "denominator": "29126613048981072137367872251",
+                  "approximate": -0.11739915286006013
+                },
+                "upper": {
+                  "numerator": "174134328402228787597445751729",
+                  "denominator": "224378967814441435741775354732",
+                  "approximate": 0.7760724193465213
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-638574185865790913544706588359",
+                  "denominator": "996130388502464212129625955269",
+                  "approximate": -0.641054818963804
+                },
+                "upper": {
+                  "numerator": "-5398515717737558661898189400261",
+                  "denominator": "19481074519146670393617700802463",
+                  "approximate": -0.27711591126206675
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-266587748326854816696828806697",
+                  "denominator": "1417300519085789492531832746507",
+                  "approximate": -0.1880954284126091
+                },
+                "upper": {
+                  "numerator": "1317975501958431935174050200023",
+                  "denominator": "1580556295015373092391620476916",
+                  "approximate": 0.8338681172666569
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "oulu-2026",
+      "baselineAnchorDate": "2026-09-04",
+      "baselineAnchorIndex": 246,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-20366424375815510444214268058580",
+                  "denominator": "131738866277200787100081444985957",
+                  "approximate": -0.1545969306655571
+                },
+                "upper": {
+                  "numerator": "4698200990126416552457867856212",
+                  "denominator": "117637642572165513666850328982721",
+                  "approximate": 0.0399379049715679
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2396750588980436645359615523132",
+                  "denominator": "7987079519633335682798054327379",
+                  "approximate": 0.3000784683674296
+                },
+                "upper": {
+                  "numerator": "490434166714169101682626375636",
+                  "denominator": "983802554360564869965700583393",
+                  "approximate": 0.49850873484764746
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-21519970930306154577261980829492",
+                  "denominator": "69147564217234191099338787013565",
+                  "approximate": -0.3112180620375716
+                },
+                "upper": {
+                  "numerator": "4698200990126416552457867856212",
+                  "denominator": "117637642572165513666850328982721",
+                  "approximate": 0.0399379049715679
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2396750588980436645359615523132",
+                  "denominator": "7987079519633335682798054327379",
+                  "approximate": 0.3000784683674296
+                },
+                "upper": {
+                  "numerator": "490434166714169101682626375636",
+                  "denominator": "983802554360564869965700583393",
+                  "approximate": 0.49850873484764746
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-21519970930306154577261980829492",
+                  "denominator": "69147564217234191099338787013565",
+                  "approximate": -0.3112180620375716
+                },
+                "upper": {
+                  "numerator": "13685859237461607631383780728308",
+                  "denominator": "55573646853798962058661728568137",
+                  "approximate": 0.2462652716217427
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2396750588980436645359615523132",
+                  "denominator": "7987079519633335682798054327379",
+                  "approximate": 0.3000784683674296
+                },
+                "upper": {
+                  "numerator": "8679583345531174789789615194964",
+                  "denominator": "11688971567577961716515957340481",
+                  "approximate": 0.7425446537662891
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "oulu-2027",
+      "baselineAnchorDate": "2027-09-04",
+      "baselineAnchorIndex": 246,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1040657593083992839913652547063",
+                  "denominator": "7596726022376804171995312064512",
+                  "approximate": -0.13698764310028388
+                },
+                "upper": {
+                  "numerator": "10462505251607261741558277045823",
+                  "denominator": "53978612790461725441479205199302",
+                  "approximate": 0.19382686421048664
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2154977713453303085044656048645",
+                  "denominator": "7849734549449599335080667665314",
+                  "approximate": 0.2745287372302805
+                },
+                "upper": {
+                  "numerator": "2560637228300211252523496834563",
+                  "denominator": "4836605789692582541198070919726",
+                  "approximate": 0.529428557886039
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1040657593083992839913652547063",
+                  "denominator": "7596726022376804171995312064512",
+                  "approximate": -0.13698764310028388
+                },
+                "upper": {
+                  "numerator": "10462505251607261741558277045823",
+                  "denominator": "53978612790461725441479205199302",
+                  "approximate": 0.19382686421048664
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2154977713453303085044656048645",
+                  "denominator": "7849734549449599335080667665314",
+                  "approximate": 0.2745287372302805
+                },
+                "upper": {
+                  "numerator": "2560637228300211252523496834563",
+                  "denominator": "4836605789692582541198070919726",
+                  "approximate": 0.529428557886039
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1040657593083992839913652547063",
+                  "denominator": "7596726022376804171995312064512",
+                  "approximate": -0.13698764310028388
+                },
+                "upper": {
+                  "numerator": "10462505251607261741558277045823",
+                  "denominator": "53978612790461725441479205199302",
+                  "approximate": 0.19382686421048664
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2154977713453303085044656048645",
+                  "denominator": "7849734549449599335080667665314",
+                  "approximate": 0.2745287372302805
+                },
+                "upper": {
+                  "numerator": "2273306866506437507850876028077",
+                  "denominator": "3832229536440243609903872004530",
+                  "approximate": 0.5932073861677167
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "zagreb-2027",
+      "baselineAnchorDate": "2027-06-21",
+      "baselineAnchorIndex": 171,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-6697319242652396413352643691885",
+                  "denominator": "11740310537312410876144454580269",
+                  "approximate": -0.5704550336524187
+                },
+                "upper": {
+                  "numerator": "-5964628419711422293674713191397",
+                  "denominator": "43892905703630992813527468931237",
+                  "approximate": -0.13589048900032163
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "205244586894905982671753929357",
+                  "denominator": "4878403790390533044125020235024",
+                  "approximate": 0.04207207843253898
+                },
+                "upper": {
+                  "numerator": "4120488216058899725125062014329",
+                  "denominator": "16776720477362046760249574279888",
+                  "approximate": 0.2456074905473302
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-6697319242652396413352643691885",
+                  "denominator": "11740310537312410876144454580269",
+                  "approximate": -0.5704550336524187
+                },
+                "upper": {
+                  "numerator": "-5964628419711422293674713191397",
+                  "denominator": "43892905703630992813527468931237",
+                  "approximate": -0.13589048900032163
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "205244586894905982671753929357",
+                  "denominator": "4878403790390533044125020235024",
+                  "approximate": 0.04207207843253898
+                },
+                "upper": {
+                  "numerator": "7364475935615676920842285673665",
+                  "denominator": "24708931602009722570999276976464",
+                  "approximate": 0.2980491449098787
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-6697319242652396413352643691885",
+                  "denominator": "11740310537312410876144454580269",
+                  "approximate": -0.5704550336524187
+                },
+                "upper": {
+                  "numerator": "2359407664680452927043761370869",
+                  "denominator": "19472944594493343247347233967504",
+                  "approximate": 0.12116337378927572
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "205244586894905982671753929357",
+                  "denominator": "4878403790390533044125020235024",
+                  "approximate": 0.04207207843253898
+                },
+                "upper": {
+                  "numerator": "326270302430332811871109007081",
+                  "denominator": "991526390580959476343712837072",
+                  "approximate": 0.3290586166235707
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "205244586894905982671753929357",
+                "denominator": "4878403790390533044125020235024",
+                "approximate": 0.04207207843253898
+              },
+              "upper": {
+                "numerator": "2359407664680452927043761370869",
+                "denominator": "19472944594493343247347233967504",
+                "approximate": 0.12116337378927572
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "kuopio-2027",
+      "baselineAnchorDate": "2027-08-30",
+      "baselineAnchorIndex": 241,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-530827156372289980293314969308",
+                  "denominator": "3103753898891743953776808532567",
+                  "approximate": -0.17102746340869107
+                },
+                "upper": {
+                  "numerator": "2261969403438730623837683024894",
+                  "denominator": "11072422910736161795427491824027",
+                  "approximate": 0.20428856643882845
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "1005564944642774117098416486806",
+                  "denominator": "3674239746634926881521095324695",
+                  "approximate": 0.27367973076980795
+                },
+                "upper": {
+                  "numerator": "1475401951286734725503637604238",
+                  "denominator": "2424583288783241838342744970627",
+                  "approximate": 0.6085177432808067
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-530827156372289980293314969308",
+                  "denominator": "3103753898891743953776808532567",
+                  "approximate": -0.17102746340869107
+                },
+                "upper": {
+                  "numerator": "2261969403438730623837683024894",
+                  "denominator": "11072422910736161795427491824027",
+                  "approximate": 0.20428856643882845
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "284213529351956953022457056906",
+                  "denominator": "1641298734828870641566481892921",
+                  "approximate": 0.17316380212867852
+                },
+                "upper": {
+                  "numerator": "1475401951286734725503637604238",
+                  "denominator": "2424583288783241838342744970627",
+                  "approximate": 0.6085177432808067
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "284213529351956953022457056906",
+                "denominator": "1641298734828870641566481892921",
+                "approximate": 0.17316380212867852
+              },
+              "upper": {
+                "numerator": "2261969403438730623837683024894",
+                "denominator": "11072422910736161795427491824027",
+                "approximate": 0.20428856643882845
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-530827156372289980293314969308",
+                  "denominator": "3103753898891743953776808532567",
+                  "approximate": -0.17102746340869107
+                },
+                "upper": {
+                  "numerator": "2261969403438730623837683024894",
+                  "denominator": "11072422910736161795427491824027",
+                  "approximate": 0.20428856643882845
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "284213529351956953022457056906",
+                  "denominator": "1641298734828870641566481892921",
+                  "approximate": 0.17316380212867852
+                },
+                "upper": {
+                  "numerator": "1475401951286734725503637604238",
+                  "denominator": "2424583288783241838342744970627",
+                  "approximate": 0.6085177432808067
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "284213529351956953022457056906",
+                "denominator": "1641298734828870641566481892921",
+                "approximate": 0.17316380212867852
+              },
+              "upper": {
+                "numerator": "2261969403438730623837683024894",
+                "denominator": "11072422910736161795427491824027",
+                "approximate": 0.20428856643882845
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik-2027",
+      "baselineAnchorDate": "2027-09-14",
+      "baselineAnchorIndex": 256,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-57758014979697232821550510876371",
+                  "denominator": "31112448739368172619097967615832",
+                  "approximate": -1.8564278068737503
+                },
+                "upper": {
+                  "numerator": "-86122153497669552823943892484277",
+                  "denominator": "52699181632432440632827748163304",
+                  "approximate": -1.6342218385544671
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-10636121719026525361432579296845",
+                  "denominator": "10362847542201072557931081339304",
+                  "approximate": -1.0263705681003785
+                },
+                "upper": {
+                  "numerator": "-5102555153170993858354335865697",
+                  "denominator": "6333006307326774517899810617086",
+                  "approximate": -0.8057082064276095
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-57758014979697232821550510876371",
+                  "denominator": "31112448739368172619097967615832",
+                  "approximate": -1.8564278068737503
+                },
+                "upper": {
+                  "numerator": "-86122153497669552823943892484277",
+                  "denominator": "52699181632432440632827748163304",
+                  "approximate": -1.6342218385544671
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-10636121719026525361432579296845",
+                  "denominator": "10362847542201072557931081339304",
+                  "approximate": -1.0263705681003785
+                },
+                "upper": {
+                  "numerator": "-5102555153170993858354335865697",
+                  "denominator": "6333006307326774517899810617086",
+                  "approximate": -0.8057082064276095
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-57758014979697232821550510876371",
+                  "denominator": "31112448739368172619097967615832",
+                  "approximate": -1.8564278068737503
+                },
+                "upper": {
+                  "numerator": "-86122153497669552823943892484277",
+                  "denominator": "52699181632432440632827748163304",
+                  "approximate": -1.6342218385544671
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-20412669694475975052075345939697",
+                  "denominator": "18399595455916284723976605769672",
+                  "approximate": -1.1094086140851753
+                },
+                "upper": {
+                  "numerator": "-5102555153170993858354335865697",
+                  "denominator": "6333006307326774517899810617086",
+                  "approximate": -0.8057082064276095
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "kirkenes-2027",
+      "baselineAnchorDate": "2027-09-17",
+      "baselineAnchorIndex": 259,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-72853452535945583565685950728",
+                  "denominator": "9167956249699864091580329178047",
+                  "approximate": -0.007946531435327326
+                },
+                "upper": {
+                  "numerator": "6275113517644252917544510757152",
+                  "denominator": "61766111609662322353616563308129",
+                  "approximate": 0.10159476376464358
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-21194203992454389112179345432",
+                  "denominator": "138331043808705860874457387421",
+                  "approximate": -0.15321364900393047
+                },
+                "upper": {
+                  "numerator": "-13516850259279422514119111368",
+                  "denominator": "1774662416995399582055580661639",
+                  "approximate": -0.007616575484910639
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-72853452535945583565685950728",
+                "denominator": "9167956249699864091580329178047",
+                "approximate": -0.007946531435327326
+              },
+              "upper": {
+                "numerator": "-13516850259279422514119111368",
+                "denominator": "1774662416995399582055580661639",
+                "approximate": -0.007616575484910639
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-72853452535945583565685950728",
+                  "denominator": "9167956249699864091580329178047",
+                  "approximate": -0.007946531435327326
+                },
+                "upper": {
+                  "numerator": "6275113517644252917544510757152",
+                  "denominator": "61766111609662322353616563308129",
+                  "approximate": 0.10159476376464358
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-21194203992454389112179345432",
+                  "denominator": "138331043808705860874457387421",
+                  "approximate": -0.15321364900393047
+                },
+                "upper": {
+                  "numerator": "-13516850259279422514119111368",
+                  "denominator": "1774662416995399582055580661639",
+                  "approximate": -0.007616575484910639
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-72853452535945583565685950728",
+                "denominator": "9167956249699864091580329178047",
+                "approximate": -0.007946531435327326
+              },
+              "upper": {
+                "numerator": "-13516850259279422514119111368",
+                "denominator": "1774662416995399582055580661639",
+                "approximate": -0.007616575484910639
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-11976833571158238332219322777323",
+                  "denominator": "11427131298427835661271815026655",
+                  "approximate": -1.04810501064305
+                },
+                "upper": {
+                  "numerator": "6275113517644252917544510757152",
+                  "denominator": "61766111609662322353616563308129",
+                  "approximate": 0.10159476376464358
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-21194203992454389112179345432",
+                  "denominator": "138331043808705860874457387421",
+                  "approximate": -0.15321364900393047
+                },
+                "upper": {
+                  "numerator": "2831694131445927326693862439776",
+                  "denominator": "16739327990032130930645975617699",
+                  "approximate": 0.1691641464419679
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-21194203992454389112179345432",
+                "denominator": "138331043808705860874457387421",
+                "approximate": -0.15321364900393047
+              },
+              "upper": {
+                "numerator": "6275113517644252917544510757152",
+                "denominator": "61766111609662322353616563308129",
+                "approximate": 0.10159476376464358
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "vienna-2027",
+      "baselineAnchorDate": "2027-06-21",
+      "baselineAnchorIndex": 171,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-52023791606031712895554401496456",
+                  "denominator": "59208353625117197245681352977735",
+                  "approximate": -0.8786562777175809
+                },
+                "upper": {
+                  "numerator": "-3281369930755100880173255076744",
+                  "denominator": "12676844706551160785191731505031",
+                  "approximate": -0.25884752923251864
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-278303251706621623941869250536",
+                  "denominator": "1367176540190362842551153512859",
+                  "approximate": -0.20356058162603585
+                },
+                "upper": {
+                  "numerator": "1459090099329693725875091280440",
+                  "denominator": "8774892605060745332632379371993",
+                  "approximate": 0.16628010905662735
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-52023791606031712895554401496456",
+                  "denominator": "59208353625117197245681352977735",
+                  "approximate": -0.8786562777175809
+                },
+                "upper": {
+                  "numerator": "-3281369930755100880173255076744",
+                  "denominator": "12676844706551160785191731505031",
+                  "approximate": -0.25884752923251864
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-278303251706621623941869250536",
+                  "denominator": "1367176540190362842551153512859",
+                  "approximate": -0.20356058162603585
+                },
+                "upper": {
+                  "numerator": "1459090099329693725875091280440",
+                  "denominator": "8774892605060745332632379371993",
+                  "approximate": 0.16628010905662735
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-52023791606031712895554401496456",
+                  "denominator": "59208353625117197245681352977735",
+                  "approximate": -0.8786562777175809
+                },
+                "upper": {
+                  "numerator": "-3281369930755100880173255076744",
+                  "denominator": "12676844706551160785191731505031",
+                  "approximate": -0.25884752923251864
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-278303251706621623941869250536",
+                  "denominator": "1367176540190362842551153512859",
+                  "approximate": -0.20356058162603585
+                },
+                "upper": {
+                  "numerator": "5403619552210410373829269667992",
+                  "denominator": "31168603354316652970310104282765",
+                  "approximate": 0.17336739445086632
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "bremen-2027",
+      "baselineAnchorDate": "2027-07-28",
+      "baselineAnchorIndex": 208,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "9013917226767424238867372415501",
+                  "denominator": "6785880366817781132372722513442",
+                  "approximate": 1.328334238081252
+                },
+                "upper": {
+                  "numerator": "5727675426098673259934150973685",
+                  "denominator": "3251254211196846488540384053298",
+                  "approximate": 1.7616818169349515
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "2250579816055966069346870436632",
+                  "denominator": "2901307603802171526219472081493",
+                  "approximate": 0.775712238546018
+                },
+                "upper": {
+                  "numerator": "5846759610073862512321020149299",
+                  "denominator": "3175840350781172798023756252254",
+                  "approximate": 1.8410118155453608
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9013917226767424238867372415501",
+                "denominator": "6785880366817781132372722513442",
+                "approximate": 1.328334238081252
+              },
+              "upper": {
+                "numerator": "5727675426098673259934150973685",
+                "denominator": "3251254211196846488540384053298",
+                "approximate": 1.7616818169349515
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "9013917226767424238867372415501",
+                  "denominator": "6785880366817781132372722513442",
+                  "approximate": 1.328334238081252
+                },
+                "upper": {
+                  "numerator": "5727675426098673259934150973685",
+                  "denominator": "3251254211196846488540384053298",
+                  "approximate": 1.7616818169349515
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "19924985628832737087236024152",
+                  "denominator": "27254224024238470070692381965",
+                  "approximate": 0.7310788085954127
+                },
+                "upper": {
+                  "numerator": "5846759610073862512321020149299",
+                  "denominator": "3175840350781172798023756252254",
+                  "approximate": 1.8410118155453608
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9013917226767424238867372415501",
+                "denominator": "6785880366817781132372722513442",
+                "approximate": 1.328334238081252
+              },
+              "upper": {
+                "numerator": "5727675426098673259934150973685",
+                "denominator": "3251254211196846488540384053298",
+                "approximate": 1.7616818169349515
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "9013917226767424238867372415501",
+                  "denominator": "6785880366817781132372722513442",
+                  "approximate": 1.328334238081252
+                },
+                "upper": {
+                  "numerator": "5727675426098673259934150973685",
+                  "denominator": "3251254211196846488540384053298",
+                  "approximate": 1.7616818169349515
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "19924985628832737087236024152",
+                  "denominator": "27254224024238470070692381965",
+                  "approximate": 0.7310788085954127
+                },
+                "upper": {
+                  "numerator": "2237467395831701280953580002727",
+                  "denominator": "1186726058185540365081077345638",
+                  "approximate": 1.8854118694020294
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9013917226767424238867372415501",
+                "denominator": "6785880366817781132372722513442",
+                "approximate": 1.328334238081252
+              },
+              "upper": {
+                "numerator": "5727675426098673259934150973685",
+                "denominator": "3251254211196846488540384053298",
+                "approximate": 1.7616818169349515
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": false,
+            "isha": false
+          }
+        }
+      }
+    },
+    {
+      "id": "bergen-2027",
+      "baselineAnchorDate": "2027-08-22",
+      "baselineAnchorIndex": 233,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-52527569104317121254352705065732",
+                  "denominator": "109245117430033668443456343854027",
+                  "approximate": -0.4808230366721748
+                },
+                "upper": {
+                  "numerator": "4629824076912614240973817771236",
+                  "denominator": "101743248196414001931548302301339",
+                  "approximate": 0.045504976094087345
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-106354361905654418018695608660",
+                  "denominator": "1034554062768241186748152961831",
+                  "approximate": -0.10280213063111784
+                },
+                "upper": {
+                  "numerator": "1211247765785543336964488864092",
+                  "denominator": "5397430020508718528872926840597",
+                  "approximate": 0.2244119444222791
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-106354361905654418018695608660",
+                "denominator": "1034554062768241186748152961831",
+                "approximate": -0.10280213063111784
+              },
+              "upper": {
+                "numerator": "4629824076912614240973817771236",
+                "denominator": "101743248196414001931548302301339",
+                "approximate": 0.045504976094087345
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-52527569104317121254352705065732",
+                  "denominator": "109245117430033668443456343854027",
+                  "approximate": -0.4808230366721748
+                },
+                "upper": {
+                  "numerator": "4629824076912614240973817771236",
+                  "denominator": "101743248196414001931548302301339",
+                  "approximate": 0.045504976094087345
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-106354361905654418018695608660",
+                  "denominator": "1034554062768241186748152961831",
+                  "approximate": -0.10280213063111784
+                },
+                "upper": {
+                  "numerator": "1211247765785543336964488864092",
+                  "denominator": "5397430020508718528872926840597",
+                  "approximate": 0.2244119444222791
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-106354361905654418018695608660",
+                "denominator": "1034554062768241186748152961831",
+                "approximate": -0.10280213063111784
+              },
+              "upper": {
+                "numerator": "4629824076912614240973817771236",
+                "denominator": "101743248196414001931548302301339",
+                "approximate": 0.045504976094087345
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-2591859285936165016980845708276",
+                  "denominator": "5171966291900931130605142488159",
+                  "approximate": -0.5011361520269189
+                },
+                "upper": {
+                  "numerator": "4629824076912614240973817771236",
+                  "denominator": "101743248196414001931548302301339",
+                  "approximate": 0.045504976094087345
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-106354361905654418018695608660",
+                  "denominator": "1034554062768241186748152961831",
+                  "approximate": -0.10280213063111784
+                },
+                "upper": {
+                  "numerator": "1211247765785543336964488864092",
+                  "denominator": "5397430020508718528872926840597",
+                  "approximate": 0.2244119444222791
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-106354361905654418018695608660",
+                "denominator": "1034554062768241186748152961831",
+                "approximate": -0.10280213063111784
+              },
+              "upper": {
+                "numerator": "4629824076912614240973817771236",
+                "denominator": "101743248196414001931548302301339",
+                "approximate": 0.045504976094087345
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    },
+    {
+      "id": "rovaniemi-2027",
+      "baselineAnchorDate": "2027-09-08",
+      "baselineAnchorIndex": 250,
+      "trims": {
+        "0": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-1750394549275902628754949540778",
+                  "denominator": "25200703337692648797327577211501",
+                  "approximate": -0.06945816256873436
+                },
+                "upper": {
+                  "numerator": "2998378552271899492393032390458",
+                  "denominator": "42523424285558934073523934616209",
+                  "approximate": 0.07051122064245792
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-572364086710245205768994550218",
+                  "denominator": "19779284491864072860580644675837",
+                  "approximate": -0.028937552667573946
+                },
+                "upper": {
+                  "numerator": "648352496009574763198017815090",
+                  "denominator": "4765329653714993492583448845309",
+                  "approximate": 0.13605616885373858
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-572364086710245205768994550218",
+                "denominator": "19779284491864072860580644675837",
+                "approximate": -0.028937552667573946
+              },
+              "upper": {
+                "numerator": "2998378552271899492393032390458",
+                "denominator": "42523424285558934073523934616209",
+                "approximate": 0.07051122064245792
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "1": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-103005419191701853022720139561",
+                  "denominator": "67477666926292776110227331066",
+                  "approximate": -1.5265112723031276
+                },
+                "upper": {
+                  "numerator": "2998378552271899492393032390458",
+                  "denominator": "42523424285558934073523934616209",
+                  "approximate": 0.07051122064245792
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-572364086710245205768994550218",
+                  "denominator": "19779284491864072860580644675837",
+                  "approximate": -0.028937552667573946
+                },
+                "upper": {
+                  "numerator": "648352496009574763198017815090",
+                  "denominator": "4765329653714993492583448845309",
+                  "approximate": 0.13605616885373858
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-572364086710245205768994550218",
+                "denominator": "19779284491864072860580644675837",
+                "approximate": -0.028937552667573946
+              },
+              "upper": {
+                "numerator": "2998378552271899492393032390458",
+                "denominator": "42523424285558934073523934616209",
+                "approximate": 0.07051122064245792
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        },
+        "2": {
+          "events": {
+            "fajr": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-103005419191701853022720139561",
+                  "denominator": "67477666926292776110227331066",
+                  "approximate": -1.5265112723031276
+                },
+                "upper": {
+                  "numerator": "17566527156280421340675809074434",
+                  "denominator": "77556284194188664853540444873477",
+                  "approximate": 0.2265003711665275
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ],
+            "isha": [
+              {
+                "status": "feasible",
+                "lower": {
+                  "numerator": "-572364086710245205768994550218",
+                  "denominator": "19779284491864072860580644675837",
+                  "approximate": -0.028937552667573946
+                },
+                "upper": {
+                  "numerator": "3208238181827581364183167046830",
+                  "denominator": "12927245267711769357070570214707",
+                  "approximate": 0.24817647653369435
+                },
+                "lowerClosed": false,
+                "upperClosed": false,
+                "lowerWitness": null,
+                "upperWitness": null,
+                "contradictions": []
+              }
+            ]
+          },
+          "jointDisplacementsDays": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "-572364086710245205768994550218",
+                "denominator": "19779284491864072860580644675837",
+                "approximate": -0.028937552667573946
+              },
+              "upper": {
+                "numerator": "17566527156280421340675809074434",
+                "denominator": "77556284194188664853540444873477",
+                "approximate": 0.2265003711665275
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "baselineCompatible": {
+            "fajr": true,
+            "isha": true
+          }
+        }
+      }
+    }
+  ],
+  "verification": {
+    "sampledFixedPointMembershipChecks": 5327,
+    "baselineMembershipChecks": 168,
+    "maximumBaselineFloatReplayDifferenceSeconds": 7.425553274265098e-12,
+    "feasibilityEpsilon": 0,
+    "implementationSha256": {
+      "evaluate.py": "ae2f91550ca5da08df98b8481aa04cf92772297d8813c95c148cd5148fed981b",
+      "moving_anchor.py": "72495d084544b19e0d200d587356e13463c5afd240a2551bec050c63224671bd",
+      "test_moving_anchor.py": "ddd6717e887e4b699c785441cd4620de8ed4873157fa93ad73eabb10093c17c5"
+    }
+  },
+  "publicExport": {
+    "originalReportSha256": "e102c04d896adf3af3f91ffc81a7dc51c0ec5301e502bcd90298a9a646612e60",
+    "plan": {
+      "createdUtc": "2026-09-25T21:37:45.343600+00:00",
+      "scope": "Exact continuous common-anchor displacement diagnosis on28 exposed northern city-years; no calendar forecast or fitted parameters. Root implementation after agent established elimination derivation.",
+      "domain": "For each case t\u2208[b\u22123,b+3] where b is unchanged autumn anchor; each integerday horizon R_i,S_i becomes its exact stored binary rational. R(t),S(t) linearlyinterpolate adjacent modeldays.",
+      "formula": "q0=unchanged frozen season.ratio (exact stored binaryrational); k0=18/16 exact. N(t)=1440+R(t)\u2212S(t), Hf(t)=R(t)\u2212q0*N(t)*k0, Hi(t)=S(t)+q0*N(t). q0 andk0constant, neitherinferredfromsource norrecomputedwhen tchanges.",
+      "question": "Does ANY affine line compatible withallsource minute cells pass through(t,H_event(t))? Eventslopesfree. For eachcase intersect Fajr/Isha feasible tsets; then shift by\u2212b and intersect all28 to testonecommon displacement. Repeat trims0,1,2 separately; preserveHelsinkifullrunempty.",
+      "arithmetic": "Split at every modeledhorizon knot and observationx. On eachopen segment all slopebound denominatorssignfixed; pairwise lower/uppercross-products reduce toaffine inequality in t sincequadratictermscancel. Intersectexactrational halfopenconstraints; independentlytest allsingularcutpoints with anchored_slope. Normalizeunionswithoutfillingexcludedtouchingpoints.",
+      "validation": "At t=b compare21/56,25/56,29/56 fixedendpointstatuses; expectedcommoncounts3/28,5/28,7/28. Report floatmetadatareplaydifference separately. Independentrational sampletest all endpoints, midpoints, aroundboundaries againstanchored_slope; syntheticties,holes,exactpoints.",
+      "interpretation": "Necessarycondition only. Even compatible t doesnotidentify sourcerule, outer20minute crossing, coordinates or completecalendar. Searchdomainfinite, no extrapolation to otherdates. No percitydeployment selection.",
+      "files": [
+        {
+          "path": "research/diyanet-transition-inverse-2026-09-25/report.json",
+          "sha256": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6"
+        },
+        {
+          "path": "research/diyanet-seasonal-precision-review-2026-09-25/inputs.json",
+          "sha256": "21b519ea2109352e64f998457b4112455f572fe49040106c6b71318496b7314a"
+        },
+        {
+          "path": "research/diyanet-improvement-2026-09-25-round2/autumn/forecast.json",
+          "sha256": "158cbbc53fe577cb5bf1e5d17fe3f9e102b1b74c4cef6c4313252ee43f47543a"
+        },
+        {
+          "path": "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/affine_constraints.py",
+          "sha256": "7a5d538cf1b1def6b5bb4482cc9e7a50ceeeb72848f6df55c2531d8d687e9a50"
+        }
+      ]
+    }
+  }
+}
