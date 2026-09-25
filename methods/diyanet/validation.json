@@ -98,6 +98,54 @@
       "evidenceIdentifier": "research/diyanet-global-sources-2026-09-25/report.json"
     },
     {
+      "id": "hobart-2027-fresh",
+      "recipe": "unchanged south own USNO UTC00",
+      "exposure": "complete forecast at independent Bureau of Meteorology station frozen before official Hobart time exposure",
+      "scope": "Hobart, Tasmania, Australia, complete 2027 year",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1743,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 79.589,
+      "nonExactRatePercent": 20.411,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Printed Gregorian row date with uniquely resolved Australia/Hobart IANA instant; conditional Isha view is identical.",
+      "caveats": [
+        "442 model −1 and five model +1 minute differences; no source 00:00 clocks, missing rows or event-date shifts.",
+        "The independent Bureau of Meteorology station is a city proxy, not a confirmed Diyanet production point."
+      ],
+      "evidenceIdentifier": "research/diyanet-hobart-2027-2026-09-25/report.json"
+    },
+    {
+      "id": "apia-2027-fresh",
+      "recipe": "unchanged south own USNO UTC00",
+      "exposure": "complete forecast at independent Samoa government city point frozen before official Apia city and time exposure",
+      "scope": "Apia, Samoa, complete 2027 year across the Pacific civil-time boundary",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1519,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 69.3607,
+      "nonExactRatePercent": 30.6393,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Printed Gregorian row date resolved uniquely in Pacific/Apia; conditional next-day Isha result is identical.",
+      "caveats": [
+        "296 model −1 and 375 model +1 differences; no source 00:00, unavailable or local event-date shifts.",
+        "The independent Ministry of Finance location is a city proxy, not a confirmed Diyanet production point."
+      ],
+      "evidenceIdentifier": "research/diyanet-apia-2027-2026-09-25/report.json"
+    },
+    {
       "id": "north-four-primary",
       "recipe": "missing-window",
       "exposure": "three fresh calendars plus one explicitly reused calendar",
@@ -264,6 +312,30 @@
       "sha256": "1882e1dcc3386b2e77b3a64c2a7479f7c22dcdaf4428617da0d60c4c19a9ef6a",
       "bytes": 5714,
       "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-hobart-2027-2026-09-25/report.json",
+      "sha256": "9998298d64a4862360759b3ab6386943af7981939261f04bf169c424e33cf5ec",
+      "bytes": 3280414,
+      "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-hobart-2027-2026-09-25/review.json",
+      "sha256": "48bbfe1c68347fb4d14e39ae39e0ca4e340d200456cdbc44df9a8c5ce44e5d57",
+      "bytes": 729,
+      "distribution": "independent private review identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-apia-2027-2026-09-25/report.json",
+      "sha256": "80ab08265dc78be48c878540334b4b00e3b526842687b41944b3d5507ea44345",
+      "bytes": 3253985,
+      "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-apia-2027-2026-09-25/review.json",
+      "sha256": "afc1e968c4693d92b9a711d97d29d1553d0231fffa9700e5bb337d163b2eab10",
+      "bytes": 806,
+      "distribution": "independent private review identifier only; original reference rows are not bundled here"
     },
     {
       "identifier": "research/diyanet-global-anchorage-2026-09-25/report.json",

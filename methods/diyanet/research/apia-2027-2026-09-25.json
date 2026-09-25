@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "caseId": "apia_2027",
+  "cityId": 16182,
+  "country": "SAMOA",
+  "year": 2027,
+  "official": false,
+  "productionReady": false,
+  "recipeChanged": false,
+  "pointConfirmedAsDiyanetProduction": false,
+  "frozenAtUtc": "2026-09-25T15:19:31.016Z",
+  "input": {
+    "year": 2027,
+    "latitude": -13.830099455068957,
+    "longitude": -171.76786480270255,
+    "timeZone": "Pacific/Apia"
+  },
+  "pointSource": "https://www.mof.gov.ws/contact",
+  "officialCityList": "https://namazvakitleri.diyanet.gov.tr/assets/locations/SAMOA.json",
+  "officialCalendar": "https://namazvakitleri.diyanet.gov.tr/tr-TR/16182/apia-namaz-vakitleri",
+  "sourceDateRule": "Printed Gregorian date with unique pinned-IANA UTC resolution; conditional Isha is identical in this cohort.",
+  "plannedSlots": 2190,
+  "comparableSlots": 2190,
+  "excludedSlots": 0,
+  "exact": 1519,
+  "withinOneMinute": 2190,
+  "maxAbsoluteMinutes": 1,
+  "modelLocalDateShifts": 0,
+  "signedHistogramMinutes": {"-1": 296, "0": 1519, "1": 375},
+  "byEvent": {
+    "fajr": {"exact": 241, "modelMinusOne": 55, "modelPlusOne": 69},
+    "sunrise": {"exact": 242, "modelMinusOne": 54, "modelPlusOne": 69},
+    "dhuhr": {"exact": 281, "modelMinusOne": 33, "modelPlusOne": 51},
+    "asr": {"exact": 244, "modelMinusOne": 55, "modelPlusOne": 66},
+    "maghrib": {"exact": 257, "modelMinusOne": 49, "modelPlusOne": 59},
+    "isha": {"exact": 254, "modelMinusOne": 50, "modelPlusOne": 61}
+  },
+  "evidenceSha256": {
+    "freeze": "3b758fd3f473ab322236fab26befa3df84e7435436e275f0f0f7c429851d07e3",
+    "forecast": "ef78e2a7b3092e883e6ae464d35e4996afc48803244191cdc99c3f4ad7cd6927",
+    "samoaCityList": "113eff9ce4738a2e2cf38c44f5cb023d4197980f1a8e990ca756647214bc366c",
+    "officialHtml": "fdfb67d2b74385608afc6f8ae10562a99e074e0033d56f62e2b7eccefc7ab59e",
+    "fullReport": "80ab08265dc78be48c878540334b4b00e3b526842687b41944b3d5507ea44345",
+    "independentReview": "afc1e968c4693d92b9a711d97d29d1553d0231fffa9700e5bb337d163b2eab10"
+  },
+  "distribution": "Only aggregate counts and hashes are public; source clocks and full comparison rows remain private."
+}

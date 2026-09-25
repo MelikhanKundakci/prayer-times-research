@@ -6,11 +6,13 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 [Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies remaining source gaps.
 
-New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All three city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.
+New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart 2027](HOBART-2027.md), [Apia 2027 across the Pacific civil-time boundary](APIA-2027.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All five city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.
 
 The [second offline refinement study](RESEARCH-ROUND-2.md) raises retrospective Berlin/Stockholm agreement from **3,862 to 4,257 of 4,380 minutes** using fixed diagnostic points inferred from a separate year's observations. These are not verified institutional coordinates. Five seasonal hypotheses and two solar coefficient alternatives were rejected. The calculation defaults remain unchanged; a new [offline point-consistency tool](diagnostics/README.md) makes the diagnostic available to contributors.
 
 A [global Asr geometry diagnostic](GLOBAL-ASR-GEOMETRY.md) tested a fixed-noon-shadow continuous crossing across 47 known annuals. It reduced some polar ordering reversals but substantially worsened clock agreement, so it was rejected without changing the public calculations.
+
+A [global numerical alternatives study](GLOBAL-NUMERICS.md) rejected floor, ceiling, NOAA UTC00 and local-mean-midnight epochs across 50 already known annuals. It also checks that moving integer-minute Temkin before or after final rounding cannot resolve the residuals.
 
 ## Run the selected example
 
@@ -90,6 +92,8 @@ These are archived research comparisons, **not results of the public snapshot te
 | low-latitude-fresh | fresh after model, point and complete forecast freeze | 3,443/4,380 (78.61%) | 21.39% | 4,380/4,380 (100.00%) | 0.00% | 1 min | 0/4,380 |
 | nairobi-2027-fresh | full forecast frozen before official city/time exposure | 2,093/2,190 (95.57%) | 4.43% | 2,190/2,190 (100.00%) | 0.00% | 1 min | 0/2,190 |
 | tokyo-2027-fresh | full forecast frozen before official time exposure | 1,355/2,190 (61.87%) | 38.13% | 2,190/2,190 (100.00%) | 0.00% | 1 min | 0/2,190 |
+| hobart-2027-fresh | full forecast frozen at independent city proxy before official time exposure | 1,743/2,190 (79.59%) | 20.41% | 2,190/2,190 (100.00%) | 0.00% | 1 min | 0/2,190 |
+| apia-2027-fresh | full forecast frozen at independent city proxy before official city/time exposure | 1,519/2,190 (69.36%) | 30.64% | 2,190/2,190 (100.00%) | 0.00% | 1 min | 0/2,190 |
 | north-four-primary | three fresh calendars plus one explicitly reused calendar | 8,053/8,758 (91.95%) | 8.05% | 8,719/8,758 (99.55%) | 0.45% | 1441 min | 2/8,760 |
 | north-four-conditional | same three fresh plus one reused source cohort | 8,091/8,758 (92.38%) | 7.62% | 8,758/8,758 (100.00%) | 0.00% | 1 min | 2/8,760 |
 | anchorage-2027-primary | full forecast frozen before official time exposure | 2,043/2,189 (93.33%) | 6.67% | 2,116/2,189 (96.67%) | 3.33% | 1441 min | 1/2,190 |
@@ -107,9 +111,9 @@ The two Anchorage rows use the **same** 2,190 source fields and must not be adde
 - All nonexact differences are model +1 minute; no fitted correction was applied.
 - Eight Turkey years were known parity/development data, not additional fresh accuracy.
 
-### nairobi-2027-fresh and tokyo-2027-fresh
+### nairobi-2027-fresh, tokyo-2027-fresh, hobart-2027-fresh and apia-2027-fresh
 
-These are separate, prospectively frozen 2027 calendars at independently sourced city proxies. Nairobi's unchanged southern recipe has 97 model −1-minute differences; Tokyo's unchanged low-latitude recipe has 835 model +1-minute differences. All other fields match the publisher's displayed minute. Neither point is verified as Diyanet's production point; the opposite residual directions reject a blanket global one-minute correction. See the [Nairobi comparison](NAIROBI-2027.md) and [Tokyo/source audit](GLOBAL-SOURCES-2026-09-25.md).
+These are separate, prospectively frozen 2027 calendars at independently sourced city proxies. Nairobi's unchanged southern recipe has 97 model −1-minute differences; Tokyo's unchanged low-latitude recipe has 835 model +1-minute differences; Hobart's unchanged southern recipe has 442 model −1-minute and five model +1-minute differences; Apia has 296 model −1-minute and 375 model +1-minute differences. All other fields match the publisher's displayed minute. None of these points is verified as Diyanet's production point; the opposite residual directions reject a blanket global one-minute correction. See the [Nairobi comparison](NAIROBI-2027.md), [Tokyo/source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart comparison](HOBART-2027.md), and [Apia comparison](APIA-2027.md).
 
 ### north-four-primary
 
