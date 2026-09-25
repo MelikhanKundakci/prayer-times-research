@@ -1,0 +1,67 @@
+{
+  "study": "Retrospective 2027 Diyanet La Paz/Suva Dhuhr fixed-longitude feasibility under unchanged southern UTC00 recipe",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "model": "USNO UTC00 on row date, transit +5 minutes, nearest UTC minute; raw Dhuhr changes by -240 seconds per east-longitude degree while carrier remains fixed",
+  "roundingConstraint": "For source UTC minute M and adjusted raw time T(lambda), exact nearest-minute agreement requires M-30s <= T(lambda) < M+30s; longitude interval lower endpoint open, upper closed.",
+  "scope": "Independent UNGEGN city proxy plus/minus 0.25 longitude degree; printed Gregorian row-date UTC resolution with pinned IANA timezone; all 365 Dhuhr observations per city; no source 00:00.",
+  "cities": [
+    {
+      "city": "La Paz",
+      "year": 2027,
+      "proxy": {
+        "latitude": -16.481233644,
+        "longitude": -68.1257171577,
+        "timeZone": "America/La_Paz"
+      },
+      "sourceXlsxSha256": "92571873f41495bf6adf22e0f7f931f9998ee61657faf5a1438682968323fa85",
+      "frozenForecastSha256": "9fdc1de7618da6a711fdda3bbc0cb65e08c018307156f4095d6556dc6684e9eb",
+      "observations": 365,
+      "carrierDateSameAtProxy": 365,
+      "carrierDateSameAtBoxEndpoints": 365,
+      "longitudeBox": [
+        -68.3757171577,
+        -67.8757171577
+      ],
+      "maximumLowerBoundOpen": -68.15249584524068,
+      "minimumUpperBoundClosed": -68.15413971527649,
+      "exactFixedLongitudeFeasible": false,
+      "separationOfConstraintsSeconds": 0.3945288085935772,
+      "activeLowerDate": "2027-03-26",
+      "activeUpperDate": "2027-09-11"
+    },
+    {
+      "city": "Suva",
+      "year": 2027,
+      "proxy": {
+        "latitude": -18.1179065976,
+        "longitude": 178.491287276,
+        "timeZone": "Pacific/Fiji"
+      },
+      "sourceXlsxSha256": "158e864d59a5e525d1a5d7c516e79167077b8fdd3f013ceb1f493fc708ed6b9d",
+      "frozenForecastSha256": "f47a7cf0dcfaa7a8d19a8dc1b47acec809998c643c40146a2a1b6b207be9e705",
+      "observations": 365,
+      "carrierDateSameAtProxy": 365,
+      "carrierDateSameAtBoxEndpoints": 365,
+      "longitudeBox": [
+        178.241287276,
+        178.741287276
+      ],
+      "maximumLowerBoundOpen": 178.43094866109115,
+      "minimumUpperBoundClosed": 178.4292042142731,
+      "exactFixedLongitudeFeasible": false,
+      "separationOfConstraintsSeconds": 0.418667236328929,
+      "activeLowerDate": "2027-04-15",
+      "activeUpperDate": "2027-09-30"
+    }
+  ],
+  "limitations": [
+    "Necessary Dhuhr condition only; no full-coordinate or other-event feasibility test",
+    "Constraint separation is not an observed source-time error",
+    "No Diyanet production coordinates or rounding sequence identified",
+    "Prospective calendar acquisition, retrospective feasibility question"
+  ]
+}
