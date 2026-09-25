@@ -1,0 +1,83 @@
+{
+  "candidateCount": 0,
+  "numericalModelChanged": false,
+  "annualCalendarAcquisitions": 0,
+  "prayerApiCalls": 0,
+  "freshHoldoutRead": false,
+  "guideDailyIdentitySpecified": false,
+  "guideRawSecondsSpecified": false,
+  "guideLatitudeLongitudeSpecified": false,
+  "guideDisplayedHorizonAdjustmentsMinutes": {
+    "sunrise": -7,
+    "maghrib": 7
+  },
+  "guideConditionalTransitFeasibleIntervals": {
+    "nearest": {
+      "lowerMinutes": 752.5,
+      "upperMinutes": 753.0,
+      "positiveWidthSeconds": 30.0,
+      "endpointConvention": "nearest/floor lower closed upper open; ceil lower open upper closed",
+      "conditionalOnSymmetricHorizon": true
+    },
+    "floor": {
+      "lowerMinutes": 753,
+      "upperMinutes": 753.5,
+      "positiveWidthSeconds": 30.0,
+      "endpointConvention": "nearest/floor lower closed upper open; ceil lower open upper closed",
+      "conditionalOnSymmetricHorizon": true
+    },
+    "ceil": {
+      "lowerMinutes": 752,
+      "upperMinutes": 752.5,
+      "positiveWidthSeconds": 30.0,
+      "endpointConvention": "nearest/floor lower closed upper open; ceil lower open upper closed",
+      "conditionalOnSymmetricHorizon": true
+    }
+  },
+  "officialExampleNoonDifferences": [
+    {
+      "west": "Tekirdağ",
+      "east": "Adana",
+      "longitudeDerivedNoonSeparationMinutes": 31.260000000000005,
+      "sourceMeaning": "Coarse approximate difference; no year, absolute transit or rounding rule"
+    },
+    {
+      "west": "Istanbul",
+      "east": "Hatay",
+      "longitudeDerivedNoonSeparationMinutes": 28.715999999999994,
+      "sourceMeaning": "Coarse approximate difference; no year, absolute transit or rounding rule"
+    },
+    {
+      "west": "Ankara",
+      "east": "Karaman",
+      "longitudeDerivedNoonSeparationMinutes": 1.4639999999999986,
+      "sourceMeaning": "Coarse approximate difference; no year, absolute transit or rounding rule"
+    }
+  ],
+  "conclusion": "Numerical examples exist, but no newly identified current global ephemeris, epoch, horizon or rounding rule follows.",
+  "scope": "Bounded primary-source audit,25September2026; no new numerical accuracy claim",
+  "sourcesSha256": {
+    "vakit-kiyaslamalari.html": "e23b7bd522ea89f0572ebb3c2ed5ab097691822551c84b0fb6e0d89c44314342",
+    "example-coordinates.json": "c31c1facc7f44589fb77492111eb3823d0ba6b598ea5607e3f80de1f6e749231",
+    "temkin.html": "40d4e8ed5c57a9e9ab9078d207bcaf39848beeb5eed64c942b8009b9aec321e3",
+    "sozluk.html": "7e8469a1d5f4703296fb8e09e20c343ee6f83e82701308a53c8a7ff15e19afca",
+    "ozdemir-asikkaya-2016.pdf": "42b5ed05e1bc0fc8520a053629249de5ead5c71795ac25c288842881dbae8a09",
+    "yucel-temkin-2012.pdf": "e0a36dcf011ad435d07eaa8bfd7835defa9a279d171a17aeb967f93b4fa409c2",
+    "api-guide.pdf": "1a1974791baa4b2bec828f2d3235e8f333da7e40a78bc3fdd2a371e6e44176a3",
+    "api-guide.txt": "bcc7595ba6964ea140e24fb91f55ca210ecdc36b0fdd982525a18f62d1346eca",
+    "awqatsalah-criteria-18-en.json": "63d14706cb9b1e4357b60f1442ffa9fa2ee0d2f592746f91cc2c2dea86099447",
+    "awqatsalah-criteria-34.json": "519ac6391e5b0111aa0965da78e173167013e6b01114b56602e7aff255c45e83",
+    "makaleler.html": "229e2e3dbf72d2f9c65444dd2c9d38d99b9a152758e5919c9159038e62d99339",
+    "kitaplar.html": "2d74f459aa5a0769f3d1c061af55638b314a2c7cc51a71e733e59a9cd6ff2dae"
+  },
+  "privateAuditSha256": {
+    "PLAN.md": "790164aea18521313df0030e36a39455b188f63d95abc338ff92b3350df4e974",
+    "README.md": "a80a7ba4397d03be43c2f7361790ed3e1270995099d2287d49df809efe486575",
+    "evidence.json": "9442af1e8bfdb10329036aeca0f8f1bef5c0bf260af5ca3194698b8374ba08b3",
+    "check-evidence.py": "e99fce83664145505371b59a8ee889e65e347caaf7eb216528fff25cbe0f190d",
+    "search-exposure.json": "f9c8d445796d7e96012222c41a750702d9f63abcf646a9e13f8380434b1c5afc"
+  },
+  "guideCityDetailMustNotIdentifySeparateDailySample": true,
+  "institutionalProductionPointsConfirmed": false,
+  "notificationEligible": false
+}
