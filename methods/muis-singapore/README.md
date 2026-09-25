@@ -52,7 +52,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 
 - Only the fixed Singapore region is offered. Numerical date support is wider than the three tested source years.
 - All available 2024–2026 calendars were already known before selecting this own candidate; no fresh holdout is claimed.
-- The attempted 2027 source was unavailable and was not bypassed or replaced with an undocumented calendar.
+- The later [prospective 2027 annual comparison](PROSPECTIVE-2027.md) froze the full local forecast before a normally accessible official PDF was read. A predeclared Ramadan Maghrib diagnostic removes its ten two-minute differences, but is not a documented MUIS rule or part of this default calculator.
 
 ## Historical validation
 
@@ -61,6 +61,8 @@ These are archived research comparisons, **not results of the public snapshot te
 | Study / recipe | Exposure | Exact / comparable | Non-exact | Within ±1 min | >1 min | Max | Excluded / planned |
 |---|---|---:|---:|---:|---:|---:|---:|
 | known-three-years | development only; all originals already exposed | 4,608/6,576 (70.07%) | 29.93% | 6,556/6,576 (99.70%) | 0.30% | 2 min | 0/6,576 |
+| prospective-2027, unchanged default | full forecast frozen before official PDF rows | 1,531/2,190 (69.91%) | 30.09% | 2,180/2,190 (99.54%) | 0.46% | 2 min | 0/2,190 |
+| prospective-2027, predeclared diagnostic | same forecast and source; +1 Maghrib on separately published Ramadan dates | 1,551/2,190 (70.82%) | 29.18% | 2,190/2,190 (100%) | 0% | 1 min | 0/2,190 |
 
 ### known-three-years
 
@@ -70,6 +72,7 @@ These are archived research comparisons, **not results of the public snapshot te
 
 - The old Adhan comparator had 4541 exact and 6559 within 1: own geometry gains 67 exact but introduces three additional two-minute mismatches.
 - No new independently acquired calendar after model freeze.
+- The preceding statement describes this older study's exposure at the time. A separate [2027 study](PROSPECTIVE-2027.md) later acquired an official PDF after freezing all predictions; it must not be pooled with these known development counts.
 
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 

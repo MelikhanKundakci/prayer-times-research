@@ -46,6 +46,54 @@
         "No new independently acquired calendar after model freeze."
       ],
       "evidenceIdentifier": "research/singapore-own/report.json"
+    },
+    {
+      "id": "prospective-2027-frozen-default",
+      "recipe": "unchanged own continuous USNO",
+      "exposure": "complete 2027 forecast saved before any 2027 prayer values were read; official timetable later retrieved from its normal public listing",
+      "scope": "MUIS2027,365days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1531,
+      "withinOneMinuteCount": 2180,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 69.9087,
+      "nonExactRatePercent": 30.0913,
+      "withinOneMinutePercent": 99.5434,
+      "overOneMinuteRatePercent": 0.4566,
+      "denominator": "all six displayed events for each of 365 civil dates",
+      "dateInterpretation": "Official PDF 12-hour displayed times normalized by event to 24-hour Singapore civil time; no source UTC instant supplied.",
+      "caveats": [
+        "All ten two-minute differences are Maghrib on 8–17 February 2027.",
+        "This compares against a prepublished future annual timetable, which the institution may revise."
+      ],
+      "evidenceIdentifier": "methods/muis-singapore/PROSPECTIVE-2027.json"
+    },
+    {
+      "id": "prospective-2027-ramadan-diagnostic",
+      "recipe": "frozen own continuous USNO plus exactly one minute to Maghrib on separately published MUIS Ramadan dates",
+      "exposure": "diagnostic predeclared before opening 2027 prayer rows, but suggested by already exposed 2024–2026 residuals",
+      "scope": "MUIS2027,365days;30RamadanMaghribslotschanged",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1551,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 70.8219,
+      "nonExactRatePercent": 29.1781,
+      "withinOneMinutePercent": 100,
+      "overOneMinuteRatePercent": 0,
+      "denominator": "all six displayed events for each of 365 civil dates",
+      "dateInterpretation": "As above; Ramadan 8 February through 9 March 2027 from a separate MUIS calendar PDF.",
+      "caveats": [
+        "No regressions among 30 changed cells in this prospective year; ten improve from two to one minute early and twenty become exact.",
+        "The Ramadan offset is not a confirmed MUIS computation rule, is not the public default, and does not supply an offline future lunar-calendar policy."
+      ],
+      "evidenceIdentifier": "methods/muis-singapore/PROSPECTIVE-2027.json"
     }
   ],
   "implementationProvenance": [
@@ -79,7 +127,8 @@
   "limitations": [
     "Only the fixed Singapore region is offered. Numerical date support is wider than the three tested source years.",
     "All available2024–2026 calendars were already known before selecting this own candidate; no fresh holdout is claimed.",
-    "The attempted2027 source was unavailable and was not bypassed or replaced with an undocumented calendar."
+    "An earlier 2027 source attempt returned HTTP403. On 25 September 2026 the normally published official link was accessible; the separate prospective study records this later retrieval and does not rewrite the earlier attempt.",
+    "The predeclared Ramadan Maghrib offset is a research diagnostic, not a documented MUIS computation rule, offline arbitrary-year policy, default implementation, or notification-ready result."
   ],
   "publicationNotes": [],
   "primaryAndSoftwareSources": [

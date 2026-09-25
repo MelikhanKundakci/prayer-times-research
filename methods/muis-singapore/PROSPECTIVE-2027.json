@@ -1,0 +1,46 @@
+{
+  "classification": "Prospective publisher-minute comparison: full 2027 forecast frozen before opening any 2027 MUIS prayer rows; Ramadan offset is predeclared but inspired by 2024–2026 known development data.",
+  "forecastSha256": "d333c10657d68811eec998a28101c23c7d260f51ecc77d890a2c095d92309112",
+  "modelSha256": "a71d578b73f6d340dc79e9c9bbec244bae51cdb97fc7ca829684e57fb74ddc51",
+  "sourceExtractionSha256": "7b0523ebc33f5652553bb5fdf9268da636b5b8ca8e8e70163d909974171a9305",
+  "sourceUrl": "https://isomer-user-content.by.gov.sg/48/01b5692f-0f2c-44cb-b2bb-dbae0d4c4583/Prayer%20Timetable%202027.pdf",
+  "calendarUrl": "https://isomer-user-content.by.gov.sg/48/58bf9c81-404a-4475-b0b3-5075480abfae/Islamic%20Calendar%202027M.pdf",
+  "scope": {"days": 365, "eventsPerDay": 6, "expectedSlots": 2190, "comparedSlots": 2190, "excludedSlots": 0},
+  "frozenBaseline": {
+    "exactCount": 1531,
+    "withinOneMinuteCount": 2180,
+    "maxAbsoluteMinutes": 2,
+    "signedMinuteHistogram": {"-2": 10, "-1": 534, "0": 1531, "1": 115},
+    "byEvent": {
+      "fajr": {"exact": 259, "withinOne": 365},
+      "sunrise": {"exact": 264, "withinOne": 365},
+      "dhuhr": {"exact": 256, "withinOne": 365},
+      "asr": {"exact": 199, "withinOne": 365},
+      "maghrib": {"exact": 273, "withinOne": 355},
+      "isha": {"exact": 280, "withinOne": 365}
+    },
+    "overOneMinuteScope": "Ten Maghrib dates, 2027-02-08 through 2027-02-17 inclusive; each own minus publisher is -2 minutes."
+  },
+  "diagnostic": {
+    "rule": "Add exactly one minute to Maghrib on 2027-02-08 through 2027-03-09 inclusive; change no other event.",
+    "basis": "Separately published MUIS 2027 Islamic calendar; conditional observed-data hypothesis, not a documented computation rule.",
+    "exactCount": 1551,
+    "withinOneMinuteCount": 2190,
+    "maxAbsoluteMinutes": 1,
+    "signedMinuteHistogram": {"-1": 524, "0": 1551, "1": 115},
+    "changedCells": 30,
+    "improvedCells": 30,
+    "worsenedCells": 0,
+    "unchangedErrorChangedCells": 0,
+    "byEvent": {
+      "fajr": {"exact": 259, "withinOne": 365},
+      "sunrise": {"exact": 264, "withinOne": 365},
+      "dhuhr": {"exact": 256, "withinOne": 365},
+      "asr": {"exact": 199, "withinOne": 365},
+      "maghrib": {"exact": 293, "withinOne": 365},
+      "isha": {"exact": 280, "withinOne": 365}
+    }
+  },
+  "developmentReplay2024To2026": {"baselineExact": 4608, "diagnosticExact": 4679, "baselineWithinOne": 6556, "diagnosticWithinOne": 6571, "diagnosticImprovedCells": 87, "diagnosticWorsenedCells": 1, "remainingTwoMinuteCells": 5},
+  "status": {"officialMethodReconstructed": false, "defaultChanged": false, "productionReady": false, "notificationEligible": false}
+}
