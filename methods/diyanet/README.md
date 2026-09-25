@@ -6,6 +6,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
+The latest [joint feasible-region study](JOINT-FEASIBLE-REGIONS.md) varies the autumn location, quotient and Fajr factor together. It finds 25/28 full-run cases compatible with some location/quotient at the existing factor, while retaining three conflicts; a specific angle-to-time interpretation fails its necessary endpoint screen. Exact coupled constraints and source-free tools are published, with no new timing default or accuracy claim.
+
 The subsequent [joint autumn-anchor study](JOINT-AUTUMN-ANCHORS.md) computes two adjacent-row calendars and two adaptive night/boundary interactions; all fail their replacement gates. Exact discrete and continuous diagnoses show why anchor changes alone are insufficient under the declared assumptions. No timing default changes.
 
 The preceding [autumn identification study](AUTUMN-IDENTIFICATION.md) discovers minute-compatible segments without model labels, rejects a universal replacement Fajr factor at the current anchors, and screens 16 horizon-stage assignments. It adds reusable exact diagnostics and 14 software invariant tests; it supplies no improved forecast or new timing default.

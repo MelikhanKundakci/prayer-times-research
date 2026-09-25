@@ -1,6 +1,6 @@
 # Autumn endpoints: constraints and two rejected daily-gap hypotheses
 
-The subsequent [autumn identification study](AUTUMN-IDENTIFICATION.md) adds independent segment discovery, a joint Fajr-factor diagnosis and horizon-stage screening. Further moving-anchor work brings the public diagnostic suite to 26 tests, including the original nine described below.
+The subsequent [autumn identification study](AUTUMN-IDENTIFICATION.md) adds independent segment discovery, a joint Fajr-factor diagnosis and horizon-stage screening. Moving-anchor and [joint feasible-region work](JOINT-FEASIBLE-REGIONS.md) bring the public diagnostic suite to 42 tests, including the original nine described below.
 
 **Changing one endpoint, a common city clock shift, or one frozen night quotient cannot explain every current autumn segment.** Two new, fully calculated daily-gap alternatives also fail. This study narrows the remaining problem; it supplies no new default correction or notification approval.
 

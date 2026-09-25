@@ -1,6 +1,6 @@
 # Autumn identification: independent segments, Fajr factor and pipeline order
 
-The subsequent [joint autumn-anchor study](JOINT-AUTUMN-ANCHORS.md) tests complete adjacent-row and preceding-night interactions, plus exact continuously moving anchors. It adds seven Python tests; the diagnostic suite now has 26. The counts below describe this earlier study.
+The subsequent [joint autumn-anchor study](JOINT-AUTUMN-ANCHORS.md) tests complete adjacent-row and preceding-night interactions, plus exact continuously moving anchors. It added seven Python tests; the later [joint feasible-region work](JOINT-FEASIBLE-REGIONS.md) brings the diagnostic suite to 42. The counts below describe this earlier study.
 
 **These investigations do not improve the prayer-time forecasts.** They implement three additional diagnostics and extend software invariant coverage. No replacement formula passes, no fitted factor is installed, and no notification eligibility changes. All 28 reference city-years were already exposed; no new calendar/API request or institutional contact was made.
 

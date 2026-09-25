@@ -1,0 +1,3657 @@
+{
+  "planSha256": "6509efd6aab2fa049f97236686ae8ce1e33914edb9389e007f8b8682ef334751",
+  "scope": "Adaptive no-fit necessary endpoint screen after joint free-q/k results. Not a complete calendar candidate: the conceptual audit identified an unresolved seam with the unchanged frozen-night branch.",
+  "summary": {
+    "0": {
+      "angular-boundary": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 0,
+        "ishaCompatible": 5,
+        "jointCompatible": 0,
+        "factorInRelaxedProjection": 0
+      },
+      "old-factor-control": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 8,
+        "ishaCompatible": 5,
+        "jointCompatible": 2,
+        "factorInRelaxedProjection": 23
+      }
+    },
+    "1": {
+      "angular-boundary": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 0,
+        "ishaCompatible": 7,
+        "jointCompatible": 0,
+        "factorInRelaxedProjection": 0
+      },
+      "old-factor-control": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 8,
+        "ishaCompatible": 7,
+        "jointCompatible": 2,
+        "factorInRelaxedProjection": 24
+      }
+    },
+    "2": {
+      "angular-boundary": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 0,
+        "ishaCompatible": 9,
+        "jointCompatible": 0,
+        "factorInRelaxedProjection": 0
+      },
+      "old-factor-control": {
+        "available": 26,
+        "outsideScope": 2,
+        "fajrCompatible": 9,
+        "ishaCompatible": 9,
+        "jointCompatible": 4,
+        "factorInRelaxedProjection": 25
+      }
+    }
+  },
+  "cases": [
+    {
+      "id": "berlin-2026",
+      "status": "available",
+      "latitude": 52.52,
+      "anchorDayIndex": 205.96783482679578,
+      "deltaDegrees": 19.479999999999997,
+      "hourAngle16Degrees": 160.35815334872768,
+      "extraFajrMinutes": 78.56738660508927,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "1656193123253239",
+        "denominator": "9007199254740992",
+        "approximate": 0.18387437386615957
+      },
+      "k": {
+        "numerator": "1845883235250744768808189506275362093408893409",
+        "denominator": "969827600453472919581059902351533523247479265",
+        "approximate": 1.9033106857215085
+      },
+      "seamMinutes": {
+        "numerator": "-6038617477924701874235976929039095038043833887",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -67.69524318768708
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin-2027",
+      "status": "available",
+      "latitude": 52.52,
+      "anchorDayIndex": 206.2089810764906,
+      "deltaDegrees": 19.479999999999997,
+      "hourAngle16Degrees": 160.35815334872768,
+      "extraFajrMinutes": 78.56738660508927,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "6241381554717527",
+        "denominator": "36028797018963968",
+        "approximate": 0.17323313768795387
+      },
+      "k": {
+        "numerator": "894881975185167019265711252397840485500087387",
+        "denominator": "456854157786531094652146450435926200419380315",
+        "approximate": 1.9587913559129915
+      },
+      "seamMinutes": {
+        "numerator": "-3047368381402556302256371965259388080226276261",
+        "denominator": "44601490397061246283071436545296723011960832",
+        "approximate": -68.32436212946249
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "240690754264604086773679297784",
+                "denominator": "1390754422213326993481116806055",
+                "approximate": 0.17306488508701262
+              },
+              "upper": {
+                "numerator": "2395889521276644872734431403208",
+                "denominator": "13834346620964147461470056649705",
+                "approximate": 0.17318414717511754
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt-2027",
+      "status": "available",
+      "latitude": 50.11666667,
+      "anchorDayIndex": 193.00838389643917,
+      "deltaDegrees": 21.88333333,
+      "hourAngle16Degrees": 160.71750848220532,
+      "extraFajrMinutes": 77.12996607117873,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6263935999309981",
+        "denominator": "36028797018963968",
+        "approximate": 0.17385914928030824
+      },
+      "k": {
+        "numerator": "703266113076704797013354619389253252066069011",
+        "denominator": "359254968971771017895964765637811287996779027",
+        "approximate": 1.9575682281849383
+      },
+      "seamMinutes": {
+        "numerator": "-11964170919338496075215770321868622122787704225",
+        "denominator": "178405961588244985132285746181186892047843328",
+        "approximate": -67.06149734475468
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo-2027",
+      "status": "available",
+      "latitude": 59.9076424165,
+      "anchorDayIndex": 232.4931853257582,
+      "deltaDegrees": 12.092357583499997,
+      "hourAngle16Degrees": 158.73545002507421,
+      "extraFajrMinutes": 85.05819989970314,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6299429037858577",
+        "denominator": "36028797018963968",
+        "approximate": 0.17484427899557223
+      },
+      "k": {
+        "numerator": "652571442543019430789234122075932497650965733",
+        "denominator": "336427902041525640392169222739904986736286949",
+        "approximate": 1.9397066610202618
+      },
+      "seamMinutes": {
+        "numerator": "-6578161265911274048353049915844945301743429969",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -73.74373824001971
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "stockholm-2026",
+      "status": "available",
+      "latitude": 59.32531504,
+      "anchorDayIndex": 230.48714637034664,
+      "deltaDegrees": 12.67468496,
+      "hourAngle16Degrees": 158.89727322251315,
+      "extraFajrMinutes": 84.4109071099474,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "3318323503506677",
+        "denominator": "18014398509481984",
+        "approximate": 0.18420395783739646
+      },
+      "k": {
+        "numerator": "31175937618758750460885552415923463992883781",
+        "denominator": "16469483466916766332268363883024894181227077",
+        "approximate": 1.892951754156936
+      },
+      "seamMinutes": {
+        "numerator": "-101182149747819106696669144380163664312026555",
+        "denominator": "1393796574908163946345982392040522594123776",
+        "approximate": -72.59463222205572
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "51964391861895509481497692808",
+                "denominator": "282902060821438756951863296457",
+                "approximate": 0.1836833274067036
+              },
+              "upper": {
+                "numerator": "172759485451884935882832652712",
+                "denominator": "938043675355296930945651982989",
+                "approximate": 0.18416998055708858
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "51964391861895509481497692808",
+                "denominator": "282902060821438756951863296457",
+                "approximate": 0.1836833274067036
+              },
+              "upper": {
+                "numerator": "8227451074747552169270396168",
+                "denominator": "44668746445490330045031046809",
+                "approximate": 0.1841880896475925
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "57425139291108881768583979832",
+                "denominator": "312681225118432310315217327663",
+                "approximate": 0.1836539410684422
+              },
+              "upper": {
+                "numerator": "8227451074747552169270396168",
+                "denominator": "44668746445490330045031046809",
+                "approximate": 0.1841880896475925
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "stockholm-2027",
+      "status": "available",
+      "latitude": 59.32531504,
+      "anchorDayIndex": 230.72870125272397,
+      "deltaDegrees": 12.67468496,
+      "hourAngle16Degrees": 158.89727322251315,
+      "extraFajrMinutes": 84.4109071099474,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "1686558897708887",
+        "denominator": "9007199254740992",
+        "approximate": 0.18724565206228305
+      },
+      "k": {
+        "numerator": "1006332213465462966360892576080344554887080395",
+        "denominator": "535725680606519474245142543027590320914065867",
+        "approximate": 1.8784468430300902
+      },
+      "seamMinutes": {
+        "numerator": "-3229126582265028462680857721394443550870050357",
+        "denominator": "44601490397061246283071436545296723011960832",
+        "approximate": -72.39952193341487
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "10167352670376267688128714287032",
+                "denominator": "54317161119105644077415182106511",
+                "approximate": 0.18718490548652733
+              },
+              "upper": {
+                "numerator": "11264227860222911819041094527112",
+                "denominator": "60034757026379922401353622328249",
+                "approximate": 0.1876284408925531
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "10167352670376267688128714287032",
+                "denominator": "54317161119105644077415182106511",
+                "approximate": 0.18718490548652733
+              },
+              "upper": {
+                "numerator": "11264227860222911819041094527112",
+                "denominator": "60034757026379922401353622328249",
+                "approximate": 0.1876284408925531
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "10167352670376267688128714287032",
+                "denominator": "54317161119105644077415182106511",
+                "approximate": 0.18718490548652733
+              },
+              "upper": {
+                "numerator": "178808425287905075418647295352",
+                "denominator": "952932651212379720656406703623",
+                "approximate": 0.18764014965844014
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "helsinki-2026",
+      "status": "available",
+      "latitude": 60.17523,
+      "anchorDayIndex": 233.05239727837457,
+      "deltaDegrees": 11.824770000000001,
+      "hourAngle16Degrees": 158.6587951014694,
+      "extraFajrMinutes": 85.36481959412242,
+      "altitudeReplayDegrees": -15.999999999999998,
+      "q": {
+        "numerator": "6262471887589245",
+        "denominator": "36028797018963968",
+        "approximate": 0.17381851201673362
+      },
+      "k": {
+        "numerator": "1567488595355002788336935481313354253166715741",
+        "denominator": "806008959080179394975041235024939443566945117",
+        "approximate": 1.9447533153276944
+      },
+      "seamMinutes": {
+        "numerator": "-26429140655592038759600563676411895166156099375",
+        "denominator": "356811923176489970264571492362373784095686656",
+        "approximate": -74.07022842821142
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "tie-only-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "tie-only-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "17126729679853750412009452003688",
+                "denominator": "98459021415854661078452401366749",
+                "approximate": 0.1739477950681304
+              },
+              "upper": {
+                "numerator": "3028751871647715739118250170552",
+                "denominator": "17375121426327293131491600241191",
+                "approximate": 0.17431543626846038
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1006297198153110779606736810728",
+                "denominator": "5791707142109097710497200080397",
+                "approximate": 0.1737479422667527
+              },
+              "upper": {
+                "numerator": "3028751871647715739118250170552",
+                "denominator": "17375121426327293131491600241191",
+                "approximate": 0.17431543626846038
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "helsinki-2027",
+      "status": "available",
+      "latitude": 60.17523,
+      "anchorDayIndex": 233.29398953704833,
+      "deltaDegrees": 11.824770000000001,
+      "hourAngle16Degrees": 158.6587951014694,
+      "extraFajrMinutes": 85.36481959412242,
+      "altitudeReplayDegrees": -15.999999999999998,
+      "q": {
+        "numerator": "6476670603927459",
+        "denominator": "36028797018963968",
+        "approximate": 0.17976372068482957
+      },
+      "k": {
+        "numerator": "249227830873425993775742607696862862389932961",
+        "denominator": "130246637705484838562946631714298048389968801",
+        "approximate": 1.9135068303028502
+      },
+      "seamMinutes": {
+        "numerator": "-821602907638044403139421176146220463609744479",
+        "denominator": "11150372599265311570767859136324180752990208",
+        "approximate": -73.68389713651175
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "32560794502029093772950988552",
+                "denominator": "180991100371621249503115453251",
+                "approximate": 0.17990273795326628
+              },
+              "upper": {
+                "numerator": "32642717830631525230085105416",
+                "denominator": "180991100371621249503115453251",
+                "approximate": 0.18035537528424125
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "227761714856998793496388686136",
+                "denominator": "1266937702601348746521808172757",
+                "approximate": 0.17977341300155916
+              },
+              "upper": {
+                "numerator": "32642717830631525230085105416",
+                "denominator": "180991100371621249503115453251",
+                "approximate": 0.18035537528424125
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "227761714856998793496388686136",
+                "denominator": "1266937702601348746521808172757",
+                "approximate": 0.17977341300155916
+              },
+              "upper": {
+                "numerator": "32642717830631525230085105416",
+                "denominator": "180991100371621249503115453251",
+                "approximate": 0.18035537528424125
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso-2026",
+      "status": "available",
+      "latitude": 69.6492,
+      "anchorDayIndex": 258.9528494935947,
+      "deltaDegrees": 2.3508000000000067,
+      "hourAngle16Degrees": 154.68041404251514,
+      "extraFajrMinutes": 101.27834382993944,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "829702794009281",
+        "denominator": "4503599627370496",
+        "approximate": 0.18423102910098543
+      },
+      "k": {
+        "numerator": "152212501998559861747841523625680359213838623",
+        "denominator": "81631797627289373194889305725810526663815455",
+        "approximate": 1.8646226889860316
+      },
+      "seamMinutes": {
+        "numerator": "-483013837342874535228728437473148133736369889",
+        "denominator": "5575186299632655785383929568162090376495104",
+        "approximate": -86.6363582100745
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "128156388759154268796936327212",
+                "denominator": "688707555906619880007124335385",
+                "approximate": 0.1860824491615287
+              },
+              "upper": {
+                "numerator": "165032310571189571185441817432",
+                "denominator": "885481143308511274294874145495",
+                "approximate": 0.18637586109915671
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso-2027",
+      "status": "available",
+      "latitude": 69.6492,
+      "anchorDayIndex": 259.19481956935175,
+      "deltaDegrees": 2.3508000000000067,
+      "hourAngle16Degrees": 154.68041404251514,
+      "extraFajrMinutes": 101.27834382993944,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6756419045128645",
+        "denominator": "36028797018963968",
+        "approximate": 0.1875282996979434
+      },
+      "k": {
+        "numerator": "2458774707687333305366482522902349050474610973",
+        "denominator": "1329483437747005488519247036504431729674240285",
+        "approximate": 1.8494210893323115
+      },
+      "seamMinutes": {
+        "numerator": "-7704846721775617046258636854678906836728725219",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -86.37431903265819
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "36888934954827715212667551860",
+                "denominator": "196773383780208022393738631033",
+                "approximate": 0.1874691294429938
+              },
+              "upper": {
+                "numerator": "185015858962393513033934996036",
+                "denominator": "983866918901040111968693155165",
+                "approximate": 0.18804967969555533
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "36888934954827715212667551860",
+                "denominator": "196773383780208022393738631033",
+                "approximate": 0.1874691294429938
+              },
+              "upper": {
+                "numerator": "259364913060303880429867336492",
+                "denominator": "1377413686461456156756170417231",
+                "approximate": 0.18829848694665313
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "36888934954827715212667551860",
+                "denominator": "196773383780208022393738631033",
+                "approximate": 0.1874691294429938
+              },
+              "upper": {
+                "numerator": "259364913060303880429867336492",
+                "denominator": "1377413686461456156756170417231",
+                "approximate": 0.18829848694665313
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "bodo-2026",
+      "status": "available",
+      "latitude": 67.28324,
+      "anchorDayIndex": 252.77700342121267,
+      "deltaDegrees": 4.716759999999994,
+      "hourAngle16Degrees": 155.96121470466548,
+      "extraFajrMinutes": 96.15514118133808,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6682362867810797",
+        "denominator": "36028797018963968",
+        "approximate": 0.18547282786859345
+      },
+      "k": {
+        "numerator": "4614980679115085052570816002415804577973102363",
+        "denominator": "2470649376101325653098427844954675548503238427",
+        "approximate": 1.867922143771572
+      },
+      "seamMinutes": {
+        "numerator": "-14684001048008749542680677414734356687255673061",
+        "denominator": "178405961588244985132285746181186892047843328",
+        "approximate": -82.30667247487466
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "bodo-2027",
+      "status": "available",
+      "latitude": 67.28324,
+      "anchorDayIndex": 253.01888211653534,
+      "deltaDegrees": 4.716759999999994,
+      "hourAngle16Degrees": 155.96121470466548,
+      "extraFajrMinutes": 96.15514118133808,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "1698709361458321",
+        "denominator": "9007199254740992",
+        "approximate": 0.18859462452373255
+      },
+      "k": {
+        "numerator": "291035597884805803387598357482280680645103765",
+        "denominator": "157014891446445840920574097640960116303237269",
+        "approximate": 1.8535541132674753
+      },
+      "seamMinutes": {
+        "numerator": "-915150760060433858815619981089604398431694699",
+        "denominator": "11150372599265311570767859136324180752990208",
+        "approximate": -82.07355870069601
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "886916128716964660073172855704",
+                "denominator": "4714025627605993364087473522239",
+                "approximate": 0.18814410416503885
+              },
+              "upper": {
+                "numerator": "191686282623443469662367301076",
+                "denominator": "1016750625562077000097298210679",
+                "approximate": 0.1885283154042576
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "17381419376076491987471298056",
+                "denominator": "92431875051097909099754382789",
+                "approximate": 0.1880457295328884
+              },
+              "upper": {
+                "numerator": "191686282623443469662367301076",
+                "denominator": "1016750625562077000097298210679",
+                "approximate": 0.1885283154042576
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "781700131386378570724071757672",
+                "denominator": "4159434377299405909488947225505",
+                "approximate": 0.18793423828311787
+              },
+              "upper": {
+                "numerator": "191686282623443469662367301076",
+                "denominator": "1016750625562077000097298210679",
+                "approximate": 0.1885283154042576
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "kiruna-2026",
+      "status": "available",
+      "latitude": 67.85572,
+      "anchorDayIndex": 254.28157488326462,
+      "deltaDegrees": 4.144279999999995,
+      "hourAngle16Degrees": 155.67361041302874,
+      "extraFajrMinutes": 97.30555834788504,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "794874569166859",
+        "denominator": "4503599627370496",
+        "approximate": 0.17649760967560968
+      },
+      "k": {
+        "numerator": "142333555029100251183834385584981077742294693",
+        "denominator": "74521478056695917190872960029611674013767333",
+        "approximate": 1.909966881236748
+      },
+      "seamMinutes": {
+        "numerator": "-467975137722538754752818444413343555814451547",
+        "denominator": "5575186299632655785383929568162090376495104",
+        "approximate": -83.9389237545969
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "kiruna-2027",
+      "status": "available",
+      "latitude": 67.85572,
+      "anchorDayIndex": 254.52347573055692,
+      "deltaDegrees": 4.144279999999995,
+      "hourAngle16Degrees": 155.67361041302874,
+      "extraFajrMinutes": 97.30555834788504,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "6547142825219581",
+        "denominator": "36028797018963968",
+        "approximate": 0.1817197177517044
+      },
+      "k": {
+        "numerator": "462522921156190041141162827517554903321625247",
+        "denominator": "245524274844496172363686265740372811390337695",
+        "approximate": 1.8838174817912847
+      },
+      "seamMinutes": {
+        "numerator": "-7452324478245273889280631142385419620299813605",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -83.54344677612276
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik-2026",
+      "status": "available",
+      "latitude": 64.1289,
+      "anchorDayIndex": 244.31405213358562,
+      "deltaDegrees": 7.871099999999998,
+      "hourAngle16Degrees": 157.3351536780241,
+      "extraFajrMinutes": 90.65938528790355,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6828353492484803",
+        "denominator": "36028797018963968",
+        "approximate": 0.18952488169090573
+      },
+      "k": {
+        "numerator": "547160464491862428615382499723071365881995691",
+        "denominator": "294438983096743324404560750814839637655364011",
+        "approximate": 1.8583152907849938
+      },
+      "seamMinutes": {
+        "numerator": "-1727332868064209509282013240451014188157689429",
+        "denominator": "22300745198530623141535718272648361505980416",
+        "approximate": -77.45628465267707
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": true
+            },
+            "jointCompatible": true,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "367505010106851502816859640104",
+                "denominator": "1940402507564372099635070196165",
+                "approximate": 0.18939627663548547
+              },
+              "upper": {
+                "numerator": "220802771631167530784722589464",
+                "denominator": "1164241504538623259781042117699",
+                "approximate": 0.1896537537705026
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik-2027",
+      "status": "available",
+      "latitude": 64.1289,
+      "anchorDayIndex": 244.55580734903972,
+      "deltaDegrees": 7.871099999999998,
+      "hourAngle16Degrees": 157.3351536780241,
+      "extraFajrMinutes": 90.65938528790355,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "3205880085518449",
+        "denominator": "18014398509481984",
+        "approximate": 0.1779620942564924
+      },
+      "k": {
+        "numerator": "423357515264119916464853704925825413322387425",
+        "denominator": "221180330148024633096196305799240030741082081",
+        "approximate": 1.9140830243846207
+      },
+      "seamMinutes": {
+        "numerator": "-6981185753903688169265314436067215149546803355",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -78.26179900889223
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "trondheim-2026",
+      "status": "available",
+      "latitude": 63.4352,
+      "anchorDayIndex": 242.40188671625208,
+      "deltaDegrees": 8.564799999999998,
+      "hourAngle16Degrees": 157.595851386165,
+      "extraFajrMinutes": 89.61659445533996,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "423586472022003",
+        "denominator": "2251799813685248",
+        "approximate": 0.18811018166342697
+      },
+      "k": {
+        "numerator": "134536021946664810933282923445997035604816619",
+        "denominator": "72082370743271411949993657058821523907162859",
+        "approximate": 1.8664206040867932
+      },
+      "seamMinutes": {
+        "numerator": "-427546838883875779916320474038582569674067221",
+        "denominator": "5575186299632655785383929568162090376495104",
+        "approximate": -76.68745328062785
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "866995681693672734025040193368",
+                "denominator": "4594632120279876247103827771731",
+                "approximate": 0.1886975189736977
+              },
+              "upper": {
+                "numerator": "353707208522321711868190112272",
+                "denominator": "1871887160114023656227485388483",
+                "approximate": 0.18895754832827427
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "416993708370388773912328276592",
+                "denominator": "2212230280134755230087028186389",
+                "approximate": 0.1884947114750586
+              },
+              "upper": {
+                "numerator": "353707208522321711868190112272",
+                "denominator": "1871887160114023656227485388483",
+                "approximate": 0.18895754832827427
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2020415320089068284320066487928",
+                "denominator": "10720808280653044576575598134039",
+                "approximate": 0.1884573688100686
+              },
+              "upper": {
+                "numerator": "353707208522321711868190112272",
+                "denominator": "1871887160114023656227485388483",
+                "approximate": 0.18895754832827427
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "trondheim-2027",
+      "status": "available",
+      "latitude": 63.4352,
+      "anchorDayIndex": 242.643614236032,
+      "deltaDegrees": 8.564799999999998,
+      "hourAngle16Degrees": 157.595851386165,
+      "extraFajrMinutes": 89.61659445533996,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "787148453027285",
+        "denominator": "4503599627370496",
+        "approximate": 0.17478206726979306
+      },
+      "k": {
+        "numerator": "51771517429438537240917021280162084883303627",
+        "denominator": "26790056948081177647601314725291880204242123",
+        "approximate": 1.9324900103710545
+      },
+      "seamMinutes": {
+        "numerator": "-865308134513888495494621688568348786141249545",
+        "denominator": "11150372599265311570767859136324180752990208",
+        "approximate": -77.60351744397339
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "568986990371509765413501097640",
+                "denominator": "3233259749517023295549248723841",
+                "approximate": 0.17597936276431353
+              },
+              "upper": {
+                "numerator": "5673325691335725188815291330264",
+                "denominator": "32162425929406179097832000463471",
+                "approximate": 0.17639607484174852
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "568986990371509765413501097640",
+                "denominator": "3233259749517023295549248723841",
+                "approximate": 0.17597936276431353
+              },
+              "upper": {
+                "numerator": "270175729731970354615518253432",
+                "denominator": "1531544091876484718944380974451",
+                "approximate": 0.1764074120784499
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "oulu-2026",
+      "status": "available",
+      "latitude": 65.00637,
+      "anchorDayIndex": 246.7030575152023,
+      "deltaDegrees": 6.993629999999996,
+      "hourAngle16Degrees": 156.98550967840848,
+      "extraFajrMinutes": 92.0579612863661,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6670999750612193",
+        "denominator": "36028797018963968",
+        "approximate": 0.18515743800995835
+      },
+      "k": {
+        "numerator": "8791533678497524129328460639954148048394577599",
+        "denominator": "4685611402210630808334692389635686024925210303",
+        "approximate": 1.8762831408404366
+      },
+      "seamMinutes": {
+        "numerator": "-28161766808084515759615453612912010162829728065",
+        "denominator": "356811923176489970264571492362373784095686656",
+        "approximate": -78.92608116168488
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5877726044154428185298325280472",
+                "denominator": "31607333380596903504724819902195",
+                "approximate": 0.1859608329933535
+              },
+              "upper": {
+                "numerator": "17659524244586893497190464064",
+                "denominator": "94916917058849560074248708415",
+                "approximate": 0.18605244240747715
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5877726044154428185298325280472",
+                "denominator": "31607333380596903504724819902195",
+                "approximate": 0.1859608329933535
+              },
+              "upper": {
+                "numerator": "17659524244586893497190464064",
+                "denominator": "94916917058849560074248708415",
+                "approximate": 0.18605244240747715
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": true
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "8218056655085606360180438068424",
+                "denominator": "44250266732835664906614747863073",
+                "approximate": 0.1857176749849384
+              },
+              "upper": {
+                "numerator": "17659524244586893497190464064",
+                "denominator": "94916917058849560074248708415",
+                "approximate": 0.18605244240747715
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "oulu-2027",
+      "status": "available",
+      "latitude": 65.00637,
+      "anchorDayIndex": 246.94484741916233,
+      "deltaDegrees": 6.993629999999996,
+      "hourAngle16Degrees": 156.98550967840848,
+      "extraFajrMinutes": 92.0579612863661,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6784424825008299",
+        "denominator": "36028797018963968",
+        "approximate": 0.1883056162390678
+      },
+      "k": {
+        "numerator": "1108900862865786966710949740315817026893113067",
+        "denominator": "595660578329925301586728709026009273959442155",
+        "approximate": 1.8616321160195823
+      },
+      "seamMinutes": {
+        "numerator": "-3510261697956968019407039541292452749509925141",
+        "denominator": "44601490397061246283071436545296723011960832",
+        "approximate": -78.70278922760518
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "49843972449236503098438203036",
+                "denominator": "263394728526244668339758164035",
+                "approximate": 0.18923678817767245
+              },
+              "upper": {
+                "numerator": "149791663041715311052455183464",
+                "denominator": "790184185578734005019274492105",
+                "approximate": 0.18956550355662624
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "49843972449236503098438203036",
+                "denominator": "263394728526244668339758164035",
+                "approximate": 0.18923678817767245
+              },
+              "upper": {
+                "numerator": "149791663041715311052455183464",
+                "denominator": "790184185578734005019274492105",
+                "approximate": 0.18956550355662624
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1046521454279657324861244546776",
+                "denominator": "5531289299051138035134921444735",
+                "approximate": 0.18920027460129094
+              },
+              "upper": {
+                "numerator": "149791663041715311052455183464",
+                "denominator": "790184185578734005019274492105",
+                "approximate": 0.18956550355662624
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "zagreb-2027",
+      "status": "outside-boundary-scope",
+      "reason": "No Fajr gap; June21 anchor preserved, no physical gap boundary"
+    },
+    {
+      "id": "kuopio-2027",
+      "status": "available",
+      "latitude": 62.89256,
+      "anchorDayIndex": 241.1316091895605,
+      "deltaDegrees": 9.107439999999997,
+      "hourAngle16Degrees": 157.79069256356854,
+      "extraFajrMinutes": 88.83722974572584,
+      "altitudeReplayDegrees": -15.999999999999998,
+      "q": {
+        "numerator": "3324648483926273",
+        "denominator": "18014398509481984",
+        "approximate": 0.1845550647820034
+      },
+      "k": {
+        "numerator": "1055334834969966896157904674280145866527288933",
+        "denominator": "560050728794277576755802168063747580266229349",
+        "approximate": 1.884355792629673
+      },
+      "seamMinutes": {
+        "numerator": "-3402222120611236978461017881667438709822247323",
+        "denominator": "44601490397061246283071436545296723011960832",
+        "approximate": -76.28045812647119
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": true,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik-2027",
+      "status": "available",
+      "latitude": 68.438284479,
+      "anchorDayIndex": 256.0472276711358,
+      "deltaDegrees": 3.5617155209999964,
+      "hourAngle16Degrees": 155.36698183457713,
+      "extraFajrMinutes": 98.53207266169147,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "6801854158397973",
+        "denominator": "36028797018963968",
+        "approximate": 0.1887893774198949
+      },
+      "k": {
+        "numerator": "797782547379852556319092889566975272884928297",
+        "denominator": "431559439661271458958687578418844011711201065",
+        "approximate": 1.8486040949678393
+      },
+      "seamMinutes": {
+        "numerator": "-7494676266262131959773664732298618233035850373",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -84.01822674019823
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "182068141542171743324886189688",
+                "denominator": "951709849133803944843562216075",
+                "approximate": 0.19130635425059492
+              },
+              "upper": {
+                "numerator": "328215881957454584266264215256",
+                "denominator": "1713077728440847100718411988935",
+                "approximate": 0.19159427299085802
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "182068141542171743324886189688",
+                "denominator": "951709849133803944843562216075",
+                "approximate": 0.19130635425059492
+              },
+              "upper": {
+                "numerator": "328215881957454584266264215256",
+                "denominator": "1713077728440847100718411988935",
+                "approximate": 0.19159427299085802
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "182068141542171743324886189688",
+                "denominator": "951709849133803944843562216075",
+                "approximate": 0.19130635425059492
+              },
+              "upper": {
+                "numerator": "328215881957454584266264215256",
+                "denominator": "1713077728440847100718411988935",
+                "approximate": 0.19159427299085802
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "kirkenes-2027",
+      "status": "available",
+      "latitude": 69.727080887,
+      "anchorDayIndex": 259.3964921941517,
+      "deltaDegrees": 2.2729191130000004,
+      "hourAngle16Degrees": 154.6338141640802,
+      "extraFajrMinutes": 101.46474334367917,
+      "altitudeReplayDegrees": -15.999999999999998,
+      "q": {
+        "numerator": "6660605206047479",
+        "denominator": "36028797018963968",
+        "approximate": 0.1848689314423024
+      },
+      "k": {
+        "numerator": "4889867877414284809556400395922593182538837361",
+        "denominator": "2627128489472589457452753893545373122191469937",
+        "approximate": 1.861297571477348
+      },
+      "seamMinutes": {
+        "numerator": "-15474786614060973359376418125472387360587469455",
+        "denominator": "178405961588244985132285746181186892047843328",
+        "approximate": -86.73917887215151
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "73182901412507834544104445368",
+                "denominator": "394427894793598492622600972503",
+                "approximate": 0.1855419010128682
+              },
+              "upper": {
+                "numerator": "52528756863017678144408115368",
+                "denominator": "281734210566856066159000694645",
+                "approximate": 0.18644791755083115
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "vienna-2027",
+      "status": "outside-boundary-scope",
+      "reason": "No Fajr gap; June21 anchor preserved, no physical gap boundary"
+    },
+    {
+      "id": "bremen-2027",
+      "status": "available",
+      "latitude": 53.07582,
+      "anchorDayIndex": 208.6669112069024,
+      "deltaDegrees": 18.92418,
+      "hourAngle16Degrees": 160.2646845849082,
+      "extraFajrMinutes": 78.94126166036722,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "3284095247363035",
+        "denominator": "18014398509481984",
+        "approximate": 0.18230390793422452
+      },
+      "k": {
+        "numerator": "1846941860629142261122312396797746439581267467",
+        "denominator": "966717379659950362465099581301253090738107915",
+        "approximate": 1.910529281348823
+      },
+      "seamMinutes": {
+        "numerator": "-6075078468093584826792602942670693700007168501",
+        "denominator": "89202980794122492566142873090593446023921664",
+        "approximate": -68.10398502393842
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1123476399244749923186040763048",
+                "denominator": "6181630995373749342222284856549",
+                "approximate": 0.1817443325370836
+              },
+              "upper": {
+                "numerator": "482102951808363230789114133064",
+                "denominator": "2649270426588749718095264938521",
+                "approximate": 0.18197574206462871
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1123476399244749923186040763048",
+                "denominator": "6181630995373749342222284856549",
+                "approximate": 0.1817443325370836
+              },
+              "upper": {
+                "numerator": "482102951808363230789114133064",
+                "denominator": "2649270426588749718095264938521",
+                "approximate": 0.18197574206462871
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1123476399244749923186040763048",
+                "denominator": "6181630995373749342222284856549",
+                "approximate": 0.1817443325370836
+              },
+              "upper": {
+                "numerator": "482102951808363230789114133064",
+                "denominator": "2649270426588749718095264938521",
+                "approximate": 0.18197574206462871
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "bergen-2027",
+      "status": "available",
+      "latitude": 60.39299,
+      "anchorDayIndex": 233.941300959094,
+      "deltaDegrees": 11.607010000000002,
+      "hourAngle16Degrees": 158.59531945866576,
+      "extraFajrMinutes": 85.61872216533698,
+      "altitudeReplayDegrees": -16,
+      "q": {
+        "numerator": "6679876432076087",
+        "denominator": "36028797018963968",
+        "approximate": 0.1854038154135453
+      },
+      "k": {
+        "numerator": "4066030428173312736985227836503797849178941863",
+        "denominator": "2156669120940346729745784229391751649873799591",
+        "approximate": 1.8853288103835093
+      },
+      "seamMinutes": {
+        "numerator": "-13118221336923381328169764627504617944567338585",
+        "denominator": "178405961588244985132285746181186892047843328",
+        "approximate": -73.53017365641513
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5682779234394124394983774344",
+                "denominator": "30458550109567458290567135905",
+                "approximate": 0.1865741873448232
+              },
+              "upper": {
+                "numerator": "987842340588810417471631528",
+                "denominator": "5292797232154345211147731813",
+                "approximate": 0.1866389920602958
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5682779234394124394983774344",
+                "denominator": "30458550109567458290567135905",
+                "approximate": 0.1865741873448232
+              },
+              "upper": {
+                "numerator": "987842340588810417471631528",
+                "denominator": "5292797232154345211147731813",
+                "approximate": 0.1866389920602958
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5682779234394124394983774344",
+                "denominator": "30458550109567458290567135905",
+                "approximate": 0.1865741873448232
+              },
+              "upper": {
+                "numerator": "542355784816251870842935466056",
+                "denominator": "2905745680452735520920104765337",
+                "approximate": 0.18664943338459994
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "rovaniemi-2027",
+      "status": "available",
+      "latitude": 66.49897,
+      "anchorDayIndex": 250.944329966555,
+      "deltaDegrees": 5.50103,
+      "hourAngle16Degrees": 156.334616629313,
+      "extraFajrMinutes": 94.66153348274804,
+      "altitudeReplayDegrees": -16.000000000000004,
+      "q": {
+        "numerator": "6812691524062931",
+        "denominator": "36028797018963968",
+        "approximate": 0.18909017474208287
+      },
+      "k": {
+        "numerator": "1309569217185136755113426385274042334080741549",
+        "denominator": "706419863384868414544964234807623489451798701",
+        "approximate": 1.8538114300895066
+      },
+      "seamMinutes": {
+        "numerator": "-28831424769120948170019130782466090873058208581",
+        "denominator": "356811923176489970264571492362373784095686656",
+        "approximate": -80.80286250653135
+      },
+      "trims": {
+        "0": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "1": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "138696328421323745400787431424",
+                "denominator": "725842205863598547685768888697",
+                "approximate": 0.19108330612478572
+              },
+              "upper": {
+                "numerator": "1528537602313955134116554428416",
+                "denominator": "7984264264499584024543457775667",
+                "approximate": 0.19144376384312434
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        },
+        "2": {
+          "angular-boundary": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": false,
+            "coupledQ": {
+              "status": "positive-conflict",
+              "lower": null,
+              "upper": null,
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          },
+          "old-factor-control": {
+            "eventsCompatible": {
+              "fajr": false,
+              "isha": false
+            },
+            "jointCompatible": false,
+            "factorInRelaxedAnyAnchorAnyQuotientProjection": true,
+            "coupledQ": {
+              "status": "feasible",
+              "lower": {
+                "numerator": "969535831509775043991089287168",
+                "denominator": "5080895441045189833800382220879",
+                "approximate": 0.19081987471687314
+              },
+              "upper": {
+                "numerator": "1528537602313955134116554428416",
+                "denominator": "7984264264499584024543457775667",
+                "approximate": 0.19144376384312434
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          }
+        }
+      }
+    }
+  ],
+  "verification": {
+    "independentFixedSlopeChecks": 312,
+    "geometrySha256": "2e7e607723af72d4bd4071b28b4521dc5da4ff5e2add95234c8244e1e0eb8b9a",
+    "scriptSha256": "46d7c7ef4ba2f67cf977c610fb0222bdc8c71e64b3e344bcbe116f3eb56863a1"
+  },
+  "conclusion": "Necessary endpoint screen only; no calendar score or default change. No-gap cases remain outside scope. Continuity is not supplied by this interpretation.",
+  "publicExport": {
+    "originalReportSha256": "a29cf9d21a78ef155848dc63bd37f227ba3217acc3e0987cda108cc372b4783f",
+    "omitted": "Only diagnostic witness/contradiction details omitted; exact bounds, endpoint closure and status retained. Original reports remain preserved privately."
+  },
+  "frozenPlan": {
+    "createdUtc": "2026-09-25T22:12:19.718915+00:00",
+    "scope": "Adaptive no-fit necessary endpoint screen after joint free-q/k results. Not a complete calendar candidate: the conceptual audit identified an unresolved seam with the unchanged frozen-night branch.",
+    "cases": "All 28 original cases accounted for; evaluate 26 with a Fajr gap, mark 2 no-gap June21 cases outside this boundary interpretation; trims 0,1,2 separate.",
+    "boundary": "Reuse own frozen fractional-autumn forecast physicalAutumnBoundaryDayIndex: descending root delta(t)=72-latitude in the existing solar carrier. No search using source clocks.",
+    "rule": "delta=72-latitude; H16=acos((sin(-16deg)-sin(latitude)*sin(delta))/(cos(latitude)*cos(delta))); Delta=4*(180deg-H16). Fixed original q from baseline season. N=1440+R(t)-S(t); Bi=S(t)+q*N; Bf=R(t)-q*N-Delta. k=1+Delta/(q*N).",
+    "control": "At same t, keep original q and k=18/16. This reuses a previously rejected boundary interpretation; it is a control, not another new candidate.",
+    "arithmetic": "t and Delta from binary64 are converted to exact binary rationals, then horizon interpolation and endpoint/factor/quota equations use exact fractions. No source seconds inferred. Record Delta angular-root floating precision separately.",
+    "test": "Check each B against affine_value(source cells,t), and q against coupled quotient interval at t,k. Report Fajr/Isha/joint membership for every case and trim. Compare k to free-q/free-location projected sets as an additional relaxed screen. Report the seam J=q*N/8-Delta; no taper or city-specific correction is added.",
+    "limits": "Failure rejects this boundary interpretation only under current horizon, source-cell and affine-run assumptions. Success would not determine outer crossings, preserve continuity or demonstrate a full calendar; no production promotion.",
+    "files": [
+      {
+        "path": "research/diyanet-joint-feasible-2026-09-26/rule-audit/README.md",
+        "sha256": "bb44ec8da3de56d1c13081d1cf84e40832fdf98e475756aa70f556072dd4ce06"
+      },
+      {
+        "path": "research/diyanet-joint-feasible-2026-09-26/report.json",
+        "sha256": "80deee5554b44cd983832fe6b01a05e6c35526c1d42aac529102362e8d9cbaa8"
+      },
+      {
+        "path": "research/diyanet-transition-inverse-2026-09-25/report.json",
+        "sha256": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6"
+      },
+      {
+        "path": "research/diyanet-seasonal-precision-review-2026-09-25/inputs.json",
+        "sha256": "21b519ea2109352e64f998457b4112455f572fe49040106c6b71318496b7314a"
+      },
+      {
+        "path": "research/diyanet-improvement-2026-09-25-round2/autumn/forecast.json",
+        "sha256": "158cbbc53fe577cb5bf1e5d17fe3f9e102b1b74c4cef6c4313252ee43f47543a"
+      }
+    ]
+  }
+}

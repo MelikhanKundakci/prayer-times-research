@@ -1,0 +1,1965 @@
+{
+  "scope": "Independent algebra, source-extraction and point-membership checks on retrospective data; no fresh accuracy observations.",
+  "exactGlobalFactors": {
+    "hashes": {
+      "research/diyanet-joint-feasible-2026-09-26/report.json": "80deee5554b44cd983832fe6b01a05e6c35526c1d42aac529102362e8d9cbaa8",
+      "research/diyanet-joint-feasible-2026-09-26/evaluate.py": "94437db2770e19fc06718d001d04a43c6b391ef5eb1af1a6b85ffd07c56659e3",
+      "research/diyanet-joint-feasible-2026-09-26/joint_space.py": "7c4fac0f837c02d5284f2e426197d3738e54bf21bae08066c539f46253077312",
+      "research/diyanet-joint-feasible-2026-09-26/envelope-helper/affine_envelope.py": "994ca1df7165f9c6b43927cee8b73a975c10dbfdc0f758b880ca5dfa97d3df42",
+      "research/diyanet-transition-inverse-2026-09-25/report.json": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6",
+      "research/diyanet-seasonal-precision-review-2026-09-25/inputs.json": "21b519ea2109352e64f998457b4112455f572fe49040106c6b71318496b7314a",
+      "research/diyanet-improvement-2026-09-25-round2/autumn/forecast.json": "158cbbc53fe577cb5bf1e5d17fe3f9e102b1b74c4cef6c4313252ee43f47543a",
+      "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/affine_constraints.py": "7a5d538cf1b1def6b5bb4482cc9e7a50ceeeb72848f6df55c2531d8d687e9a50"
+    },
+    "method": "Rebuilt each source-line polygon projection with affine_envelope; independently split each horizon/envelope band at pairwise affine crossings; clipped A,D by open physical bounds; took rational endpoint limits of A_low/D_high and A_high/D_low; evaluated every included temporal knot with public affine_value. Does not import evaluate.py, joint_space.py, or their ratio-splitting functions.",
+    "caseTrimComparisons": 84,
+    "interiorSubpiecesChecked": 996,
+    "pointOracleChecks": 1081,
+    "universalFactorIntersection": {
+      "0": [],
+      "1": [
+        {
+          "lower": {
+            "numerator": "826471437229429",
+            "denominator": "738831027030668",
+            "approximate": 1.1186203705480322
+          },
+          "upper": {
+            "numerator": "295468772147266801",
+            "denominator": "262922093682846000",
+            "approximate": 1.1237882979270686
+          },
+          "lowerClosed": false,
+          "upperClosed": false
+        }
+      ],
+      "2": [
+        {
+          "lower": {
+            "numerator": "826471437229429",
+            "denominator": "738831027030668",
+            "approximate": 1.1186203705480322
+          },
+          "upper": {
+            "numerator": "295468772147266801",
+            "denominator": "262922093682846000",
+            "approximate": 1.1237882979270686
+          },
+          "lowerClosed": false,
+          "upperClosed": false
+        }
+      ]
+    },
+    "freeFactorCityYears": {
+      "0": 27,
+      "1": 28,
+      "2": 28
+    },
+    "k18over16Cases": {
+      "0": 25,
+      "1": 26,
+      "2": 27
+    },
+    "interiorPointSubsetChecks": 1494,
+    "checkedReportGlobalIntersection": true
+  },
+  "intervalReview": {
+    "constantBandExactQuotientCases": 196,
+    "varyingBoundExactRatioSamples": 61370,
+    "unionTopologyAssertions": 4,
+    "envelopeDifferentialCases": 256,
+    "reviewedSha256": {
+      "research/diyanet-joint-feasible-2026-09-26/joint_space.py": "7c4fac0f837c02d5284f2e426197d3738e54bf21bae08066c539f46253077312",
+      "research/diyanet-joint-feasible-2026-09-26/evaluate.py": "94437db2770e19fc06718d001d04a43c6b391ef5eb1af1a6b85ffd07c56659e3",
+      "research/diyanet-joint-feasible-2026-09-26/envelope-helper/affine_envelope.py": "994ca1df7165f9c6b43927cee8b73a975c10dbfdc0f758b880ca5dfa97d3df42",
+      "research/diyanet-joint-feasible-2026-09-26/test_joint_space.py": "c8a22be0cba209ddcd96443e8c1386c31be48687b68b28a1b9de66d5c7ce84ca"
+    },
+    "limitations": "Synthetic checks verify interval/envelope machinery. The driver report replays existing projections and exact point oracles; neither retrospective report establishes institutional rule correctness or prediction accuracy.",
+    "driverStaticReview": {
+      "integerHorizonKnots": "horizon(rows,t) evaluates the row at floor(t) and the following row; all requested windows are interior to the supplied calendar rows.",
+      "emptyStatuses": "sourceLineStatus is retained per event and trim; point APIs retain public interval statuses; infeasible sets normalize to empty unions without dropping the separately stored source status.",
+      "inclusion": "The driver checks free-q fixed-k membership against an independent point oracle at knots, quarter-day probes, piece midpoints, and near feasible interval endpoints; replays 588 old integer factor projections and old fixed-q feasible intervals.",
+      "interpretation": "possibleFactors intersects per-case existential projections and is explicitly labeled as allowing distinct per-case anchors/quotients; commonDisplacementAt18Over16 is a separate shared-displacement test.",
+      "limitations": "Driver report checks and supplemental quotient serialization have now run and were independently verified.",
+      "supplementalCorrection": "Initial serialization gap resolved by export_samples.py; 2,542 rational t/k/q records independently match exact recomputation."
+    },
+    "reviewScriptSha256": "b8f817b4df2c4f7581e0d792224681ba8b1480af319bdb82e6959e72a4dd496f",
+    "driverReportReview": {
+      "reportSha256": "80deee5554b44cd983832fe6b01a05e6c35526c1d42aac529102362e8d9cbaa8",
+      "cityYears": 28,
+      "checks": {
+        "integerFactorReplays": 588,
+        "pointFactorMemberships": 2542,
+        "jointQuotientWitnesses": 695,
+        "fixedQInclusionChecks": 2542,
+        "projectedFactorPointInclusions": 2551
+      },
+      "summary": {
+        "0": {
+          "cityYears": 28,
+          "nonemptyFreeFactorCases": 27,
+          "anyLocationAt18Over16Cases": 25,
+          "originalAnchorAt18Over16Cases": 16,
+          "commonFactorWithDistinctCaseAnchors": [],
+          "commonDisplacementAt18Over16": []
+        },
+        "1": {
+          "cityYears": 28,
+          "nonemptyFreeFactorCases": 28,
+          "anyLocationAt18Over16Cases": 26,
+          "originalAnchorAt18Over16Cases": 18,
+          "commonFactorWithDistinctCaseAnchors": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "826471437229429",
+                "denominator": "738831027030668",
+                "approximate": 1.1186203705480322
+              },
+              "upper": {
+                "numerator": "295468772147266801",
+                "denominator": "262922093682846000",
+                "approximate": 1.1237882979270686
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "commonDisplacementAt18Over16": []
+        },
+        "2": {
+          "cityYears": 28,
+          "nonemptyFreeFactorCases": 28,
+          "anyLocationAt18Over16Cases": 27,
+          "originalAnchorAt18Over16Cases": 22,
+          "commonFactorWithDistinctCaseAnchors": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "826471437229429",
+                "denominator": "738831027030668",
+                "approximate": 1.1186203705480322
+              },
+              "upper": {
+                "numerator": "295468772147266801",
+                "denominator": "262922093682846000",
+                "approximate": 1.1237882979270686
+              },
+              "lowerClosed": false,
+              "upperClosed": false,
+              "lowerWitness": null,
+              "upperWitness": null,
+              "contradictions": []
+            }
+          ],
+          "commonDisplacementAt18Over16": []
+        }
+      },
+      "retainedEmptySourceLineStatus": [
+        {
+          "id": "helsinki-2026",
+          "trim0": {
+            "fajr": "feasible",
+            "isha": "tie-only-conflict"
+          }
+        }
+      ],
+      "observedAnchorWindows": {
+        "minLowerDayIndex": 168,
+        "maxUpperDayIndex": 262,
+        "calendarRows": 365
+      },
+      "conclusion": "Static review found correct separation of per-case factor projections from common displacement. Existing report invariants and empty tie status are preserved. Coupled q intervals are stored at knots and original anchors and represented algebraically per open piece; sampled non-knot q intervals were validated but not serialized as separate records.",
+      "pendingPlanWording": "Plan states coupled q interval at sampled t; code verifies q at many samples but stores only selected q records. Add samples to report or narrow frozen plan wording.",
+      "limitations": "Driver report and supplemental q serialization independently checked; synthetic tests remain supplemental coverage, not institutional accuracy validation.",
+      "supplementalQuotients": {
+        "path": "research/diyanet-joint-feasible-2026-09-26/sampled-joint-quotients.json",
+        "sha256": "2712b0fa9f0b4ad8509790c28aa2b22242ebc72e31ca470312f2a0b1fcac12e9",
+        "records": 2542,
+        "feasibleQIntervals": 695,
+        "independentExactRecomputations": 2542,
+        "result": "All q interval statuses, rational bounds, and endpoint flags match independent affine_value/quotient_interval recomputation."
+      }
+    },
+    "correction": {
+      "initialReviewGap": "Driver initially serialized q intervals at knots/original anchor and only checked non-knot sample witnesses.",
+      "resolution": "export_samples.py added supplemental sampled-joint-quotients.json bound by the unchanged report SHA256; independently recomputed all 2,542 records exactly.",
+      "countClarification": "Persisted rerunnable review checks contain 196 distinct constant-band/closure cases (not 1,764), 61,370 varying-band quotient samples, four union topology assertions, and 256 envelope differential datasets."
+    }
+  },
+  "boundaryReview": {
+    "method": "Independent exact Fraction intersection of slope inequalities at recomputed physical root, from archived quantized cells with half-open minute bins [u\u22121/2,u+1/2). Floats become exact binary rationals. No stored root or score flags used for calculation.",
+    "scope": {
+      "availableGapCases": 26,
+      "outsideNoGapCases": 2,
+      "endpointMembershipDecisions": 312
+    },
+    "summary": {
+      "0": {
+        "angular-boundary": {
+          "available": 26,
+          "fajr": 0,
+          "isha": 5,
+          "joint": 0
+        },
+        "old-factor-control": {
+          "available": 26,
+          "fajr": 8,
+          "isha": 5,
+          "joint": 2
+        }
+      },
+      "1": {
+        "angular-boundary": {
+          "available": 26,
+          "fajr": 0,
+          "isha": 7,
+          "joint": 0
+        },
+        "old-factor-control": {
+          "available": 26,
+          "fajr": 8,
+          "isha": 7,
+          "joint": 2
+        }
+      },
+      "2": {
+        "angular-boundary": {
+          "available": 26,
+          "fajr": 0,
+          "isha": 9,
+          "joint": 0
+        },
+        "old-factor-control": {
+          "available": 26,
+          "fajr": 9,
+          "isha": 9,
+          "joint": 4
+        }
+      }
+    },
+    "mismatchCount": 0,
+    "mismatches": [],
+    "geometry": [
+      {
+        "id": "berlin-2026",
+        "recomputedIndex": 205.96783482679578,
+        "savedIndex": 205.96783482679578,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 160.35815334872768,
+        "recomputedDelta2Minutes": 78.56738660508927,
+        "savedDelta2Minutes": 78.56738660508927,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -7.050715566947474e-11
+      },
+      {
+        "id": "berlin-2027",
+        "recomputedIndex": 206.2089810764906,
+        "savedIndex": 206.2089810764906,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 160.35815334872768,
+        "recomputedDelta2Minutes": 78.56738660508927,
+        "savedDelta2Minutes": 78.56738660508927,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -2.1877610834053485e-11
+      },
+      {
+        "id": "frankfurt-2027",
+        "recomputedIndex": 193.00838389643917,
+        "savedIndex": 193.00838389643917,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 160.71750848220532,
+        "recomputedDelta2Minutes": 77.12996607117873,
+        "savedDelta2Minutes": 77.12996607117873,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -3.567990347619343e-11
+      },
+      {
+        "id": "oslo-2027",
+        "recomputedIndex": 232.4931853257582,
+        "savedIndex": 232.4931853257582,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.73545002507421,
+        "recomputedDelta2Minutes": 85.05819989970314,
+        "savedDelta2Minutes": 85.05819989970314,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 7.531752999057062e-11
+      },
+      {
+        "id": "stockholm-2026",
+        "recomputedIndex": 230.48714637034664,
+        "savedIndex": 230.48714637034664,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.89727322251315,
+        "recomputedDelta2Minutes": 84.4109071099474,
+        "savedDelta2Minutes": 84.4109071099474,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 4.588329716170847e-11
+      },
+      {
+        "id": "stockholm-2027",
+        "recomputedIndex": 230.72870125272397,
+        "savedIndex": 230.72870125272397,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.89727322251315,
+        "recomputedDelta2Minutes": 84.4109071099474,
+        "savedDelta2Minutes": 84.4109071099474,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.0891554325098696e-10
+      },
+      {
+        "id": "helsinki-2026",
+        "recomputedIndex": 233.05239727837457,
+        "savedIndex": 233.05239727837457,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.6587951014694,
+        "recomputedDelta2Minutes": 85.36481959412242,
+        "savedDelta2Minutes": 85.36481959412242,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -3.3297808954557695e-11
+      },
+      {
+        "id": "helsinki-2027",
+        "recomputedIndex": 233.29398953704833,
+        "savedIndex": 233.29398953704833,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.6587951014694,
+        "recomputedDelta2Minutes": 85.36481959412242,
+        "savedDelta2Minutes": 85.36481959412242,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.4293810579601995e-10
+      },
+      {
+        "id": "tromso-2026",
+        "recomputedIndex": 258.9528494935947,
+        "savedIndex": 258.9528494935947,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 154.68041404251514,
+        "recomputedDelta2Minutes": 101.27834382993944,
+        "savedDelta2Minutes": 101.27834382993944,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 7.447686911632445e-11
+      },
+      {
+        "id": "tromso-2027",
+        "recomputedIndex": 259.19481956935175,
+        "savedIndex": 259.19481956935175,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 154.68041404251514,
+        "recomputedDelta2Minutes": 101.27834382993944,
+        "savedDelta2Minutes": 101.27834382993944,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 2.433608869978343e-11
+      },
+      {
+        "id": "bodo-2026",
+        "recomputedIndex": 252.77700342121267,
+        "savedIndex": 252.77700342121267,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 155.96121470466548,
+        "recomputedDelta2Minutes": 96.15514118133808,
+        "savedDelta2Minutes": 96.15514118133808,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.5726353552736327e-10
+      },
+      {
+        "id": "bodo-2027",
+        "recomputedIndex": 253.01888211653534,
+        "savedIndex": 253.01888211653534,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 155.96121470466548,
+        "recomputedDelta2Minutes": 96.15514118133808,
+        "savedDelta2Minutes": 96.15514118133808,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.0078426981863231e-10
+      },
+      {
+        "id": "kiruna-2026",
+        "recomputedIndex": 254.28157488326462,
+        "savedIndex": 254.28157488326462,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 155.67361041302874,
+        "recomputedDelta2Minutes": 97.30555834788504,
+        "savedDelta2Minutes": 97.30555834788504,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -1.5721912660637827e-10
+      },
+      {
+        "id": "kiruna-2027",
+        "recomputedIndex": 254.52347573055692,
+        "savedIndex": 254.52347573055692,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 155.67361041302874,
+        "recomputedDelta2Minutes": 97.30555834788504,
+        "savedDelta2Minutes": 97.30555834788504,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.3442313928635485e-10
+      },
+      {
+        "id": "reykjavik-2026",
+        "recomputedIndex": 244.31405213358562,
+        "savedIndex": 244.31405213358562,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 157.3351536780241,
+        "recomputedDelta2Minutes": 90.65938528790355,
+        "savedDelta2Minutes": 90.65938528790355,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 6.962075360661402e-11
+      },
+      {
+        "id": "reykjavik-2027",
+        "recomputedIndex": 244.55580734903972,
+        "savedIndex": 244.55580734903972,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 157.3351536780241,
+        "recomputedDelta2Minutes": 90.65938528790355,
+        "savedDelta2Minutes": 90.65938528790355,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -1.3092726902641516e-10
+      },
+      {
+        "id": "trondheim-2026",
+        "recomputedIndex": 242.40188671625208,
+        "savedIndex": 242.40188671625208,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 157.595851386165,
+        "recomputedDelta2Minutes": 89.61659445533996,
+        "savedDelta2Minutes": 89.61659445533996,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -1.1690204360093048e-10
+      },
+      {
+        "id": "trondheim-2027",
+        "recomputedIndex": 242.643614236032,
+        "savedIndex": 242.643614236032,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 157.595851386165,
+        "recomputedDelta2Minutes": 89.61659445533996,
+        "savedDelta2Minutes": 89.61659445533996,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -1.5121592866762512e-10
+      },
+      {
+        "id": "oulu-2026",
+        "recomputedIndex": 246.7030575152023,
+        "savedIndex": 246.7030575152023,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 156.98550967840848,
+        "recomputedDelta2Minutes": 92.0579612863661,
+        "savedDelta2Minutes": 92.0579612863661,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -5.2440718434354494e-11
+      },
+      {
+        "id": "oulu-2027",
+        "recomputedIndex": 246.94484741916233,
+        "savedIndex": 246.94484741916233,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 156.98550967840848,
+        "recomputedDelta2Minutes": 92.0579612863661,
+        "savedDelta2Minutes": 92.0579612863661,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -7.411227187503755e-11
+      },
+      {
+        "id": "kuopio-2027",
+        "recomputedIndex": 241.1316091895605,
+        "savedIndex": 241.1316091895605,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 157.79069256356854,
+        "recomputedDelta2Minutes": 88.83722974572584,
+        "savedDelta2Minutes": 88.83722974572584,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -8.258460582055704e-11
+      },
+      {
+        "id": "narvik-2027",
+        "recomputedIndex": 256.0472276711358,
+        "savedIndex": 256.0472276711358,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 155.36698183457713,
+        "recomputedDelta2Minutes": 98.53207266169147,
+        "savedDelta2Minutes": 98.53207266169147,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -1.2381295988461716e-10
+      },
+      {
+        "id": "kirkenes-2027",
+        "recomputedIndex": 259.3964921941517,
+        "savedIndex": 259.3964921941517,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 154.6338141640802,
+        "recomputedDelta2Minutes": 101.46474334367917,
+        "savedDelta2Minutes": 101.46474334367917,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -9.6064045607136e-11
+      },
+      {
+        "id": "bremen-2027",
+        "recomputedIndex": 208.6669112069024,
+        "savedIndex": 208.6669112069024,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 160.2646845849082,
+        "recomputedDelta2Minutes": 78.94126166036722,
+        "savedDelta2Minutes": 78.94126166036722,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 2.972200263684499e-11
+      },
+      {
+        "id": "bergen-2027",
+        "recomputedIndex": 233.941300959094,
+        "savedIndex": 233.941300959094,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 158.59531945866576,
+        "recomputedDelta2Minutes": 85.61872216533698,
+        "savedDelta2Minutes": 85.61872216533698,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": -7.929834566766658e-11
+      },
+      {
+        "id": "rovaniemi-2027",
+        "recomputedIndex": 250.944329966555,
+        "savedIndex": 250.944329966555,
+        "indexDifference": 0,
+        "recomputedHourAngle16Degrees": 156.334616629313,
+        "recomputedDelta2Minutes": 94.66153348274804,
+        "savedDelta2Minutes": 94.66153348274804,
+        "deltaDifferenceMinutes": 0,
+        "declinationResidualDegrees": 1.1430234536646822e-10
+      }
+    ],
+    "cases": [
+      {
+        "id": "berlin-2026",
+        "recomputedIndexExact": {
+          "n": "7246848938877073",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "1656193123253239",
+          "d": "9007199254740992"
+        },
+        "delta2ExactBinary64": {
+          "n": "21596438784067",
+          "d": "274877906944"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "berlin-2027",
+        "recomputedIndexExact": {
+          "n": "3627666759127081",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6241381554717527",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "21596438784067",
+          "d": "274877906944"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2027",
+        "recomputedIndexExact": {
+          "n": "3395439397638223",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6263935999309981",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "678442356361835",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "oslo-2027",
+        "recomputedIndexExact": {
+          "n": "2045031685154813",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "6299429037858577",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "93522479827419",
+          "d": "1099511627776"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "stockholm-2026",
+        "recomputedIndexExact": {
+          "n": "253423297487105",
+          "d": "1099511627776"
+        },
+        "qExact": {
+          "n": "3318323503506677",
+          "d": "18014398509481984"
+        },
+        "delta2ExactBinary64": {
+          "n": "92810773878507",
+          "d": "1099511627776"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "stockholm-2027",
+        "recomputedIndexExact": {
+          "n": "4059022238224399",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "1686558897708887",
+          "d": "9007199254740992"
+        },
+        "delta2ExactBinary64": {
+          "n": "92810773878507",
+          "d": "1099511627776"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          }
+        }
+      },
+      {
+        "id": "helsinki-2026",
+        "recomputedIndexExact": {
+          "n": "8199802262036629",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "6262471887589245",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "750876893973905",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          }
+        }
+      },
+      {
+        "id": "helsinki-2027",
+        "recomputedIndexExact": {
+          "n": "2052075633489897",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "6476670603927459",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "750876893973905",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "tromso-2026",
+        "recomputedIndexExact": {
+          "n": "2277773352511487",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "829702794009281",
+          "d": "4503599627370496"
+        },
+        "delta2ExactBinary64": {
+          "n": "890853733463313",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "tromso-2027",
+        "recomputedIndexExact": {
+          "n": "4559803487612873",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6756419045128645",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "890853733463313",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          }
+        }
+      },
+      {
+        "id": "bodo-2026",
+        "recomputedIndexExact": {
+          "n": "4446900071935953",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6682362867810797",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "845789566394593",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "bodo-2027",
+        "recomputedIndexExact": {
+          "n": "2225577623472125",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "1698709361458321",
+          "d": "9007199254740992"
+        },
+        "delta2ExactBinary64": {
+          "n": "845789566394593",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "kiruna-2026",
+        "recomputedIndexExact": {
+          "n": "2236684386506745",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "794874569166859",
+          "d": "4503599627370496"
+        },
+        "delta2ExactBinary64": {
+          "n": "855908742805885",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "kiruna-2027",
+        "recomputedIndexExact": {
+          "n": "2238812168861679",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "6547142825219581",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "855908742805885",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "reykjavik-2026",
+        "recomputedIndexExact": {
+          "n": "1074504564599797",
+          "d": "4398046511104"
+        },
+        "qExact": {
+          "n": "6828353492484803",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "797448386328595",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": true,
+              "joint": true
+            }
+          }
+        }
+      },
+      {
+        "id": "reykjavik-2027",
+        "recomputedIndexExact": {
+          "n": "8604542522253329",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "3205880085518449",
+          "d": "18014398509481984"
+        },
+        "delta2ExactBinary64": {
+          "n": "797448386328595",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "trondheim-2026",
+        "recomputedIndexExact": {
+          "n": "2132189544314879",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "423586472022003",
+          "d": "2251799813685248"
+        },
+        "delta2ExactBinary64": {
+          "n": "197068975290665",
+          "d": "2199023255552"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "trondheim-2027",
+        "recomputedIndexExact": {
+          "n": "8537263208259563",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "787148453027285",
+          "d": "4503599627370496"
+        },
+        "delta2ExactBinary64": {
+          "n": "197068975290665",
+          "d": "2199023255552"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "oulu-2026",
+        "recomputedIndexExact": {
+          "n": "8680092171067399",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "6670999750612193",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "809750390909699",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": true,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "oulu-2027",
+        "recomputedIndexExact": {
+          "n": "2172149849253913",
+          "d": "8796093022208"
+        },
+        "qExact": {
+          "n": "6784424825008299",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "809750390909699",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "kuopio-2027",
+        "recomputedIndexExact": {
+          "n": "4242032130052159",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "3324648483926273",
+          "d": "18014398509481984"
+        },
+        "delta2ExactBinary64": {
+          "n": "195355134169667",
+          "d": "2199023255552"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": true,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "narvik-2027",
+        "recomputedIndexExact": {
+          "n": "4504430465347561",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6801854158397973",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "216674319200799",
+          "d": "2199023255552"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "kirkenes-2027",
+        "recomputedIndexExact": {
+          "n": "4563351349948419",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6660605206047479",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "446246660462731",
+          "d": "4398046511104"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "bremen-2027",
+        "recomputedIndexExact": {
+          "n": "3670907123265461",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "3284095247363035",
+          "d": "18014398509481984"
+        },
+        "delta2ExactBinary64": {
+          "n": "173593670213763",
+          "d": "2199023255552"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "bergen-2027",
+        "recomputedIndexExact": {
+          "n": "4115538889945097",
+          "d": "17592186044416"
+        },
+        "qExact": {
+          "n": "6679876432076087",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "376555122304443",
+          "d": "4398046511104"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      },
+      {
+        "id": "rovaniemi-2027",
+        "recomputedIndexExact": {
+          "n": "8829318679125905",
+          "d": "35184372088832"
+        },
+        "qExact": {
+          "n": "6812691524062931",
+          "d": "36028797018963968"
+        },
+        "delta2ExactBinary64": {
+          "n": "832651654139109",
+          "d": "8796093022208"
+        },
+        "trims": {
+          "0": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "1": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          },
+          "2": {
+            "angular-boundary": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            },
+            "old-factor-control": {
+              "fajr": false,
+              "isha": false,
+              "joint": false
+            }
+          }
+        }
+      }
+    ]
+  },
+  "privateArtifactHashes": {
+    "plan.json": "ac5a4a0e2f65856dbbbedeb25c4fac20c576e93c7f6fc7565b2cd045bbbf2906",
+    "report.json": "80deee5554b44cd983832fe6b01a05e6c35526c1d42aac529102362e8d9cbaa8",
+    "sampled-joint-quotients.json": "2712b0fa9f0b4ad8509790c28aa2b22242ebc72e31ca470312f2a0b1fcac12e9",
+    "export_samples.py": "01ed6e628f651a6a456f0ee443c95dbd1c36a35b7673c51f0b89dae07c555f55",
+    "boundary-screen/plan.json": "6509efd6aab2fa049f97236686ae8ce1e33914edb9389e007f8b8682ef334751",
+    "boundary-screen/report.json": "a29cf9d21a78ef155848dc63bd37f227ba3217acc3e0987cda108cc372b4783f",
+    "boundary-screen/geometry.mjs": "d59c9681f9e67c00c03483a3b3bd0ea97ca631b91cb46aa5997e337cf33aed2f",
+    "boundary-screen/geometry.json": "2e7e607723af72d4bd4071b28b4521dc5da4ff5e2add95234c8244e1e0eb8b9a",
+    "boundary-screen/evaluate_screen.py": "46d7c7ef4ba2f67cf977c610fb0222bdc8c71e64b3e344bcbe116f3eb56863a1",
+    "envelope-helper/verify_global_factors.py": "c9f826b53975b595fcb319d9f523bbafdea144876b717c5eb29386e9514c961e",
+    "envelope-helper/independent_global_factor_verification.json": "54a346cddbc548c5b6f85cbd45690cea1bcd7e85c897281d0673c18cedb3af4c",
+    "independent-review/review_checks.py": "b8f817b4df2c4f7581e0d792224681ba8b1480af319bdb82e6959e72a4dd496f",
+    "independent-review/check-results.json": "a46e6e93eb5cfe7d3ae1f92081a09295ce9ffff166aa1c5de70e47dd84afd7a3",
+    "independent-review/review-report.json": "358f4f1ba662b988ffa5f9b43a73d2c5354abaf2f622a2d6273cdae19b3c31d5",
+    "rule-audit/README.md": "bb44ec8da3de56d1c13081d1cf84e40832fdf98e475756aa70f556072dd4ce06",
+    "rule-audit/verify_boundary.py": "06ab86c2f81350d9bff8efb2eacef6838db1f795b08d644e89e648983ab3bd47",
+    "rule-audit/verify_geometry.mjs": "78ab17bbe8e25ebaca37a83e20885f2fe6943d5a58f3fc815d7e781fd63b0e56",
+    "rule-audit/verification.json": "d131cd3de54d45da14d1b2afcc50bf07c171ff589710c667b1353642883477d1"
+  },
+  "publicSourceParity": {
+    "joint_space.py": {
+      "privateSha256": "7c4fac0f837c02d5284f2e426197d3738e54bf21bae08066c539f46253077312",
+      "publicSha256": "7c4fac0f837c02d5284f2e426197d3738e54bf21bae08066c539f46253077312",
+      "byteIdentical": true
+    },
+    "test_joint_space.py": {
+      "privateSha256": "c8a22be0cba209ddcd96443e8c1386c31be48687b68b28a1b9de66d5c7ce84ca",
+      "publicSha256": "c8a22be0cba209ddcd96443e8c1386c31be48687b68b28a1b9de66d5c7ce84ca",
+      "byteIdentical": true
+    },
+    "affine_envelope.py": {
+      "privateSha256": "994ca1df7165f9c6b43927cee8b73a975c10dbfdc0f758b880ca5dfa97d3df42",
+      "publicSha256": "994ca1df7165f9c6b43927cee8b73a975c10dbfdc0f758b880ca5dfa97d3df42",
+      "byteIdentical": true
+    },
+    "test_affine_envelope.py": {
+      "privateSha256": "c2d9b6c0cc36ee72cbc1caabf63a1584494fe22c37e55f068ab2167b2602dc50",
+      "publicSha256": "c2d9b6c0cc36ee72cbc1caabf63a1584494fe22c37e55f068ab2167b2602dc50",
+      "byteIdentical": true
+    }
+  },
+  "finalPublicationReview": {
+    "reviewer": "independent envelope/global-factor reviewer",
+    "finding": "No material corrections. Counts, exact open factor interval, trimming results, and no-gap accounting match private reports; distinct case anchors/quotients are not presented as a transferable formula. Four public helper/test files match private copies byte for byte.",
+    "publicPythonTests": 42,
+    "publicNodeTests": 141,
+    "uaeFixtures": 108,
+    "localDocumentationLinks": 551
+  }
+}

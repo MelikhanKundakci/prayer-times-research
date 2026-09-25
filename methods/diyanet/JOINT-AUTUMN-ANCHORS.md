@@ -1,5 +1,7 @@
 # Joint autumn anchors, Fajr factor and night definition
 
+The subsequent [joint feasible-region study](JOINT-FEASIBLE-REGIONS.md) allows the continuous location and quotient to vary together and projects possible factors. It adds 16 mathematical tests, bringing the diagnostic suite to 42; the test counts below describe this earlier study.
+
 **Four new full-calendar hypotheses fail the replacement checks.** Additional exact diagnostics also show that changing the autumn anchor alone is insufficient under the current quotient and Fajr-factor assumptions. No timing formula, default or notification setting is changed. All 28 reference city-years were already exposed; this is retrospective research with no new prayer-calendar/API requests or institutional contact.
 
 ## Complete forecasts: use the preceding or following autumn row

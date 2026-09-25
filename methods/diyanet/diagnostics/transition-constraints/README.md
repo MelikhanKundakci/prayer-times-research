@@ -40,7 +40,7 @@ This is the additive V2 diagnostic. Its compound-conflict classification correct
 
 ## Segment discovery and positive interval ratios
 
-[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor tests below, the complete suite has **26 tests**.
+[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor, envelope and joint-space tests below, the complete suite has **42 tests**.
 
 - `affine_runs(values, minimum_length=7)` returns **all inclusion-maximal** contiguous compatible intervals, preserving overlapping alternatives. Inputs are ordered `(x, minute, label)` triples with strictly increasing finite `x`. The minimum must be an integer at least two. Split missing/unresolved observations into separate calls before invoking it; no calendar dates, institutional transition days or date interpretations are inferred. A compatible line need not be the generating rule.
 - `positive_ratio(numerator, denominator)` returns the exact interval image of all independently possible `A / D`, retaining open/closed bounds and empty-input conflicts. Nonempty input intervals must be bounded with strictly positive lower bounds. Zero-touching, sign-changing and unbounded domains reject explicitly. This restricted contract covers the reviewed factor intervals; it is not unrestricted interval division.
@@ -77,4 +77,19 @@ assert len(possible) == 2       # [-1, 0) and (0, 1]
 assert not any(i.contains(0) for i in possible)
 ```
 
-Seven additional source-free tests bring the total to **26**. They include 3,672 fixed-point slope comparisons, direct tests at observation abscissae, empty source constraints, exact open/closed boundaries and genuine disconnected solutions. The [joint-anchor study](../../JOINT-AUTUMN-ANCHORS.md) states the additional assumptions needed to apply this helper to existing reference-derived constraints. It does not improve the prayer-time runtime by itself.
+Seven additional source-free tests brought the total at this stage to **26**. They include 3,672 fixed-point slope comparisons, direct tests at observation abscissae, empty source constraints, exact open/closed boundaries and genuine disconnected solutions. The [joint-anchor study](../../JOINT-AUTUMN-ANCHORS.md) states the additional assumptions needed to apply this helper to existing reference-derived constraints. It does not improve the prayer-time runtime by itself.
+
+## Joint endpoint envelopes and ratio constraints
+
+[affine_envelope.py](affine_envelope.py) provides `affine_envelope(values, lower, upper)` for at least two strictly increasing observations and a finite closed search domain. It returns exact rational partition knots, open pieces whose `lower`/`upper` coefficients are `(intercept, slope)`, and a point `Interval` at every knot. Piece flags describe whether the projected value bound is attained inside the open temporal piece. Empty source sets retain their positive/tie-only status. Optimizing faces are checked against all strict constraints; an excluded vertex does not imply that the entire face is excluded.
+
+[joint_space.py](joint_space.py) combines supplied affine endpoint bands. It does not obtain horizons, interpret dates or choose a prayer rule. Its named `A,D,N` quantities are inputs to the conditional algebra `A=q*N*k`, `D=q*N`, with `A>0`, `0<D<N`:
+
+- `band((c0,c1), (d0,d1), lower_closed, upper_closed)` describes affine bounds on an open temporal piece. Both coefficient pairs must be finite; callers must pass complete pieces on which the bound formulas and attainment flags are constant.
+- `split_physical(lo, hi, A, D, night)` partitions and clips those bands, returning valid open pieces and all additional knots. Supply `night` as an exact `(intercept, slope)` pair of integers or `Fraction` values; `lin(pair)` converts finite float coefficients to exact binary rationals if needed. The caller **must evaluate every knot separately** using the original endpoint constraints. Do not extrapolate an open-piece attainment flag to a knot.
+- `fixed_factor_locations(piece, k)` gives the possible locations for one positive factor on a valid clipped piece.
+- `projected_factors(piece)` gives the exact factor interval over a valid clipped open piece. Positive-denominator limits may create an unbounded upper factor interval; constant extrema can be attained even though the temporal piece is open.
+- `factor_interval(A, D, night)` and `quotient_interval(A, D, night, k)` operate on pointwise `Interval` inputs. The latter preserves coupling between both events at the supplied positive `k` and night length; it is not a product of independent parameter ranges.
+- This module's `normalize` and `intersect_sets` support infinite interval ends as well as strict touching holes. Unlike the finite-only versions in `moving_anchor.py`, they can represent an unbounded factor projection.
+
+Six envelope tests and ten joint-space tests bring the suite to **42**. They check exact point-oracle agreement, optimizing-face attainment, strict physical limits, zero-denominator limits, constant-ratio extrema, isolated boundaries, disconnected unions and the difference between a common factor and a common time. See the [joint feasible-region study](../../JOINT-FEASIBLE-REGIONS.md) for research inputs and limitations. None of these helpers runs inside the prayer-time calculator.
