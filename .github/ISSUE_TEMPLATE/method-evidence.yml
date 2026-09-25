@@ -1,0 +1,27 @@
+name: Method or source evidence
+description: Propose a new method, a documented rule, or a reference dataset.
+title: "[Evidence] "
+body:
+  - type: input
+    id: authority
+    attributes:
+      label: Named institution, authority, or publication
+    validations:
+      required: true
+  - type: textarea
+    id: specification
+    attributes:
+      label: Specific rule and primary sources
+      description: Include source links and page/section references. Distinguish published rules from inferred settings.
+    validations:
+      required: true
+  - type: textarea
+    id: coverage
+    attributes:
+      label: Geographic, temporal, and religious scope
+      description: Explain the relevant places, dates, event definitions, Asr convention, and high-latitude policy where known.
+  - type: textarea
+    id: rights
+    attributes:
+      label: Reference data and redistribution rights
+      description: Provide provenance and license information. A link and hash are useful when full originals cannot be shared.

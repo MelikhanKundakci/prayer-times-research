@@ -1,0 +1,55 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 30.05,
+    "longitude": 31.25,
+    "timeZone": "Africa/Cairo"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "events": {
+      "fajr": {
+        "status": "calculated",
+        "epoch": 1782004080000,
+        "date": "2026-06-21",
+        "time": "04:08"
+      },
+      "sunrise": {
+        "status": "calculated",
+        "epoch": 1782010440000,
+        "date": "2026-06-21",
+        "time": "05:54"
+      },
+      "dhuhr": {
+        "status": "calculated",
+        "epoch": 1782035820000,
+        "date": "2026-06-21",
+        "time": "12:57"
+      },
+      "asr": {
+        "status": "calculated",
+        "epoch": 1782048720000,
+        "date": "2026-06-21",
+        "time": "16:32"
+      },
+      "maghrib": {
+        "status": "calculated",
+        "epoch": 1782061140000,
+        "date": "2026-06-21",
+        "time": "19:59"
+      },
+      "isha": {
+        "status": "calculated",
+        "epoch": 1782066780000,
+        "date": "2026-06-21",
+        "time": "21:33"
+      }
+    }
+  }
+}

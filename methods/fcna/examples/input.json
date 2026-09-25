@@ -1,0 +1,12 @@
+{
+  "startDate": "2026-06-21",
+  "latitude": 40.7,
+  "longitude": -74,
+  "timeZone": "America/New_York",
+  "profileId": "fcna-usa-15",
+  "asr": "standard",
+  "numerical": {
+    "ephemeris": "usno",
+    "rounding": "nearest"
+  }
+}

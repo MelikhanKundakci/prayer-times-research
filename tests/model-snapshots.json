@@ -1,0 +1,121 @@
+{
+  "evidenceType": "generated-model-regression-not-institutional-validation",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "recipe": "SHA256(JSON.stringify(renderedProjection(result))); see scripts/output.mjs",
+  "cases": [
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "projectedFields": 8395,
+      "sha256": "6b4e9ddd15b284bd012eb0ae71ebcde2ff6721f517b9a061197810b3cf6f8228"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "projectedFields": 13874,
+      "sha256": "e9e09f64e9c6a74240d9eb389e52bb5a07cfbcdf1c76c37622e687fcab5cbd30"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "projectedFields": 13874,
+      "sha256": "e9e09f64e9c6a74240d9eb389e52bb5a07cfbcdf1c76c37622e687fcab5cbd30"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "projectedFields": 13877,
+      "sha256": "d133e82aa3fc35addd3d486d43afced20dedcc8c5ec724fe43f7fa068b5cfd24"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "projectedFields": 35,
+      "sha256": "596eaeeebc9b3864c5d5ac1246afec48dced016c6d41890657b0de0ed320e34e"
+    },
+    {
+      "id": "diyanet/south",
+      "projectedFields": 35,
+      "sha256": "d8276635318198449cbded22d83bef781b0fe94c58650b8951f5dcd0ea973ac0"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "projectedFields": 26,
+      "sha256": "17c6a08ab0ce22f989ceaad81c8b3f4ed3a0b748008f3d7a534782a52329d9f5"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "projectedFields": 19,
+      "sha256": "dae51c1b26ca7993ced71ee42e688691b4cef15beefada7ff502dbbe1919fd27"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "projectedFields": 31,
+      "sha256": "65a713a9d894addbe5c65971cb69cb1d27f8af759332c402f8cd98d8e7deb5d3"
+    },
+    {
+      "id": "kemenag/strict",
+      "projectedFields": 35,
+      "sha256": "0628faee7d91c2c889d9781cd9e42fada8afa5529b6e6b6d51e3834821436374"
+    },
+    {
+      "id": "oman-mara/v2",
+      "projectedFields": 26,
+      "sha256": "96bc73bea02c785bed5a311b4d629ab629fb6a19b8acc839a8ee194876ac21c4"
+    },
+    {
+      "id": "banuri-town/strict",
+      "projectedFields": 30,
+      "sha256": "59239fe36f9611b2b66215ab7447932bb643163658062bbc4d9cba16ae160c04"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "projectedFields": 31,
+      "sha256": "ec41f4f36f12aef0d2b1979e0e4cfd9e84b3740468fe8b0ea839cf60ec1b76d6"
+    },
+    {
+      "id": "jakim/multipoint",
+      "projectedFields": 31,
+      "sha256": "07052f501e44c27c3850d3f98bba2ec311a527b3b92e18485417ae02f5481433"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "projectedFields": 32,
+      "sha256": "ee25172ba073f9a33ea6188cc0ee1514704967b70fa90cbc240838b46482f45a"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "projectedFields": 31,
+      "sha256": "63f463730e4cb3cc7e1cbfb7a134b16da4f3390c11361abc58149ae44a59dd6a"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "projectedFields": 31,
+      "sha256": "a8c70ace465e43108de4e5fa52983d366d9ca1ced3b28be6f18e64859d911ca0"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "projectedFields": 35,
+      "sha256": "eacc74adfc652ba5a319492dabee5b3adf4d6102ad2b2bc12a661d0338b6d8a7"
+    },
+    {
+      "id": "shia-angles/own",
+      "projectedFields": 61,
+      "sha256": "bf6105f5d6b2d70f674772f2dba5155fb764e60da825eb17e836f8788f070f3b"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "projectedFields": 58,
+      "sha256": "bd40f4371e3ed76a5b721526e94229a9f52ff26be5c14d4fc8b2e59e25658be2"
+    },
+    {
+      "id": "fazilet/v2",
+      "projectedFields": 29,
+      "sha256": "c90b11e48df83b741ebef656444b6eb4ce23935946d54dcde7b4d88af68cb45d"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "projectedFields": 33,
+      "sha256": "a4522a725b98a54028025ea88773c1bb2a3456ce9bdbae8d336d9cfa955e4491"
+    }
+  ]
+}

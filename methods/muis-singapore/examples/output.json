@@ -1,0 +1,128 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "region": "SG",
+    "timeZone": "Asia/Singapore"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "region": "SG",
+    "timeZone": "Asia/Singapore",
+    "locationMode": "region",
+    "point": {
+      "latitude": 1.28716598445,
+      "longitude": 103.862396307
+    },
+    "pointStatus": "Independent representative city point; not verified MUIS point",
+    "engine": "usno-continuous",
+    "profileVersion": "0.1.0-research",
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "recipe": {
+      "fajrAngle": 20,
+      "ishaAngle": 18,
+      "horizonAltitudeDegrees": -0.8333333333333334,
+      "asrShadowFactor": 1,
+      "asrTarget": "noon-declination shadow",
+      "dhuhrAdjustmentMinutes": 1,
+      "rounding": "ceil"
+    },
+    "geometry": {
+      "transitUtc": "2026-06-21T05:06:18.874Z",
+      "asrAltitudeDegrees": 35.401860050934864,
+      "topocentricParallax": false,
+      "elevationCorrection": false,
+      "atmosphere": "Fixed standard horizon assumption only"
+    },
+    "diagnostics": {
+      "fajr": {
+        "thresholdDegrees": -20,
+        "status": "crossings",
+        "crossings": 2
+      },
+      "sunrise": {
+        "thresholdDegrees": -0.8333333333333334,
+        "status": "crossings",
+        "crossings": 2
+      },
+      "maghrib": {
+        "thresholdDegrees": -0.8333333333333334,
+        "status": "crossings",
+        "crossings": 2
+      },
+      "isha": {
+        "thresholdDegrees": -18,
+        "status": "crossings",
+        "crossings": 2
+      },
+      "asr": {
+        "thresholdDegrees": 35.401860050934864,
+        "status": "crossings",
+        "crossings": 1
+      }
+    },
+    "events": {
+      "fajr": {
+        "status": "estimated-unconfirmed",
+        "time": "05:37",
+        "date": "2026-06-21",
+        "utc": "2026-06-20T21:37:00.000Z",
+        "rawUtc": "2026-06-20T21:36:15.999Z",
+        "rawEpoch": 1781991375999.3018,
+        "notificationEligible": false
+      },
+      "sunrise": {
+        "status": "estimated-unconfirmed",
+        "time": "07:01",
+        "date": "2026-06-21",
+        "utc": "2026-06-20T23:01:00.000Z",
+        "rawUtc": "2026-06-20T23:00:23.559Z",
+        "rawEpoch": 1781996423559.3188,
+        "notificationEligible": false
+      },
+      "dhuhr": {
+        "status": "estimated-unconfirmed",
+        "time": "13:08",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T05:08:00.000Z",
+        "rawUtc": "2026-06-21T05:07:18.874Z",
+        "rawEpoch": 1782018438874.9055,
+        "notificationEligible": false
+      },
+      "asr": {
+        "status": "estimated-unconfirmed",
+        "time": "16:33",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T08:33:00.000Z",
+        "rawUtc": "2026-06-21T08:32:33.089Z",
+        "rawEpoch": 1782030753089.315,
+        "notificationEligible": false
+      },
+      "maghrib": {
+        "status": "estimated-unconfirmed",
+        "time": "19:13",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T11:13:00.000Z",
+        "rawUtc": "2026-06-21T11:12:14.192Z",
+        "rawEpoch": 1782040334192.5156,
+        "notificationEligible": false
+      },
+      "isha": {
+        "status": "estimated-unconfirmed",
+        "time": "20:28",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T12:28:00.000Z",
+        "rawUtc": "2026-06-21T12:27:30.317Z",
+        "rawEpoch": 1782044850317.9775,
+        "notificationEligible": false
+      }
+    }
+  }
+}

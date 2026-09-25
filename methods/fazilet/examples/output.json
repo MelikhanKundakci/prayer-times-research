@@ -1,0 +1,120 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 41,
+    "longitude": 29,
+    "timeZone": "Europe/Istanbul"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "point": {
+      "latitude": 41,
+      "longitude": 29,
+      "timeZone": "Europe/Istanbul"
+    },
+    "recipe": "split-horizon-seven-test",
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "rules": {
+      "imsakAngle": 19,
+      "ishaAngle": 17,
+      "horizonAngle": 1,
+      "asrFactor": 1,
+      "sabahAfterImsakMinutes": 20
+    },
+    "limitations": [
+      "Not a complete Fazilet calculation: city extent, atmosphere and active temkin rule unresolved.",
+      "Historical10-minute illustration is not confirmed as a modern uniform rule; horizon7 is a declared global empirical hypothesis.",
+      "Height537m is documented for Istanbul but not applied without unambiguous correction formula.",
+      "Angles-only Dhuhr is geometric transit; not a valid published prayer-start assertion."
+    ],
+    "events": {
+      "imsak": {
+        "status": "estimated-unconfirmed",
+        "time": "03:04",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T00:04:00.000Z",
+        "rawUtc": "2026-06-21T00:04:12.485Z",
+        "notificationEligible": false,
+        "rounding": "floor"
+      },
+      "sunrise": {
+        "status": "estimated-unconfirmed",
+        "time": "05:23",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T02:23:00.000Z",
+        "rawUtc": "2026-06-21T02:23:56.265Z",
+        "notificationEligible": false,
+        "rounding": "floor"
+      },
+      "dhuhr": {
+        "status": "estimated-unconfirmed",
+        "time": "13:16",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T10:16:00.000Z",
+        "rawUtc": "2026-06-21T10:15:48.550Z",
+        "notificationEligible": false,
+        "rounding": "nearest"
+      },
+      "asr": {
+        "status": "estimated-unconfirmed",
+        "time": "17:17",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T14:17:00.000Z",
+        "rawUtc": "2026-06-21T14:16:41.459Z",
+        "notificationEligible": false,
+        "rounding": "nearest"
+      },
+      "maghrib": {
+        "status": "estimated-unconfirmed",
+        "time": "20:48",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T17:48:00.000Z",
+        "rawUtc": "2026-06-21T17:47:40.768Z",
+        "notificationEligible": false,
+        "rounding": "ceil"
+      },
+      "isha": {
+        "status": "estimated-unconfirmed",
+        "time": "22:49",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T19:49:00.000Z",
+        "rawUtc": "2026-06-21T19:48:00.901Z",
+        "notificationEligible": false,
+        "rounding": "ceil"
+      },
+      "sabah": {
+        "status": "estimated-unconfirmed",
+        "time": "03:24",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T00:24:00.000Z",
+        "rawUtc": "2026-06-21T00:24:12.485Z",
+        "notificationEligible": false,
+        "rounding": "derived-rounded-imsak-plus20"
+      }
+    },
+    "profile": {
+      "id": "fazilet-temkin-event-rounding-v2",
+      "version": "0.2.0-research",
+      "official": false,
+      "interpretation": "Global event rounding hypothesis; not an official Fazilet convention",
+      "offsetsMinutes": {
+        "imsak": -10,
+        "sunrise": -7,
+        "dhuhr": 10,
+        "asr": 10,
+        "maghrib": 7,
+        "isha": 10
+      },
+      "sabahAfterPublishedImsakMinutes": 20,
+      "roundingRecipe": "outer-events-outward"
+    }
+  }
+}

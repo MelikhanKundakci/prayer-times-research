@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "methodId": "banuri-town",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A reconstruction tied to Jamia Uloom Islamia Banuri Town’s explicit angle and shadow-factor explanations. It is not a generic Karachi, Pakistan or all-Hanafi preset.",
+  "publicDefault": "strict own regional recipe; transit is not certified Dhuhr",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 24.9,
+    "longitude": 67.1,
+    "timeZone": "Asia/Karachi"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "new-months",
+      "recipe": "own USNO regional recipe",
+      "exposure": "six new monthly tables after freeze, year semantics unresolved",
+      "scope": "Three cities,183city-days; comparison year assumed2026",
+      "eventSet": "Fajr, sunrise, transit compared to Zawal, Asr, sunset, Isha; not six certified prayer starts",
+      "expectedSlots": 1098,
+      "comparedSlots": 1098,
+      "uncomparedSlots": 0,
+      "exactCount": 946,
+      "withinOneMinuteCount": 1098,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 86.1566,
+      "nonExactRatePercent": 13.8434,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Fresh month tables, not a verified annual/multiyear holdout."
+      ],
+      "evidenceIdentifier": "research/south-asia/holdout-report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "strict",
+      "module": "methods/banuri-town/implementation/strict-api.mjs",
+      "export": "calculateBanuriStrict",
+      "sourceIdentifier": "research/south-asia/strict-api.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/south-asia/README.md",
+      "sha256": "ed1c76fae03576db92ee9b0fd0f1ffad3e9e8caa28d2748b839437e29d3fc229",
+      "bytes": 12567,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/south-asia/holdout-report.json",
+      "sha256": "b4b44e7674fbc56974c03c43256f7da8682a0b66f68ef21cedd60e81337ae4e1",
+      "bytes": 36497,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/south-asia/strict-api.mjs",
+      "sha256": "6ed6c2ccd138cb006154ad5800073f1eab4e42c63458fa2a753867d436eea550",
+      "bytes": 1152,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Only the angles and Asr factor have clear institutional rule evidence; horizon, ephemeris and rounding are assumptions.",
+    "The month form lacks a year.2026 is a retrieval-year comparison assumption, not independently verified calendar-year metadata. A perpetual calendar remains possible.",
+    "No high-latitude replacement, current official point or source-data redistribution license is established."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.banuri.edu.pk/readquestion/144707100380/25-12-2025",
+      "role": "Institutional Fajr/Isha18° explanation"
+    },
+    {
+      "url": "https://www.banuri.edu.pk/readquestion/143409200025/21-07-2013",
+      "role": "Institutional Asr factor2 explanation"
+    },
+    {
+      "url": "https://www.banuri.edu.pk/namaz-times",
+      "role": "Primary calendar publisher"
+    },
+    {
+      "url": "https://www.banuri.edu.pk/assets/uploads/2020/04/1587988961_book_pdf.pdf",
+      "role": "Primary published calculation/calendar material"
+    }
+  ]
+}

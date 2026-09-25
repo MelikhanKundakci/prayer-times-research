@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "recordedAt": "2026-09-24T17:37:07.785926+00:00",
+  "icuDataCommit": "c5aeb38e05607d094b783f0665bd66219b038ca9",
+  "tzdbVersion": "2026d",
+  "resourceDirectory": "icu-2026d-le",
+  "endianness": "LE",
+  "resourceFormat": "ICU44+; environment override documented for ICU54+",
+  "license": "Unicode-3.0 plus included third-party notices for ICU bundle; IANA africa is public domain",
+  "files": [
+    {
+      "file": "icu-2026d-le/zoneinfo64.res",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu-data/c5aeb38e05607d094b783f0665bd66219b038ca9/tzdata/icunew/2026d/44/le/zoneinfo64.res",
+      "bytes": 149440,
+      "sha256": "1407004c74321d5d7c5089f75a63bf70b7fde0da7df96a14dd514716193a12dc"
+    },
+    {
+      "file": "icu-2026d-le/windowsZones.res",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu-data/c5aeb38e05607d094b783f0665bd66219b038ca9/tzdata/icunew/2026d/44/le/windowsZones.res",
+      "bytes": 22064,
+      "sha256": "b8c3a7adb94fd659f8203ee4af4dc72a4e6b14566baac1855c493096f337184b"
+    },
+    {
+      "file": "icu-2026d-le/timezoneTypes.res",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu-data/c5aeb38e05607d094b783f0665bd66219b038ca9/tzdata/icunew/2026d/44/le/timezoneTypes.res",
+      "bytes": 21264,
+      "sha256": "5e77ce5afb7374a36cbe3be197d0a6deaa919e6f672c2a372f7a9d91b7f8534f"
+    },
+    {
+      "file": "icu-2026d-le/metaZones.res",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu-data/c5aeb38e05607d094b783f0665bd66219b038ca9/tzdata/icunew/2026d/44/le/metaZones.res",
+      "bytes": 43536,
+      "sha256": "5b484c7f02c99d5164208ce84e18fba67c6314d77cf60503e2b19f708b66c6da"
+    },
+    {
+      "file": "ICU-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/unicode-org/icu-data/c5aeb38e05607d094b783f0665bd66219b038ca9/LICENSE",
+      "bytes": 5131,
+      "sha256": "f72db45707e93c90c4bf400edfa5d38ce44fe692789e385548e627459c1bf6c9"
+    },
+    {
+      "file": "sources/iana-version.txt",
+      "url": "https://data.iana.org/time-zones/tzdb/version",
+      "bytes": 6,
+      "sha256": "e5991d2ec7b3c5fbd147d25d2ac1344d70da4bdaaf88e9df51525b9f72fb53f0"
+    },
+    {
+      "file": "sources/iana-africa.txt",
+      "url": "https://data.iana.org/time-zones/tzdb/africa",
+      "bytes": 58273,
+      "sha256": "f2851d4be4a4925cbdc9d56e10d780bccadb89d6ffb9aed78c3e35f97c200aed"
+    }
+  ],
+  "sourceNotes": [
+    {
+      "url": "https://www.maroc.ma/en/news/morocco-return-gmt-time-starting-end-summer",
+      "verifiedWith": "web tool, official government announcement dated2026-06-25",
+      "directArchiveAttempt": "HTTP403; not retried or bypassed"
+    },
+    {
+      "url": "https://unicode-org.github.io/icu/userguide/datetime/timezone/#icu4c-tz-update-with-drop-in-res-files-icu-54-and-newer",
+      "verifiedWith": "official ICU user guide, four .res files and ICU_TIMEZONE_FILES_DIR documented"
+    }
+  ]
+}

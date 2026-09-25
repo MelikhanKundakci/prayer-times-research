@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "methodId": "shia-angles",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Four named parameter publications with separate provenance. Tehran, Leva, ARC, Jafari and Sistani are not treated as interchangeable names, and none of these angle experiments represents all Shia jurisprudence.",
+  "publicDefault": "own geometry; profileId and engine remain explicit",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin",
+    "profileId": "tehran-published-angles-own",
+    "engine": "usno"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "arc-fresh-usno",
+      "recipe": "arc-outside-iran-angles-own, USNO",
+      "exposure": "one new annual original after both-engine freeze",
+      "scope": "Kiritimati2031 complete year",
+      "eventSet": "Six ARC columns: Fajr, sunrise, Dhuhr, sunset, Maghrib, midnight; no Asr or Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1445,
+      "withinOneMinuteCount": 2169,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 65.9817,
+      "nonExactRatePercent": 34.0183,
+      "withinOneMinutePercent": 99.0411,
+      "overOneMinuteRatePercent": 0.9589,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Local displayed clocks; midnight circular-clock comparison only, not independently sourced UTC dates.",
+      "caveats": [
+        "All two-minute discrepancies occur in Dhuhr.",
+        "No institution-approved offset or calendar bug was copied into the own model."
+      ],
+      "evidenceIdentifier": "research/shia-own/fresh-report.json"
+    },
+    {
+      "id": "arc-fresh-noaa",
+      "recipe": "arc-outside-iran-angles-own, NOAA",
+      "exposure": "same one original, second predeclared engine; not extra evidence",
+      "scope": "Kiritimati2031 complete year",
+      "eventSet": "Same six ARC columns",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1440,
+      "withinOneMinuteCount": 2171,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 65.7534,
+      "nonExactRatePercent": 34.2466,
+      "withinOneMinutePercent": 99.1324,
+      "overOneMinuteRatePercent": 0.8676,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Same local-clock/midnight convention.",
+      "caveats": [
+        "No post-acquisition winner selection."
+      ],
+      "evidenceIdentifier": "research/shia-own/fresh-report.json"
+    },
+    {
+      "id": "arc-known-usno",
+      "recipe": "ARC own USNO",
+      "exposure": "known development across seven annuals",
+      "scope": "2557days; includes source DST/date and availability issues",
+      "eventSet": "Six ARC columns",
+      "expectedSlots": 15342,
+      "comparedSlots": 14986,
+      "uncomparedSlots": 356,
+      "exactCount": 7695,
+      "withinOneMinuteCount": 14121,
+      "maxAbsoluteMinutes": 62,
+      "exactPercent": 51.3479,
+      "nonExactRatePercent": 48.6521,
+      "withinOneMinutePercent": 94.2279,
+      "overOneMinuteRatePercent": 5.7721,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "352 both-missing and four availability mismatches are not hits.",
+        "A separate diagnostic excluding known source DST cells has maximum16minutes; the62-minute primary maximum remains reported."
+      ],
+      "evidenceIdentifier": "research/shia-own/development-summary.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "own",
+      "module": "methods/shia-angles/implementation/model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/shia-own/model.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/shia-own/README.md",
+      "sha256": "67091bb0cf8364f99d977245983b3cb3cb32fdc452eeab85f5970de4bd502a82",
+      "bytes": 12837,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/shia-own/profiles.mjs",
+      "sha256": "0670e2418a54387393987ef5f56c253150cca199466ec902aa7736db8bc38fcd",
+      "bytes": 1626,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/shia-own/fresh-report.json",
+      "sha256": "c01d913648370ab88062ee42f33e9d76e63ecbc3f819b0981d5c9be5149d98fb",
+      "bytes": 463197,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/shia-own/development-summary.json",
+      "sha256": "f67099468fe567bb1a0f43a6f0fe9e989c7f9b56a83e9d4eac1e625302f8ecb5",
+      "bytes": 123620,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/shia-own/model.mjs",
+      "sha256": "72783d315df3ec74918797a7e9eacccad70a25955879b0d14f15561a0bbe79c1",
+      "bytes": 6118,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Legal shared prayer windows and ordered performance are not reduced to a fabricated unique Asr or Isha column. Primary Sistani descriptions are semantic references, not fixed-angle certification.",
+    "A real after-midnight Isha root must not be replaced with a same-row daytime result merely to match a library.",
+    "ARC calendars provide local clock strings, not source-asserted UTC instants. Their circular midnight comparisons do not independently validate event-date assignment.",
+    "Known development contains four source/model availability disagreements and source DST anomalies; these are not erased from historical evidence."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://arabic.nojumi.org/prayertimes",
+      "role": "Primary ARC calculator settings and calendar"
+    },
+    {
+      "url": "https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/CalculationMethod.ts",
+      "role": "Secondary published Tehran software parameters"
+    },
+    {
+      "url": "https://api.aladhan.com/v1/methods",
+      "role": "Secondary published Leva attribution"
+    },
+    {
+      "url": "https://www.sistani.org/english/book/48/2213/",
+      "role": "Primary Sistani prayer-time rules"
+    },
+    {
+      "url": "https://www.sistani.org/english/book/48/2209/",
+      "role": "Primary Sistani legal context"
+    },
+    {
+      "url": "https://imam-us.org/prayer-time-apps",
+      "role": "Institutional discussion of prayer-time applications"
+    }
+  ]
+}

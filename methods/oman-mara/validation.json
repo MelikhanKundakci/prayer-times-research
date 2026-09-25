@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "methodId": "oman-mara",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A bounded empirical reconstruction of calendars published by Oman’s Ministry of Endowments and Religious Affairs. Oman/MARA is not used as a synonym for all Ibadi Muslims.",
+  "publicDefault": "empirical V2",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 23.6,
+    "longitude": 58.5,
+    "timeZone": "Asia/Muscat"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "v2-known",
+      "recipe": "V2",
+      "exposure": "known development, including earlier V1 holdouts",
+      "scope": "151city-days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 906,
+      "comparedSlots": 906,
+      "uncomparedSlots": 0,
+      "exactCount": 504,
+      "withinOneMinuteCount": 906,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 55.6291,
+      "nonExactRatePercent": 44.3709,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [],
+      "evidenceIdentifier": "research/oman/v2/training-report.json"
+    },
+    {
+      "id": "v2-new-months",
+      "recipe": "V2",
+      "exposure": "three new monthly responses after V2 freeze",
+      "scope": "Muscat December2028, Salalah July2026, Nizwa April2027;92city-days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 552,
+      "comparedSlots": 552,
+      "uncomparedSlots": 0,
+      "exactCount": 374,
+      "withinOneMinuteCount": 552,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 67.7536,
+      "nonExactRatePercent": 32.2464,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "New acquisitions with independently chosen points, but response-year semantics are not fully verified."
+      ],
+      "evidenceIdentifier": "research/oman/v2/holdout-report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "v2",
+      "module": "methods/oman-mara/implementation/v2/candidate.mjs",
+      "export": "calculateOmanV2",
+      "sourceIdentifier": "research/oman/v2/candidate.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/oman/v2/README.md",
+      "sha256": "96a03d04411ccfc962ce61e03679a55519204570dea7f8f8c0a03bd5bcf24bef",
+      "bytes": 5996,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/oman/v2/training-report.json",
+      "sha256": "aecce092eb409e1362d5b7afdaf9057467bfa1c2e9d49a233937efaed5205e82",
+      "bytes": 574931,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/oman/v2/holdout-report.json",
+      "sha256": "72583b7193ee2fb581f400a63df055a6a38631b00b6a4e505c222e359b15d9ff",
+      "bytes": 110306,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/oman/v2/source-year-report.json",
+      "sha256": "6be775eb03fd07d4b200a6c77c5548c63522cb43a80339854ca4fea13fe6a597",
+      "bytes": 37471,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/oman/v2/candidate.mjs",
+      "sha256": "766d4bb4f93c74a5b77b9938a57b766625c0cbddf3218b6123376bfaf8a9ea3a",
+      "bytes": 1346,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Production points, angles, height, Temkin and rounding remain unconfirmed. Coordinates are unoptimized representative proxies.",
+    "Calendar year is selected by request/form parameters without independent weekday or Hijri proof in the response. A paired July2026/2027 test found16 changed clocks but does not prove all backend year semantics.",
+    "An earlier February2028 response omitted the leap day; that missing date was not replaced or counted as a hit. Current tzdb2026d supports the tested +04 offset, not future-law certainty."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.mara.gov.om/calendar.html",
+      "role": "Ministry calendar frontend"
+    },
+    {
+      "url": "https://www.mara.gov.om/calendar_page2.asp",
+      "role": "Observed public calendar form response"
+    },
+    {
+      "url": "https://www.mara.gov.om/arabic/pages.aspx?ID=7&MID=27",
+      "role": "Ministry publication context"
+    }
+  ]
+}

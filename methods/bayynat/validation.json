@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "methodId": "bayynat",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A selected astronomical compatibility candidate for Bayynat point-calendar table markers. Numerical table columns and the institution’s legal prayer windows remain separate concepts.",
+  "publicDefault": "fixed point utc12-h5over6-ceil",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "three-point-months",
+      "recipe": "utc12-h5over6-ceil",
+      "exposure": "three new point-month originals after complete forecasts/model freeze",
+      "scope": "Jakarta April2024, Singapore July2024, Tokyo November2024;91days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 546,
+      "comparedSlots": 546,
+      "uncomparedSlots": 0,
+      "exactCount": 238,
+      "withinOneMinuteCount": 545,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 43.5897,
+      "nonExactRatePercent": 56.4103,
+      "withinOneMinutePercent": 99.8168,
+      "overOneMinuteRatePercent": 0.1832,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Actual IANA zone at each2024date; full printed dates retained.",
+      "caveats": [
+        "All residuals are0,+1,+2 model minutes.",
+        "This does not validate the source timezone behavior in other locations or seasons.",
+        "A later moving-coordinate five-marker comparison uses known data and is not an additional fresh accuracy sample."
+      ],
+      "evidenceIdentifier": "research/bayynat/point-recipe/outcome.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "point-utc12-h5over6-ceil",
+      "module": "methods/bayynat/implementation/selected-model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/bayynat/point-recipe/selected-model.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/bayynat/rules-review.md",
+      "sha256": "83c5860871a24dc56607f581a13a8900693828da1826c8d2830523204e6ffdae",
+      "bytes": 5547,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/bayynat/point-recipe/README.md",
+      "sha256": "6687895d0f80e05a2c67515ec24263136f26d8a37a19d477d00d20c5b993695b",
+      "bytes": 5190,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/bayynat/point-recipe/outcome.json",
+      "sha256": "841323d8d653020cc4e342903abdebf61575a69dbed1bf851d9a19000864ce9e",
+      "bytes": 22148,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/bayynat/point-recipe/comparison-review/post-source-final.json",
+      "sha256": "6577dd61cfcea17382fe755751c816d0224b740dc791c2b93c964b125f305ac6",
+      "bytes": 3967,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/bayynat/point-recipe/selected-model.mjs",
+      "sha256": "00330e1e71dc08142b42ad6e1f1493c3dbe93812a9d54373fd457861bb8f0096",
+      "bytes": 634,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Selecting a point recipe followed a known-source timezone compatibility diagnosis; the selection is empirical, not a discovered official algorithm.",
+    "Known Beirut March2024 shows a printed clock jump onMarch25 instead of the actual March31 DST transition; September has a contradictory Hijri header and only29days. These source defects remain in historical records.",
+    "Known Berlin March2026 point data behaves compatibly with fixedUTC+2. Subsequent UTC-versus-Europe/Berlin frontend requests returned identical source clocks, so the backend mechanism is unproven. Do not silently reinterpret those clocks as provider-asserted UTC instants.",
+    "The comparison maps source Maghrib to model sunset as an explicit assumption; this does not prove identical institutional production geometry or legal onset."
+  ],
+  "publicationNotes": [
+    "The export supplies numerical table markers, not a fatwa or a full legal-windows engine. Uncertain source clocks were never repaired in place."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://prayertime.bayynat.org.lb/",
+      "role": "Primary calendar frontend"
+    },
+    {
+      "url": "https://prayertime.bayynat.org.lb/uploadImages/MawaKitAlSalatImages/Mawakit-1105481..pdf",
+      "role": "Original March2024 rules and calendar"
+    },
+    {
+      "url": "https://prayertime.bayynat.org.lb/uploadImages/MawaKitAlSalatImages/Mawakit-3662407..pdf",
+      "role": "Original September2024 rules and calendar"
+    },
+    {
+      "url": "https://www.bayynat.org.lb/article/مقالات-فقهية-حول-الصوم/28345/رأي-العلم-والعلماء-في-دخول-وقت-المغرب/ar",
+      "role": "Primary discussion of sunset/Maghrib; distinguish quoted scholarly positions"
+    }
+  ]
+}

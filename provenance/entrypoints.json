@@ -1,0 +1,209 @@
+{
+  "entrypoints": [
+    {
+      "family": "moonsighting-committee",
+      "variant": "usno-v4.2",
+      "source": "research/global/moonsighting-usno-v4.2.mjs",
+      "module": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs",
+      "export": "calculateGeometry",
+      "contract": "{year, latitude, longitude, timeZone}; fixed research recipe, annual rows",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-reviewed",
+      "source": "research/diyanet-north-own/quality-model.mjs",
+      "module": "methods/diyanet/implementation/north/quality-model.mjs",
+      "export": "calculateNorthernReviewed",
+      "contract": "{year, latitude, longitude, timeZone}; annual northern calculation",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-baseline",
+      "source": "research/diyanet-north-own/model.mjs",
+      "module": "methods/diyanet/implementation/north/model.mjs",
+      "export": "calculateNorthernCalendar",
+      "contract": "{year, latitude, longitude, timeZone}; raw annual northern baseline",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-missing-window",
+      "source": "research/diyanet-north-missing-window/model/model.mjs",
+      "module": "methods/diyanet/implementation/missing-window/model.mjs",
+      "export": "calculateMissingWindowCalendar",
+      "contract": "{year, latitude, longitude, timeZone}; experimental annual seasonal variant",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "low-latitude",
+      "source": "research/diyanet-low-latitude-own/model.mjs",
+      "module": "methods/diyanet/implementation/low-latitude/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, latitude, longitude, timeZone}; 0 <= latitude < 44.5",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "south",
+      "source": "research/diyanet-south-own/candidate.mjs",
+      "module": "methods/diyanet/implementation/south/candidate.mjs",
+      "export": "calculateDay",
+      "contract": "{date, latitude, longitude, timeZone}; -60 <= latitude < 0",
+      "official": false
+    },
+    {
+      "family": "umm-al-qura",
+      "variant": "strict",
+      "source": "research/saudi/api.mjs",
+      "module": "methods/umm-al-qura/implementation/api.mjs",
+      "export": "calculateDay",
+      "contract": "options; strict selected recipe, explicit Hijri/Ramadan contract",
+      "official": false
+    },
+    {
+      "family": "egyptian-survey",
+      "variant": "usno-no-offset",
+      "source": "research/egypt/calculate.mjs",
+      "module": "methods/egyptian-survey/implementation/calculate.mjs",
+      "export": "calculateDay",
+      "contract": "(date, location, \"usno-no-offset\"); raw regional research entry, wrapper must validate domain",
+      "official": false
+    },
+    {
+      "family": "uae-awqaf",
+      "variant": "v2",
+      "source": "research/uae/v2/api.mjs",
+      "module": "methods/uae-awqaf/implementation/api.mjs",
+      "export": "calculateCandidateStrict",
+      "contract": "(date, point); explicit location/elevation/cityWidth/pressure/temperature/timeZone",
+      "official": false
+    },
+    {
+      "family": "kemenag",
+      "variant": "strict",
+      "source": "research/indonesia/api.mjs",
+      "module": "methods/kemenag/implementation/api.mjs",
+      "export": "calculateIndonesiaStrict",
+      "contract": "input; strict selected Indonesian research recipe",
+      "official": false
+    },
+    {
+      "family": "oman-mara",
+      "variant": "v2",
+      "source": "research/oman/v2/candidate.mjs",
+      "module": "methods/oman-mara/implementation/v2/candidate.mjs",
+      "export": "calculateOmanV2",
+      "contract": "input; fixed NOAA/UTC12, selected offset/rounding recipe",
+      "official": false
+    },
+    {
+      "family": "banuri-town",
+      "variant": "strict",
+      "source": "research/south-asia/strict-api.mjs",
+      "module": "methods/banuri-town/implementation/strict-api.mjs",
+      "export": "calculateBanuriStrict",
+      "contract": "(date, location); regional strict own-data contract",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "single-point-own",
+      "source": "research/jakim-own/model.mjs",
+      "module": "methods/jakim/implementation/single-point/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone, timeZone, candidate:\"usno-fixed\"}",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "multipoint",
+      "source": "research/jakim-multipoint/model.mjs",
+      "module": "methods/jakim/implementation/multipoint/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone, timeZone, mode:\"all-points-extrema\"}",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "sgr01-two-point",
+      "source": "research/jakim-two-point/review-independent-model.mjs",
+      "module": "methods/jakim/implementation/two-point/review-independent-model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone:\"SGR01\", timeZone:\"Asia/Kuala_Lumpur\"}; reviewed metadata wrapper",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "kdh03-map-r19",
+      "source": "research/jakim-multipoint/map-candidate/model.mjs",
+      "module": "methods/jakim/implementation/multipoint/map-candidate/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone:\"KDH03\", timeZone:\"Asia/Kuala_Lumpur\", mode:\"map-plus-r19\"}",
+      "official": false
+    },
+    {
+      "family": "muis-singapore",
+      "variant": "usno-continuous",
+      "source": "research/singapore-own/candidate.mjs",
+      "module": "methods/muis-singapore/implementation/candidate.mjs",
+      "export": "calculateSingaporeCandidate",
+      "contract": "{date, region:\"SG\", timeZone:\"Asia/Singapore\"}",
+      "official": false
+    },
+    {
+      "family": "fcna",
+      "variant": "own-reviewed",
+      "source": "research/north-america-own/asr-review/calculate.mjs",
+      "module": "methods/fcna/implementation/asr-review/calculate.mjs",
+      "export": "calculateOwnFcnaReviewed",
+      "contract": "(input, {ephemeris:\"usno\",rounding:\"nearest\"}); explicit profile and Asr selection",
+      "official": false
+    },
+    {
+      "family": "shia-angles",
+      "variant": "own",
+      "source": "research/shia-own/model.mjs",
+      "module": "methods/shia-angles/implementation/model.mjs",
+      "export": "calculateDay",
+      "contract": "input; explicit profile and engine usno/noaa; marker and unspecified semantics retained",
+      "official": false
+    },
+    {
+      "family": "bayynat",
+      "variant": "point-utc12-h5over6-ceil",
+      "source": "research/bayynat/point-recipe/selected-model.mjs",
+      "module": "methods/bayynat/implementation/selected-model.mjs",
+      "export": "calculateDay",
+      "contract": "{date,latitude,longitude,timeZone}; fixed experimental point recipe; table markers",
+      "official": false
+    },
+    {
+      "family": "fazilet",
+      "variant": "v2",
+      "source": "research/fazilet/v2/candidate.mjs",
+      "module": "methods/fazilet/implementation/v2/candidate.mjs",
+      "export": "calculateFaziletV2",
+      "contract": "(date, point); regional fixed outward rounding recipe",
+      "official": false
+    },
+    {
+      "family": "turkiye-takvimi",
+      "variant": "istanbul",
+      "source": "research/turkiye-takvimi/calculate.mjs",
+      "module": "methods/turkiye-takvimi/implementation/calculate.mjs",
+      "export": "calculateIstanbul",
+      "contract": "{date, variant:\"noaa-continuous-nearest\"}; fixed Istanbul point; not a global entry",
+      "official": false
+    }
+  ],
+  "counts": {
+    "families": 15,
+    "entrypoints": 22,
+    "codeModules": 52,
+    "timezoneFiles": 10,
+    "totalBytes": 520516
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "methodId": "kemenag",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Own astronomy following the worked recipe in a Kemenag Ephemeris Hisab Rukyat book. It is not a verified reproduction of the entire central Bimas Islam service, nor a universal Indonesian or Muhammadiyah profile.",
+  "publicDefault": "strict Kemenag book-example recipe",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": -6.2,
+    "longitude": 106.8,
+    "timeZone": "Asia/Jakarta",
+    "preset": "kemenag-2026-book-example"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "book-example",
+      "recipe": "book-example strict wrapper",
+      "exposure": "published worked example",
+      "scope": "Jakarta17August2026",
+      "eventSet": "Eight book markers including Imsak and Duha; Imsak is derived",
+      "expectedSlots": 8,
+      "comparedSlots": 8,
+      "uncomparedSlots": 0,
+      "exactCount": 8,
+      "withinOneMinuteCount": 8,
+      "maxAbsoluteMinutes": 0,
+      "exactPercent": 100.0,
+      "nonExactRatePercent": 0.0,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [],
+      "evidenceIdentifier": "research/indonesia/README.md"
+    },
+    {
+      "id": "pekanbaru-development",
+      "recipe": "book-example strict wrapper",
+      "exposure": "known development transcript",
+      "scope": "Pekanbaru30days",
+      "eventSet": "Eight markers including derived Imsak and Duha",
+      "expectedSlots": 240,
+      "comparedSlots": 240,
+      "uncomparedSlots": 0,
+      "exactCount": 212,
+      "withinOneMinuteCount": 240,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 88.3333,
+      "nonExactRatePercent": 11.6667,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Indexed official text, not a verified original PDF binary."
+      ],
+      "evidenceIdentifier": "research/indonesia/training-report.json"
+    },
+    {
+      "id": "baubau-new-transcript",
+      "recipe": "book-example strict wrapper",
+      "exposure": "new official-source text after freeze; weaker original-artifact provenance",
+      "scope": "BauBau March2025,30days",
+      "eventSet": "Eight markers including derived Imsak and Duha",
+      "expectedSlots": 240,
+      "comparedSlots": 240,
+      "uncomparedSlots": 0,
+      "exactCount": 220,
+      "withinOneMinuteCount": 240,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 91.6667,
+      "nonExactRatePercent": 8.3333,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Do not describe this as a visually verified original-PDF holdout."
+      ],
+      "evidenceIdentifier": "research/indonesia/holdout-report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "strict",
+      "module": "methods/kemenag/implementation/api.mjs",
+      "export": "calculateIndonesiaStrict",
+      "sourceIdentifier": "research/indonesia/api.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/indonesia/README.md",
+      "sha256": "5bf589f61fa9c6ec47bb9fd0f26fee0160ee95c310294833937fd66f36301c09",
+      "bytes": 8623,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/indonesia/training-report.json",
+      "sha256": "95cee48cdbd5a389473896bdd7ccf182a58b2f21c3563ae9c081fd85e61e54c9",
+      "bytes": 45701,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/indonesia/holdout-report.json",
+      "sha256": "642bb25c56fb8eac2ad513259de28ae1f6887d39c68953823fe582e2a4846637",
+      "bytes": 45926,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/indonesia/review.md",
+      "sha256": "b62a9abe578140ac01b0d569fa79547bbf6d84178f1214ec6020b96371aaaf7d",
+      "bytes": 3735,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/indonesia/api.mjs",
+      "sha256": "ab6ebe2bc9f69333299536a6147a9c87fb5590724e27969d27fe593eaf1a40c5",
+      "bytes": 3958,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "The book’s worked recipe is better evidenced than its identity with current production software. Local markaz, point selection, heights and regional policy remain unknown.",
+    "The two regional calendar comparisons were reconstructed from indexed official-PDF text transcripts; raw PDF bytes and visual verification were unavailable. The book PDF itself was obtained and visually checked.",
+    "BauBau Gregorian dates were tied to the published Ramadan-start decision; do not treat that mapping as an unspecified perpetual-calendar rule."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://gerubok.kemenagbelitungtimur.id/uploads/ebook/1790043937_ebook_ephemeris_hisab_rukyat_2026_69566ee622db8.pdf",
+      "role": "Primary Kemenag ephemeris book and worked calculation"
+    },
+    {
+      "url": "https://muhammadiyah.or.id/2021/03/waktu-subuh-muhammadiyah-kriteria-18-derajat/",
+      "role": "Primary Muhammadiyah explanation of its different Fajr criterion"
+    }
+  ]
+}

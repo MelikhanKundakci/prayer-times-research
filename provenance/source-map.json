@@ -1,0 +1,1345 @@
+{
+  "schemaVersion": 1,
+  "scope": "Source-only relocation of research algorithms; not a claim of institutional authorization or accuracy. Original research files remain unchanged.",
+  "entrypoints": [
+    {
+      "family": "moonsighting-committee",
+      "variant": "usno-v4.2",
+      "source": "research/global/moonsighting-usno-v4.2.mjs",
+      "module": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs",
+      "export": "calculateGeometry",
+      "contract": "{year, latitude, longitude, timeZone}; fixed research recipe, annual rows",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-reviewed",
+      "source": "research/diyanet-north-own/quality-model.mjs",
+      "module": "methods/diyanet/implementation/north/quality-model.mjs",
+      "export": "calculateNorthernReviewed",
+      "contract": "{year, latitude, longitude, timeZone}; annual northern calculation",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-baseline",
+      "source": "research/diyanet-north-own/model.mjs",
+      "module": "methods/diyanet/implementation/north/model.mjs",
+      "export": "calculateNorthernCalendar",
+      "contract": "{year, latitude, longitude, timeZone}; raw annual northern baseline",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-missing-window",
+      "source": "research/diyanet-north-missing-window/model/model.mjs",
+      "module": "methods/diyanet/implementation/missing-window/model.mjs",
+      "export": "calculateMissingWindowCalendar",
+      "contract": "{year, latitude, longitude, timeZone}; experimental annual seasonal variant",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "low-latitude",
+      "source": "research/diyanet-low-latitude-own/model.mjs",
+      "module": "methods/diyanet/implementation/low-latitude/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, latitude, longitude, timeZone}; 0 <= latitude < 44.5",
+      "official": false
+    },
+    {
+      "family": "diyanet",
+      "variant": "south",
+      "source": "research/diyanet-south-own/candidate.mjs",
+      "module": "methods/diyanet/implementation/south/candidate.mjs",
+      "export": "calculateDay",
+      "contract": "{date, latitude, longitude, timeZone}; -60 <= latitude < 0",
+      "official": false
+    },
+    {
+      "family": "umm-al-qura",
+      "variant": "strict",
+      "source": "research/saudi/api.mjs",
+      "module": "methods/umm-al-qura/implementation/api.mjs",
+      "export": "calculateDay",
+      "contract": "options; strict selected recipe, explicit Hijri/Ramadan contract",
+      "official": false
+    },
+    {
+      "family": "egyptian-survey",
+      "variant": "usno-no-offset",
+      "source": "research/egypt/calculate.mjs",
+      "module": "methods/egyptian-survey/implementation/calculate.mjs",
+      "export": "calculateDay",
+      "contract": "(date, location, \"usno-no-offset\"); raw regional research entry, wrapper must validate domain",
+      "official": false
+    },
+    {
+      "family": "uae-awqaf",
+      "variant": "v2",
+      "source": "research/uae/v2/api.mjs",
+      "module": "methods/uae-awqaf/implementation/api.mjs",
+      "export": "calculateCandidateStrict",
+      "contract": "(date, point); explicit location/elevation/cityWidth/pressure/temperature/timeZone",
+      "official": false
+    },
+    {
+      "family": "kemenag",
+      "variant": "strict",
+      "source": "research/indonesia/api.mjs",
+      "module": "methods/kemenag/implementation/api.mjs",
+      "export": "calculateIndonesiaStrict",
+      "contract": "input; strict selected Indonesian research recipe",
+      "official": false
+    },
+    {
+      "family": "oman-mara",
+      "variant": "v2",
+      "source": "research/oman/v2/candidate.mjs",
+      "module": "methods/oman-mara/implementation/v2/candidate.mjs",
+      "export": "calculateOmanV2",
+      "contract": "input; fixed NOAA/UTC12, selected offset/rounding recipe",
+      "official": false
+    },
+    {
+      "family": "banuri-town",
+      "variant": "strict",
+      "source": "research/south-asia/strict-api.mjs",
+      "module": "methods/banuri-town/implementation/strict-api.mjs",
+      "export": "calculateBanuriStrict",
+      "contract": "(date, location); regional strict own-data contract",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "single-point-own",
+      "source": "research/jakim-own/model.mjs",
+      "module": "methods/jakim/implementation/single-point/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone, timeZone, candidate:\"usno-fixed\"}",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "multipoint",
+      "source": "research/jakim-multipoint/model.mjs",
+      "module": "methods/jakim/implementation/multipoint/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone, timeZone, mode:\"all-points-extrema\"}",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "sgr01-two-point",
+      "source": "research/jakim-two-point/review-independent-model.mjs",
+      "module": "methods/jakim/implementation/two-point/review-independent-model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone:\"SGR01\", timeZone:\"Asia/Kuala_Lumpur\"}; reviewed metadata wrapper",
+      "official": false
+    },
+    {
+      "family": "jakim",
+      "variant": "kdh03-map-r19",
+      "source": "research/jakim-multipoint/map-candidate/model.mjs",
+      "module": "methods/jakim/implementation/multipoint/map-candidate/model.mjs",
+      "export": "calculateDay",
+      "contract": "{date, zone:\"KDH03\", timeZone:\"Asia/Kuala_Lumpur\", mode:\"map-plus-r19\"}",
+      "official": false
+    },
+    {
+      "family": "muis-singapore",
+      "variant": "usno-continuous",
+      "source": "research/singapore-own/candidate.mjs",
+      "module": "methods/muis-singapore/implementation/candidate.mjs",
+      "export": "calculateSingaporeCandidate",
+      "contract": "{date, region:\"SG\", timeZone:\"Asia/Singapore\"}",
+      "official": false
+    },
+    {
+      "family": "fcna",
+      "variant": "own-reviewed",
+      "source": "research/north-america-own/asr-review/calculate.mjs",
+      "module": "methods/fcna/implementation/asr-review/calculate.mjs",
+      "export": "calculateOwnFcnaReviewed",
+      "contract": "(input, {ephemeris:\"usno\",rounding:\"nearest\"}); explicit profile and Asr selection",
+      "official": false
+    },
+    {
+      "family": "shia-angles",
+      "variant": "own",
+      "source": "research/shia-own/model.mjs",
+      "module": "methods/shia-angles/implementation/model.mjs",
+      "export": "calculateDay",
+      "contract": "input; explicit profile and engine usno/noaa; marker and unspecified semantics retained",
+      "official": false
+    },
+    {
+      "family": "bayynat",
+      "variant": "point-utc12-h5over6-ceil",
+      "source": "research/bayynat/point-recipe/selected-model.mjs",
+      "module": "methods/bayynat/implementation/selected-model.mjs",
+      "export": "calculateDay",
+      "contract": "{date,latitude,longitude,timeZone}; fixed experimental point recipe; table markers",
+      "official": false
+    },
+    {
+      "family": "fazilet",
+      "variant": "v2",
+      "source": "research/fazilet/v2/candidate.mjs",
+      "module": "methods/fazilet/implementation/v2/candidate.mjs",
+      "export": "calculateFaziletV2",
+      "contract": "(date, point); regional fixed outward rounding recipe",
+      "official": false
+    },
+    {
+      "family": "turkiye-takvimi",
+      "variant": "istanbul",
+      "source": "research/turkiye-takvimi/calculate.mjs",
+      "module": "methods/turkiye-takvimi/implementation/calculate.mjs",
+      "export": "calculateIstanbul",
+      "contract": "{date, variant:\"noaa-continuous-nearest\"}; fixed Istanbul point; not a global entry",
+      "official": false
+    }
+  ],
+  "files": [
+    {
+      "source": "research/astronomy-ephemerides/noaa-coordinates.mjs",
+      "destination": "core/astronomy/noaa-coordinates.mjs",
+      "sourceSha256": "1d10f1037b66af4592629b5c3dbad9fdae8eb99fcb2fc9999781412ebae3b7dc",
+      "destinationSha256": "1d10f1037b66af4592629b5c3dbad9fdae8eb99fcb2fc9999781412ebae3b7dc",
+      "sourceBytes": 1956,
+      "destinationBytes": 1956,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/astronomy-validation/continuous-solver.mjs",
+      "destination": "core/astronomy/continuous-solver.mjs",
+      "sourceSha256": "0bb558587709825221bd824f1e61c731f1bc5befcd75eb49a7d8c2346d68aa60",
+      "destinationSha256": "04c8032ddd739d45e3559f97d138f264fff4646e97a2a3c4dfc6de139ad19922",
+      "sourceBytes": 9758,
+      "destinationBytes": 9750,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "./solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/bayynat/point-recipe/candidate-model.mjs",
+      "destination": "methods/bayynat/implementation/candidate-model.mjs",
+      "sourceSha256": "b70c81b934691b26db3e875c96eedb61309fd260849beee858a1a9cb9c755385",
+      "destinationSha256": "c7ec3e1596cc07e5f0774dede0fa2ab46c33ecdec0ce94b50bb61c53e9a89a9a",
+      "sourceBytes": 10746,
+      "destinationBytes": 10757,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/bayynat/point-recipe/selected-model.mjs",
+      "destination": "methods/bayynat/implementation/selected-model.mjs",
+      "sourceSha256": "00330e1e71dc08142b42ad6e1f1493c3dbe93812a9d54373fd457861bb8f0096",
+      "destinationSha256": "00330e1e71dc08142b42ad6e1f1493c3dbe93812a9d54373fd457861bb8f0096",
+      "sourceBytes": 634,
+      "destinationBytes": 634,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./candidate-model.mjs",
+          "after": "./candidate-model.mjs",
+          "target": "methods/bayynat/implementation/candidate-model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-low-latitude-own/model.mjs",
+      "destination": "methods/diyanet/implementation/low-latitude/model.mjs",
+      "sourceSha256": "9db584560ca270106b9e883f1aeec8b8e9678beb32fe47120816acdafab009fa",
+      "destinationSha256": "1f6c00873f3082efa0ce9fa0807a0f2342c1891c437c6794cff8418e2450ebf2",
+      "sourceBytes": 7877,
+      "destinationBytes": 7894,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-missing-window/model/kernel.mjs",
+      "destination": "methods/diyanet/implementation/missing-window/kernel.mjs",
+      "sourceSha256": "fde8f21b2f611e34b0d22983f7a81595359ca995b63b220d2d85aa52bf2c403a",
+      "destinationSha256": "afbb301bab15a7fe15bc085c1454e2a09674b84821f32b76121b8a060b13b40e",
+      "sourceBytes": 12386,
+      "destinationBytes": 12376,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../../diyanet-north-own/solar.mjs",
+          "after": "../north/solar.mjs",
+          "target": "methods/diyanet/implementation/north/solar.mjs"
+        },
+        {
+          "before": "./seasonal.mjs",
+          "after": "./seasonal.mjs",
+          "target": "methods/diyanet/implementation/missing-window/seasonal.mjs"
+        },
+        {
+          "before": "../../north-america-own/asr-review/solver.mjs",
+          "after": "../../../../core/astronomy/physical-asr-solver.mjs",
+          "target": "core/astronomy/physical-asr-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-missing-window/model/model.mjs",
+      "destination": "methods/diyanet/implementation/missing-window/model.mjs",
+      "sourceSha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+      "destinationSha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+      "sourceBytes": 4007,
+      "destinationBytes": 4007,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./kernel.mjs",
+          "after": "./kernel.mjs",
+          "target": "methods/diyanet/implementation/missing-window/kernel.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-missing-window/model/seasonal.mjs",
+      "destination": "methods/diyanet/implementation/missing-window/seasonal.mjs",
+      "sourceSha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28",
+      "destinationSha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28",
+      "sourceBytes": 6673,
+      "destinationBytes": 6673,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-own/model.mjs",
+      "destination": "methods/diyanet/implementation/north/model.mjs",
+      "sourceSha256": "9c942c977512b20353b445d7c9c8860bfa493dc9bb4452c74fa55d4904d9bd05",
+      "destinationSha256": "b40ad7c8c7b54b6f12666b17efdf98225d6d8f16622b17365536e3eaa8ab0906",
+      "sourceBytes": 11875,
+      "destinationBytes": 11871,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "./solar.mjs",
+          "after": "./solar.mjs",
+          "target": "methods/diyanet/implementation/north/solar.mjs"
+        },
+        {
+          "before": "../diyanet-v2/seasonal.mjs",
+          "after": "./seasonal.mjs",
+          "target": "methods/diyanet/implementation/north/seasonal.mjs"
+        },
+        {
+          "before": "../north-america-own/asr-review/solver.mjs",
+          "after": "../../../../core/astronomy/physical-asr-solver.mjs",
+          "target": "core/astronomy/physical-asr-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-own/quality-model.mjs",
+      "destination": "methods/diyanet/implementation/north/quality-model.mjs",
+      "sourceSha256": "4a42af33d04b72ba262a63f9b6b4a940a99bff522355ac656477e0419faac9db",
+      "destinationSha256": "4a42af33d04b72ba262a63f9b6b4a940a99bff522355ac656477e0419faac9db",
+      "sourceBytes": 2232,
+      "destinationBytes": 2232,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/diyanet/implementation/north/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-north-own/solar.mjs",
+      "destination": "methods/diyanet/implementation/north/solar.mjs",
+      "sourceSha256": "bd7125bcc41706e02b668a5bdd08d3d95219499838399e792f36395971e5f18a",
+      "destinationSha256": "6b51ec5ba8c17b4a241d8bfff144a6d10aa800de79251aa2cbb2f1b0f3f72a14",
+      "sourceBytes": 2385,
+      "destinationBytes": 2402,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-south-own/candidate.mjs",
+      "destination": "methods/diyanet/implementation/south/candidate.mjs",
+      "sourceSha256": "158ca0a75cc6d39dc67f600a7085418d2c9709b18b202807f74a5e8452294d7c",
+      "destinationSha256": "158ca0a75cc6d39dc67f600a7085418d2c9709b18b202807f74a5e8452294d7c",
+      "sourceBytes": 1164,
+      "destinationBytes": 1164,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/diyanet/implementation/south/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-south-own/model.mjs",
+      "destination": "methods/diyanet/implementation/south/model.mjs",
+      "sourceSha256": "571837f794b09a44786a0dbbef563c31764dd165d96c2d50f779cab1e6156ac3",
+      "destinationSha256": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797",
+      "sourceBytes": 10264,
+      "destinationBytes": 10284,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-validation/continuous-solver.mjs",
+          "after": "../../../../core/astronomy/continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/diyanet-v2/seasonal.mjs",
+      "destination": "methods/diyanet/implementation/north/seasonal.mjs",
+      "sourceSha256": "f00f1a845e65a2f9fd6d3e3de887b2f6a3f4aad9605f58cd462e662a4b25ef01",
+      "destinationSha256": "f00f1a845e65a2f9fd6d3e3de887b2f6a3f4aad9605f58cd462e662a4b25ef01",
+      "sourceBytes": 3919,
+      "destinationBytes": 3919,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/egypt/calculate.mjs",
+      "destination": "methods/egyptian-survey/implementation/calculate.mjs",
+      "sourceSha256": "328402178d5a8c63ba5e2a1dbf06fea49a57eea14deb2818843b62812cdfae66",
+      "destinationSha256": "a4b029cbd861e9a7b989db920e0ee68f42263f4820d21cc0fb5d3e642ecc6dd3",
+      "sourceBytes": 3050,
+      "destinationBytes": 3194,
+      "transformations": [
+        "relative-import-paths",
+        "exact-EVENTS-constant-extraction-no-parser-code"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno.mjs",
+          "after": "../../../core/astronomy/solar-usno.mjs",
+          "target": "core/astronomy/solar-usno.mjs"
+        }
+      ],
+      "externalImports": [
+        "adhan"
+      ]
+    },
+    {
+      "source": "research/fazilet/baseline.mjs",
+      "destination": "methods/fazilet/implementation/baseline.mjs",
+      "sourceSha256": "0147c01ea3908dbccd7f44563499de10ab44f16a7b2807d71101b32dd96a24bf",
+      "destinationSha256": "6e00613d1ce21bd0cce17cd7e512b3b0771ef9931c49e4428adf2c9695cbd43f",
+      "sourceBytes": 3727,
+      "destinationBytes": 3741,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/fazilet/candidate.mjs",
+      "destination": "methods/fazilet/implementation/candidate.mjs",
+      "sourceSha256": "ccd3a0d5918cbefb59a2f6da560739c85740f279a6d8b0c7ec5940f0c8c1b3f8",
+      "destinationSha256": "ccd3a0d5918cbefb59a2f6da560739c85740f279a6d8b0c7ec5940f0c8c1b3f8",
+      "sourceBytes": 808,
+      "destinationBytes": 808,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./baseline.mjs",
+          "after": "./baseline.mjs",
+          "target": "methods/fazilet/implementation/baseline.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/fazilet/v2/candidate.mjs",
+      "destination": "methods/fazilet/implementation/v2/candidate.mjs",
+      "sourceSha256": "f53b4e2dae5cd2bb43da2c88c17c352a7890d77c23f33ae218d8c03bbafa6311",
+      "destinationSha256": "f53b4e2dae5cd2bb43da2c88c17c352a7890d77c23f33ae218d8c03bbafa6311",
+      "sourceBytes": 357,
+      "destinationBytes": 357,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/fazilet/implementation/v2/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/fazilet/v2/model.mjs",
+      "destination": "methods/fazilet/implementation/v2/model.mjs",
+      "sourceSha256": "6ad538fa5c50c50717b1408640a8bc1e6e68b756d25191a26c5957f0f5cbce6d",
+      "destinationSha256": "6ad538fa5c50c50717b1408640a8bc1e6e68b756d25191a26c5957f0f5cbce6d",
+      "sourceBytes": 1700,
+      "destinationBytes": 1700,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "../candidate.mjs",
+          "after": "../candidate.mjs",
+          "target": "methods/fazilet/implementation/candidate.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/global/moonsighting-usno-v4.1.mjs",
+      "destination": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.1.mjs",
+      "sourceSha256": "ba4f5ad82de1727cc1db54a8361a1ef6f2b256cc92824b0d75469aee5401b5fa",
+      "destinationSha256": "a53d3077c02b1efcce4fa940902bba7422fb0c8145d6b2151c91919532bcc232",
+      "sourceBytes": 4456,
+      "destinationBytes": 4478,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "./msc-seasonal.mjs",
+          "after": "./msc-seasonal.mjs",
+          "target": "methods/moonsighting-committee/implementation/msc-seasonal.mjs"
+        },
+        {
+          "before": "./solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/global/moonsighting-usno-v4.2.mjs",
+      "destination": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs",
+      "sourceSha256": "42dd1f8086ff9d63b9b27ee8799f674a33ab940e5a2385cacbdcbde29f1b4e52",
+      "destinationSha256": "42dd1f8086ff9d63b9b27ee8799f674a33ab940e5a2385cacbdcbde29f1b4e52",
+      "sourceBytes": 1776,
+      "destinationBytes": 1776,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./moonsighting-usno-v4.1.mjs",
+          "after": "./moonsighting-usno-v4.1.mjs",
+          "target": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.1.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/global/msc-seasonal.mjs",
+      "destination": "methods/moonsighting-committee/implementation/msc-seasonal.mjs",
+      "sourceSha256": "a72b2aa3b3cd3f6b1de06fc63b6171df3872d6e79f31717273c9411ac17e8d8f",
+      "destinationSha256": "91eead589efd5b11b1f98c73ae6390d7018343ae7b0d09afc8a5ddf2c8f42667",
+      "sourceBytes": 965,
+      "destinationBytes": 975,
+      "transformations": [
+        "license-comment-root-reference-only"
+      ],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/global/solar-usno-v2.mjs",
+      "destination": "core/astronomy/solar-usno-v2.mjs",
+      "sourceSha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc",
+      "destinationSha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc",
+      "sourceBytes": 2182,
+      "destinationBytes": 2182,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/global/solar-usno.mjs",
+      "destination": "core/astronomy/solar-usno.mjs",
+      "sourceSha256": "82623b205d55e3ee8b861a51a49b0bd0ed6bf387142a3ee03050bf3f746fc060",
+      "destinationSha256": "82623b205d55e3ee8b861a51a49b0bd0ed6bf387142a3ee03050bf3f746fc060",
+      "sourceBytes": 2248,
+      "destinationBytes": 2248,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/indonesia/api.mjs",
+      "destination": "methods/kemenag/implementation/api.mjs",
+      "sourceSha256": "ab6ebe2bc9f69333299536a6147a9c87fb5590724e27969d27fe593eaf1a40c5",
+      "destinationSha256": "ab6ebe2bc9f69333299536a6147a9c87fb5590724e27969d27fe593eaf1a40c5",
+      "sourceBytes": 3958,
+      "destinationBytes": 3958,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./calculate.mjs",
+          "after": "./calculate.mjs",
+          "target": "methods/kemenag/implementation/calculate.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/indonesia/calculate.mjs",
+      "destination": "methods/kemenag/implementation/calculate.mjs",
+      "sourceSha256": "abe3d18e00a77212b70591c8bf7fe7d91497c0060deeb5d18b7cc376b1df70ce",
+      "destinationSha256": "b85ca165176c4b4e461dccc56ccffa4b75a13e27f866ff60ec280764e4f1a7b8",
+      "sourceBytes": 5345,
+      "destinationBytes": 5359,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-multipoint/map-candidate/model.mjs",
+      "destination": "methods/jakim/implementation/multipoint/map-candidate/model.mjs",
+      "sourceSha256": "940be11d55091772e5a57e28895f76ca50ff99b38fd6f5b676f44409810f8fc3",
+      "destinationSha256": "940be11d55091772e5a57e28895f76ca50ff99b38fd6f5b676f44409810f8fc3",
+      "sourceBytes": 4689,
+      "destinationBytes": 4689,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "../model.mjs",
+          "after": "../model.mjs",
+          "target": "methods/jakim/implementation/multipoint/model.mjs"
+        },
+        {
+          "before": "../points.mjs",
+          "after": "../points.mjs",
+          "target": "methods/jakim/implementation/multipoint/points.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-multipoint/model.mjs",
+      "destination": "methods/jakim/implementation/multipoint/model.mjs",
+      "sourceSha256": "442ea1d68812db540e6039c1ce87c4c34d0a7b63fa31b3140e9d3f57197f82c1",
+      "destinationSha256": "70c647f74556a9eaa72ca509d703f3f833d243fc1b51d50efc138c048c90a8d7",
+      "sourceBytes": 6019,
+      "destinationBytes": 6036,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "./points.mjs",
+          "after": "./points.mjs",
+          "target": "methods/jakim/implementation/multipoint/points.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-multipoint/points.mjs",
+      "destination": "methods/jakim/implementation/multipoint/points.mjs",
+      "sourceSha256": "996a3ddc4968c2f99910ec7f958d2515f5ad11e749aac4256b400ce6a7e2c2f8",
+      "destinationSha256": "996a3ddc4968c2f99910ec7f958d2515f5ad11e749aac4256b400ce6a7e2c2f8",
+      "sourceBytes": 979,
+      "destinationBytes": 979,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-own/model.mjs",
+      "destination": "methods/jakim/implementation/single-point/model.mjs",
+      "sourceSha256": "a92b0e7b789f13be71ceacf0fba80b731930980598ecad60cd982a06d2fe15c7",
+      "destinationSha256": "70fe8ace36d061588c24c1e959b697ad142fa6346676795a266511b6b71deaf4",
+      "sourceBytes": 8573,
+      "destinationBytes": 8595,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        },
+        {
+          "before": "../astronomy-validation/continuous-solver.mjs",
+          "after": "../../../../core/astronomy/continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        },
+        {
+          "before": "./points.mjs",
+          "after": "./points.mjs",
+          "target": "methods/jakim/implementation/single-point/points.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-own/points.mjs",
+      "destination": "methods/jakim/implementation/single-point/points.mjs",
+      "sourceSha256": "76f28068a5419e7810cce0db15acc90fe0da8d194f71672cb2367fcfd443fb33",
+      "destinationSha256": "76f28068a5419e7810cce0db15acc90fe0da8d194f71672cb2367fcfd443fb33",
+      "sourceBytes": 1134,
+      "destinationBytes": 1134,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-two-point/model.mjs",
+      "destination": "methods/jakim/implementation/two-point/model.mjs",
+      "sourceSha256": "1a74e84a54b084c7305ec276263d7e9a0be3197006a489f2d98e7ae447246b76",
+      "destinationSha256": "09af49e3d1e2b8ccae6278cbcbae991a1377e6d7680b3b4681393b2af3300c10",
+      "sourceBytes": 4726,
+      "destinationBytes": 4720,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../jakim-multipoint/model.mjs",
+          "after": "../multipoint/model.mjs",
+          "target": "methods/jakim/implementation/multipoint/model.mjs"
+        },
+        {
+          "before": "./points.mjs",
+          "after": "./points.mjs",
+          "target": "methods/jakim/implementation/two-point/points.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-two-point/points.mjs",
+      "destination": "methods/jakim/implementation/two-point/points.mjs",
+      "sourceSha256": "2c663b306f486d5f3aa61a79d64113fce3b2cb440c8ab14a9f803a7babe49861",
+      "destinationSha256": "2c663b306f486d5f3aa61a79d64113fce3b2cb440c8ab14a9f803a7babe49861",
+      "sourceBytes": 1126,
+      "destinationBytes": 1126,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/jakim-two-point/review-independent-model.mjs",
+      "destination": "methods/jakim/implementation/two-point/review-independent-model.mjs",
+      "sourceSha256": "87cc4ddbb1c28426091643ecf1f11b81cdd42fc9ed5016cdee73f2a0888b8d55",
+      "destinationSha256": "87cc4ddbb1c28426091643ecf1f11b81cdd42fc9ed5016cdee73f2a0888b8d55",
+      "sourceBytes": 555,
+      "destinationBytes": 555,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/jakim/implementation/two-point/model.mjs"
+        },
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/jakim/implementation/two-point/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/north-america-own/asr-review/calculate.mjs",
+      "destination": "methods/fcna/implementation/asr-review/calculate.mjs",
+      "sourceSha256": "03d7e20312802ff3ca4cdc3c70345c4a274eacce3a905372b57fe60df5c69245",
+      "destinationSha256": "8c0c97ab703428e7b475ebdee4344ff436d7808a35e3eab3b332ca44502a6b4f",
+      "sourceBytes": 3037,
+      "destinationBytes": 3075,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../model.mjs",
+          "after": "../model.mjs",
+          "target": "methods/fcna/implementation/model.mjs"
+        },
+        {
+          "before": "./solver.mjs",
+          "after": "../../../../core/astronomy/physical-asr-solver.mjs",
+          "target": "core/astronomy/physical-asr-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/north-america-own/asr-review/solver.mjs",
+      "destination": "core/astronomy/physical-asr-solver.mjs",
+      "sourceSha256": "0485111725113c1c4eca80f57fb060db825cbae04a300a6a837f56098b33933f",
+      "destinationSha256": "8ed4b1d5df42c70f2356e63363b68b87a0ee1b72e4c2ce825e561b250bec9064",
+      "sourceBytes": 3286,
+      "destinationBytes": 3224,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../../global/solar-usno-v2.mjs",
+          "after": "./solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "./noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        },
+        {
+          "before": "../../astronomy-validation/continuous-solver.mjs",
+          "after": "./continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/north-america-own/model.mjs",
+      "destination": "methods/fcna/implementation/model.mjs",
+      "sourceSha256": "9e43e7efdf052ba49d16cd091d2b73b88a75c8aff8420485b5fecbab96c097ea",
+      "destinationSha256": "480b47ccbfa954aee098764f0157a3ce96f74a6ef7145111b67320a88c68eac3",
+      "sourceBytes": 9765,
+      "destinationBytes": 9778,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        },
+        {
+          "before": "../astronomy-validation/continuous-solver.mjs",
+          "after": "../../../core/astronomy/continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/oman/calculate.mjs",
+      "destination": "methods/oman-mara/implementation/calculate.mjs",
+      "sourceSha256": "1e84e5785b65c1a087166648e9975d3f799f1ecbe6d9b4152a3bebf0d035da44",
+      "destinationSha256": "1b828c23fe05f25558747eda72e8495ff9a2f506ebca4816cf7ed092f48163ff",
+      "sourceBytes": 5060,
+      "destinationBytes": 5073,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/oman/v2/candidate.mjs",
+      "destination": "methods/oman-mara/implementation/v2/candidate.mjs",
+      "sourceSha256": "766d4bb4f93c74a5b77b9938a57b766625c0cbddf3218b6123376bfaf8a9ea3a",
+      "destinationSha256": "766d4bb4f93c74a5b77b9938a57b766625c0cbddf3218b6123376bfaf8a9ea3a",
+      "sourceBytes": 1346,
+      "destinationBytes": 1346,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "../calculate.mjs",
+          "after": "../calculate.mjs",
+          "target": "methods/oman-mara/implementation/calculate.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/saudi/api.mjs",
+      "destination": "methods/umm-al-qura/implementation/api.mjs",
+      "sourceSha256": "8f14f87e9b0a757cd71465e41af09c229f2d0e0fd22e632e6e902651a849a3c4",
+      "destinationSha256": "900d383b3d73eec718758f4161ef0d7ea8da5fdc1d21282760b64044a5da8a85",
+      "sourceBytes": 3328,
+      "destinationBytes": 3342,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "./calculate.mjs",
+          "after": "./calculate.mjs",
+          "target": "methods/umm-al-qura/implementation/calculate.mjs"
+        },
+        {
+          "before": "../global/solar-usno.mjs",
+          "after": "../../../core/astronomy/solar-usno.mjs",
+          "target": "core/astronomy/solar-usno.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/saudi/calculate.mjs",
+      "destination": "methods/umm-al-qura/implementation/calculate.mjs",
+      "sourceSha256": "8f367b0680edb6c9d3fb44791f50bb69288cdeea5e49759b6f8c0a861d4c912c",
+      "destinationSha256": "48d8aead621a425b3493410b7ccbe4e921467c7142d141898e2de57e3625aa9d",
+      "sourceBytes": 4352,
+      "destinationBytes": 4366,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno.mjs",
+          "after": "../../../core/astronomy/solar-usno.mjs",
+          "target": "core/astronomy/solar-usno.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/shia-own/geometry.mjs",
+      "destination": "methods/shia-angles/implementation/geometry.mjs",
+      "sourceSha256": "a3855633efa684a37963631d6bd77fc61e1f8067206a3d64291572558b9a7ae6",
+      "destinationSha256": "881673ff672b2e01e424344a8ba94edd7fedc030d83e122293f557b02cc92666",
+      "sourceBytes": 5143,
+      "destinationBytes": 5156,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        },
+        {
+          "before": "../astronomy-validation/continuous-solver.mjs",
+          "after": "../../../core/astronomy/continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/shia-own/model.mjs",
+      "destination": "methods/shia-angles/implementation/model.mjs",
+      "sourceSha256": "72783d315df3ec74918797a7e9eacccad70a25955879b0d14f15561a0bbe79c1",
+      "destinationSha256": "72783d315df3ec74918797a7e9eacccad70a25955879b0d14f15561a0bbe79c1",
+      "sourceBytes": 6118,
+      "destinationBytes": 6118,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./profiles.mjs",
+          "after": "./profiles.mjs",
+          "target": "methods/shia-angles/implementation/profiles.mjs"
+        },
+        {
+          "before": "./geometry.mjs",
+          "after": "./geometry.mjs",
+          "target": "methods/shia-angles/implementation/geometry.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/shia-own/profiles.mjs",
+      "destination": "methods/shia-angles/implementation/profiles.mjs",
+      "sourceSha256": "0670e2418a54387393987ef5f56c253150cca199466ec902aa7736db8bc38fcd",
+      "destinationSha256": "0670e2418a54387393987ef5f56c253150cca199466ec902aa7736db8bc38fcd",
+      "sourceBytes": 1626,
+      "destinationBytes": 1626,
+      "transformations": [],
+      "imports": [],
+      "externalImports": []
+    },
+    {
+      "source": "research/singapore-own/candidate.mjs",
+      "destination": "methods/muis-singapore/implementation/candidate.mjs",
+      "sourceSha256": "c1d046e6ddb7267c85026380ff258cf6bb5c4bcf66a9182bccd40774448b6eca",
+      "destinationSha256": "c1d046e6ddb7267c85026380ff258cf6bb5c4bcf66a9182bccd40774448b6eca",
+      "sourceBytes": 604,
+      "destinationBytes": 604,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/muis-singapore/implementation/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/singapore-own/model.mjs",
+      "destination": "methods/muis-singapore/implementation/model.mjs",
+      "sourceSha256": "a71d578b73f6d340dc79e9c9bbec244bae51cdb97fc7ca829684e57fb74ddc51",
+      "destinationSha256": "f34af04a7faa1fac36ea3c996a1710acafdb3284ce2620f85eca81c630928781",
+      "sourceBytes": 6082,
+      "destinationBytes": 6095,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        },
+        {
+          "before": "../astronomy-validation/continuous-solver.mjs",
+          "after": "../../../core/astronomy/continuous-solver.mjs",
+          "target": "core/astronomy/continuous-solver.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/south-asia/model.mjs",
+      "destination": "methods/banuri-town/implementation/model.mjs",
+      "sourceSha256": "9b8faaf573cdb96e2d2cedca83a4b9bc58a932dface334b2d19862367f84a7bd",
+      "destinationSha256": "dfc7bf2e4d03175e22f6e8aacdbb8fa81360eb29b17fa2e7532f978c33c48d48",
+      "sourceBytes": 4322,
+      "destinationBytes": 4336,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/south-asia/strict-api.mjs",
+      "destination": "methods/banuri-town/implementation/strict-api.mjs",
+      "sourceSha256": "6ed6c2ccd138cb006154ad5800073f1eab4e42c63458fa2a753867d436eea550",
+      "destinationSha256": "6ed6c2ccd138cb006154ad5800073f1eab4e42c63458fa2a753867d436eea550",
+      "sourceBytes": 1152,
+      "destinationBytes": 1152,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/banuri-town/implementation/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/turkiye-takvimi/calculate.mjs",
+      "destination": "methods/turkiye-takvimi/implementation/calculate.mjs",
+      "sourceSha256": "7f36e31c4aeb2205a4add92c5e5b7835769165b7be1cb49279232bf697b4e694",
+      "destinationSha256": "426d602c9de36bba3094935ef63ad146e18d6bca0e5e566a86e2cd4b28f34dbc",
+      "sourceBytes": 7222,
+      "destinationBytes": 7235,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../global/solar-usno.mjs",
+          "after": "../../../core/astronomy/solar-usno.mjs",
+          "target": "core/astronomy/solar-usno.mjs"
+        },
+        {
+          "before": "../astronomy-ephemerides/noaa-coordinates.mjs",
+          "after": "../../../core/astronomy/noaa-coordinates.mjs",
+          "target": "core/astronomy/noaa-coordinates.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/uae/v2/api.mjs",
+      "destination": "methods/uae-awqaf/implementation/api.mjs",
+      "sourceSha256": "27022c49051b5daa5dc61fd4052e4d6e97341539d44a928457b36f00e00137d7",
+      "destinationSha256": "27022c49051b5daa5dc61fd4052e4d6e97341539d44a928457b36f00e00137d7",
+      "sourceBytes": 1196,
+      "destinationBytes": 1196,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./candidate.mjs",
+          "after": "./candidate.mjs",
+          "target": "methods/uae-awqaf/implementation/candidate.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/uae/v2/candidate.mjs",
+      "destination": "methods/uae-awqaf/implementation/candidate.mjs",
+      "sourceSha256": "e4211b79bac47e0d40ac789b699a540d4b0a899d80c7f28eaa906da72aaa3a5d",
+      "destinationSha256": "e4211b79bac47e0d40ac789b699a540d4b0a899d80c7f28eaa906da72aaa3a5d",
+      "sourceBytes": 485,
+      "destinationBytes": 485,
+      "transformations": [],
+      "imports": [
+        {
+          "before": "./model.mjs",
+          "after": "./model.mjs",
+          "target": "methods/uae-awqaf/implementation/model.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/uae/v2/model.mjs",
+      "destination": "methods/uae-awqaf/implementation/model.mjs",
+      "sourceSha256": "c3c1f6cec0abfeb349983c5ed766d0909d26b600e87f9b38b4b3ad1a0f46c92c",
+      "destinationSha256": "7a9ae67571b24c7e371182f0e736c34e4923610cb181dc7da8027d3455af8d80",
+      "sourceBytes": 7012,
+      "destinationBytes": 7023,
+      "transformations": [
+        "relative-import-paths"
+      ],
+      "imports": [
+        {
+          "before": "../../global/solar-usno-v2.mjs",
+          "after": "../../../core/astronomy/solar-usno-v2.mjs",
+          "target": "core/astronomy/solar-usno-v2.mjs"
+        }
+      ],
+      "externalImports": []
+    },
+    {
+      "source": "research/timezones/bundle.mjs",
+      "destination": "core/timezones/bundle.mjs",
+      "sourceSha256": "077b13b92bf22aa9b1b3efca387b7f40982554d3bba095d499e3cd6480f6a415",
+      "destinationSha256": "077b13b92bf22aa9b1b3efca387b7f40982554d3bba095d499e3cd6480f6a415",
+      "sourceBytes": 1103,
+      "destinationBytes": 1103,
+      "transformations": [],
+      "assetRole": "timezone-runtime-loader"
+    },
+    {
+      "source": "research/timezones/with-tzdata.mjs",
+      "destination": "core/timezones/with-tzdata.mjs",
+      "sourceSha256": "f764f888ad61b63b9ab27cbab50229a8731356af590b002d24011ca64bd4ee91",
+      "destinationSha256": "48fd24ddf45052719275f66787ba1babbdad70503088a5db1727844ebecc08d6",
+      "sourceBytes": 1013,
+      "destinationBytes": 1009,
+      "transformations": [
+        "launcher-usage-path-only"
+      ],
+      "assetRole": "timezone-runtime-loader"
+    },
+    {
+      "source": "research/timezones/manifest.json",
+      "destination": "core/timezones/manifest.json",
+      "sourceSha256": "2ca6b2910eef8737271991b25e7bfe0eba581ae0a51bceeb0849a7a63566db9f",
+      "destinationSha256": "2ca6b2910eef8737271991b25e7bfe0eba581ae0a51bceeb0849a7a63566db9f",
+      "sourceBytes": 2931,
+      "destinationBytes": 2931,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/icu-2026d-le/zoneinfo64.res",
+      "destination": "core/timezones/icu-2026d-le/zoneinfo64.res",
+      "sourceSha256": "1407004c74321d5d7c5089f75a63bf70b7fde0da7df96a14dd514716193a12dc",
+      "destinationSha256": "1407004c74321d5d7c5089f75a63bf70b7fde0da7df96a14dd514716193a12dc",
+      "sourceBytes": 149440,
+      "destinationBytes": 149440,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/icu-2026d-le/windowsZones.res",
+      "destination": "core/timezones/icu-2026d-le/windowsZones.res",
+      "sourceSha256": "b8c3a7adb94fd659f8203ee4af4dc72a4e6b14566baac1855c493096f337184b",
+      "destinationSha256": "b8c3a7adb94fd659f8203ee4af4dc72a4e6b14566baac1855c493096f337184b",
+      "sourceBytes": 22064,
+      "destinationBytes": 22064,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/icu-2026d-le/timezoneTypes.res",
+      "destination": "core/timezones/icu-2026d-le/timezoneTypes.res",
+      "sourceSha256": "5e77ce5afb7374a36cbe3be197d0a6deaa919e6f672c2a372f7a9d91b7f8534f",
+      "destinationSha256": "5e77ce5afb7374a36cbe3be197d0a6deaa919e6f672c2a372f7a9d91b7f8534f",
+      "sourceBytes": 21264,
+      "destinationBytes": 21264,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/icu-2026d-le/metaZones.res",
+      "destination": "core/timezones/icu-2026d-le/metaZones.res",
+      "sourceSha256": "5b484c7f02c99d5164208ce84e18fba67c6314d77cf60503e2b19f708b66c6da",
+      "destinationSha256": "5b484c7f02c99d5164208ce84e18fba67c6314d77cf60503e2b19f708b66c6da",
+      "sourceBytes": 43536,
+      "destinationBytes": 43536,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/ICU-LICENSE.txt",
+      "destination": "core/timezones/ICU-LICENSE.txt",
+      "sourceSha256": "f72db45707e93c90c4bf400edfa5d38ce44fe692789e385548e627459c1bf6c9",
+      "destinationSha256": "f72db45707e93c90c4bf400edfa5d38ce44fe692789e385548e627459c1bf6c9",
+      "sourceBytes": 5131,
+      "destinationBytes": 5131,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/sources/iana-version.txt",
+      "destination": "core/timezones/sources/iana-version.txt",
+      "sourceSha256": "e5991d2ec7b3c5fbd147d25d2ac1344d70da4bdaaf88e9df51525b9f72fb53f0",
+      "destinationSha256": "e5991d2ec7b3c5fbd147d25d2ac1344d70da4bdaaf88e9df51525b9f72fb53f0",
+      "sourceBytes": 6,
+      "destinationBytes": 6,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    },
+    {
+      "source": "research/timezones/sources/iana-africa.txt",
+      "destination": "core/timezones/sources/iana-africa.txt",
+      "sourceSha256": "f2851d4be4a4925cbdc9d56e10d780bccadb89d6ffb9aed78c3e35f97c200aed",
+      "destinationSha256": "f2851d4be4a4925cbdc9d56e10d780bccadb89d6ffb9aed78c3e35f97c200aed",
+      "sourceBytes": 58273,
+      "destinationBytes": 58273,
+      "transformations": [],
+      "assetRole": "verified-timezone-runtime"
+    }
+  ],
+  "dependencies": {
+    "adhan": "4.4.6 (MIT; imported only by the retained Egyptian mixed-engine implementation)",
+    "node": "Node.js with Intl/ICU, little-endian ICU54+; verified bundled tzdb2026d required for reproducible civil times"
+  },
+  "exceptions": [
+    {
+      "kind": "constant-extraction",
+      "source": "research/egypt/references.mjs",
+      "sourceSha256": "85bd998d63299caf9f109ce3a4e80828a42ffd32030f52cca4dc0ead086b1d16",
+      "copiedValue": "['fajr','sunrise','dhuhr','asr','maghrib','isha']",
+      "destination": "methods/egyptian-survey/implementation/calculate.mjs",
+      "reason": "The numerical module imported only EVENTS. Original HTML/text parser code is not part of the runtime export."
+    }
+  ],
+  "excluded": [
+    "Original prayer calendars and reference tables",
+    "Forecasts, scoring reports, and historical freezes",
+    "Acquisition/parsing code and agent transcripts",
+    "UAE V3/PAL/GPL native implementation",
+    "Legacy all-profile API0.7 adapter"
+  ],
+  "counts": {
+    "families": 15,
+    "entrypoints": 22,
+    "codeModules": 52,
+    "timezoneFiles": 10,
+    "totalBytes": 520516
+  }
+}

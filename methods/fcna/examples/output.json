@@ -1,0 +1,135 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "startDate": "2026-06-21",
+    "latitude": 40.7,
+    "longitude": -74,
+    "timeZone": "America/New_York",
+    "profileId": "fcna-usa-15",
+    "asr": "standard",
+    "numerical": {
+      "ephemeris": "usno",
+      "rounding": "nearest"
+    }
+  },
+  "output": {
+    "schemaVersion": 1,
+    "profile": {
+      "id": "fcna-usa-15",
+      "geographicalScope": "FCNA recommendation for USA",
+      "fajrAngle": 15,
+      "ishaAngle": 15,
+      "source": "https://fiqhcouncil.org/the-suggested-calculation-method-for-fajr-and-isha/",
+      "version": "0.1.0-own-research",
+      "officialImplementationApproved": false
+    },
+    "location": {
+      "latitude": 40.7,
+      "longitude": -74,
+      "timeZone": "America/New_York"
+    },
+    "range": {
+      "startDate": "2026-06-21",
+      "endDate": "2026-06-21",
+      "dayCount": 1
+    },
+    "engine": {
+      "name": "own-usno-continuous-spherical",
+      "version": "0.1.0",
+      "tzdb": "2026d",
+      "rounding": "nearest",
+      "horizonDegrees": -0.8333333333333334,
+      "asrFactor": 1,
+      "timeArgument": "UTC Julian date, following published approximation; no separate TT correction",
+      "geometry": "Geocentric solar centre and conventional horizon; no topocentric parallax, terrain or elevation correction",
+      "asrDomainReview": {
+        "version": "1.0.0",
+        "method": "Finite algebraic continuation through the target-height boundary; retain only physically positive setting crossings",
+        "changedDays": 0
+      }
+    },
+    "productionReady": false,
+    "notificationEligible": false,
+    "limitations": [
+      "FCNA prescribes these Fajr/Isha angle approximations, not this six-event numerical engine or its rounding.",
+      "No claim that every US or Canadian mosque uses the selected profile; no country or school inferred from coordinates.",
+      "Missing crossings remain unavailable; no high-latitude replacement has been invented.",
+      "Dhuhr is unshifted astronomical transit; other auxiliary events and separately selected Asr are not institution-confirmed prayer specifications.",
+      "Optional observational caution recommended by FCNA is not converted into unverified fixed minutes.",
+      "Astronomical cycle is attached by solar transit to the requested civil day; local event dates are retained explicitly."
+    ],
+    "days": [
+      {
+        "date": "2026-06-21",
+        "solarCalculationDate": "2026-06-21",
+        "events": {
+          "fajr": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "03:45",
+            "localIso": "2026-06-21T03:45:00-04:00",
+            "utc": "2026-06-21T07:45:00.000Z",
+            "rawUtc": "2026-06-21T07:45:10.542Z",
+            "basis": "FCNA-source-angle-with-independent-astronomy"
+          },
+          "sunrise": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "05:25",
+            "localIso": "2026-06-21T05:25:00-04:00",
+            "utc": "2026-06-21T09:25:00.000Z",
+            "rawUtc": "2026-06-21T09:25:02.982Z",
+            "basis": "auxiliary-astronomical-convention-not-specified-by-FCNA-source"
+          },
+          "dhuhr": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "12:58",
+            "localIso": "2026-06-21T12:58:00-04:00",
+            "utc": "2026-06-21T16:58:00.000Z",
+            "rawUtc": "2026-06-21T16:57:52.301Z",
+            "basis": "auxiliary-astronomical-convention-not-specified-by-FCNA-source"
+          },
+          "asr": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "16:58",
+            "localIso": "2026-06-21T16:58:00-04:00",
+            "utc": "2026-06-21T20:58:00.000Z",
+            "rawUtc": "2026-06-21T20:58:08.197Z",
+            "basis": "auxiliary-astronomical-convention-not-specified-by-FCNA-source"
+          },
+          "maghrib": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "20:31",
+            "localIso": "2026-06-21T20:31:00-04:00",
+            "utc": "2026-06-22T00:31:00.000Z",
+            "rawUtc": "2026-06-22T00:30:41.202Z",
+            "basis": "auxiliary-astronomical-convention-not-specified-by-FCNA-source"
+          },
+          "isha": {
+            "status": "calculated-experimental",
+            "localDate": "2026-06-21",
+            "time": "22:11",
+            "localIso": "2026-06-21T22:11:00-04:00",
+            "utc": "2026-06-22T02:11:00.000Z",
+            "rawUtc": "2026-06-22T02:10:33.255Z",
+            "basis": "FCNA-source-angle-with-independent-astronomy"
+          }
+        }
+      }
+    ],
+    "asrDomainReview": {
+      "changes": [],
+      "highLatitudeReplacement": null,
+      "transitNoonShadowConvention": "Preserves historical time-varying declination target; not a new fixed-noon-shadow profile",
+      "scope": "Numerical correction of missing auxiliary Asr only; does not validate a religious polar prayer prescription"
+    }
+  }
+}

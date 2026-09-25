@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "methodId": "uae-awqaf",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "An experimental UAE city-region calculation using archived vendor location metadata and primary Awqaf/SZGMC calendars. Vendor column interpretation is not confirmed production configuration.",
+  "publicDefault": "strict V2 standard-atmosphere recipe; V3 excluded",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 24.45,
+    "longitude": 54.38,
+    "elevationMeters": 0,
+    "cityWidthKm": 0,
+    "pressureMillibars": 1010,
+    "temperatureCelsius": 10,
+    "timeZone": "Asia/Dubai"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "v2-fresh",
+      "recipe": "V2 selected standard atmosphere",
+      "exposure": "six new monthly PDFs after V2 freeze",
+      "scope": "Abu Dhabi, Al Ain and Zayed; April2025 and October2026;183 city-days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 1098,
+      "comparedSlots": 1098,
+      "uncomparedSlots": 0,
+      "exactCount": 778,
+      "withinOneMinuteCount": 1054,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 70.8561,
+      "nonExactRatePercent": 29.1439,
+      "withinOneMinutePercent": 95.9927,
+      "overOneMinuteRatePercent": 4.0073,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Same three regions, new seasons; not new geography.",
+        "Abu Dhabi337/366 exact, all≤1; Al Ain220/366 and333≤1; Zayed221/366 and355≤1."
+      ],
+      "evidenceIdentifier": "research/uae/v2/holdout-report.json"
+    },
+    {
+      "id": "excluded-v3-study",
+      "recipe": "EXCLUDED V3 with native GPL PAL; not this executable",
+      "exposure": "six new monthly PDFs after separate V3 freeze",
+      "scope": "Same three regions; January2025 and November2026",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 1098,
+      "comparedSlots": 1098,
+      "uncomparedSlots": 0,
+      "exactCount": 825,
+      "withinOneMinuteCount": 1098,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 75.1366,
+      "nonExactRatePercent": 24.8634,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Historical result from excluded GPL/native implementation only.",
+        "On these same later sources V2 had791exact/1049within1/max2."
+      ],
+      "evidenceIdentifier": "research/uae/v3-diagnostics/holdout-report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "v2",
+      "module": "methods/uae-awqaf/implementation/api.mjs",
+      "export": "calculateCandidateStrict",
+      "sourceIdentifier": "research/uae/v2/api.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/uae/v2/README.md",
+      "sha256": "f56b71dc27b69e3dde3f626e38f26ef7904c271e1575d920d5b8ec74fa9213d9",
+      "bytes": 7826,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/uae/v2/holdout-report.json",
+      "sha256": "bdee6f7ef309e2b3b9b1f037f2e97cfd8f920696781d54ab5662cd7cf4eefd95",
+      "bytes": 179823,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/uae/v2/review.md",
+      "sha256": "2d8b454ad3395d6534380e0f73dfb965ddf16b4ba3e6bbee5727d81979860d3b",
+      "bytes": 4064,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/uae/v3-diagnostics/README.md",
+      "sha256": "1c5b7a5df7c9533212279a14ff3c207f95ba6c0a3289d9539d9c1286049bafbf",
+      "bytes": 14946,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/uae/v3-diagnostics/holdout-report.json",
+      "sha256": "88be6668d17dd30169e5167a1a92960309bb594f235c18a3d25d78b6af2fd03f",
+      "bytes": 567129,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/uae/v2/api.mjs",
+      "sha256": "27022c49051b5daa5dc61fd4052e4d6e97341539d44a928457b36f00e00137d7",
+      "bytes": 1196,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Only three vendor-mapped regions and selected months have been tested. PDF identity is tied to the observed UI selection, not assumed from unlabeled PDF content.",
+    "This is not Accurate Times’ claimed Hohenkerk/Sinclair implementation. Elevation, city width and field schema are independently sourced/inferred, not fitted to calendar minutes.",
+    "A later V3 native Starlink PAL GPL study is excluded from this public executable. Its better result must never be attributed to V2."
+  ],
+  "publicationNotes": [
+    "Only V2 is executable in this public package. V3 would require a deliberate separate GPL/native distribution and build review. Original vendor assets and calendar PDFs are not relicensed by this repository."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.szgmc.gov.ae/images/calendar/HijriBook1445_en.pdf",
+      "role": "Original SZGMC institutional calendar"
+    },
+    {
+      "url": "https://www.awqaf.gov.ae/prayer-times",
+      "role": "Original public calendar frontend"
+    },
+    {
+      "url": "https://astronomycenter.net/accut.html?l=en",
+      "role": "Accurate Times author documentation and software context"
+    },
+    {
+      "url": "https://gml.noaa.gov/grad/solcalc/calcdetails.html",
+      "role": "Primary NOAA refraction approximation used by V2"
+    }
+  ]
+}

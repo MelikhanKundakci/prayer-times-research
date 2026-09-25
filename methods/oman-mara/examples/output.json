@@ -1,0 +1,100 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 23.6,
+    "longitude": 58.5,
+    "timeZone": "Asia/Muscat"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "location": {
+      "latitude": 23.6,
+      "longitude": 58.5,
+      "timeZone": "Asia/Muscat",
+      "elevationMeters": 0,
+      "coordinatesStatus": "caller supplied; official MARA production point and height unknown"
+    },
+    "model": {
+      "id": "oman-mara-empirical-v2",
+      "version": "0.2.0",
+      "officialMethod": false,
+      "religiousTraditionCertification": null,
+      "config": {
+        "ephemeris": "noaa",
+        "anchors": "utc-noon",
+        "fajrAngle": 18,
+        "ishaAngle": 18,
+        "asrFactor": 1,
+        "rounding": "ceil",
+        "offsets": [
+          0,
+          0,
+          5,
+          5,
+          5,
+          0
+        ]
+      },
+      "horizonDegrees": -0.8333333333333334,
+      "asrAltitudeDegrees": 44.919139946751095,
+      "productionReady": false
+    },
+    "events": {
+      "fajr": {
+        "status": "experimental",
+        "time": "03:53",
+        "instant": "2026-06-20T23:53:00.000Z",
+        "localIso": "2026-06-21T03:53:00+04:00",
+        "rawInstant": "2026-06-20T23:52:26.612Z",
+        "unconfirmedOffsetMinutes": 0
+      },
+      "sunrise": {
+        "status": "experimental",
+        "time": "05:21",
+        "instant": "2026-06-21T01:21:00.000Z",
+        "localIso": "2026-06-21T05:21:00+04:00",
+        "rawInstant": "2026-06-21T01:20:06.459Z",
+        "unconfirmedOffsetMinutes": 0
+      },
+      "dhuhr": {
+        "status": "experimental",
+        "time": "12:13",
+        "instant": "2026-06-21T08:13:00.000Z",
+        "localIso": "2026-06-21T12:13:00+04:00",
+        "rawInstant": "2026-06-21T08:07:49.456Z",
+        "unconfirmedOffsetMinutes": 5
+      },
+      "asr": {
+        "status": "experimental",
+        "time": "15:31",
+        "instant": "2026-06-21T11:31:00.000Z",
+        "localIso": "2026-06-21T15:31:00+04:00",
+        "rawInstant": "2026-06-21T11:25:31.374Z",
+        "unconfirmedOffsetMinutes": 5
+      },
+      "maghrib": {
+        "status": "experimental",
+        "time": "19:01",
+        "instant": "2026-06-21T15:01:00.000Z",
+        "localIso": "2026-06-21T19:01:00+04:00",
+        "rawInstant": "2026-06-21T14:55:32.454Z",
+        "unconfirmedOffsetMinutes": 5
+      },
+      "isha": {
+        "status": "experimental",
+        "time": "20:24",
+        "instant": "2026-06-21T16:24:00.000Z",
+        "localIso": "2026-06-21T20:24:00+04:00",
+        "rawInstant": "2026-06-21T16:23:12.301Z",
+        "unconfirmedOffsetMinutes": 0
+      }
+    },
+    "notificationEligible": false
+  }
+}

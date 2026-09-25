@@ -1,0 +1,283 @@
+{
+  "schemaVersion": 1,
+  "methodId": "jakim",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Several explicitly different zonal reconstructions against e-Solat, with JUPEM coordinate evidence. A nationwide institution label does not establish one immutable point-selection algorithm for every state and year.",
+  "publicDefault": "single-point-own; explicitly selectable alternatives multipoint, sgr01-two-point, kdh03-map-r19",
+  "publicExampleInput": {
+    "variant": "single-point-own",
+    "date": "2026-06-21",
+    "zone": "SGR01",
+    "timeZone": "Asia/Kuala_Lumpur",
+    "candidate": "usno-fixed"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "single-new-zones",
+      "recipe": "usno-fixed single-point",
+      "exposure": "four new2026zone downloads after forecast freeze; partial geometry overlap",
+      "scope": "SGR01,PLS01,MLK01,JHR01 complete2026",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 8760,
+      "comparedSlots": 8760,
+      "uncomparedSlots": 0,
+      "exactCount": 7899,
+      "withinOneMinuteCount": 8748,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 90.1712,
+      "nonExactRatePercent": 9.8288,
+      "withinOneMinutePercent": 99.863,
+      "overOneMinuteRatePercent": 0.137,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "1825 ordinary SGR01 cells duplicate previously known WLY01 point outputs.",
+        "The nonoverlapping6935-cell subset has6366exact and all within1; do not treat all8760 as novel geometry."
+      ],
+      "evidenceIdentifier": "research/jakim-own/holdout-report.json"
+    },
+    {
+      "id": "single-new-years",
+      "recipe": "usno-fixed single-point",
+      "exposure": "new2025year after freeze; same zones",
+      "scope": "SGR01,SGR02,SGR03 complete2025",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 6570,
+      "comparedSlots": 6570,
+      "uncomparedSlots": 0,
+      "exactCount": 5777,
+      "withinOneMinuteCount": 6559,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 87.93,
+      "nonExactRatePercent": 12.07,
+      "withinOneMinutePercent": 99.8326,
+      "overOneMinuteRatePercent": 0.1674,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [],
+      "evidenceIdentifier": "research/jakim-own/cross-year/report.json"
+    },
+    {
+      "id": "multipoint-new-zones",
+      "recipe": "all-points-extrema",
+      "exposure": "three new2026zone calendars after freeze",
+      "scope": "PNG01,KDH01,KDH03 complete2026",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 6570,
+      "comparedSlots": 6570,
+      "uncomparedSlots": 0,
+      "exactCount": 5283,
+      "withinOneMinuteCount": 6495,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 80.411,
+      "nonExactRatePercent": 19.589,
+      "withinOneMinutePercent": 98.8584,
+      "overOneMinuteRatePercent": 1.1416,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "All75 two-minute differences are KDH03 sunrise; the map alternative was a later, separately frozen experiment."
+      ],
+      "evidenceIdentifier": "research/jakim-multipoint/report.json"
+    },
+    {
+      "id": "map-r19-new-year",
+      "recipe": "KDH03 map-plus-r19",
+      "exposure": "new2025calendar after separate candidate freeze",
+      "scope": "KDH03 complete2025",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1577,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 72.0091,
+      "nonExactRatePercent": 27.9909,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Not confirmation that R19 is an official current KDH03 calculation point."
+      ],
+      "evidenceIdentifier": "research/jakim-multipoint/map-candidate/holdout-report.json"
+    },
+    {
+      "id": "sgr01-new-subset",
+      "recipe": "SGR01 two-point village proxy",
+      "exposure": "unexposed subset of a new2024calendar after freeze",
+      "scope": "SGR01, excluding176 previously exposed values",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2020,
+      "comparedSlots": 2020,
+      "uncomparedSlots": 0,
+      "exactCount": 1922,
+      "withinOneMinuteCount": 2020,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 95.1485,
+      "nonExactRatePercent": 4.8515,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "The full2024calendar has2196cells; only2020 were unexposed.",
+        "Do not combine overlapping variant tests into one overall accuracy rate."
+      ],
+      "evidenceIdentifier": "research/jakim-two-point/report-2024.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "single-point-own",
+      "module": "methods/jakim/implementation/single-point/model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/jakim-own/model.mjs"
+    },
+    {
+      "variant": "multipoint",
+      "module": "methods/jakim/implementation/multipoint/model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/jakim-multipoint/model.mjs"
+    },
+    {
+      "variant": "sgr01-two-point",
+      "module": "methods/jakim/implementation/two-point/review-independent-model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/jakim-two-point/review-independent-model.mjs"
+    },
+    {
+      "variant": "kdh03-map-r19",
+      "module": "methods/jakim/implementation/multipoint/map-candidate/model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/jakim-multipoint/map-candidate/model.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/jakim-own/README.md",
+      "sha256": "8020f24a6f838a0f2792e3e523ef49e812496b394ca0a90435b7d95b754f4d7b",
+      "bytes": 8094,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-own/holdout-report.json",
+      "sha256": "d1729a1f1fd2b8d06e6ba2ef2ebcea8791a01a9f0048fef5b771f71825657714",
+      "bytes": 441887,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-own/cross-year/report.json",
+      "sha256": "c775c378c6923cb8a1a0a72f49495d8180ab35b323783db63b4e0d897e628073",
+      "bytes": 1763905,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/README.md",
+      "sha256": "c7aae84aa1881b6813464425507c43d2132a013d26846b650bce87b08ba3956e",
+      "bytes": 6184,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/report.json",
+      "sha256": "0747293b941cea20dcb35fdecfe67c95539bb33356c6b35c89b74ca95b1d5576",
+      "bytes": 725285,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/map-candidate/README.md",
+      "sha256": "c6a6770a7832e501cfe700a2af2367f1811f73a46e04d93e8cbd187822e1a451",
+      "bytes": 5623,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/map-candidate/holdout-report.json",
+      "sha256": "6d9ef777dd8d703aa2ef59ac2f55bc46c21d35caf0b3b427350407e714faec48",
+      "bytes": 178261,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-two-point/README.md",
+      "sha256": "6d87554f303ce138fd5e8b64ebc3f5e9046dd771083cfea1f1bbf3fc39604201",
+      "bytes": 9604,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-two-point/report-2024.json",
+      "sha256": "ec84ccb43518ef9d34e8bb9d2484a8fe6c2a26c56ea46e04184b9dc45a4376a2",
+      "bytes": 1584334,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-own/model.mjs",
+      "sha256": "a92b0e7b789f13be71ceacf0fba80b731930980598ecad60cd982a06d2fe15c7",
+      "bytes": 8573,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/model.mjs",
+      "sha256": "442ea1d68812db540e6039c1ce87c4c34d0a7b63fa31b3140e9d3f57197f82c1",
+      "bytes": 6019,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-two-point/review-independent-model.mjs",
+      "sha256": "87cc4ddbb1c28426091643ecf1f11b81cdd42fc9ed5016cdee73f2a0888b8d55",
+      "bytes": 555,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/jakim-multipoint/map-candidate/model.mjs",
+      "sha256": "940be11d55091772e5a57e28895f76ca50ff99b38fd6f5b676f44409810f8fc3",
+      "bytes": 4689,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "WLY02 uses Asia/Kuching; the other listed zones use Asia/Kuala_Lumpur. Callers choose a zone/variant, not an arbitrary GPS point advertised as an official zonal calculation.",
+    "JUPEM2025 coordinates and2018–2019 interviews are evidence with dates; they do not prove the present production configuration. The2015 multi-point article must not be reduced to an unverified universal five-point rule.",
+    "Selangor announced preparation for district-based2027 calendars; historical point contracts must not be extended automatically.",
+    "R19 belongs to a neighboring-zone table while appearing on the shared map boundary. The map inclusion remains a single unconfirmed hypothesis. Tg.Rhu village coordinates are not a certified prayer-calculation station."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.e-solat.gov.my/",
+      "role": "Primary JAKIM calendar service"
+    },
+    {
+      "url": "https://www.jupem.gov.my/storage/upload/almanak/almanak2025-1732247258.pdf",
+      "role": "Primary2025 coordinate tables and maps"
+    },
+    {
+      "url": "https://www.islam.gov.my/images/ePenerbitan/jurnal_falak_bil1_2015.pdf",
+      "role": "Primary multi-point research article, dated2015"
+    },
+    {
+      "url": "https://ejournal.um.edu.my/index.php/RIS/article/download/27353/12400/61519",
+      "role": "Original2020 research interviews on actual state methods"
+    },
+    {
+      "url": "https://www.muftiselangor.gov.my/soalan-lazim/",
+      "role": "Selangor institutional method explanations"
+    },
+    {
+      "url": "https://www.muftiselangor.gov.my/2026/02/12/bengkel-penyelarasan-takwim-waktu-solat-negeri-selangor-tahun-2027/",
+      "role": "Primary notice of preparations for2027 zone/district changes"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 21.4,
+    "longitude": 39.8,
+    "timeZone": "Asia/Riyadh"
+  },
+  "output": {
+    "schemaVersion": 1,
+    "profile": {
+      "id": "umm-al-qura-reconstructed",
+      "version": "0.1.1-strict-wrapper",
+      "official": false,
+      "parameters": {
+        "fajrAngle": 18.5,
+        "dhuhrOffset": 0,
+        "asrFactor": 1,
+        "rounding": "outward",
+        "solarEpoch": "local-anchors",
+        "fajrEpoch": "utc-noon"
+      }
+    },
+    "location": {
+      "latitude": 21.4,
+      "longitude": 39.8,
+      "timeZone": "Asia/Riyadh"
+    },
+    "limitations": [
+      "Geometry and rounding are experimental reconstruction, not a confirmed institutional specification.",
+      "Ramadan uses ICU islamic-umalqura civil dates; future lunar announcements may differ.",
+      "No high-latitude religious replacement is selected; unavailable/nonphysical events must not be offered as valid prayer starts.",
+      "Institutional API offset/date anomalies are not copied."
+    ],
+    "days": [
+      {
+        "date": "2026-06-21",
+        "hijriDate": {
+          "year": 1448,
+          "month": 1,
+          "day": 6
+        },
+        "ishaInterval": 90,
+        "solarCalculationDate": "2026-06-21",
+        "events": {
+          "fajr": {
+            "time": "04:12",
+            "iso": "2026-06-21T01:12:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          },
+          "sunrise": {
+            "time": "05:39",
+            "iso": "2026-06-21T02:39:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          },
+          "dhuhr": {
+            "time": "12:23",
+            "iso": "2026-06-21T09:23:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          },
+          "asr": {
+            "time": "15:43",
+            "iso": "2026-06-21T12:43:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          },
+          "maghrib": {
+            "time": "19:06",
+            "iso": "2026-06-21T16:06:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          },
+          "isha": {
+            "time": "20:36",
+            "iso": "2026-06-21T17:36:00.000Z",
+            "localDate": "2026-06-21",
+            "status": "experimental-calculated"
+          }
+        },
+        "qualityFlags": []
+      }
+    ]
+  }
+}

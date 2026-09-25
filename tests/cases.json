@@ -1,0 +1,243 @@
+{
+  "scope": "Model regression cases. No institutional calendar values.",
+  "cases": [
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "family": "moonsighting-committee",
+      "input": {
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "family": "diyanet",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "family": "diyanet",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "family": "diyanet",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "family": "diyanet",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2026-06-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      }
+    },
+    {
+      "id": "diyanet/south",
+      "family": "diyanet",
+      "input": {
+        "variant": "south",
+        "date": "2026-06-21",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      }
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "family": "umm-al-qura",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      }
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "family": "egyptian-survey",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      }
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "family": "uae-awqaf",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      }
+    },
+    {
+      "id": "kemenag/strict",
+      "family": "kemenag",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      }
+    },
+    {
+      "id": "oman-mara/v2",
+      "family": "oman-mara",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      }
+    },
+    {
+      "id": "banuri-town/strict",
+      "family": "banuri-town",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      }
+    },
+    {
+      "id": "jakim/single-point-own",
+      "family": "jakim",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2026-06-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      }
+    },
+    {
+      "id": "jakim/multipoint",
+      "family": "jakim",
+      "input": {
+        "variant": "multipoint",
+        "date": "2026-06-21",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      }
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "family": "jakim",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2026-06-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      }
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "family": "jakim",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2026-06-21",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      }
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "family": "muis-singapore",
+      "input": {
+        "date": "2026-06-21",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      }
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "family": "fcna",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      }
+    },
+    {
+      "id": "shia-angles/own",
+      "family": "shia-angles",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      }
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "family": "bayynat",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "fazilet/v2",
+      "family": "fazilet",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      }
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "family": "turkiye-takvimi",
+      "input": {
+        "date": "2026-06-21",
+        "variant": "noaa-continuous-nearest"
+      }
+    }
+  ]
+}

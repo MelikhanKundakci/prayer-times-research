@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "methodId": "fazilet",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A publisher-specific reconstruction of Fazilet calendars in a bounded Turkish region. This is separate from Türkiye Takvimi/namazvakti.com and is not a generic Hanafi method.",
+  "publicDefault": "V2 event-specific rounding",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 41,
+    "longitude": 29,
+    "timeZone": "Europe/Istanbul"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "new-geography-primary",
+      "recipe": "V2",
+      "exposure": "three new cities after freeze; same seasonal windows",
+      "scope": "Adana,Diyarbakir,Trabzon; Ramadan1447 and23–25September2026;96city-days",
+      "eventSet": "Six primary columns: Imsak,sunrise,Dhuhr,Asr,Maghrib,Isha",
+      "expectedSlots": 576,
+      "comparedSlots": 576,
+      "uncomparedSlots": 0,
+      "exactCount": 385,
+      "withinOneMinuteCount": 576,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 66.8403,
+      "nonExactRatePercent": 33.1597,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "V1 on the same sources also has385exact, but three values differ by2minutes.",
+        "No complete-year or new-season validation."
+      ],
+      "evidenceIdentifier": "research/fazilet/v2/holdout-report.json"
+    },
+    {
+      "id": "new-geography-with-derived-sabah",
+      "recipe": "V2",
+      "exposure": "same original data, additional derived column",
+      "scope": "Same96days",
+      "eventSet": "Six primary columns plus derived Sabah",
+      "expectedSlots": 672,
+      "comparedSlots": 672,
+      "uncomparedSlots": 0,
+      "exactCount": 446,
+      "withinOneMinuteCount": 672,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 66.369,
+      "nonExactRatePercent": 33.631,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "V1 has459/672 exact versus V2’s446: the larger seven-column exactness score did not improve.",
+        "Adana favors V1 and Diyarbakir V2; there is no automatic city selection."
+      ],
+      "evidenceIdentifier": "research/fazilet/v2/holdout-report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "v2",
+      "module": "methods/fazilet/implementation/v2/candidate.mjs",
+      "export": "calculateFaziletV2",
+      "sourceIdentifier": "research/fazilet/v2/candidate.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/fazilet/README.md",
+      "sha256": "23e1c1661d56ee5ffced99e41d70273bfbe0207f61718db632f62d2090cc9d0b",
+      "bytes": 8977,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/fazilet/v2/README.md",
+      "sha256": "45df13d121626d9bc65f3782aa3a01cee2df6fc93af81406a68651745fa99a2c",
+      "bytes": 6129,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/fazilet/v2/holdout-report.json",
+      "sha256": "c18026fff87cea5c0ebd12e899f64d3e5b94bf91878bc81720098279a53ccc69",
+      "bytes": 134021,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/fazilet/v2/paired-report.json",
+      "sha256": "312c6cec2d8520e2b851cfb7ba88740eed25f0a507980b0f4c427adeeb03fd80",
+      "bytes": 4612,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/fazilet/v2/candidate.mjs",
+      "sha256": "f53b4e2dae5cd2bb43da2c88c17c352a7890d77c23f33ae218d8c03bbafa6311",
+      "bytes": 357,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Sabah is derived, so a seven-column score is not seven independent astronomical observations.",
+    "No posthoc city-specific model choice is applied: V2 improves the largest observed error while exactness is regionally mixed.",
+    "UNGEGN points are not known Fazilet production points. No elevation/terrain correction was fitted; the model remains outside the historical shared API."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://fazilettakvimi.com/hakkimizda/vakitler-nasil-hesaplaniyor/",
+      "role": "Primary calculation explanation"
+    },
+    {
+      "url": "https://fazilettakvimi.com/sikca-sorulan-sorular/muhteva-ile-ilgili-sorular/",
+      "role": "Primary publisher FAQ"
+    },
+    {
+      "url": "https://fazilettakvimi.com/sual-ve-cevaplar/10/",
+      "role": "Historical publisher Temkin explanation; not a universal current numeric recipe"
+    },
+    {
+      "url": "https://fazilettakvimi.com/namaz-vakitleri/",
+      "role": "Original publisher calendars"
+    }
+  ]
+}

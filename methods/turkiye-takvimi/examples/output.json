@@ -1,0 +1,165 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "variant": "noaa-continuous-nearest"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "location": {
+      "cityId": "16741",
+      "latitude": 41,
+      "longitude": 29,
+      "timeZone": "Europe/Istanbul"
+    },
+    "events": {
+      "fajr": {
+        "status": "adjusted",
+        "time": "03:04",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T03:04:00+03:00",
+        "epochMs": 1782000240000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782000849467.7085,
+        "unroundedEpochMs": 1782000249467.7085,
+        "temkinMinutes": -10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": -19,
+        "crossingDirection": "ascending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "sunrise": {
+        "status": "adjusted",
+        "time": "05:27",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T05:27:00+03:00",
+        "epochMs": 1782008820000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782009430955.482,
+        "unroundedEpochMs": 1782008830955.482,
+        "temkinMinutes": -10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": 0,
+        "crossingDirection": "ascending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "asr": {
+        "status": "adjusted",
+        "time": "17:17",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T17:17:00+03:00",
+        "epochMs": 1782051420000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782050803076.169,
+        "unroundedEpochMs": 1782051403076.169,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": 37.220212886585294,
+        "crossingDirection": "descending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "asrHanafi": {
+        "status": "adjusted",
+        "time": "18:31",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T18:31:00+03:00",
+        "epochMs": 1782055860000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782055245260.5781,
+        "unroundedEpochMs": 1782055845260.5781,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": 23.3492881576788,
+        "crossingDirection": "descending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "maghrib": {
+        "status": "adjusted",
+        "time": "20:44",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T20:44:00+03:00",
+        "epochMs": 1782063840000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782063265801.226,
+        "unroundedEpochMs": 1782063865801.226,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": 0,
+        "crossingDirection": "descending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "isha": {
+        "status": "adjusted",
+        "time": "22:48",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T22:48:00+03:00",
+        "epochMs": 1782071280000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782070683759.4312,
+        "unroundedEpochMs": 1782071283759.4312,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": -17,
+        "crossingDirection": "descending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "ishaSecond": {
+        "status": "adjusted",
+        "time": "23:07",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T23:07:00+03:00",
+        "epochMs": 1782072420000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782071847139.1973,
+        "unroundedEpochMs": 1782072447139.1973,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "targetAltitudeDegrees": -19,
+        "crossingDirection": "descending",
+        "geometricHorizon": "true solar centre, no additional refraction or elevation"
+      },
+      "dhuhr": {
+        "status": "adjusted",
+        "time": "13:16",
+        "eventDate": "2026-06-21",
+        "iso": "2026-06-21T13:16:00+03:00",
+        "epochMs": 1782036960000,
+        "dateOffset": 0,
+        "rawEpochMs": 1782036348422.0588,
+        "unroundedEpochMs": 1782036948422.0588,
+        "temkinMinutes": 10,
+        "rounding": "nearest",
+        "basis": "solar transit"
+      }
+    },
+    "profile": {
+      "id": "turkiye-takvimi-istanbul-research",
+      "version": "1.0.0-development",
+      "variant": "noaa-continuous-nearest",
+      "institutionalEndorsement": false,
+      "temkinMinutes": 10,
+      "temkinSource": "tr.1.pdf p.12, Istanbul mean plus stated caution",
+      "astronomy": "noaa",
+      "epochMode": "continuous",
+      "asrShadowTarget": "declination at transit for continuous; UTC00 for fixed diagnostic",
+      "roundingProvenance": "diagnostic hypothesis; primary minute-rounding rule not found",
+      "scope": "Only published Istanbul point 41°N 29°E; no high-latitude replacement or other-city Temkin inferred"
+    },
+    "unsupportedMarkers": {
+      "sabah": "Recommended later morning-prayer marker; first start is imsak, exact operational rule unverified",
+      "ishraq": "Book: ascending +5 degrees plus Temkin; marker not part of this six-prayer comparison",
+      "karahat": "Avoidance interval marker; daily display and literal 2×Temkin description need separate reconciliation",
+      "isfirar": "Descending +5-degree caution marker, not another prayer start",
+      "ishtibak": "Star visibility marker with a separate horizon/limb definition",
+      "dahwa": "Fasting-day midpoint marker, separate from Dhuhr",
+      "midnight": "Religious night midpoint requires next-day dawn and explicit event date",
+      "tahajjud": "Night fraction marker, separate from Isha",
+      "sahar": "Last-sixth night marker, separate from Fajr"
+    }
+  }
+}

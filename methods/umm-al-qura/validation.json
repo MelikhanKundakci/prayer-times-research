@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "methodId": "umm-al-qura",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Empirical reproduction of the Saudi institutional calculator’s displayed times at declared points. Global coordinate support does not certify use of a Saudi rule for every community.",
+  "publicDefault": "strict selected own recipe",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "latitude": 21.4,
+    "longitude": 39.8,
+    "timeZone": "Asia/Riyadh"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "six-annual-fresh",
+      "recipe": "selected strict Saudi reconstruction",
+      "exposure": "fresh after Medina-only development freeze",
+      "scope": "Mecca2028; Riyadh, Tabuk, Jakarta, Sydney2027; Cape Town2028",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 13152,
+      "comparedSlots": 13152,
+      "uncomparedSlots": 0,
+      "exactCount": 11226,
+      "withinOneMinuteCount": 13091,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 85.3558,
+      "nonExactRatePercent": 14.6442,
+      "withinOneMinutePercent": 99.5362,
+      "overOneMinuteRatePercent": 0.4638,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Sydney uses the reference API’s fixedUTC+10, not an Australia/Sydney DST validation.",
+        "Cape Town alone has61 two-minute values; changing the source API zone exposed additional offset-sensitive one/two-minute behavior that was not copied.",
+        "Source event-specific UTC dates are unavailable."
+      ],
+      "evidenceIdentifier": "research/saudi/report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "strict",
+      "module": "methods/umm-al-qura/implementation/api.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/saudi/api.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/saudi/README.md",
+      "sha256": "23d16c8ba2eeec92496ced74f81e125ebb39028a54e654ae44093e667325a7af",
+      "bytes": 7963,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/saudi/report.json",
+      "sha256": "b0db192a27c40db695aacce933da4ddb40e09e9ac5a68bfcb501446cdd129e82",
+      "bytes": 499005,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/saudi/freeze.json",
+      "sha256": "ef3be05c7a2b3c00adb4b03659d32e678a662387013535a9eff3a2958b8f0c95",
+      "bytes": 1972,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/saudi/api.mjs",
+      "sha256": "8f14f87e9b0a757cd71465e41af09c229f2d0e0fd22e632e6e902651a849a3c4",
+      "bytes": 3328,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Future Ramadan announcements may differ from the ICU tabular mapping; no moon-sighting guarantee is implied.",
+    "No high-latitude religious replacement is selected. A nonpositive Asr target is suppressed; ordering exceptions require explicit handling.",
+    "The institutional API accepts a fixed numeric zone. A fixed-offset source test is not proof of correct local DST behavior."
+  ],
+  "publicationNotes": [
+    "Do not copy embedded frontend credentials or claim official API authorization. The calculation uses no network or source calendar at runtime."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.ummulqura.org.sa/ar",
+      "role": "Official calendar website"
+    },
+    {
+      "url": "https://www.ummulqura.org.sa/ar/prayer-times",
+      "role": "Official prayer-time frontend"
+    },
+    {
+      "url": "https://qm.edu.sa/calendar1447",
+      "role": "Original Medina calendar publication"
+    },
+    {
+      "url": "https://qm.edu.sa/files/PrayerTimes1447AH.pdf",
+      "role": "Original Medina1447 calendar PDF; separate-format comparison"
+    }
+  ]
+}

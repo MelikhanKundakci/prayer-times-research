@@ -1,0 +1,29 @@
+name: Calculation discrepancy
+description: Report a reproducible difference for a specific method and reference.
+title: "[Calculation] "
+body:
+  - type: input
+    id: method
+    attributes:
+      label: Method, variant, and commit
+    validations:
+      required: true
+  - type: textarea
+    id: input
+    attributes:
+      label: Reproduction input and command
+      description: Include the date, explicit IANA timezone, and a public reference point or zone. Avoid personal home coordinates.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observed result and expected reference
+      description: Link the publisher, exact year/date, event definition, and source timezone convention. State whether the source may be redistributed.
+    validations:
+      required: true
+  - type: textarea
+    id: interpretation
+    attributes:
+      label: Interpretation and uncertainty
+      description: Are midnight, missing fields, rounding, production coordinates, or Iqama/prayer-beginning distinctions involved?

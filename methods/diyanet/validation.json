@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "methodId": "diyanet",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Distinct reconstructions of published Diyanet/Awqat criteria and sampled institutional calendars. Northern, low-latitude and southern routes have different declared domains. A country, legal school and institutional calendar are not interchangeable labels.",
+  "publicDefault": "north-missing-window (annual); this is an explicit experimental default, not automatic religious or latitude-based method selection",
+  "publicExampleInput": {
+    "variant": "north-missing-window",
+    "year": 2026,
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "low-latitude-fresh",
+      "recipe": "low-latitude own USNO UTC00",
+      "exposure": "fresh after model, point and complete forecast freeze",
+      "scope": "Mexico City and New Delhi, complete 2027 years",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 4380,
+      "comparedSlots": 4380,
+      "uncomparedSlots": 0,
+      "exactCount": 3443,
+      "withinOneMinuteCount": 4380,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 78.6073,
+      "nonExactRatePercent": 21.3927,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Printed date interpreted using the specified actual IANA zone.",
+      "caveats": [
+        "All nonexact differences are model +1 minute; no fitted correction was applied.",
+        "Eight Turkey years were known parity/development data, not additional fresh accuracy."
+      ],
+      "evidenceIdentifier": "research/diyanet-low-latitude-own/report.json"
+    },
+    {
+      "id": "north-four-primary",
+      "recipe": "missing-window",
+      "exposure": "three fresh calendars plus one explicitly reused calendar",
+      "scope": "Vienna, Bremen, Bergen and Rovaniemi 2027",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 8760,
+      "comparedSlots": 8758,
+      "uncomparedSlots": 2,
+      "exactCount": 8053,
+      "withinOneMinuteCount": 8719,
+      "maxAbsoluteMinutes": 1441,
+      "exactPercent": 91.9502,
+      "nonExactRatePercent": 8.0498,
+      "withinOneMinutePercent": 99.5547,
+      "overOneMinuteRatePercent": 0.4453,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Primary: actual IANA instants on the source printed date, no modulo-day correction.",
+      "caveats": [
+        "Two Bergen Isha 00:00 cells remain ambiguous.",
+        "39 Bergen Isha comparisons have a source/event-date ambiguity; the large primary maximum must not be hidden.",
+        "Vienna was reused after a separately declared canonical-URL metadata amendment."
+      ],
+      "evidenceIdentifier": "research/diyanet-north-canonical-followup/summary.json"
+    },
+    {
+      "id": "north-four-conditional",
+      "recipe": "missing-window",
+      "exposure": "same three fresh plus one reused source cohort",
+      "scope": "Same four years, separately declared Isha-next-date interpretation",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 8760,
+      "comparedSlots": 8758,
+      "uncomparedSlots": 2,
+      "exactCount": 8091,
+      "withinOneMinuteCount": 8758,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 92.3841,
+      "nonExactRatePercent": 7.6159,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Conditional only: nonzero Isha earlier than source Maghrib is placed on the next civil date.",
+      "caveats": [
+        "The paired baseline is 8033 exact, 8733 within one minute, maximum2.",
+        "204 rounded markers change: 122 improve absolute error, 62 worsen, 20 retain absolute error. Bremen loses34 exact values."
+      ],
+      "evidenceIdentifier": "research/diyanet-north-canonical-followup/summary.json"
+    },
+    {
+      "id": "north-unseen-three-conditional",
+      "recipe": "missing-window",
+      "exposure": "three new originals after unchanged model/forecast freeze",
+      "scope": "Bremen, Bergen and Rovaniemi 2027 only; Vienna excluded",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 6570,
+      "comparedSlots": 6568,
+      "uncomparedSlots": 2,
+      "exactCount": 6145,
+      "withinOneMinuteCount": 6568,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 93.5597,
+      "nonExactRatePercent": 6.4403,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Same explicitly conditional Isha-next-date interpretation.",
+      "caveats": [
+        "This is a subset of the four-year result, not an additional independent denominator.",
+        "Bremen Fajr exactness falls325→306 and Isha334→319; geographic gains are not uniform."
+      ],
+      "evidenceIdentifier": "research/diyanet-north-canonical-followup/summary.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "north-reviewed",
+      "module": "methods/diyanet/implementation/north/quality-model.mjs",
+      "export": "calculateNorthernReviewed",
+      "sourceIdentifier": "research/diyanet-north-own/quality-model.mjs"
+    },
+    {
+      "variant": "north-baseline",
+      "module": "methods/diyanet/implementation/north/model.mjs",
+      "export": "calculateNorthernCalendar",
+      "sourceIdentifier": "research/diyanet-north-own/model.mjs"
+    },
+    {
+      "variant": "north-missing-window",
+      "module": "methods/diyanet/implementation/missing-window/model.mjs",
+      "export": "calculateMissingWindowCalendar",
+      "sourceIdentifier": "research/diyanet-north-missing-window/model/model.mjs"
+    },
+    {
+      "variant": "low-latitude",
+      "module": "methods/diyanet/implementation/low-latitude/model.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/diyanet-low-latitude-own/model.mjs"
+    },
+    {
+      "variant": "south",
+      "module": "methods/diyanet/implementation/south/candidate.mjs",
+      "export": "calculateDay",
+      "sourceIdentifier": "research/diyanet-south-own/candidate.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/diyanet-low-latitude-own/report.json",
+      "sha256": "a3c8f4549ef8fde7f4917aeaa1648a146c9702eb3e07a6263023c5625133e5c9",
+      "bytes": 1731791,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-low-latitude-own/README.md",
+      "sha256": "8052971d414a07a7eb8b8149631cb9c10769ad37bfcafe3879373f4c18f39f5b",
+      "bytes": 9907,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-south-own/README.md",
+      "sha256": "98e3c6b3bbdfbdc220257a3c5592a6a7bbe03c5167a217cb5702424a40d6ffa8",
+      "bytes": 12032,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-own/README.md",
+      "sha256": "2fddfa1a62fc0f7202148402b80c6c5a321f6a0e480f574f6c9d1f891d489191",
+      "bytes": 9994,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-missing-window/comparison-review/final.json",
+      "sha256": "326e33a25f92fc210c1053e0c8cac75f6ec1905fefd224f29de72829c7511ab0",
+      "bytes": 12588,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-canonical-followup/summary.json",
+      "sha256": "6ffa4bfeaf41553611a2a1f36e3e3545b3d1f34404d415a59772fe721be37d37",
+      "bytes": 78896,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-canonical-followup/comparison-review/final.json",
+      "sha256": "855dbcf97c8d750d4af0e96306593f4f556c6c045454453bceb20876886a76c7",
+      "bytes": 8959,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-rules-audit/README.md",
+      "sha256": "9e63e31aea43db21425161ddbaa602398215049227c3bcf4bc75f56996625db0",
+      "bytes": 9405,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-low-latitude-own/model.mjs",
+      "sha256": "9db584560ca270106b9e883f1aeec8b8e9678beb32fe47120816acdafab009fa",
+      "bytes": 7877,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-south-own/candidate.mjs",
+      "sha256": "158ca0a75cc6d39dc67f600a7085418d2c9709b18b202807f74a5e8452294d7c",
+      "bytes": 1164,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-own/quality-model.mjs",
+      "sha256": "4a42af33d04b72ba262a63f9b6b4a940a99bff522355ac656477e0419faac9db",
+      "bytes": 2232,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-north-missing-window/model/model.mjs",
+      "sha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+      "bytes": 4007,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Northern replacement horizons and Asr=Dhuhr fallback are model policies with unresolved religious/operational details; do not relabel them as physical sunrise, sunset or shadow roots.",
+    "The reviewed northern entry retains physical-Asr diagnostics and quality flags. Historical low-latitude Adhan branches are not part of the own low-latitude implementation.",
+    "Source 00:00 is ambiguous, never an exact hit. Primary comparisons bind the printed Gregorian date to actual IANA time. A separate conditional comparison assigns nonzero Isha before Maghrib to the next Gregorian date; it is not a provider assertion of that event date.",
+    "Published example/UNGEGN coordinates are proxies, not certified production locations or elevations. No exact worldwide reproduction is established."
+  ],
+  "publicationNotes": [
+    "The public wrapper declares north-missing-window as its experimental default and accepts explicit alternative variants; it never infers religious affiliation or selects a method automatically from latitude. Southern 2028 requests failed with HTTP502 and produced no fresh accuracy result. Separate known-data diagnostics and unit-test counts are not additional accuracy samples."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.awqatsalah.com/sub/18/calculation-criteria",
+      "role": "Primary high-latitude criteria, English version describing application from2023"
+    },
+    {
+      "url": "https://www.awqatsalah.com/sub/34/tespit-kriterleri",
+      "role": "Primary Turkish criteria; wording differences retained"
+    },
+    {
+      "url": "https://vakithesaplama.diyanet.gov.tr/temkin.php",
+      "role": "Primary current Temkin explanation"
+    },
+    {
+      "url": "https://vakithesaplama.diyanet.gov.tr/vakit_kiyaslamalari.php",
+      "role": "Published example calculation points, not a current production-coordinate API"
+    },
+    {
+      "url": "https://namazvakitleri.diyanet.gov.tr/",
+      "role": "Original institutional calendars"
+    }
+  ]
+}

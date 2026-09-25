@@ -1,0 +1,219 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin",
+    "profileId": "tehran-published-angles-own",
+    "engine": "usno"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "location": {
+      "latitude": 52.5,
+      "longitude": 13.4,
+      "timeZone": "Europe/Berlin"
+    },
+    "locationMode": "point",
+    "profile": {
+      "id": "tehran-published-angles-own",
+      "label": "Tehran parameters published in Adhan4.4.6, own geometry",
+      "fajrAngle": 17.7,
+      "maghribAngle": 4.5,
+      "ishaAngle": 14,
+      "source": "https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/CalculationMethod.ts",
+      "sourceAuthority": "software-parameter-publication; no independently verified IGUT specification",
+      "version": "0.1.0-research",
+      "official": false
+    },
+    "engine": {
+      "name": "usno",
+      "version": "0.1.0-research",
+      "continuous": true,
+      "tzdb": "2026d"
+    },
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "assumptions": {
+      "fajrAngle": 17.7,
+      "maghribAngle": 4.5,
+      "ishaAngle": 14,
+      "horizonAltitudeDegrees": -0.8333333333333334,
+      "offsetMinutes": 0,
+      "rounding": "nearest UTCminute directly from continuous epoch",
+      "solarCoordinates": "approximate geocentric solar coordinates; no extra topocentric parallax, observer elevation or atmospheric model",
+      "eventDateContract": "rising since previous solar transit; setting until next solar transit; anchored transit on requested civil date",
+      "extremeLatitudeFallback": "none",
+      "midnight": "raw sunset to actual raw Fajr of next civil date; not same-row+24h",
+      "sourceBugCompatibility": false,
+      "legalWindowsComputed": false
+    },
+    "diagnostics": {
+      "civilStartUtc": "2026-06-20T22:00:00.000Z",
+      "civilEndUtc": "2026-06-21T22:00:00.000Z",
+      "civilDayHours": 24,
+      "transitAltitudeDegrees": 60.93547597663801
+    },
+    "qualityFlags": [
+      "independent-research-geometry",
+      "parameter-publication-not-authority-certification",
+      "not-eligible-for-automatic-notifications"
+    ],
+    "events": {
+      "fajr": {
+        "status": "unavailable",
+        "reason": "continuously-above",
+        "localDate": null,
+        "time": null,
+        "iso": null,
+        "utc": null,
+        "rawEpoch": null,
+        "notificationEligible": false,
+        "role": "published-angle-marker",
+        "diagnostic": {
+          "thresholdDegrees": -17.7,
+          "direction": "rising",
+          "solverStatus": "continuously-above",
+          "crossings": 0,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-20T11:08:00.059Z",
+          "searchEndUtc": "2026-06-21T11:08:13.132Z"
+        }
+      },
+      "sunrise": {
+        "status": "experimental-astronomical-marker",
+        "reason": null,
+        "role": "standard-horizon-marker",
+        "localDate": "2026-06-21",
+        "time": "04:43",
+        "iso": "2026-06-21T02:43:00.000Z",
+        "utc": "2026-06-21T02:43:00.000Z",
+        "utcOffsetMinutes": 120,
+        "rawEpoch": 1782009794698.8696,
+        "qualityFlags": [],
+        "diagnostic": {
+          "thresholdDegrees": -0.8333333333333334,
+          "direction": "rising",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-20T11:08:00.059Z",
+          "searchEndUtc": "2026-06-21T11:08:13.132Z"
+        },
+        "notificationEligible": false
+      },
+      "dhuhr": {
+        "status": "experimental-astronomical-marker",
+        "reason": null,
+        "role": "solar-meridian-transit-marker",
+        "localDate": "2026-06-21",
+        "time": "13:08",
+        "iso": "2026-06-21T11:08:00.000Z",
+        "utc": "2026-06-21T11:08:00.000Z",
+        "utcOffsetMinutes": 120,
+        "rawEpoch": 1782040093132.5918,
+        "qualityFlags": [],
+        "notificationEligible": false
+      },
+      "sunset": {
+        "status": "experimental-astronomical-marker",
+        "reason": null,
+        "role": "standard-horizon-marker",
+        "localDate": "2026-06-21",
+        "time": "21:33",
+        "iso": "2026-06-21T19:33:00.000Z",
+        "utc": "2026-06-21T19:33:00.000Z",
+        "utcOffsetMinutes": 120,
+        "rawEpoch": 1782070391309.7876,
+        "qualityFlags": [],
+        "diagnostic": {
+          "thresholdDegrees": -0.8333333333333334,
+          "direction": "setting",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-21T11:08:13.132Z",
+          "searchEndUtc": "2026-06-22T11:08:26.170Z"
+        },
+        "notificationEligible": false
+      },
+      "maghrib": {
+        "status": "experimental-astronomical-marker",
+        "reason": null,
+        "role": "published-angle-marker",
+        "localDate": "2026-06-21",
+        "time": "22:08",
+        "iso": "2026-06-21T20:08:00.000Z",
+        "utc": "2026-06-21T20:08:00.000Z",
+        "utcOffsetMinutes": 120,
+        "rawEpoch": 1782072464158.9658,
+        "qualityFlags": [],
+        "diagnostic": {
+          "thresholdDegrees": -4.5,
+          "direction": "setting",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-21T11:08:13.132Z",
+          "searchEndUtc": "2026-06-22T11:08:26.170Z"
+        },
+        "notificationEligible": false
+      },
+      "asr": {
+        "status": "unspecified",
+        "reason": "no-asr-marker-or-legal-window-specified-by-this-profile",
+        "localDate": null,
+        "time": null,
+        "iso": null,
+        "utc": null,
+        "rawEpoch": null,
+        "notificationEligible": false,
+        "role": "not-specified"
+      },
+      "isha": {
+        "status": "experimental-astronomical-marker",
+        "reason": null,
+        "role": "published-angle-marker",
+        "localDate": "2026-06-22",
+        "time": "00:54",
+        "iso": "2026-06-21T22:54:00.000Z",
+        "utc": "2026-06-21T22:54:00.000Z",
+        "utcOffsetMinutes": 120,
+        "rawEpoch": 1782082431296.2383,
+        "qualityFlags": [],
+        "diagnostic": {
+          "thresholdDegrees": -14,
+          "direction": "setting",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-21T11:08:13.132Z",
+          "searchEndUtc": "2026-06-22T11:08:26.170Z"
+        },
+        "notificationEligible": false
+      },
+      "midnight": {
+        "status": "unavailable",
+        "reason": "next-civil-day-fajr-unavailable:continuously-above",
+        "localDate": null,
+        "time": null,
+        "iso": null,
+        "utc": null,
+        "rawEpoch": null,
+        "notificationEligible": false,
+        "role": "sunset-to-next-fajr-midpoint-marker",
+        "basis": {
+          "sunsetRawEpoch": 1782070391309.7876,
+          "nextFajrRawEpoch": null
+        }
+      }
+    }
+  }
+}

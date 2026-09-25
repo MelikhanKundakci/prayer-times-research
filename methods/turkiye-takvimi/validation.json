@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "methodId": "turkiye-takvimi",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A deliberately unsuccessful, bounded reconstruction of Türkiye Takvimi’s published Istanbul method. This family is retained to expose the unresolved technical problem, not advertised as an accurate alternative calendar.",
+  "publicDefault": "noaa-continuous-nearest, retained negative hypothesis",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "variant": "noaa-continuous-nearest"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "new-season-default",
+      "recipe": "noaa-continuous-nearest, fixed10min",
+      "exposure": "new11months after all twelve variants were frozen",
+      "scope": "Istanbul2026 excluding already-known September;335days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2010,
+      "comparedSlots": 2010,
+      "uncomparedSlots": 0,
+      "exactCount": 0,
+      "withinOneMinuteCount": 935,
+      "maxAbsoluteMinutes": 4,
+      "exactPercent": 0.0,
+      "nonExactRatePercent": 100.0,
+      "withinOneMinutePercent": 46.5174,
+      "overOneMinuteRatePercent": 53.4826,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Printed Gregorian date and source clock, no modulo-day reduction.",
+      "caveats": [
+        "All twelve remain unsuccessful: exact counts range0…231; maximum errors4…5minutes. The default’s zero exact count is real: its Fajr is1–2min later, sunrise2–3min later, Dhuhr/Asr/Isha1–2min earlier and Maghrib2–4min earlier in these new months.",
+        "For example NOAA-continuous-ceil has207exact/1070within1/max4; it was not promoted posthoc."
+      ],
+      "evidenceIdentifier": "research/turkiye-takvimi/seasonal-report.json"
+    },
+    {
+      "id": "variable-temkin-known",
+      "recipe": "NOT exported default: variable-Temkin NOAA continuous counterhypothesis",
+      "exposure": "known-data diagnosis only; no new sources",
+      "scope": "All365 Istanbul2026days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 480,
+      "withinOneMinuteCount": 1408,
+      "maxAbsoluteMinutes": 4,
+      "exactPercent": 21.9178,
+      "nonExactRatePercent": 78.0822,
+      "withinOneMinutePercent": 64.2922,
+      "overOneMinuteRatePercent": 35.7078,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Printed date plus source +03 offset, matching Europe/Istanbul2026.",
+      "caveats": [
+        "553 of1460 same-sign event-pair intervals contradict a single shared daily Temkin under the declared geometry/rounding.",
+        "No new production recipe was selected; all sunrise/sunset values remain inexact."
+      ],
+      "evidenceIdentifier": "research/turkiye-takvimi/variable-temkin-outcome.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "istanbul",
+      "module": "methods/turkiye-takvimi/implementation/calculate.mjs",
+      "export": "calculateIstanbul",
+      "sourceIdentifier": "research/turkiye-takvimi/calculate.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/turkiye-takvimi/README.md",
+      "sha256": "48c487d8cd08105ad5cae8db34685c3de059dcc97b613a122ca5ab7d547fbecc",
+      "bytes": 7679,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/turkiye-takvimi/seasonal-report.json",
+      "sha256": "dd61c9d52e9e91b7af0044ea2b84e9ee1a8b28fb91145defe6c2d1f62ad21756",
+      "bytes": 950835,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/turkiye-takvimi/variable-temkin-diagnostic/README.md",
+      "sha256": "bcf32015e9ed5eaaf36ee0b1648e0f7d4f98553aa32c3971a2ab332ea93a08e6",
+      "bytes": 8276,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/turkiye-takvimi/variable-temkin-outcome.json",
+      "sha256": "4ded9e4d27bd510783a3b4df0b25fb599c1a966f27c3c6189b027344f8302b6e",
+      "bytes": 5743,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/turkiye-takvimi/calculate.mjs",
+      "sha256": "7f36e31c4aeb2205a4add92c5e5b7835769165b7be1cb49279232bf697b4e694",
+      "bytes": 7222,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "All twelve frozen variants fail the predeclared one-minute maximum objective. A best-looking percentage was not chosen after viewing the seasonal results.",
+    "The publisher describes MICA and historical elevation/Temkin examples; the exact production horizon, seconds rounding and current point/height are unresolved.",
+    "Sabah is a later recommendation rather than Imsak; auxiliary avoidance times, both Asr/Isha alternatives and night fractions must keep their own semantics.",
+    "There is no geographic validation outside Istanbul and no selected polar replacement."
+  ],
+  "publicationNotes": [
+    "Failed reconstructions are published as research evidence, not as a supported production prayer-time source. Raw publisher calendars are excluded from the code license and public snapshot."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://namazvakti.com/documents/tr.1.pdf",
+      "role": "Primary calculation book"
+    },
+    {
+      "url": "https://namazvakti.com/documents/Son_Teknoloji.pdf",
+      "role": "Primary technical explanation naming MICA"
+    },
+    {
+      "url": "https://namazvakti.com/documents/Temkin.MuddetiNV.pdf",
+      "role": "Primary Temkin derivation and Istanbul mean rule"
+    },
+    {
+      "url": "https://namazvakti.com/documents/VakitlerinAciklamalari.pdf",
+      "role": "Primary definitions of distinct calendar markers"
+    },
+    {
+      "url": "https://namazvakti.com/Yearly.php?cityID=16741",
+      "role": "Original Istanbul annual calendar endpoint observed in the research"
+    }
+  ]
+}

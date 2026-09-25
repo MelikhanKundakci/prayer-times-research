@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "methodId": "muis-singapore",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "A fixed-region astronomical candidate compared with MUIS calendars published through Singapore’s official data portal. The inherited angle/margin preset is software evidence, not a complete MUIS specification.",
+  "publicDefault": "own continuous USNO, fixed SG region",
+  "publicExampleInput": {
+    "date": "2026-06-21",
+    "region": "SG",
+    "timeZone": "Asia/Singapore"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "known-three-years",
+      "recipe": "own continuous USNO",
+      "exposure": "development only; all originals already exposed",
+      "scope": "MUIS2024–2026,1096days",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 6576,
+      "comparedSlots": 6576,
+      "uncomparedSlots": 0,
+      "exactCount": 4608,
+      "withinOneMinuteCount": 6556,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 70.073,
+      "nonExactRatePercent": 29.927,
+      "withinOneMinutePercent": 99.6959,
+      "overOneMinuteRatePercent": 0.3041,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "The old Adhan comparator had4541exact and6559within1: own geometry gains67exact but introduces three additional two-minute mismatches.",
+        "No new independently acquired calendar after model freeze."
+      ],
+      "evidenceIdentifier": "research/singapore-own/report.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "usno-continuous",
+      "module": "methods/muis-singapore/implementation/candidate.mjs",
+      "export": "calculateSingaporeCandidate",
+      "sourceIdentifier": "research/singapore-own/candidate.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/singapore-own/README.md",
+      "sha256": "62c210944396df01e7726f60e52a4f3b10939bfe921b2d1c98e6bf27382a250c",
+      "bytes": 8371,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/singapore-own/report.json",
+      "sha256": "b0422faa696d35cd29acf2e57ec5fd5753051c91491df525f88bbc2fa607307b",
+      "bytes": 1188325,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/singapore-own/candidate.mjs",
+      "sha256": "c1d046e6ddb7267c85026380ff258cf6bb5c4bcf66a9182bccd40774448b6eca",
+      "bytes": 604,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "Only the fixed Singapore region is offered. Numerical date support is wider than the three tested source years.",
+    "All available2024–2026 calendars were already known before selecting this own candidate; no fresh holdout is claimed.",
+    "The attempted2027 source was unavailable and was not bypassed or replaced with an undocumented calendar."
+  ],
+  "publicationNotes": [],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://data.gov.sg/datasets?resultId=2312&sort=updatedAt",
+      "role": "Official dataset collection"
+    },
+    {
+      "url": "https://api-production.data.gov.sg/v2/public/api/collections/2312/metadata",
+      "role": "Official dataset metadata"
+    },
+    {
+      "url": "https://www.muis.gov.sg/resources/islamic-calendar/",
+      "role": "Institutional calendar publication"
+    },
+    {
+      "url": "https://data.gov.sg/open-data-licence",
+      "role": "Source data license and attribution requirements"
+    },
+    {
+      "url": "https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/CalculationMethod.ts",
+      "role": "Secondary preset publication, not a MUIS specification"
+    }
+  ]
+}

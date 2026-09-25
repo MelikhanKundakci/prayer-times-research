@@ -1,0 +1,648 @@
+{
+  "scope": "Relocation verification, not new institutional validation",
+  "runtime": {
+    "node": "26.7.0",
+    "acorn": "8.18.0",
+    "ada": "4.0.0",
+    "amaro": "1.1.11",
+    "ares": "1.34.8",
+    "brotli": "1.2.0",
+    "cldr": "48.0",
+    "icu": "78.3",
+    "libffi": "3.7.1",
+    "llhttp": "9.4.3",
+    "merve": "1.2.2",
+    "modules": "147",
+    "napi": "10",
+    "nbytes": "0.1.4",
+    "ncrypto": "0.0.1",
+    "nghttp2": "1.70.0",
+    "nghttp3": "",
+    "ngtcp2": "",
+    "openssl": "3.6.3",
+    "simdjson": "4.6.6",
+    "simdutf": "7.7.0",
+    "sqlite": "3.53.4",
+    "tz": "2026d",
+    "undici": "8.9.0",
+    "unicode": "17.0",
+    "uv": "1.52.1",
+    "uvwasi": "0.0.23",
+    "v8": "14.6.202.34-node.28",
+    "zlib": "1.2.12",
+    "zstd": "1.5.7"
+  },
+  "sourceMapSha256": "9af9ba05132d7e0e58130ce8b9e28b40c82f4613070b269cb7c3a5fbfc71d252",
+  "sourceAndExportHashes": [
+    {
+      "file": "core/astronomy/noaa-coordinates.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/astronomy/continuous-solver.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/bayynat/implementation/candidate-model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/bayynat/implementation/selected-model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/low-latitude/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/missing-window/kernel.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/missing-window/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/missing-window/seasonal.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/north/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/north/quality-model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/north/solar.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/south/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/south/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/diyanet/implementation/north/seasonal.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/egyptian-survey/implementation/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fazilet/implementation/baseline.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fazilet/implementation/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fazilet/implementation/v2/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fazilet/implementation/v2/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.1.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/moonsighting-committee/implementation/msc-seasonal.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/astronomy/solar-usno-v2.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/astronomy/solar-usno.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/kemenag/implementation/api.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/kemenag/implementation/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/multipoint/map-candidate/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/multipoint/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/multipoint/points.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/single-point/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/single-point/points.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/two-point/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/two-point/points.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/jakim/implementation/two-point/review-independent-model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fcna/implementation/asr-review/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/astronomy/physical-asr-solver.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/fcna/implementation/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/oman-mara/implementation/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/oman-mara/implementation/v2/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/umm-al-qura/implementation/api.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/umm-al-qura/implementation/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/shia-angles/implementation/geometry.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/shia-angles/implementation/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/shia-angles/implementation/profiles.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/muis-singapore/implementation/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/muis-singapore/implementation/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/banuri-town/implementation/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/banuri-town/implementation/strict-api.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/turkiye-takvimi/implementation/calculate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/uae-awqaf/implementation/api.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/uae-awqaf/implementation/candidate.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "methods/uae-awqaf/implementation/model.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/bundle.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/with-tzdata.mjs",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/manifest.json",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/icu-2026d-le/zoneinfo64.res",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/icu-2026d-le/windowsZones.res",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/icu-2026d-le/timezoneTypes.res",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/icu-2026d-le/metaZones.res",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/ICU-LICENSE.txt",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/sources/iana-version.txt",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    },
+    {
+      "file": "core/timezones/sources/iana-africa.txt",
+      "hashesMatch": true,
+      "permittedTransformationOnly": true
+    }
+  ],
+  "samples": [
+    {
+      "family": "moonsighting-committee",
+      "variant": "usno-v4.2",
+      "parameters": [
+        {
+          "year": 2026,
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-reviewed",
+      "parameters": [
+        {
+          "year": 2026,
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-baseline",
+      "parameters": [
+        {
+          "year": 2026,
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "diyanet",
+      "variant": "north-missing-window",
+      "parameters": [
+        {
+          "year": 2026,
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "diyanet",
+      "variant": "low-latitude",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": 41,
+          "longitude": 29,
+          "timeZone": "Europe/Istanbul"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "diyanet",
+      "variant": "south",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": -33.9,
+          "longitude": 151.2,
+          "timeZone": "Australia/Sydney"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "umm-al-qura",
+      "variant": "strict",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": 21.4,
+          "longitude": 39.8,
+          "timeZone": "Asia/Riyadh"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "egyptian-survey",
+      "variant": "usno-no-offset",
+      "parameters": [
+        "2026-06-21",
+        {
+          "latitude": 30.05,
+          "longitude": 31.25,
+          "timeZone": "Africa/Cairo"
+        },
+        "usno-no-offset"
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "uae-awqaf",
+      "variant": "v2",
+      "parameters": [
+        "2026-06-21",
+        {
+          "latitude": 24.45,
+          "longitude": 54.38,
+          "elevationMeters": 0,
+          "cityWidthKm": 0,
+          "pressureMillibars": 1010,
+          "temperatureCelsius": 10,
+          "timeZone": "Asia/Dubai"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "kemenag",
+      "variant": "strict",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": -6.2,
+          "longitude": 106.8,
+          "timeZone": "Asia/Jakarta",
+          "preset": "kemenag-2026-book-example"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "oman-mara",
+      "variant": "v2",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": 23.6,
+          "longitude": 58.5,
+          "timeZone": "Asia/Muscat"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "banuri-town",
+      "variant": "strict",
+      "parameters": [
+        "2026-06-21",
+        {
+          "latitude": 24.9,
+          "longitude": 67.1,
+          "timeZone": "Asia/Karachi"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "jakim",
+      "variant": "single-point-own",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "zone": "SGR01",
+          "timeZone": "Asia/Kuala_Lumpur",
+          "candidate": "usno-fixed"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "jakim",
+      "variant": "multipoint",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "zone": "KDH01",
+          "timeZone": "Asia/Kuala_Lumpur",
+          "mode": "all-points-extrema"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "jakim",
+      "variant": "sgr01-two-point",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "zone": "SGR01",
+          "timeZone": "Asia/Kuala_Lumpur"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "jakim",
+      "variant": "kdh03-map-r19",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "zone": "KDH03",
+          "timeZone": "Asia/Kuala_Lumpur",
+          "mode": "map-plus-r19"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "muis-singapore",
+      "variant": "usno-continuous",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "region": "SG",
+          "timeZone": "Asia/Singapore"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "fcna",
+      "variant": "own-reviewed",
+      "parameters": [
+        {
+          "startDate": "2026-06-21",
+          "latitude": 40.7,
+          "longitude": -74,
+          "timeZone": "America/New_York",
+          "profileId": "fcna-usa-15",
+          "asr": "standard"
+        },
+        {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "shia-angles",
+      "variant": "own",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin",
+          "profileId": "tehran-published-angles-own",
+          "engine": "usno"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "bayynat",
+      "variant": "point-utc12-h5over6-ceil",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "latitude": 52.5,
+          "longitude": 13.4,
+          "timeZone": "Europe/Berlin"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "fazilet",
+      "variant": "v2",
+      "parameters": [
+        "2026-06-21",
+        {
+          "latitude": 41,
+          "longitude": 29,
+          "timeZone": "Europe/Istanbul"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    },
+    {
+      "family": "turkiye-takvimi",
+      "variant": "istanbul",
+      "parameters": [
+        {
+          "date": "2026-06-21",
+          "variant": "noaa-continuous-nearest"
+        }
+      ],
+      "completeOutputDeepEqual": true
+    }
+  ],
+  "unchangedNumericalSource": true,
+  "calendarReferencesRead": false
+}

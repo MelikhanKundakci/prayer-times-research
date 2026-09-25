@@ -1,0 +1,115 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "single-point-own",
+    "date": "2026-06-21",
+    "zone": "SGR01",
+    "timeZone": "Asia/Kuala_Lumpur",
+    "candidate": "usno-fixed"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "zone": "SGR01",
+    "timeZone": "Asia/Kuala_Lumpur",
+    "candidate": "usno-fixed",
+    "profileVersion": "0.1.0-research",
+    "locationMode": "zone",
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "points": {
+      "ordinary": {
+        "latitude": 3.7416666666666667,
+        "longitude": 101.38416666666667
+      },
+      "sunrise": {
+        "latitude": 2.9400000000000004,
+        "longitude": 101.9113888888889
+      },
+      "source": "https://www.jupem.gov.my/storage/upload/almanak/almanak2025-1732247258.pdf",
+      "sourceYear": 2025,
+      "printedPage": 173,
+      "productionPointConfirmed": false
+    },
+    "recipe": {
+      "fajrAngle": 18,
+      "ishaAngle": 18,
+      "horizonAltitudeDegrees": -0.8333333333333334,
+      "asrShadowFactor": 1,
+      "asrTarget": "declination at mean-solar 13:00",
+      "dhuhrAdjustmentSeconds": 64,
+      "intermediateSeconds": "floor",
+      "rounding": "ceil starts; floor sunrise",
+      "elevationCorrection": false,
+      "topocentricParallax": false,
+      "highLatitudeRule": "none"
+    },
+    "events": {
+      "fajr": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "05:51",
+        "iso": "2026-06-21T05:51:00+08:00",
+        "utc": "2026-06-20T21:51:00.000Z",
+        "rawEpoch": 1781992219308.3035,
+        "adjustedIntegerSecondEpoch": 1781992219000,
+        "notificationEligible": false
+      },
+      "sunrise": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "07:05",
+        "iso": "2026-06-21T07:05:00+08:00",
+        "utc": "2026-06-20T23:05:00.000Z",
+        "rawEpoch": 1781996719395.6309,
+        "adjustedIntegerSecondEpoch": 1781996719000,
+        "notificationEligible": false
+      },
+      "dhuhr": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "13:18",
+        "iso": "2026-06-21T13:18:00+08:00",
+        "utc": "2026-06-21T05:18:00.000Z",
+        "rawEpoch": 1782018973723.9524,
+        "adjustedIntegerSecondEpoch": 1782019037000,
+        "notificationEligible": false
+      },
+      "asr": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "16:44",
+        "iso": "2026-06-21T16:44:00+08:00",
+        "utc": "2026-06-21T08:44:00.000Z",
+        "rawEpoch": 1782031390275.723,
+        "adjustedIntegerSecondEpoch": 1782031390000,
+        "notificationEligible": false
+      },
+      "maghrib": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "19:27",
+        "iso": "2026-06-21T19:27:00+08:00",
+        "utc": "2026-06-21T11:27:00.000Z",
+        "rawEpoch": 1782041185441.1401,
+        "adjustedIntegerSecondEpoch": 1782041185000,
+        "notificationEligible": false
+      },
+      "isha": {
+        "status": "estimated-unconfirmed",
+        "date": "2026-06-21",
+        "time": "20:43",
+        "iso": "2026-06-21T20:43:00+08:00",
+        "utc": "2026-06-21T12:43:00.000Z",
+        "rawEpoch": 1782045727626.291,
+        "adjustedIntegerSecondEpoch": 1782045727000,
+        "notificationEligible": false
+      }
+    }
+  }
+}

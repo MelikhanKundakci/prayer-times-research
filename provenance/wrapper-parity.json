@@ -1,0 +1,2071 @@
+{
+  "schemaVersion": 1,
+  "scope": "Publication wrapper-to-original numerical parity; model outputs only, no new institutional-calendar observations.",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "cases": 158,
+  "checks": [
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2024,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8418,
+      "renderedSha256": "37df0a3e7d972bfe4820d90bb24d0ae7477a62b8ee14213a577528dd4173aeb1"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8395,
+      "renderedSha256": "6b4e9ddd15b284bd012eb0ae71ebcde2ff6721f517b9a061197810b3cf6f8228"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2027,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8395,
+      "renderedSha256": "5bd466896dbae8501049fa0b201b75b276477aa878928c4a1a5dbe37bd1ce3fd"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2024,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13912,
+      "renderedSha256": "e925cec9fc8a51cb20204cd63907e22cdf8feace70acd3e7dfa2c92b03c86141"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "e9e09f64e9c6a74240d9eb389e52bb5a07cfbcdf1c76c37622e687fcab5cbd30"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "2d7eba2ae33e832d2a3588c059b4c6c5697155b582c3f6527cf88c6f35cfa9cf"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2024,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13912,
+      "renderedSha256": "e925cec9fc8a51cb20204cd63907e22cdf8feace70acd3e7dfa2c92b03c86141"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "e9e09f64e9c6a74240d9eb389e52bb5a07cfbcdf1c76c37622e687fcab5cbd30"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "2d7eba2ae33e832d2a3588c059b4c6c5697155b582c3f6527cf88c6f35cfa9cf"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2024,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13915,
+      "renderedSha256": "55ea117fa6581518ac24fb8a099312e176aed8bb70f7d543569e9d4d27af1b12"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13877,
+      "renderedSha256": "d133e82aa3fc35addd3d486d43afced20dedcc8c5ec724fe43f7fa068b5cfd24"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13877,
+      "renderedSha256": "343b97074742ce9b30f4838328e4acea0623c112796bf5cca91d8b2dcb37fc6b"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2024-02-29",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "2286822f20ceecade28577dda7ee7e83ea3b54ad95fea914d038dcb76ebc6ba3"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2026-03-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "403d2aa980f2a238505f8400847b1d311f69ef614ba85eae121e2aa452546dee"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2026-06-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "596eaeeebc9b3864c5d5ac1246afec48dced016c6d41890657b0de0ed320e34e"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2026-09-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "618be0053d5ab482cd8b359d6bf4f625323f2cebc04b5763b65060820de1e3ec"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2026-12-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "4eb90466d09e3604c2de64e92d26c68ab728dcd2af825529605481b8c1e1d449"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2024-02-29",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "640d0c4ef85316b651f8f7fb98830b8f02355874e787404486a34111d43d4eeb"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2026-03-21",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "1db35a4403866455b0a0cf76e385b5c1cc812fd906dd1cbca90df1aefab3d7eb"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2026-06-21",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "d8276635318198449cbded22d83bef781b0fe94c58650b8951f5dcd0ea973ac0"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2026-09-21",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "cc08ecf2940117cecdf1f17a30618a207a0846d8d0a32b5f42c6cffe29974d83"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2026-12-21",
+        "latitude": -33.9,
+        "longitude": 151.2,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "32593f0e3eab62ef7f996423a3b61371956b68fa0e271eacb7e65d10042d4570"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "1d51d9f6b8388b589bef3466086d3f5a6afe93789cccef4d5dd5cfe5aee6e6c8"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "10af4a588887b4af262a8846008d30b4162937a25897e635d064f2e5a33bfb20"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "17c6a08ab0ce22f989ceaad81c8b3f4ed3a0b748008f3d7a534782a52329d9f5"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "3f8a0805e676ed30c795d4cf8adaa53298733dc8ac67c577fe826d49b9ec178b"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 21.4,
+        "longitude": 39.8,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "da8fe0e6ca3405c2e0f542446397351c3dbe34d35bff101af633ad956c964b51"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 19,
+      "renderedSha256": "ed1708a6d9d10f6fcf1654dc387a8cbd82e1e00118ffb14ae0efe78d9f3c1de4"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 19,
+      "renderedSha256": "6a1e59bcb4754bf353ee3570e67e923d4ddc06301f7d0e500117fffd04bff6f3"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 19,
+      "renderedSha256": "dae51c1b26ca7993ced71ee42e688691b4cef15beefada7ff502dbbe1919fd27"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 19,
+      "renderedSha256": "ba00e79efb8478c8d9e198ed1c71fb2525a8750da23db53629dcaca5dee06870"
+    },
+    {
+      "id": "egyptian-survey/usno-no-offset",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 30.05,
+        "longitude": 31.25,
+        "timeZone": "Africa/Cairo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 19,
+      "renderedSha256": "21aa3ad8a0cbaf2a2f42bb7c77db72c5a4a86a1e847523279db223b9396e62f7"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "ec235973aa371810ebcd38d23722e46301b6815a0ca79bfac18c6ebae7f60336"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "28c77af4cdc2523b2935772a66faa1d9d118d12c34942710318eceb83b6aca01"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "65a713a9d894addbe5c65971cb69cb1d27f8af759332c402f8cd98d8e7deb5d3"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "7eb009dc123dcd01a5b2fb9ece9029876e06c84d7bc3b976c5dddbb67bcda1a0"
+    },
+    {
+      "id": "uae-awqaf/v2",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 0,
+        "cityWidthKm": 0,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "eca1dbf851e6305fda39f806a057a151875ca331fd97c74c3f355ff73bc0c9ec"
+    },
+    {
+      "id": "kemenag/strict",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "4cc52df01ab760f615d5e3218bed39a17ae6c296f415528c85b5bfa4ae66b6c7"
+    },
+    {
+      "id": "kemenag/strict",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "91905c1645dbe217ec4901c3c22791f2fea0438bab7bca523a0417735e532ba4"
+    },
+    {
+      "id": "kemenag/strict",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "0628faee7d91c2c889d9781cd9e42fada8afa5529b6e6b6d51e3834821436374"
+    },
+    {
+      "id": "kemenag/strict",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "b8046c0388c88716695e250d8a75f4e0beff4b5295b5d25bfd06b24f54e99d6b"
+    },
+    {
+      "id": "kemenag/strict",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta",
+        "preset": "kemenag-2026-book-example"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "6a602d8010d1a747dfbdf99c1b2cbbccc88fc89ef7f7b224d93e629bde27d4e7"
+    },
+    {
+      "id": "oman-mara/v2",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "b8043ae215d605e1c83ea772e11359fe127e52b31f0cd93c6128903edd7898f4"
+    },
+    {
+      "id": "oman-mara/v2",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "2ecbd9daf2c97c0edf96d6c5ef32b6d23af9b51ac8be4fca73ab41ea20141cc0"
+    },
+    {
+      "id": "oman-mara/v2",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "96bc73bea02c785bed5a311b4d629ab629fb6a19b8acc839a8ee194876ac21c4"
+    },
+    {
+      "id": "oman-mara/v2",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "2f924098a9d6762c6b95988afb817d7feef326a9882848865f0bd58f48be44bc"
+    },
+    {
+      "id": "oman-mara/v2",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 23.6,
+        "longitude": 58.5,
+        "timeZone": "Asia/Muscat"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "d6734fa2965cff726cd81c50b94609ba165025f38a1ff17dc387db26c0fd1d2b"
+    },
+    {
+      "id": "banuri-town/strict",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 30,
+      "renderedSha256": "fac17165ad6cada1d2640154fdbedc3d65f842d4a32f8645e299e77d197c6766"
+    },
+    {
+      "id": "banuri-town/strict",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 30,
+      "renderedSha256": "3197aac829656cd947966dcbbe1d63ac8e745884571a1a86b9faec78925e717d"
+    },
+    {
+      "id": "banuri-town/strict",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 30,
+      "renderedSha256": "59239fe36f9611b2b66215ab7447932bb643163658062bbc4d9cba16ae160c04"
+    },
+    {
+      "id": "banuri-town/strict",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 30,
+      "renderedSha256": "55bf8fc543bbd914f618cf3a518a9f7473a6f62c9ce8cc1a62ae783eb6ef8fc9"
+    },
+    {
+      "id": "banuri-town/strict",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 30,
+      "renderedSha256": "2a0b0045fe59925aa7e7b85037d841046d5dc648d052519f51dba335f0f01dd3"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2024-02-29",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "c2f2b029a5ef6f92d0666587ce48c1aae3931cc12993e1266640cec14bc5e92f"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2026-03-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "b56e277cac2a0a3ed4ba6c6189dbb2e5d12d59ac05dde625d8a9f16890f6a72f"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2026-06-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "ec41f4f36f12aef0d2b1979e0e4cfd9e84b3740468fe8b0ea839cf60ec1b76d6"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2026-09-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "d133bb4e30a6411eee354139db2f60812783a4a01ca110ca225b263c57425582"
+    },
+    {
+      "id": "jakim/single-point-own",
+      "input": {
+        "variant": "single-point-own",
+        "date": "2026-12-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "candidate": "usno-fixed"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "27eb7b2040fd013ff95885ccf4d3956a4b1e294859840c8763f8c7529605a47a"
+    },
+    {
+      "id": "jakim/multipoint",
+      "input": {
+        "variant": "multipoint",
+        "date": "2024-02-29",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "d21778f63304a1be7e62361f8a38b76cdc1a7bf33aaf42b5d6651441cd4a9db2"
+    },
+    {
+      "id": "jakim/multipoint",
+      "input": {
+        "variant": "multipoint",
+        "date": "2026-03-21",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "b220bf466673f1908290dd936019a60c1eb5de2b4dd68bb272daca1396ed3dc4"
+    },
+    {
+      "id": "jakim/multipoint",
+      "input": {
+        "variant": "multipoint",
+        "date": "2026-06-21",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "07052f501e44c27c3850d3f98bba2ec311a527b3b92e18485417ae02f5481433"
+    },
+    {
+      "id": "jakim/multipoint",
+      "input": {
+        "variant": "multipoint",
+        "date": "2026-09-21",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "e97576a10084aabf2098c77f8409d5c4224cc81ceb096a160d61564b6b90716e"
+    },
+    {
+      "id": "jakim/multipoint",
+      "input": {
+        "variant": "multipoint",
+        "date": "2026-12-21",
+        "zone": "KDH01",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "all-points-extrema"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "1c50637c44101b053bbc4a0339839c725149c3f3dacfeee1da42e85225fcf10c"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2024-02-29",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 32,
+      "renderedSha256": "684bd4544267c0ec1e3399058ce2c4feb9964184126fbd7b775cb57c63f7b025"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2026-03-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 32,
+      "renderedSha256": "a8d92f4ff56735448c426da4a72b7c2f9fc63996383adda90d0a4f6616c3c2f8"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2026-06-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 32,
+      "renderedSha256": "ee25172ba073f9a33ea6188cc0ee1514704967b70fa90cbc240838b46482f45a"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2026-09-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 32,
+      "renderedSha256": "56755f7bd52f0561b5af350404747152d5a80cfae19a99bc55919e0466eb0caf"
+    },
+    {
+      "id": "jakim/sgr01-two-point",
+      "input": {
+        "variant": "sgr01-two-point",
+        "date": "2026-12-21",
+        "zone": "SGR01",
+        "timeZone": "Asia/Kuala_Lumpur"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 32,
+      "renderedSha256": "67ade076bde973043644270941a26308b65616bb40627e824ddf608746e5febb"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2024-02-29",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "15958295a55a499e0a6abf0ecb937b142cbb8a4e082d43ef22a62da7831caeaa"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2026-03-21",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "c4e66ce480e4ea191587cd969c45c8fbc0c809eed23efdf673ce73dbbd123681"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2026-06-21",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "63f463730e4cb3cc7e1cbfb7a134b16da4f3390c11361abc58149ae44a59dd6a"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2026-09-21",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "505485ab425f57f99cfae6d76e817dcbff3c32e862d2da453c3efb7bff550473"
+    },
+    {
+      "id": "jakim/kdh03-map-r19",
+      "input": {
+        "variant": "kdh03-map-r19",
+        "date": "2026-12-21",
+        "zone": "KDH03",
+        "timeZone": "Asia/Kuala_Lumpur",
+        "mode": "map-plus-r19"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "18cb166f92cf59526513b68ddc9ad6fd549050e45aefd62370123b8f42d28bda"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "input": {
+        "date": "2024-02-29",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "5a69a57d2eda523a440cb8b883b5080349898a78cec7ad37b0b713630ed26a24"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "input": {
+        "date": "2026-03-21",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "e79247ee267ff811e62b75db7fe9a590f194ac866c232ef28a406350432a3347"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "input": {
+        "date": "2026-06-21",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "a8c70ace465e43108de4e5fa52983d366d9ca1ced3b28be6f18e64859d911ca0"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "input": {
+        "date": "2026-09-21",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "4c5928823a88fe27a27cc85bca65afd340c47474363d458d768e2f4e6794ab62"
+    },
+    {
+      "id": "muis-singapore/usno-continuous",
+      "input": {
+        "date": "2026-12-21",
+        "region": "SG",
+        "timeZone": "Asia/Singapore"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 31,
+      "renderedSha256": "ea2b3afe8f4061be2c243909c9c62848afe7f0255ee59bb17bce99d8de93ad1c"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2024-02-29",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "34d10c59b5fec367245854092a403ce0b8ed923736fdf074f5623b5189cfcd9e"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-03-21",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "1ae23ffd4eeab58d00f90824f8a1d08e61207601f98228a4cc41a90e13b5fb05"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "eacc74adfc652ba5a319492dabee5b3adf4d6102ad2b2bc12a661d0338b6d8a7"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-09-21",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "cd5bde72bed973e8a038995bcf0b50a5337f99efba24c4d656949a1530b7c7c3"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-12-21",
+        "latitude": 40.7,
+        "longitude": -74,
+        "timeZone": "America/New_York",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "267d44261bcffa9da13fe29c17060940e312b7cfaf7e0ed0839a374453c1624b"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "87008244ec78cedb52662edc740815ff4461740debe153edb4e1058ffc1b85d7"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "fa207e6c0598e507c6b759d8e7002a3fdc02f758825c86d92286251814a0627e"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "bf6105f5d6b2d70f674772f2dba5155fb764e60da825eb17e836f8788f070f3b"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "0824ba922feb236a64f9a065a0a49287520ede2b034b2e6683e87bdf4aa9df74"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "7a018cbbf1c6427a67977f1d9d8a7b8fb7e8cc2a15e46ca9f07668d5c670211e"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 54,
+      "renderedSha256": "14169ed3a990fa03383c3db71003e71fa3c9c12210a1814473447c749d45c7c6"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 54,
+      "renderedSha256": "a7469badbb5545a8e1a4ce50d15224efea217e1693d73d766de373f76d227c9a"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 58,
+      "renderedSha256": "bd40f4371e3ed76a5b721526e94229a9f52ff26be5c14d4fc8b2e59e25658be2"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 54,
+      "renderedSha256": "4a60cd6b2ed514d22ccf1f7758d967ccde981fee65d5456beed463360e9be719"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-ceil",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 54,
+      "renderedSha256": "fd10b52ffe6f68c9b98bb9185e2c105d6c2131778c00d8ce7105ac8f7d0a1ecf"
+    },
+    {
+      "id": "fazilet/v2",
+      "input": {
+        "date": "2024-02-29",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 29,
+      "renderedSha256": "fc81cd9f64a308312a40bedeafc8c42c893e8dba9e9893805fd251d7e6658156"
+    },
+    {
+      "id": "fazilet/v2",
+      "input": {
+        "date": "2026-03-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 29,
+      "renderedSha256": "2f76c14bab82a0aa7d27ebc0c121c36eec072c8bb20b830634925741b9e4091e"
+    },
+    {
+      "id": "fazilet/v2",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 29,
+      "renderedSha256": "c90b11e48df83b741ebef656444b6eb4ce23935946d54dcde7b4d88af68cb45d"
+    },
+    {
+      "id": "fazilet/v2",
+      "input": {
+        "date": "2026-09-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 29,
+      "renderedSha256": "1a0c2fa8fc1538a369b6373516290147341e7a133464cd41113bf403bf3e85c1"
+    },
+    {
+      "id": "fazilet/v2",
+      "input": {
+        "date": "2026-12-21",
+        "latitude": 41,
+        "longitude": 29,
+        "timeZone": "Europe/Istanbul"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 29,
+      "renderedSha256": "db24fa8fe23818f90233cfb60b5b9cc0269d89c87ff01224bc0693950d288440"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "input": {
+        "date": "2024-02-29",
+        "variant": "noaa-continuous-nearest"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 33,
+      "renderedSha256": "cb41b8084fb5a0bce515f1d76f0036c33d3de4032beffc5e713c9c76f155edf4"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "input": {
+        "date": "2026-03-21",
+        "variant": "noaa-continuous-nearest"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 33,
+      "renderedSha256": "72a2735b10b1fcb01246eb992fce08d7676cba9508cca79bb86ef3b8558a9ffe"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "input": {
+        "date": "2026-06-21",
+        "variant": "noaa-continuous-nearest"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 33,
+      "renderedSha256": "a4522a725b98a54028025ea88773c1bb2a3456ce9bdbae8d336d9cfa955e4491"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "input": {
+        "date": "2026-09-21",
+        "variant": "noaa-continuous-nearest"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 33,
+      "renderedSha256": "0fec93dbaa201225b9fa16f87da0a92353ffa396ec055a153b3986932bec35ba"
+    },
+    {
+      "id": "turkiye-takvimi/istanbul",
+      "input": {
+        "date": "2026-12-21",
+        "variant": "noaa-continuous-nearest"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 33,
+      "renderedSha256": "cf90bd512f853a73ec5f1ce2149b057b3edd99775e6e606b9bab09c62dc31bd3"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2031,
+        "latitude": 27.7172,
+        "longitude": 85.324,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8395,
+      "renderedSha256": "515a27353743267f4d3edc1dac685ceb4ccb462c06f1d5bb8f4f0f4a2f4bb60c"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2028,
+        "latitude": 33.5731,
+        "longitude": -7.5898,
+        "timeZone": "Africa/Casablanca"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8418,
+      "renderedSha256": "da118c93d7ab5b97647b43997fd559ca571ba58cac0e4f4550c9ae15791965e2"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2027,
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8395,
+      "renderedSha256": "b7ef1bbbea4c9aa9bc8993eeb9f1ad3fc3593c1dc38752cce42a42ad7bbca98c"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2031,
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8395,
+      "renderedSha256": "b7e4dfb19012863ad9b290ca74fdbe610b45f1da74df11399951bc545f7a3a42"
+    },
+    {
+      "id": "moonsighting-committee/usno-v4.2",
+      "input": {
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 8522,
+      "renderedSha256": "2088c456f73404a0fd8948d988d1ff87b60f2d9e7e0e3cb6646ecda4ddc640ed"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "94a5c92c60349cdbc28e430743e73acf0d87255124be9238c56af907b94bccd3"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "94a5c92c60349cdbc28e430743e73acf0d87255124be9238c56af907b94bccd3"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13880,
+      "renderedSha256": "bbf2deefefb715ae3e4f0a7d129d3d7e32f4ffab8f8abfa6a2e7f56742f3e851"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "eda5ef78d48b604a7f0574c097a963e287d4ba04f8596987bcaf594b7470d9a7"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "eda5ef78d48b604a7f0574c097a963e287d4ba04f8596987bcaf594b7470d9a7"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13877,
+      "renderedSha256": "8c3c6d86970895252da4d874b3bf00afe447265697087570d25c69e88aa391a3"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "f76bb25655261530ae6add0d7794ee70fedcc35f208cb4739ccdad308495a3f7"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "f76bb25655261530ae6add0d7794ee70fedcc35f208cb4739ccdad308495a3f7"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13877,
+      "renderedSha256": "4dfdfa7bb6d8c41e8040538d77185755810e2ac662936378820ca5562b821bee"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13916,
+      "renderedSha256": "deabd57abb29b1b3f188b7bd5e5c82adf2dabf958a3bfa46b13e0d3e99e1d439"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13874,
+      "renderedSha256": "8e4cfbbeb86964a64ea9394ce6339ae197fd2aeb82f62ceb9fdf8054ff7e081f"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 13877,
+      "renderedSha256": "e7e832704c6725c90cce249f13bda07bef144423b50a698edeace5cd74becd03"
+    },
+    {
+      "id": "diyanet/north-reviewed",
+      "input": {
+        "variant": "north-reviewed",
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 14102,
+      "renderedSha256": "48e0ed4d830f2a505ae4567af7a5fc744f9e8a32a186331b495eaafe42e6bc01"
+    },
+    {
+      "id": "diyanet/north-baseline",
+      "input": {
+        "variant": "north-baseline",
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 14102,
+      "renderedSha256": "48e0ed4d830f2a505ae4567af7a5fc744f9e8a32a186331b495eaafe42e6bc01"
+    },
+    {
+      "id": "diyanet/north-missing-window",
+      "input": {
+        "variant": "north-missing-window",
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 14105,
+      "renderedSha256": "59b57a9aeb05ed619cd3b1362dc6df423310791a6c23e827ac9bd87438a2aa12"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2027-03-21",
+        "latitude": 19.4326,
+        "longitude": -99.1332,
+        "timeZone": "America/Mexico_City"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "e72b8d242dab51e49849c68a8659ac42c0142f0f10ebf9db6e0dd14dcc26970d"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2027-12-21",
+        "latitude": 19.4326,
+        "longitude": -99.1332,
+        "timeZone": "America/Mexico_City"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "8ed6101d14967c795672ad5619af12c14bad56ed9917844ff463a9af68deb10a"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2027-03-21",
+        "latitude": 28.6139,
+        "longitude": 77.209,
+        "timeZone": "Asia/Kolkata"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "a268c1027e20c9788b3b2fb4e33572125a183527c00ef64740355118234b6be6"
+    },
+    {
+      "id": "diyanet/low-latitude",
+      "input": {
+        "variant": "low-latitude",
+        "date": "2027-12-21",
+        "latitude": 28.6139,
+        "longitude": 77.209,
+        "timeZone": "Asia/Kolkata"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "a50311c5fafca1efa05b6984c1aabdd38955e8d7d579fcc65cf5eabde585ebfc"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2027-06-21",
+        "latitude": -33.9249,
+        "longitude": 18.4241,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "cd1607bfb90ceb7eaf2b560b1d46afda9abf042d8d3882ec35fae2773f31ee6b"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2027-12-21",
+        "latitude": -33.9249,
+        "longitude": 18.4241,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "d78b3ba254f4da135184978848a4a3c57afaa138a23caaed4b630fe7239ea012"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2027-06-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "360e805579dc0973deb41603cd8f0f071d123b4c32bfe15764458cde01ff779a"
+    },
+    {
+      "id": "diyanet/south",
+      "input": {
+        "variant": "south",
+        "date": "2027-12-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 35,
+      "renderedSha256": "27b648106d6e612bf1f0b72419aab7308ae21948f125320796b90d8c7e73051d"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-03-01",
+        "latitude": 21.4225,
+        "longitude": 39.8262,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "3b3970e3a0cc6b1749ad47423d767a6ce4b1180991136aefc4d5113820ba1421"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-09-21",
+        "latitude": 21.4225,
+        "longitude": 39.8262,
+        "timeZone": "Asia/Riyadh"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "aff0435af7979a3aeb716a056534113504a3661f0c0b6d167f4edf57273bff9c"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-03-01",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "adb3b1dce6f1c70bc0477466da78c81d2fc5b4be424b382d14b95f3bab6d3f0a"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-09-21",
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "d67c90ccdcf376e6bcda843fe73ee1cb370c31ab99cdc58d90a7745370868d3b"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-03-01",
+        "latitude": -33.9249,
+        "longitude": 18.4241,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "dc4edbedb0ce26197eb27f021539625441446b2ec171050fc8f0f199b0f47608"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-09-21",
+        "latitude": -33.9249,
+        "longitude": 18.4241,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "fc714c792417100fccc940b65f39c0196400209fc1c079b978185dc58e68259c"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-03-01",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "685678dd93ea1686b62d1c59b96029a03be5a82eae8887c895b9805c72f3098f"
+    },
+    {
+      "id": "umm-al-qura/strict",
+      "input": {
+        "date": "2027-09-21",
+        "latitude": -6.2,
+        "longitude": 106.8,
+        "timeZone": "Asia/Jakarta"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 26,
+      "renderedSha256": "4809d4f8f812ff3871e984140c02944c98b03b7591adc613089725e3e058eef8"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "7628b0aa8afb0a68caa253a9ee671d7827191261894eb8f96d0c99c1612ca9af"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "tehran-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "58d976367553d7473141e16320871d7f84b7ad89cc4516dd54c4a6022f440244"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "tehran-published-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "82780511d5c935d99bc3e9dfdc324cf6c6803e21cc3091c0919295b21e322172"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "tehran-published-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "12568de83a43c65993209c1118f55ab6e909c193fa5792506aee43ff3f4112be"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "leva-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "e668a2cb9ebf75cb2ab26d29c290dbf728abcf540122723def9290c09b45cf1d"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "leva-published-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "58d976367553d7473141e16320871d7f84b7ad89cc4516dd54c4a6022f440244"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "leva-published-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "7b3d82e734b584abc27a500ec2cbe95fae49f80900778a313d9ad101928a3dc0"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "leva-published-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "12568de83a43c65993209c1118f55ab6e909c193fa5792506aee43ff3f4112be"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "arc-iran-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "fcd1e4ce878bd8b684d2ffc1e1ff058374325d9ad06c208b2d7a734587b4d9c9"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "arc-iran-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "2dbea3555c89fd041398cb0eef5ff7071bc3f3b64cdc4e96ee4778a7c4c5af72"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "arc-iran-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "370928c8c981471979ae1d361a4438c843daf8c5b30105be63b8b03642700fdd"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "arc-iran-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "6bce13ee949bcedb775741f66fdb0fe1665259656a2cb206c6295d843674215f"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "arc-outside-iran-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "ecc479bc0c7c1f641c8583b12a36648ac3656b22321c9692b544d2c5448865bc"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "arc-outside-iran-angles-own",
+        "engine": "usno"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "2dbea3555c89fd041398cb0eef5ff7071bc3f3b64cdc4e96ee4778a7c4c5af72"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2031-06-21",
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "profileId": "arc-outside-iran-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "15f23ac2b7cf7b836a7a10b5e2a5c29c49dbbf388179c1f57af55beafa76463c"
+    },
+    {
+      "id": "shia-angles/own",
+      "input": {
+        "date": "2026-06-21",
+        "latitude": 78.2232,
+        "longitude": 15.6469,
+        "timeZone": "Arctic/Longyearbyen",
+        "profileId": "arc-outside-iran-angles-own",
+        "engine": "noaa"
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 61,
+      "renderedSha256": "6bce13ee949bcedb775741f66fdb0fe1665259656a2cb206c6295d843674215f"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki",
+        "profileId": "fcna-usa-15",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 43,
+      "renderedSha256": "20c9bee523930ca64a98b6fc2b7830d09be6f39d6c1d5cc03831cad0400986e6"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki",
+        "profileId": "fcna-usa-15",
+        "asr": "hanafi",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 43,
+      "renderedSha256": "1c0eb6d2e4d231134247c928649e9576ea5e0c60f061519857cb13c1219ebe9c"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki",
+        "profileId": "fcna-canada-13",
+        "asr": "standard",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 43,
+      "renderedSha256": "20c9bee523930ca64a98b6fc2b7830d09be6f39d6c1d5cc03831cad0400986e6"
+    },
+    {
+      "id": "fcna/own-reviewed",
+      "input": {
+        "startDate": "2026-06-21",
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki",
+        "profileId": "fcna-canada-13",
+        "asr": "hanafi",
+        "numerical": {
+          "ephemeris": "usno",
+          "rounding": "nearest"
+        }
+      },
+      "completeOutputDeepEqual": true,
+      "renderedFields": 43,
+      "renderedSha256": "1c0eb6d2e4d231134247c928649e9576ea5e0c60f061519857cb13c1219ebe9c"
+    }
+  ]
+}

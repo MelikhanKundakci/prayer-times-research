@@ -1,0 +1,568 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "north-missing-window",
+    "year": 2026,
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "output": {
+    "profile": {
+      "id": "diyanet-north-missing-window-usno00-diagnostic",
+      "version": "0.1.0-research",
+      "official": false,
+      "parameters": {
+        "fajrAngle": 18,
+        "ishaAngle": 16,
+        "asrShadowFactor": 1,
+        "horizonAltitudeDegrees": -0.8333333333333334,
+        "minimumDayNightMinutes": 300,
+        "fajrFactor": 1.125,
+        "transitionMarginMinutes": 20,
+        "solsticeEnvelopeLatitude": 60,
+        "sourceRecipe": "Own V5 USNO00 with first/last missing-Fajr seasonal endpoints and unchanged last-real quotient day",
+        "civilDateAnchor": "own USNO00 transit plus5, nearest minute, explicit local civil date",
+        "southernSeason": "unsupported",
+        "elevationModel": "none",
+        "extremeLatitudePolicy": "unconfirmed inherited reconstruction",
+        "seasonalVariant": "missing-window"
+      },
+      "selectionStatus": "One predeclared known-data hypothesis; not implied uniquely by boundary trimming or an institutional specification"
+    },
+    "engine": {
+      "name": "independent-USNO-UTC00",
+      "civilDateAnchorEngine": "independent-USNO-UTC00",
+      "version": "0.1.0-research",
+      "node": "v26.7.0",
+      "tzdb": "2026d",
+      "hostTimeZoneIndependent": true
+    },
+    "location": {
+      "latitude": 52.5,
+      "longitude": 13.4,
+      "timeZone": "Europe/Berlin"
+    },
+    "year": 2026,
+    "official": false,
+    "appReady": false,
+    "eligibleForAutomaticNotifications": false,
+    "reconstruction": {
+      "seasons": [
+        {
+          "anchorKind": "first-and-last-missing-fajr",
+          "ratioAnchor": "2026-05-17",
+          "ratioAnchorDayIndex": 136,
+          "springAnchor": "2026-05-18",
+          "springAnchorDayIndex": 137,
+          "autumnAnchor": "2026-07-25",
+          "autumnAnchorDayIndex": 205,
+          "returnRealFajrDay": "2026-07-26",
+          "returnRealFajrDayIndex": 206,
+          "firstMissingDayIndex": 137,
+          "lastMissingDayIndex": 205,
+          "missingDayCount": 69,
+          "ratio": 0.18470969634974196,
+          "ratioClockBasis": "same-day-published-sunrise-sunset",
+          "fajrFactor": 1.125,
+          "seasonalVariant": "missing-window",
+          "ratioAndSeasonalRolesSeparated": true,
+          "transitions": {
+            "fajr": {
+              "springCrossingDayIndex": 108.62033801128261,
+              "autumnCrossingDayIndex": 236.61574235410066,
+              "springThresholdUtcMinutes": 101.00632819896472,
+              "autumnThresholdUtcMinutes": 110.39501727936052,
+              "estimatedSpringAnchorUtcMinutes": 81.00632819896472,
+              "estimatedAutumnAnchorUtcMinutes": 90.39501727936052,
+              "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+              "noGapAngleOnlyFallback": false
+            },
+            "isha": {
+              "springCrossingDayIndex": 109.79451313640034,
+              "autumnCrossingDayIndex": 231.19395943282575,
+              "springThresholdUtcMinutes": 1213.7438220194856,
+              "autumnThresholdUtcMinutes": 1224.6553653263325,
+              "estimatedSpringAnchorUtcMinutes": 1233.7438220194856,
+              "estimatedAutumnAnchorUtcMinutes": 1244.6553653263325,
+              "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+              "noGapAngleOnlyFallback": false
+            }
+          }
+        }
+      ],
+      "horizonVariant": "above60-envelope",
+      "solarVariant": "usno-utc0-both",
+      "solsticeCalculationDate": "2026-06-21",
+      "solsticeCivilDate": "2026-06-21",
+      "horizonEnvelopeApplied": false,
+      "seasonalVariant": "missing-window"
+    },
+    "limitations": [
+      "Research hypothesis, not a confirmed institutional method or religious approval.",
+      "The ratio remains on the last real Fajr day; only the replacement-window endpoints and their estimated threshold crossings change.",
+      "No-gap June21 behavior, fractional crossing arithmetic, raw USNO UTC00 geometry, horizons and solstice envelopes remain unchanged.",
+      "No inner-angle index rounding, continuous twilight or later Asr ordering correction is applied.",
+      "A consistent interior after boundary trimming does not identify true institutional endpoint dates.",
+      "Institutional production coordinates, source event dates and quantization remain unconfirmed.",
+      "No source-selected corrections, new original acquisition, API promotion or automatic notifications."
+    ],
+    "days": [
+      {
+        "date": "2026-01-01",
+        "solarCalculationDate": "2026-01-01",
+        "events": {
+          "fajr": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "06:10",
+            "iso": "2026-01-01T06:10:00+01:00",
+            "utc": "2026-01-01T05:10:00.000Z",
+            "rawEpoch": 1767244212477.9062,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767244212477.9062,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          },
+          "sunrise": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "08:10",
+            "iso": "2026-01-01T08:10:00+01:00",
+            "utc": "2026-01-01T07:10:00.000Z",
+            "rawEpoch": 1767251406913.507,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767251826913.507,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "dhuhr": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "12:15",
+            "iso": "2026-01-01T12:15:00+01:00",
+            "utc": "2026-01-01T11:15:00.000Z",
+            "rawEpoch": 1767266083930.1602,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "selected-ephemeris-transit-plus5"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawTransitEpoch": 1767265783930.1602
+            }
+          },
+          "asr": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "13:50",
+            "iso": "2026-01-01T13:50:00+01:00",
+            "utc": "2026-01-01T12:50:00.000Z",
+            "rawEpoch": 1767271818728.3728,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "daily-declination-shadow1-plus4"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawFixedEpochAsr": 1767271578728.3728,
+              "fixedNoonAltitudeDegrees": 14.48490648239418,
+              "fixedTargetAltitudeDegrees": 11.601623317643046,
+              "physicalFixedEpochShadowSelected": true,
+              "continuousRootNotUsed": true
+            }
+          },
+          "maghrib": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "16:09",
+            "iso": "2026-01-01T16:09:00+01:00",
+            "utc": "2026-01-01T15:09:00.000Z",
+            "rawEpoch": 1767280160946.8132,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767279740946.8132,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "isha": {
+            "status": "adjusted",
+            "localDate": "2026-01-01",
+            "time": "17:56",
+            "iso": "2026-01-01T17:56:00+01:00",
+            "utc": "2026-01-01T16:56:00.000Z",
+            "rawEpoch": 1767286535642.7476,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767286535642.7476,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          }
+        },
+        "diagnostics": {
+          "declinationUtc00Degrees": -23.01509351760582,
+          "equationOfTimeUtc00Hours": -0.05553615558615377,
+          "horizonRule": "real-published-horizons",
+          "polarState": "both-raw-horizons-available",
+          "horizonEstimated": false
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "solarCalculationDate": "2026-01-02",
+        "events": {
+          "fajr": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "06:10",
+            "iso": "2026-01-02T06:10:00+01:00",
+            "utc": "2026-01-02T05:10:00.000Z",
+            "rawEpoch": 1767330614233.0535,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767330614233.0535,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          },
+          "sunrise": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "08:10",
+            "iso": "2026-01-02T08:10:00+01:00",
+            "utc": "2026-01-02T07:10:00.000Z",
+            "rawEpoch": 1767337798686.3247,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767338218686.3247,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "dhuhr": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "12:15",
+            "iso": "2026-01-02T12:15:00+01:00",
+            "utc": "2026-01-02T11:15:00.000Z",
+            "rawEpoch": 1767352512150.9043,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "selected-ephemeris-transit-plus5"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawTransitEpoch": 1767352212150.9043
+            }
+          },
+          "asr": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "13:51",
+            "iso": "2026-01-02T13:51:00+01:00",
+            "utc": "2026-01-02T12:51:00.000Z",
+            "rawEpoch": 1767358274746.449,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "daily-declination-shadow1-plus4"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawFixedEpochAsr": 1767358034746.449,
+              "fixedNoonAltitudeDegrees": 14.569491453475436,
+              "fixedTargetAltitudeDegrees": 11.656245023647381,
+              "physicalFixedEpochShadowSelected": true,
+              "continuousRootNotUsed": true
+            }
+          },
+          "maghrib": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "16:10",
+            "iso": "2026-01-02T16:10:00+01:00",
+            "utc": "2026-01-02T15:10:00.000Z",
+            "rawEpoch": 1767366625615.484,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767366205615.484,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "isha": {
+            "status": "adjusted",
+            "localDate": "2026-01-02",
+            "time": "17:57",
+            "iso": "2026-01-02T17:57:00+01:00",
+            "utc": "2026-01-02T16:57:00.000Z",
+            "rawEpoch": 1767372990891.3718,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767372990891.3718,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          }
+        },
+        "diagnostics": {
+          "declinationUtc00Degrees": -22.93050854652456,
+          "equationOfTimeUtc00Hours": -0.06337525118382104,
+          "horizonRule": "real-published-horizons",
+          "polarState": "both-raw-horizons-available",
+          "horizonEstimated": false
+        }
+      },
+      {
+        "date": "2026-01-03",
+        "solarCalculationDate": "2026-01-03",
+        "events": {
+          "fajr": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "06:10",
+            "iso": "2026-01-03T06:10:00+01:00",
+            "utc": "2026-01-03T05:10:00.000Z",
+            "rawEpoch": 1767417013284.0698,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767417013284.0698,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          },
+          "sunrise": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "08:10",
+            "iso": "2026-01-03T08:10:00+01:00",
+            "utc": "2026-01-03T07:10:00.000Z",
+            "rawEpoch": 1767424186956.0457,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767424606956.0457,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "dhuhr": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "12:16",
+            "iso": "2026-01-03T12:16:00+01:00",
+            "utc": "2026-01-03T11:16:00.000Z",
+            "rawEpoch": 1767438940031.101,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "selected-ephemeris-transit-plus5"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawTransitEpoch": 1767438640031.101
+            }
+          },
+          "asr": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "13:52",
+            "iso": "2026-01-03T13:52:00+01:00",
+            "utc": "2026-01-03T12:52:00.000Z",
+            "rawEpoch": 1767444732862.4583,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "daily-declination-shadow1-plus4"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawFixedEpochAsr": 1767444492862.4583,
+              "fixedNoonAltitudeDegrees": 14.66169069509428,
+              "fixedTargetAltitudeDegrees": 11.715651532458375,
+              "physicalFixedEpochShadowSelected": true,
+              "continuousRootNotUsed": true
+            }
+          },
+          "maghrib": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "16:12",
+            "iso": "2026-01-03T16:12:00+01:00",
+            "utc": "2026-01-03T15:12:00.000Z",
+            "rawEpoch": 1767453093106.1565,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "real-published-horizons"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawHorizonEpoch": 1767452673106.1565,
+              "horizonEnvelopeApplied": false,
+              "polarState": "both-raw-horizons-available"
+            }
+          },
+          "isha": {
+            "status": "adjusted",
+            "localDate": "2026-01-03",
+            "time": "17:57",
+            "iso": "2026-01-03T17:57:00+01:00",
+            "utc": "2026-01-03T16:57:00.000Z",
+            "rawEpoch": 1767459448207.2441,
+            "eligibleForAutomaticNotifications": false,
+            "reasons": [
+              {
+                "code": "experimental-northern-reconstruction",
+                "rule": "angle"
+              }
+            ],
+            "basis": "fixed-UTC00-geometry-with-declared-adjustment",
+            "authorityConfirmed": false,
+            "diagnostic": {
+              "rawAngleEpoch": 1767459448207.2441,
+              "seasonalRule": "angle",
+              "solsticeEnvelopeApplied": false
+            }
+          }
+        },
+        "diagnostics": {
+          "declinationUtc00Degrees": -22.838309304905728,
+          "equationOfTimeUtc00Hours": -0.07111975029035023,
+          "horizonRule": "real-published-horizons",
+          "polarState": "both-raw-horizons-available",
+          "horizonEstimated": false
+        }
+      }
+    ],
+    "experiment": {
+      "version": "0.1.0-research",
+      "supported": true,
+      "unsupported": null,
+      "seasonalVariant": "missing-window",
+      "candidateCount": 1,
+      "changedFactor": "first-and-last-missing-Fajr-seasonal-endpoints-with-last-real-ratio",
+      "rawGeometryChanged": false,
+      "ratioDayChanged": false,
+      "otherFourEventObjectsChanged": false,
+      "automaticPromotion": false
+    },
+    "preview": true,
+    "totalDays": 365,
+    "displayedDays": 3
+  }
+}

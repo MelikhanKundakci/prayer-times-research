@@ -1,0 +1,232 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "profileId": "bayynat-point-approximation-utc12-h5over6-ceil",
+    "profileVersion": "0.1.0",
+    "locationMode": "point",
+    "location": {
+      "latitude": 52.5,
+      "longitude": 13.4,
+      "timeZone": "Europe/Berlin"
+    },
+    "recipe": {
+      "id": "utc12-h5over6-ceil",
+      "engine": "own-usno",
+      "epochHours": 12,
+      "horizon": -0.8333333333333334,
+      "fajrDegrees": 18,
+      "ishaTableDegrees": 18,
+      "asrShadowFactor": 1,
+      "rounding": "ceil"
+    },
+    "events": {
+      "fajr": {
+        "status": "unavailable",
+        "rawEpoch": null,
+        "epoch": null,
+        "utc": null,
+        "localDate": null,
+        "time": null,
+        "utcOffsetMinutes": null,
+        "reason": "fixed-solar-cycle-above-target",
+        "role": "hypothetical-dawn-table-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ],
+        "diagnostic": {
+          "altitudeDegrees": -18,
+          "hourAngleCosine": -1.1181679617241551,
+          "direction": "rising"
+        }
+      },
+      "sunrise": {
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782009799693.7134,
+        "epoch": 1782009840000,
+        "utc": "2026-06-21T02:44:00.000Z",
+        "localDate": "2026-06-21",
+        "time": "04:44",
+        "utcOffsetMinutes": 120,
+        "reason": null,
+        "role": "hypothetical-horizon-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ],
+        "diagnostic": {
+          "altitudeDegrees": -0.8333333333333334,
+          "hourAngleCosine": -0.5909523390194613,
+          "direction": "rising",
+          "hourAngleHours": 8.414974548479936
+        }
+      },
+      "dhuhr": {
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782040093602.088,
+        "epoch": 1782040140000,
+        "utc": "2026-06-21T11:09:00.000Z",
+        "localDate": "2026-06-21",
+        "time": "13:09",
+        "utcOffsetMinutes": 120,
+        "reason": null,
+        "role": "fixed-ephemeris-meridian-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ]
+      },
+      "asrTable": {
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782055987657.399,
+        "epoch": 1782056040000,
+        "utc": "2026-06-21T15:34:00.000Z",
+        "localDate": "2026-06-21",
+        "time": "17:34",
+        "utcOffsetMinutes": 120,
+        "reason": null,
+        "role": "unconfirmed-asr-table-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ],
+        "diagnostic": {
+          "altitudeDegrees": 32.73141785676931,
+          "hourAngleCosine": 0.40314235049747205,
+          "direction": "setting",
+          "hourAngleHours": 4.415015364184987,
+          "fixedModelAltitudeDegrees": 32.731417856847294,
+          "positivePhysicalGeometry": true
+        }
+      },
+      "sunset": {
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782070387510.4624,
+        "epoch": 1782070440000,
+        "utc": "2026-06-21T19:34:00.000Z",
+        "localDate": "2026-06-21",
+        "time": "21:34",
+        "utcOffsetMinutes": 120,
+        "reason": null,
+        "role": "hypothetical-horizon-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ],
+        "diagnostic": {
+          "altitudeDegrees": -0.8333333333333334,
+          "hourAngleCosine": -0.5909523390194613,
+          "direction": "setting",
+          "hourAngleHours": 8.414974548479936
+        }
+      },
+      "ishaTable": {
+        "status": "unavailable",
+        "rawEpoch": null,
+        "epoch": null,
+        "utc": null,
+        "localDate": null,
+        "time": null,
+        "utcOffsetMinutes": null,
+        "reason": "fixed-solar-cycle-above-target",
+        "role": "unconfirmed-isha-table-marker",
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "fixed-ephemeris-not-continuous-crossing-guarantee"
+          }
+        ],
+        "diagnostic": {
+          "altitudeDegrees": -18,
+          "hourAngleCosine": -1.1181679617241551,
+          "direction": "setting"
+        }
+      }
+    },
+    "diagnostic": {
+      "carrierUtc": "2026-06-21T00:00:00.000Z",
+      "sampleUtc": "2026-06-21T12:00:00.000Z",
+      "transitRawEpoch": 1782040093602.088,
+      "declinationDegrees": 23.435443652655238,
+      "equationOfTimeHours": -0.03044502442307362,
+      "noonSolarMarginDegrees": 60.93544365265524,
+      "asrTargetAltitudeDegrees": 32.73141785676931,
+      "tangencyCosineBand": 1e-12,
+      "civilStartUtc": "2026-06-20T22:00:00.000Z",
+      "civilEndUtc": "2026-06-21T22:00:00.000Z",
+      "civilDayHours": 24
+    },
+    "runtime": {
+      "node": "v26.7.0",
+      "tzdb": "2026d",
+      "icu": "78.3"
+    },
+    "qualityFlags": [
+      {
+        "code": "experimental-geographic-extension-not-institutionally-validated"
+      },
+      {
+        "code": "bayynat-production-coordinates-unknown"
+      },
+      {
+        "code": "asr-isha-table-roles-not-legal-starts"
+      },
+      {
+        "code": "no-high-latitude-substitution-rule"
+      },
+      {
+        "code": "source-event-dates-unconfirmed"
+      },
+      {
+        "code": "selected-on-known-data-not-exact-provider-recipe"
+      },
+      {
+        "code": "fixed-horizon-does-not-establish-elevation-match"
+      }
+    ],
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "legalWindowInterpretation": false
+  }
+}

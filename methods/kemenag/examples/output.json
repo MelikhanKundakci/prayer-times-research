@@ -1,0 +1,112 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": -6.2,
+    "longitude": 106.8,
+    "timeZone": "Asia/Jakarta",
+    "preset": "kemenag-2026-book-example"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "location": {
+      "latitude": -6.2,
+      "longitude": 106.8,
+      "timeZone": "Asia/Jakarta"
+    },
+    "model": {
+      "version": "indonesia-research-1.0.0",
+      "preset": "kemenag-2026-book-example",
+      "fajrAngle": 20,
+      "ishaAngle": 18,
+      "asrShadowFactor": 1,
+      "solarBasis": "daily-zone-noon",
+      "horizonAltitude": -1,
+      "rounding": "outward",
+      "ihtiyatMinutes": 2,
+      "dhuhrMinutes": 3,
+      "sunriseMinutes": -2,
+      "description": "Kemenag Ephemeris2026 worked example pp439–443: one daily solar coordinate at05/04/03UTC for WIB/WITA/WIT; −1° horizon, ceil+2min starts, ceil+3min Dhuhr, floor−2min sunrise. Independent USNO ephemeris replaces the printed tables.",
+      "tzdb": "2026d",
+      "officialImplementation": false,
+      "elevationMetres": null,
+      "fajrAngle18IsComparisonOnly": false,
+      "warning": "Research only, not official Bimas/SIHAT software or a verified nationwide calendar. A fixed −1° horizon is not an elevation model.",
+      "inputContractVersion": "indonesia-input-review-1.0.0",
+      "frozenCalculationVersion": "indonesia-research-1.0.0",
+      "solarCoordinatesEpochUtc": "2026-06-21T05:00:00.000Z",
+      "roundingDefinition": {
+        "starts": "ceil(raw epoch minutes) + 2",
+        "dhuhr": "ceil(raw epoch minutes) + 3",
+        "sunrise": "floor(raw epoch minutes) - 2"
+      },
+      "imsakBasis": "10 minutes before rounded Fajr; informational marker, not a separate astronomical event or a claim about fasting start",
+      "geographicScope": "Coordinate box −12…8 latitude,94…142 longitude; not political-boundary or timezone inference",
+      "sourceClassification": "Independent reconstruction of the 2026 Kemenag book worked example, with USNO replacing printed solar tables",
+      "calendarValidationProvenance": "Worked-example PDF verified; additional city comparisons use indexed official-PDF transcriptions without acquired original calendar PDF bytes"
+    },
+    "events": {
+      "fajr": {
+        "status": "experimental",
+        "time": "04:41",
+        "isoUtc": "2026-06-20T21:41:00.000Z",
+        "rawEpochMilliseconds": 1781991480253.472,
+        "localDate": "2026-06-21"
+      },
+      "sunrise": {
+        "status": "experimental",
+        "time": "05:58",
+        "isoUtc": "2026-06-20T22:58:00.000Z",
+        "rawEpochMilliseconds": 1781996458277.149,
+        "localDate": "2026-06-21"
+      },
+      "duha": {
+        "status": "experimental",
+        "time": "06:28",
+        "isoUtc": "2026-06-20T23:28:00.000Z",
+        "rawEpochMilliseconds": 1781997909587.956,
+        "localDate": "2026-06-21"
+      },
+      "dhuhr": {
+        "status": "experimental",
+        "time": "11:58",
+        "isoUtc": "2026-06-21T04:58:00.000Z",
+        "rawEpochMilliseconds": 1782017673792.7266,
+        "localDate": "2026-06-21"
+      },
+      "asr": {
+        "status": "experimental",
+        "time": "15:19",
+        "isoUtc": "2026-06-21T08:19:00.000Z",
+        "rawEpochMilliseconds": 1782029788893.218,
+        "localDate": "2026-06-21"
+      },
+      "maghrib": {
+        "status": "experimental",
+        "time": "17:51",
+        "isoUtc": "2026-06-21T10:51:00.000Z",
+        "rawEpochMilliseconds": 1782038889308.3042,
+        "localDate": "2026-06-21"
+      },
+      "isha": {
+        "status": "experimental",
+        "time": "19:05",
+        "isoUtc": "2026-06-21T12:05:00.000Z",
+        "rawEpochMilliseconds": 1782043344010.3748,
+        "localDate": "2026-06-21"
+      },
+      "imsak": {
+        "status": "experimental",
+        "time": "04:31",
+        "isoUtc": "2026-06-20T21:31:00.000Z",
+        "rawEpochMilliseconds": null,
+        "localDate": "2026-06-21"
+      }
+    }
+  }
+}

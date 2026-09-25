@@ -1,0 +1,116 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "date": "2026-06-21",
+    "latitude": 24.45,
+    "longitude": 54.38,
+    "elevationMeters": 0,
+    "cityWidthKm": 0,
+    "pressureMillibars": 1010,
+    "temperatureCelsius": 10,
+    "timeZone": "Asia/Dubai"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "profile": "uae-vendor-geometry-v2-candidate",
+    "official": false,
+    "appReady": false,
+    "timeZone": "Asia/Dubai",
+    "recipe": {
+      "angle": 18,
+      "asrOffsetMinutes": 0,
+      "dhuhrOffsetMinutes": 2,
+      "asrRefraction": "noon-and-event",
+      "atmosphere": "standard",
+      "geometry": "width-and-height"
+    },
+    "times": {
+      "fajr": "04:06",
+      "sunrise": "05:35",
+      "dhuhr": "12:26",
+      "asr": "15:45",
+      "maghrib": "19:14",
+      "isha": "20:43"
+    },
+    "events": {
+      "fajr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "04:06",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T00:06:00.000Z",
+        "unroundedUtc": "2026-06-21T00:06:00.962Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "sunrise": {
+        "status": "unconfirmed-reconstruction",
+        "time": "05:35",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T01:35:00.000Z",
+        "unroundedUtc": "2026-06-21T01:34:40.048Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "dhuhr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "12:26",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T08:26:00.000Z",
+        "unroundedUtc": "2026-06-21T08:26:16.445Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "asr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "15:45",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T11:45:00.000Z",
+        "unroundedUtc": "2026-06-21T11:44:35.862Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "maghrib": {
+        "status": "unconfirmed-reconstruction",
+        "time": "19:14",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T15:14:00.000Z",
+        "unroundedUtc": "2026-06-21T15:13:52.841Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "isha": {
+        "status": "unconfirmed-reconstruction",
+        "time": "20:43",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T16:43:00.000Z",
+        "unroundedUtc": "2026-06-21T16:42:31.926Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      }
+    },
+    "diagnostics": {
+      "eastLongitude": 54.38,
+      "westLongitude": 54.38,
+      "dipDegrees": 0,
+      "atmosphereScale": 1,
+      "horizonAltitude": -0.8333333333333333,
+      "noonAltitude": 88.98551956715508,
+      "noonApparentAltitude": 88.98551956715508,
+      "asrApparentAltitude": 44.497171802713325,
+      "asrGeometricAltitude": 44.48075821873857
+    },
+    "qualityFlags": [
+      "independent-reconstruction",
+      "vendor-column-schema-inferred",
+      "official-production-configuration-unconfirmed",
+      "refraction-approximation-not-vendor-algorithm",
+      "research-only"
+    ],
+    "version": "0.2.0-research"
+  }
+}

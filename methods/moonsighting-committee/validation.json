@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "methodId": "moonsighting-committee",
+  "preparedAtUtc": "2026-09-25T10:05:14.384364+00:00",
+  "official": false,
+  "productionReady": false,
+  "scope": "Reconstruction of the public MSC calculator, with separately selectable general, ahmar and abyad twilight settings. It is not a definition of every Muslim community’s practice.",
+  "publicDefault": "V4.2 annual rows; shafaq=general unless explicitly supplied",
+  "publicExampleInput": {
+    "year": 2026,
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "metricDefinitions": {
+    "meaning": "Counts measure agreement with publisher-displayed minute values under a declared date interpretation. They are not measured sky accuracy, religious correctness, or endorsement.",
+    "rates": "exact/compared is exact agreement. nonExactRate=(compared−exact)/compared. overOneMinuteRate=(compared−withinOneMinute)/compared. Missing, ambiguous and unspecified values are never counted as exact; expected slots and exclusions remain separate.",
+    "freshness": "Fresh means the specified source was obtained after that model/forecast freeze. Same publisher, overlapping years/points, runtime amendments, known development and reused sources are explicitly distinguished. Do not pool overlapping studies.",
+    "runtime": "Historical own-engine studies generally used Node26.7.0/ICU78.3 with pinned IANA tzdb2026d where reported. Earlier reports may use2026a. Future timezone law and lunar announcements are not guaranteed.",
+    "mathematics": "For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.",
+    "precision": "A small numerical root tolerance is not observational precision. Horizon constants incorporate different assumptions about solar radius/refraction; −50′ and literal−0.833° are distinct.",
+    "distribution": "Raw third-party calendars, historical per-row reference values and source secrets are excluded. Public links and SHA256 provenance identify the evidence; they do not grant a redistribution license. Historical accuracy cannot be fully recomputed from a reference-free snapshot alone.",
+    "tests": "Public snapshot tests verify the exported code, examples, provenance and numerical regressions. Their pass counts are not new source observations or new accuracy samples.",
+    "religiousScope": "Institutions, software presets, countries, legal schools and scholarly positions are distinct. No country label means all Muslims in that country or all members of a madhhab. All outputs remain research, not official or notification-ready."
+  },
+  "studies": [
+    {
+      "id": "full-stack-fresh",
+      "recipe": "V4.2, formula and tzdb2026d frozen together",
+      "exposure": "fresh after complete stack freeze",
+      "scope": "Casablanca 2028 and Kathmandu 2031, two complete calendars",
+      "eventSet": "Seven columns: Fajr, sunrise, Dhuhr, standard Asr, Hanafi Asr, Maghrib, Isha",
+      "expectedSlots": 5117,
+      "comparedSlots": 5117,
+      "uncomparedSlots": 0,
+      "exactCount": 5117,
+      "withinOneMinuteCount": 5117,
+      "maxAbsoluteMinutes": 0,
+      "exactPercent": 100.0,
+      "nonExactRatePercent": 0.0,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Casablanca2029 had previously exposed stale tzdb2026a. These later two calendars followed the separate complete-stack freeze.",
+        "This exact sample does not establish universal or observational accuracy."
+      ],
+      "evidenceIdentifier": "research/global/moonsighting-stack-report.json"
+    },
+    {
+      "id": "formula-fresh-runtime-amended",
+      "recipe": "V4.2, final tzdb2026d replay",
+      "exposure": "new calendars after formula freeze; runtime correction was informed by one of them",
+      "scope": "Santiago2028, Chicago2025, Kuala Lumpur2032, Casablanca2029",
+      "eventSet": "Seven columns including both Asr factors",
+      "expectedSlots": 10234,
+      "comparedSlots": 10234,
+      "uncomparedSlots": 0,
+      "exactCount": 10234,
+      "withinOneMinuteCount": 10234,
+      "maxAbsoluteMinutes": 0,
+      "exactPercent": 100.0,
+      "nonExactRatePercent": 0.0,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "Not a blind whole-stack result: Casablanca exposed a timezone database issue before the 2026d replay."
+      ],
+      "evidenceIdentifier": "research/global/moonsighting-v4.2-report-icu2026d.json"
+    },
+    {
+      "id": "known-regression",
+      "recipe": "V4.2 with final tzdb2026d",
+      "exposure": "known development/regression; not fresh",
+      "scope": "21previously inspected annual calendars",
+      "eventSet": "Seven columns including both Asr factors",
+      "expectedSlots": 53704,
+      "comparedSlots": 52905,
+      "uncomparedSlots": 799,
+      "exactCount": 52248,
+      "withinOneMinuteCount": 52876,
+      "maxAbsoluteMinutes": 60,
+      "exactPercent": 98.7582,
+      "nonExactRatePercent": 1.2418,
+      "withinOneMinutePercent": 99.9452,
+      "overOneMinuteRatePercent": 0.0548,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Displayed-minute comparison; source does not supply event-specific UTC instants.",
+      "caveats": [
+        "799both-missing slots are not counted as hits.",
+        "Sydney2027 and Wellington2028 each retain14 one-hour source DST disagreements; the primary comparison is not corrected.",
+        "Kiritimati2027 retains629nonexact clocks, one differing by2minutes; a source date-row issue is a separate hypothesis, not a hidden model correction."
+      ],
+      "evidenceIdentifier": "research/global/moonsighting-v4.2-report-icu2026d.json"
+    }
+  ],
+  "implementationProvenance": [
+    {
+      "variant": "usno-v4.2",
+      "module": "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs",
+      "export": "calculateGeometry",
+      "sourceIdentifier": "research/global/moonsighting-usno-v4.2.mjs"
+    }
+  ],
+  "historicalEvidence": [
+    {
+      "identifier": "research/global/USNO-V4.2-REPORT.md",
+      "sha256": "b9fb575d797ec7a998c0d77362d43a6b29443f1133466d203fb8a1b8c511e812",
+      "bytes": 6171,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/global/moonsighting-stack-report.json",
+      "sha256": "36c68827bb4e1fc6fb44f049a72a5c563042ce8ffe13dd5098765fc5074a42d2",
+      "bytes": 85798,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/global/moonsighting-v4.2-report-icu2026d.json",
+      "sha256": "5c9eb191d24e112a03d1dfa20744982f3c735894a184e95421f9802af2f9ebf2",
+      "bytes": 1195678,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/global/moonsighting-usno-v4.2.mjs",
+      "sha256": "42dd1f8086ff9d63b9b27ee8799f674a33ab940e5a2385cacbdcbde29f1b4e52",
+      "bytes": 1776,
+      "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    }
+  ],
+  "limitations": [
+    "At northern latitude ≥55°, the model uses a seventh of the night computed from the same calendar row’s sunrise and sunset; this is not silently mirrored to the southern hemisphere.",
+    "Seasonal safe bounds may replace the angle event. Polar missing events, nonpositive shadow geometry and Asr-before-adjusted-Dhuhr are explicit quality issues, not certified prayer starts.",
+    "Use current timezone data. The historically tested Node/ICU stack was pinned to tzdb2026d; mathematical year support is not a guarantee against later timezone-law changes."
+  ],
+  "publicationNotes": [
+    "The own solar engine has no Adhan runtime dependency; seasonal coefficients retain MIT attribution. The old research/msc-cli.mjs invokes V4.1, not this V4.2 recipe."
+  ],
+  "primaryAndSoftwareSources": [
+    {
+      "url": "https://www.moonsighting.com/praytable.php",
+      "role": "Institutional public calendar generator; primary output comparison"
+    },
+    {
+      "url": "https://aa.usno.navy.mil/faq/sun_approx",
+      "role": "Primary astronomical approximation"
+    },
+    {
+      "url": "https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/PrayerTimes.ts",
+      "role": "Secondary software provenance for seasonal MSC rules, not institutional certification"
+    }
+  ]
+}
