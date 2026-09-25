@@ -34,13 +34,15 @@ Keep the primary 62-minute maximum visible while separately examining the source
 
 A new **retrospective replay of an existing unchanged compatibility candidate** on the already exposed Kiritimati 2031 calendar gives **1,836/2,190 exact and all within one minute**, versus the own USNO profile's **1,445 exact and 2,169 within one minute**. It corrects 446 previously unequal values but makes 55 previously exact values unequal. This is evidence that publisher compatibility can improve, not a newly discovered or validated religious calculation rule. The candidate intentionally models conjectured publisher date/rounding conventions; it is not included in the public own-angle runtime. The [aggregate replay evidence](../methods/shia-angles/research/compatibility-replay-2026-09-25.json) preserves the scope and provenance. No new original calendar was acquired and no public calculator changed.
 
-### UAE/Awqaf: improve the atmosphere model independently
+### UAE/Awqaf: own atmosphere implementation now available
 
 In V2's original holdout, sunrise matches only **50/183** minutes and contains all 44 two-minute differences; every other marker is within one minute. That localizes the larger discrepancy rather than suggesting that all six prayer-time formulas need replacement.
 
 An already studied V3 experiment supplies evidence for a mathematical improvement, but uses a GPL/native PAL dependency excluded from this MIT runtime. On V3's six later monthly PDFs, a paired comparison gives **V2: 791 exact / 1,049 within one minute / maximum two**, versus **V3: 825 exact / all 1,098 within one minute / maximum one**. These are the same 1,098 observations; comparing V3 directly with V2's earlier 778-exact cohort would mix different months. Abu Dhabi loses four exact values in the paired result despite the overall improvement.
 
-The next own implementation should derive the relevant near-horizon refraction calculation from primary atmospheric equations and check its intermediate values independently. Replacing an ephemeris label or copying the excluded library into the public runtime is not that implementation. The atmosphere parameters, observed altitude of the upper limb and geometric horizon dip must remain explicit. Numerical agreement with another refraction routine would still need separate calendar validation.
+The new opt-in [own-ray implementation](../methods/uae-awqaf/OWN-RAY.md) now supplies that independent JavaScript calculation. Across four already exposed, nonoverlapping cohorts it improves **6,840 → 7,239 exact / 9,684**, with **all 398 two-minute differences removed**. It corrects 883 values and regresses 484; **2,445 one-minute differences remain**. It reproduces the earlier PAL candidate’s rounded outputs while using neither its code nor runtime. A separate radial-coordinate implementation checks the integral. This is progress on the known data, not fresh institutional validation; the default remains V2.
+
+The next UAE evidence needs are confirmed production point/horizon settings and new comparisons after freezing this candidate. A varying solar disk/parallax follow-up gained twelve exact values overall but worsened two city/sunrise groups and was rejected. Changing atmospheric coefficients to fit calendar minutes would not establish the publisher’s actual method.
 
 ## Many unequal minutes can still mean small timing differences
 
@@ -70,7 +72,7 @@ An app needs an actual event date and a defined missing-event policy, not only a
 
 ## Recommended work order
 
-1. **For the next bounded numerical implementation:** develop a separately verified own UAE refraction kernel, because the larger errors are localized and an existing paired experiment supplies a concrete benchmark. In parallel, resolve ARC's twilight/date boundary cases and Türkiye Takvimi's systematically wrong horizon/Temkin reconstruction.
+1. **The own UAE refraction kernel is implemented and numerically verified.** Keep its retrospective results distinct from future fresh comparisons. The largest unresolved gaps still call for ARC twilight/date-boundary investigation and Türkiye Takvimi horizon/Temkin reconstruction.
 2. **Before notifications:** resolve the applicable method's event dates, timezone assumptions and unavailable-event behavior. This is necessary even for methods with high exact-minute agreement.
 3. **Then improve minute-level agreement:** study fixed institution calculation points, documented rounding and narrower regional conventions for Diyanet, JAKIM, Bayynat, Fazilet, Oman and MUIS.
 

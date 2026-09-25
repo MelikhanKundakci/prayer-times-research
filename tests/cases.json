@@ -246,6 +246,21 @@
         "date": "2026-06-21",
         "variant": "noaa-continuous-nearest"
       }
+    },
+    {
+      "id": "uae-awqaf/own-ray",
+      "family": "uae-awqaf",
+      "input": {
+        "variant": "own-ray",
+        "date": "2026-06-21",
+        "latitude": 24.45,
+        "longitude": 54.38,
+        "elevationMeters": 230,
+        "cityWidthKm": 35,
+        "pressureMillibars": 1010,
+        "temperatureCelsius": 10,
+        "timeZone": "Asia/Dubai"
+      }
     }
   ]
 }

@@ -51,7 +51,7 @@ Examples return the native research result, including actual event dates, UTC in
 | [Diyanet](methods/diyanet/) | Separate northern seasonal, lower-latitude, and southern research models; the latest northern seasonal-anchor experiment. |
 | [Umm al-Qura](methods/umm-al-qura/) | Angle-based Fajr and interval-based Isha, including the stated Ramadan-calendar convention. |
 | [Egyptian Survey convention](methods/egyptian-survey/) | Own 19.5°/17.5° research geometry and an explicitly identified library baseline. |
-| [UAE / Awqaf](methods/uae-awqaf/) | The permissively exportable V2 geometry experiment with width, height, atmosphere, and refraction assumptions. |
+| [UAE / Awqaf](methods/uae-awqaf/) | V2 geometry and an opt-in own dry-atmosphere ray integral, with explicit width, height and horizon assumptions. |
 | [Indonesia / Kemenag](methods/kemenag/) | A published worked-example reconstruction; the scope of an 18° Fajr comparison is stated separately. |
 | [Oman / MARA](methods/oman-mara/) | An empirical regional NOAA-based candidate, with its validation and unconfirmed parameters. |
 | [Banuri Town](methods/banuri-town/) | Published 18°/18° and Hanafi Asr rules; unresolved Zawal/Dhuhr semantics remain explicit. |
@@ -64,7 +64,7 @@ Examples return the native research result, including actual event dates, UTC in
 | [Türkiye Takvimi](methods/turkiye-takvimi/) | A deliberately narrow Istanbul experiment and its negative results, retained as an open research problem. |
 <!-- METHOD_TABLE_END -->
 
-These are **15 research families**, not 15 religions or a complete list of Islamic traditions. A family can contain several versions or parameter profiles; this export has 23 selected native entry points. Additional profiles still need independently verified specifications and evidence; see [coverage still to establish](docs/ROADMAP.md#coverage-still-to-establish).
+These are **15 research families**, not 15 religions or a complete list of Islamic traditions. A family can contain several versions or parameter profiles; the original extraction has 23 selected native entry points, supplemented by the additive own-ray experiment. Additional profiles still need independently verified specifications and evidence; see [coverage still to establish](docs/ROADMAP.md#coverage-still-to-establish).
 
 ## What the accuracy numbers mean
 
@@ -74,6 +74,7 @@ The strongest results are useful, but their scope matters. Examples from the res
 - **Diyanet northern seasonal candidate:** 6,145/6,568 compared fields matched exactly in three subsequently acquired 2027 calendars; all compared fields were within one minute **under the conditional next-day interpretation of Isha**. Two original `00:00` values remain unresolved. Bremen lost 34 exact matches relative to the baseline. A reused Vienna response is reported separately.
 - **Selangor two-point hypothesis:** 1,922/2,020 previously unseen reference fields matched exactly, with all remaining fields within one minute. The 176 fields exposed before the formula freeze are excluded from this particular unseen-field result and reported separately.
 - **Roseville-specific 15°/15° experiment:** an opt-in fixed-UTC12/ceil calculation raised exact agreement from 70/122 to 90/122 in two same-publisher months acquired after its separate freeze. All 122 were within one minute. It remains restricted to one unconfirmed address-proxy point and two twilight starts; [FCNA's method page](methods/fcna/) reports development regressions and the separate generic model.
+- **UAE own-ray experiment:** our own JavaScript refraction integral raises exact agreement from 6,840 to 7,239/9,684 on four already exposed cohorts and removes all 398 two-minute differences. All remaining differences are one minute; 484 previously exact values regress. This is an opt-in, local calculation and a retrospective replay, not a new holdout. See the [method, limitations and numerical verification](methods/uae-awqaf/OWN-RAY.md).
 - **Diyanet point diagnostic:** fitting one fixed point per city from selected 2026 observations improves the unchanged model's Berlin/Stockholm 2027 agreement from 3,862/4,380 to 4,257/4,380. This is retrospective transfer on already exposed calendars, not fresh validation or discovery of official coordinates; 69 previously exact values regress. See the [study and its remaining contradictions](methods/diyanet/RESEARCH-ROUND-2.md) and the [offline diagnostic tool](methods/diyanet/diagnostics/README.md).
 
 These are historical research measurements, not results freshly downloaded by `npm test`. Original publisher calendars are not redistributed in this repository. Public tests cover the exported implementation, examples, structural invariants, and comparison semantics. The provenance and method documents distinguish those checks from institutional-calendar validation.
@@ -99,7 +100,7 @@ LICENSES/               Third-party license texts and attribution
 .github/                CI and contributor issue/PR templates
 ```
 
-The calculation code was extracted from a larger research workspace. Numerical modules are kept traceable through [source mapping](provenance/source-map.json); import-path changes and any small extraction adaptations are recorded. The original workspace's bulk calendars, downloaded pages, PDFs, HTTP headers, and internal work records are outside this public export.
+The calculation code was extracted from a larger research workspace. Numerical modules are kept traceable through [source mapping](provenance/source-map.json); import-path changes and any small extraction adaptations are recorded. Later additive code, including the own-ray integral, is tracked separately in Git and described in [provenance](provenance/README.md). The original workspace's bulk calendars, downloaded pages, PDFs, HTTP headers, and internal work records are outside this public export.
 
 ## Help us close the remaining gaps
 

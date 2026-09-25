@@ -1,0 +1,869 @@
+{
+  "evidenceType": "own-Python-radial-quadrature-values-not-institutional-observations",
+  "cases": [
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636459824625097
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636459824625097
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.1637329490755022
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111359433473953
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440512527943824
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152365145890604e-06
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": -0.44365469968079846
+      },
+      "refractionDegrees": 0.6710303586837336
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636698525482235
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16373602452597477
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111358600312462
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844051173853227
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152366362871455e-06
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": -0.48684555941747915
+      },
+      "refractionDegrees": 0.6831120761601898
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.563674965486065
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16373666927081862
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611135856557416
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844051157788822
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152366536308066e-06
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": -0.5438343365380137
+      },
+      "refractionDegrees": 0.6995601000295593
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636825883319458
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.1637376219982167
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111358352981876
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.00284405113434358
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.81523667428732e-06
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": -1.0150920501978131
+      },
+      "refractionDegrees": 0.8614573104835981
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637943361067173
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.1637506354171494
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611135576422413
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844050863155577
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152364273820045e-06
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": -1.2431881361997963
+      },
+      "refractionDegrees": 0.9603678386049348
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5638934203029491
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16376106651178143
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111354032154447
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844050663301781
+    },
+    {
+      "input": {
+        "latitude": 22,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152356313283997e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636963894136036
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5636963894136036
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16373536420533386
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111364890385133
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440517516558116
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815236998758128e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": -0.44365469968079846
+      },
+      "refractionDegrees": 0.6711037629911893
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637202500745125
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16373843845195585
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.0161113640574585
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440516727458454
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152371215238116e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": -0.48684555941747915
+      },
+      "refractionDegrees": 0.6831883086638569
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637253610334013
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16373908294643927
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611136402282634
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440516566891347
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815237139089355e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": -0.5438343365380137
+      },
+      "refractionDegrees": 0.6996402595861955
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637329809530863
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16374003530504522
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111363810337325
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440516332545727
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152371600701507e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": -1.0150920501978131
+      },
+      "refractionDegrees": 0.861580738924315
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.563844688541182
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.1637530438199634
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611136122256548
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440513621863263
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152369173288014e-06
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": -1.2431881361997963
+      },
+      "refractionDegrees": 0.9605217122844683
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5639437402545692
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16376347114142853
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111359491178017
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440511624154455
+    },
+    {
+      "input": {
+        "latitude": 24,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815236124317877e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637780518189445
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5637780518189445
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.163739275964454
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111373728277947
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440525596008875
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 0,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152377828910607e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": -0.44365469968079846
+      },
+      "refractionDegrees": 0.6712226888623339
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5638018972183411
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16374234826176062
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111372895735148
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440524807422734
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 191,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815237907384452e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": -0.48684555941747915
+      },
+      "refractionDegrees": 0.683311817350132
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5638070049726788
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16374299235071688
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111372861258702
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844052464693606
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 230,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815237925304924e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": -0.5438343365380137
+      },
+      "refractionDegrees": 0.6997701317389159
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5638146201540912
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16374394411223187
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611137264891254
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844052441274422
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 287,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815237946809357e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": -1.0150920501978131
+      },
+      "refractionDegrees": 0.8617807290327327
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.5639262626674254
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16375694468682858
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.01611137006278315
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.002844052170412131
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1000,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.815237710822055e-06
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": -1.2431881361997963
+      },
+      "refractionDegrees": 0.9607710435613728
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 0
+      },
+      "refractionDegrees": 0.564025261778965
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 5
+      },
+      "refractionDegrees": 0.16376736589861032
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 45
+      },
+      "refractionDegrees": 0.016111368332460275
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 80
+      },
+      "refractionDegrees": 0.0028440519707663837
+    },
+    {
+      "input": {
+        "latitude": 27,
+        "elevationMeters": 1500,
+        "observedAltitudeDegrees": 89.99
+      },
+      "refractionDegrees": 2.8152369227396928e-06
+    }
+  ]
+}

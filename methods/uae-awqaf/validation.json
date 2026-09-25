@@ -5,7 +5,7 @@
   "official": false,
   "productionReady": false,
   "scope": "An experimental UAE city-region calculation using archived vendor location metadata and primary Awqaf/SZGMC calendars. Vendor column interpretation is not confirmed production configuration.",
-  "publicDefault": "strict V2 standard-atmosphere recipe; V3 excluded",
+  "publicDefault": "strict V2 standard atmosphere; opt-in own-ray JavaScript refraction; historical native/PAL V3 excluded",
   "publicExampleInput": {
     "date": "2026-06-21",
     "latitude": 24.45,
@@ -75,6 +75,33 @@
         "On these same later sources V2 had791exact/1049within1/max2."
       ],
       "evidenceIdentifier": "research/uae/v3-diagnostics/holdout-report.json"
+    },
+    {
+      "id": "own-ray-exposed-replay",
+      "recipe": "Additive own standard-dry spherical ray integral; V2 non-horizon events unchanged",
+      "exposure": "All four cohorts already exposed; earlier holdouts are development data for this new candidate",
+      "scope": "Abu Dhabi, Al Ain and Zayed; 1,614 unique city-days in four nonoverlapping cohorts",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 9684,
+      "comparedSlots": 9684,
+      "uncomparedSlots": 0,
+      "exactCount": 7239,
+      "withinOneMinuteCount": 9684,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 74.7522,
+      "nonExactRatePercent": 25.2478,
+      "withinOneMinutePercent": 100,
+      "overOneMinuteRatePercent": 0,
+      "denominator": "All 9,684 finite displayed-minute pairs; no exclusions",
+      "dateInterpretation": "Displayed source minutes on stated UAE local dates; signed UTC deltas checked",
+      "caveats": [
+        "No new original calendars or geography; no fresh validation claim.",
+        "Compared with V2: 883 corrected, 484 regressed, 398 two-minute differences removed.",
+        "2,445 one-minute differences remain; official point, atmosphere and horizon configuration unconfirmed.",
+        "This replay overlaps both historical studies above: do not sum studies."
+      ],
+      "evidenceIdentifier": "research/uae-own-refraction-2026-09-25/calendar-report.json",
+      "publicAggregate": "research/own-ray-2026-09-25.json"
     }
   ],
   "implementationProvenance": [
@@ -83,6 +110,13 @@
       "module": "methods/uae-awqaf/implementation/api.mjs",
       "export": "calculateCandidateStrict",
       "sourceIdentifier": "research/uae/v2/api.mjs"
+    },
+    {
+      "variant": "own-ray",
+      "module": "methods/uae-awqaf/implementation/own-ray/candidate.mjs",
+      "export": "calculateOwnRayCandidate",
+      "sourceIdentifier": "research/uae-own-refraction-2026-09-25/candidate.mjs",
+      "lineage": "Additive original code; Git history and own-ray study, not part of frozen extraction source map"
     }
   ],
   "historicalEvidence": [
@@ -129,7 +163,7 @@
     "A later V3 native Starlink PAL GPL study is excluded from this public executable. Its better result must never be attributed to V2."
   ],
   "publicationNotes": [
-    "Only V2 is executable in this public package. V3 would require a deliberate separate GPL/native distribution and build review. Original vendor assets and calendar PDFs are not relicensed by this repository."
+    "V2 and the additive own-ray JavaScript candidate are executable. Historical V3 native/PAL runtime remains excluded. Original vendor assets and calendars are not relicensed."
   ],
   "primaryAndSoftwareSources": [
     {

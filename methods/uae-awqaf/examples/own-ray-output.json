@@ -1,0 +1,134 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "own-ray",
+    "date": "2026-06-21",
+    "latitude": 24.45,
+    "longitude": 54.38,
+    "elevationMeters": 230,
+    "cityWidthKm": 35,
+    "pressureMillibars": 1010,
+    "temperatureCelsius": 10,
+    "timeZone": "Asia/Dubai"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "profile": "uae-own-dry-ray-candidate",
+    "official": false,
+    "appReady": false,
+    "timeZone": "Asia/Dubai",
+    "recipe": {
+      "angle": 18,
+      "asrOffsetMinutes": 0,
+      "dhuhrOffsetMinutes": 2,
+      "asrRefraction": "noon-and-event",
+      "atmosphere": "standard",
+      "geometry": "width-and-height",
+      "horizonRefraction": "own-standard-dry-ray",
+      "observedRay": "upper-limb-at-negative-geometric-dip"
+    },
+    "times": {
+      "fajr": "04:05",
+      "sunrise": "05:30",
+      "dhuhr": "12:26",
+      "asr": "15:45",
+      "maghrib": "19:17",
+      "isha": "20:43"
+    },
+    "events": {
+      "fajr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "04:05",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T00:05:00.000Z",
+        "unroundedUtc": "2026-06-21T00:04:37.965Z",
+        "calculationLongitude": 54.72577026716346,
+        "eligibleForAutomaticNotifications": false
+      },
+      "sunrise": {
+        "status": "unconfirmed-reconstruction",
+        "time": "05:30",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T01:30:00.000Z",
+        "unroundedUtc": "2026-06-21T01:30:19.291Z",
+        "calculationLongitude": 54.72577026716346,
+        "eligibleForAutomaticNotifications": false
+      },
+      "dhuhr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "12:26",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T08:26:00.000Z",
+        "unroundedUtc": "2026-06-21T08:26:16.445Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "asr": {
+        "status": "unconfirmed-reconstruction",
+        "time": "15:45",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T11:45:00.000Z",
+        "unroundedUtc": "2026-06-21T11:44:35.862Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "maghrib": {
+        "status": "unconfirmed-reconstruction",
+        "time": "19:17",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T15:17:00.000Z",
+        "unroundedUtc": "2026-06-21T15:16:50.601Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      },
+      "isha": {
+        "status": "unconfirmed-reconstruction",
+        "time": "20:43",
+        "date": "2026-06-21",
+        "utc": "2026-06-21T16:43:00.000Z",
+        "unroundedUtc": "2026-06-21T16:42:31.926Z",
+        "calculationLongitude": 54.38,
+        "eligibleForAutomaticNotifications": false
+      }
+    },
+    "diagnostics": {
+      "eastLongitude": 54.72577026716346,
+      "westLongitude": 54.38,
+      "dipDegrees": 0.48684555941747915,
+      "atmosphereScale": 1,
+      "horizonAltitude": -1.4367183832103179,
+      "noonAltitude": 88.98551956715508,
+      "noonApparentAltitude": 88.98551956715508,
+      "asrApparentAltitude": 44.497171802713325,
+      "asrGeometricAltitude": 44.48075821873857
+    },
+    "qualityFlags": [
+      "independent-reconstruction",
+      "vendor-column-schema-inferred",
+      "dry-standard-atmosphere-assumed",
+      "official-production-configuration-unconfirmed",
+      "geometric-versus-refracted-terrestrial-horizon-unresolved",
+      "research-only"
+    ],
+    "version": "0.4.0-research",
+    "refraction": {
+      "method": "own-spherical-dry-ray-integral",
+      "pressureMillibars": 1010,
+      "temperatureKelvin": 283.15,
+      "wavelengthMicrometers": 0.55,
+      "lapseRate": 0.0065,
+      "observedUpperLimbAltitudeDegrees": -0.48684555941747915,
+      "refractionDegrees": 0.683206157126172,
+      "maximumInvariantErrorMeters": 1.862645149230957e-9
+    },
+    "unusedInputFields": [
+      "pressureMillibars",
+      "temperatureCelsius"
+    ]
+  }
+}

@@ -1,4 +1,4 @@
-# UAE Awqaf / SZGMC — own V2 regional reconstruction
+# UAE Awqaf / SZGMC — regional reconstructions
 
 An experimental UAE city-region calculation using archived vendor location metadata and primary Awqaf/SZGMC calendars. Vendor column interpretation is not confirmed production configuration.
 
@@ -27,9 +27,9 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 }
 ```
 
-The uniform entry is [`calculate(options)`](index.mjs). **Default:** strict V2 standard-atmosphere recipe; V3 excluded.
+The uniform entry is [`calculate(options)`](index.mjs). **Default:** strict V2 standard-atmosphere recipe. The opt-in `own-ray` variant adds our own near-horizon refraction integral; the separate native/PAL V3 runtime remains excluded.
 
-Public options carry date plus the explicit point metadata. The wrapper calls the strict selected V2 entry, not the more general diagnostic model.
+Public options carry date plus the explicit point metadata. The wrapper selects V2 or the additive own-ray experiment, not the more general diagnostic model.
 
 ### Runnable implementations
 
@@ -37,7 +37,8 @@ The underlying signatures remain method-specific. These links point to the code 
 
 | Variant | Module / export |
 |---|---|
-| `v2` | [`calculateCandidateStrict`](implementation/api.mjs) |
+| `v2` (default) | [`calculateCandidateStrict`](implementation/api.mjs) |
+| `own-ray` (opt-in) | [`calculateOwnRayCandidate`](implementation/own-ray/candidate.mjs) |
 
 ### Inputs and boundaries
 
@@ -45,7 +46,15 @@ The underlying signatures remain method-specific. These links point to the code 
 
 A supported input range is a mathematical contract, not a statement that every location/year in it has been institutionally validated. Check event status, reason and date as well as the clock.
 
-## How the calculation works
+## New own-ray experiment
+
+The [own-ray implementation and study](OWN-RAY.md) improve exact agreement from **6,840 to 7,239 of 9,684** already exposed comparison fields and remove all **398** two-minute differences. All remaining differences in that sample are one minute. It corrects 883 values and regresses 484 previously exact values; this is not fresh institutional validation. It changes sunrise and Maghrib only, requires no API, PAL, native executable or reference calendars, and preserves the default V2 calculation.
+
+```sh
+node scripts/run.mjs uae-awqaf --input methods/uae-awqaf/examples/own-ray-input.json
+```
+
+## How the default V2 calculation works
 
 For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.
 
@@ -98,12 +107,12 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 Source websites and institution names are cited for attribution, not affiliation. Public access does not automatically allow redistribution. The repository license covers only material identified by its license notices.
 
-- Only V2 is executable in this public package. V3 would require a deliberate separate GPL/native distribution and build review. Original vendor assets and calendar PDFs are not relicensed by this repository.
+- V2 and the own-ray JavaScript experiment are executable in this public package. The historical V3 native/PAL runtime is not included. Original vendor assets and calendar PDFs are not relicensed by this repository.
 
 ## Useful contributions
 
 - Can the publisher confirm current region west/east points, height and city extent?
 - What exact apparent-altitude/refraction convention and atmosphere are used for each event?
-- Can a permitted independent implementation be compared with the stated Accurate Times configuration?
+- Can new independent calendars and confirmed settings test the own-ray experiment beyond its exposed three-region sample?
 
 For a proposed numerical change, document the primary rule or bounded hypothesis, preserve the previous results, freeze the recipe and full forecasts before reading new references, and report every planned date, missing value and regression. Keep coordinate/height provenance independent of timing residuals. Do not promote a city-specific fit to a universal method.

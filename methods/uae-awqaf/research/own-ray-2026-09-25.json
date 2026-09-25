@@ -1,0 +1,828 @@
+{
+  "createdAt": "2026-09-25T12:17:27.318Z",
+  "scope": "Retrospective comparison on all four exposed, nonoverlapping cohorts; no new institutional validation",
+  "uniqueCityDays": 1614,
+  "total": {
+    "own": {
+      "count": 9684,
+      "exact": 7239,
+      "withinOne": 9684,
+      "maxAbsoluteMinutes": 1,
+      "meanAbsoluteMinutes": 0.25247831474597277,
+      "histogram": {
+        "0": 7239,
+        "1": 1933,
+        "-1": 512
+      }
+    },
+    "v2": {
+      "count": 9684,
+      "exact": 6840,
+      "withinOne": 9286,
+      "maxAbsoluteMinutes": 2,
+      "meanAbsoluteMinutes": 0.3347790169351508,
+      "histogram": {
+        "0": 6840,
+        "1": 1566,
+        "2": 398,
+        "-1": 880
+      }
+    },
+    "pal": {
+      "count": 9684,
+      "exact": 7239,
+      "withinOne": 9684,
+      "maxAbsoluteMinutes": 1,
+      "meanAbsoluteMinutes": 0.25247831474597277,
+      "histogram": {
+        "0": 7239,
+        "1": 1933,
+        "-1": 512
+      }
+    },
+    "correctedFromV2": 883,
+    "regressedFromV2": 484,
+    "minuteChangesFromPal": 0,
+    "maximumRawChangeFromPalSeconds": 0.001143310546875
+  },
+  "bySet": {
+    "szgmc-1445": {
+      "own": {
+        "count": 6372,
+        "exact": 4760,
+        "withinOne": 6372,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.2529817953546767,
+        "histogram": {
+          "0": 4760,
+          "1": 1265,
+          "-1": 347
+        }
+      },
+      "v2": {
+        "count": 6372,
+        "exact": 4492,
+        "withinOne": 6120,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.33458882611424984,
+        "histogram": {
+          "0": 4492,
+          "1": 1045,
+          "2": 252,
+          "-1": 583
+        }
+      },
+      "pal": {
+        "count": 6372,
+        "exact": 4760,
+        "withinOne": 6372,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.2529817953546767,
+        "histogram": {
+          "0": 4760,
+          "1": 1265,
+          "-1": 347
+        }
+      },
+      "correctedFromV2": 583,
+      "regressedFromV2": 315,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001143310546875
+    },
+    "awqaf-jan2027-jul2026": {
+      "own": {
+        "count": 1116,
+        "exact": 832,
+        "withinOne": 1116,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.25448028673835127,
+        "histogram": {
+          "0": 832,
+          "1": 221,
+          "-1": 63
+        }
+      },
+      "v2": {
+        "count": 1116,
+        "exact": 779,
+        "withinOne": 1063,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.34946236559139787,
+        "histogram": {
+          "0": 779,
+          "1": 176,
+          "2": 53,
+          "-1": 108
+        }
+      },
+      "pal": {
+        "count": 1116,
+        "exact": 832,
+        "withinOne": 1116,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.25448028673835127,
+        "histogram": {
+          "0": 832,
+          "1": 221,
+          "-1": 63
+        }
+      },
+      "correctedFromV2": 104,
+      "regressedFromV2": 51,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001140625
+    },
+    "former-v2-holdout": {
+      "own": {
+        "count": 1098,
+        "exact": 822,
+        "withinOne": 1098,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.25136612021857924,
+        "histogram": {
+          "0": 822,
+          "1": 220,
+          "-1": 56
+        }
+      },
+      "v2": {
+        "count": 1098,
+        "exact": 778,
+        "withinOne": 1054,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.331511839708561,
+        "histogram": {
+          "0": 778,
+          "1": 172,
+          "2": 44,
+          "-1": 104
+        }
+      },
+      "pal": {
+        "count": 1098,
+        "exact": 822,
+        "withinOne": 1098,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.25136612021857924,
+        "histogram": {
+          "0": 822,
+          "1": 220,
+          "-1": 56
+        }
+      },
+      "correctedFromV2": 99,
+      "regressedFromV2": 55,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001105712890625
+    },
+    "former-v3-holdout": {
+      "own": {
+        "count": 1098,
+        "exact": 825,
+        "withinOne": 1098,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.24863387978142076,
+        "histogram": {
+          "0": 825,
+          "1": 227,
+          "-1": 46
+        }
+      },
+      "v2": {
+        "count": 1098,
+        "exact": 791,
+        "withinOne": 1049,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.3242258652094718,
+        "histogram": {
+          "0": 791,
+          "1": 173,
+          "2": 49,
+          "-1": 85
+        }
+      },
+      "pal": {
+        "count": 1098,
+        "exact": 825,
+        "withinOne": 1098,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.24863387978142076,
+        "histogram": {
+          "0": 825,
+          "1": 227,
+          "-1": 46
+        }
+      },
+      "correctedFromV2": 97,
+      "regressedFromV2": 63,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001127197265625
+    }
+  },
+  "byCity": {
+    "al-ain": {
+      "own": {
+        "count": 3228,
+        "exact": 2213,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.3144361833952912,
+        "histogram": {
+          "0": 2213,
+          "1": 771,
+          "-1": 244
+        }
+      },
+      "v2": {
+        "count": 3228,
+        "exact": 1956,
+        "withinOne": 2958,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.47769516728624534,
+        "histogram": {
+          "0": 1956,
+          "1": 519,
+          "2": 270,
+          "-1": 483
+        }
+      },
+      "pal": {
+        "count": 3228,
+        "exact": 2213,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.3144361833952912,
+        "histogram": {
+          "0": 2213,
+          "1": 771,
+          "-1": 244
+        }
+      },
+      "correctedFromV2": 327,
+      "regressedFromV2": 70,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001143310546875
+    },
+    "zayed-city": {
+      "own": {
+        "count": 3228,
+        "exact": 2147,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.33488228004956627,
+        "histogram": {
+          "0": 2147,
+          "1": 1010,
+          "-1": 71
+        }
+      },
+      "v2": {
+        "count": 3228,
+        "exact": 1942,
+        "withinOne": 3100,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.43804213135068154,
+        "histogram": {
+          "0": 1942,
+          "1": 921,
+          "2": 128,
+          "-1": 237
+        }
+      },
+      "pal": {
+        "count": 3228,
+        "exact": 2147,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.33488228004956627,
+        "histogram": {
+          "0": 2147,
+          "1": 1010,
+          "-1": 71
+        }
+      },
+      "correctedFromV2": 301,
+      "regressedFromV2": 96,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.00114013671875
+    },
+    "abu-dhabi": {
+      "own": {
+        "count": 3228,
+        "exact": 2879,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.10811648079306072,
+        "histogram": {
+          "0": 2879,
+          "1": 152,
+          "-1": 197
+        }
+      },
+      "v2": {
+        "count": 3228,
+        "exact": 2942,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.0885997521685254,
+        "histogram": {
+          "0": 2942,
+          "1": 126,
+          "-1": 160
+        }
+      },
+      "pal": {
+        "count": 3228,
+        "exact": 2879,
+        "withinOne": 3228,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.10811648079306072,
+        "histogram": {
+          "0": 2879,
+          "1": 152,
+          "-1": 197
+        }
+      },
+      "correctedFromV2": 255,
+      "regressedFromV2": 318,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001140625
+    }
+  },
+  "byEvent": {
+    "fajr": {
+      "own": {
+        "count": 1614,
+        "exact": 846,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.4758364312267658,
+        "histogram": {
+          "0": 846,
+          "1": 764,
+          "-1": 4
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 846,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.4758364312267658,
+        "histogram": {
+          "0": 846,
+          "1": 764,
+          "-1": 4
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 846,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.4758364312267658,
+        "histogram": {
+          "0": 846,
+          "1": 764,
+          "-1": 4
+        }
+      },
+      "correctedFromV2": 0,
+      "regressedFromV2": 0,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.000998779296875
+    },
+    "sunrise": {
+      "own": {
+        "count": 1614,
+        "exact": 592,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.6332094175960347,
+        "histogram": {
+          "0": 592,
+          "1": 853,
+          "-1": 169
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 415,
+        "withinOne": 1216,
+        "maxAbsoluteMinutes": 2,
+        "meanAbsoluteMinutes": 0.9894671623296158,
+        "histogram": {
+          "0": 415,
+          "1": 801,
+          "2": 398
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 592,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.6332094175960347,
+        "histogram": {
+          "0": 592,
+          "1": 853,
+          "-1": 169
+        }
+      },
+      "correctedFromV2": 346,
+      "regressedFromV2": 169,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.001143310546875
+    },
+    "dhuhr": {
+      "own": {
+        "count": 1614,
+        "exact": 1530,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.05204460966542751,
+        "histogram": {
+          "0": 1530,
+          "1": 1,
+          "-1": 83
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 1530,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.05204460966542751,
+        "histogram": {
+          "0": 1530,
+          "1": 1,
+          "-1": 83
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 1530,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.05204460966542751,
+        "histogram": {
+          "0": 1530,
+          "1": 1,
+          "-1": 83
+        }
+      },
+      "correctedFromV2": 0,
+      "regressedFromV2": 0,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0
+    },
+    "asr": {
+      "own": {
+        "count": 1614,
+        "exact": 1463,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.09355638166047088,
+        "histogram": {
+          "0": 1463,
+          "-1": 151
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 1463,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.09355638166047088,
+        "histogram": {
+          "0": 1463,
+          "-1": 151
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 1463,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.09355638166047088,
+        "histogram": {
+          "0": 1463,
+          "-1": 151
+        }
+      },
+      "correctedFromV2": 0,
+      "regressedFromV2": 0,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0
+    },
+    "maghrib": {
+      "own": {
+        "count": 1614,
+        "exact": 1299,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.19516728624535315,
+        "histogram": {
+          "0": 1299,
+          "1": 315
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 1077,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.33271375464684017,
+        "histogram": {
+          "0": 1077,
+          "-1": 537
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 1299,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.19516728624535315,
+        "histogram": {
+          "0": 1299,
+          "1": 315
+        }
+      },
+      "correctedFromV2": 537,
+      "regressedFromV2": 315,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0.000861572265625
+    },
+    "isha": {
+      "own": {
+        "count": 1614,
+        "exact": 1509,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.06505576208178439,
+        "histogram": {
+          "0": 1509,
+          "-1": 105
+        }
+      },
+      "v2": {
+        "count": 1614,
+        "exact": 1509,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.06505576208178439,
+        "histogram": {
+          "0": 1509,
+          "-1": 105
+        }
+      },
+      "pal": {
+        "count": 1614,
+        "exact": 1509,
+        "withinOne": 1614,
+        "maxAbsoluteMinutes": 1,
+        "meanAbsoluteMinutes": 0.06505576208178439,
+        "histogram": {
+          "0": 1509,
+          "-1": 105
+        }
+      },
+      "correctedFromV2": 0,
+      "regressedFromV2": 0,
+      "minuteChangesFromPal": 0,
+      "maximumRawChangeFromPalSeconds": 0
+    }
+  },
+  "schemaVersion": 1,
+  "newOriginalCalendars": false,
+  "runtimeRequiresPAL": false,
+  "runtimeRequiresNetwork": false,
+  "benchmark": {
+    "createdAt": "2026-09-25T12:15:51.591Z",
+    "comparison": "Numerical black-box PAL benchmark, not institutional accuracy",
+    "count": 108,
+    "maximumDifferenceArcseconds": 0.0032954793490080903,
+    "maximumRefinementArcseconds": 2.536339938075116e-06,
+    "sourceHashes": {
+      "PLAN.md": "29dc38101baf0e2d097b4f2aca483a83fd3de7b770686d2faf9684ebca27c218",
+      "refraction.mjs": "15f2eae379c86c6a27d5737ae5d9c9b25643ce9722fb8d16bca0f3797c5d1761"
+    }
+  },
+  "alternateRadialVerification": {
+    "implementation": "Separate Python radial-coordinate integral with adaptive quadrature; same declared dry atmosphere",
+    "cases": 108,
+    "maximumDifferenceArcseconds": 2.7044097961059776e-06
+  },
+  "followup": {
+    "scope": "One fixed known-data follow-up, no new reference acquisition",
+    "total": {
+      "count": 9684,
+      "before": {
+        "exact": 7239,
+        "withinOne": 9684,
+        "maxAbsoluteMinutes": 1
+      },
+      "after": {
+        "exact": 7251,
+        "withinOne": 9684,
+        "maxAbsoluteMinutes": 1
+      },
+      "corrected": 26,
+      "regressed": 14
+    },
+    "groups": [
+      {
+        "city": "al-ain",
+        "event": "sunrise",
+        "count": 538,
+        "before": {
+          "exact": 88,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 84,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 0,
+        "regressed": 4
+      },
+      {
+        "city": "al-ain",
+        "event": "maghrib",
+        "count": 538,
+        "before": {
+          "exact": 468,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 473,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 6,
+        "regressed": 1
+      },
+      {
+        "city": "zayed-city",
+        "event": "sunrise",
+        "count": 538,
+        "before": {
+          "exact": 135,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 130,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 0,
+        "regressed": 5
+      },
+      {
+        "city": "zayed-city",
+        "event": "maghrib",
+        "count": 538,
+        "before": {
+          "exact": 442,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 449,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 9,
+        "regressed": 2
+      },
+      {
+        "city": "abu-dhabi",
+        "event": "sunrise",
+        "count": 538,
+        "before": {
+          "exact": 369,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 376,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 8,
+        "regressed": 1
+      },
+      {
+        "city": "abu-dhabi",
+        "event": "maghrib",
+        "count": 538,
+        "before": {
+          "exact": 389,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "after": {
+          "exact": 391,
+          "withinOne": 538,
+          "maxAbsoluteMinutes": 1
+        },
+        "corrected": 3,
+        "regressed": 1
+      }
+    ],
+    "gates": {
+      "allWithinOne": true,
+      "moreExact": true,
+      "noCityEventExactLoss": false
+    },
+    "promoted": false
+  },
+  "evidence": [
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/PLAN.md",
+      "sha256": "29dc38101baf0e2d097b4f2aca483a83fd3de7b770686d2faf9684ebca27c218",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/refraction.mjs",
+      "sha256": "15f2eae379c86c6a27d5737ae5d9c9b25643ce9722fb8d16bca0f3797c5d1761",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/candidate.mjs",
+      "sha256": "0b1a65c33639fe2e6bc67f2cffb909d4b3a11ee4cab5dbe944a6b9f3ed634f70",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/calendar-report.json",
+      "sha256": "0852edc4338f02443640dd697c554cd1d3b53e384770fa9e2caa9b4a3e9d1385",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/benchmark.json",
+      "sha256": "8749254f947cea4f90d693b6ea2fa0fec57800876c6d17d37ddc09452b566a9b",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/radial-check.json",
+      "sha256": "c5a3c9cad26e8fe6bc22776d3ccb76e5929d3e2240c63d1275d7ed55947a8d27",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/FOLLOWUP.md",
+      "sha256": "6347f223331175ee38a8ad3362089902bd2ece33990437e5b5802ed1938d6fc0",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/followup-report.json",
+      "sha256": "7bcaa2ba4d00e65483da1eb8b11af97b6133ee60b404f1b97a11f1fde6a61584",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/review/check.json",
+      "sha256": "92b4c34f979d8839a3ec03e245fa013af320d85746aac520c495559a99122495",
+      "bundled": false
+    },
+    {
+      "identifier": "research/uae-own-refraction-2026-09-25/export-parity.json",
+      "sha256": "247a21932531ec7ad34139433f1075952999479937191a0eec5ddd70afcd219d",
+      "bundled": false
+    }
+  ],
+  "independentReview": {
+    "status": "pass",
+    "scope": "Independent read-only implementation review; existing data, no fresh calendar or external implementation source",
+    "boundaryRays": 108,
+    "maximumRefinementArcseconds": 2.6949377729401647e-06,
+    "maximumInvariantErrorMeters": 1.862645149230957e-09,
+    "pointDays": 80,
+    "checkedEvents": 480,
+    "weatherExtremes": 4,
+    "cacheEvictionPoints": 70,
+    "invalidRayProbes": 26,
+    "calendarRecount": {
+      "count": 9684,
+      "ownExact": 7239,
+      "v2Exact": 6840,
+      "ownWithinOne": 9684,
+      "v2WithinOne": 9286,
+      "corrected": 883,
+      "regressed": 484,
+      "palMinuteChanges": 0,
+      "maxOwn": 1,
+      "maxV2": 2
+    },
+    "uniqueCityDays": 1614
+  },
+  "exportParity": {
+    "status": "pass",
+    "uniqueCityDays": 1614,
+    "eventFields": 9684,
+    "scope": "Complete event, diagnostic and refraction parity of original/private and exported own-ray candidate on all exposed city-days; public recipe and quality metadata are intentionally enriched."
+  }
+}

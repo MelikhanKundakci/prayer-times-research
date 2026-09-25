@@ -121,6 +121,11 @@
       "id": "turkiye-takvimi/istanbul",
       "projectedFields": 33,
       "sha256": "a4522a725b98a54028025ea88773c1bb2a3456ce9bdbae8d336d9cfa955e4491"
+    },
+    {
+      "id": "uae-awqaf/own-ray",
+      "projectedFields": 31,
+      "sha256": "394afca01b628bb77bcca3a548d1ebfa436e96f100adf6806154155f45680185"
     }
   ]
 }

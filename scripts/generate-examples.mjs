@@ -23,6 +23,13 @@ write('methods/fcna/examples/roseville-output.json', {
   input: rosevilleInput,
   output: (await loadMethod('fcna')).calculate(rosevilleInput),
 });
+const rayInput = JSON.parse(fs.readFileSync(new URL('methods/uae-awqaf/examples/own-ray-input.json', root), 'utf8'));
+write('methods/uae-awqaf/examples/own-ray-output.json', {
+  evidenceType: 'generated-model-example-not-institutional-reference',
+  runtime: {node: process.versions.node, icu: process.versions.icu, tz: process.versions.tz},
+  input: rayInput,
+  output: (await loadMethod('uae-awqaf')).calculate(rayInput),
+});
 const cases = JSON.parse(fs.readFileSync(new URL('tests/cases.json', root), 'utf8')).cases;
 const snapshots = [];
 for (const item of cases) {
