@@ -6,7 +6,7 @@ This answers a narrower question than finding the best match: does *any* fixed c
 
 ## Data and assumptions
 
-All **28 previously exposed northern city-years** contribute their full 365 Dhuhr observations: **10,220 source minutes**, with no missing noon cells. Nine cities have both years, supplying **6,570** of those observations. Every source minute uses its independently resolved actual IANA timezone. No new calendars were acquired, and neither conditional Isha dates nor `00:00` interpretations enter this analysis. The Hobart source calendar and comparison were kept unread throughout this study.
+All **28 previously exposed northern city-years** contribute their full 365 Dhuhr observations: **10,220 source minutes**, with no missing noon cells. Nine cities have both years, supplying **6,570** of those observations. Every source minute uses its independently resolved actual IANA timezone. No new calendars were acquired, and neither conditional Isha dates nor `00:00` interpretations enter this analysis. The Hobart source calendar and comparison were kept unread throughout this northern stage; the separate subsequent transfer is described below.
 
 The declared model is the existing USNO equation of time sampled at UTC00, transit plus five minutes, and nearest-minute rounding. For the supplied city proxies and their ±0.25° longitude boxes, all dates retain the same UTC00 carrier and local civil date. The necessary longitude bounds all lie inside those boxes. Conclusions are conditional on that carrier contract; they do not search for alternative date policies.
 
@@ -63,4 +63,21 @@ For reproducibility, at each latitude `φ`, intersect every event's longitude in
 
 A separate Python implementation recomputed all 10,220 noon constraints, checked 30,660 source date/clock conversions, and reproduced all six single-year/two-year latitude-cover certificates. The largest noon-bound discrepancy was below 3×10⁻¹¹ seconds. Another agent independently reviewed the interval endpoints, derivative bound, clamp checks and inference limits. Private source rows are not redistributed; code and evidence hashes are included in the aggregate JSON. The working scripts and original inputs remain private, so the public artifact supports inspection and reimplementation rather than replay of the archived calendars. The existing [offline diagnostic](diagnostics/README.md) accepts independently supplied observations.
 
-This is retrospective evidence about a declared reconstruction, not a blind test, an institutional rule, or worldwide validation. No calculation, default, timestamp or notification eligibility changed.
+This northern stage is retrospective evidence about a declared reconstruction, not a blind test, an institutional rule, or worldwide validation. No calculation, default, timestamp or notification eligibility changed.
+
+## Separate southern and dateline transfer
+
+After the northern analysis was committed, a separate plan fixed the same Dhuhr inequality before this analyst opened the [Hobart 2027](https://namazvakitleri.diyanet.gov.tr/tr-TR/11420/hobart-icin-namaz-vakti) and [Apia 2027](https://namazvakitleri.diyanet.gov.tr/tr-TR/16182/apia-namaz-vakitleri) source calendars. Another researcher had already acquired them using forecasts frozen before source access. This is **analyst-blind transfer of the diagnostic on existing holdouts**, not a claim that this feasibility plan preceded their acquisition. Hobart's forecast freeze was 15:13:31 UTC and Apia's 15:19:31 UTC on 25 September 2026; the separate transfer plan was fixed at 15:26:37 UTC. No source request or mathematical variant was added here.
+
+Both independent location proxies and their ±0.25° longitude boxes were retained. All **730 Dhuhr source cells** were resolved in actual IANA timezones, without missing or zero markers. Replaying the hash-pinned southern model reproduced all **4,380 frozen six-event output fields** exactly before constructing the noon constraints. The parent forecast files contain rounded fields; raw transit and calculation-carrier information were recreated from that unchanged code, not recovered from source residuals.
+
+| Case and timezone | Original independent proxy | Verified noon carrier | Exact noon longitude region | Constraint gap |
+|---|---|---|---|---:|
+| Hobart 2027, `Australia/Hobart` | `−42.89°, 147.33°` | Row date `D`, all 365 days | Empty | 0.069772 s |
+| Apia 2027, `Pacific/Apia` | `−13.8300994551°, −171.7678648027°` | UTC date `D−1`, all 365 days | Empty | 41.129925 s |
+
+Hobart's active bounds require longitude `>147.284619272°` on 28 February and `≤147.284328556°` on 31 October. Apia requires `>−171.687095438°` on 18 September and `≤−171.858470124°` on 6 January. These conflicts occur inside the declared longitude boxes. Longitude cannot resolve them under the unchanged solar sampling and rounding rules, regardless of latitude. In Apia, the previous UTC-day carrier is verified across the whole box and preserves the actual civil date; replacing it after seeing the source would be a different candidate requiring a separate study.
+
+The original proxies' noon residuals remain visible: Hobart has 301 exact and 64 one-minute-early cells; Apia has 281 exact, 33 one-minute-early and 51 one-minute-late cells. Every noon residual is within one minute. The larger Apia constraint gap is still not a 41-second observed source timestamp error: the originals supply whole minutes, and the gap measures failure of a common longitude to satisfy those rounding cells.
+
+The northern two-dimensional horizon certificate was **not extended to southern latitudes**. Noon inconsistency is already a necessary-condition exclusion of full-coordinate exactness within the verified carrier domain; no southern latitude was fitted or certified. Independent Python source-clock resolution, UTC-carrier enumeration and interval calculation reproduced all 730 constraints, with maximum numerical disagreement below 3×10⁻¹¹ seconds. An independent agent also reviewed the carrier, half-open bounds and necessary-condition inference. The [separate aggregate evidence](research/feasible-coordinates-transfer-2026-09-25.json) preserves full bounds, input hashes, date witnesses and scope. Original forecasts, northern results and all calculator defaults remain unchanged.

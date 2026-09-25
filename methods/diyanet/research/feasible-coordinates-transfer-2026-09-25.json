@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "scope": "Unchanged Dhuhr constraint transfer, no best fit or new formula. Analyst-blind transfer on already acquired parent holdouts; not a new pre-acquisition feasibility experiment.",
+  "calculationChanged": false,
+  "notificationRelease": false,
+  "sourceAcquisition": false,
+  "createdAt": "2026-09-25T15:29:03.517Z",
+  "runtime": {
+    "node": "v26.7.0",
+    "tzdb": "2026d"
+  },
+  "cases": [
+    {
+      "name": "hobart",
+      "input": {
+        "year": 2027,
+        "latitude": -42.89,
+        "longitude": 147.33,
+        "timeZone": "Australia/Hobart"
+      },
+      "independentPointRole": "Bureau of Meteorology Hobart (Ellerslie Road) station 094029, rounded public coordinate; independent city proxy, not verified Diyanet production point or horizon.",
+      "sourceUrl": "https://namazvakitleri.diyanet.gov.tr/tr-TR/11420/hobart-icin-namaz-vakti",
+      "parentForecastFrozenAtUtc": "2026-09-25T15:13:31.379Z",
+      "transferPlanCreatedAt": "2026-09-25T15:26:37.150276+00:00",
+      "sourceExposure": "Sources and parent comparison already existed when this transfer plan was fixed; they were unread to this analyst until after the plan. Parent forecasts were separately frozen before parent source acquisition.",
+      "sourceAndModelPins": {
+        "research/diyanet-hobart-2027-2026-09-25/freeze.json": "c0ea9bad3a1250034f7e98ce2c3728e1c9bb708000ea861ea507b7fee06f76db",
+        "research/diyanet-hobart-2027-2026-09-25/forecast.json": "d9eb0f94d8c6900c143dc649cc16d2f1c69562000f83895d9e0208afba158c64",
+        "research/diyanet-hobart-2027-2026-09-25/reference.json": "cddac37a2055e288e33c74ce08bd52be24a59f301eacb1ee17e71534865f2835",
+        "research/diyanet-hobart-2027-2026-09-25/hobart-page.html": "6a12c675d81cb597d6466a273e7dd7e7d82c3dbfaa12ae5e22adddad29dc71c7",
+        "research/diyanet-hobart-2027-2026-09-25/report.json": "9998298d64a4862360759b3ab6386943af7981939261f04bf169c424e33cf5ec",
+        "public/prayer-times-research/methods/diyanet/implementation/south/model.mjs": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797",
+        "public/prayer-times-research/methods/diyanet/implementation/south/candidate.mjs": "158ca0a75cc6d39dc67f600a7085418d2c9709b18b202807f74a5e8452294d7c"
+      },
+      "counts": {
+        "expectedNoon": 365,
+        "comparedNoon": 365,
+        "missingNoon": 0,
+        "fullForecastCellsVerified": 2190
+      },
+      "priorProxyNoonResidualMinutes": {
+        "0": 301,
+        "-1": 64
+      },
+      "interval": {
+        "lowerExclusive": 147.28461927228292,
+        "upperInclusive": 147.2843285563707,
+        "signedWidthSeconds": -0.06977181893489615,
+        "contradictionGapSeconds": 0.06977181893489615,
+        "lowerWitness": "2027-02-28",
+        "upperWitness": "2027-10-31",
+        "longitudeBox": [
+          147.08,
+          147.58
+        ],
+        "boxIntersection": {
+          "lower": 147.28461927228292,
+          "lowerClosed": false,
+          "upperInclusive": 147.2843285563707,
+          "exactExists": false
+        },
+        "status": "empty-under-model"
+      },
+      "checks": {
+        "carrierDayShiftCounts": {
+          "0": 365
+        },
+        "carrierFixedAcrossLongitudeBox": true,
+        "unchangedNorthernAnchorAgrees": true,
+        "maximumReconstructedRawDifferenceSeconds": 1.214648364111781e-07,
+        "rawReplay": "Parent forecast omits raw/carrier fields. Recreated with hash-pinned original model; all frozen rounded fields verified before constraint calculation."
+      },
+      "fullCoordinateFeasibility": "Not tested: latitude box lies outside the existing northern 44.5<=latitude<60 horizon certificate. Noon emptiness is a necessary-condition exclusion; noon feasibility does not establish a full coordinate pair."
+    },
+    {
+      "name": "apia",
+      "input": {
+        "year": 2027,
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "independentPointRole": "Government of Samoa Ministry of Finance headquarters in central Apia; city proxy, not Diyanet production point.",
+      "sourceUrl": "https://namazvakitleri.diyanet.gov.tr/tr-TR/16182/apia-namaz-vakitleri",
+      "parentForecastFrozenAtUtc": "2026-09-25T15:19:31.016Z",
+      "transferPlanCreatedAt": "2026-09-25T15:26:37.150276+00:00",
+      "sourceExposure": "Sources and parent comparison already existed when this transfer plan was fixed; they were unread to this analyst until after the plan. Parent forecasts were separately frozen before parent source acquisition.",
+      "sourceAndModelPins": {
+        "research/diyanet-apia-2027-2026-09-25/freeze.json": "3b758fd3f473ab322236fab26befa3df84e7435436e275f0f0f7c429851d07e3",
+        "research/diyanet-apia-2027-2026-09-25/forecast.json": "ef78e2a7b3092e883e6ae464d35e4996afc48803244191cdc99c3f4ad7cd6927",
+        "research/diyanet-apia-2027-2026-09-25/reference.json": "e564ac2cc4a0299668a2b263f4f07f8aa0577218f3ad88507e0502a5d2c5ecac",
+        "research/diyanet-apia-2027-2026-09-25/apia-page.html": "fdfb67d2b74385608afc6f8ae10562a99e074e0033d56f62e2b7eccefc7ab59e",
+        "research/diyanet-apia-2027-2026-09-25/report.json": "80ab08265dc78be48c878540334b4b00e3b526842687b41944b3d5507ea44345",
+        "public/prayer-times-research/methods/diyanet/implementation/south/model.mjs": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797",
+        "public/prayer-times-research/methods/diyanet/implementation/south/candidate.mjs": "158ca0a75cc6d39dc67f600a7085418d2c9709b18b202807f74a5e8452294d7c"
+      },
+      "counts": {
+        "expectedNoon": 365,
+        "comparedNoon": 365,
+        "missingNoon": 0,
+        "fullForecastCellsVerified": 2190
+      },
+      "priorProxyNoonResidualMinutes": {
+        "0": 281,
+        "1": 51,
+        "-1": 33
+      },
+      "interval": {
+        "lowerExclusive": -171.68709543843525,
+        "upperInclusive": -171.85847012440334,
+        "signedWidthSeconds": -41.1299246323415,
+        "contradictionGapSeconds": 41.1299246323415,
+        "lowerWitness": "2027-09-18",
+        "upperWitness": "2027-01-06",
+        "longitudeBox": [
+          -172.01786480270255,
+          -171.51786480270255
+        ],
+        "boxIntersection": {
+          "lower": -171.68709543843525,
+          "lowerClosed": false,
+          "upperInclusive": -171.85847012440334,
+          "exactExists": false
+        },
+        "status": "empty-under-model"
+      },
+      "checks": {
+        "carrierDayShiftCounts": {
+          "-1": 365
+        },
+        "carrierFixedAcrossLongitudeBox": true,
+        "unchangedNorthernAnchorAgrees": true,
+        "maximumReconstructedRawDifferenceSeconds": 1.2206146493554115e-07,
+        "rawReplay": "Parent forecast omits raw/carrier fields. Recreated with hash-pinned original model; all frozen rounded fields verified before constraint calculation."
+      },
+      "fullCoordinateFeasibility": "Not tested: latitude box lies outside the existing northern 44.5<=latitude<60 horizon certificate. Noon emptiness is a necessary-condition exclusion; noon feasibility does not establish a full coordinate pair."
+    }
+  ],
+  "verification": {
+    "createdAt": "2026-09-25T15:30:13.541806+00:00",
+    "status": "pass",
+    "authorship": "Same author, separate Python equations and zoneinfo source-clock/carrier enumeration",
+    "reportSha256": "1ea671c923c3e96b1d90fd96aaeecea166bda40a658b5606cb55c9175d5a5080",
+    "verificationCodeSha256": "e3888e762d47289a9d3f36469e1f3eb4e09f8d3b25a4798616c11a52330f5d4e",
+    "checks": [
+      {
+        "city": "hobart",
+        "noonCells": 365,
+        "gapSeconds": 0.06977181892125373,
+        "maximumBoundDifferenceSeconds": 2.7284841053187847e-11,
+        "independentlyResolvedSourceClocks": 365,
+        "validCarrierEnumeratedUniquelyEveryDay": true,
+        "proxyNoonResidualMinutes": {
+          "0": 301,
+          "-1": 64
+        }
+      },
+      {
+        "city": "apia",
+        "noonCells": 365,
+        "gapSeconds": 41.12992463232786,
+        "maximumBoundDifferenceSeconds": 2.7284841053187847e-11,
+        "independentlyResolvedSourceClocks": 365,
+        "validCarrierEnumeratedUniquelyEveryDay": true,
+        "proxyNoonResidualMinutes": {
+          "0": 281,
+          "-1": 33,
+          "1": 51
+        }
+      }
+    ]
+  },
+  "privateProvenance": {
+    "research/diyanet-feasible-points-2026-09-25/transfer/plan.json": "312499b304b837231c1d8a550d52bc97da90e5371588edc0af61c8bf84f9a3bd",
+    "research/diyanet-feasible-points-2026-09-25/transfer/plan-pin.json": "87a6b4b8e5194da3bf207edc5260cc383a0bef99dd7258876e2a6c0372227140",
+    "research/diyanet-feasible-points-2026-09-25/transfer/analyze.mjs": "9fbbaab836399951403806b85e6efbe99c31d559a99670a89d18ff0bdf0b8a03",
+    "research/diyanet-feasible-points-2026-09-25/transfer/report.json": "1ea671c923c3e96b1d90fd96aaeecea166bda40a658b5606cb55c9175d5a5080",
+    "research/diyanet-feasible-points-2026-09-25/transfer/verify.py": "e3888e762d47289a9d3f36469e1f3eb4e09f8d3b25a4798616c11a52330f5d4e",
+    "research/diyanet-feasible-points-2026-09-25/transfer/verification.json": "6f091c6385f6e6b693b7ebac7f494103ddba205fe5bc3165b55bd9f79983d05c",
+    "research/diyanet-feasible-points-2026-09-25/transfer/review/autumn-review.json": "8be328de93154f66be3cab1a1194e39736ced34c06cffee5a511b4a449d0a04b"
+  },
+  "independentMathematicalReview": {
+    "reviewer": "diyanet_autumn_v2",
+    "status": "PASS",
+    "scope": "Read-only algebra/carrier/box/necessary-condition review, no source acquisition or numerical rerun"
+  }
+}
