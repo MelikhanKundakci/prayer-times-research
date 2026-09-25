@@ -55,6 +55,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 - At northern latitude ≥55°, the model uses a seventh of the night computed from the same calendar row’s sunrise and sunset; this is not silently mirrored to the southern hemisphere.
 - Seasonal safe bounds may replace the angle event. Polar missing events, nonpositive shadow geometry and Asr-before-adjusted-Dhuhr are explicit quality issues, not certified prayer starts.
 - Use current timezone data. The historically tested Node/ICU stack was pinned to tzdb 2026d; mathematical year support is not a guarantee against later timezone-law changes.
+- Two archived source calendars display Sydney 2027 and Wellington 2028 DST offsets one civil date before the legal transition. The model follows the IANA zone rules; see [the boundary investigation](DST-SOURCE-DISCREPANCIES.md). This is unresolved publisher-output behavior, not a reason to shift local prayer events.
 
 ## Historical validation
 
