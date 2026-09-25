@@ -2,6 +2,8 @@
 
 **A single timezone-display hypothesis explains the twelve New York hour-scale discrepancies, but fails transfer to Sydney and Auckland. It is rejected as a general correction.** The published `arc-publisher-compatibility` calculator and the physical `own` default remain unchanged, including their existing primary accuracy figures.
 
+A subsequent [UTC-date display diagnostic](UTC-DATE-DISPLAY.md) samples a different instant, 00:00 UTC of the row date. It fits all eleven known annuals without losses, but remains an unconfirmed label convention and does not resolve notification event dates. It does not change this failed local-midnight result.
+
 ## What was tested
 
 The compatibility calculator formats each rounded UTC instant with the actual IANA offset at that instant. This diagnostic instead kept every raw calculation and UTC instant unchanged and displayed it using the offset at midnight starting the requested calendar row date:

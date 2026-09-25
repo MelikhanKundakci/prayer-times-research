@@ -42,6 +42,8 @@ All twelve larger differences fall on 14 March and 7 November 2032 in New York, 
 
 A later [row-date offset diagnostic](DST-DIAGNOSTIC.md) explains the New York pattern but introduces 24 new hour-scale errors in Sydney and Auckland. It was rejected as a general correction; this calculator and the primary figures above are unchanged.
 
+A separate [UTC-date display hypothesis](UTC-DATE-DISPLAY.md) then explained all 36 known hour-scale differences across eleven annuals without regressions. This retrospective label-only result is not a confirmed publisher rule or notification-time correction; the runtime and primary figures remain unchanged.
+
 ## Exposed development evidence and rejected alternatives
 
 On the eight previously known annuals, the unchanged compatibility recipe has **14,525 / 17,178 exact**, compared with **9,140 / 17,176** for the own-USNO profile. There are 17,532 planned fields: the own solver has 352 both-missing and four availability mismatches; compatibility has 354 both-missing and none. Missing pairs are not hits. Across commonly available pairs, 5,881 improve to exact and 497 regress. Twenty-four 59–61-minute DST disagreements remain in primary compatibility statistics. All other comparable fields are within one minute. These old calendars are development data, not fresh validation for this export.

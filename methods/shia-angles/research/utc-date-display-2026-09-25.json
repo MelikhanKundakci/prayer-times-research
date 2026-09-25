@@ -1,0 +1,1544 @@
+{
+  "schemaVersion": 1,
+  "studyDate": "2026-09-25",
+  "status": "observationally-consistent-unconfirmed-display-hypothesis",
+  "runtimeModelsChanged": false,
+  "notificationEligible": false,
+  "institutionConfirmed": false,
+  "scope": "One retrospective 00:00 UTC date-carrier offset display hypothesis over eleven already exposed annuals; absolute UTC/raw calculations unchanged. No new institutional requests.",
+  "candidate": {
+    "formula": "display label = unchanged model UTC instant + IANA offset at Gregorian row-date 00:00 UTC",
+    "offsetSamplingTimeSourceConfirmed": false,
+    "physicalTimezoneCorrection": false,
+    "sourceEventDatesConfirmed": false,
+    "fittedRegionalExceptions": false,
+    "alternativeSamplingHourSearch": false
+  },
+  "chronology": {
+    "frozenAtUtc": "2026-09-25T14:18:45.877564+00:00",
+    "evaluatedAtUtc": "2026-09-25T14:18:46.591Z",
+    "referencesExposedBeforePlan": true,
+    "prospectiveValidation": false
+  },
+  "runtime": {
+    "node": "26.7.0",
+    "tz": "2026d",
+    "icu": "78.3"
+  },
+  "originalThreeCalendarReplay": {
+    "total": {
+      "baseline": {
+        "planned": 6576,
+        "compared": 6576,
+        "bothMissing": 0,
+        "availabilityMismatch": 0,
+        "exact": 5458,
+        "withinOne": 6564,
+        "max": 60,
+        "signedHistogram": {
+          "0": 5458,
+          "1": 498,
+          "60": 6,
+          "-60": 5,
+          "-59": 1,
+          "-1": 608
+        }
+      },
+      "candidate": {
+        "planned": 6576,
+        "compared": 6576,
+        "bothMissing": 0,
+        "availabilityMismatch": 0,
+        "exact": 5469,
+        "withinOne": 6576,
+        "max": 1,
+        "signedHistogram": {
+          "0": 5469,
+          "1": 499,
+          "-1": 608
+        }
+      },
+      "paired": 6576,
+      "correctedToExact": 11,
+      "regressedFromExact": 0,
+      "absoluteClockErrorImproved": 12,
+      "absoluteClockErrorWorsened": 0,
+      "changedClock": 12,
+      "changedDateLabel": 1
+    },
+    "notificationAudit": {
+      "sourceMarkersAvailable": 6576,
+      "sourceClockOnModelAssignedDate": {
+        "modelDateAvailable": 6576,
+        "unique": 6576,
+        "gap": 0,
+        "fold": 0,
+        "conditionalExact": 5458,
+        "conditionalWithinOne": 6551,
+        "conditionalMaxAbsoluteMinutes": 1439,
+        "candidateAndBaselineInstantsIdentical": true,
+        "sourceEventDateConfirmed": false
+      },
+      "literalRowDate": {
+        "unique": 6576,
+        "gap": 0,
+        "fold": 0
+      },
+      "modelDatesDifferentFromSourceRow": 376,
+      "byEventModelDatesDifferent": {
+        "fajr": 0,
+        "sunrise": 0,
+        "dhuhr": 0,
+        "sunset": 0,
+        "maghrib": 0,
+        "midnight": 376
+      }
+    },
+    "byCase": {
+      "new-york-2032": {
+        "baseline": {
+          "planned": 2196,
+          "compared": 2196,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1792,
+          "withinOne": 2184,
+          "max": 60,
+          "signedHistogram": {
+            "0": 1792,
+            "1": 179,
+            "60": 6,
+            "-60": 5,
+            "-59": 1,
+            "-1": 213
+          }
+        },
+        "candidate": {
+          "planned": 2196,
+          "compared": 2196,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1803,
+          "withinOne": 2196,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1803,
+            "1": 180,
+            "-1": 213
+          }
+        },
+        "paired": 2196,
+        "correctedToExact": 11,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 12,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 12,
+        "changedDateLabel": 1,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2196,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2196,
+            "unique": 2196,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1792,
+            "conditionalWithinOne": 2181,
+            "conditionalMaxAbsoluteMinutes": 1439,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2196,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 137,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 137
+          }
+        }
+      },
+      "cape-town-2033": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1842,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1842,
+            "1": 150,
+            "-1": 198
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1842,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1842,
+            "1": 150,
+            "-1": 198
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1842,
+            "conditionalWithinOne": 2180,
+            "conditionalMaxAbsoluteMinutes": 1439,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 239,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 239
+          }
+        }
+      },
+      "kathmandu-2034": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1824,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1824,
+            "1": 169,
+            "-1": 197
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1824,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1824,
+            "1": 169,
+            "-1": 197
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1824,
+            "conditionalWithinOne": 2190,
+            "conditionalMaxAbsoluteMinutes": 1,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 0,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 0
+          }
+        }
+      }
+    },
+    "byEvent": {
+      "fajr": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 895,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 895,
+            "1": 95,
+            "60": 1,
+            "-60": 1,
+            "-1": 104
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 897,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 897,
+            "1": 95,
+            "-1": 104
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 0
+      },
+      "sunrise": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 919,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 919,
+            "1": 70,
+            "60": 1,
+            "-60": 1,
+            "-1": 105
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 921,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 921,
+            "1": 70,
+            "-1": 105
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 0
+      },
+      "dhuhr": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1072,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 1072,
+            "1": 10,
+            "60": 1,
+            "-60": 1,
+            "-1": 12
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1074,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1074,
+            "1": 10,
+            "-1": 12
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 0
+      },
+      "sunset": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 914,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 914,
+            "1": 93,
+            "60": 1,
+            "-60": 1,
+            "-1": 87
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 916,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 916,
+            "1": 93,
+            "-1": 87
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 0
+      },
+      "maghrib": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 897,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 897,
+            "1": 78,
+            "60": 1,
+            "-60": 1,
+            "-1": 119
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 899,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 899,
+            "1": 78,
+            "-1": 119
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 0
+      },
+      "midnight": {
+        "baseline": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 761,
+          "withinOne": 1094,
+          "max": 60,
+          "signedHistogram": {
+            "0": 761,
+            "1": 152,
+            "60": 1,
+            "-59": 1,
+            "-1": 181
+          }
+        },
+        "candidate": {
+          "planned": 1096,
+          "compared": 1096,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 762,
+          "withinOne": 1096,
+          "max": 1,
+          "signedHistogram": {
+            "0": 762,
+            "1": 153,
+            "-1": 181
+          }
+        },
+        "paired": 1096,
+        "correctedToExact": 1,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 2,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 2,
+        "changedDateLabel": 1
+      }
+    }
+  },
+  "olderDevelopmentTransfer": {
+    "total": {
+      "baseline": {
+        "planned": 17532,
+        "compared": 17178,
+        "bothMissing": 354,
+        "availabilityMismatch": 0,
+        "exact": 14525,
+        "withinOne": 17154,
+        "max": 61,
+        "signedHistogram": {
+          "0": 14525,
+          "1": 1203,
+          "60": 9,
+          "61": 3,
+          "-60": 11,
+          "-59": 1,
+          "-1": 1426
+        }
+      },
+      "candidate": {
+        "planned": 17532,
+        "compared": 17178,
+        "bothMissing": 354,
+        "availabilityMismatch": 0,
+        "exact": 14545,
+        "withinOne": 17178,
+        "max": 1,
+        "signedHistogram": {
+          "0": 14545,
+          "1": 1207,
+          "-1": 1426
+        }
+      },
+      "paired": 17178,
+      "correctedToExact": 20,
+      "regressedFromExact": 0,
+      "absoluteClockErrorImproved": 24,
+      "absoluteClockErrorWorsened": 0,
+      "changedClock": 24,
+      "changedDateLabel": 1
+    },
+    "notificationAudit": {
+      "sourceMarkersAvailable": 17178,
+      "sourceClockOnModelAssignedDate": {
+        "modelDateAvailable": 17178,
+        "unique": 17178,
+        "gap": 0,
+        "fold": 0,
+        "conditionalExact": 14525,
+        "conditionalWithinOne": 17149,
+        "conditionalMaxAbsoluteMinutes": 1439,
+        "candidateAndBaselineInstantsIdentical": true,
+        "sourceEventDateConfirmed": false
+      },
+      "literalRowDate": {
+        "unique": 17178,
+        "gap": 0,
+        "fold": 0
+      },
+      "modelDatesDifferentFromSourceRow": 420,
+      "byEventModelDatesDifferent": {
+        "fajr": 0,
+        "sunrise": 0,
+        "dhuhr": 0,
+        "sunset": 0,
+        "maghrib": 0,
+        "midnight": 420
+      }
+    },
+    "byCase": {
+      "Tehran-2027": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1875,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1875,
+            "1": 117,
+            "-1": 198
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1875,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1875,
+            "1": 117,
+            "-1": 198
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1875,
+            "conditionalWithinOne": 2190,
+            "conditionalMaxAbsoluteMinutes": 1,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 0,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 0
+          }
+        }
+      },
+      "Najaf-2027": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1870,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1870,
+            "1": 136,
+            "-1": 184
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1870,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1870,
+            "1": 136,
+            "-1": 184
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1870,
+            "conditionalWithinOne": 2190,
+            "conditionalMaxAbsoluteMinutes": 1,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 0,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 0
+          }
+        }
+      },
+      "London-2028": {
+        "baseline": {
+          "planned": 2196,
+          "compared": 2078,
+          "bothMissing": 118,
+          "availabilityMismatch": 0,
+          "exact": 1762,
+          "withinOne": 2066,
+          "max": 61,
+          "signedHistogram": {
+            "0": 1762,
+            "1": 159,
+            "60": 4,
+            "61": 2,
+            "-60": 6,
+            "-1": 145
+          }
+        },
+        "candidate": {
+          "planned": 2196,
+          "compared": 2078,
+          "bothMissing": 118,
+          "availabilityMismatch": 0,
+          "exact": 1772,
+          "withinOne": 2078,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1772,
+            "1": 161,
+            "-1": 145
+          }
+        },
+        "paired": 2078,
+        "correctedToExact": 10,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 12,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 12,
+        "changedDateLabel": 1,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2078,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2078,
+            "unique": 2078,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1762,
+            "conditionalWithinOne": 2066,
+            "conditionalMaxAbsoluteMinutes": 1379,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2078,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 16,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 16
+          }
+        }
+      },
+      "Lahore-2026": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1855,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1855,
+            "1": 156,
+            "-1": 179
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1855,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1855,
+            "1": 156,
+            "-1": 179
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1855,
+            "conditionalWithinOne": 2190,
+            "conditionalMaxAbsoluteMinutes": 1,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 0,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 0
+          }
+        }
+      },
+      "Sydney-2028": {
+        "baseline": {
+          "planned": 2196,
+          "compared": 2196,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1905,
+          "withinOne": 2196,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1905,
+            "1": 124,
+            "-1": 167
+          }
+        },
+        "candidate": {
+          "planned": 2196,
+          "compared": 2196,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1905,
+          "withinOne": 2196,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1905,
+            "1": 124,
+            "-1": 167
+          }
+        },
+        "paired": 2196,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2196,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2196,
+            "unique": 2196,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1905,
+            "conditionalWithinOne": 2195,
+            "conditionalMaxAbsoluteMinutes": 1439,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2196,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 116,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 116
+          }
+        }
+      },
+      "Stockholm-2029": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 1954,
+          "bothMissing": 236,
+          "availabilityMismatch": 0,
+          "exact": 1607,
+          "withinOne": 1942,
+          "max": 61,
+          "signedHistogram": {
+            "0": 1607,
+            "1": 159,
+            "60": 5,
+            "61": 1,
+            "-60": 5,
+            "-59": 1,
+            "-1": 176
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 1954,
+          "bothMissing": 236,
+          "availabilityMismatch": 0,
+          "exact": 1617,
+          "withinOne": 1954,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1617,
+            "1": 161,
+            "-1": 176
+          }
+        },
+        "paired": 1954,
+        "correctedToExact": 10,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 12,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 12,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 1954,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 1954,
+            "unique": 1954,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1607,
+            "conditionalWithinOne": 1942,
+            "conditionalMaxAbsoluteMinutes": 61,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 1954,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 0,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 0
+          }
+        }
+      },
+      "Auckland-2030": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1815,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1815,
+            "1": 94,
+            "-1": 281
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1815,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1815,
+            "1": 94,
+            "-1": 281
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1815,
+            "conditionalWithinOne": 2190,
+            "conditionalMaxAbsoluteMinutes": 1,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 190,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 190
+          }
+        }
+      },
+      "Kiritimati-2031": {
+        "baseline": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1836,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1836,
+            "1": 258,
+            "-1": 96
+          }
+        },
+        "candidate": {
+          "planned": 2190,
+          "compared": 2190,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 1836,
+          "withinOne": 2190,
+          "max": 1,
+          "signedHistogram": {
+            "0": 1836,
+            "1": 258,
+            "-1": 96
+          }
+        },
+        "paired": 2190,
+        "correctedToExact": 0,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 0,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 0,
+        "changedDateLabel": 0,
+        "notificationAudit": {
+          "sourceMarkersAvailable": 2190,
+          "sourceClockOnModelAssignedDate": {
+            "modelDateAvailable": 2190,
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0,
+            "conditionalExact": 1836,
+            "conditionalWithinOne": 2186,
+            "conditionalMaxAbsoluteMinutes": 1439,
+            "candidateAndBaselineInstantsIdentical": true,
+            "sourceEventDateConfirmed": false
+          },
+          "literalRowDate": {
+            "unique": 2190,
+            "gap": 0,
+            "fold": 0
+          },
+          "modelDatesDifferentFromSourceRow": 98,
+          "byEventModelDatesDifferent": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "sunset": 0,
+            "maghrib": 0,
+            "midnight": 98
+          }
+        }
+      }
+    },
+    "byEvent": {
+      "fajr": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2745,
+          "bothMissing": 177,
+          "availabilityMismatch": 0,
+          "exact": 2290,
+          "withinOne": 2741,
+          "max": 60,
+          "signedHistogram": {
+            "0": 2290,
+            "1": 133,
+            "60": 2,
+            "-60": 2,
+            "-1": 318
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2745,
+          "bothMissing": 177,
+          "availabilityMismatch": 0,
+          "exact": 2294,
+          "withinOne": 2745,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2294,
+            "1": 133,
+            "-1": 318
+          }
+        },
+        "paired": 2745,
+        "correctedToExact": 4,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 0
+      },
+      "sunrise": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2482,
+          "withinOne": 2918,
+          "max": 60,
+          "signedHistogram": {
+            "0": 2482,
+            "1": 243,
+            "60": 2,
+            "-60": 2,
+            "-1": 193
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2486,
+          "withinOne": 2922,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2486,
+            "1": 243,
+            "-1": 193
+          }
+        },
+        "paired": 2922,
+        "correctedToExact": 4,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 0
+      },
+      "dhuhr": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2877,
+          "withinOne": 2918,
+          "max": 60,
+          "signedHistogram": {
+            "0": 2877,
+            "1": 23,
+            "60": 2,
+            "-60": 2,
+            "-1": 18
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2881,
+          "withinOne": 2922,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2881,
+            "1": 23,
+            "-1": 18
+          }
+        },
+        "paired": 2922,
+        "correctedToExact": 4,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 0
+      },
+      "sunset": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2436,
+          "withinOne": 2918,
+          "max": 61,
+          "signedHistogram": {
+            "0": 2436,
+            "1": 251,
+            "60": 1,
+            "61": 1,
+            "-60": 2,
+            "-1": 231
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2439,
+          "withinOne": 2922,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2439,
+            "1": 252,
+            "-1": 231
+          }
+        },
+        "paired": 2922,
+        "correctedToExact": 3,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 0
+      },
+      "maghrib": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2418,
+          "withinOne": 2918,
+          "max": 61,
+          "signedHistogram": {
+            "0": 2418,
+            "1": 203,
+            "60": 1,
+            "61": 1,
+            "-60": 1,
+            "-59": 1,
+            "-1": 297
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2922,
+          "bothMissing": 0,
+          "availabilityMismatch": 0,
+          "exact": 2420,
+          "withinOne": 2922,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2420,
+            "1": 205,
+            "-1": 297
+          }
+        },
+        "paired": 2922,
+        "correctedToExact": 2,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 0
+      },
+      "midnight": {
+        "baseline": {
+          "planned": 2922,
+          "compared": 2745,
+          "bothMissing": 177,
+          "availabilityMismatch": 0,
+          "exact": 2022,
+          "withinOne": 2741,
+          "max": 61,
+          "signedHistogram": {
+            "0": 2022,
+            "1": 350,
+            "60": 1,
+            "61": 1,
+            "-60": 2,
+            "-1": 369
+          }
+        },
+        "candidate": {
+          "planned": 2922,
+          "compared": 2745,
+          "bothMissing": 177,
+          "availabilityMismatch": 0,
+          "exact": 2025,
+          "withinOne": 2745,
+          "max": 1,
+          "signedHistogram": {
+            "0": 2025,
+            "1": 351,
+            "-1": 369
+          }
+        },
+        "paired": 2745,
+        "correctedToExact": 3,
+        "regressedFromExact": 0,
+        "absoluteClockErrorImproved": 4,
+        "absoluteClockErrorWorsened": 0,
+        "changedClock": 4,
+        "changedDateLabel": 1
+      }
+    }
+  },
+  "combinedExistingCollection": {
+    "total": {
+      "baseline": {
+        "planned": 24108,
+        "compared": 23754,
+        "bothMissing": 354,
+        "availabilityMismatch": 0,
+        "exact": 19983,
+        "withinOne": 23718,
+        "max": 61,
+        "signedHistogram": {
+          "0": 19983,
+          "1": 1701,
+          "60": 15,
+          "61": 3,
+          "-60": 16,
+          "-59": 2,
+          "-1": 2034
+        }
+      },
+      "candidate": {
+        "planned": 24108,
+        "compared": 23754,
+        "bothMissing": 354,
+        "availabilityMismatch": 0,
+        "exact": 20014,
+        "withinOne": 23754,
+        "max": 1,
+        "signedHistogram": {
+          "0": 20014,
+          "1": 1706,
+          "-1": 2034
+        }
+      },
+      "paired": 23754,
+      "correctedToExact": 31,
+      "regressedFromExact": 0,
+      "absoluteClockErrorImproved": 36,
+      "absoluteClockErrorWorsened": 0,
+      "changedClock": 36,
+      "changedDateLabel": 2
+    },
+    "notificationAudit": {
+      "sourceMarkersAvailable": 23754,
+      "sourceClockOnModelAssignedDate": {
+        "modelDateAvailable": 23754,
+        "unique": 23754,
+        "gap": 0,
+        "fold": 0,
+        "conditionalExact": 19983,
+        "conditionalWithinOne": 23700,
+        "conditionalMaxAbsoluteMinutes": 1439,
+        "candidateAndBaselineInstantsIdentical": true,
+        "sourceEventDateConfirmed": false
+      },
+      "literalRowDate": {
+        "unique": 23754,
+        "gap": 0,
+        "fold": 0
+      },
+      "modelDatesDifferentFromSourceRow": 796,
+      "byEventModelDatesDifferent": {
+        "fajr": 0,
+        "sunrise": 0,
+        "dhuhr": 0,
+        "sunset": 0,
+        "maghrib": 0,
+        "midnight": 796
+      }
+    }
+  },
+  "clockComparison": "Five direct printed-clock differences and the unchanged circular midpoint comparison; missing pairs are not hits.",
+  "sourceContract": {
+    "annualRequestPassesGeographicIanaId": false,
+    "annualRequestPassesDisplayedDstTransitionTimestamps": false,
+    "perEventUtcTimestampProvided": false,
+    "perEventNumericOffsetProvided": false,
+    "perEventLocalDateProvided": false,
+    "perEventIanaZoneProvided": false,
+    "rowFields": [
+      "astronomicalMidnight",
+      "dhuhr",
+      "fajr",
+      "maghreb",
+      "midnight",
+      "prayerDate",
+      "sunrise",
+      "sunset"
+    ],
+    "rowsChecked": 4018,
+    "separateLocalDateTimeNow": "Response-wide metadata; not a per-event date/offset contract",
+    "scope": "Inspected archived frontend and eleven saved annual responses, not a guarantee of future publisher behavior"
+  },
+  "notificationDateAudit": {
+    "sourceClockConversion": "Conditional actual-IANA inversion on model-assigned local event date; dates are not source-confirmed",
+    "availableSourceMarkers": 23754,
+    "uniqueGivenAssumedDate": 23754,
+    "gapsInActualSample": 0,
+    "foldsInActualSample": 0,
+    "modelMidpointDatesFollowingRowDate": 796,
+    "conditionalDayScaleDisagreements": 20,
+    "additionalBeyondPreviouslyLargerClockResiduals": 18,
+    "overlapWithPreviouslyLargerClockResiduals": 2,
+    "maximumConditionalDifferenceMinutes": 1439,
+    "establishedSourceErrors": false,
+    "candidateChangesAnyUtcInstant": false,
+    "decision": "Do not infer event UTC correctness from circular clock agreement. Keep notifications disabled pending publisher-confirmed event-date/offset contract."
+  },
+  "verification": {
+    "status": "PASS",
+    "plannedFields": 24108,
+    "availableFields": 23754,
+    "cityDays": 4018,
+    "originalSevenMarkerFields": 28126,
+    "missingScoredMarkers": 354,
+    "summaryGroups": 26,
+    "freezePins": 25,
+    "chronologyVerified": true,
+    "independentZoneinfoRoundTripsVerified": true
+  },
+  "syntheticChecks": [
+    "DST gap",
+    "DST repeated hour",
+    "ordinary post-transition clock",
+    "skipped civil date",
+    "date line",
+    "fractional offset"
+  ],
+  "independentAstronomicalValidation": false,
+  "primaryReferences": [
+    {
+      "title": "IANA timezone theory",
+      "url": "https://data.iana.org/time-zones/theory.html"
+    },
+    {
+      "title": "RFC9557 section3.4",
+      "url": "https://www.rfc-editor.org/rfc/rfc9557.html#section-3.4"
+    },
+    {
+      "title": "ARC public interface (archived frontend inspected)",
+      "url": "https://arabic.nojumi.org/prayertimes",
+      "archivedPageSha256": "d53eadaee9eda18cfbbfe2537a9c1b7622e2b31d8304667cf9eab752c1d53781"
+    }
+  ],
+  "provenance": {
+    "privateArtifactsSha256": {
+      "PLAN.md": "bfcafe7ebd01431c045b65ab3aff2ccdc8114c713ca64ad2e8707f8af0313355",
+      "evaluate.mjs": "98dfddec826ee9835bea2d406473070c6876e6be6562269cb15e4dd8595ee732",
+      "freeze.json": "f282ddeaa71ad309b14f173055f04769a7376c315d3bbe83076ceb82cc298660",
+      "report.json": "42b2cce3ed6e734f939a1b96f0e732a9b7dea7c16f08fa78d372cb4f348be269",
+      "verify.py": "69eca85f4cf9794fd97b538633e7f731e9da83873c0582bd44ee31540d367c96",
+      "verification.json": "8c344ffd2032840cd376ccf92b5638464daa0594b1703de091fb9744247a8844",
+      "README.md": "33b2f18c0228fda5f4104b6cfa85fbb5928c4a836cb8869b144577ed44aaa9ee"
+    },
+    "sourceAnnualSha256": {
+      "Tehran-2027": "a06dda9b8d83793ed8cedeb8e52e214367b042bb3338c79a2944d20454186dfe",
+      "Najaf-2027": "9c108eedf79b2522ffacae4034cbeaf2841bc57e4b9c7ba83f72ce3d6ff6b5d4",
+      "London-2028": "3f66ac7e2eb5f3704324f6ee28cc189f3b41899d7f0e27034a9068cee9f28a1c",
+      "Lahore-2026": "ae0b3ae9947e19dc77bfa4f84dd9f1cb00d9fd537c2860b79b444e7c14f01e74",
+      "Sydney-2028": "b9d4c2fc7b4aad81e7e96daf1fdd4320405612e280f0107cd7587ccffc361ccd",
+      "Stockholm-2029": "85125d2af8acb1e25e10ba2a75332850b2168135cb800265c5b5dae04a4b7e9d",
+      "Auckland-2030": "ec6603a6b1097fc8c09a8f70c530d5349d84cf1fde9663372defdfceb8508ebb",
+      "Kiritimati-2031": "a9f24f6ed380f5e392094dad08a1acaefa032eaad2bcca57ab1a3bef9e0485fc",
+      "new-york-2032": "0e13498bad518b7bb88f9886f79a1a8c05d66f929153a9d77766cd4ceff0b3f1",
+      "cape-town-2033": "9a61068648fa948d7ecb1a3b21b54f555e7a9f62935976f509de6a6d18139959",
+      "kathmandu-2034": "287919c2c9debfa6e38335b8f950a14075aa612450eaf60459dfb87170a2a7ba"
+    },
+    "unchangedPublicCompatibilityModuleSha256": "5374f86a609575e2f75f194b01975c84a2811fc1af43917b25340f644cd73140"
+  },
+  "reproducibilityLimit": "Raw calendars/keys are not redistributed; aggregates and hashes do not recreate source accuracy. Future timezone law may change. This successful retrospective display mechanism does not identify source implementation or event dates."
+}
