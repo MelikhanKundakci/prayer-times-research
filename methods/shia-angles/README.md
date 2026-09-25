@@ -4,6 +4,8 @@ Four named parameter publications with separate provenance. Tehran, Leva, ARC, J
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [cross-method priority assessment](../../docs/ACCURACY-PRIORITIES.md#arc-separate-physical-calculation-from-publisher-compatibility) diagnoses the larger ARC residuals and reports a separate retrospective publisher-compatibility replay. That candidate is not part of this own-angle runtime and changes none of the profiles below.
+
 ## Run the selected example
 
 Run from the repository root:

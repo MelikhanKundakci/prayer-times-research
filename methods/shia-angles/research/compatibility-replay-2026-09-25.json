@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "status": "Retrospective replay of one existing unchanged ARC publisher-compatibility candidate; not a public own-profile improvement or official specification",
+  "createdAt": "2026-09-25T11:59:35.952Z",
+  "scope": "Already exposed Kiritimati 2031 calendar, six ARC markers (Fajr, sunrise, Dhuhr, sunset, Maghrib, midnight); not Asr/Isha, not all Shia conventions",
+  "originalCalendarNewlyAcquired": false,
+  "newHoldout": false,
+  "publicCalculatorChanged": false,
+  "compatibilityImplementationBundled": false,
+  "comparison": {
+    "own": {
+      "planned": 2190,
+      "comparable": 2190,
+      "sourceMissing": 0,
+      "modelMissing": 0,
+      "bothMissing": 0,
+      "availabilityMismatch": 0,
+      "exact": 1445,
+      "withinOne": 2169,
+      "max": 2,
+      "histogram": {
+        "0": 1445,
+        "1": 254,
+        "-1": 470,
+        "-2": 21
+      }
+    },
+    "compatibility": {
+      "planned": 2190,
+      "comparable": 2190,
+      "sourceMissing": 0,
+      "modelMissing": 0,
+      "bothMissing": 0,
+      "availabilityMismatch": 0,
+      "exact": 1836,
+      "withinOne": 2190,
+      "max": 1,
+      "histogram": {
+        "0": 1836,
+        "1": 258,
+        "-1": 96
+      }
+    },
+    "pairedComparable": 2190,
+    "correctedToExact": 446,
+    "regressedFromExact": 55,
+    "absoluteErrorImproved": 448,
+    "absoluteErrorWorsened": 55
+  },
+  "dateInterpretation": "Source local clock comparison; midnight clock comparison is circular and does not independently validate its event date",
+  "limitations": [
+    "Existing compatibility recipe models conjectured publisher Julian-date, Dhuhr and midnight conventions, not a newly verified institutional algorithm.",
+    "Improved calendar agreement is not proof of more accurate physical event times or religious approval.",
+    "446 formerly unequal cells become exact and 55 formerly exact cells become unequal; all 2,190 compatibility values are within one minute.",
+    "One known calendar cannot establish worldwide or multi-institution accuracy.",
+    "Original reference observations and the separate private compatibility implementation are not redistributed."
+  ],
+  "evidence": [
+    {
+      "identifier": "research/method-priority-2026-09-25/shia/report.json",
+      "sha256": "a363c89e751f1285d92ce7ec4693a805c8a7e36a68a18905324d6cc47af19cff",
+      "bytes": 7409794,
+      "bundled": false
+    }
+  ]
+}

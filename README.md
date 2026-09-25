@@ -13,7 +13,7 @@ This repository makes the research useful to contributors: readable calculation 
 - **Use a calculation:** choose a method below, read its input contract, and run its example.
 - **Understand the mathematics:** [calculation architecture](docs/ARCHITECTURE.md) and [astronomical conventions](docs/ASTRONOMY.md).
 - **Assess accuracy:** each method has a `validation.json` and a README explaining its denominators, limits, and source coverage. Read the [validation protocol](docs/VALIDATION.md) before comparing percentages.
-- **Help improve a method:** start with its open questions and the [contribution guide](CONTRIBUTING.md).
+- **Help improve a method:** start with the [largest remaining discrepancies and research priorities](docs/ACCURACY-PRIORITIES.md), its open questions and the [contribution guide](CONTRIBUTING.md).
 - **Understand the religious scope:** read [methods, institutions, and jurisprudence](docs/SCOPE.md).
 
 ## Quick start
