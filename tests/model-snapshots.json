@@ -126,6 +126,11 @@
       "id": "uae-awqaf/own-ray",
       "projectedFields": 31,
       "sha256": "394afca01b628bb77bcca3a548d1ebfa436e96f100adf6806154155f45680185"
+    },
+    {
+      "id": "shia-angles/arc-publisher-compatibility",
+      "projectedFields": 41,
+      "sha256": "bf7e53304f00576f413639e50b0cea9c6edb8ffb602906615a11be4ac1e558cb"
     }
   ]
 }

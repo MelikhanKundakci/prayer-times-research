@@ -30,6 +30,13 @@ write('methods/uae-awqaf/examples/own-ray-output.json', {
   input: rayInput,
   output: (await loadMethod('uae-awqaf')).calculate(rayInput),
 });
+const arcInput = JSON.parse(fs.readFileSync(new URL('methods/shia-angles/examples/arc-compatibility-input.json', root), 'utf8'));
+write('methods/shia-angles/examples/arc-compatibility-output.json', {
+  evidenceType: 'generated-model-example-not-institutional-reference',
+  runtime: {node: process.versions.node, icu: process.versions.icu, tz: process.versions.tz},
+  input: arcInput,
+  output: (await loadMethod('shia-angles')).calculate(arcInput),
+});
 const cases = JSON.parse(fs.readFileSync(new URL('tests/cases.json', root), 'utf8')).cases;
 const snapshots = [];
 for (const item of cases) {

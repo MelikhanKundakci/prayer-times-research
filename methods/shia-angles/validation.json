@@ -5,7 +5,7 @@
   "official": false,
   "productionReady": false,
   "scope": "Four named parameter publications with separate provenance. Tehran, Leva, ARC, Jafari and Sistani are not treated as interchangeable names, and none of these angle experiments represents all Shia jurisprudence.",
-  "publicDefault": "own geometry; profileId and engine remain explicit",
+  "publicDefault": "Own physical geometry; explicit profileId and engine. Separate opt-in arc-publisher-compatibility with different five-field contract.",
   "publicExampleInput": {
     "date": "2026-06-21",
     "latitude": 52.5,
@@ -96,6 +96,32 @@
         "A separate diagnostic excluding known source DST cells has maximum16minutes; the62-minute primary maximum remains reported."
       ],
       "evidenceIdentifier": "research/shia-own/development-summary.json"
+    },
+    {
+      "id": "arc-compatibility-fresh-three-annuals",
+      "recipe": "Frozen USNO publisher-compatibility experiment; inferred month rounding, +1 Dhuhr and same-row midnight",
+      "exposure": "Three original annual calendars acquired after public candidate/evaluator and all forecasts were frozen",
+      "scope": "New York 2032, Cape Town 2033 and Kathmandu 2034; 1,096 city-days",
+      "eventSet": "Fajr, sunrise, Dhuhr, sunset, Maghrib, midnight; no Asr/Isha",
+      "expectedSlots": 6576,
+      "comparedSlots": 6576,
+      "uncomparedSlots": 0,
+      "exactCount": 5458,
+      "withinOneMinuteCount": 6564,
+      "maxAbsoluteMinutes": 60,
+      "exactPercent": 82.9988,
+      "nonExactRatePercent": 17.0012,
+      "withinOneMinutePercent": 99.8175,
+      "overOneMinuteRatePercent": 0.1825,
+      "denominator": "All planned fields; no missing or excluded pairs",
+      "dateInterpretation": "Five direct clock differences; midnight circular clock only. Source event UTC dates are unverified.",
+      "caveats": [
+        "2,190 corrected to exact and 273 regressed relative to own-USNO on these same sources.",
+        "All twelve larger errors occur on New York DST transition dates and remain in primary metrics.",
+        "Same source institution; explicit assumed request coordinates, no physical observation or religious certification."
+      ],
+      "evidenceIdentifier": "research/arc-followup-2026-09-25/fresh-report.json",
+      "publicAggregate": "research/compatibility-export-2026-09-25.json"
     }
   ],
   "implementationProvenance": [
@@ -104,6 +130,13 @@
       "module": "methods/shia-angles/implementation/model.mjs",
       "export": "calculateDay",
       "sourceIdentifier": "research/shia-own/model.mjs"
+    },
+    {
+      "variant": "arc-publisher-compatibility",
+      "module": "methods/shia-angles/implementation/arc-compatibility/calculate.mjs",
+      "export": "calculateArcCompatibility",
+      "sourceIdentifier": "research/shia-v2/calculate.mjs",
+      "lineage": "Additive extraction of original frozen project code; math unchanged, import relocated, stricter interface and quality metadata added. Historical 23-entry source map unchanged; separate review and 2,922-day parity evidence."
     }
   ],
   "historicalEvidence": [

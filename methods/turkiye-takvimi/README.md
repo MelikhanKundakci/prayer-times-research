@@ -84,6 +84,8 @@ These are archived research comparisons, **not results of the public snapshot te
 
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 
+A later [shared-horizon feasibility diagnostic](COMMON-HORIZON.md) allows arbitrary daily common Temkin and arbitrary daily common sunrise/Maghrib horizon. Even this broader family is infeasible on at least **62/365** known days under nearest rounding (2 non-horizon failures plus 60 horizon exclusions). The result is conditional on the existing fixed point, NOAA geometry and uniform rounding; it identifies no replacement formula.
+
 ## Sources
 
 - [Primary calculation book](https://namazvakti.com/documents/tr.1.pdf)

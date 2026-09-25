@@ -4,7 +4,7 @@ Four named parameter publications with separate provenance. Tehran, Leva, ARC, J
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
-The [cross-method priority assessment](../../docs/ACCURACY-PRIORITIES.md#arc-separate-physical-calculation-from-publisher-compatibility) diagnoses the larger ARC residuals and reports a separate retrospective publisher-compatibility replay. That candidate is not part of this own-angle runtime and changes none of the profiles below.
+The [cross-method priority assessment](../../docs/ACCURACY-PRIORITIES.md#arc-separate-physical-calculation-from-publisher-compatibility) diagnoses the larger ARC residuals and reports a separate retrospective publisher-compatibility replay. The candidate is now available as an explicitly separate [ARC compatibility experiment](ARC-COMPATIBILITY.md), with three new annual comparisons; it changes none of the physical profiles below.
 
 ## Run the selected example
 
@@ -37,7 +37,10 @@ The underlying signatures remain method-specific. These links point to the code 
 
 | Variant | Module / export |
 |---|---|
-| `own` | [`calculateDay`](implementation/model.mjs) |
+| `own` (default) | [`calculateDay`](implementation/model.mjs) |
+| `arc-publisher-compatibility` (opt-in) | [`calculateArcCompatibility`](implementation/arc-compatibility/calculate.mjs) |
+
+The compatibility variant uses five fields (`date`, `latitude`, `longitude`, `timeZone`, `maghribAngle`) and a narrower ±60° latitude domain. It explicitly models unconfirmed publisher calendar/midpoint behavior and disables notifications. On three fresh annuals its exact agreement is **5,458/6,576**, with **6,564 within one minute** and twelve 59–60-minute discrepancies on New York DST dates. See the [full evidence, regressions and limitations](ARC-COMPATIBILITY.md).
 
 ### Inputs and boundaries
 

@@ -1,0 +1,98 @@
+{
+  "scope": "Retrospective common-horizon feasibility relaxation, no replacement clocks or parameter selection",
+  "planSha256": "43887b449ada22ead15df9789c8aee8984cd1337b45944fa88d800cf38fdd06e",
+  "scriptSha256": "10d4c763f0aa32ab29b655e387f586b24b49cb4a463915980ce511ef3cc8693c",
+  "baselineParityDays": 365,
+  "derivativeEnvelopes": {
+    "declinationDegreesPerSecond": 1e-05,
+    "equationHoursPerSecond": 2e-07,
+    "altitudeNumericalPaddingDegrees": 1e-07
+  },
+  "checks": {
+    "enclosureProbes": 35706,
+    "maximumObservedDeclinationRate": 4.577559881036031e-06,
+    "maximumObservedEquationRate": 9.567786644557041e-08
+  },
+  "byRule": {
+    "nearest": {
+      "days": 365,
+      "nonHorizonTemkinEmpty": 2,
+      "horizonBoundsDisjoint": 60,
+      "inconclusive": 303,
+      "maximumHorizonSeparationDegrees": 0.12130789020029406,
+      "minimumPositiveHorizonSeparationDegrees": 0.0001864996536678487,
+      "minimumTemkinSeconds": 633.562525390625,
+      "maximumTemkinSeconds": 722.0612377929688
+    },
+    "floor": {
+      "days": 365,
+      "nonHorizonTemkinEmpty": 267,
+      "horizonBoundsDisjoint": 87,
+      "inconclusive": 11,
+      "maximumHorizonSeparationDegrees": 0.303123662335716,
+      "minimumPositiveHorizonSeparationDegrees": 0.0049244342995050094,
+      "minimumTemkinSeconds": 651.922361328125,
+      "maximumTemkinSeconds": 710.2435751953125
+    },
+    "ceil": {
+      "days": 365,
+      "nonHorizonTemkinEmpty": 285,
+      "horizonBoundsDisjoint": 0,
+      "inconclusive": 80,
+      "maximumHorizonSeparationDegrees": 0,
+      "minimumPositiveHorizonSeparationDegrees": null,
+      "minimumTemkinSeconds": 646.8121401367188,
+      "maximumTemkinSeconds": 701.2309907226562
+    }
+  },
+  "limitations": [
+    "Closed outer cells give only necessary conditions; overlapping intervals are inconclusive.",
+    "The two horizons may choose independent Temkin within the same non-horizon interval, so exclusions are conservative.",
+    "Fixed printed point, own NOAA continuous geometry, fixed non-horizon angles and uniform rounding; no MICA equivalence.",
+    "All 365 source rows previously exposed; no new holdout or calendar acquisition."
+  ],
+  "productionReady": false,
+  "replacementClocksGenerated": false,
+  "evidence": [
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/PLAN.md",
+      "sha256": "43887b449ada22ead15df9789c8aee8984cd1337b45944fa88d800cf38fdd06e",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/plan-pin.json",
+      "sha256": "99240115e314d8d3b0913a2a660f333402b3cc0bd171920d581baeff68428e0e",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/diagnose.mjs",
+      "sha256": "10d4c763f0aa32ab29b655e387f586b24b49cb4a463915980ce511ef3cc8693c",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/report.json",
+      "sha256": "f83fcbd01ad2d5b0ffbf8b07fc57353b1d0986e0775c57dc209d326b5ae32f24",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/verify.py",
+      "sha256": "1e6c3612383a161f4b6e33bc87324d312c32965cd0ccd7475263ca3e57754b1a",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/verification.json",
+      "sha256": "41262793617a9a23533ee47deaeb6595186546e993738432056f5af9c115af21",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/README.md",
+      "sha256": "5f5403e29274d5caab8459a58f36c5aeb7052319b73b30beef185c33d8b2eb11",
+      "bundled": false
+    },
+    {
+      "identifier": "research/turkiye-followup-2026-09-25/completion.json",
+      "sha256": "b791a88783c262b01b06b105a3c78829929fbefeb1cac683cfacb4a94fd998df",
+      "bundled": false
+    }
+  ]
+}

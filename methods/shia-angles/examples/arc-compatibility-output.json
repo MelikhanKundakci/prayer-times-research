@@ -1,0 +1,134 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "arc-publisher-compatibility",
+    "date": "2028-05-21",
+    "latitude": 51.5,
+    "longitude": -0.12,
+    "timeZone": "Europe/London",
+    "maghribAngle": 3.75
+  },
+  "output": {
+    "date": "2028-05-21",
+    "location": {
+      "latitude": 51.5,
+      "longitude": -0.12,
+      "timeZone": "Europe/London"
+    },
+    "model": {
+      "version": "arc-experiment-2.0.0",
+      "mode": "publisher-compatibility",
+      "tzdb": "2026d",
+      "maghribAngle": 3.75,
+      "fajrAngle": 18,
+      "authorityConfirmed": false,
+      "calendarBugHypothesis": "nearest rounding instead of floor in Gregorian-to-Julian month term",
+      "dhuhrOffsetMinutes": 1,
+      "midnightBasis": "same-row Fajr +24h (unconfirmed publisher behavior)",
+      "warning": "Research only: the ARC server implementation and religious approval are unknown. No Asr/Isha or high-latitude religious substitute is supplied."
+    },
+    "events": {
+      "fajr": {
+        "status": "experimental-compatibility",
+        "time": "01:10",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T00:10:00.000Z",
+        "rawEpochMilliseconds": 1842480591541.227,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "sunrise": {
+        "status": "experimental-compatibility",
+        "time": "04:59",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T03:59:00.000Z",
+        "rawEpochMilliseconds": 1842494320034.8645,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "dhuhr": {
+        "status": "experimental-compatibility",
+        "time": "12:58",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T11:58:00.000Z",
+        "rawEpochMilliseconds": 1842523092967.5454,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "sunset": {
+        "status": "experimental-compatibility",
+        "time": "20:57",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T19:57:00.000Z",
+        "rawEpochMilliseconds": 1842551796948.1045,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "maghrib": {
+        "status": "experimental-compatibility",
+        "time": "21:20",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T20:20:00.000Z",
+        "rawEpochMilliseconds": 1842553227253.3442,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "midnight": {
+        "status": "experimental-compatibility",
+        "time": "23:03",
+        "localDate": "2028-05-21",
+        "isoUtc": "2028-05-21T22:03:00.000Z",
+        "rawEpochMilliseconds": 1842559394244.6658,
+        "reason": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false,
+        "dateBasis": "model-assigned; source supplies clocks only"
+      },
+      "asr": {
+        "status": "unspecified",
+        "reason": "ARC-source-does-not-specify-an-Asr-marker",
+        "time": null,
+        "localDate": null,
+        "isoUtc": null,
+        "rawEpochMilliseconds": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false
+      },
+      "isha": {
+        "status": "unspecified",
+        "reason": "ARC-source-does-not-specify-an-Isha-marker",
+        "time": null,
+        "localDate": null,
+        "isoUtc": null,
+        "rawEpochMilliseconds": null,
+        "notificationEligible": false,
+        "sourceEventDateConfirmed": false
+      }
+    },
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "qualityFlags": [
+      "unconfirmed-publisher-compatibility",
+      "hypothesized-calendar-arithmetic-error",
+      "source-event-dates-unverified",
+      "source-DST-anomalies-not-emulated",
+      "not-eligible-for-automatic-notifications"
+    ]
+  }
+}
