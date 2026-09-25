@@ -1,0 +1,673 @@
+{
+  "schemaVersion": 1,
+  "official": false,
+  "productionReady": false,
+  "scope": "Separate adaptive within-picker-range request-contract studies; no mathematical candidate changes. Preserve emptyresponse and successfulalias separately.",
+  "failedModernIdentifier": {
+    "createdAtUtc": "2026-09-25T13:44:19.162Z",
+    "scope": "Separate adaptive within-picker-range BuenosAiresSeptember2029 test. Case/year decision follows2036Sydney andMumbai outcomes plus newfrontend range discovery; model unchanged, targetcalendarunseen. Originalstopped540-slot result and cancelled2036continuation remain immutable.",
+    "comparison": "Assign every printed clock to its printedGregorian date in requested actualIANA zone; compare absoluteUTCminutes. No modulo, conditionaloffset, date shift or source clock correction. This is a comparison interpretation, not publisher UTC/date affirmation.",
+    "freezeSha256": "10d660f727ca8ab3c7ee136b870cf45c275e01cea382288e5072e72decd95577",
+    "forecastSha256": "7d45f428e01e4360c2d2db68b5dc09a1c9a2ec9114e2dc332bb1a71cb4733fed",
+    "total": {
+      "expected": 180,
+      "ceil": {
+        "compared": 0,
+        "notCompared": 180,
+        "exact": 0,
+        "withinOneMinute": 0,
+        "maxAbsoluteMinutes": null,
+        "histogram": {},
+        "unavailable": {
+          "source:source-unusable": 180
+        },
+        "localDateDiffers": 0
+      },
+      "continuous": {
+        "compared": 0,
+        "notCompared": 180,
+        "exact": 0,
+        "withinOneMinute": 0,
+        "maxAbsoluteMinutes": null,
+        "histogram": {},
+        "unavailable": {
+          "source:source-unusable": 180
+        },
+        "localDateDiffers": 0
+      },
+      "paired": 0,
+      "becameExact": 0,
+      "lostExact": 0,
+      "improved": 0,
+      "worsened": 0
+    },
+    "cases": [
+      {
+        "id": "buenos-aires-2029-09",
+        "month": "2029-09",
+        "sourceStatus": "source-unusable",
+        "sourceFieldsPreserved": 0,
+        "summary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 0,
+            "notCompared": 180,
+            "exact": 0,
+            "withinOneMinute": 0,
+            "maxAbsoluteMinutes": null,
+            "histogram": {},
+            "unavailable": {
+              "source:source-unusable": 180
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 0,
+            "notCompared": 180,
+            "exact": 0,
+            "withinOneMinute": 0,
+            "maxAbsoluteMinutes": null,
+            "histogram": {},
+            "unavailable": {
+              "source:source-unusable": 180
+            },
+            "localDateDiffers": 0
+          },
+          "paired": 0,
+          "becameExact": 0,
+          "lostExact": 0,
+          "improved": 0,
+          "worsened": 0
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          },
+          "sunrise": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          },
+          "dhuhr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          },
+          "asrTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          },
+          "sunset": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          },
+          "ishaTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 0,
+              "notCompared": 30,
+              "exact": 0,
+              "withinOneMinute": 0,
+              "maxAbsoluteMinutes": null,
+              "histogram": {},
+              "unavailable": {
+                "source:source-unusable": 30
+              },
+              "localDateDiffers": 0
+            },
+            "paired": 0,
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0
+          }
+        }
+      }
+    ],
+    "sourceUtcConfirmed": false
+  },
+  "successfulBrowserIdentifier": {
+    "createdAtUtc": "2026-09-25T13:45:55.223Z",
+    "scope": "Adaptive source identifier contract test after within-range modernIANAidentifier returnedemptydata. Exactlyonefollowup with browser-canonical alias America/Buenos_Aires; samepoint/month/model and numericalforecast verifiedidentical. Allfailedstudies preserved; no generic retry or alternateendpoint.",
+    "comparison": "Assign every printed clock to its printedGregorian date in requested actualIANA zone; compare absoluteUTCminutes. No modulo, conditionaloffset, date shift or source clock correction. This is a comparison interpretation, not publisher UTC/date affirmation.",
+    "freezeSha256": "f63268e1ec99138c58789f1f095d072024fa620aa138d40a71c53cdead241439",
+    "forecastSha256": "a3c0f7d9c5616cdf8bef8e69c4fc19ec2992bd16e9bc4d6dd6a2af52ebff34a6",
+    "total": {
+      "expected": 180,
+      "ceil": {
+        "compared": 180,
+        "notCompared": 0,
+        "exact": 110,
+        "withinOneMinute": 180,
+        "maxAbsoluteMinutes": 1,
+        "histogram": {
+          "0": 110,
+          "1": 70
+        },
+        "unavailable": {},
+        "localDateDiffers": 0
+      },
+      "continuous": {
+        "compared": 180,
+        "notCompared": 0,
+        "exact": 177,
+        "withinOneMinute": 180,
+        "maxAbsoluteMinutes": 1,
+        "histogram": {
+          "0": 177,
+          "1": 3
+        },
+        "unavailable": {},
+        "localDateDiffers": 0
+      },
+      "paired": 180,
+      "becameExact": 67,
+      "lostExact": 0,
+      "improved": 67,
+      "worsened": 0
+    },
+    "cases": [
+      {
+        "id": "buenos-aires-2029-09-browser-alias",
+        "month": "2029-09",
+        "sourceStatus": "parsed",
+        "sourceFieldsPreserved": 270,
+        "summary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 180,
+            "notCompared": 0,
+            "exact": 110,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 110,
+              "1": 70
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 180,
+            "notCompared": 0,
+            "exact": 177,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 177,
+              "1": 3
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "paired": 180,
+          "becameExact": 67,
+          "lostExact": 0,
+          "improved": 67,
+          "worsened": 0
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 17,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 17,
+                "1": 13
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 13,
+            "lostExact": 0,
+            "improved": 13,
+            "worsened": 0
+          },
+          "sunrise": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 19,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 19,
+                "1": 11
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 11,
+            "lostExact": 0,
+            "improved": 11,
+            "worsened": 0
+          },
+          "dhuhr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 12,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 12,
+                "1": 18
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 18,
+            "lostExact": 0,
+            "improved": 18,
+            "worsened": 0
+          },
+          "asrTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 16,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 16,
+                "1": 14
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 14,
+            "lostExact": 0,
+            "improved": 14,
+            "worsened": 0
+          },
+          "sunset": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 23,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 23,
+                "1": 7
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 7,
+            "lostExact": 0,
+            "improved": 7,
+            "worsened": 0
+          },
+          "ishaTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 23,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 23,
+                "1": 7
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "continuous": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 27,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 27,
+                "1": 3
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 4,
+            "lostExact": 0,
+            "improved": 4,
+            "worsened": 0
+          }
+        }
+      }
+    ],
+    "sourceUtcConfirmed": false
+  },
+  "numericalEquivalence": {
+    "checkedAtUtc": "2026-09-25T13:45:30.982Z",
+    "passed": true,
+    "forecastDays": 365,
+    "eventComparisons": 4380,
+    "allOutputObjectsEqualExceptLocationTimeZone": true,
+    "onlyRequestDifference": "timeZoneString",
+    "oldIdentifier": "America/Argentina/Buenos_Aires",
+    "browserIdentifier": "America/Buenos_Aires"
+  },
+  "causalityLimit": "The browsercanonical alias request succeeded after the modernname returnedemptydata. Timing/cache/upstreamvariation was not controlled. This is not proof that an alias caused the change or of a globalbackendtimezone rule.",
+  "denominatorWarning": "Both attempts concern the same180point-marker slots; do notpool their planneddenominators. The originalstopped2036study and cancelled2036continuation remain separate.",
+  "privateEvidence": [
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/plan.json",
+      "sha256": "a2bfe22e17e99a67508249d17019b5988f04540782f17ce1e77202d51266efe0",
+      "bytes": 3787,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/freeze.json",
+      "sha256": "10d660f727ca8ab3c7ee136b870cf45c275e01cea382288e5072e72decd95577",
+      "bytes": 11367,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/result.json",
+      "sha256": "5f7fd517c18104b5836f38deeb2008a626bf47abb61930d3a7f669f1710da812",
+      "bytes": 155153,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/review/failure-audit.json",
+      "sha256": "048d49f84ef5e79a4bd3387a65eb95c6d50af94d78e6b079712593be1be0ac38",
+      "bytes": 1304,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/plan.json",
+      "sha256": "c44a0c32806a205fa58b0d47e020f9a6a31e25b056b5ea91075f3d0fa96ee736",
+      "bytes": 3935,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/freeze.json",
+      "sha256": "f63268e1ec99138c58789f1f095d072024fa620aa138d40a71c53cdead241439",
+      "bytes": 13200,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/result.json",
+      "sha256": "20640ca9c668c2547e1e65356cf4d0cc60b341bc3e99868afd84d79b60b488f1",
+      "bytes": 153653,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/numerical-equivalence.json",
+      "sha256": "fafce82f875ddef8c985c3686b4fedb5ff01e1887743e68d3fe56191754ee1b8",
+      "bytes": 318,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/sources/buenos-aires-2029-09-browser-alias.json",
+      "sha256": "3b82cb78ce19f27a9c0ee4d5c51b5814ffbbaad57fd7503e12b35aedd660bf3f",
+      "bytes": 99858,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/offset-diagnostic/current-source.json",
+      "sha256": "16f31cd929c5d4e87020fd8a11f3f94b10644155d6a24cd19d5b5c01e0464ae1",
+      "bytes": 898,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/offset-diagnostic/current-mawakit.js",
+      "sha256": "736f25bc8f9c45f531983e6bba0d7db3cc541d8e23141dbb34f6ec27b4e06a17",
+      "bytes": 37301,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/continuation/cancelled-before-acquisition.json",
+      "sha256": "bba6af35b5fbd1b030968c00088d1e5a2110a1c3ffbbbd6a34004a779448b620",
+      "bytes": 423,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/review/recount.json",
+      "sha256": "ad1f41405f13d54192a7e90306d5b30f94ef0b02cc5991e9f5ff75f3b3b27d63",
+      "bytes": 4712,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/review/source-audit.json",
+      "sha256": "2558791ed9165d0ab82ecd0996772a1b6945fc323bf5d107ca196a996e7d6a22",
+      "bytes": 2649,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    }
+  ],
+  "independentVerification": {
+    "allPlannedRows": 180,
+    "sourceMarkersAcrossTwoParsers": 270,
+    "summaryGroups": 8,
+    "frozenFiles": 93,
+    "forecastObjectsEqualExceptNamedZone": 730,
+    "forecastEventValuesEqual": 4380,
+    "requestDifferenceOnly": "timeZoneString",
+    "chronologyPassed": true
+  }
+}

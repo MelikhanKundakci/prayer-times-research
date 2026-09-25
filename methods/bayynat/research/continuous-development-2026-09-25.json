@@ -1,0 +1,5577 @@
+{
+  "schemaVersion": 1,
+  "official": false,
+  "productionReady": false,
+  "scope": "Known-data geometry/rounding diagnostic; not a fresh validation. A separate prospective study is reported independently.",
+  "fiveMarker": {
+    "scope": "Retrospective controlled3x2 ephemeris/rounding diagnostic on all six now-known constant-offset point months and separate Berlin March2026 point source; no fresh validation.",
+    "planSha256": "a84137c51f48094d29399576c3a6e7dc57c2034bf9f8c3ec86bea34298e77b07",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tz": "2026d"
+    },
+    "summary": {
+      "fixed-ceil": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 437,
+        "withinOneMinute": 914,
+        "maxAbsoluteMinutes": 2,
+        "absoluteErrorMinutes": 479,
+        "histogram": {
+          "0": 437,
+          "1": 451,
+          "2": 1,
+          "-1": 26
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 77,
+            "withinOneMinute": 182,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 107,
+            "histogram": {
+              "0": 77,
+              "1": 88,
+              "2": 1,
+              "-1": 17
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 89,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 94,
+            "histogram": {
+              "0": 89,
+              "1": 85,
+              "-1": 9
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 98,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 85,
+            "histogram": {
+              "0": 98,
+              "1": 85
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 83,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 100,
+            "histogram": {
+              "0": 83,
+              "1": 100
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 90,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 93,
+            "histogram": {
+              "0": 90,
+              "1": 93
+            }
+          }
+        }
+      },
+      "fixed-nearest": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 763,
+        "withinOneMinute": 912,
+        "maxAbsoluteMinutes": 2,
+        "absoluteErrorMinutes": 155,
+        "histogram": {
+          "0": 763,
+          "1": 57,
+          "-1": 92,
+          "-2": 3
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 130,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 56,
+            "histogram": {
+              "0": 130,
+              "1": 16,
+              "-1": 34,
+              "-2": 3
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 126,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 57,
+            "histogram": {
+              "0": 126,
+              "1": 24,
+              "-1": 33
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 173,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 10,
+            "histogram": {
+              "0": 173,
+              "1": 5,
+              "-1": 5
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 166,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 17,
+            "histogram": {
+              "0": 166,
+              "1": 7,
+              "-1": 10
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 168,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 15,
+            "histogram": {
+              "0": 168,
+              "1": 5,
+              "-1": 10
+            }
+          }
+        }
+      },
+      "continuous-ceil": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 437,
+        "withinOneMinute": 915,
+        "maxAbsoluteMinutes": 1,
+        "absoluteErrorMinutes": 478,
+        "histogram": {
+          "0": 437,
+          "1": 478
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 87,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 96,
+            "histogram": {
+              "0": 87,
+              "1": 96
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 85,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 98,
+            "histogram": {
+              "0": 85,
+              "1": 98
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 99,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 84,
+            "histogram": {
+              "0": 99,
+              "1": 84
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 81,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 102,
+            "histogram": {
+              "0": 81,
+              "1": 102
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 85,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 98,
+            "histogram": {
+              "0": 85,
+              "1": 98
+            }
+          }
+        }
+      },
+      "continuous-nearest": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 910,
+        "withinOneMinute": 915,
+        "maxAbsoluteMinutes": 1,
+        "absoluteErrorMinutes": 5,
+        "histogram": {
+          "0": 910,
+          "1": 3,
+          "-1": 2
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 182,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 1,
+            "histogram": {
+              "0": 182,
+              "1": 1
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 183,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 183
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 183,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 183
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 183,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 183
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 179,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 4,
+            "histogram": {
+              "0": 179,
+              "1": 2,
+              "-1": 2
+            }
+          }
+        }
+      },
+      "transit-ceil": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 475,
+        "withinOneMinute": 915,
+        "maxAbsoluteMinutes": 1,
+        "absoluteErrorMinutes": 440,
+        "histogram": {
+          "0": 475,
+          "1": 440
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 104,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 79,
+            "histogram": {
+              "0": 104,
+              "1": 79
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 95,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 88,
+            "histogram": {
+              "0": 95,
+              "1": 88
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 99,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 84,
+            "histogram": {
+              "0": 99,
+              "1": 84
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 80,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 103,
+            "histogram": {
+              "0": 80,
+              "1": 103
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 97,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 86,
+            "histogram": {
+              "0": 97,
+              "1": 86
+            }
+          }
+        }
+      },
+      "transit-nearest": {
+        "expected": 915,
+        "compared": 915,
+        "uncompared": 0,
+        "exact": 825,
+        "withinOneMinute": 915,
+        "maxAbsoluteMinutes": 1,
+        "absoluteErrorMinutes": 90,
+        "histogram": {
+          "0": 825,
+          "1": 23,
+          "-1": 67
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 158,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 25,
+            "histogram": {
+              "0": 158,
+              "1": 7,
+              "-1": 18
+            }
+          },
+          "sunrise": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 165,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 18,
+            "histogram": {
+              "0": 165,
+              "-1": 18
+            }
+          },
+          "dhuhr": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 183,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 183
+            }
+          },
+          "sunset": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 159,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 24,
+            "histogram": {
+              "0": 159,
+              "1": 10,
+              "-1": 14
+            }
+          },
+          "ishaTable": {
+            "expected": 183,
+            "compared": 183,
+            "uncompared": 0,
+            "exact": 160,
+            "withinOneMinute": 183,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 23,
+            "histogram": {
+              "0": 160,
+              "1": 6,
+              "-1": 17
+            }
+          }
+        }
+      }
+    },
+    "byCase": [
+      {
+        "id": "jakarta-2024-04",
+        "group": "known-2024",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 77,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 73,
+            "histogram": {
+              "0": 77,
+              "1": 73
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 13,
+                  "1": 17
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 16,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 14,
+                "histogram": {
+                  "0": 16,
+                  "1": 14
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 143,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 7,
+            "histogram": {
+              "0": 143,
+              "-1": 7
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 27,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 27,
+                  "-1": 3
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "-1": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 28,
+                  "-1": 2
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "-1": 1
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 69,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 81,
+            "histogram": {
+              "0": 69,
+              "1": 81
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 13,
+                  "1": 17
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 11,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 11,
+                  "1": 19
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 149,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 1,
+            "histogram": {
+              "0": 149,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "-1": 1
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 64,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 86,
+            "histogram": {
+              "0": 64,
+              "1": 86
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 11,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 11,
+                  "1": 19
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 10,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 20,
+                "histogram": {
+                  "0": 10,
+                  "1": 20
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 143,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 7,
+            "histogram": {
+              "0": 143,
+              "1": 6,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "-1": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 26,
+                  "1": 4
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 28,
+                  "1": 2
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "singapore-2024-07",
+        "group": "known-2024",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 63,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 92,
+            "histogram": {
+              "0": 63,
+              "1": 92
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "1": 18
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "1": 18
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 7,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 24,
+                "histogram": {
+                  "0": 7,
+                  "1": 24
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 12,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 12,
+                  "1": 19
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 152,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 3,
+            "histogram": {
+              "0": 152,
+              "1": 3
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "1": 1
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 29,
+                  "1": 2
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 68,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 87,
+            "histogram": {
+              "0": 68,
+              "1": 87
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 16,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 16,
+                  "1": 15
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 11,
+                "histogram": {
+                  "0": 20,
+                  "1": 11
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "1": 18
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 7,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 24,
+                "histogram": {
+                  "0": 7,
+                  "1": 24
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 12,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 12,
+                  "1": 19
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 155,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 155
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 67,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 88,
+            "histogram": {
+              "0": 67,
+              "1": 88
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 15,
+                  "1": 16
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 11,
+                "histogram": {
+                  "0": 20,
+                  "1": 11
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "1": 18
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 8,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 23,
+                "histogram": {
+                  "0": 8,
+                  "1": 23
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 11,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 20,
+                "histogram": {
+                  "0": 11,
+                  "1": 20
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 152,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 3,
+            "histogram": {
+              "0": 152,
+              "1": 1,
+              "-1": 2
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "1": 1
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "-1": 1
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "-1": 1
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "tokyo-2024-11",
+        "group": "known-2024",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 47,
+            "withinOneMinute": 149,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 104,
+            "histogram": {
+              "0": 47,
+              "1": 102,
+              "2": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 0,
+                "withinOneMinute": 29,
+                "maxAbsoluteMinutes": 2,
+                "absoluteErrorMinutes": 31,
+                "histogram": {
+                  "1": 29,
+                  "2": 1
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 0,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 30,
+                "histogram": {
+                  "1": 30
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 103,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 47,
+            "histogram": {
+              "0": 103,
+              "1": 41,
+              "-1": 6
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 6,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 24,
+                "histogram": {
+                  "0": 6,
+                  "1": 24
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 28,
+                  "1": 2
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 26,
+                  "-1": 4
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 28,
+                  "-1": 2
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 71,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 79,
+            "histogram": {
+              "0": 71,
+              "1": 79
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 17,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 17,
+                  "1": 13
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 9,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 21,
+                "histogram": {
+                  "0": 9,
+                  "1": 21
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 13,
+                  "1": 17
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 149,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 1,
+            "histogram": {
+              "0": 149,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "-1": 1
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 54,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 96,
+            "histogram": {
+              "0": 54,
+              "1": 96
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 10,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 20,
+                "histogram": {
+                  "0": 10,
+                  "1": 20
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 4,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 26,
+                "histogram": {
+                  "0": 4,
+                  "1": 26
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 9,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 21,
+                "histogram": {
+                  "0": 9,
+                  "1": 21
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 13,
+                  "1": 17
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 137,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 13,
+            "histogram": {
+              "0": 137,
+              "1": 13
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 24,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 6,
+                "histogram": {
+                  "0": 24,
+                  "1": 6
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 27,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 27,
+                  "1": 3
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 26,
+                  "1": 4
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "berlin-2026-03",
+        "group": "timezone-conflicted",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 12,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 61,
+            "absoluteErrorMinutes": 8399,
+            "histogram": {
+              "0": 12,
+              "1": 2,
+              "-60": 110,
+              "-59": 17,
+              "-61": 13,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1690,
+                "histogram": {
+                  "0": 3,
+                  "-60": 18,
+                  "-61": 10
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1684,
+                "histogram": {
+                  "0": 2,
+                  "-60": 25,
+                  "-61": 3,
+                  "-1": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1670,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-60": 17,
+                  "-59": 11
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1677,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-59": 4,
+                  "-60": 24
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1678,
+                "histogram": {
+                  "0": 3,
+                  "-60": 26,
+                  "-59": 2
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 10,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 61,
+            "absoluteErrorMinutes": 8471,
+            "histogram": {
+              "0": 10,
+              "-61": 66,
+              "-60": 74,
+              "-1": 5
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1706,
+                "histogram": {
+                  "0": 1,
+                  "-61": 24,
+                  "-60": 4,
+                  "-1": 2
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1701,
+                "histogram": {
+                  "0": 1,
+                  "-60": 9,
+                  "-61": 19,
+                  "-1": 2
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1681,
+                "histogram": {
+                  "0": 3,
+                  "-60": 27,
+                  "-61": 1
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1690,
+                "histogram": {
+                  "0": 3,
+                  "-60": 18,
+                  "-61": 10
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1693,
+                "histogram": {
+                  "0": 2,
+                  "-60": 16,
+                  "-61": 12,
+                  "-1": 1
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 6,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 60,
+            "absoluteErrorMinutes": 8330,
+            "histogram": {
+              "0": 6,
+              "1": 9,
+              "-60": 61,
+              "-59": 79
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 0,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1669,
+                "histogram": {
+                  "1": 3,
+                  "-60": 14,
+                  "-59": 14
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1666,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-59": 15,
+                  "-60": 13
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1669,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-60": 16,
+                  "-59": 12
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1668,
+                "histogram": {
+                  "0": 1,
+                  "1": 2,
+                  "-59": 14,
+                  "-60": 14
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1658,
+                "histogram": {
+                  "0": 1,
+                  "1": 2,
+                  "-59": 24,
+                  "-60": 4
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 12,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 61,
+            "absoluteErrorMinutes": 8400,
+            "histogram": {
+              "0": 12,
+              "1": 3,
+              "-60": 135,
+              "-61": 1,
+              "-59": 4
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1682,
+                "histogram": {
+                  "0": 1,
+                  "1": 2,
+                  "-60": 28
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1681,
+                "histogram": {
+                  "0": 3,
+                  "-60": 27,
+                  "-61": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1680,
+                "histogram": {
+                  "0": 3,
+                  "-60": 28
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1680,
+                "histogram": {
+                  "0": 3,
+                  "-60": 28
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1677,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-60": 24,
+                  "-59": 4
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 13,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 61,
+            "absoluteErrorMinutes": 8398,
+            "histogram": {
+              "0": 13,
+              "1": 1,
+              "-60": 118,
+              "-59": 13,
+              "-61": 9,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1687,
+                "histogram": {
+                  "0": 3,
+                  "-60": 21,
+                  "-61": 7
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1683,
+                "histogram": {
+                  "0": 2,
+                  "-60": 26,
+                  "-61": 2,
+                  "-1": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1669,
+                "histogram": {
+                  "0": 2,
+                  "1": 1,
+                  "-60": 16,
+                  "-59": 12
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1679,
+                "histogram": {
+                  "0": 3,
+                  "-59": 1,
+                  "-60": 27
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1680,
+                "histogram": {
+                  "0": 3,
+                  "-60": 28
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 9,
+            "withinOneMinute": 15,
+            "maxAbsoluteMinutes": 61,
+            "absoluteErrorMinutes": 8470,
+            "histogram": {
+              "0": 9,
+              "-61": 64,
+              "-60": 76,
+              "-1": 6
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1702,
+                "histogram": {
+                  "0": 2,
+                  "-61": 21,
+                  "-60": 7,
+                  "-1": 1
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1697,
+                "histogram": {
+                  "0": 1,
+                  "-60": 13,
+                  "-61": 15,
+                  "-1": 2
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 3,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 60,
+                "absoluteErrorMinutes": 1680,
+                "histogram": {
+                  "0": 3,
+                  "-60": 28
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 2,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1693,
+                "histogram": {
+                  "0": 2,
+                  "-60": 16,
+                  "-61": 12,
+                  "-1": 1
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 1,
+                "withinOneMinute": 3,
+                "maxAbsoluteMinutes": 61,
+                "absoluteErrorMinutes": 1698,
+                "histogram": {
+                  "0": 1,
+                  "-61": 16,
+                  "-60": 12,
+                  "-1": 2
+                }
+              }
+            }
+          }
+        },
+        "conditional": {
+          "fixed-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 122,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 33,
+            "histogram": {
+              "0": 122,
+              "1": 19,
+              "-1": 14
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "-1": 10
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 27,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 27,
+                  "-1": 4
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 19,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 19,
+                  "1": 12
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 5,
+                "histogram": {
+                  "0": 26,
+                  "1": 5
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 29,
+                  "1": 2
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 84,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 71,
+            "histogram": {
+              "0": 84,
+              "-1": 71
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 5,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 26,
+                "histogram": {
+                  "0": 5,
+                  "-1": 26
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 10,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 21,
+                "histogram": {
+                  "0": 10,
+                  "-1": 21
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "-1": 1
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "-1": 10
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "-1": 13
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 67,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 88,
+            "histogram": {
+              "0": 67,
+              "1": 88
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 14,
+                  "1": 17
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 15,
+                  "1": 16
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 15,
+                  "1": 16
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 5,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 26,
+                "histogram": {
+                  "0": 5,
+                  "1": 26
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 147,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 8,
+            "histogram": {
+              "0": 147,
+              "1": 7,
+              "-1": 1
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 29,
+                  "1": 2
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "-1": 1
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 5,
+                "histogram": {
+                  "0": 26,
+                  "1": 5
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 131,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 24,
+            "histogram": {
+              "0": 131,
+              "1": 14,
+              "-1": 10
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 24,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 7,
+                "histogram": {
+                  "0": 24,
+                  "-1": 7
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 28,
+                  "-1": 3
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "1": 1
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 85,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 70,
+            "histogram": {
+              "0": 85,
+              "-1": 70
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 9,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 22,
+                "histogram": {
+                  "0": 9,
+                  "-1": 22
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 14,
+                  "-1": 17
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "-1": 13
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "-1": 18
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "tokyo-2031-04",
+        "group": "known-2031",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 73,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 77,
+            "histogram": {
+              "0": 73,
+              "1": 51,
+              "-1": 26
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 13,
+                  "-1": 17
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 9,
+                "histogram": {
+                  "0": 21,
+                  "-1": 9
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 12,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 12,
+                  "1": 18
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 9,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 21,
+                "histogram": {
+                  "0": 9,
+                  "1": 21
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 83,
+            "withinOneMinute": 147,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 70,
+            "histogram": {
+              "0": 83,
+              "1": 8,
+              "-1": 56,
+              "-2": 3
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 0,
+                "withinOneMinute": 27,
+                "maxAbsoluteMinutes": 2,
+                "absoluteErrorMinutes": 33,
+                "histogram": {
+                  "-1": 27,
+                  "-2": 3
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 4,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 26,
+                "histogram": {
+                  "0": 4,
+                  "-1": 26
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 27,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 27,
+                  "-1": 3
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 26,
+                  "1": 4
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 26,
+                  "1": 4
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 69,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 81,
+            "histogram": {
+              "0": 69,
+              "1": 81
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "1": 16
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 11,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 11,
+                  "1": 19
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 147,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 3,
+            "histogram": {
+              "0": 147,
+              "1": 3
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "1": 1
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 28,
+                  "1": 2
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 107,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 43,
+            "histogram": {
+              "0": 107,
+              "1": 43
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 29,
+                  "1": 1
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 24,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 6,
+                "histogram": {
+                  "0": 24,
+                  "1": 6
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 15,
+                  "1": 15
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 9,
+                "histogram": {
+                  "0": 21,
+                  "1": 9
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 18,
+                  "1": 12
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 150,
+            "compared": 150,
+            "uncompared": 0,
+            "exact": 109,
+            "withinOneMinute": 150,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 41,
+            "histogram": {
+              "0": 109,
+              "-1": 41
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 14,
+                  "-1": 16
+                }
+              },
+              "sunrise": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 20,
+                  "-1": 10
+                }
+              },
+              "dhuhr": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 30
+                }
+              },
+              "sunset": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 23,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 7,
+                "histogram": {
+                  "0": 23,
+                  "-1": 7
+                }
+              },
+              "ishaTable": {
+                "expected": 30,
+                "compared": 30,
+                "uncompared": 0,
+                "exact": 22,
+                "withinOneMinute": 30,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 8,
+                "histogram": {
+                  "0": 22,
+                  "-1": 8
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "cape-town-2031-07",
+        "group": "known-2031",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 101,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 54,
+            "histogram": {
+              "0": 101,
+              "1": 54
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 19,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 12,
+                "histogram": {
+                  "0": 19,
+                  "1": 12
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 11,
+                "histogram": {
+                  "0": 20,
+                  "1": 11
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "1": 10
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 11,
+                "histogram": {
+                  "0": 20,
+                  "1": 11
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "1": 10
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 132,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 23,
+            "histogram": {
+              "0": 132,
+              "-1": 23
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 27,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 4,
+                "histogram": {
+                  "0": 27,
+                  "-1": 4
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 25,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 6,
+                "histogram": {
+                  "0": 25,
+                  "-1": 6
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 25,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 6,
+                "histogram": {
+                  "0": 25,
+                  "-1": 6
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 24,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 7,
+                "histogram": {
+                  "0": 24,
+                  "-1": 7
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 82,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 73,
+            "histogram": {
+              "0": 82,
+              "1": 73
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 15,
+                  "1": 16
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 13,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 18,
+                "histogram": {
+                  "0": 13,
+                  "1": 18
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "1": 10
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 15,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 16,
+                "histogram": {
+                  "0": 15,
+                  "1": 16
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 155,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 155
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 100,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 55,
+            "histogram": {
+              "0": 100,
+              "1": 55
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 21,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 10,
+                "histogram": {
+                  "0": 21,
+                  "1": 10
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 20,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 11,
+                "histogram": {
+                  "0": 20,
+                  "1": 11
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 23,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 8,
+                "histogram": {
+                  "0": 23,
+                  "1": 8
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 134,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 21,
+            "histogram": {
+              "0": 134,
+              "-1": 21
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 29,
+                  "-1": 2
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 26,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 5,
+                "histogram": {
+                  "0": 26,
+                  "-1": 5
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 25,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 6,
+                "histogram": {
+                  "0": 25,
+                  "-1": 6
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 23,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 8,
+                "histogram": {
+                  "0": 23,
+                  "-1": 8
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "id": "quito-2031-10",
+        "group": "known-2031",
+        "primary": {
+          "fixed-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 76,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 79,
+            "histogram": {
+              "0": 76,
+              "1": 79
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 14,
+                  "1": 17
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 17,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 14,
+                "histogram": {
+                  "0": 17,
+                  "1": 14
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 16,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 15,
+                "histogram": {
+                  "0": 16,
+                  "1": 15
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 11,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 20,
+                "histogram": {
+                  "0": 11,
+                  "1": 20
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              }
+            }
+          },
+          "fixed-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 150,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 5,
+            "histogram": {
+              "0": 150,
+              "1": 5
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "1": 1
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 28,
+                  "1": 3
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 30,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 1,
+                "histogram": {
+                  "0": 30,
+                  "1": 1
+                }
+              }
+            }
+          },
+          "continuous-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 78,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 77,
+            "histogram": {
+              "0": 78,
+              "1": 77
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 12,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 12,
+                  "1": 19
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 17,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 14,
+                "histogram": {
+                  "0": 17,
+                  "1": 14
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 17,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 14,
+                "histogram": {
+                  "0": 17,
+                  "1": 14
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 14,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 17,
+                "histogram": {
+                  "0": 14,
+                  "1": 17
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              }
+            }
+          },
+          "continuous-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 155,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 0,
+            "absoluteErrorMinutes": 0,
+            "histogram": {
+              "0": 155
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          },
+          "transit-ceil": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 83,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 72,
+            "histogram": {
+              "0": 83,
+              "1": 72
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 17,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 14,
+                "histogram": {
+                  "0": 17,
+                  "1": 14
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 12,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 19,
+                "histogram": {
+                  "0": 12,
+                  "1": 19
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 18,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 13,
+                "histogram": {
+                  "0": 18,
+                  "1": 13
+                }
+              }
+            }
+          },
+          "transit-nearest": {
+            "expected": 155,
+            "compared": 155,
+            "uncompared": 0,
+            "exact": 150,
+            "withinOneMinute": 155,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 5,
+            "histogram": {
+              "0": 150,
+              "1": 3,
+              "-1": 2
+            },
+            "byEvent": {
+              "fajr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunrise": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 29,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 2,
+                "histogram": {
+                  "0": 29,
+                  "-1": 2
+                }
+              },
+              "dhuhr": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              },
+              "sunset": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 28,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 1,
+                "absoluteErrorMinutes": 3,
+                "histogram": {
+                  "0": 28,
+                  "1": 3
+                }
+              },
+              "ishaTable": {
+                "expected": 31,
+                "compared": 31,
+                "uncompared": 0,
+                "exact": 31,
+                "withinOneMinute": 31,
+                "maxAbsoluteMinutes": 0,
+                "absoluteErrorMinutes": 0,
+                "histogram": {
+                  "0": 31
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "paired": [
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "fixed-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 0,
+        "lostExact": 0,
+        "improved": 0,
+        "worsened": 0,
+        "unchanged": 915
+      },
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "fixed-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 395,
+        "lostExact": 69,
+        "improved": 396,
+        "worsened": 72,
+        "unchanged": 447
+      },
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "continuous-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 67,
+        "lostExact": 67,
+        "improved": 68,
+        "worsened": 67,
+        "unchanged": 780
+      },
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "continuous-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 476,
+        "lostExact": 3,
+        "improved": 476,
+        "worsened": 3,
+        "unchanged": 436
+      },
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "transit-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 77,
+        "lostExact": 39,
+        "improved": 78,
+        "worsened": 39,
+        "unchanged": 798
+      },
+      {
+        "baseline": "fixed-ceil",
+        "candidate": "transit-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 430,
+        "lostExact": 42,
+        "improved": 431,
+        "worsened": 42,
+        "unchanged": 442
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "fixed-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 69,
+        "lostExact": 395,
+        "improved": 72,
+        "worsened": 396,
+        "unchanged": 447
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "fixed-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 0,
+        "lostExact": 0,
+        "improved": 0,
+        "worsened": 0,
+        "unchanged": 915
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "continuous-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 73,
+        "lostExact": 399,
+        "improved": 73,
+        "worsened": 399,
+        "unchanged": 443
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "continuous-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 147,
+        "lostExact": 0,
+        "improved": 147,
+        "worsened": 0,
+        "unchanged": 768
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "transit-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 92,
+        "lostExact": 380,
+        "improved": 92,
+        "worsened": 380,
+        "unchanged": 443
+      },
+      {
+        "baseline": "fixed-nearest",
+        "candidate": "transit-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 95,
+        "lostExact": 33,
+        "improved": 98,
+        "worsened": 33,
+        "unchanged": 784
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "fixed-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 67,
+        "lostExact": 67,
+        "improved": 67,
+        "worsened": 68,
+        "unchanged": 780
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "fixed-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 399,
+        "lostExact": 73,
+        "improved": 399,
+        "worsened": 73,
+        "unchanged": 443
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "continuous-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 0,
+        "lostExact": 0,
+        "improved": 0,
+        "worsened": 0,
+        "unchanged": 915
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "continuous-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 475,
+        "lostExact": 2,
+        "improved": 475,
+        "worsened": 2,
+        "unchanged": 438
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "transit-ceil",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 65,
+        "lostExact": 27,
+        "improved": 65,
+        "worsened": 27,
+        "unchanged": 823
+      },
+      {
+        "baseline": "continuous-ceil",
+        "candidate": "transit-nearest",
+        "expected": 915,
+        "compared": 915,
+        "becameExact": 453,
+        "lostExact": 65,
+        "improved": 453,
+        "worsened": 65,
+        "unchanged": 397
+      }
+    ]
+  },
+  "sixMarker": {
+    "scope": "Known-data six-marker continuation; not fresh institutional validation; previousfive-marker comparison unchanged",
+    "planSha256": "18d1fcba5ee9c86b27cedca511150a376a08f42716b57e72aa897d802e215cdf",
+    "total": {
+      "expected": 1098,
+      "ceil": {
+        "compared": 1098,
+        "uncompared": 0,
+        "exact": 537,
+        "withinOneMinute": 1097,
+        "maxAbsoluteMinutes": 2,
+        "histogram": {
+          "0": 537,
+          "1": 534,
+          "2": 1,
+          "-1": 26
+        },
+        "localDateDiffers": 0
+      },
+      "nearest": {
+        "compared": 1098,
+        "uncompared": 0,
+        "exact": 936,
+        "withinOneMinute": 1095,
+        "maxAbsoluteMinutes": 2,
+        "histogram": {
+          "0": 936,
+          "1": 57,
+          "-1": 102,
+          "-2": 3
+        },
+        "localDateDiffers": 0
+      },
+      "continuous": {
+        "compared": 1098,
+        "uncompared": 0,
+        "exact": 1090,
+        "withinOneMinute": 1098,
+        "maxAbsoluteMinutes": 1,
+        "histogram": {
+          "0": 1090,
+          "1": 4,
+          "-1": 4
+        },
+        "localDateDiffers": 0
+      },
+      "paired": {
+        "ceil": {
+          "compared": 1098,
+          "becameExact": 558,
+          "lostExact": 5,
+          "improved": 558,
+          "worsened": 5
+        },
+        "nearest": {
+          "compared": 1098,
+          "becameExact": 155,
+          "lostExact": 1,
+          "improved": 155,
+          "worsened": 1
+        }
+      }
+    },
+    "byEvent": {
+      "fajr": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 77,
+          "withinOneMinute": 182,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "0": 77,
+            "1": 88,
+            "2": 1,
+            "-1": 17
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 130,
+          "withinOneMinute": 180,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "0": 130,
+            "1": 16,
+            "-1": 34,
+            "-2": 3
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 182,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 182,
+            "1": 1
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 106,
+            "lostExact": 1,
+            "improved": 106,
+            "worsened": 1
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 52,
+            "lostExact": 0,
+            "improved": 52,
+            "worsened": 0
+          }
+        }
+      },
+      "sunrise": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 89,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 89,
+            "1": 85,
+            "-1": 9
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 126,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 126,
+            "1": 24,
+            "-1": 33
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 183,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 0,
+          "histogram": {
+            "0": 183
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 94,
+            "lostExact": 0,
+            "improved": 94,
+            "worsened": 0
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 57,
+            "lostExact": 0,
+            "improved": 57,
+            "worsened": 0
+          }
+        }
+      },
+      "dhuhr": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 98,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 98,
+            "1": 85
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 173,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 173,
+            "1": 5,
+            "-1": 5
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 183,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 0,
+          "histogram": {
+            "0": 183
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 85,
+            "lostExact": 0,
+            "improved": 85,
+            "worsened": 0
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 10,
+            "lostExact": 0,
+            "improved": 10,
+            "worsened": 0
+          }
+        }
+      },
+      "asrTable": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 100,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 100,
+            "1": 83
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 173,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 173,
+            "-1": 10
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 180,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 180,
+            "1": 1,
+            "-1": 2
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 82,
+            "lostExact": 2,
+            "improved": 82,
+            "worsened": 2
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 8,
+            "lostExact": 1,
+            "improved": 8,
+            "worsened": 1
+          }
+        }
+      },
+      "sunset": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 83,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 83,
+            "1": 100
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 166,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 166,
+            "1": 7,
+            "-1": 10
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 183,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 0,
+          "histogram": {
+            "0": 183
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 100,
+            "lostExact": 0,
+            "improved": 100,
+            "worsened": 0
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 17,
+            "lostExact": 0,
+            "improved": 17,
+            "worsened": 0
+          }
+        }
+      },
+      "ishaTable": {
+        "expected": 183,
+        "ceil": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 90,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 90,
+            "1": 93
+          },
+          "localDateDiffers": 0
+        },
+        "nearest": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 168,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 168,
+            "1": 5,
+            "-1": 10
+          },
+          "localDateDiffers": 0
+        },
+        "continuous": {
+          "compared": 183,
+          "uncompared": 0,
+          "exact": 179,
+          "withinOneMinute": 183,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 179,
+            "1": 2,
+            "-1": 2
+          },
+          "localDateDiffers": 0
+        },
+        "paired": {
+          "ceil": {
+            "compared": 183,
+            "becameExact": 91,
+            "lostExact": 2,
+            "improved": 91,
+            "worsened": 2
+          },
+          "nearest": {
+            "compared": 183,
+            "becameExact": 11,
+            "lostExact": 0,
+            "improved": 11,
+            "worsened": 0
+          }
+        }
+      }
+    },
+    "cases": [
+      {
+        "id": "jakarta-2024-04",
+        "group": "known-2024",
+        "primary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 87,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 87,
+              "1": 93
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 173,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 173,
+              "-1": 7
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 179,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 179,
+              "-1": 1
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 180,
+              "becameExact": 93,
+              "lostExact": 1,
+              "improved": 93,
+              "worsened": 1
+            },
+            "nearest": {
+              "compared": 180,
+              "becameExact": 6,
+              "lostExact": 0,
+              "improved": 6,
+              "worsened": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "singapore-2024-07",
+        "group": "known-2024",
+        "primary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 82,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 82,
+              "1": 104
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 183,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 183,
+              "1": 3
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 186,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 0,
+            "histogram": {
+              "0": 186
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 186,
+              "becameExact": 104,
+              "lostExact": 0,
+              "improved": 104,
+              "worsened": 0
+            },
+            "nearest": {
+              "compared": 186,
+              "becameExact": 3,
+              "lostExact": 0,
+              "improved": 3,
+              "worsened": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "tokyo-2024-11",
+        "group": "known-2024",
+        "primary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 69,
+            "withinOneMinute": 179,
+            "maxAbsoluteMinutes": 2,
+            "histogram": {
+              "0": 69,
+              "1": 110,
+              "2": 1
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 126,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 126,
+              "1": 41,
+              "-1": 13
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 177,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 177,
+              "-1": 3
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 180,
+              "becameExact": 111,
+              "lostExact": 3,
+              "improved": 111,
+              "worsened": 3
+            },
+            "nearest": {
+              "compared": 180,
+              "becameExact": 51,
+              "lostExact": 0,
+              "improved": 51,
+              "worsened": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "berlin-2026-03",
+        "group": "timezone-conflicted",
+        "primary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 15,
+            "withinOneMinute": 18,
+            "maxAbsoluteMinutes": 61,
+            "histogram": {
+              "0": 15,
+              "1": 2,
+              "-60": 126,
+              "-59": 29,
+              "-61": 13,
+              "-1": 1
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 13,
+            "withinOneMinute": 18,
+            "maxAbsoluteMinutes": 61,
+            "histogram": {
+              "0": 13,
+              "-61": 66,
+              "-60": 102,
+              "-1": 5
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 15,
+            "withinOneMinute": 18,
+            "maxAbsoluteMinutes": 61,
+            "histogram": {
+              "0": 15,
+              "1": 3,
+              "-60": 161,
+              "-61": 1,
+              "-59": 6
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 186,
+              "becameExact": 3,
+              "lostExact": 3,
+              "improved": 17,
+              "worsened": 28
+            },
+            "nearest": {
+              "compared": 186,
+              "becameExact": 4,
+              "lostExact": 2,
+              "improved": 75,
+              "worsened": 2
+            }
+          }
+        },
+        "conditional": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 141,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 141,
+              "1": 31,
+              "-1": 14
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 115,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 115,
+              "-1": 71
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 176,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 176,
+              "1": 9,
+              "-1": 1
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 186,
+              "becameExact": 40,
+              "lostExact": 5,
+              "improved": 40,
+              "worsened": 5
+            },
+            "nearest": {
+              "compared": 186,
+              "becameExact": 69,
+              "lostExact": 8,
+              "improved": 69,
+              "worsened": 8
+            }
+          }
+        }
+      },
+      {
+        "id": "tokyo-2031-04",
+        "group": "known-2031",
+        "primary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 87,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 87,
+              "1": 67,
+              "-1": 26
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 113,
+            "withinOneMinute": 177,
+            "maxAbsoluteMinutes": 2,
+            "histogram": {
+              "0": 113,
+              "1": 8,
+              "-1": 56,
+              "-2": 3
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 180,
+            "uncompared": 0,
+            "exact": 177,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 177,
+              "1": 3
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 180,
+              "becameExact": 91,
+              "lostExact": 1,
+              "improved": 91,
+              "worsened": 1
+            },
+            "nearest": {
+              "compared": 180,
+              "becameExact": 64,
+              "lostExact": 0,
+              "improved": 64,
+              "worsened": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "cape-town-2031-07",
+        "group": "known-2031",
+        "primary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 117,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 117,
+              "1": 69
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 163,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 163,
+              "-1": 23
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 186,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 0,
+            "histogram": {
+              "0": 186
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 186,
+              "becameExact": 69,
+              "lostExact": 0,
+              "improved": 69,
+              "worsened": 0
+            },
+            "nearest": {
+              "compared": 186,
+              "becameExact": 23,
+              "lostExact": 0,
+              "improved": 23,
+              "worsened": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "quito-2031-10",
+        "group": "known-2031",
+        "primary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 95,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 95,
+              "1": 91
+            },
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 178,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 178,
+              "1": 5,
+              "-1": 3
+            },
+            "localDateDiffers": 0
+          },
+          "continuous": {
+            "compared": 186,
+            "uncompared": 0,
+            "exact": 185,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 185,
+              "1": 1
+            },
+            "localDateDiffers": 0
+          },
+          "paired": {
+            "ceil": {
+              "compared": 186,
+              "becameExact": 90,
+              "lostExact": 0,
+              "improved": 90,
+              "worsened": 0
+            },
+            "nearest": {
+              "compared": 186,
+              "becameExact": 8,
+              "lostExact": 1,
+              "improved": 8,
+              "worsened": 1
+            }
+          }
+        }
+      }
+    ]
+  },
+  "privateEvidence": [
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/plan.json",
+      "sha256": "a84137c51f48094d29399576c3a6e7dc57c2034bf9f8c3ec86bea34298e77b07",
+      "bytes": 7146
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/prerun.json",
+      "sha256": "def85c6cc4a929e1b953c5f66b4dc5f16e9fadee55ee3eb15f198eb2030b896c",
+      "bytes": 593
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/assumption-clarifications.json",
+      "sha256": "6859c3df270e9cda05fa6c598bceb968989cbcc8ce751c1c0ad90f56f0bce504",
+      "bytes": 378
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/report.json",
+      "sha256": "c19e2c17fdff8e4f10fcb8c5339f094d0741cab017f9805710f4a31c67f98acd",
+      "bytes": 6017664
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/transit-model.mjs",
+      "sha256": "3ac8d312c547f961066a00bc341c679549ba46e8721a02e42f09301916341e7f",
+      "bytes": 2434
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/evaluate.mjs",
+      "sha256": "220674ef40f0a0d883724bb2b8db2dc0d450e80ba61dfad794d494dd42105b1e",
+      "bytes": 5511
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/six-marker-plan.json",
+      "sha256": "18d1fcba5ee9c86b27cedca511150a376a08f42716b57e72aa897d802e215cdf",
+      "bytes": 1540
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/six-marker-report.json",
+      "sha256": "ae4e84cf1d93335eb5d311952752f009f44bc1cde58c09d64786917221497d1a",
+      "bytes": 6742786
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/evaluate-six.mjs",
+      "sha256": "bb8b7b591d049baba4a022e4bf17339cbf9b3974efe3bb5a19defe730accb33c",
+      "bytes": 4161
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/review/recount.json",
+      "sha256": "353012d2479c6b292f0947784aae669e5848527e094d2b545282478add6abee8",
+      "bytes": 19889
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/review/completion.json",
+      "sha256": "b06fa25eec820fcddc5dcf87f9fa152e8c13b80954d7900735bcab2b19c1dfb9",
+      "bytes": 1815
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/review/six-recount.json",
+      "sha256": "c98b045731dfd3384fd13372e43490eab1c5ada0713c9cf724da31e2ca4245ea",
+      "bytes": 9048,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    }
+  ],
+  "independentVerification": {
+    "fiveMarkerRows": 7350,
+    "fiveMarkerScoreObjects": 324,
+    "sixMarkerRows": 1470,
+    "sixMarkerModeComparisons": 4410,
+    "fiveMarkerRawParityValues": 3210,
+    "physicalAsrRootsChecked": 214
+  }
+}

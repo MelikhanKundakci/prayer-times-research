@@ -86,6 +86,8 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 A later [shared-horizon feasibility diagnostic](COMMON-HORIZON.md) allows arbitrary daily common Temkin and arbitrary daily common sunrise/Maghrib horizon. Even this broader family is infeasible on at least **62/365** known days under nearest rounding (2 non-horizon failures plus 60 horizon exclusions). The result is conditional on the existing fixed point, NOAA geometry and uniform rounding; it identifies no replacement formula.
 
+An [exhaustive event-specific rounding follow-up](ROUNDING-POLICIES.md) then tests all **729** globally fixed nearest/floor/ceil policies. None satisfies every known day in that relaxed family; each retains at least three exclusions. The closest cases include two fragile sub-1.3-second discrepancies and a December 17 shared-horizon separation of about 0.109°. No rounding policy or daily correction is selected, and the exported clocks remain unchanged.
+
 ## Sources
 
 - [Primary calculation book](https://namazvakti.com/documents/tr.1.pdf)

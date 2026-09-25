@@ -44,6 +44,13 @@ write('methods/bayynat/examples/nearest-output.json', {
   input: bayynatInput,
   output: (await loadMethod('bayynat')).calculate(bayynatInput),
 });
+const continuousBayynatInput = JSON.parse(fs.readFileSync(new URL('methods/bayynat/examples/continuous-input.json', root), 'utf8'));
+write('methods/bayynat/examples/continuous-output.json', {
+  evidenceType: 'generated-model-example-not-institutional-reference',
+  runtime: {node: process.versions.node, icu: process.versions.icu, tz: process.versions.tz},
+  input: continuousBayynatInput,
+  output: (await loadMethod('bayynat')).calculate(continuousBayynatInput),
+});
 const cases = JSON.parse(fs.readFileSync(new URL('tests/cases.json', root), 'utf8')).cases;
 const snapshots = [];
 for (const item of cases) {

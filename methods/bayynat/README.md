@@ -35,6 +35,7 @@ The underlying signatures remain method-specific. These links point to the code 
 |---|---|
 | `point-utc12-h5over6-ceil` | [`calculateDay`](implementation/selected-model.mjs) |
 | `point-utc12-h5over6-nearest` — rejected general replacement, research only | [`calculateNearestCandidate`](implementation/nearest-candidate.mjs) |
+| `point-continuous-usno-nearest` — optional research candidate | [`calculateContinuousCandidate`](implementation/continuous-candidate.mjs) |
 
 ### Inputs and boundaries
 
@@ -81,6 +82,12 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 ## Rounding counterexperiment
 
 The [uniform nearest-minute experiment](NEAREST-MINUTE.md) is retained as a **rejected general replacement**, with the ceiling default unchanged. It improves 238→482/546 exact on known source months. On three new 2031 point-months frozen before source acquisition, it improves 299→454/552 exact but worsens 62 individual differences and creates **three new two-minute errors**; ceiling stays within one minute on all 552. Tokyo Fajr exposes a mismatch already present in the unrounded calculation. Both datasets and the older timezone-conflicted counterevidence remain separate in the [aggregate report](research/nearest-2026-09-25.json).
+
+## Event-time solar calculation
+
+The additive [continuous-coordinate candidate](CONTINUOUS.md) evaluates the Sun at each event and uses uniform nearest-minute rounding. It improves **537 → 1,090 / 1,098 exact** on six already known point-months, with all values within one minute and five regressions. A separate adaptive Buenos Aires September 2029 source-contract probe gives **110 → 177 / 180 exact**, all within one minute, with no regressions. The calculator is fully local; the ceiling default is unchanged.
+
+The evidence retains the failures: Berlin's actual-IANA clock disagreement, an out-of-picker-range Sydney 2036 comparison with hour-scale differences, empty Mumbai/Buenos responses, and a cancelled 2036 continuation. The successful 2029 probe used a browser-canonical timezone alias with proven identical model forecasts; it does not establish backend causality or global accuracy. See the full [study and limitations](CONTINUOUS.md) before interpreting those percentages.
 
 ## Sources
 

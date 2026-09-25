@@ -284,6 +284,17 @@
         "longitude": 139.68,
         "timeZone": "Asia/Tokyo"
       }
+    },
+    {
+      "id": "bayynat/point-continuous-usno-nearest",
+      "family": "bayynat",
+      "input": {
+        "variant": "point-continuous-usno-nearest",
+        "date": "2026-06-21",
+        "latitude": 35.68,
+        "longitude": 139.68,
+        "timeZone": "Asia/Tokyo"
+      }
     }
   ]
 }

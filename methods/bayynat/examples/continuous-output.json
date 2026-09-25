@@ -1,0 +1,254 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "point-continuous-usno-nearest",
+    "date": "2026-06-21",
+    "latitude": 35.68,
+    "longitude": 139.68,
+    "timeZone": "Asia/Tokyo"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "profileId": "bayynat-continuous-usno-nearest-research",
+    "profileVersion": "0.3.0-research",
+    "locationMode": "point",
+    "location": {
+      "latitude": 35.68,
+      "longitude": 139.68,
+      "timeZone": "Asia/Tokyo"
+    },
+    "recipe": {
+      "id": "continuous-usno-six-markers-nearest-v1",
+      "horizonDegrees": -0.8333333333333334,
+      "fajrDegrees": 18,
+      "ishaTableDegrees": 18,
+      "rounding": "nearest-absolute-UTC-minute",
+      "asrShadowFactor": 1,
+      "asrGeometry": "instantaneous-positive-physical-shadow-root",
+      "asrProvenance": "separate-research-continuation-not-institution-confirmed"
+    },
+    "events": {
+      "fajr": {
+        "role": "hypothetical-dawn-table-marker",
+        "reason": null,
+        "diagnostic": {
+          "thresholdDegrees": -18,
+          "direction": "rising",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-20T02:42:48.270Z",
+          "searchEndUtc": "2026-06-21T02:43:01.349Z"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1781977006642.202,
+        "epoch": 1781977020000,
+        "utc": "2026-06-20T17:37:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "02:37",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      },
+      "sunrise": {
+        "role": "hypothetical-horizon-marker",
+        "reason": null,
+        "diagnostic": {
+          "thresholdDegrees": -0.8333333333333334,
+          "direction": "rising",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-20T02:42:48.270Z",
+          "searchEndUtc": "2026-06-21T02:43:01.349Z"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1781983541898.1038,
+        "epoch": 1781983560000,
+        "utc": "2026-06-20T19:26:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "04:26",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      },
+      "dhuhr": {
+        "role": "upper-meridian-marker",
+        "reason": null,
+        "diagnostic": {
+          "kind": "upper-meridian-crossing-not-height-maximum"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782009781349.788,
+        "epoch": 1782009780000,
+        "utc": "2026-06-21T02:43:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "11:43",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      },
+      "asrTable": {
+        "role": "unconfirmed-asr-table-marker",
+        "reason": null,
+        "diagnostic": {
+          "kind": "instantaneous-positive-factor-1-shadow-root",
+          "asrShadowFactor": 1,
+          "solverStatus": "crossings",
+          "rejectedCrossings": 0,
+          "atRoot": {
+            "altitude": 39.40921489348539,
+            "margin": 77.75549796346831,
+            "continuedTarget": 39.40921488642473,
+            "residual": 7.0606631652481155e-9,
+            "physical": true
+          },
+          "searchStartUtc": "2026-06-21T02:43:01.349Z",
+          "searchEndUtc": "2026-06-21T14:43:01.349Z"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          },
+          {
+            "code": "physical-asr-continuation-not-institution-confirmed"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782023529877.5928,
+        "epoch": 1782023520000,
+        "utc": "2026-06-21T06:32:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "15:32",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      },
+      "sunset": {
+        "role": "hypothetical-horizon-marker",
+        "reason": null,
+        "diagnostic": {
+          "thresholdDegrees": -0.8333333333333334,
+          "direction": "setting",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-21T02:43:01.349Z",
+          "searchEndUtc": "2026-06-22T02:43:14.402Z"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782036021017.5146,
+        "epoch": 1782036000000,
+        "utc": "2026-06-21T10:00:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "19:00",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      },
+      "ishaTable": {
+        "role": "unconfirmed-isha-table-marker",
+        "reason": null,
+        "diagnostic": {
+          "thresholdDegrees": -18,
+          "direction": "setting",
+          "solverStatus": "crossings",
+          "crossings": 1,
+          "tangencies": 0,
+          "searchStartUtc": "2026-06-21T02:43:01.349Z",
+          "searchEndUtc": "2026-06-22T02:43:14.402Z"
+        },
+        "notificationEligible": false,
+        "qualityFlags": [
+          {
+            "code": "experimental-table-marker-not-legal-window"
+          }
+        ],
+        "status": "experimental-astronomical-marker",
+        "rawEpoch": 1782042556502.463,
+        "epoch": 1782042540000,
+        "utc": "2026-06-21T11:49:00.000Z",
+        "rawLocalDate": "2026-06-21",
+        "localDate": "2026-06-21",
+        "time": "20:49",
+        "utcOffsetMinutes": 540,
+        "eventLocalDateDiffers": false
+      }
+    },
+    "diagnostic": {
+      "carrierUtc": "2026-06-21T00:00:00.000Z",
+      "transitRawEpoch": 1782009781349.788,
+      "civilStartUtc": "2026-06-20T15:00:00.000Z",
+      "civilEndUtc": "2026-06-21T15:00:00.000Z",
+      "civilDayHours": 24
+    },
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "qualityFlags": [
+      {
+        "code": "experimental-geographic-extension-not-institutionally-validated"
+      },
+      {
+        "code": "bayynat-production-coordinates-unknown"
+      },
+      {
+        "code": "uniform-nearest-rounding-not-institution-confirmed"
+      },
+      {
+        "code": "asr-isha-table-roles-not-legal-starts"
+      },
+      {
+        "code": "physical-asr-is-separate-sixth-marker-continuation"
+      },
+      {
+        "code": "fixed-horizon-does-not-establish-elevation-match"
+      },
+      {
+        "code": "no-high-latitude-substitution-rule"
+      },
+      {
+        "code": "source-event-dates-unconfirmed"
+      },
+      {
+        "code": "offline-local-calculation"
+      }
+    ],
+    "official": false,
+    "productionReady": false,
+    "notificationEligible": false,
+    "legalWindowInterpretation": false
+  }
+}

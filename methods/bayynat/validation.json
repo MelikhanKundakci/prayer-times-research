@@ -120,6 +120,103 @@
         "Historical timezone-conflicted210cells remain separate; their conditional fixed-offset nearest exact count declines153→129."
       ],
       "evidenceIdentifier": "research/bayynat-followup-2026-09-25/prospective/result.json"
+    },
+    {
+      "id": "continuous-six-known-months",
+      "recipe": "continuous-usno-nearest-six-markers",
+      "exposure": "retrospective after geometry/rounding selection; all source months already exposed",
+      "scope": "Six known2024/2031pointmonths183days; overlaps previous546+552studies; do notpool",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 1098,
+      "comparedSlots": 1098,
+      "uncomparedSlots": 0,
+      "exactCount": 1090,
+      "withinOneMinuteCount": 1098,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 99.2714,
+      "nonExactRatePercent": 0.7286,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "dateInterpretation": "Printed Gregorian date and actual requested IANA zone; no source clock repair.",
+      "evidenceIdentifier": "research/bayynat-geometry-followup-2026-09-25/six-marker-report.json",
+      "caveats": [
+        "Baseline537exact;558corrected,5previouslyexactregressions.",
+        "Asr physical instantaneousfactor1 rule is a separate declared continuation; table meaning unconfirmed.",
+        "Separate Berlin186actualIANA slots remain15exact/max61; conditionalUTC+02 gives176exact, not authenticatedsourceUTC."
+      ]
+    },
+    {
+      "id": "continuous-stopped-prospective",
+      "recipe": "continuous-usno-nearest-six-markers",
+      "exposure": "new calendars after forecastfreeze; protocol stopped on secondcase",
+      "scope": "SydneyJanuary2036observed; MumbaiFebruaryemptyresponse; BuenosAiresSeptembernotrequestedwithinoriginalprotocol",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 540,
+      "comparedSlots": 186,
+      "uncomparedSlots": 354,
+      "exactCount": 0,
+      "withinOneMinuteCount": 0,
+      "maxAbsoluteMinutes": 61,
+      "exactPercent": 0.0,
+      "nonExactRatePercent": 100.0,
+      "withinOneMinutePercent": 0.0,
+      "overOneMinuteRatePercent": 100.0,
+      "dateInterpretation": "Printed Gregorian date and actual requested IANA zone; no source clock repair.",
+      "evidenceIdentifier": "research/bayynat-geometry-followup-2026-09-25/prospective/result.json",
+      "caveats": [
+        "354uncompared retained:174failedsource+180notrequestedafterstop.",
+        "AllSydney differences59–61minutes underactualIANA; unconfirmedoffsetconvention cannot be silentlyrepaired.",
+        "Originalstudy did notcomplete; later adaptive continuation, if any, mustremainseparate.",
+        "Afteracquisition currentfrontendJSconfirmed1900…currentyear+5pickerbounds. At2026acquisition2036wasoutsideUIrange(max2031), despiteSydneyresponse; unsupported-range behavior mustnotbe represented as within-range validation."
+      ]
+    },
+    {
+      "recipe": "continuous-usno-nearest-six-markers",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 180,
+      "dateInterpretation": "Original printedGregorian dates assigned to requestedactualIANAzone; no repair.",
+      "scope": "BuenosAiresSeptember2029; adaptivelydeclared after originalout-of-picker-range study stopped; samepoint/month, newwithin-rangeyear.",
+      "id": "continuous-within-range-empty",
+      "exposure": "separate adaptive source request after new2029forecastfreeze",
+      "comparedSlots": 0,
+      "uncomparedSlots": 180,
+      "exactCount": 0,
+      "withinOneMinuteCount": 0,
+      "maxAbsoluteMinutes": null,
+      "exactPercent": null,
+      "nonExactRatePercent": null,
+      "withinOneMinutePercent": null,
+      "overOneMinuteRatePercent": null,
+      "evidenceIdentifier": "research/bayynat-geometry-followup-2026-09-25/within-range/result.json",
+      "caveats": [
+        "HTTP200success-shapedemptydata; bothreadersreject. Missingvaluesnotexact.",
+        "ModernIANAidentifierAmerica/Argentina/Buenos_Aires. Lateraliasprobe keptseparate; do notpooldenominators."
+      ]
+    },
+    {
+      "recipe": "continuous-usno-nearest-six-markers",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 180,
+      "dateInterpretation": "Original printedGregorian dates assigned to requestedactualIANAzone; no repair.",
+      "scope": "BuenosAiresSeptember2029; adaptivelydeclared after originalout-of-picker-range study stopped; samepoint/month, newwithin-rangeyear.",
+      "id": "continuous-browser-alias-buenos",
+      "exposure": "adaptive equivalentidentifier probe; unchangednumericforecast before previouslyunseen sourcevalues",
+      "comparedSlots": 180,
+      "uncomparedSlots": 0,
+      "exactCount": 177,
+      "withinOneMinuteCount": 180,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 98.3333,
+      "nonExactRatePercent": 1.6667,
+      "withinOneMinutePercent": 100,
+      "overOneMinuteRatePercent": 0,
+      "evidenceIdentifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/result.json",
+      "caveats": [
+        "Baseline110exact;67corrected,zeroregressions. ThreeIshatablevalues+1minute.",
+        "BrowsercanonicalAmerica/Buenos_Aires; all365forecastdays identicalnumericvalues tofailedrequestidentifier.",
+        "Successdoesnotprovecausalityorageneralaliasrule; no controlled timing/cache test.",
+        "Same180plannedslotsasfailedmodernidentifierattempt; keepseparate, no denominatorpooling."
+      ]
     }
   ],
   "implementationProvenance": [
@@ -135,6 +232,13 @@
       "export": "calculateNearestCandidate",
       "status": "rejected as a general replacement; reproducibility research only",
       "sourceIdentifier": "additive wrapper selecting unchanged mapped candidate-model.mjs recipe"
+    },
+    {
+      "variant": "point-continuous-usno-nearest",
+      "module": "methods/bayynat/implementation/continuous-candidate.mjs",
+      "export": "calculateContinuousCandidate",
+      "status": "optional research profile; original ceiling default unchanged",
+      "sourceIdentifier": "Additive wrapper faithfully relocating existing continuousfive-marker recipe plus previously declared physical factor1Asr; mapped numerical cores unchanged."
     }
   ],
   "historicalEvidence": [
@@ -233,6 +337,72 @@
       "sha256": "247ab49418249be4e5a4fea7aaa10f1a0b0512e003afae49b8cad16d4c6183c0",
       "bytes": 5688,
       "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/six-marker-plan.json",
+      "sha256": "18d1fcba5ee9c86b27cedca511150a376a08f42716b57e72aa897d802e215cdf",
+      "bytes": 1540,
+      "distribution": "private provenance artifact, not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/six-marker-report.json",
+      "sha256": "ae4e84cf1d93335eb5d311952752f009f44bc1cde58c09d64786917221497d1a",
+      "bytes": 6742786,
+      "distribution": "private provenance artifact, not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/prospective/freeze.json",
+      "sha256": "2d343af4cdcc6227f9df076b5b0e682a126e77fca1cc53fd983aeb352545b04d",
+      "bytes": 9296,
+      "distribution": "private provenance artifact, not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/prospective/result.json",
+      "sha256": "9ea19b2f9a327d7412f7cfde26dae1ce6ec2357ce0718638dac82e752434cb41",
+      "bytes": 460979,
+      "distribution": "private provenance artifact, not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/freeze.json",
+      "sha256": "10d660f727ca8ab3c7ee136b870cf45c275e01cea382288e5072e72decd95577",
+      "bytes": 11367,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/within-range/result.json",
+      "sha256": "5f7fd517c18104b5836f38deeb2008a626bf47abb61930d3a7f669f1710da812",
+      "bytes": 155153,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/plan.json",
+      "sha256": "c44a0c32806a205fa58b0d47e020f9a6a31e25b056b5ea91075f3d0fa96ee736",
+      "bytes": 3935,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/freeze.json",
+      "sha256": "f63268e1ec99138c58789f1f095d072024fa620aa138d40a71c53cdead241439",
+      "bytes": 13200,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/result.json",
+      "sha256": "20640ca9c668c2547e1e65356cf4d0cc60b341bc3e99868afd84d79b60b488f1",
+      "bytes": 153653,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/alias-contract/numerical-equivalence.json",
+      "sha256": "fafce82f875ddef8c985c3686b4fedb5ff01e1887743e68d3fe56191754ee1b8",
+      "bytes": 318,
+      "distribution": "private provenance artifact; original calendars not bundled"
+    },
+    {
+      "identifier": "research/bayynat-geometry-followup-2026-09-25/offset-diagnostic/current-source.json",
+      "sha256": "16f31cd929c5d4e87020fd8a11f3f94b10644155d6a24cd19d5b5c01e0464ae1",
+      "bytes": 898,
+      "distribution": "private provenance artifact; original calendars not bundled"
     }
   ],
   "limitations": [
@@ -240,7 +410,8 @@
     "Known Beirut March2024 shows a printed clock jump onMarch25 instead of the actual March31 DST transition; September has a contradictory Hijri header and only29days. These source defects remain in historical records.",
     "Known Berlin March2026 point data behaves compatibly with fixedUTC+2. Subsequent UTC-versus-Europe/Berlin frontend requests returned identical source clocks, so the backend mechanism is unproven. Do not silently reinterpret those clocks as provider-asserted UTC instants.",
     "The comparison maps source Maghrib to model sunset as an explicit assumption; this does not prove identical institutional production geometry or legal onset.",
-    "Uniform nearest rounding increases fresh exact matches299→454/552 but creates three two-minute Tokyo Fajr differences; the public default remains ceiling."
+    "Uniform nearest rounding increases fresh exact matches299→454/552 but creates three two-minute Tokyo Fajr differences; the public default remains ceiling.",
+    "Event-time coordinates plus nearest rounding improve knowncleanmonths1090/1098exact, but freshSydney has0/186exact with59–61minute actualIANA differences; knownBerlin remainsclock-conflicted."
   ],
   "publicationNotes": [
     "The export supplies numerical table markers, not a fatwa or a full legal-windows engine. Uncertain source clocks were never repaired in place.",
@@ -264,5 +435,5 @@
       "role": "Primary discussion of sunset/Maghrib; distinguish quoted scholarly positions"
     }
   ],
-  "updatedAtUtc": "2026-09-25T13:16:54.531795+00:00"
+  "updatedAtUtc": "2026-09-25T13:48:07.089440+00:00"
 }

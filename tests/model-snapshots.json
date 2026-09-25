@@ -136,6 +136,11 @@
       "id": "bayynat/point-utc12-h5over6-nearest",
       "projectedFields": 55,
       "sha256": "2c8313048c5129f8e8661d25c753938d6a13deb7a81d0af308a50178658842cc"
+    },
+    {
+      "id": "bayynat/point-continuous-usno-nearest",
+      "projectedFields": 60,
+      "sha256": "492a69ca8185f424fa10e3b9669cdb5ae9a57f2387b815056e25c309f93493a6"
     }
   ]
 }

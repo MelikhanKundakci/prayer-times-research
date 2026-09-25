@@ -26,7 +26,9 @@ Otherwise propagate the whole surviving T interval through the printed sunrise a
 | Floor | 267 | 87 | 11 | 365 |
 | Ceil | 285 | 0 | 80 | 365 |
 
-Each uniform-rounding family therefore fails as a full-year reconstruction despite the two arbitrary daily parameters. This strengthens the earlier fixed-zero-horizon contradiction; it does not rule out event-specific rounding, different operational points, MICA geometry or different event meanings.
+Each uniform-rounding family therefore fails as a full-year reconstruction despite the two arbitrary daily parameters. This strengthens the earlier fixed-zero-horizon contradiction; this test alone does not address event-specific rounding, different operational points, MICA geometry or different event meanings.
+
+A later [exhaustive event-specific rounding diagnostic](ROUNDING-POLICIES.md) checks all 729 globally fixed nearest/floor/ceil policies. Every policy retains at least three excluded days under the same geometry and shared-horizon relaxation. The weakest cases include two sub-1.3-second discrepancies and a larger December 17 horizon conflict; no policy or improved clock model is selected.
 
 On 3 April, the nearest-minute sunrise altitude enclosure is approximately −0.213416°…−0.007727°, while Maghrib requires −0.540156°…−0.334724°. Their 0.121308° separation survives the conservative numerical padding. The two non-horizon contradictions are below 1.3 seconds; those small cases should not be called robust against another solar ephemeris.
 
