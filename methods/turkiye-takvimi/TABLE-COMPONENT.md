@@ -54,6 +54,8 @@ Against fixed 600 seconds, 2,162 absolute differences improve, 28 remain the sam
 
 The four non-horizon event groups are all within one minute. Sunrise remains mostly one minute late and Maghrib mostly two minutes early. The 360 differences outside one minute consist of seven sunrises and 353 Maghrib values. The earlier [shared-horizon](COMMON-HORIZON.md) and [729 rounding-policy](ROUNDING-POLICIES.md) exclusions are not overcome by this candidate.
 
+A subsequent [direct optical-horizon replacement](HORIZON-COMPONENTS.md) was rejected: it worsens 480 values, reduces within-one-minute agreement to 1,578/2,190 and restores a four-minute maximum. Independently calculating the morning optical interval changes it by at most 1.653 seconds relative to the evening interval, which does not explain these minute-scale residuals. No extra solar-radius correction was stacked onto Temkin.
+
 Every month has a lower total absolute difference than **both** earlier models. Month-level regressions below are individual absolute-error increases against the daily variable model; there are none against fixed 600 seconds.
 
 |2026 month|Exact /compared|Within ±1 minute|Maximum|Regressions vs variable|
