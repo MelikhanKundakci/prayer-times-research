@@ -1,0 +1,4263 @@
+{
+  "schemaVersion": 1,
+  "studyDate": "2026-09-25",
+  "status": "rejected",
+  "scope": "One source-motivated fixed-meridian-noon-shadow continuous Asr diagnostic on 47 already exposed annuals; no default change or worldwide guarantee.",
+  "publicModelsChanged": false,
+  "notificationEligible": false,
+  "candidate": {
+    "count": 1,
+    "formula": "cot(hAsr)=cot(hNoon)+1; fixed target from converged meridian-noon altitude; positive descending continuous USNO crossing through following transit",
+    "temkinMinutes": 4,
+    "rounding": "nearest absolute UTC minute once",
+    "horizonOrCoordinateChanges": false,
+    "otherFiveEventObjectsUnchanged": true,
+    "institutionalProductionMechanismConfirmed": false,
+    "noSignPolicy": "Northern no-positive-noon uses existing Dhuhr; other routes remain unavailable. All positive-noon cases in this corpus had exactly one root; no numerical failures counted as absent signs.",
+    "meridianNoonIsExactAltitudeMaximumClaimed": false
+  },
+  "chronology": {
+    "declaredAtUtc": "2026-09-25T14:36:55.311752+00:00",
+    "forecastFrozenAtUtc": "2026-09-25T14:39:23.803Z",
+    "evaluatedAtUtc": "2026-09-25T14:39:44.298Z",
+    "referencesAlreadyExposed": true
+  },
+  "corpus": {
+    "annuals": 47,
+    "cityDays": 17155,
+    "uniquePlannedFields": 102930,
+    "availableComparable": 102476,
+    "unresolvedSourceZeros": 454,
+    "minimumLatitude": -54.81088888888888,
+    "maximumLatitude": 69.727080887,
+    "years": [
+      2025,
+      2026,
+      2027
+    ],
+    "sourceCoordinatesAreConfirmedProductionPoints": false,
+    "dateInterpretationsAreAdditionalObservations": false
+  },
+  "results": {
+    "printed-date-actual-IANA": {
+      "total": {
+        "baseline": {
+          "planned": 102930,
+          "compared": 102476,
+          "ambiguousZeros": 454,
+          "nonzeroUnavailable": 0,
+          "exact": 91889,
+          "withinOne": 102287,
+          "max": 1443,
+          "histogram": {
+            "0": 91889,
+            "1": 5677,
+            "2": 21,
+            "1440": 111,
+            "1441": 26,
+            "1442": 4,
+            "1443": 1,
+            "-3": 1,
+            "-2": 25,
+            "-1": 4721
+          }
+        },
+        "candidate": {
+          "planned": 102930,
+          "compared": 102476,
+          "ambiguousZeros": 454,
+          "nonzeroUnavailable": 0,
+          "exact": 82783,
+          "withinOne": 99659,
+          "max": 1443,
+          "histogram": {
+            "0": 82783,
+            "1": 9064,
+            "2": 1224,
+            "3": 11,
+            "1440": 111,
+            "1441": 26,
+            "1442": 4,
+            "1443": 1,
+            "-3": 7,
+            "-2": 1433,
+            "-1": 7812
+          }
+        },
+        "paired": 102476,
+        "correctedToExact": 515,
+        "regressedFromExact": 9621,
+        "absoluteErrorImproved": 515,
+        "absoluteErrorWorsened": 9962,
+        "changedRounded": 10734
+      },
+      "byCohort": {
+        "north28": {
+          "baseline": {
+            "planned": 61320,
+            "compared": 61312,
+            "ambiguousZeros": 8,
+            "nonzeroUnavailable": 0,
+            "exact": 53215,
+            "withinOne": 61190,
+            "max": 1441,
+            "histogram": {
+              "0": 53215,
+              "1": 4344,
+              "2": 21,
+              "1440": 76,
+              "1441": 1,
+              "-2": 24,
+              "-1": 3631
+            }
+          },
+          "candidate": {
+            "planned": 61320,
+            "compared": 61312,
+            "ambiguousZeros": 8,
+            "nonzeroUnavailable": 0,
+            "exact": 46616,
+            "withinOne": 58734,
+            "max": 1441,
+            "histogram": {
+              "0": 46616,
+              "1": 6431,
+              "2": 1213,
+              "3": 11,
+              "1440": 76,
+              "1441": 1,
+              "-3": 6,
+              "-2": 1271,
+              "-1": 5687
+            }
+          },
+          "paired": 61312,
+          "correctedToExact": 333,
+          "regressedFromExact": 6932,
+          "absoluteErrorImproved": 333,
+          "absoluteErrorWorsened": 7250,
+          "changedRounded": 7822
+        },
+        "turkey8": {
+          "baseline": {
+            "planned": 17520,
+            "compared": 17520,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 17051,
+            "withinOne": 17520,
+            "max": 1,
+            "histogram": {
+              "0": 17051,
+              "1": 65,
+              "-1": 404
+            }
+          },
+          "candidate": {
+            "planned": 17520,
+            "compared": 17520,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 16031,
+            "withinOne": 17520,
+            "max": 1,
+            "histogram": {
+              "0": 16031,
+              "1": 566,
+              "-1": 923
+            }
+          },
+          "paired": 17520,
+          "correctedToExact": 58,
+          "regressedFromExact": 1078,
+          "absoluteErrorImproved": 58,
+          "absoluteErrorWorsened": 1078,
+          "changedRounded": 1136
+        },
+        "mexico-delhi2": {
+          "baseline": {
+            "planned": 4380,
+            "compared": 4380,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 3443,
+            "withinOne": 4380,
+            "max": 1,
+            "histogram": {
+              "0": 3443,
+              "1": 937
+            }
+          },
+          "candidate": {
+            "planned": 4380,
+            "compared": 4380,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 3358,
+            "withinOne": 4380,
+            "max": 1,
+            "histogram": {
+              "0": 3358,
+              "1": 979,
+              "-1": 43
+            }
+          },
+          "paired": 4380,
+          "correctedToExact": 48,
+          "regressedFromExact": 133,
+          "absoluteErrorImproved": 48,
+          "absoluteErrorWorsened": 133,
+          "changedRounded": 181
+        },
+        "turkey-temporal3": {
+          "baseline": {
+            "planned": 6570,
+            "compared": 6570,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6409,
+            "withinOne": 6570,
+            "max": 1,
+            "histogram": {
+              "0": 6409,
+              "-1": 161
+            }
+          },
+          "candidate": {
+            "planned": 6570,
+            "compared": 6570,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6039,
+            "withinOne": 6570,
+            "max": 1,
+            "histogram": {
+              "0": 6039,
+              "1": 183,
+              "-1": 348
+            }
+          },
+          "paired": 6570,
+          "correctedToExact": 35,
+          "regressedFromExact": 405,
+          "absoluteErrorImproved": 35,
+          "absoluteErrorWorsened": 405,
+          "changedRounded": 440
+        },
+        "southern6": {
+          "baseline": {
+            "planned": 13140,
+            "compared": 12694,
+            "ambiguousZeros": 446,
+            "nonzeroUnavailable": 0,
+            "exact": 11771,
+            "withinOne": 12627,
+            "max": 1443,
+            "histogram": {
+              "0": 11771,
+              "1": 331,
+              "1440": 35,
+              "1441": 25,
+              "1442": 4,
+              "1443": 1,
+              "-3": 1,
+              "-2": 1,
+              "-1": 525
+            }
+          },
+          "candidate": {
+            "planned": 13140,
+            "compared": 12694,
+            "ambiguousZeros": 446,
+            "nonzeroUnavailable": 0,
+            "exact": 10739,
+            "withinOne": 12455,
+            "max": 1443,
+            "histogram": {
+              "0": 10739,
+              "1": 905,
+              "2": 11,
+              "1440": 35,
+              "1441": 25,
+              "1442": 4,
+              "1443": 1,
+              "-3": 1,
+              "-2": 162,
+              "-1": 811
+            }
+          },
+          "paired": 12694,
+          "correctedToExact": 41,
+          "regressedFromExact": 1073,
+          "absoluteErrorImproved": 41,
+          "absoluteErrorWorsened": 1096,
+          "changedRounded": 1155
+        }
+      },
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 16920,
+            "ambiguousZeros": 235,
+            "nonzeroUnavailable": 0,
+            "exact": 14702,
+            "withinOne": 16885,
+            "max": 3,
+            "histogram": {
+              "0": 14702,
+              "1": 687,
+              "2": 19,
+              "-3": 1,
+              "-2": 15,
+              "-1": 1496
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 16920,
+            "ambiguousZeros": 235,
+            "nonzeroUnavailable": 0,
+            "exact": 14702,
+            "withinOne": 16885,
+            "max": 3,
+            "histogram": {
+              "0": 14702,
+              "1": 687,
+              "2": 19,
+              "-3": 1,
+              "-2": 15,
+              "-1": 1496
+            }
+          },
+          "paired": 16920,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "sunrise": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15592,
+            "withinOne": 17154,
+            "max": 2,
+            "histogram": {
+              "0": 15592,
+              "1": 803,
+              "2": 1,
+              "-1": 759
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15592,
+            "withinOne": 17154,
+            "max": 2,
+            "histogram": {
+              "0": 15592,
+              "1": 803,
+              "2": 1,
+              "-1": 759
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "dhuhr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15835,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15835,
+              "1": 797,
+              "-1": 523
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15835,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15835,
+              "1": 797,
+              "-1": 523
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "asr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15553,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15553,
+              "1": 887,
+              "-1": 715
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6447,
+            "withinOne": 14527,
+            "max": 3,
+            "histogram": {
+              "0": 6447,
+              "1": 4274,
+              "2": 1203,
+              "3": 11,
+              "-3": 6,
+              "-2": 1408,
+              "-1": 3806
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 515,
+          "regressedFromExact": 9621,
+          "absoluteErrorImproved": 515,
+          "absoluteErrorWorsened": 9962,
+          "changedRounded": 10734
+        },
+        "maghrib": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15544,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15544,
+              "1": 893,
+              "-1": 718
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15544,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15544,
+              "1": 893,
+              "-1": 718
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "isha": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 16936,
+            "ambiguousZeros": 219,
+            "nonzeroUnavailable": 0,
+            "exact": 14663,
+            "withinOne": 16783,
+            "max": 1443,
+            "histogram": {
+              "0": 14663,
+              "1": 1610,
+              "2": 1,
+              "1440": 111,
+              "1441": 26,
+              "1442": 4,
+              "1443": 1,
+              "-2": 10,
+              "-1": 510
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 16936,
+            "ambiguousZeros": 219,
+            "nonzeroUnavailable": 0,
+            "exact": 14663,
+            "withinOne": 16783,
+            "max": 1443,
+            "histogram": {
+              "0": 14663,
+              "1": 1610,
+              "2": 1,
+              "1440": 111,
+              "1441": 26,
+              "1442": 4,
+              "1443": 1,
+              "-2": 10,
+              "-1": 510
+            }
+          },
+          "paired": 16936,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        }
+      }
+    },
+    "conditional-evening-cycle-actual-IANA": {
+      "total": {
+        "baseline": {
+          "planned": 102930,
+          "compared": 102476,
+          "ambiguousZeros": 454,
+          "nonzeroUnavailable": 0,
+          "exact": 92000,
+          "withinOne": 102424,
+          "max": 3,
+          "histogram": {
+            "0": 92000,
+            "1": 5703,
+            "2": 25,
+            "3": 1,
+            "-3": 1,
+            "-2": 25,
+            "-1": 4721
+          }
+        },
+        "candidate": {
+          "planned": 102930,
+          "compared": 102476,
+          "ambiguousZeros": 454,
+          "nonzeroUnavailable": 0,
+          "exact": 82894,
+          "withinOne": 99796,
+          "max": 3,
+          "histogram": {
+            "0": 82894,
+            "1": 9090,
+            "2": 1228,
+            "3": 12,
+            "-3": 7,
+            "-2": 1433,
+            "-1": 7812
+          }
+        },
+        "paired": 102476,
+        "correctedToExact": 515,
+        "regressedFromExact": 9621,
+        "absoluteErrorImproved": 515,
+        "absoluteErrorWorsened": 9962,
+        "changedRounded": 10734
+      },
+      "byCohort": {
+        "north28": {
+          "baseline": {
+            "planned": 61320,
+            "compared": 61312,
+            "ambiguousZeros": 8,
+            "nonzeroUnavailable": 0,
+            "exact": 53291,
+            "withinOne": 61267,
+            "max": 2,
+            "histogram": {
+              "0": 53291,
+              "1": 4345,
+              "2": 21,
+              "-2": 24,
+              "-1": 3631
+            }
+          },
+          "candidate": {
+            "planned": 61320,
+            "compared": 61312,
+            "ambiguousZeros": 8,
+            "nonzeroUnavailable": 0,
+            "exact": 46692,
+            "withinOne": 58811,
+            "max": 3,
+            "histogram": {
+              "0": 46692,
+              "1": 6432,
+              "2": 1213,
+              "3": 11,
+              "-3": 6,
+              "-2": 1271,
+              "-1": 5687
+            }
+          },
+          "paired": 61312,
+          "correctedToExact": 333,
+          "regressedFromExact": 6932,
+          "absoluteErrorImproved": 333,
+          "absoluteErrorWorsened": 7250,
+          "changedRounded": 7822
+        },
+        "turkey8": {
+          "baseline": {
+            "planned": 17520,
+            "compared": 17520,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 17051,
+            "withinOne": 17520,
+            "max": 1,
+            "histogram": {
+              "0": 17051,
+              "1": 65,
+              "-1": 404
+            }
+          },
+          "candidate": {
+            "planned": 17520,
+            "compared": 17520,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 16031,
+            "withinOne": 17520,
+            "max": 1,
+            "histogram": {
+              "0": 16031,
+              "1": 566,
+              "-1": 923
+            }
+          },
+          "paired": 17520,
+          "correctedToExact": 58,
+          "regressedFromExact": 1078,
+          "absoluteErrorImproved": 58,
+          "absoluteErrorWorsened": 1078,
+          "changedRounded": 1136
+        },
+        "mexico-delhi2": {
+          "baseline": {
+            "planned": 4380,
+            "compared": 4380,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 3443,
+            "withinOne": 4380,
+            "max": 1,
+            "histogram": {
+              "0": 3443,
+              "1": 937
+            }
+          },
+          "candidate": {
+            "planned": 4380,
+            "compared": 4380,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 3358,
+            "withinOne": 4380,
+            "max": 1,
+            "histogram": {
+              "0": 3358,
+              "1": 979,
+              "-1": 43
+            }
+          },
+          "paired": 4380,
+          "correctedToExact": 48,
+          "regressedFromExact": 133,
+          "absoluteErrorImproved": 48,
+          "absoluteErrorWorsened": 133,
+          "changedRounded": 181
+        },
+        "turkey-temporal3": {
+          "baseline": {
+            "planned": 6570,
+            "compared": 6570,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6409,
+            "withinOne": 6570,
+            "max": 1,
+            "histogram": {
+              "0": 6409,
+              "-1": 161
+            }
+          },
+          "candidate": {
+            "planned": 6570,
+            "compared": 6570,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6039,
+            "withinOne": 6570,
+            "max": 1,
+            "histogram": {
+              "0": 6039,
+              "1": 183,
+              "-1": 348
+            }
+          },
+          "paired": 6570,
+          "correctedToExact": 35,
+          "regressedFromExact": 405,
+          "absoluteErrorImproved": 35,
+          "absoluteErrorWorsened": 405,
+          "changedRounded": 440
+        },
+        "southern6": {
+          "baseline": {
+            "planned": 13140,
+            "compared": 12694,
+            "ambiguousZeros": 446,
+            "nonzeroUnavailable": 0,
+            "exact": 11806,
+            "withinOne": 12687,
+            "max": 3,
+            "histogram": {
+              "0": 11806,
+              "1": 356,
+              "2": 4,
+              "3": 1,
+              "-3": 1,
+              "-2": 1,
+              "-1": 525
+            }
+          },
+          "candidate": {
+            "planned": 13140,
+            "compared": 12694,
+            "ambiguousZeros": 446,
+            "nonzeroUnavailable": 0,
+            "exact": 10774,
+            "withinOne": 12515,
+            "max": 3,
+            "histogram": {
+              "0": 10774,
+              "1": 930,
+              "2": 15,
+              "3": 1,
+              "-3": 1,
+              "-2": 162,
+              "-1": 811
+            }
+          },
+          "paired": 12694,
+          "correctedToExact": 41,
+          "regressedFromExact": 1073,
+          "absoluteErrorImproved": 41,
+          "absoluteErrorWorsened": 1096,
+          "changedRounded": 1155
+        }
+      },
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 16920,
+            "ambiguousZeros": 235,
+            "nonzeroUnavailable": 0,
+            "exact": 14702,
+            "withinOne": 16885,
+            "max": 3,
+            "histogram": {
+              "0": 14702,
+              "1": 687,
+              "2": 19,
+              "-3": 1,
+              "-2": 15,
+              "-1": 1496
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 16920,
+            "ambiguousZeros": 235,
+            "nonzeroUnavailable": 0,
+            "exact": 14702,
+            "withinOne": 16885,
+            "max": 3,
+            "histogram": {
+              "0": 14702,
+              "1": 687,
+              "2": 19,
+              "-3": 1,
+              "-2": 15,
+              "-1": 1496
+            }
+          },
+          "paired": 16920,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "sunrise": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15592,
+            "withinOne": 17154,
+            "max": 2,
+            "histogram": {
+              "0": 15592,
+              "1": 803,
+              "2": 1,
+              "-1": 759
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15592,
+            "withinOne": 17154,
+            "max": 2,
+            "histogram": {
+              "0": 15592,
+              "1": 803,
+              "2": 1,
+              "-1": 759
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "dhuhr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15835,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15835,
+              "1": 797,
+              "-1": 523
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15835,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15835,
+              "1": 797,
+              "-1": 523
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "asr": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15553,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15553,
+              "1": 887,
+              "-1": 715
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 6447,
+            "withinOne": 14527,
+            "max": 3,
+            "histogram": {
+              "0": 6447,
+              "1": 4274,
+              "2": 1203,
+              "3": 11,
+              "-3": 6,
+              "-2": 1408,
+              "-1": 3806
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 515,
+          "regressedFromExact": 9621,
+          "absoluteErrorImproved": 515,
+          "absoluteErrorWorsened": 9962,
+          "changedRounded": 10734
+        },
+        "maghrib": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15544,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15544,
+              "1": 893,
+              "-1": 718
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 17155,
+            "ambiguousZeros": 0,
+            "nonzeroUnavailable": 0,
+            "exact": 15544,
+            "withinOne": 17155,
+            "max": 1,
+            "histogram": {
+              "0": 15544,
+              "1": 893,
+              "-1": 718
+            }
+          },
+          "paired": 17155,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        },
+        "isha": {
+          "baseline": {
+            "planned": 17155,
+            "compared": 16936,
+            "ambiguousZeros": 219,
+            "nonzeroUnavailable": 0,
+            "exact": 14774,
+            "withinOne": 16920,
+            "max": 3,
+            "histogram": {
+              "0": 14774,
+              "1": 1636,
+              "2": 5,
+              "3": 1,
+              "-2": 10,
+              "-1": 510
+            }
+          },
+          "candidate": {
+            "planned": 17155,
+            "compared": 16936,
+            "ambiguousZeros": 219,
+            "nonzeroUnavailable": 0,
+            "exact": 14774,
+            "withinOne": 16920,
+            "max": 3,
+            "histogram": {
+              "0": 14774,
+              "1": 1636,
+              "2": 5,
+              "3": 1,
+              "-2": 10,
+              "-1": 510
+            }
+          },
+          "paired": 16936,
+          "correctedToExact": 0,
+          "regressedFromExact": 0,
+          "absoluteErrorImproved": 0,
+          "absoluteErrorWorsened": 0,
+          "changedRounded": 0
+        }
+      }
+    }
+  },
+  "decision": {
+    "passesProspectiveGate": false,
+    "losses": [
+      {
+        "id": "berlin-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 310,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 310,
+            "-1": 55
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 137,
+          "withinOne": 349,
+          "max": 2,
+          "histogram": {
+            "0": 137,
+            "1": 100,
+            "-2": 16,
+            "-1": 112
+          }
+        }
+      },
+      {
+        "id": "berlin-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 318,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 318,
+            "-1": 47
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 128,
+          "withinOne": 346,
+          "max": 2,
+          "histogram": {
+            "0": 128,
+            "1": 103,
+            "-2": 19,
+            "-1": 115
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 327,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 327,
+            "-1": 38
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 142,
+          "withinOne": 352,
+          "max": 2,
+          "histogram": {
+            "0": 142,
+            "1": 96,
+            "-2": 13,
+            "-1": 114
+          }
+        }
+      },
+      {
+        "id": "oslo-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 254,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 254,
+            "-1": 111
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 101,
+          "withinOne": 302,
+          "max": 2,
+          "histogram": {
+            "0": 101,
+            "1": 106,
+            "2": 1,
+            "-2": 62,
+            "-1": 95
+          }
+        }
+      },
+      {
+        "id": "stockholm-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 335,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 335,
+            "-1": 30
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 78,
+          "withinOne": 326,
+          "max": 2,
+          "histogram": {
+            "0": 78,
+            "1": 136,
+            "2": 8,
+            "-2": 31,
+            "-1": 112
+          }
+        }
+      },
+      {
+        "id": "stockholm-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 340,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 340,
+            "-1": 25
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 85,
+          "withinOne": 318,
+          "max": 2,
+          "histogram": {
+            "0": 85,
+            "1": 128,
+            "2": 8,
+            "-2": 39,
+            "-1": 105
+          }
+        }
+      },
+      {
+        "id": "helsinki-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 364,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 364,
+            "-1": 1
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 82,
+          "withinOne": 323,
+          "max": 2,
+          "histogram": {
+            "0": 82,
+            "1": 135,
+            "2": 13,
+            "-2": 29,
+            "-1": 106
+          }
+        }
+      },
+      {
+        "id": "helsinki-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 360,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 360,
+            "1": 1,
+            "-1": 4
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 95,
+          "withinOne": 324,
+          "max": 2,
+          "histogram": {
+            "0": 95,
+            "1": 128,
+            "2": 13,
+            "-2": 28,
+            "-1": 101
+          }
+        }
+      },
+      {
+        "id": "tromso-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 341,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 341,
+            "1": 8,
+            "-1": 16
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 84,
+          "withinOne": 199,
+          "max": 3,
+          "histogram": {
+            "0": 84,
+            "1": 64,
+            "2": 75,
+            "-3": 2,
+            "-2": 89,
+            "-1": 51
+          }
+        }
+      },
+      {
+        "id": "tromso-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 352,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 352,
+            "1": 6,
+            "-1": 7
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 87,
+          "withinOne": 189,
+          "max": 3,
+          "histogram": {
+            "0": 87,
+            "1": 56,
+            "2": 84,
+            "-3": 2,
+            "-2": 90,
+            "-1": 46
+          }
+        }
+      },
+      {
+        "id": "bodo-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 353,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 353,
+            "1": 6,
+            "-1": 6
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 222,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 87,
+            "2": 65,
+            "-2": 78,
+            "-1": 67
+          }
+        }
+      },
+      {
+        "id": "bodo-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 357,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 357,
+            "1": 4,
+            "-1": 4
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 73,
+          "withinOne": 226,
+          "max": 2,
+          "histogram": {
+            "0": 73,
+            "1": 83,
+            "2": 67,
+            "-2": 72,
+            "-1": 70
+          }
+        }
+      },
+      {
+        "id": "kiruna-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 355,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 355,
+            "1": 8,
+            "-1": 2
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 74,
+          "withinOne": 236,
+          "max": 2,
+          "histogram": {
+            "0": 74,
+            "1": 90,
+            "2": 58,
+            "-2": 71,
+            "-1": 72
+          }
+        }
+      },
+      {
+        "id": "kiruna-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 352,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 352,
+            "1": 11,
+            "-1": 2
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 73,
+          "withinOne": 215,
+          "max": 2,
+          "histogram": {
+            "0": 73,
+            "1": 75,
+            "2": 75,
+            "-2": 75,
+            "-1": 67
+          }
+        }
+      },
+      {
+        "id": "reykjavik-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 345,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 345,
+            "1": 20
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 48,
+          "withinOne": 216,
+          "max": 2,
+          "histogram": {
+            "0": 48,
+            "1": 100,
+            "2": 70,
+            "-2": 79,
+            "-1": 68
+          }
+        }
+      },
+      {
+        "id": "reykjavik-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 347,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 347,
+            "1": 18
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 56,
+          "withinOne": 222,
+          "max": 2,
+          "histogram": {
+            "0": 56,
+            "1": 89,
+            "2": 75,
+            "-2": 68,
+            "-1": 77
+          }
+        }
+      },
+      {
+        "id": "trondheim-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 340,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 340,
+            "1": 25
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 67,
+          "withinOne": 278,
+          "max": 2,
+          "histogram": {
+            "0": 67,
+            "1": 122,
+            "2": 40,
+            "-2": 47,
+            "-1": 89
+          }
+        }
+      },
+      {
+        "id": "trondheim-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 61,
+          "withinOne": 271,
+          "max": 2,
+          "histogram": {
+            "0": 61,
+            "1": 114,
+            "2": 50,
+            "-2": 44,
+            "-1": 96
+          }
+        }
+      },
+      {
+        "id": "oulu-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 240,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 240,
+            "1": 125
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 259,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 91,
+            "2": 87,
+            "-2": 19,
+            "-1": 100
+          }
+        }
+      },
+      {
+        "id": "oulu-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 239,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 239,
+            "1": 126
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 69,
+          "withinOne": 259,
+          "max": 2,
+          "histogram": {
+            "0": 69,
+            "1": 92,
+            "2": 84,
+            "-2": 22,
+            "-1": 98
+          }
+        }
+      },
+      {
+        "id": "zagreb-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 325,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 325,
+            "-1": 40
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 172,
+          "withinOne": 364,
+          "max": 2,
+          "histogram": {
+            "0": 172,
+            "1": 77,
+            "-2": 1,
+            "-1": 115
+          }
+        }
+      },
+      {
+        "id": "kuopio-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 287,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 287,
+            "1": 78
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 294,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 116,
+            "2": 55,
+            "-2": 16,
+            "-1": 110
+          }
+        }
+      },
+      {
+        "id": "narvik-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 184,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 184,
+            "1": 181
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 53,
+          "withinOne": 206,
+          "max": 3,
+          "histogram": {
+            "0": 53,
+            "1": 65,
+            "2": 115,
+            "3": 11,
+            "-2": 33,
+            "-1": 88
+          }
+        }
+      },
+      {
+        "id": "kirkenes-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 339,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 339,
+            "-1": 26
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 82,
+          "withinOne": 215,
+          "max": 3,
+          "histogram": {
+            "0": 82,
+            "1": 82,
+            "2": 58,
+            "-3": 2,
+            "-2": 90,
+            "-1": 51
+          }
+        }
+      },
+      {
+        "id": "vienna-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 332,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 332,
+            "-1": 33
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 168,
+          "withinOne": 361,
+          "max": 2,
+          "histogram": {
+            "0": 168,
+            "1": 78,
+            "-2": 4,
+            "-1": 115
+          }
+        }
+      },
+      {
+        "id": "bremen-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 339,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 339,
+            "1": 13,
+            "-1": 13
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 124,
+          "withinOne": 349,
+          "max": 2,
+          "histogram": {
+            "0": 124,
+            "1": 121,
+            "2": 3,
+            "-2": 13,
+            "-1": 104
+          }
+        }
+      },
+      {
+        "id": "bergen-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 337,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 337,
+            "1": 28
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 78,
+          "withinOne": 297,
+          "max": 2,
+          "histogram": {
+            "0": 78,
+            "1": 128,
+            "2": 32,
+            "-2": 36,
+            "-1": 91
+          }
+        }
+      },
+      {
+        "id": "rovaniemi-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 362,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 362,
+            "1": 2,
+            "-1": 1
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 58,
+          "withinOne": 246,
+          "max": 2,
+          "histogram": {
+            "0": 58,
+            "1": 106,
+            "2": 56,
+            "-2": 63,
+            "-1": 82
+          }
+        }
+      },
+      {
+        "id": "ushuaia-2026",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "-1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 70,
+          "withinOne": 305,
+          "max": 2,
+          "histogram": {
+            "0": 70,
+            "1": 158,
+            "2": 5,
+            "-2": 55,
+            "-1": 77
+          }
+        }
+      },
+      {
+        "id": "ushuaia-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "-1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 72,
+          "withinOne": 303,
+          "max": 2,
+          "histogram": {
+            "0": 72,
+            "1": 154,
+            "2": 6,
+            "-2": 56,
+            "-1": 77
+          }
+        }
+      },
+      {
+        "id": "punta-arenas-2027",
+        "event": "asr",
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 327,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 327,
+            "-1": 38
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 75,
+          "withinOne": 315,
+          "max": 2,
+          "histogram": {
+            "0": 75,
+            "1": 152,
+            "-2": 50,
+            "-1": 88
+          }
+        }
+      }
+    ],
+    "publicModelChanged": false
+  },
+  "chronologyQuality": {
+    "baselineRawReversals": 17,
+    "candidateRawReversals": 13,
+    "baselineRoundedReversals": 8,
+    "candidateRoundedReversals": 3,
+    "orderingGainOverridesAccuracyLoss": false
+  },
+  "southernScope": {
+    "northernSeasonMirrored": false,
+    "knownAnnuals": 6,
+    "unresolvedSourceZeros": 446,
+    "earlierFailed2028RequestsProvideAccuracyEvidence": false,
+    "sourceConfirmedAfterMidnightIshaDates": false,
+    "officialCurrentActivityPage": "https://kurul.diyanet.gov.tr/tr/faaliyetler/2020-2025/ibadet-vakitleri-dini-gun-ve-gecelerin-tespiti/ileri-enlemlerde-namaz-vakitleri",
+    "officialActivityScope": "45th latitude and north; application from 2023. The detailed 44.5\u00b0 criterion is separate, not a new boundary."
+  },
+  "verification": {
+    "verifiedAtUtc": "2026-09-25T14:42:08.946262+00:00",
+    "status": "PASS",
+    "scope": "Independent Python USNO implementation, full-cycle Asr root search, IANA rendering, rounding and score recount; prior parsed reference instants reused, not a new original-source parser",
+    "sourceScoresReadAfterFreeze": true,
+    "caseYears": 47,
+    "cityDays": 17155,
+    "uniquePlannedFields": 102930,
+    "scoringRowsBothDateModes": 205860,
+    "summaryGroups": 682,
+    "independentlySolvedRoots": 16815,
+    "northernNoSignPolicyDays": 340,
+    "maxRootDifferenceMilliseconds": 0.01318359375,
+    "maximumIndependentAltitudeResidualDegrees": 1.4205333798145148e-08,
+    "unchangedOtherEventObjects": 85775,
+    "rawReversals": {
+      "baseline": 17,
+      "candidate": 13
+    },
+    "roundedReversals": {
+      "baseline": 8,
+      "candidate": 3
+    },
+    "planPins": 37,
+    "freezePins": 5,
+    "nairobiSourceRead": false,
+    "newInstitutionalRequests": 0,
+    "reportSha256": "0ada969c86654e0051a2ef2127c5a13afb9bd3c63c7f0e75a0cb4103b13eef4f"
+  },
+  "provenance": {
+    "privateArtifactsSha256": {
+      "PLAN.md": "0018f87633f3feba433020654f1c52244b40872aa525bd2827c7d48659067f5d",
+      "asr.mjs": "27804d4a1824d6e512802d7cebb828a50c587815ec30c172eae8248d2d1f20f9",
+      "catalog.json": "59b743f16444e4e6942b9cc8513ca48c0cd2c2ceeb82678df6c9c25dda8f0d2d",
+      "plan-pin.json": "c22fec189121b2086a896c7745c5cf34b5bcf4b6f10c7a26c5542cccdf5fd0ee",
+      "forecast.mjs": "ebc788b7992414c67eb259aebd4b65e2cb73b3d0573816d8bff730853825aaaa",
+      "forecast.json": "933718c8d26e105ddc27ce48d066161ee5b11bc909b04ac92f535fd80217acc2",
+      "freeze.json": "ea0365ec0f80a3ab4e54749149a0b1d1c1ecb225cde90808e634e78de07c81e4",
+      "evaluate.mjs": "7bbf917b4a04a825e078680bb864638d524647552c6d3c22f8dcc17f2631bd80",
+      "report.json": "0ada969c86654e0051a2ef2127c5a13afb9bd3c63c7f0e75a0cb4103b13eef4f",
+      "verify.py": "36c3af8597c81310def3184bbf04058b47299f4978b8f3aa57742b12ea147575",
+      "verification.json": "fd49c80843b77855c39711920706f7419a88e6e292f2629292328b28a0c45896",
+      "README.md": "5dcecf431ef1f134e420b3ca5d1be5feb0f8243c2260613746b8ed42d5aa59c6",
+      "source-scope-addendum.json": "cf2b68b3250381027f03dc598d19c704f6029e28ab2df0035795b25e8a852801"
+    },
+    "primaryAsrCriteriaSha256": {
+      "awqatsalah-criteria-18-en.json": "63d14706cb9b1e4357b60f1442ffa9fa2ee0d2f592746f91cc2c2dea86099447",
+      "awqatsalah-criteria-34.json": "519ac6391e5b0111aa0965da78e173167013e6b01114b56602e7aff255c45e83"
+    },
+    "temkinPageSha256": "40d4e8ed5c57a9e9ab9078d207bcaf39848beeb5eed64c942b8009b9aec321e3",
+    "activityPageSha256": "8a1811bce6201da13d802f1b9c4b2033c7a40d94f58dad4cbb95bcb90068d5c4"
+  },
+  "reproducibilityLimit": "Prior parsed institutional reference instants are reused. New Python checks independently reconstruct solar roots, rounding, IANA rendering and all score groups, not original calendar acquisition. Raw calendar rows are not redistributed. Frozen reference hashes alone cannot reproduce source accuracy. No new institutional request or candidate holdout was used.",
+  "caseAsrResultsIdenticalUnderBothDateInterpretations": true,
+  "caseAsrResults": [
+    {
+      "id": "berlin-2026",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 310,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 310,
+            "-1": 55
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 137,
+          "withinOne": 349,
+          "max": 2,
+          "histogram": {
+            "0": 137,
+            "1": 100,
+            "-2": 16,
+            "-1": 112
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 32,
+        "regressedFromExact": 205,
+        "absoluteErrorImproved": 32,
+        "absoluteErrorWorsened": 214,
+        "changedRounded": 246
+      }
+    },
+    {
+      "id": "berlin-2027",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 318,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 318,
+            "-1": 47
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 128,
+          "withinOne": 346,
+          "max": 2,
+          "histogram": {
+            "0": 128,
+            "1": 103,
+            "-2": 19,
+            "-1": 115
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 22,
+        "regressedFromExact": 212,
+        "absoluteErrorImproved": 22,
+        "absoluteErrorWorsened": 223,
+        "changedRounded": 246
+      }
+    },
+    {
+      "id": "frankfurt-2027",
+      "location": {
+        "latitude": 50.11666667,
+        "longitude": 8.683333333,
+        "timeZone": "Europe/Berlin"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 327,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 327,
+            "-1": 38
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 142,
+          "withinOne": 352,
+          "max": 2,
+          "histogram": {
+            "0": 142,
+            "1": 96,
+            "-2": 13,
+            "-1": 114
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 18,
+        "regressedFromExact": 203,
+        "absoluteErrorImproved": 18,
+        "absoluteErrorWorsened": 208,
+        "changedRounded": 226
+      }
+    },
+    {
+      "id": "oslo-2027",
+      "location": {
+        "latitude": 59.9076424165,
+        "longitude": 10.840360556,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 254,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 254,
+            "-1": 111
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 101,
+          "withinOne": 302,
+          "max": 2,
+          "histogram": {
+            "0": 101,
+            "1": 106,
+            "2": 1,
+            "-2": 62,
+            "-1": 95
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 40,
+        "regressedFromExact": 193,
+        "absoluteErrorImproved": 40,
+        "absoluteErrorWorsened": 222,
+        "changedRounded": 280
+      }
+    },
+    {
+      "id": "stockholm-2026",
+      "location": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 335,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 335,
+            "-1": 30
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 78,
+          "withinOne": 326,
+          "max": 2,
+          "histogram": {
+            "0": 78,
+            "1": 136,
+            "2": 8,
+            "-2": 31,
+            "-1": 112
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 12,
+        "regressedFromExact": 269,
+        "absoluteErrorImproved": 12,
+        "absoluteErrorWorsened": 276,
+        "changedRounded": 293
+      }
+    },
+    {
+      "id": "stockholm-2027",
+      "location": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 340,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 340,
+            "-1": 25
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 85,
+          "withinOne": 318,
+          "max": 2,
+          "histogram": {
+            "0": 85,
+            "1": 128,
+            "2": 8,
+            "-2": 39,
+            "-1": 105
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 11,
+        "regressedFromExact": 266,
+        "absoluteErrorImproved": 11,
+        "absoluteErrorWorsened": 270,
+        "changedRounded": 285
+      }
+    },
+    {
+      "id": "helsinki-2026",
+      "location": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 364,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 364,
+            "-1": 1
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 82,
+          "withinOne": 323,
+          "max": 2,
+          "histogram": {
+            "0": 82,
+            "1": 135,
+            "2": 13,
+            "-2": 29,
+            "-1": 106
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 0,
+        "regressedFromExact": 282,
+        "absoluteErrorImproved": 0,
+        "absoluteErrorWorsened": 282,
+        "changedRounded": 283
+      }
+    },
+    {
+      "id": "helsinki-2027",
+      "location": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 360,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 360,
+            "1": 1,
+            "-1": 4
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 95,
+          "withinOne": 324,
+          "max": 2,
+          "histogram": {
+            "0": 95,
+            "1": 128,
+            "2": 13,
+            "-2": 28,
+            "-1": 101
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 1,
+        "regressedFromExact": 266,
+        "absoluteErrorImproved": 1,
+        "absoluteErrorWorsened": 266,
+        "changedRounded": 271
+      }
+    },
+    {
+      "id": "tromso-2026",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 341,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 341,
+            "1": 8,
+            "-1": 16
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 84,
+          "withinOne": 199,
+          "max": 3,
+          "histogram": {
+            "0": 84,
+            "1": 64,
+            "2": 75,
+            "-3": 2,
+            "-2": 89,
+            "-1": 51
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 4,
+        "regressedFromExact": 261,
+        "absoluteErrorImproved": 4,
+        "absoluteErrorWorsened": 271,
+        "changedRounded": 281
+      }
+    },
+    {
+      "id": "tromso-2027",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 352,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 352,
+            "1": 6,
+            "-1": 7
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 87,
+          "withinOne": 189,
+          "max": 3,
+          "histogram": {
+            "0": 87,
+            "1": 56,
+            "2": 84,
+            "-3": 2,
+            "-2": 90,
+            "-1": 46
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 3,
+        "regressedFromExact": 268,
+        "absoluteErrorImproved": 3,
+        "absoluteErrorWorsened": 273,
+        "changedRounded": 281
+      }
+    },
+    {
+      "id": "bodo-2026",
+      "location": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 353,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 353,
+            "1": 6,
+            "-1": 6
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 222,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 87,
+            "2": 65,
+            "-2": 78,
+            "-1": 67
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 5,
+        "regressedFromExact": 290,
+        "absoluteErrorImproved": 5,
+        "absoluteErrorWorsened": 291,
+        "changedRounded": 301
+      }
+    },
+    {
+      "id": "bodo-2027",
+      "location": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 357,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 357,
+            "1": 4,
+            "-1": 4
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 73,
+          "withinOne": 226,
+          "max": 2,
+          "histogram": {
+            "0": 73,
+            "1": 83,
+            "2": 67,
+            "-2": 72,
+            "-1": 70
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 4,
+        "regressedFromExact": 288,
+        "absoluteErrorImproved": 4,
+        "absoluteErrorWorsened": 289,
+        "changedRounded": 295
+      }
+    },
+    {
+      "id": "kiruna-2026",
+      "location": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 355,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 355,
+            "1": 8,
+            "-1": 2
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 74,
+          "withinOne": 236,
+          "max": 2,
+          "histogram": {
+            "0": 74,
+            "1": 90,
+            "2": 58,
+            "-2": 71,
+            "-1": 72
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 3,
+        "regressedFromExact": 284,
+        "absoluteErrorImproved": 3,
+        "absoluteErrorWorsened": 284,
+        "changedRounded": 293
+      }
+    },
+    {
+      "id": "kiruna-2027",
+      "location": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 352,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 352,
+            "1": 11,
+            "-1": 2
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 73,
+          "withinOne": 215,
+          "max": 2,
+          "histogram": {
+            "0": 73,
+            "1": 75,
+            "2": 75,
+            "-2": 75,
+            "-1": 67
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 3,
+        "regressedFromExact": 282,
+        "absoluteErrorImproved": 3,
+        "absoluteErrorWorsened": 287,
+        "changedRounded": 295
+      }
+    },
+    {
+      "id": "reykjavik-2026",
+      "location": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 345,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 345,
+            "1": 20
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 48,
+          "withinOne": 216,
+          "max": 2,
+          "histogram": {
+            "0": 48,
+            "1": 100,
+            "2": 70,
+            "-2": 79,
+            "-1": 68
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 2,
+        "regressedFromExact": 299,
+        "absoluteErrorImproved": 2,
+        "absoluteErrorWorsened": 309,
+        "changedRounded": 317
+      }
+    },
+    {
+      "id": "reykjavik-2027",
+      "location": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 347,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 347,
+            "1": 18
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 56,
+          "withinOne": 222,
+          "max": 2,
+          "histogram": {
+            "0": 56,
+            "1": 89,
+            "2": 75,
+            "-2": 68,
+            "-1": 77
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 4,
+        "regressedFromExact": 295,
+        "absoluteErrorImproved": 4,
+        "absoluteErrorWorsened": 301,
+        "changedRounded": 311
+      }
+    },
+    {
+      "id": "trondheim-2026",
+      "location": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 340,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 340,
+            "1": 25
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 67,
+          "withinOne": 278,
+          "max": 2,
+          "histogram": {
+            "0": 67,
+            "1": 122,
+            "2": 40,
+            "-2": 47,
+            "-1": 89
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 5,
+        "regressedFromExact": 278,
+        "absoluteErrorImproved": 5,
+        "absoluteErrorWorsened": 287,
+        "changedRounded": 300
+      }
+    },
+    {
+      "id": "trondheim-2027",
+      "location": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 61,
+          "withinOne": 271,
+          "max": 2,
+          "histogram": {
+            "0": 61,
+            "1": 114,
+            "2": 50,
+            "-2": 44,
+            "-1": 96
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 6,
+        "regressedFromExact": 289,
+        "absoluteErrorImproved": 6,
+        "absoluteErrorWorsened": 291,
+        "changedRounded": 304
+      }
+    },
+    {
+      "id": "oulu-2026",
+      "location": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 240,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 240,
+            "1": 125
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 259,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 91,
+            "2": 87,
+            "-2": 19,
+            "-1": 100
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 26,
+        "regressedFromExact": 198,
+        "absoluteErrorImproved": 26,
+        "absoluteErrorWorsened": 237,
+        "changedRounded": 299
+      }
+    },
+    {
+      "id": "oulu-2027",
+      "location": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 239,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 239,
+            "1": 126
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 69,
+          "withinOne": 259,
+          "max": 2,
+          "histogram": {
+            "0": 69,
+            "1": 92,
+            "2": 84,
+            "-2": 22,
+            "-1": 98
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 23,
+        "regressedFromExact": 193,
+        "absoluteErrorImproved": 23,
+        "absoluteErrorWorsened": 241,
+        "changedRounded": 292
+      }
+    },
+    {
+      "id": "zagreb-2027",
+      "location": {
+        "latitude": 45.8131708,
+        "longitude": 15.9817349,
+        "timeZone": "Europe/Zagreb"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 325,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 325,
+            "-1": 40
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 172,
+          "withinOne": 364,
+          "max": 2,
+          "histogram": {
+            "0": 172,
+            "1": 77,
+            "-2": 1,
+            "-1": 115
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 26,
+        "regressedFromExact": 179,
+        "absoluteErrorImproved": 26,
+        "absoluteErrorWorsened": 180,
+        "changedRounded": 206
+      }
+    },
+    {
+      "id": "kuopio-2027",
+      "location": {
+        "latitude": 62.89256,
+        "longitude": 27.63331,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 287,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 287,
+            "1": 78
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 68,
+          "withinOne": 294,
+          "max": 2,
+          "histogram": {
+            "0": 68,
+            "1": 116,
+            "2": 55,
+            "-2": 16,
+            "-1": 110
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 15,
+        "regressedFromExact": 234,
+        "absoluteErrorImproved": 15,
+        "absoluteErrorWorsened": 257,
+        "changedRounded": 295
+      }
+    },
+    {
+      "id": "narvik-2027",
+      "location": {
+        "latitude": 68.438284479,
+        "longitude": 17.427768424,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 184,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 184,
+            "1": 181
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 53,
+          "withinOne": 206,
+          "max": 3,
+          "histogram": {
+            "0": 53,
+            "1": 65,
+            "2": 115,
+            "3": 11,
+            "-2": 33,
+            "-1": 88
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 19,
+        "regressedFromExact": 150,
+        "absoluteErrorImproved": 19,
+        "absoluteErrorWorsened": 223,
+        "changedRounded": 288
+      }
+    },
+    {
+      "id": "kirkenes-2027",
+      "location": {
+        "latitude": 69.727080887,
+        "longitude": 30.044998601,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 339,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 339,
+            "-1": 26
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 82,
+          "withinOne": 215,
+          "max": 3,
+          "histogram": {
+            "0": 82,
+            "1": 82,
+            "2": 58,
+            "-3": 2,
+            "-2": 90,
+            "-1": 51
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 3,
+        "regressedFromExact": 260,
+        "absoluteErrorImproved": 3,
+        "absoluteErrorWorsened": 269,
+        "changedRounded": 280
+      }
+    },
+    {
+      "id": "vienna-2027",
+      "location": {
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 332,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 332,
+            "-1": 33
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 168,
+          "withinOne": 361,
+          "max": 2,
+          "histogram": {
+            "0": 168,
+            "1": 78,
+            "-2": 4,
+            "-1": 115
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 22,
+        "regressedFromExact": 186,
+        "absoluteErrorImproved": 22,
+        "absoluteErrorWorsened": 189,
+        "changedRounded": 211
+      }
+    },
+    {
+      "id": "bremen-2027",
+      "location": {
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 339,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 339,
+            "1": 13,
+            "-1": 13
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 124,
+          "withinOne": 349,
+          "max": 2,
+          "histogram": {
+            "0": 124,
+            "1": 121,
+            "2": 3,
+            "-2": 13,
+            "-1": 104
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 16,
+        "regressedFromExact": 231,
+        "absoluteErrorImproved": 16,
+        "absoluteErrorWorsened": 232,
+        "changedRounded": 249
+      }
+    },
+    {
+      "id": "bergen-2027",
+      "location": {
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 337,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 337,
+            "1": 28
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 78,
+          "withinOne": 297,
+          "max": 2,
+          "histogram": {
+            "0": 78,
+            "1": 128,
+            "2": 32,
+            "-2": 36,
+            "-1": 91
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 267,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 274,
+        "changedRounded": 288
+      }
+    },
+    {
+      "id": "rovaniemi-2027",
+      "location": {
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "route": "north",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 362,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 362,
+            "1": 2,
+            "-1": 1
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 58,
+          "withinOne": 246,
+          "max": 2,
+          "histogram": {
+            "0": 58,
+            "1": 106,
+            "2": 56,
+            "-2": 63,
+            "-1": 82
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 0,
+        "regressedFromExact": 304,
+        "absoluteErrorImproved": 0,
+        "absoluteErrorWorsened": 304,
+        "changedRounded": 306
+      }
+    },
+    {
+      "id": "istanbul-2027",
+      "location": {
+        "latitude": 41.018611,
+        "longitude": 28.964722,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 363,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 363,
+            "1": 1,
+            "-1": 1
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 207,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 207,
+            "1": 80,
+            "-1": 78
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 1,
+        "regressedFromExact": 157,
+        "absoluteErrorImproved": 1,
+        "absoluteErrorWorsened": 157,
+        "changedRounded": 158
+      }
+    },
+    {
+      "id": "izmir-2027",
+      "location": {
+        "latitude": 38.412726,
+        "longitude": 27.138376,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 348,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 348,
+            "-1": 17
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 219,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 219,
+            "1": 64,
+            "-1": 82
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 6,
+        "regressedFromExact": 135,
+        "absoluteErrorImproved": 6,
+        "absoluteErrorWorsened": 135,
+        "changedRounded": 141
+      }
+    },
+    {
+      "id": "van-2027",
+      "location": {
+        "latitude": 38.494565,
+        "longitude": 43.383231,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 349,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 349,
+            "-1": 16
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 222,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 222,
+            "1": 65,
+            "-1": 78
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 10,
+        "regressedFromExact": 137,
+        "absoluteErrorImproved": 10,
+        "absoluteErrorWorsened": 137,
+        "changedRounded": 147
+      }
+    },
+    {
+      "id": "ankara-2027",
+      "location": {
+        "latitude": 39.9198743755027,
+        "longitude": 32.8542709350586,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 345,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 345,
+            "-1": 20
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 217,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 217,
+            "1": 56,
+            "-1": 92
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 136,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 136,
+        "changedRounded": 144
+      }
+    },
+    {
+      "id": "adana-2027",
+      "location": {
+        "latitude": 36.987,
+        "longitude": 35.326,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 353,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 353,
+            "-1": 12
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 241,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 241,
+            "1": 58,
+            "-1": 66
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 120,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 120,
+        "changedRounded": 128
+      }
+    },
+    {
+      "id": "karaman-2027",
+      "location": {
+        "latitude": 37.181,
+        "longitude": 33.214,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 345,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 345,
+            "-1": 20
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 241,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 241,
+            "1": 53,
+            "-1": 71
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 112,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 112,
+        "changedRounded": 120
+      }
+    },
+    {
+      "id": "tekirdag-2027",
+      "location": {
+        "latitude": 40.973,
+        "longitude": 27.511,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 349,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 349,
+            "-1": 16
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 205,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 205,
+            "1": 72,
+            "-1": 88
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 10,
+        "regressedFromExact": 154,
+        "absoluteErrorImproved": 10,
+        "absoluteErrorWorsened": 154,
+        "changedRounded": 164
+      }
+    },
+    {
+      "id": "hatay-2027",
+      "location": {
+        "latitude": 36.2,
+        "longitude": 36.153,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 351,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 351,
+            "-1": 14
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 231,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 231,
+            "1": 54,
+            "-1": 80
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 7,
+        "regressedFromExact": 127,
+        "absoluteErrorImproved": 7,
+        "absoluteErrorWorsened": 127,
+        "changedRounded": 134
+      }
+    },
+    {
+      "id": "mexico-city-2027",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 331,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 331,
+            "1": 34
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 249,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 249,
+            "1": 75,
+            "-1": 41
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 15,
+        "regressedFromExact": 97,
+        "absoluteErrorImproved": 15,
+        "absoluteErrorWorsened": 97,
+        "changedRounded": 112
+      }
+    },
+    {
+      "id": "new-delhi-2027",
+      "location": {
+        "latitude": 28.6566562885,
+        "longitude": 77.1323165071,
+        "timeZone": "Asia/Kolkata"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 238,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 238,
+            "1": 127
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 235,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 235,
+            "1": 128,
+            "-1": 2
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 33,
+        "regressedFromExact": 36,
+        "absoluteErrorImproved": 33,
+        "absoluteErrorWorsened": 36,
+        "changedRounded": 69
+      }
+    },
+    {
+      "id": "istanbul-2026",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 352,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 352,
+            "-1": 13
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 214,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 214,
+            "1": 65,
+            "-1": 86
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 146,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 146,
+        "changedRounded": 154
+      }
+    },
+    {
+      "id": "ankara-2025",
+      "location": {
+        "latitude": 39.938,
+        "longitude": 32.848,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 348,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 348,
+            "-1": 17
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 223,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 223,
+            "1": 68,
+            "-1": 74
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 12,
+        "regressedFromExact": 137,
+        "absoluteErrorImproved": 12,
+        "absoluteErrorWorsened": 137,
+        "changedRounded": 149
+      }
+    },
+    {
+      "id": "adana-2026",
+      "location": {
+        "latitude": 36.987,
+        "longitude": 35.326,
+        "timeZone": "Europe/Istanbul"
+      },
+      "route": "low",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 349,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 349,
+            "-1": 16
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 242,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 242,
+            "1": 50,
+            "-1": 73
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 15,
+        "regressedFromExact": 122,
+        "absoluteErrorImproved": 15,
+        "absoluteErrorWorsened": 122,
+        "changedRounded": 137
+      }
+    },
+    {
+      "id": "cape-town-2026",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 345,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 345,
+            "1": 20
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 243,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 243,
+            "1": 70,
+            "-1": 52
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 7,
+        "regressedFromExact": 109,
+        "absoluteErrorImproved": 7,
+        "absoluteErrorWorsened": 109,
+        "changedRounded": 116
+      }
+    },
+    {
+      "id": "cape-town-2027",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 341,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 341,
+            "1": 24
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 248,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 248,
+            "1": 70,
+            "-1": 47
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 8,
+        "regressedFromExact": 101,
+        "absoluteErrorImproved": 8,
+        "absoluteErrorWorsened": 101,
+        "changedRounded": 109
+      }
+    },
+    {
+      "id": "ushuaia-2026",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "-1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 70,
+          "withinOne": 305,
+          "max": 2,
+          "histogram": {
+            "0": 70,
+            "1": 158,
+            "2": 5,
+            "-2": 55,
+            "-1": 77
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 5,
+        "regressedFromExact": 279,
+        "absoluteErrorImproved": 5,
+        "absoluteErrorWorsened": 287,
+        "changedRounded": 296
+      }
+    },
+    {
+      "id": "ushuaia-2027",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 344,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 344,
+            "-1": 21
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 72,
+          "withinOne": 303,
+          "max": 2,
+          "histogram": {
+            "0": 72,
+            "1": 154,
+            "2": 6,
+            "-2": 56,
+            "-1": 77
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 4,
+        "regressedFromExact": 276,
+        "absoluteErrorImproved": 4,
+        "absoluteErrorWorsened": 284,
+        "changedRounded": 294
+      }
+    },
+    {
+      "id": "sydney-2027",
+      "location": {
+        "latitude": -33.88333333,
+        "longitude": 151.2166667,
+        "timeZone": "Australia/Sydney"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 353,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 353,
+            "-1": 12
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 314,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 314,
+            "1": 14,
+            "-1": 37
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 7,
+        "regressedFromExact": 46,
+        "absoluteErrorImproved": 7,
+        "absoluteErrorWorsened": 46,
+        "changedRounded": 53
+      }
+    },
+    {
+      "id": "punta-arenas-2027",
+      "location": {
+        "latitude": -53.1627,
+        "longitude": -70.908008,
+        "timeZone": "America/Punta_Arenas"
+      },
+      "route": "south",
+      "asr": {
+        "baseline": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 327,
+          "withinOne": 365,
+          "max": 1,
+          "histogram": {
+            "0": 327,
+            "-1": 38
+          }
+        },
+        "candidate": {
+          "planned": 365,
+          "compared": 365,
+          "ambiguousZeros": 0,
+          "nonzeroUnavailable": 0,
+          "exact": 75,
+          "withinOne": 315,
+          "max": 2,
+          "histogram": {
+            "0": 75,
+            "1": 152,
+            "-2": 50,
+            "-1": 88
+          }
+        },
+        "paired": 365,
+        "correctedToExact": 10,
+        "regressedFromExact": 262,
+        "absoluteErrorImproved": 10,
+        "absoluteErrorWorsened": 269,
+        "changedRounded": 287
+      }
+    }
+  ]
+}

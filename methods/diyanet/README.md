@@ -8,6 +8,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [second offline refinement study](RESEARCH-ROUND-2.md) raises retrospective Berlin/Stockholm agreement from **3,862 to 4,257 of 4,380 minutes** using fixed diagnostic points inferred from a separate year's observations. These are not verified institutional coordinates. Five seasonal hypotheses and two solar coefficient alternatives were rejected. The calculation defaults remain unchanged; a new [offline point-consistency tool](diagnostics/README.md) makes the diagnostic available to contributors.
 
+A [global Asr geometry diagnostic](GLOBAL-ASR-GEOMETRY.md) tested a fixed-noon-shadow continuous crossing across 47 known annuals. It reduced some polar ordering reversals but substantially worsened clock agreement, so it was rejected without changing the public calculations.
+
 ## Run the selected example
 
 Run from the repository root:
