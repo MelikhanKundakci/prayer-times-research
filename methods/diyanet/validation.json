@@ -50,6 +50,54 @@
       "evidenceIdentifier": "research/diyanet-low-latitude-own/report.json"
     },
     {
+      "id": "nairobi-2027-fresh",
+      "recipe": "unchanged south own USNO UTC00",
+      "exposure": "complete forecast and independent city point frozen before identifying official city or viewing its times",
+      "scope": "Nairobi, Kenya, complete 2027 year",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 2093,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 95.5708,
+      "nonExactRatePercent": 4.4292,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Nonzero clock assigned to the source printed Gregorian date in Africa/Nairobi.",
+      "caveats": [
+        "All 97 nonexact differences are model −1 minute; the published minute does not identify their cause.",
+        "The UNGEGN city point is independent but is not a confirmed Diyanet production point."
+      ],
+      "evidenceIdentifier": "research/diyanet-global-nairobi-2026-09-25/report.json"
+    },
+    {
+      "id": "tokyo-2027-fresh",
+      "recipe": "unchanged low-latitude own USNO UTC00",
+      "exposure": "complete forecast and independent city point frozen before first official Tokyo timing exposure",
+      "scope": "Tokyo, Japan, complete 2027 year",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2190,
+      "uncomparedSlots": 0,
+      "exactCount": 1355,
+      "withinOneMinuteCount": 2190,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 61.8721,
+      "nonExactRatePercent": 38.1279,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Nonzero clock assigned to the source printed Gregorian date in Asia/Tokyo.",
+      "caveats": [
+        "All 835 nonexact differences are model +1 minute; no Tokyo-specific correction was fitted.",
+        "The UNGEGN city point is independent but is not a confirmed Diyanet production point."
+      ],
+      "evidenceIdentifier": "research/diyanet-global-sources-2026-09-25/report.json"
+    },
+    {
       "id": "north-four-primary",
       "recipe": "missing-window",
       "exposure": "three fresh calendars plus one explicitly reused calendar",
@@ -97,6 +145,55 @@
         "204 rounded markers change: 122 improve absolute error, 62 worsen, 20 retain absolute error. Bremen loses34 exact values."
       ],
       "evidenceIdentifier": "research/diyanet-north-canonical-followup/summary.json"
+    },
+    {
+      "id": "anchorage-2027-primary",
+      "recipe": "unchanged north-missing-window",
+      "exposure": "complete forecast at independent Anchorage city point frozen before official calendar acquisition",
+      "scope": "Anchorage, Alaska, complete 2027 year",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2189,
+      "uncomparedSlots": 1,
+      "exactCount": 2043,
+      "withinOneMinuteCount": 2116,
+      "maxAbsoluteMinutes": 1441,
+      "exactPercent": 93.3303,
+      "nonExactRatePercent": 6.6697,
+      "withinOneMinutePercent": 96.6651,
+      "overOneMinuteRatePercent": 3.3349,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Primary: each published clock belongs to its printed Gregorian row date in America/Anchorage.",
+      "caveats": [
+        "One source 00:00 Isha is ambiguous and excluded, never an exact hit.",
+        "All 73 differences over one minute are Isha date-scale differences; the source does not publish event UTC instants.",
+        "The independent Anchorage proxy is not a confirmed Diyanet production point."
+      ],
+      "evidenceIdentifier": "research/diyanet-global-anchorage-2026-09-25/report.json"
+    },
+    {
+      "id": "anchorage-2027-conditional",
+      "recipe": "unchanged north-missing-window",
+      "exposure": "same frozen forecast and source as anchorage-2027-primary; not an additional sample",
+      "scope": "Anchorage, Alaska, complete 2027 year with hypothetical Isha next-day date assignment",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha",
+      "expectedSlots": 2190,
+      "comparedSlots": 2189,
+      "uncomparedSlots": 1,
+      "exactCount": 2112,
+      "withinOneMinuteCount": 2189,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 96.4824,
+      "nonExactRatePercent": 3.5176,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "finite, unambiguous comparable slots; expected slots also retained",
+      "dateInterpretation": "Conditional only: nonzero Isha earlier than source Maghrib assigned to the following civil date.",
+      "caveats": [
+        "This is a reinterpretation of the primary Anchorage source, not independent accuracy evidence.",
+        "One source 00:00 Isha is ambiguous and excluded; the publisher has not verified this after-midnight rule."
+      ],
+      "evidenceIdentifier": "research/diyanet-global-anchorage-2026-09-25/report.json"
     },
     {
       "id": "north-unseen-three-conditional",
@@ -156,6 +253,30 @@
     }
   ],
   "historicalEvidence": [
+    {
+      "identifier": "research/diyanet-global-nairobi-2026-09-25/report.json",
+      "sha256": "78c9aebe616c0e58b7aa0825226e10ace591fad757607dcaacc71e1c15cfd877",
+      "bytes": 18756,
+      "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-global-sources-2026-09-25/report.json",
+      "sha256": "1882e1dcc3386b2e77b3a64c2a7479f7c22dcdaf4428617da0d60c4c19a9ef6a",
+      "bytes": 5714,
+      "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-global-anchorage-2026-09-25/report.json",
+      "sha256": "a18591c110b527a6fcfbac7aafd6332c60c9153f019206b85fcd26d1e4359210",
+      "bytes": 59431,
+      "distribution": "provenance identifier only; original reference rows are not bundled here"
+    },
+    {
+      "identifier": "research/diyanet-global-sources-2026-09-25/anchorage-review.json",
+      "sha256": "541a5caa1a279b5c932d38a9869f493f131e8d8812780b0301b3080d2305ad40",
+      "bytes": 7750,
+      "distribution": "independent private review identifier only; original reference rows are not bundled here"
+    },
     {
       "identifier": "research/diyanet-low-latitude-own/report.json",
       "sha256": "a3c8f4549ef8fde7f4917aeaa1648a146c9702eb3e07a6263023c5625133e5c9",
