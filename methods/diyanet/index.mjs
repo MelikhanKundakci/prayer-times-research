@@ -2,6 +2,8 @@ import {calculateNorthernReviewed} from './implementation/north/quality-model.mj
 import {calculateNorthernCalendar} from './implementation/north/model.mjs';
 import {calculateMissingWindowCalendar} from './implementation/missing-window/model.mjs';
 import {calculateMissingWindowReviewed} from './implementation/missing-window/quality-model.mjs';
+import {calculateNorthernCivilRow} from './implementation/north-civil-row/quality-model.mjs';
+import {calculateNorthernCivilRow as calculateNorthernCivilRowRaw} from './implementation/north-civil-row/model.mjs';
 import {calculateDay as calculateLowLatitude} from './implementation/low-latitude/model.mjs';
 import {calculateDay as calculateSouth} from './implementation/south/candidate.mjs';
 import {
@@ -12,10 +14,12 @@ import {variantInput} from '../../core/input.mjs';
 export {
   calculateNorthernReviewed, calculateNorthernCalendar, calculateMissingWindowCalendar,
   calculateMissingWindowReviewed, calculateLowLatitude, calculateSouth,
+  calculateNorthernCivilRow, calculateNorthernCivilRowRaw,
   calculateLowLatitudeCivilRow, calculateSouthCivilRow,
 };
 const variants = Object.freeze({
   'north-missing-window': calculateMissingWindowReviewed,
+  'north-civil-row': calculateNorthernCivilRow,
   'north-reviewed': calculateNorthernReviewed,
   'north-baseline': calculateNorthernCalendar,
   'low-latitude': calculateLowLatitude,

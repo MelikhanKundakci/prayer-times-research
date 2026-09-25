@@ -1,0 +1,2136 @@
+{
+  "runs": [
+    {
+      "id": "frankfurt",
+      "input": {
+        "year": 2027,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-28",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2027-10-31",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-05-31",
+        "ratioAnchorDayIndex": 150,
+        "springAnchor": "2027-06-01",
+        "springAnchorDayIndex": 151,
+        "autumnAnchor": "2027-07-12",
+        "autumnAnchorDayIndex": 192,
+        "returnRealFajrDay": "2027-07-13",
+        "returnRealFajrDayIndex": 193,
+        "firstMissingDayIndex": 151,
+        "lastMissingDayIndex": 192,
+        "missingDayCount": 42,
+        "ratio": 0.1745279505804064,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 113.3346237871471,
+            "autumnCrossingDayIndex": 231.12406216932465,
+            "springThresholdUtcMinutes": 123.31280785132934,
+            "autumnThresholdUtcMinutes": 131.0143355661626,
+            "estimatedSpringAnchorUtcMinutes": 103.31280785132934,
+            "estimatedAutumnAnchorUtcMinutes": 111.0143355661626,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 116.32219463848978,
+            "autumnCrossingDayIndex": 226.77032531668402,
+            "springThresholdUtcMinutes": 1232.6821790598137,
+            "autumnThresholdUtcMinutes": 1240.6546130050451,
+            "estimatedSpringAnchorUtcMinutes": 1252.6821790598137,
+            "estimatedAutumnAnchorUtcMinutes": 1260.6546130050451,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin",
+      "input": {
+        "year": 2027,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-28",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2027-10-31",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-05-18",
+        "ratioAnchorDayIndex": 137,
+        "springAnchor": "2027-05-19",
+        "springAnchorDayIndex": 138,
+        "autumnAnchor": "2027-07-26",
+        "autumnAnchorDayIndex": 206,
+        "returnRealFajrDay": "2027-07-27",
+        "returnRealFajrDayIndex": 207,
+        "firstMissingDayIndex": 138,
+        "lastMissingDayIndex": 206,
+        "missingDayCount": 69,
+        "ratio": 0.17323313768795387,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 107.22833662811884,
+            "autumnCrossingDayIndex": 239.34375232608113,
+            "springThresholdUtcMinutes": 106.382604794333,
+            "autumnThresholdUtcMinutes": 117.07987355865895,
+            "estimatedSpringAnchorUtcMinutes": 86.382604794333,
+            "estimatedAutumnAnchorUtcMinutes": 97.07987355865895,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 108.27290044515199,
+            "autumnCrossingDayIndex": 233.40084200972376,
+            "springThresholdUtcMinutes": 1209.12301437263,
+            "autumnThresholdUtcMinutes": 1218.576969511263,
+            "estimatedSpringAnchorUtcMinutes": 1229.12301437263,
+            "estimatedAutumnAnchorUtcMinutes": 1238.576969511263,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik",
+      "input": {
+        "year": 2027,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "Europe/Oslo"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-28",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2027-10-31",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-03-29",
+        "ratioAnchorDayIndex": 87,
+        "springAnchor": "2027-03-30",
+        "springAnchorDayIndex": 88,
+        "autumnAnchor": "2027-09-14",
+        "autumnAnchorDayIndex": 256,
+        "returnRealFajrDay": "2027-09-15",
+        "returnRealFajrDayIndex": 257,
+        "firstMissingDayIndex": 88,
+        "lastMissingDayIndex": 256,
+        "missingDayCount": 169,
+        "ratio": 0.18879798587133798,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 69.05442147882029,
+            "autumnCrossingDayIndex": 277.78925844397315,
+            "springThresholdUtcMinutes": 131.7830054332153,
+            "autumnThresholdUtcMinutes": 122.99841645974448,
+            "estimatedSpringAnchorUtcMinutes": 111.7830054332153,
+            "estimatedAutumnAnchorUtcMinutes": 102.99841645974448,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 69.34331288312869,
+            "autumnCrossingDayIndex": 272.6208718232105,
+            "springThresholdUtcMinutes": 1163.8865390371202,
+            "autumnThresholdUtcMinutes": 1154.9408889557228,
+            "estimatedSpringAnchorUtcMinutes": 1183.8865390371202,
+            "estimatedAutumnAnchorUtcMinutes": 1174.9408889557228,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik",
+      "input": {
+        "year": 2027,
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-10",
+        "ratioAnchorDayIndex": 99,
+        "springAnchor": "2027-04-11",
+        "springAnchorDayIndex": 100,
+        "autumnAnchor": "2027-09-02",
+        "autumnAnchorDayIndex": 244,
+        "returnRealFajrDay": "2027-09-03",
+        "returnRealFajrDayIndex": 245,
+        "firstMissingDayIndex": 100,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 145,
+        "ratio": 0.17678032206905211,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 78.73182680411318,
+            "autumnCrossingDayIndex": 268.86710543168743,
+            "springThresholdUtcMinutes": 275.2918320587262,
+            "autumnThresholdUtcMinutes": 274.3880519169905,
+            "estimatedSpringAnchorUtcMinutes": 255.29183205872621,
+            "estimatedAutumnAnchorUtcMinutes": 254.3880519169905,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 78.47167341658202,
+            "autumnCrossingDayIndex": 262.7193244875598,
+            "springThresholdUtcMinutes": 1330.538163978398,
+            "autumnThresholdUtcMinutes": 1328.760814249242,
+            "estimatedSpringAnchorUtcMinutes": 1350.538163978398,
+            "estimatedAutumnAnchorUtcMinutes": 1348.760814249242,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "anchorage",
+      "input": {
+        "year": 2027,
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-14",
+          "before": -540,
+          "after": -480
+        },
+        {
+          "date": "2027-11-07",
+          "before": -480,
+          "after": -540
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-18",
+        "ratioAnchorDayIndex": 107,
+        "springAnchor": "2027-04-19",
+        "springAnchorDayIndex": 108,
+        "autumnAnchor": "2027-08-25",
+        "autumnAnchorDayIndex": 236,
+        "returnRealFajrDay": "2027-08-26",
+        "returnRealFajrDayIndex": 237,
+        "firstMissingDayIndex": 108,
+        "lastMissingDayIndex": 236,
+        "missingDayCount": 129,
+        "ratio": 0.1794132943557324,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 86.28567336234526,
+            "autumnCrossingDayIndex": 261.3503973485555,
+            "springThresholdUtcMinutes": 775.3482730308365,
+            "autumnThresholdUtcMinutes": 778.908496412686,
+            "estimatedSpringAnchorUtcMinutes": 755.3482730308365,
+            "estimatedAutumnAnchorUtcMinutes": 758.908496412686,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 85.9409196014377,
+            "autumnCrossingDayIndex": 255.08859973424077,
+            "springThresholdUtcMinutes": 1850.6741202783805,
+            "autumnThresholdUtcMinutes": 1853.086644471547,
+            "estimatedSpringAnchorUtcMinutes": 1870.6741202783805,
+            "estimatedAutumnAnchorUtcMinutes": 1873.086644471547,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "uelen",
+      "input": {
+        "year": 2027,
+        "latitude": 66.161,
+        "longitude": -169.8,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-05",
+        "ratioAnchorDayIndex": 94,
+        "springAnchor": "2027-04-06",
+        "springAnchorDayIndex": 95,
+        "autumnAnchor": "2027-09-09",
+        "autumnAnchorDayIndex": 251,
+        "returnRealFajrDay": "2027-09-10",
+        "returnRealFajrDayIndex": 252,
+        "firstMissingDayIndex": 95,
+        "lastMissingDayIndex": 251,
+        "missingDayCount": 157,
+        "ratio": 0.1877085054797192,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 75.75887231372008,
+            "autumnCrossingDayIndex": 273.32005622512946,
+            "springThresholdUtcMinutes": 869.8075990595194,
+            "autumnThresholdUtcMinutes": 865.0798507494688,
+            "estimatedSpringAnchorUtcMinutes": 849.8075990595194,
+            "estimatedAutumnAnchorUtcMinutes": 845.0798507494688,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 75.80677404262401,
+            "autumnCrossingDayIndex": 267.8669915783837,
+            "springThresholdUtcMinutes": 1920.7948399821237,
+            "autumnThresholdUtcMinutes": 1915.5274583493763,
+            "estimatedSpringAnchorUtcMinutes": 1940.7948399821237,
+            "estimatedAutumnAnchorUtcMinutes": 1935.5274583493763,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "adak",
+      "input": {
+        "year": 2027,
+        "latitude": 51.88,
+        "longitude": -176.65,
+        "timeZone": "America/Adak"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-14",
+          "before": -600,
+          "after": -540
+        },
+        {
+          "date": "2027-11-07",
+          "before": -540,
+          "after": -600
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-05-21",
+        "ratioAnchorDayIndex": 140,
+        "springAnchor": "2027-05-22",
+        "springAnchorDayIndex": 141,
+        "autumnAnchor": "2027-07-23",
+        "autumnAnchorDayIndex": 203,
+        "returnRealFajrDay": "2027-07-24",
+        "returnRealFajrDayIndex": 204,
+        "firstMissingDayIndex": 141,
+        "lastMissingDayIndex": 203,
+        "missingDayCount": 63,
+        "ratio": 0.17306764078307713,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 108.79783531986268,
+            "autumnCrossingDayIndex": 237.43762799395142,
+            "springThresholdUtcMinutes": 866.0842155857641,
+            "autumnThresholdUtcMinutes": 876.5205632644245,
+            "estimatedSpringAnchorUtcMinutes": 846.0842155857641,
+            "estimatedAutumnAnchorUtcMinutes": 856.5205632644245,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 110.21198465340544,
+            "autumnCrossingDayIndex": 231.74350609327934,
+            "springThresholdUtcMinutes": 1970.270413806216,
+            "autumnThresholdUtcMinutes": 1979.530768821018,
+            "estimatedSpringAnchorUtcMinutes": 1990.270413806216,
+            "estimatedAutumnAnchorUtcMinutes": 1999.530768821018,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "petropavlovsk",
+      "input": {
+        "year": 2027,
+        "latitude": 53.02,
+        "longitude": 158.65,
+        "timeZone": "Asia/Kamchatka"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-05-15",
+        "ratioAnchorDayIndex": 134,
+        "springAnchor": "2027-05-16",
+        "springAnchorDayIndex": 135,
+        "autumnAnchor": "2027-07-28",
+        "autumnAnchorDayIndex": 208,
+        "returnRealFajrDay": "2027-07-29",
+        "returnRealFajrDayIndex": 209,
+        "firstMissingDayIndex": 135,
+        "lastMissingDayIndex": 208,
+        "missingDayCount": 74,
+        "ratio": 0.18474337696539145,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 107.5295007849846,
+            "autumnCrossingDayIndex": 238.55595719280572,
+            "springThresholdUtcMinutes": -479.42100568304994,
+            "autumnThresholdUtcMinutes": -469.5739379683057,
+            "estimatedSpringAnchorUtcMinutes": -499.42100568304994,
+            "estimatedAutumnAnchorUtcMinutes": -489.5739379683057,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 108.46749724753715,
+            "autumnCrossingDayIndex": 232.96390990124178,
+            "springThresholdUtcMinutes": 632.0030038589279,
+            "autumnThresholdUtcMinutes": 642.5312620134035,
+            "estimatedSpringAnchorUtcMinutes": 652.0030038589279,
+            "estimatedAutumnAnchorUtcMinutes": 662.5312620134035,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "nuuk",
+      "input": {
+        "year": 2027,
+        "latitude": 64.18,
+        "longitude": -51.72,
+        "timeZone": "America/Nuuk"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-28",
+          "before": -120,
+          "after": -60
+        },
+        {
+          "date": "2027-10-31",
+          "before": -60,
+          "after": -120
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-10",
+        "ratioAnchorDayIndex": 99,
+        "springAnchor": "2027-04-11",
+        "springAnchorDayIndex": 100,
+        "autumnAnchor": "2027-09-02",
+        "autumnAnchorDayIndex": 244,
+        "returnRealFajrDay": "2027-09-03",
+        "returnRealFajrDayIndex": 245,
+        "firstMissingDayIndex": 100,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 145,
+        "ratio": 0.17404271172351501,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 78.34255462704664,
+            "autumnCrossingDayIndex": 269.3499234141856,
+            "springThresholdUtcMinutes": 396.03114029444436,
+            "autumnThresholdUtcMinutes": 395.1323770786718,
+            "estimatedSpringAnchorUtcMinutes": 376.03114029444436,
+            "estimatedAutumnAnchorUtcMinutes": 375.1323770786718,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 78.04677473747108,
+            "autumnCrossingDayIndex": 263.0794230989097,
+            "springThresholdUtcMinutes": 1448.2120872467713,
+            "autumnThresholdUtcMinutes": 1446.4301487825362,
+            "estimatedSpringAnchorUtcMinutes": 1468.2120872467713,
+            "estimatedAutumnAnchorUtcMinutes": 1466.4301487825362,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "newfoundland",
+      "input": {
+        "year": 2027,
+        "latitude": 49,
+        "longitude": -54,
+        "timeZone": "America/St_Johns"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [
+        {
+          "date": "2027-03-14",
+          "before": -210,
+          "after": -150
+        },
+        {
+          "date": "2027-11-07",
+          "before": -150,
+          "after": -210
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-06-10",
+        "ratioAnchorDayIndex": 160,
+        "springAnchor": "2027-06-11",
+        "springAnchorDayIndex": 161,
+        "autumnAnchor": "2027-07-02",
+        "autumnAnchorDayIndex": 182,
+        "returnRealFajrDay": "2027-07-03",
+        "returnRealFajrDayIndex": 183,
+        "firstMissingDayIndex": 161,
+        "lastMissingDayIndex": 182,
+        "missingDayCount": 22,
+        "ratio": 0.17297625459148705,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 115.45480607331541,
+            "autumnCrossingDayIndex": 227.29214414648962,
+            "springThresholdUtcMinutes": 375.651074778554,
+            "autumnThresholdUtcMinutes": 380.0161557104167,
+            "estimatedSpringAnchorUtcMinutes": 355.651074778554,
+            "estimatedAutumnAnchorUtcMinutes": 360.0161557104167,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 120.32192719707345,
+            "autumnCrossingDayIndex": 224.54235155657378,
+            "springThresholdUtcMinutes": 1485.5051192701012,
+            "autumnThresholdUtcMinutes": 1489.9865557015264,
+            "estimatedSpringAnchorUtcMinutes": 1505.5051192701012,
+            "estimatedAutumnAnchorUtcMinutes": 1509.9865557015264,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-west-anadyr",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-22",
+        "ratioAnchorDayIndex": 111,
+        "springAnchor": "2027-04-23",
+        "springAnchorDayIndex": 112,
+        "autumnAnchor": "2027-08-22",
+        "autumnAnchorDayIndex": 233,
+        "returnRealFajrDay": "2027-08-23",
+        "returnRealFajrDayIndex": 234,
+        "firstMissingDayIndex": 112,
+        "lastMissingDayIndex": 233,
+        "missingDayCount": 122,
+        "ratio": 0.18724593732298078,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 91.11497484046667,
+            "autumnCrossingDayIndex": 257.86126803268957,
+            "springThresholdUtcMinutes": 888.4570877917735,
+            "autumnThresholdUtcMinutes": 892.1617620607152,
+            "estimatedSpringAnchorUtcMinutes": 868.4570877917735,
+            "estimatedAutumnAnchorUtcMinutes": 872.1617620607152,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 90.90431990121171,
+            "autumnCrossingDayIndex": 251.84241118191125,
+            "springThresholdUtcMinutes": 1976.7588543562601,
+            "autumnThresholdUtcMinutes": 1982.466403227932,
+            "estimatedSpringAnchorUtcMinutes": 1996.7588543562601,
+            "estimatedAutumnAnchorUtcMinutes": 2002.466403227932,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-east-anadyr",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-04-21",
+        "ratioAnchorDayIndex": 110,
+        "springAnchor": "2027-04-22",
+        "springAnchorDayIndex": 111,
+        "autumnAnchor": "2027-08-21",
+        "autumnAnchorDayIndex": 232,
+        "returnRealFajrDay": "2027-08-22",
+        "returnRealFajrDayIndex": 233,
+        "firstMissingDayIndex": 111,
+        "lastMissingDayIndex": 232,
+        "missingDayCount": 122,
+        "ratio": 0.18724593732298067,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 90.11497484046664,
+            "autumnCrossingDayIndex": 256.86126803268957,
+            "springThresholdUtcMinutes": -551.5429122082264,
+            "autumnThresholdUtcMinutes": -547.8382379392847,
+            "estimatedSpringAnchorUtcMinutes": -571.5429122082264,
+            "estimatedAutumnAnchorUtcMinutes": -567.8382379392847,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 89.90431990121164,
+            "autumnCrossingDayIndex": 250.8424111819113,
+            "springThresholdUtcMinutes": 536.7588543562599,
+            "autumnThresholdUtcMinutes": 542.4664032279318,
+            "estimatedSpringAnchorUtcMinutes": 556.7588543562599,
+            "estimatedAutumnAnchorUtcMinutes": 562.4664032279318,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-west-utc",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "UTC"
+      },
+      "status": "unsupported",
+      "error": {
+        "name": "RangeError",
+        "message": "Requested civil date has no uniquely anchored solar noon: 2027-12-15"
+      }
+    },
+    {
+      "id": "antimeridian-east-utc",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "UTC"
+      },
+      "status": "unsupported",
+      "error": {
+        "name": "RangeError",
+        "message": "Requested civil date has no uniquely anchored solar noon: 2027-12-14"
+      }
+    },
+    {
+      "id": "low-north-dateline",
+      "input": {
+        "year": 2027,
+        "latitude": 44.5,
+        "longitude": -179,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "june-21",
+        "ratioAnchor": "2027-06-21",
+        "ratioAnchorDayIndex": 171,
+        "springAnchor": "2027-06-21",
+        "springAnchorDayIndex": 171,
+        "autumnAnchor": "2027-06-21",
+        "autumnAnchorDayIndex": 171,
+        "returnRealFajrDay": null,
+        "returnRealFajrDayIndex": null,
+        "firstMissingDayIndex": null,
+        "lastMissingDayIndex": null,
+        "missingDayCount": 0,
+        "ratio": 0.23726657939174334,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": false,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 140.74324932601561,
+            "autumnCrossingDayIndex": 199.10086716781518,
+            "springThresholdUtcMinutes": 852.3712918909708,
+            "autumnThresholdUtcMinutes": 852.3712918909708,
+            "estimatedSpringAnchorUtcMinutes": 832.3712918909708,
+            "estimatedAutumnAnchorUtcMinutes": 832.3712918909708,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 149.46949546402973,
+            "autumnCrossingDayIndex": 201.97245858609347,
+            "springThresholdUtcMinutes": 2007.903980984158,
+            "autumnThresholdUtcMinutes": 2007.903980984158,
+            "estimatedSpringAnchorUtcMinutes": 2027.903980984158,
+            "estimatedAutumnAnchorUtcMinutes": 2027.903980984158,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin-utc-control",
+      "input": {
+        "year": 2027,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "UTC"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-05-18",
+        "ratioAnchorDayIndex": 137,
+        "springAnchor": "2027-05-19",
+        "springAnchorDayIndex": 138,
+        "autumnAnchor": "2027-07-26",
+        "autumnAnchorDayIndex": 206,
+        "returnRealFajrDay": "2027-07-27",
+        "returnRealFajrDayIndex": 207,
+        "firstMissingDayIndex": 138,
+        "lastMissingDayIndex": 206,
+        "missingDayCount": 69,
+        "ratio": 0.17323313768795387,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 107.22833662811884,
+            "autumnCrossingDayIndex": 239.34375232608113,
+            "springThresholdUtcMinutes": 106.382604794333,
+            "autumnThresholdUtcMinutes": 117.07987355865895,
+            "estimatedSpringAnchorUtcMinutes": 86.382604794333,
+            "estimatedAutumnAnchorUtcMinutes": 97.07987355865895,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 108.27290044515199,
+            "autumnCrossingDayIndex": 233.40084200972376,
+            "springThresholdUtcMinutes": 1209.12301437263,
+            "autumnThresholdUtcMinutes": 1218.576969511263,
+            "estimatedSpringAnchorUtcMinutes": 1229.12301437263,
+            "estimatedAutumnAnchorUtcMinutes": 1238.576969511263,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik-utc-control",
+      "input": {
+        "year": 2027,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "UTC"
+      },
+      "status": "calculated",
+      "dayCount": 365,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2027-06-21",
+      "solsticeCivilDate": "2027-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2027-03-29",
+        "ratioAnchorDayIndex": 87,
+        "springAnchor": "2027-03-30",
+        "springAnchorDayIndex": 88,
+        "autumnAnchor": "2027-09-14",
+        "autumnAnchorDayIndex": 256,
+        "returnRealFajrDay": "2027-09-15",
+        "returnRealFajrDayIndex": 257,
+        "firstMissingDayIndex": 88,
+        "lastMissingDayIndex": 256,
+        "missingDayCount": 169,
+        "ratio": 0.18879798587133798,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 69.05442147882029,
+            "autumnCrossingDayIndex": 277.78925844397315,
+            "springThresholdUtcMinutes": 131.7830054332153,
+            "autumnThresholdUtcMinutes": 122.99841645974448,
+            "estimatedSpringAnchorUtcMinutes": 111.7830054332153,
+            "estimatedAutumnAnchorUtcMinutes": 102.99841645974448,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 69.34331288312869,
+            "autumnCrossingDayIndex": 272.6208718232105,
+            "springThresholdUtcMinutes": 1163.8865390371202,
+            "autumnThresholdUtcMinutes": 1154.9408889557228,
+            "estimatedSpringAnchorUtcMinutes": 1183.8865390371202,
+            "estimatedAutumnAnchorUtcMinutes": 1174.9408889557228,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt",
+      "input": {
+        "year": 2028,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-26",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2028-10-29",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-05-30",
+        "ratioAnchorDayIndex": 150,
+        "springAnchor": "2028-05-31",
+        "springAnchorDayIndex": 151,
+        "autumnAnchor": "2028-07-12",
+        "autumnAnchorDayIndex": 193,
+        "returnRealFajrDay": "2028-07-13",
+        "returnRealFajrDayIndex": 194,
+        "firstMissingDayIndex": 151,
+        "lastMissingDayIndex": 193,
+        "missingDayCount": 43,
+        "ratio": 0.17739116638867242,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 114.04075736711582,
+            "autumnCrossingDayIndex": 230.97826425887095,
+            "springThresholdUtcMinutes": 121.92292178666752,
+            "autumnThresholdUtcMinutes": 130.0374880469676,
+            "estimatedSpringAnchorUtcMinutes": 101.92292178666752,
+            "estimatedAutumnAnchorUtcMinutes": 110.03748804696762,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 117.03391655789679,
+            "autumnCrossingDayIndex": 226.65940420650344,
+            "springThresholdUtcMinutes": 1233.8291618876904,
+            "autumnThresholdUtcMinutes": 1241.6327193556576,
+            "estimatedSpringAnchorUtcMinutes": 1253.8291618876904,
+            "estimatedAutumnAnchorUtcMinutes": 1261.6327193556576,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin",
+      "input": {
+        "year": 2028,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-26",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2028-10-29",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-05-17",
+        "ratioAnchorDayIndex": 137,
+        "springAnchor": "2028-05-18",
+        "springAnchorDayIndex": 138,
+        "autumnAnchor": "2028-07-25",
+        "autumnAnchorDayIndex": 206,
+        "returnRealFajrDay": "2028-07-26",
+        "returnRealFajrDayIndex": 207,
+        "firstMissingDayIndex": 138,
+        "lastMissingDayIndex": 206,
+        "missingDayCount": 69,
+        "ratio": 0.1778050899874032,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 108.12607349386869,
+            "autumnCrossingDayIndex": 238.61445663198091,
+            "springThresholdUtcMinutes": 104.16889112726413,
+            "autumnThresholdUtcMinutes": 114.43744903213201,
+            "estimatedSpringAnchorUtcMinutes": 84.16889112726413,
+            "estimatedAutumnAnchorUtcMinutes": 94.43744903213201,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 109.23095733435434,
+            "autumnCrossingDayIndex": 232.88312774006246,
+            "springThresholdUtcMinutes": 1211.0347590831655,
+            "autumnThresholdUtcMinutes": 1220.9668862245487,
+            "estimatedSpringAnchorUtcMinutes": 1231.0347590831655,
+            "estimatedAutumnAnchorUtcMinutes": 1240.9668862245487,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik",
+      "input": {
+        "year": 2028,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "Europe/Oslo"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-26",
+          "before": 60,
+          "after": 120
+        },
+        {
+          "date": "2028-10-29",
+          "before": 120,
+          "after": 60
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-03-29",
+        "ratioAnchorDayIndex": 88,
+        "springAnchor": "2028-03-30",
+        "springAnchorDayIndex": 89,
+        "autumnAnchor": "2028-09-13",
+        "autumnAnchorDayIndex": 256,
+        "returnRealFajrDay": "2028-09-14",
+        "returnRealFajrDayIndex": 257,
+        "firstMissingDayIndex": 89,
+        "lastMissingDayIndex": 256,
+        "missingDayCount": 168,
+        "ratio": 0.17606575548216483,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 68.06182826137236,
+            "autumnCrossingDayIndex": 279.87303109003534,
+            "springThresholdUtcMinutes": 138.5074152886271,
+            "autumnThresholdUtcMinutes": 131.30854904801816,
+            "estimatedSpringAnchorUtcMinutes": 118.50741528862712,
+            "estimatedAutumnAnchorUtcMinutes": 111.30854904801816,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 68.24266505858621,
+            "autumnCrossingDayIndex": 274.2238365841775,
+            "springThresholdUtcMinutes": 1157.8200039371457,
+            "autumnThresholdUtcMinutes": 1147.8251251938082,
+            "estimatedSpringAnchorUtcMinutes": 1177.8200039371457,
+            "estimatedAutumnAnchorUtcMinutes": 1167.8251251938082,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "reykjavik",
+      "input": {
+        "year": 2028,
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-09",
+        "ratioAnchorDayIndex": 99,
+        "springAnchor": "2028-04-10",
+        "springAnchorDayIndex": 100,
+        "autumnAnchor": "2028-09-01",
+        "autumnAnchorDayIndex": 244,
+        "returnRealFajrDay": "2028-09-02",
+        "returnRealFajrDayIndex": 245,
+        "firstMissingDayIndex": 100,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 145,
+        "ratio": 0.18183614911718862,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 79.50116767793696,
+            "autumnCrossingDayIndex": 268.20975720048165,
+            "springThresholdUtcMinutes": 272.6874990349022,
+            "autumnThresholdUtcMinutes": 270.8539049080613,
+            "estimatedSpringAnchorUtcMinutes": 252.68749903490223,
+            "estimatedAutumnAnchorUtcMinutes": 250.8539049080613,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 79.31513918344476,
+            "autumnCrossingDayIndex": 262.2450288314625,
+            "springThresholdUtcMinutes": 1332.8867662518353,
+            "autumnThresholdUtcMinutes": 1332.1376252004482,
+            "estimatedSpringAnchorUtcMinutes": 1352.8867662518353,
+            "estimatedAutumnAnchorUtcMinutes": 1352.1376252004482,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "anchorage",
+      "input": {
+        "year": 2028,
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-12",
+          "before": -540,
+          "after": -480
+        },
+        {
+          "date": "2028-11-05",
+          "before": -480,
+          "after": -540
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-17",
+        "ratioAnchorDayIndex": 107,
+        "springAnchor": "2028-04-18",
+        "springAnchorDayIndex": 108,
+        "autumnAnchor": "2028-08-24",
+        "autumnAnchorDayIndex": 236,
+        "returnRealFajrDay": "2028-08-25",
+        "returnRealFajrDayIndex": 237,
+        "firstMissingDayIndex": 108,
+        "lastMissingDayIndex": 236,
+        "missingDayCount": 129,
+        "ratio": 0.18353735890418055,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 86.95801673754517,
+            "autumnCrossingDayIndex": 260.8225884452605,
+            "springThresholdUtcMinutes": 773.3735132390614,
+            "autumnThresholdUtcMinutes": 776.1332508610808,
+            "estimatedSpringAnchorUtcMinutes": 753.3735132390614,
+            "estimatedAutumnAnchorUtcMinutes": 756.1332508610808,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 86.67928912570372,
+            "autumnCrossingDayIndex": 254.72051108121266,
+            "springThresholdUtcMinutes": 1852.4547088206862,
+            "autumnThresholdUtcMinutes": 1855.7559420604773,
+            "estimatedSpringAnchorUtcMinutes": 1872.4547088206862,
+            "estimatedAutumnAnchorUtcMinutes": 1875.7559420604773,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "uelen",
+      "input": {
+        "year": 2028,
+        "latitude": 66.161,
+        "longitude": -169.8,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-05",
+        "ratioAnchorDayIndex": 95,
+        "springAnchor": "2028-04-06",
+        "springAnchorDayIndex": 96,
+        "autumnAnchor": "2028-09-08",
+        "autumnAnchorDayIndex": 251,
+        "returnRealFajrDay": "2028-09-09",
+        "returnRealFajrDayIndex": 252,
+        "firstMissingDayIndex": 96,
+        "lastMissingDayIndex": 251,
+        "missingDayCount": 156,
+        "ratio": 0.1729936311092856,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 74.50778953096957,
+            "autumnCrossingDayIndex": 275.76161652035375,
+            "springThresholdUtcMinutes": 877.5244503987889,
+            "autumnThresholdUtcMinutes": 874.2632471794564,
+            "estimatedSpringAnchorUtcMinutes": 857.5244503987889,
+            "estimatedAutumnAnchorUtcMinutes": 854.2632471794564,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 74.3805090773431,
+            "autumnCrossingDayIndex": 269.71161780118297,
+            "springThresholdUtcMinutes": 1913.829506830037,
+            "autumnThresholdUtcMinutes": 1907.6189738775927,
+            "estimatedSpringAnchorUtcMinutes": 1933.829506830037,
+            "estimatedAutumnAnchorUtcMinutes": 1927.6189738775927,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "adak",
+      "input": {
+        "year": 2028,
+        "latitude": 51.88,
+        "longitude": -176.65,
+        "timeZone": "America/Adak"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-12",
+          "before": -600,
+          "after": -540
+        },
+        {
+          "date": "2028-11-05",
+          "before": -540,
+          "after": -600
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-05-20",
+        "ratioAnchorDayIndex": 140,
+        "springAnchor": "2028-05-21",
+        "springAnchorDayIndex": 141,
+        "autumnAnchor": "2028-07-22",
+        "autumnAnchorDayIndex": 203,
+        "returnRealFajrDay": "2028-07-23",
+        "returnRealFajrDayIndex": 204,
+        "firstMissingDayIndex": 141,
+        "lastMissingDayIndex": 203,
+        "missingDayCount": 63,
+        "ratio": 0.1774350188805247,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 109.6857626061028,
+            "autumnCrossingDayIndex": 236.73742858063048,
+            "springThresholdUtcMinutes": 863.9660243189362,
+            "autumnThresholdUtcMinutes": 874.0111312976271,
+            "estimatedSpringAnchorUtcMinutes": 843.9660243189362,
+            "estimatedAutumnAnchorUtcMinutes": 854.0111312976271,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 111.15092509356745,
+            "autumnCrossingDayIndex": 231.24592732049808,
+            "springThresholdUtcMinutes": 1972.0886021859744,
+            "autumnThresholdUtcMinutes": 1981.7857078886184,
+            "estimatedSpringAnchorUtcMinutes": 1992.0886021859744,
+            "estimatedAutumnAnchorUtcMinutes": 2001.7857078886184,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "petropavlovsk",
+      "input": {
+        "year": 2028,
+        "latitude": 53.02,
+        "longitude": 158.65,
+        "timeZone": "Asia/Kamchatka"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-05-15",
+        "ratioAnchorDayIndex": 135,
+        "springAnchor": "2028-05-16",
+        "springAnchorDayIndex": 136,
+        "autumnAnchor": "2028-07-27",
+        "autumnAnchorDayIndex": 208,
+        "returnRealFajrDay": "2028-07-28",
+        "returnRealFajrDayIndex": 209,
+        "firstMissingDayIndex": 136,
+        "lastMissingDayIndex": 208,
+        "missingDayCount": 73,
+        "ratio": 0.17447528264384135,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 106.39731106072114,
+            "autumnCrossingDayIndex": 240.67135785696615,
+            "springThresholdUtcMinutes": -474.64414510799924,
+            "autumnThresholdUtcMinutes": -464.32243532219866,
+            "estimatedSpringAnchorUtcMinutes": -494.64414510799924,
+            "estimatedAutumnAnchorUtcMinutes": -484.32243532219866,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 107.21823385162236,
+            "autumnCrossingDayIndex": 234.63288883636923,
+            "springThresholdUtcMinutes": 627.9209905530848,
+            "autumnThresholdUtcMinutes": 637.9158015382073,
+            "estimatedSpringAnchorUtcMinutes": 647.9209905530848,
+            "estimatedAutumnAnchorUtcMinutes": 657.9158015382073,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "nuuk",
+      "input": {
+        "year": 2028,
+        "latitude": 64.18,
+        "longitude": -51.72,
+        "timeZone": "America/Nuuk"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-26",
+          "before": -120,
+          "after": -60
+        },
+        {
+          "date": "2028-10-29",
+          "before": -60,
+          "after": -120
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-09",
+        "ratioAnchorDayIndex": 99,
+        "springAnchor": "2028-04-10",
+        "springAnchorDayIndex": 100,
+        "autumnAnchor": "2028-09-01",
+        "autumnAnchorDayIndex": 244,
+        "returnRealFajrDay": "2028-09-02",
+        "returnRealFajrDayIndex": 245,
+        "firstMissingDayIndex": 100,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 145,
+        "ratio": 0.18018480616943816,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 79.25133607799272,
+            "autumnCrossingDayIndex": 268.51420583911346,
+            "springThresholdUtcMinutes": 392.7573720511228,
+            "autumnThresholdUtcMinutes": 390.9196209734108,
+            "estimatedSpringAnchorUtcMinutes": 372.7573720511228,
+            "estimatedAutumnAnchorUtcMinutes": 370.9196209734108,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 79.04485660025226,
+            "autumnCrossingDayIndex": 262.47649010636854,
+            "springThresholdUtcMinutes": 1451.1555956057982,
+            "autumnThresholdUtcMinutes": 1450.4103128700974,
+            "estimatedSpringAnchorUtcMinutes": 1471.1555956057982,
+            "estimatedAutumnAnchorUtcMinutes": 1470.4103128700974,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "newfoundland",
+      "input": {
+        "year": 2028,
+        "latitude": 49,
+        "longitude": -54,
+        "timeZone": "America/St_Johns"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [
+        {
+          "date": "2028-03-12",
+          "before": -210,
+          "after": -150
+        },
+        {
+          "date": "2028-11-05",
+          "before": -150,
+          "after": -210
+        }
+      ],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-06-09",
+        "ratioAnchorDayIndex": 160,
+        "springAnchor": "2028-06-10",
+        "springAnchorDayIndex": 161,
+        "autumnAnchor": "2028-07-02",
+        "autumnAnchorDayIndex": 183,
+        "returnRealFajrDay": "2028-07-03",
+        "returnRealFajrDayIndex": 184,
+        "firstMissingDayIndex": 161,
+        "lastMissingDayIndex": 183,
+        "missingDayCount": 23,
+        "ratio": 0.1749925426332271,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 116.05947065913846,
+            "autumnCrossingDayIndex": 227.25374405461233,
+            "springThresholdUtcMinutes": 374.6330895482935,
+            "autumnThresholdUtcMinutes": 379.3380634677523,
+            "estimatedSpringAnchorUtcMinutes": 354.6330895482935,
+            "estimatedAutumnAnchorUtcMinutes": 359.3380634677523,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 120.90922394913567,
+            "autumnCrossingDayIndex": 224.4607713875847,
+            "springThresholdUtcMinutes": 1486.3096323766144,
+            "autumnThresholdUtcMinutes": 1490.8251322588078,
+            "estimatedSpringAnchorUtcMinutes": 1506.3096323766144,
+            "estimatedAutumnAnchorUtcMinutes": 1510.8251322588078,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-west-anadyr",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-22",
+        "ratioAnchorDayIndex": 112,
+        "springAnchor": "2028-04-23",
+        "springAnchorDayIndex": 113,
+        "autumnAnchor": "2028-08-22",
+        "autumnAnchorDayIndex": 234,
+        "returnRealFajrDay": "2028-08-23",
+        "returnRealFajrDayIndex": 235,
+        "firstMissingDayIndex": 113,
+        "lastMissingDayIndex": 234,
+        "missingDayCount": 122,
+        "ratio": 0.17384459600960359,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 89.91288055750356,
+            "autumnCrossingDayIndex": 260.63977527549594,
+            "springThresholdUtcMinutes": 894.8797779816642,
+            "autumnThresholdUtcMinutes": 900.9512556108316,
+            "estimatedSpringAnchorUtcMinutes": 874.8797779816642,
+            "estimatedAutumnAnchorUtcMinutes": 880.9512556108316,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 89.46881468500071,
+            "autumnCrossingDayIndex": 254.0783393052004,
+            "springThresholdUtcMinutes": 1970.9965928208233,
+            "autumnThresholdUtcMinutes": 1974.0815170743167,
+            "estimatedSpringAnchorUtcMinutes": 1990.9965928208233,
+            "estimatedAutumnAnchorUtcMinutes": 1994.0815170743167,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-east-anadyr",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-04-21",
+        "ratioAnchorDayIndex": 111,
+        "springAnchor": "2028-04-22",
+        "springAnchorDayIndex": 112,
+        "autumnAnchor": "2028-08-21",
+        "autumnAnchorDayIndex": 233,
+        "returnRealFajrDay": "2028-08-22",
+        "returnRealFajrDayIndex": 234,
+        "firstMissingDayIndex": 112,
+        "lastMissingDayIndex": 233,
+        "missingDayCount": 122,
+        "ratio": 0.17384459600960356,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 88.91288055750356,
+            "autumnCrossingDayIndex": 259.63977527549594,
+            "springThresholdUtcMinutes": -545.1202220183358,
+            "autumnThresholdUtcMinutes": -539.0487443891684,
+            "estimatedSpringAnchorUtcMinutes": -565.1202220183358,
+            "estimatedAutumnAnchorUtcMinutes": -559.0487443891684,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 88.46881468500065,
+            "autumnCrossingDayIndex": 253.07833930520044,
+            "springThresholdUtcMinutes": 530.9965928208231,
+            "autumnThresholdUtcMinutes": 534.0815170743165,
+            "estimatedSpringAnchorUtcMinutes": 550.9965928208231,
+            "estimatedAutumnAnchorUtcMinutes": 554.0815170743165,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "antimeridian-west-utc",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "UTC"
+      },
+      "status": "unsupported",
+      "error": {
+        "name": "RangeError",
+        "message": "Requested civil date has no uniquely anchored solar noon: 2028-12-14"
+      }
+    },
+    {
+      "id": "antimeridian-east-utc",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "UTC"
+      },
+      "status": "unsupported",
+      "error": {
+        "name": "RangeError",
+        "message": "Requested civil date has no uniquely anchored solar noon: 2028-12-13"
+      }
+    },
+    {
+      "id": "low-north-dateline",
+      "input": {
+        "year": 2028,
+        "latitude": 44.5,
+        "longitude": -179,
+        "timeZone": "Asia/Anadyr"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        -1
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-22",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "june-21",
+        "ratioAnchor": "2028-06-21",
+        "ratioAnchorDayIndex": 172,
+        "springAnchor": "2028-06-21",
+        "springAnchorDayIndex": 172,
+        "autumnAnchor": "2028-06-21",
+        "autumnAnchorDayIndex": 172,
+        "returnRealFajrDay": null,
+        "returnRealFajrDayIndex": null,
+        "firstMissingDayIndex": null,
+        "lastMissingDayIndex": null,
+        "missingDayCount": 0,
+        "ratio": 0.23722355444145515,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": false,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 140.88744097835036,
+            "autumnCrossingDayIndex": 199.43919284173043,
+            "springThresholdUtcMinutes": 852.5475246114096,
+            "autumnThresholdUtcMinutes": 852.5475246114096,
+            "estimatedSpringAnchorUtcMinutes": 832.5475246114096,
+            "estimatedAutumnAnchorUtcMinutes": 832.5475246114096,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 149.81951161297857,
+            "autumnCrossingDayIndex": 202.10512790505908,
+            "springThresholdUtcMinutes": 2008.0675766289605,
+            "autumnThresholdUtcMinutes": 2008.0675766289605,
+            "estimatedSpringAnchorUtcMinutes": 2028.0675766289605,
+            "estimatedAutumnAnchorUtcMinutes": 2028.0675766289605,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "berlin-utc-control",
+      "input": {
+        "year": 2028,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "UTC"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-05-17",
+        "ratioAnchorDayIndex": 137,
+        "springAnchor": "2028-05-18",
+        "springAnchorDayIndex": 138,
+        "autumnAnchor": "2028-07-25",
+        "autumnAnchorDayIndex": 206,
+        "returnRealFajrDay": "2028-07-26",
+        "returnRealFajrDayIndex": 207,
+        "firstMissingDayIndex": 138,
+        "lastMissingDayIndex": 206,
+        "missingDayCount": 69,
+        "ratio": 0.1778050899874032,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 108.12607349386869,
+            "autumnCrossingDayIndex": 238.61445663198091,
+            "springThresholdUtcMinutes": 104.16889112726413,
+            "autumnThresholdUtcMinutes": 114.43744903213201,
+            "estimatedSpringAnchorUtcMinutes": 84.16889112726413,
+            "estimatedAutumnAnchorUtcMinutes": 94.43744903213201,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 109.23095733435434,
+            "autumnCrossingDayIndex": 232.88312774006246,
+            "springThresholdUtcMinutes": 1211.0347590831655,
+            "autumnThresholdUtcMinutes": 1220.9668862245487,
+            "estimatedSpringAnchorUtcMinutes": 1231.0347590831655,
+            "estimatedAutumnAnchorUtcMinutes": 1240.9668862245487,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    },
+    {
+      "id": "narvik-utc-control",
+      "input": {
+        "year": 2028,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "UTC"
+      },
+      "status": "calculated",
+      "dayCount": 366,
+      "carrierOffsets": [
+        0
+      ],
+      "discontinuities": [],
+      "solsticeCalculationDate": "2028-06-21",
+      "solsticeCivilDate": "2028-06-21",
+      "offsetChanges": [],
+      "metadata": {
+        "anchorKind": "first-and-last-missing-fajr",
+        "ratioAnchor": "2028-03-29",
+        "ratioAnchorDayIndex": 88,
+        "springAnchor": "2028-03-30",
+        "springAnchorDayIndex": 89,
+        "autumnAnchor": "2028-09-13",
+        "autumnAnchorDayIndex": 256,
+        "returnRealFajrDay": "2028-09-14",
+        "returnRealFajrDayIndex": 257,
+        "firstMissingDayIndex": 89,
+        "lastMissingDayIndex": 256,
+        "missingDayCount": 168,
+        "ratio": 0.17606575548216483,
+        "ratioClockBasis": "same-day-published-sunrise-sunset",
+        "fajrFactor": 1.125,
+        "seasonalVariant": "missing-window",
+        "ratioAndSeasonalRolesSeparated": true,
+        "transitions": {
+          "fajr": {
+            "springCrossingDayIndex": 68.06182826137236,
+            "autumnCrossingDayIndex": 279.87303109003534,
+            "springThresholdUtcMinutes": 138.5074152886271,
+            "autumnThresholdUtcMinutes": 131.30854904801816,
+            "estimatedSpringAnchorUtcMinutes": 118.50741528862712,
+            "estimatedAutumnAnchorUtcMinutes": 111.30854904801816,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          },
+          "isha": {
+            "springCrossingDayIndex": 68.24266505858621,
+            "autumnCrossingDayIndex": 274.2238365841775,
+            "springThresholdUtcMinutes": 1157.8200039371457,
+            "autumnThresholdUtcMinutes": 1147.8251251938082,
+            "estimatedSpringAnchorUtcMinutes": 1177.8200039371457,
+            "estimatedAutumnAnchorUtcMinutes": 1167.8251251938082,
+            "transitionEndpointBasis": "fractional threshold crossing; no integer-day index rounding",
+            "noGapAngleOnlyFallback": false
+          }
+        }
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "year": 2027,
+      "first": "berlin",
+      "second": "berlin-utc-control",
+      "interpretation": "same point, actual DST zone versus UTC formatting",
+      "status": "compared",
+      "changedRawOrRounded": 0,
+      "changedRounded": 0,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    },
+    {
+      "year": 2027,
+      "first": "narvik",
+      "second": "narvik-utc-control",
+      "interpretation": "same point, actual DST zone versus UTC formatting",
+      "status": "compared",
+      "changedRawOrRounded": 0,
+      "changedRounded": 0,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    },
+    {
+      "year": 2027,
+      "first": "antimeridian-west-anadyr",
+      "second": "antimeridian-east-anadyr",
+      "interpretation": "same meridian and timezone, signed longitude representation",
+      "status": "compared",
+      "changedRawOrRounded": 2146,
+      "changedRounded": 1699,
+      "maximumRawDifferenceSeconds": 267.2670949707031,
+      "firstExamples": [
+        {
+          "date": "2027-01-01",
+          "event": "fajr",
+          "firstCarrier": "2026-12-31",
+          "secondCarrier": "2027-01-01",
+          "rawDifferenceSeconds": -3.179253173828125,
+          "roundedDifferenceMinutes": 0,
+          "firstRule": "angle",
+          "secondRule": "angle"
+        },
+        {
+          "date": "2027-01-01",
+          "event": "sunrise",
+          "firstCarrier": "2026-12-31",
+          "secondCarrier": "2027-01-01",
+          "rawDifferenceSeconds": -23.123022216796876,
+          "roundedDifferenceMinutes": -1,
+          "firstRule": null,
+          "secondRule": null
+        },
+        {
+          "date": "2027-01-01",
+          "event": "dhuhr",
+          "firstCarrier": "2026-12-31",
+          "secondCarrier": "2027-01-01",
+          "rawDifferenceSeconds": 28.6004345703125,
+          "roundedDifferenceMinutes": 0,
+          "firstRule": null,
+          "secondRule": null
+        }
+      ]
+    },
+    {
+      "year": 2027,
+      "first": "antimeridian-west-utc",
+      "second": "antimeridian-east-utc",
+      "interpretation": "same meridian and timezone, signed longitude representation",
+      "status": "unsupported-member",
+      "changedRawOrRounded": null,
+      "changedRounded": null,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    },
+    {
+      "year": 2028,
+      "first": "berlin",
+      "second": "berlin-utc-control",
+      "interpretation": "same point, actual DST zone versus UTC formatting",
+      "status": "compared",
+      "changedRawOrRounded": 0,
+      "changedRounded": 0,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    },
+    {
+      "year": 2028,
+      "first": "narvik",
+      "second": "narvik-utc-control",
+      "interpretation": "same point, actual DST zone versus UTC formatting",
+      "status": "compared",
+      "changedRawOrRounded": 0,
+      "changedRounded": 0,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    },
+    {
+      "year": 2028,
+      "first": "antimeridian-west-anadyr",
+      "second": "antimeridian-east-anadyr",
+      "interpretation": "same meridian and timezone, signed longitude representation",
+      "status": "compared",
+      "changedRawOrRounded": 2151,
+      "changedRounded": 1692,
+      "maximumRawDifferenceSeconds": 256.826830078125,
+      "firstExamples": [
+        {
+          "date": "2028-01-01",
+          "event": "fajr",
+          "firstCarrier": "2027-12-31",
+          "secondCarrier": "2028-01-01",
+          "rawDifferenceSeconds": -2.326405517578125,
+          "roundedDifferenceMinutes": 0,
+          "firstRule": "angle",
+          "secondRule": "angle"
+        },
+        {
+          "date": "2028-01-01",
+          "event": "sunrise",
+          "firstCarrier": "2027-12-31",
+          "secondCarrier": "2028-01-01",
+          "rawDifferenceSeconds": -21.826765380859374,
+          "roundedDifferenceMinutes": 0,
+          "firstRule": null,
+          "secondRule": null
+        },
+        {
+          "date": "2028-01-01",
+          "event": "dhuhr",
+          "firstCarrier": "2027-12-31",
+          "secondCarrier": "2028-01-01",
+          "rawDifferenceSeconds": 28.66857861328125,
+          "roundedDifferenceMinutes": 0,
+          "firstRule": null,
+          "secondRule": null
+        }
+      ]
+    },
+    {
+      "year": 2028,
+      "first": "antimeridian-west-utc",
+      "second": "antimeridian-east-utc",
+      "interpretation": "same meridian and timezone, signed longitude representation",
+      "status": "unsupported-member",
+      "changedRawOrRounded": null,
+      "changedRounded": null,
+      "maximumRawDifferenceSeconds": 0,
+      "firstExamples": []
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "scope": "Additive explicit research variant; import relocation only. Outside the historical 23-entry extraction record. No original mapped file changed.",
+  "files": [
+    {
+      "source": "research/diyanet-transition-civil-frame-2026-09-25/candidate/model.mjs",
+      "destination": "methods/diyanet/implementation/north-civil-row/model.mjs",
+      "sourceSha256": "e574765550121a5a4d2d2a0c47fe996c19376f8d2e707e8671df09f218c5d85c",
+      "destinationSha256": "304f86cab7027215dfec6afdf02197caf0af4fd118c285791f45ffed713d0dad",
+      "imports": [
+        {
+          "before": "../../diyanet-north-missing-window/model/model.mjs",
+          "after": "../missing-window/model.mjs"
+        }
+      ]
+    },
+    {
+      "source": "research/diyanet-transition-civil-frame-2026-09-25/candidate/kernel.mjs",
+      "destination": "methods/diyanet/implementation/north-civil-row/kernel.mjs",
+      "sourceSha256": "5fdccc6e4ba404a0ed2801104d21b462d515101092c61a457ffb5ef6b9a1a703",
+      "destinationSha256": "da541c0836418ad6a5b29571c0dd8c922ec3bd8477f295438e3f6ef28919c67d",
+      "imports": [
+        {
+          "before": "../../diyanet-north-missing-window/model/seasonal.mjs",
+          "after": "../missing-window/seasonal.mjs"
+        },
+        {
+          "before": "../../north-america-own/asr-review/solver.mjs",
+          "after": "../../../../core/astronomy/physical-asr-solver.mjs"
+        }
+      ]
+    },
+    {
+      "source": "research/diyanet-transition-civil-frame-2026-09-25/candidate/solar.mjs",
+      "destination": "methods/diyanet/implementation/north-civil-row/solar.mjs",
+      "sourceSha256": "63cec5faecf8656b5cb058b1a343fa3671f502041616d17e0d365bccacd39704",
+      "destinationSha256": "c86593d0aba9a2ed4537897981ba11ef8e23791b0e3b2a2f4c6f348071636eeb",
+      "imports": [
+        {
+          "before": "../../global/solar-usno-v2.mjs",
+          "after": "../../../../core/astronomy/solar-usno-v2.mjs"
+        }
+      ]
+    }
+  ]
+}

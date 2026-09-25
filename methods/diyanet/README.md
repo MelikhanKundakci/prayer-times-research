@@ -6,7 +6,9 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
-The latest offline round tests a [published right-ascension series](RA-SERIES.md) and [two isolated seasonal-rounding hypotheses](SEASONAL-PRECISION.md). None passes its replacement checks. The current transition-shape audit also narrows the remaining problem without treating old-baseline contradictions as current defects.
+The latest [northern civil-row variant](NORTH-CIVIL-ROW.md) repairs a model-only antimeridian discontinuity while preserving all 61,320 raw event objects in the 28 previously studied northern years. It is an explicit opt-in with ordering quality flags, not a new institutional accuracy claim. The [autumn endpoint study](AUTUMN-ENDPOINTS.md) separately narrows the boundary/quotient uncertainty and records two rejected daily-gap candidates.
+
+The preceding offline round tests a [published right-ascension series](RA-SERIES.md) and [two isolated seasonal-rounding hypotheses](SEASONAL-PRECISION.md). None passes its replacement checks. The current transition-shape audit also narrows the remaining problem without treating old-baseline contradictions as current defects.
 
 The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
 
@@ -66,13 +68,13 @@ The uniform entry is [`calculate(options)`](index.mjs). **Default:** north-missi
 
 The default includes an additive [chronology quality check](NOTIFICATION-READINESS.md). It flags raw or rounded reversed event order while preserving every timestamp. This closes a reporting gap around polar-night Asr; it does not change the calculation recipe or enable notifications.
 
-Public options.variant selects north-missing-window, north-reviewed, north-baseline, low-latitude, south, low-latitude-civil-row or south-civil-row. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
+Public options.variant selects north-missing-window, north-civil-row, north-reviewed, north-baseline, low-latitude, south, low-latitude-civil-row or south-civil-row. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
 
 ### Fully local calculation
 
 The Diyanet entry calculates from the supplied date/year, latitude, longitude and IANA timezone. It needs no API key, remote request, downloaded prayer calendar or third-party prayer-time library. Timezone rules are bundled locally. Source calendars are used only by separate research comparisons.
 
-The [offline regression test](../../tests/diyanet-offline.test.mjs) runs the five original variants in a subprocess that denies network access and file access to calendar examples, test snapshots and `node_modules`. The [civil-row tests](../../tests/diyanet-civil-ephemeris.test.mjs) independently check the two new opt-in variants and their offline behavior. Results are reproduced under two host timezones. This verifies the local execution contract; matching an institution still depends on its actual calculation point and complete rules.
+The [offline regression test](../../tests/diyanet-offline.test.mjs) runs the five original variants in a subprocess that denies network access and file access to calendar examples, test snapshots and `node_modules`. Separate [daily civil-row tests](../../tests/diyanet-civil-ephemeris.test.mjs) and [northern civil-row tests](../../tests/diyanet-north-civil-row.test.mjs) check the opt-in variants and their offline behavior. Results are reproduced under two host timezones. This verifies the local execution contract; matching an institution still depends on its actual calculation point and complete rules.
 
 ### Runnable implementations
 
@@ -83,6 +85,7 @@ The underlying signatures remain method-specific. These links point to the code 
 | `north-reviewed` | [`calculateNorthernReviewed`](implementation/north/quality-model.mjs) |
 | `north-baseline` | [`calculateNorthernCalendar`](implementation/north/model.mjs) |
 | `north-missing-window` | [`calculateMissingWindowReviewed`](implementation/missing-window/quality-model.mjs); unchanged native [`calculateMissingWindowCalendar`](implementation/missing-window/model.mjs) remains separately exported |
+| `north-civil-row` | [`calculateNorthernCivilRow`](implementation/north-civil-row/quality-model.mjs); native [`calculateNorthernCivilRowRaw`](implementation/north-civil-row/model.mjs) is also exposed from the method index |
 | `low-latitude` | [`calculateDay`](implementation/low-latitude/model.mjs) |
 | `south` | [`calculateDay`](implementation/south/candidate.mjs) |
 | `low-latitude-civil-row` | [`calculateLowLatitudeDay`](implementation/civil-ephemeris/candidate.mjs) |
@@ -95,6 +98,7 @@ The underlying signatures remain method-specific. These links point to the code 
 - **opt-in civil-row daily variants:** `calculateLowLatitudeDay/Year(input)` and `calculateSouthDay/Year(input)` in the civil-row candidate module use the same four location/date or location/year inputs and geographic limits as their original routes. They retain separate UTC carrier dates and actual IANA event dates. Existing defaults are unchanged.
 - **reviewed northern V5:** `calculateNorthernReviewed(options)`. Input: year, latitude, longitude, timeZone. Limits: 2001–2098; 44.5≤latitude≤75; complete civil year needed for seasonal state.
 - **missing-window experiment; not an automatic replacement for reviewed V5:** `calculateMissingWindowReviewed(options)` adds quality flags to the unchanged native `calculateMissingWindowCalendar(options)`. Input: year, latitude, longitude, timeZone. Limits: Same northern mathematical domain; unsupported seasonal/civil cases remain explicit.
+- **opt-in northern civil-row:** `calculateNorthernCivilRow(options)` uses the same northern inputs and domain, samples the ephemeris on the requested civil row and consistently chooses civil June 21 for the envelope. The ordering adapter flags reversals without correcting clocks. See the [study and limits](NORTH-CIVIL-ROW.md).
 
 A supported input range is a mathematical contract, not a statement that every location/year in it has been institutionally validated. Check event status, reason and date as well as the clock.
 
@@ -103,7 +107,7 @@ A supported input range is a mathematical contract, not a statement that every l
 For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); transit±H/15 hours gives a height marker. Transit uses the equation of time and longitude. Continuous variants instead solve h_sun(t)−h_target(t)=0 with direction/domain checks. Asr shadow targets and ephemeris epochs differ by recipe.
 
 - Low-latitude/southern routes use own USNO declination/equation of time at the selected solar carrier’s UTC00, Fajr −18°, Isha −17°, horizon −50′, shadow factor 1 and nearest UTC minute.
-- The opt-in civil-row routes differ only when that solar carrier's UTC date differs from the requested civil date. They sample the daily USNO coordinates on the civil date; the UTC carrier, timezone, angles, minute adjustments and rounding procedure otherwise stay on the original route. The equation-of-time change can shift the transit instant.
+- The opt-in daily civil-row routes differ only when that solar carrier's UTC date differs from the requested civil date. They sample the daily USNO coordinates on the civil date; the UTC carrier, timezone, angles, minute adjustments and rounding procedure otherwise stay on the original route. The equation-of-time change can shift the transit instant. The northern extension also makes the solstice envelope reference consistently civil June 21.
 - The corresponding minute adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0. Published Temkin evidence is kept separate from inferred ephemeris/rounding details.
 - Northern routes instead use the high-latitude 18°/16° criteria, the 44.5° boundary, five-hour minimum day/night, a ratio anchored at the last real Fajr day and transitions around ±20-minute differences. The implementation’s exact season construction and ≥60° solstice envelope remain reconstructions.
 - The missing-window experiment retains the same ratio anchor, but bounds the estimated seasonal phase by the first and last missing-Fajr calendar days rather than including the adjacent real-angle days. It does not add the separate inner-angle, moving-ephemeris or time-correcting Asr-ordering experiments. The default's quality adapter flags existing reversals without changing times.

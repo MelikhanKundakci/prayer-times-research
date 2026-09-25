@@ -1,0 +1,257 @@
+{
+  "scope": "Model-only replay inputs for the28 previously studied northern years. Coordinates are unchanged proxies, not certified productionpoints. No institutional prayer clocks.",
+  "cases": [
+    {
+      "id": "berlin-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "berlin-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "frankfurt-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 50.11666667,
+        "longitude": 8.683333333,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "oslo-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 59.9076424165,
+        "longitude": 10.840360556,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "stockholm-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      }
+    },
+    {
+      "id": "stockholm-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      }
+    },
+    {
+      "id": "helsinki-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      }
+    },
+    {
+      "id": "helsinki-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      }
+    },
+    {
+      "id": "tromso-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "tromso-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "bodo-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "bodo-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "kiruna-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      }
+    },
+    {
+      "id": "kiruna-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      }
+    },
+    {
+      "id": "reykjavik-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      }
+    },
+    {
+      "id": "reykjavik-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      }
+    },
+    {
+      "id": "trondheim-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "trondheim-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "oulu-2026",
+      "input": {
+        "year": 2026,
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      }
+    },
+    {
+      "id": "oulu-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      }
+    },
+    {
+      "id": "zagreb-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 45.8131708,
+        "longitude": 15.9817349,
+        "timeZone": "Europe/Zagreb"
+      }
+    },
+    {
+      "id": "kuopio-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 62.89256,
+        "longitude": 27.63331,
+        "timeZone": "Europe/Helsinki"
+      }
+    },
+    {
+      "id": "narvik-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 68.438284479,
+        "longitude": 17.427768424,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "kirkenes-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 69.727080887,
+        "longitude": 30.044998601,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "vienna-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      }
+    },
+    {
+      "id": "bremen-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
+      "id": "bergen-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      }
+    },
+    {
+      "id": "rovaniemi-2027",
+      "input": {
+        "year": 2027,
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      }
+    }
+  ]
+}

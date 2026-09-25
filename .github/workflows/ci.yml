@@ -20,3 +20,4 @@ jobs:
       - run: npm run check
       - run: npm test
       - run: python3 scripts/verify-uae-radial.py
+      - run: python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p test_affine_constraints.py -v

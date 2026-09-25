@@ -1,0 +1,1484 @@
+{
+  "scope": "Independent root-agent arithmetic/scoring review and separate V2 public-diagnostic replay. These reuse exposed observations; they are not new institutional validation.",
+  "records": {
+    "math-review.json": {
+      "sha256": "8b33144154573a8eda307d70a66bb6ffc5dcb859e470fe93ed8212b373c5724d",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:23:11.528642+00:00",
+        "status": "pass",
+        "scope": "Independent seasonal equations over previously verified input rows; not a new ephemeris or source parse.",
+        "counts": {
+          "values": 40150,
+          "rules": 40150,
+          "failures": 1,
+          "noGapYears": 4,
+          "unchangedOtherEventObjects": 100375,
+          "unchangedRawAngularEpochs": 40150
+        },
+        "maximumAbsoluteScalarDifferenceMinutes": 1.1368683772161603e-13,
+        "planSha256": "74be7ecf307874f6206c20bbd965f5d4ad1e64a1ec86f20a8f37a2aeb359aec3",
+        "forecastSha256": "0198e0efc9ea7e57ef730356718c656129faca6dc3e494afeeba26a6052f7cab",
+        "oracleSha256": "07278c27dd0d8c38dce2c75cc29acc55614ad072505672aad4d1d049fb71013c",
+        "verifierSha256": "b70b8880e041ca255922e0a82e65cbd6c30981a1691b10467de7cb19acad27e6",
+        "cases": [
+          {
+            "id": "berlin-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 253,
+              "right": 254,
+              "gapLeft": 18.65223997670023,
+              "gapRight": 20.06823395757175,
+              "weight": 0.9518119720185869,
+              "x": 253.9518119720186,
+              "y": 153.45530733345308
+            }
+          },
+          {
+            "id": "berlin-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 230,
+              "right": 231,
+              "gapLeft": 19.429160311381054,
+              "gapRight": 22.846530579121904,
+              "weight": 0.1670406318002866,
+              "x": 230.1670406318003,
+              "y": 91.12149257723851
+            }
+          },
+          {
+            "id": "berlin-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 260,
+              "right": 261,
+              "gapLeft": 19.702163637219883,
+              "gapRight": 20.916118227987226,
+              "weight": 0.24534390746185503,
+              "x": 260.24534390746186,
+              "y": 166.5505724859524
+            }
+          },
+          {
+            "id": "berlin-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 230,
+              "right": 231,
+              "gapLeft": 18.592491030375143,
+              "gapRight": 22.027768623860624,
+              "weight": 0.40972204758474223,
+              "x": 230.40972204758475,
+              "y": 91.12363897591626
+            }
+          },
+          {
+            "id": "frankfurt-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 253,
+              "right": 254,
+              "gapLeft": 19.61191832236844,
+              "gapRight": 20.803639177223715,
+              "weight": 0.3256481381948209,
+              "x": 253.32564813819482,
+              "y": 180.29822325061693
+            }
+          },
+          {
+            "id": "frankfurt-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 222,
+              "right": 223,
+              "gapLeft": 17.894398939514105,
+              "gapRight": 20.983532317097982,
+              "weight": 0.6816154575147422,
+              "x": 222.68161545751474,
+              "y": 108.42226512433804
+            }
+          },
+          {
+            "id": "oslo-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 280,
+              "right": 281,
+              "gapLeft": 19.701061940868357,
+              "gapRight": 20.927141884405444,
+              "weight": 0.24381612366094532,
+              "x": 280.24381612366096,
+              "y": 198.84063577305125
+            }
+          },
+          {
+            "id": "oslo-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 251,
+              "right": 252,
+              "gapLeft": 18.132572728474926,
+              "gapRight": 22.40633285319008,
+              "weight": 0.43695182158814727,
+              "x": 251.43695182158814,
+              "y": 109.18746038432585
+            }
+          },
+          {
+            "id": "stockholm-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 272,
+              "right": 273,
+              "gapLeft": 19.351727111179628,
+              "gapRight": 20.831501091978225,
+              "weight": 0.43808912525311156,
+              "x": 272.4380891252531,
+              "y": 152.03807084621087
+            }
+          },
+          {
+            "id": "stockholm-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 249,
+              "right": 250,
+              "gapLeft": 17.37163710225424,
+              "gapRight": 21.615345250956167,
+              "weight": 0.6193552444339812,
+              "x": 249.619355244434,
+              "y": 79.42285562394176
+            }
+          },
+          {
+            "id": "stockholm-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 271,
+              "right": 272,
+              "gapLeft": 19.940701024443626,
+              "gapRight": 21.480671940547836,
+              "weight": 0.038506555504559135,
+              "x": 271.03850655550457,
+              "y": 147.58178795431039
+            }
+          },
+          {
+            "id": "stockholm-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 249,
+              "right": 250,
+              "gapLeft": 16.324739236450185,
+              "gapRight": 20.60137443542476,
+              "weight": 0.8593814044347404,
+              "x": 249.85938140443474,
+              "y": 79.42252185679884
+            }
+          },
+          {
+            "id": "helsinki-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 281,
+              "right": 282,
+              "gapLeft": 19.301002267383808,
+              "gapRight": 20.50163934904552,
+              "weight": 0.5821890255536355,
+              "x": 281.58218902555365,
+              "y": 145.7248595071021
+            }
+          },
+          {
+            "id": "helsinki-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 251,
+              "right": 252,
+              "gapLeft": 16.008994106038465,
+              "gapRight": 20.37534963073724,
+              "weight": 0.9140359440237898,
+              "x": 251.9140359440238,
+              "y": 53.19481579048306
+            }
+          },
+          {
+            "id": "helsinki-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 277,
+              "right": 278,
+              "gapLeft": 18.92596039313017,
+              "gapRight": 20.294487636710812,
+              "weight": 0.7848141949002722,
+              "x": 277.78481419490026,
+              "y": 135.11484394353303
+            }
+          },
+          {
+            "id": "helsinki-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 252,
+              "right": 253,
+              "gapLeft": 19.33244809061688,
+              "gapRight": 23.592355958557192,
+              "weight": 0.15670571525902177,
+              "x": 252.15670571525902,
+              "y": 53.1964556882846
+            }
+          },
+          {
+            "id": "tromso-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 320,
+              "right": 321,
+              "gapLeft": 17.849578863354964,
+              "gapRight": 20.46097155134322,
+              "weight": 0.8234767396479385,
+              "x": 320.82347673964796,
+              "y": 267.91887773466755
+            }
+          },
+          {
+            "id": "tromso-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 277,
+              "right": 278,
+              "gapLeft": 16.55973443094892,
+              "gapRight": 21.36425234578452,
+              "weight": 0.7160480260523281,
+              "x": 277.7160480260523,
+              "y": 107.48131786500755
+            }
+          },
+          {
+            "id": "tromso-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 319,
+              "right": 320,
+              "gapLeft": 18.75298787254087,
+              "gapRight": 21.435123354311656,
+              "weight": 0.46493256434452496,
+              "x": 319.4649325643445,
+              "y": 263.38251780796315
+            }
+          },
+          {
+            "id": "tromso-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 277,
+              "right": 278,
+              "gapLeft": 15.366860526529948,
+              "gapRight": 20.217595237731928,
+              "weight": 0.9551417979570338,
+              "x": 277.955141797957,
+              "y": 107.47538372159245
+            }
+          },
+          {
+            "id": "bodo-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 300,
+              "right": 301,
+              "gapLeft": 19.925143150472593,
+              "gapRight": 20.853583405844603,
+              "weight": 0.08062645829312225,
+              "x": 300.0806264582931,
+              "y": 224.35963913116692
+            }
+          },
+          {
+            "id": "bodo-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 271,
+              "right": 272,
+              "gapLeft": 19.878431321207728,
+              "gapRight": 24.564871871948228,
+              "weight": 0.025940514442899125,
+              "x": 271.0259405144429,
+              "y": 114.17405353384777
+            }
+          },
+          {
+            "id": "bodo-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 297,
+              "right": 298,
+              "gapLeft": 19.831839968378034,
+              "gapRight": 20.949911954547048,
+              "weight": 0.150401793178052,
+              "x": 297.15040179317805,
+              "y": 214.19057707197956
+            }
+          },
+          {
+            "id": "bodo-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 271,
+              "right": 272,
+              "gapLeft": 18.717280194600434,
+              "gapRight": 23.445646141052293,
+              "weight": 0.27128183815005097,
+              "x": 271.27128183815006,
+              "y": 114.17910106992332
+            }
+          },
+          {
+            "id": "kiruna-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 326,
+              "right": 327,
+              "gapLeft": 19.278252695102196,
+              "gapRight": 21.322426482537082,
+              "weight": 0.35307531548160687,
+              "x": 326.3530753154816,
+              "y": 274.08808986625706
+            }
+          },
+          {
+            "id": "kiruna-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 272,
+              "right": 273,
+              "gapLeft": 17.046353071085534,
+              "gapRight": 21.847311120605482,
+              "weight": 0.6152203161220714,
+              "x": 272.6152203161221,
+              "y": 93.24774595030124
+            }
+          },
+          {
+            "id": "kiruna-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 272,
+              "right": 273,
+              "gapLeft": 15.855820001220707,
+              "gapRight": 20.701206356811525,
+              "weight": 0.8552837059107903,
+              "x": 272.8552837059108,
+              "y": 93.24463787772434
+            }
+          },
+          {
+            "id": "reykjavik-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 283,
+              "right": 284,
+              "gapLeft": 18.55078266336784,
+              "gapRight": 20.090824067595804,
+              "weight": 0.9410249183259232,
+              "x": 283.9410249183259,
+              "y": 327.2741584245961
+            }
+          },
+          {
+            "id": "reykjavik-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 262,
+              "right": 263,
+              "gapLeft": 17.71775460713701,
+              "gapRight": 22.336025101216677,
+              "weight": 0.4941775055810796,
+              "x": 262.4941775055811,
+              "y": 248.89975745491176
+            }
+          },
+          {
+            "id": "reykjavik-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 292,
+              "right": 293,
+              "gapLeft": 19.41749104364186,
+              "gapRight": 20.524997636918044,
+              "weight": 0.5259643237292013,
+              "x": 292.5259643237292,
+              "y": 352.24490977414473
+            }
+          },
+          {
+            "id": "reykjavik-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 262,
+              "right": 263,
+              "gapLeft": 16.57496198730476,
+              "gapRight": 21.233193784586632,
+              "weight": 0.7352656891599482,
+              "x": 262.73526568916,
+              "y": 248.89929240901697
+            }
+          },
+          {
+            "id": "trondheim-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 282,
+              "right": 283,
+              "gapLeft": 19.189515027835455,
+              "gapRight": 20.69815020615968,
+              "weight": 0.5372305934591967,
+              "x": 282.5372305934592,
+              "y": 196.23160122992635
+            }
+          },
+          {
+            "id": "trondheim-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 260,
+              "right": 261,
+              "gapLeft": 17.0585806864421,
+              "gapRight": 21.65354132181801,
+              "weight": 0.6401402638604464,
+              "x": 260.6401402638605,
+              "y": 117.930171383523
+            }
+          },
+          {
+            "id": "trondheim-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 292,
+              "right": 293,
+              "gapLeft": 19.3981115736984,
+              "gapRight": 20.449298649548155,
+              "weight": 0.5725797435390341,
+              "x": 292.57257974353905,
+              "y": 224.67050139644007
+            }
+          },
+          {
+            "id": "trondheim-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 260,
+              "right": 261,
+              "gapLeft": 15.921845417276927,
+              "gapRight": 20.55632177836101,
+              "weight": 0.8799601648564938,
+              "x": 260.87996016485647,
+              "y": 117.92851477068402
+            }
+          },
+          {
+            "id": "oulu-2026",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 289,
+              "right": 290,
+              "gapLeft": 18.778313278692195,
+              "gapRight": 20.100235573229412,
+              "weight": 0.9241743832874059,
+              "x": 289.9241743832874,
+              "y": 153.80733013184027
+            }
+          },
+          {
+            "id": "oulu-2026",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 264,
+              "right": 265,
+              "gapLeft": 16.006404773966523,
+              "gapRight": 20.737910959370915,
+              "weight": 0.8440431164082168,
+              "x": 264.8440431164082,
+              "y": 62.168964104205
+            }
+          },
+          {
+            "id": "oulu-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 287,
+              "right": 288,
+              "gapLeft": 18.618370232330676,
+              "gapRight": 20.061267880104936,
+              "weight": 0.9575383048136198,
+              "x": 287.9575383048136,
+              "y": 146.92454827575813
+            }
+          },
+          {
+            "id": "oulu-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 265,
+              "right": 266,
+              "gapLeft": 19.608382127380388,
+              "gapRight": 24.212571821594267,
+              "weight": 0.08505685009281035,
+              "x": 265.0850568500928,
+              "y": 62.16822052555687
+            }
+          },
+          {
+            "id": "zagreb-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": null
+          },
+          {
+            "id": "zagreb-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": null
+          },
+          {
+            "id": "kuopio-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 283,
+              "right": 284,
+              "gapLeft": 19.692715308956565,
+              "gapRight": 21.10026937671276,
+              "weight": 0.21831111008991838,
+              "x": 283.2183111100899,
+              "y": 130.4628027482358
+            }
+          },
+          {
+            "id": "kuopio-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 259,
+              "right": 260,
+              "gapLeft": 18.03787442881263,
+              "gapRight": 22.56050444641115,
+              "weight": 0.43384613898380375,
+              "x": 259.4338461389838,
+              "y": 47.68686694934287
+            }
+          },
+          {
+            "id": "narvik-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 304,
+              "right": 305,
+              "gapLeft": 19.90000564264713,
+              "gapRight": 20.645414753165113,
+              "weight": 0.13414694822200907,
+              "x": 304.134146948222,
+              "y": 222.64305330367125
+            }
+          },
+          {
+            "id": "narvik-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 274,
+              "right": 275,
+              "gapLeft": 17.659868140665708,
+              "gapRight": 22.442303260803214,
+              "weight": 0.4893180567114537,
+              "x": 274.48931805671145,
+              "y": 107.13722557131553
+            }
+          },
+          {
+            "id": "kirkenes-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 320,
+              "right": 321,
+              "gapLeft": 18.11617320675151,
+              "gapRight": 20.75258778601585,
+              "weight": 0.7145411833423208,
+              "x": 320.7145411833423,
+              "y": 222.6705109016891
+            }
+          },
+          {
+            "id": "kirkenes-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 278,
+              "right": 279,
+              "gapLeft": 19.13084899495442,
+              "gapRight": 23.833716826375365,
+              "weight": 0.18481297714526057,
+              "x": 278.18481297714527,
+              "y": 63.58074303471022
+            }
+          },
+          {
+            "id": "vienna-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": null
+          },
+          {
+            "id": "vienna-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": null
+          },
+          {
+            "id": "bremen-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 256,
+              "right": 257,
+              "gapLeft": 19.266675205437252,
+              "gapRight": 20.655938411372603,
+              "weight": 0.5278515917140565,
+              "x": 256.52785159171407,
+              "y": 174.6925178546894
+            }
+          },
+          {
+            "id": "bremen-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 232,
+              "right": 233,
+              "gapLeft": 19.628083105468747,
+              "gapRight": 23.11465734202062,
+              "weight": 0.10667115320024528,
+              "x": 232.10667115320024,
+              "y": 109.91654661849597
+            }
+          },
+          {
+            "id": "bergen-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 275,
+              "right": 276,
+              "gapLeft": 19.873933281152347,
+              "gapRight": 21.363085236161112,
+              "weight": 0.08465671916396951,
+              "x": 275.08465671916395,
+              "y": 205.43789225409506
+            }
+          },
+          {
+            "id": "bergen-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 252,
+              "right": 253,
+              "gapLeft": 16.754931622823136,
+              "gapRight": 21.116635537211152,
+              "weight": 0.7439909817060965,
+              "x": 252.7439909817061,
+              "y": 132.03736809125112
+            }
+          },
+          {
+            "id": "rovaniemi-2027",
+            "variant": "autumn-frozen-ratio-gap",
+            "crossing": {
+              "left": 293,
+              "right": 294,
+              "gapLeft": 19.80550821151155,
+              "gapRight": 21.086188684525638,
+              "weight": 0.15186597483657396,
+              "x": 293.1518659748366,
+              "y": 157.91704312344908
+            }
+          },
+          {
+            "id": "rovaniemi-2027",
+            "variant": "autumn-real-night-gap",
+            "crossing": {
+              "left": 269,
+              "right": 270,
+              "gapLeft": 19.432883696492468,
+              "gapRight": 24.111591242980992,
+              "weight": 0.12121217192409599,
+              "x": 269.12121217192407,
+              "y": 65.92446595636761
+            }
+          }
+        ]
+      }
+    },
+    "scoring-review.json": {
+      "sha256": "3a7461373997bb2a4dae1d33b180bb5628526c6f3a0fe2bbe9bd1b787a7150b7",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:24:37.926983+00:00",
+        "status": "pass",
+        "scope": "Independent UTC-minute scoring over archived parsed sources; no new source parser or calendar data",
+        "decisions": 367920,
+        "unchangedOtherEventObjects": 100375,
+        "unchangedAngularEpochs": 40150,
+        "summaries": {
+          "printed-date-actual-IANA": {
+            "baseline": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53215,
+                "withinOne": 61190,
+                "maxAbsoluteMinutes": 1441,
+                "histogram": {
+                  "0": 53215,
+                  "1": 4344,
+                  "2": 21,
+                  "1440": 76,
+                  "1441": 1,
+                  "-1": 3631,
+                  "-2": 24
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45162,
+                  "withinOne": 52471,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 45162,
+                    "1": 4045,
+                    "2": 21,
+                    "1440": 38,
+                    "-1": 3264,
+                    "-2": 24
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8053,
+                  "withinOne": 8719,
+                  "maxAbsoluteMinutes": 1441,
+                  "histogram": {
+                    "0": 8053,
+                    "1": 299,
+                    "1440": 38,
+                    "1441": 1,
+                    "-1": 367
+                  }
+                }
+              },
+              "corrections": 0,
+              "regressions": 0
+            },
+            "autumn-frozen-ratio-gap": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 59122,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 2190,
+                "exact": 50344,
+                "withinOne": 57897,
+                "maxAbsoluteMinutes": 1441,
+                "histogram": {
+                  "0": 50344,
+                  "1": 4288,
+                  "2": 64,
+                  "3": 50,
+                  "4": 47,
+                  "5": 56,
+                  "6": 44,
+                  "7": 52,
+                  "8": 42,
+                  "9": 51,
+                  "10": 44,
+                  "11": 44,
+                  "12": 46,
+                  "13": 39,
+                  "14": 52,
+                  "15": 44,
+                  "16": 33,
+                  "17": 40,
+                  "18": 39,
+                  "19": 49,
+                  "20": 40,
+                  "21": 35,
+                  "22": 32,
+                  "23": 25,
+                  "24": 28,
+                  "25": 21,
+                  "26": 18,
+                  "27": 15,
+                  "28": 14,
+                  "29": 14,
+                  "30": 8,
+                  "31": 9,
+                  "32": 7,
+                  "33": 5,
+                  "34": 9,
+                  "35": 2,
+                  "36": 6,
+                  "37": 2,
+                  "38": 6,
+                  "39": 1,
+                  "1440": 76,
+                  "1441": 1,
+                  "-1": 3265,
+                  "-2": 15
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 50364,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 2190,
+                  "exact": 42397,
+                  "withinOne": 49303,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 42397,
+                    "1": 3986,
+                    "2": 56,
+                    "3": 44,
+                    "4": 41,
+                    "5": 51,
+                    "6": 38,
+                    "7": 46,
+                    "8": 36,
+                    "9": 46,
+                    "10": 36,
+                    "11": 41,
+                    "12": 39,
+                    "13": 36,
+                    "14": 44,
+                    "15": 37,
+                    "16": 31,
+                    "17": 34,
+                    "18": 35,
+                    "19": 43,
+                    "20": 35,
+                    "21": 30,
+                    "22": 31,
+                    "23": 23,
+                    "24": 25,
+                    "25": 19,
+                    "26": 17,
+                    "27": 13,
+                    "28": 14,
+                    "29": 12,
+                    "30": 8,
+                    "31": 9,
+                    "32": 7,
+                    "33": 5,
+                    "34": 9,
+                    "35": 2,
+                    "36": 6,
+                    "37": 2,
+                    "38": 6,
+                    "39": 1,
+                    "1440": 38,
+                    "-1": 2920,
+                    "-2": 15
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 7947,
+                  "withinOne": 8594,
+                  "maxAbsoluteMinutes": 1441,
+                  "histogram": {
+                    "0": 7947,
+                    "1": 302,
+                    "2": 8,
+                    "3": 6,
+                    "4": 6,
+                    "5": 5,
+                    "6": 6,
+                    "7": 6,
+                    "8": 6,
+                    "9": 5,
+                    "10": 8,
+                    "11": 3,
+                    "12": 7,
+                    "13": 3,
+                    "14": 8,
+                    "15": 7,
+                    "16": 2,
+                    "17": 6,
+                    "18": 4,
+                    "19": 6,
+                    "20": 5,
+                    "21": 5,
+                    "22": 1,
+                    "23": 2,
+                    "24": 3,
+                    "25": 2,
+                    "26": 1,
+                    "27": 2,
+                    "29": 2,
+                    "1440": 38,
+                    "1441": 1,
+                    "-1": 345
+                  }
+                }
+              },
+              "corrections": 6,
+              "regressions": 2877,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 31,
+                "cityEventMaximumIncreases": 25,
+                "cityEventExactLosses": 31
+              }
+            },
+            "autumn-real-night-gap": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 52867,
+                "withinOne": 60612,
+                "maxAbsoluteMinutes": 1441,
+                "histogram": {
+                  "0": 52867,
+                  "1": 4334,
+                  "2": 3,
+                  "1440": 76,
+                  "1441": 1,
+                  "-1": 3411,
+                  "-2": 51,
+                  "-3": 46,
+                  "-4": 43,
+                  "-5": 37,
+                  "-6": 39,
+                  "-7": 39,
+                  "-8": 43,
+                  "-9": 39,
+                  "-10": 38,
+                  "-11": 41,
+                  "-12": 40,
+                  "-13": 35,
+                  "-14": 25,
+                  "-15": 33,
+                  "-16": 17,
+                  "-17": 17,
+                  "-18": 9,
+                  "-19": 9,
+                  "-20": 11,
+                  "-21": 6,
+                  "-22": 2
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 44868,
+                  "withinOne": 51965,
+                  "maxAbsoluteMinutes": 1440,
+                  "histogram": {
+                    "0": 44868,
+                    "1": 4036,
+                    "2": 3,
+                    "1440": 38,
+                    "-1": 3061,
+                    "-2": 46,
+                    "-3": 39,
+                    "-4": 39,
+                    "-5": 33,
+                    "-6": 32,
+                    "-7": 34,
+                    "-8": 39,
+                    "-9": 34,
+                    "-10": 32,
+                    "-11": 37,
+                    "-12": 33,
+                    "-13": 32,
+                    "-14": 22,
+                    "-15": 28,
+                    "-16": 15,
+                    "-17": 16,
+                    "-18": 9,
+                    "-19": 9,
+                    "-20": 11,
+                    "-21": 6,
+                    "-22": 2
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 7999,
+                  "withinOne": 8647,
+                  "maxAbsoluteMinutes": 1441,
+                  "histogram": {
+                    "0": 7999,
+                    "1": 298,
+                    "1440": 38,
+                    "1441": 1,
+                    "-1": 350,
+                    "-2": 5,
+                    "-3": 7,
+                    "-4": 4,
+                    "-5": 4,
+                    "-6": 7,
+                    "-7": 5,
+                    "-8": 4,
+                    "-9": 5,
+                    "-10": 6,
+                    "-11": 4,
+                    "-12": 7,
+                    "-13": 3,
+                    "-14": 3,
+                    "-15": 5,
+                    "-16": 2,
+                    "-17": 1
+                  }
+                }
+              },
+              "corrections": 3,
+              "regressions": 351,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 25,
+                "cityEventMaximumIncreases": 26,
+                "cityEventExactLosses": 24
+              }
+            }
+          },
+          "conditional-isha-after-maghrib-actual-IANA": {
+            "baseline": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 53291,
+                "withinOne": 61267,
+                "maxAbsoluteMinutes": 2,
+                "histogram": {
+                  "0": 53291,
+                  "1": 4345,
+                  "2": 21,
+                  "-1": 3631,
+                  "-2": 24
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 45200,
+                  "withinOne": 52509,
+                  "maxAbsoluteMinutes": 2,
+                  "histogram": {
+                    "0": 45200,
+                    "1": 4045,
+                    "2": 21,
+                    "-1": 3264,
+                    "-2": 24
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8091,
+                  "withinOne": 8758,
+                  "maxAbsoluteMinutes": 1,
+                  "histogram": {
+                    "0": 8091,
+                    "1": 300,
+                    "-1": 367
+                  }
+                }
+              },
+              "corrections": 0,
+              "regressions": 0
+            },
+            "autumn-frozen-ratio-gap": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 59122,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 2190,
+                "exact": 50420,
+                "withinOne": 57974,
+                "maxAbsoluteMinutes": 39,
+                "histogram": {
+                  "0": 50420,
+                  "1": 4289,
+                  "2": 64,
+                  "3": 50,
+                  "4": 47,
+                  "5": 56,
+                  "6": 44,
+                  "7": 52,
+                  "8": 42,
+                  "9": 51,
+                  "10": 44,
+                  "11": 44,
+                  "12": 46,
+                  "13": 39,
+                  "14": 52,
+                  "15": 44,
+                  "16": 33,
+                  "17": 40,
+                  "18": 39,
+                  "19": 49,
+                  "20": 40,
+                  "21": 35,
+                  "22": 32,
+                  "23": 25,
+                  "24": 28,
+                  "25": 21,
+                  "26": 18,
+                  "27": 15,
+                  "28": 14,
+                  "29": 14,
+                  "30": 8,
+                  "31": 9,
+                  "32": 7,
+                  "33": 5,
+                  "34": 9,
+                  "35": 2,
+                  "36": 6,
+                  "37": 2,
+                  "38": 6,
+                  "39": 1,
+                  "-1": 3265,
+                  "-2": 15
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 50364,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 2190,
+                  "exact": 42435,
+                  "withinOne": 49341,
+                  "maxAbsoluteMinutes": 39,
+                  "histogram": {
+                    "0": 42435,
+                    "1": 3986,
+                    "2": 56,
+                    "3": 44,
+                    "4": 41,
+                    "5": 51,
+                    "6": 38,
+                    "7": 46,
+                    "8": 36,
+                    "9": 46,
+                    "10": 36,
+                    "11": 41,
+                    "12": 39,
+                    "13": 36,
+                    "14": 44,
+                    "15": 37,
+                    "16": 31,
+                    "17": 34,
+                    "18": 35,
+                    "19": 43,
+                    "20": 35,
+                    "21": 30,
+                    "22": 31,
+                    "23": 23,
+                    "24": 25,
+                    "25": 19,
+                    "26": 17,
+                    "27": 13,
+                    "28": 14,
+                    "29": 12,
+                    "30": 8,
+                    "31": 9,
+                    "32": 7,
+                    "33": 5,
+                    "34": 9,
+                    "35": 2,
+                    "36": 6,
+                    "37": 2,
+                    "38": 6,
+                    "39": 1,
+                    "-1": 2920,
+                    "-2": 15
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 7985,
+                  "withinOne": 8633,
+                  "maxAbsoluteMinutes": 29,
+                  "histogram": {
+                    "0": 7985,
+                    "1": 303,
+                    "2": 8,
+                    "3": 6,
+                    "4": 6,
+                    "5": 5,
+                    "6": 6,
+                    "7": 6,
+                    "8": 6,
+                    "9": 5,
+                    "10": 8,
+                    "11": 3,
+                    "12": 7,
+                    "13": 3,
+                    "14": 8,
+                    "15": 7,
+                    "16": 2,
+                    "17": 6,
+                    "18": 4,
+                    "19": 6,
+                    "20": 5,
+                    "21": 5,
+                    "22": 1,
+                    "23": 2,
+                    "24": 3,
+                    "25": 2,
+                    "26": 1,
+                    "27": 2,
+                    "29": 2,
+                    "-1": 345
+                  }
+                }
+              },
+              "corrections": 6,
+              "regressions": 2877,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 31,
+                "cityEventMaximumIncreases": 25,
+                "cityEventExactLosses": 31
+              }
+            },
+            "autumn-real-night-gap": {
+              "overall": {
+                "planned": 61320,
+                "sourceComparable": 61312,
+                "compared": 61312,
+                "sourceUnresolved": 8,
+                "modelUnavailable": 0,
+                "exact": 52943,
+                "withinOne": 60689,
+                "maxAbsoluteMinutes": 22,
+                "histogram": {
+                  "0": 52943,
+                  "1": 4335,
+                  "2": 3,
+                  "-1": 3411,
+                  "-2": 51,
+                  "-3": 46,
+                  "-4": 43,
+                  "-5": 37,
+                  "-6": 39,
+                  "-7": 39,
+                  "-8": 43,
+                  "-9": 39,
+                  "-10": 38,
+                  "-11": 41,
+                  "-12": 40,
+                  "-13": 35,
+                  "-14": 25,
+                  "-15": 33,
+                  "-16": 17,
+                  "-17": 17,
+                  "-18": 9,
+                  "-19": 9,
+                  "-20": 11,
+                  "-21": 6,
+                  "-22": 2
+                }
+              },
+              "cohorts": {
+                "known24": {
+                  "planned": 52560,
+                  "sourceComparable": 52554,
+                  "compared": 52554,
+                  "sourceUnresolved": 6,
+                  "modelUnavailable": 0,
+                  "exact": 44906,
+                  "withinOne": 52003,
+                  "maxAbsoluteMinutes": 22,
+                  "histogram": {
+                    "0": 44906,
+                    "1": 4036,
+                    "2": 3,
+                    "-1": 3061,
+                    "-2": 46,
+                    "-3": 39,
+                    "-4": 39,
+                    "-5": 33,
+                    "-6": 32,
+                    "-7": 34,
+                    "-8": 39,
+                    "-9": 34,
+                    "-10": 32,
+                    "-11": 37,
+                    "-12": 33,
+                    "-13": 32,
+                    "-14": 22,
+                    "-15": 28,
+                    "-16": 15,
+                    "-17": 16,
+                    "-18": 9,
+                    "-19": 9,
+                    "-20": 11,
+                    "-21": 6,
+                    "-22": 2
+                  }
+                },
+                "canonical4": {
+                  "planned": 8760,
+                  "sourceComparable": 8758,
+                  "compared": 8758,
+                  "sourceUnresolved": 2,
+                  "modelUnavailable": 0,
+                  "exact": 8037,
+                  "withinOne": 8686,
+                  "maxAbsoluteMinutes": 17,
+                  "histogram": {
+                    "0": 8037,
+                    "1": 299,
+                    "-1": 350,
+                    "-2": 5,
+                    "-3": 7,
+                    "-4": 4,
+                    "-5": 4,
+                    "-6": 7,
+                    "-7": 5,
+                    "-8": 4,
+                    "-9": 5,
+                    "-10": 6,
+                    "-11": 4,
+                    "-12": 7,
+                    "-13": 3,
+                    "-14": 3,
+                    "-15": 5,
+                    "-16": 2,
+                    "-17": 1
+                  }
+                }
+              },
+              "corrections": 3,
+              "regressions": 351,
+              "replacementGate": {
+                "passed": false,
+                "cityEventWithinOneLosses": 25,
+                "cityEventMaximumIncreases": 26,
+                "cityEventExactLosses": 24
+              }
+            }
+          }
+        },
+        "reportSha256": "9226c48e8bf5a9215bcbbecfd59d91d3c8282cf598aa88572e79762b9407fc9d",
+        "verifierSha256": "cd201bf8f9b72f84efcfe04b9d7199079479a39a8d860301a9aab5a33d1bdbbd",
+        "reusedOracle": "diyanet-seasonal-precision-review-2026-09-25/verify-scores.py; explicit failure retention and fifth unchanged event adapted before execution"
+      }
+    },
+    "inverse-review.json": {
+      "sha256": "7ac1fa8b90f7a9ec0fd9338a873820f965639f78a909bcf2107bbbac18ce7c1d",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:25:50.032311+00:00",
+        "status": "pass",
+        "method": "Exact closed-polygon vertex enumeration and strict-bound face-centroid certificates; independent of author Fourier-Motzkin module.",
+        "segments": 56,
+        "fullRunCells": 1313,
+        "trimCases": {
+          "feasible": 167,
+          "infeasible": 1
+        },
+        "intervalComparisons": 1008,
+        "bothDateModesIdentical": true,
+        "sourceSelectionMatchedEarlierAudit": true,
+        "reportSha256": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6",
+        "verifierSha256": "8ee2c0a1027cfadc75c56a0e370aa2f429fa6c5102ec06bd83744756d88594e1"
+      }
+    },
+    "quotient-review.json": {
+      "sha256": "2ed0f10fd6cd7dc473d236832d62864b2caec440001467ff91ab42efc5428680",
+      "report": {
+        "status": "pass",
+        "createdAtUtc": "2026-09-25T20:28:59.514837+00:00",
+        "scope": "Independent exact interval transformation/intersection from previously vertex-verified bounds and original model rows. No fitted ratio or reference-clock measurement.",
+        "cityYears": 28,
+        "intervalComparisons": 588,
+        "summary": {
+          "0": {
+            "feasible": 16,
+            "baselineFits": 3
+          },
+          "1": {
+            "feasible": 18,
+            "baselineFits": 5
+          },
+          "2": {
+            "feasible": 22,
+            "baselineFits": 7
+          }
+        },
+        "reportSha256": "0496eaa9618a354532742149adf6ecdbe9b00a8ceded6860da7ea37f3081a814",
+        "verifierSha256": "da16e7e99c9dc00681d2131a1d6fd66391109607e197c270900f06887947ae79"
+      }
+    },
+    "public-v2-verification.json": {
+      "sha256": "c50a94d9fcd8a834a1992b6bb390a38841bd0219ef9823f5938fb0155a3024d3",
+      "report": {
+        "verifiedUtc": "2026-09-25T20:30:40.859146+00:00",
+        "scope": "Full frozen endpoint and quotient studies replayed using corrected public V2 math; no source data or numerical model change.",
+        "originalFilesPreserved": true,
+        "allEndpointAndQuotientIntervalsExactlyUnchanged": true,
+        "endpointIntervalsPerDateInterpretation": 1848,
+        "endpointRepeatedDateInterpretations": 2,
+        "quotientIntervals": 588,
+        "endpointFeasibleCertificatesIncludingRepeatedDateMode": 1208,
+        "quotientFeasibleEventCertificates": 112,
+        "sourceFreeTests": 9,
+        "sourceFreeProjectionMembershipGridComparisons": 1485,
+        "hashes": {
+          "affine_constraints.py": "da72b2909197defa966620caa3570026f667a664af1a78a45932b05779ac61aa",
+          "report.json": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6",
+          "quotient-report.json": "0496eaa9618a354532742149adf6ecdbe9b00a8ceded6860da7ea37f3081a814",
+          "public-diagnostic/affine_constraints.py": "7a5d538cf1b1def6b5bb4482cc9e7a50ceeeb72848f6df55c2531d8d687e9a50",
+          "public-diagnostic/test_affine_constraints.py": "7be092f2b1c807f3d7d2712f449c84bda1b5d317b2036af64e87cd95eebc05b2",
+          "verify_public_v2.py": "6948827a699dd0dc47921d7e7f970275a279644d7cc8f9ede3369f53aed42e89"
+        },
+        "limitation": "This replay tests preservation under a math-classification correction. It is not a new source parse, ephemeris, or accuracy validation."
+      }
+    }
+  }
+}

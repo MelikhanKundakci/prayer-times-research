@@ -1,0 +1,654 @@
+{
+  "createdAtUtc": "2026-09-25T20:25:17.561Z",
+  "scope": "Private source-free candidate verification; no institutional accuracy score",
+  "planSha256": "4e26016cf7c661e20325f76573e44cdd7625602081fc1b0ffa114bb324da0e4a",
+  "runtime": {
+    "node": "v26.7.0",
+    "tzdb": "2026d"
+  },
+  "archiveParity": {
+    "cases": 28,
+    "unchangedDays": 10220,
+    "unchangedEventObjects": 61320
+  },
+  "runs": [
+    {
+      "id": "frankfurt",
+      "input": {
+        "year": 2027,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "berlin",
+      "input": {
+        "year": 2027,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "narvik",
+      "input": {
+        "year": 2027,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "Europe/Oslo"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "reykjavik",
+      "input": {
+        "year": 2027,
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "anchorage",
+      "input": {
+        "year": 2027,
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "uelen",
+      "input": {
+        "year": 2027,
+        "latitude": 66.161,
+        "longitude": -169.8,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "adak",
+      "input": {
+        "year": 2027,
+        "latitude": 51.88,
+        "longitude": -176.65,
+        "timeZone": "America/Adak"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "petropavlovsk",
+      "input": {
+        "year": 2027,
+        "latitude": 53.02,
+        "longitude": 158.65,
+        "timeZone": "Asia/Kamchatka"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "nuuk",
+      "input": {
+        "year": 2027,
+        "latitude": 64.18,
+        "longitude": -51.72,
+        "timeZone": "America/Nuuk"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "newfoundland",
+      "input": {
+        "year": 2027,
+        "latitude": 49,
+        "longitude": -54,
+        "timeZone": "America/St_Johns"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "antimeridian-west-anadyr",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "antimeridian-east-anadyr",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "antimeridian-west-utc",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "unsupported",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "antimeridian-east-utc",
+      "input": {
+        "year": 2027,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "unsupported",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "low-north-dateline",
+      "input": {
+        "year": 2027,
+        "latitude": 44.5,
+        "longitude": -179,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "berlin-utc-control",
+      "input": {
+        "year": 2027,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "narvik-utc-control",
+      "input": {
+        "year": 2027,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 365
+    },
+    {
+      "id": "frankfurt",
+      "input": {
+        "year": 2028,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "berlin",
+      "input": {
+        "year": 2028,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "narvik",
+      "input": {
+        "year": 2028,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "Europe/Oslo"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "reykjavik",
+      "input": {
+        "year": 2028,
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "anchorage",
+      "input": {
+        "year": 2028,
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "uelen",
+      "input": {
+        "year": 2028,
+        "latitude": 66.161,
+        "longitude": -169.8,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "adak",
+      "input": {
+        "year": 2028,
+        "latitude": 51.88,
+        "longitude": -176.65,
+        "timeZone": "America/Adak"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "petropavlovsk",
+      "input": {
+        "year": 2028,
+        "latitude": 53.02,
+        "longitude": 158.65,
+        "timeZone": "Asia/Kamchatka"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "nuuk",
+      "input": {
+        "year": 2028,
+        "latitude": 64.18,
+        "longitude": -51.72,
+        "timeZone": "America/Nuuk"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "newfoundland",
+      "input": {
+        "year": 2028,
+        "latitude": 49,
+        "longitude": -54,
+        "timeZone": "America/St_Johns"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "antimeridian-west-anadyr",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "antimeridian-east-anadyr",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "antimeridian-west-utc",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": -180,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "unsupported",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "antimeridian-east-utc",
+      "input": {
+        "year": 2028,
+        "latitude": 60,
+        "longitude": 180,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "unsupported",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "low-north-dateline",
+      "input": {
+        "year": 2028,
+        "latitude": 44.5,
+        "longitude": -179,
+        "timeZone": "Asia/Anadyr"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "berlin-utc-control",
+      "input": {
+        "year": 2028,
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    },
+    {
+      "id": "narvik-utc-control",
+      "input": {
+        "year": 2028,
+        "latitude": 68.438,
+        "longitude": 17.4,
+        "timeZone": "UTC"
+      },
+      "oldStatus": "calculated",
+      "status": "calculated",
+      "unsupported": null,
+      "days": 366
+    }
+  ],
+  "pairs": [
+    {
+      "year": 2027,
+      "id": "exact-antimeridian",
+      "longitudes": [
+        -180,
+        180
+      ],
+      "latitude": 60,
+      "timeZone": "Asia/Anadyr",
+      "byEvent": {
+        "fajr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "sunrise": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "dhuhr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "asr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "maghrib": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "isha": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        }
+      }
+    },
+    {
+      "year": 2027,
+      "id": "near-antimeridian",
+      "longitudes": [
+        -179.999999,
+        179.999999
+      ],
+      "latitude": 60,
+      "timeZone": "Asia/Anadyr",
+      "byEvent": {
+        "fajr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "sunrise": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "dhuhr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "asr": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "maghrib": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "isha": {
+          "compared": 365,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        }
+      }
+    },
+    {
+      "year": 2028,
+      "id": "exact-antimeridian",
+      "longitudes": [
+        -180,
+        180
+      ],
+      "latitude": 60,
+      "timeZone": "Asia/Anadyr",
+      "byEvent": {
+        "fajr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "sunrise": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "dhuhr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "asr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "maghrib": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        },
+        "isha": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0
+        }
+      }
+    },
+    {
+      "year": 2028,
+      "id": "near-antimeridian",
+      "longitudes": [
+        -179.999999,
+        179.999999
+      ],
+      "latitude": 60,
+      "timeZone": "Asia/Anadyr",
+      "byEvent": {
+        "fajr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "sunrise": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "dhuhr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "asr": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "maghrib": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        },
+        "isha": {
+          "compared": 366,
+          "roundedChanged": 0,
+          "maximumRawDifferenceSeconds": 0.000480224609375
+        }
+      }
+    }
+  ],
+  "dstControls": [
+    {
+      "year": 2027,
+      "id": "berlin",
+      "compared": 2190,
+      "rawAndRoundedEqual": true
+    },
+    {
+      "year": 2027,
+      "id": "narvik",
+      "compared": 2190,
+      "rawAndRoundedEqual": true
+    },
+    {
+      "year": 2028,
+      "id": "berlin",
+      "compared": 2196,
+      "rawAndRoundedEqual": true
+    },
+    {
+      "year": 2028,
+      "id": "narvik",
+      "compared": 2196,
+      "rawAndRoundedEqual": true
+    }
+  ]
+}

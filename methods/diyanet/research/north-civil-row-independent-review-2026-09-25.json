@@ -1,0 +1,1312 @@
+{
+  "scope": "Independent source-free model review; all calendar-source accuracy claims excluded. The original quality-reporting gap is preserved with its public-wrapper repair and verification.",
+  "records": {
+    "report.json": {
+      "sha256": "dcb6ee317bb162fca12b15ed6dd003864dbe1ae68375b686108966a2e7339f5c",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:31:07.522Z",
+        "scope": "Read-only candidate audit, no institutional calendar score. Candidateauthorverificationalreadyread, not blinded.",
+        "reviewer": "Independent seasonal-audit agent, not candidate author",
+        "runtime": {
+          "node": "v26.7.0",
+          "tzdb": "2026d"
+        },
+        "findings": [
+          {
+            "severity": "medium",
+            "code": "ordering-adapter-bypassed",
+            "count": 17,
+            "example": {
+              "id": "tromso-2026",
+              "date": "2026-11-23",
+              "previousEvent": "dhuhr",
+              "event": "asr",
+              "rawSeconds": -25.416836669921874,
+              "roundedMinutes": 0,
+              "status": "adjusted",
+              "eventFlagPresent": false,
+              "dayFlagPresent": false
+            },
+            "description": "Candidate keeps raw baseline reversal but does not attach the reviewed default per-event/day ordering flags."
+          }
+        ],
+        "archive": {
+          "cases": 28,
+          "days": 10220,
+          "eventObjects": 61320,
+          "exactDayParityExceptDeclaredDateMetadata": true
+        },
+        "seamPairs": [
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 44.5,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 60,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 68.438,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2027,
+            "latitude": 75,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2190,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 44.5,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 60,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 68.438,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "UTC",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "UTC",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "Asia/Anadyr",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "America/Adak",
+            "epsilon": 0,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0
+          },
+          {
+            "year": 2028,
+            "latitude": 75,
+            "timeZone": "America/Adak",
+            "epsilon": 1e-06,
+            "statuses": [
+              "supported",
+              "supported"
+            ],
+            "errors": [
+              null,
+              null
+            ],
+            "compared": 2196,
+            "roundedChanged": 0,
+            "maxRawSeconds": 0.000480224609375
+          }
+        ],
+        "geometry": {
+          "days": 35088,
+          "maxTransitResidualSeconds": 0,
+          "maxHorizonResidualSeconds": 2.44140625e-07,
+          "carrierDifferentFromCivil": 17544,
+          "solsticeChecks": 96
+        },
+        "inputChecks": [
+          {
+            "case": 0,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 1,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 2,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 3,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 4,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 5,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 6,
+            "rejection": "TypeError"
+          },
+          {
+            "case": 7,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 8,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 9,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 10,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 11,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 12,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 13,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 14,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 15,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 16,
+            "rejection": "RangeError"
+          },
+          {
+            "case": 17,
+            "rejection": "TypeError"
+          }
+        ],
+        "ordering": [
+          {
+            "id": "tromso-2026",
+            "date": "2026-11-23",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -25.416836669921874,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "bodo-2026",
+            "date": "2026-01-05",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -11.424696044921875,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "bodo-2026",
+            "date": "2026-12-08",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -43.81456396484375,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "bodo-2027",
+            "date": "2027-01-05",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -26.529049072265625,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "bodo-2027",
+            "date": "2027-12-08",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -28.9052060546875,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "kiruna-2026",
+            "date": "2026-01-09",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -50.64720922851563,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "kiruna-2026",
+            "date": "2026-12-03",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -13.553791748046875,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "narvik-2027",
+            "date": "2027-01-13",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -53.124099609375,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "kirkenes-2027",
+            "date": "2027-01-20",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -25.53188671875,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "kirkenes-2027",
+            "date": "2027-11-23",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -41.243014892578124,
+            "roundedMinutes": -1,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-19",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -1.84919921875,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-20",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -13.324456298828125,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-21",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -20.41845556640625,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-22",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -23.121468017578124,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-23",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -21.4286806640625,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-24",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -15.340213134765625,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          },
+          {
+            "id": "rovaniemi-2027",
+            "date": "2027-12-25",
+            "previousEvent": "dhuhr",
+            "event": "asr",
+            "rawSeconds": -4.861119384765625,
+            "roundedMinutes": 0,
+            "status": "adjusted",
+            "eventFlagPresent": false,
+            "dayFlagPresent": false
+          }
+        ],
+        "strictArguments": {
+          "zeroRejected": true,
+          "twoRejected": true,
+          "frozenPlainInputAccepted": true,
+          "getterNeverInvoked": true
+        },
+        "dst": [
+          {
+            "id": "berlin",
+            "year": 2027,
+            "eventPairs": 2190,
+            "rawAndUtcUnchanged": true,
+            "leapDayCount": 0,
+            "uniqueOffsets": [
+              "+01:00",
+              "+02:00"
+            ]
+          },
+          {
+            "id": "narvik",
+            "year": 2027,
+            "eventPairs": 2190,
+            "rawAndUtcUnchanged": true,
+            "leapDayCount": 0,
+            "uniqueOffsets": [
+              "+01:00",
+              "+02:00"
+            ]
+          },
+          {
+            "id": "berlin",
+            "year": 2028,
+            "eventPairs": 2196,
+            "rawAndUtcUnchanged": true,
+            "leapDayCount": 1,
+            "uniqueOffsets": [
+              "+01:00",
+              "+02:00"
+            ]
+          },
+          {
+            "id": "narvik",
+            "year": 2028,
+            "eventPairs": 2196,
+            "rawAndUtcUnchanged": true,
+            "leapDayCount": 1,
+            "uniqueOffsets": [
+              "+01:00",
+              "+02:00"
+            ]
+          }
+        ],
+        "skippedCivilDate": {
+          "name": "RangeError",
+          "message": "Requested civil date has no uniquely anchored solar noon: 2011-12-30"
+        },
+        "summary": {
+          "archiveParityPassed": true,
+          "seamPairs": 48,
+          "unsupportedSeamPairs": 0,
+          "maxSeamRawSeconds": 0.000480224609375,
+          "knownRawOrderingReversals": 17,
+          "knownRoundedOrderingReversals": 8,
+          "unflaggedOrderingReversals": 17
+        }
+      }
+    },
+    "envelope-check.json": {
+      "sha256": "70568ebfc1e78416ffc56e26e2a79b1b8ec93d092514bde24184e9d034f8365c",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:33:50.233Z",
+        "scope": "Independent expression of unchanged horizon/civil-June21 envelope operations; twilight cap invariants only, not a second twilight solver.",
+        "cases": 96,
+        "horizonComparisons": 70176,
+        "twilightBoundComparisons": 52632,
+        "maxHorizonResidualMinutes": 1.1368683772161603e-13,
+        "civilJune21PivotVerified": true,
+        "unconfirmedInstitutionalConvention": true
+      }
+    },
+    "quality-followup.json": {
+      "sha256": "7bb2e74706c0b10350caeaaf8b957282e6b63c52dc2fac94ad94f6024e4b15dd",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:32:22.522Z",
+        "scope": "Independent verification of public relocation and added quality wrapper; no institutional score.",
+        "privateFrozenCandidateUnchanged": true,
+        "relocationImportsOnlyVerified": 3,
+        "cases": 28,
+        "eventInstantsAndClocksUnchanged": 61320,
+        "rawOrderingFlags": 17,
+        "roundedOrderingFlags": 8,
+        "defaultSelectorUnchangedCases": 28,
+        "explicitCivilSelectorReviewedCases": 28,
+        "initialOrderingFlagFindingResolvedForPublicReviewedEntry": true,
+        "perCase": [
+          {
+            "city": "tromso-2026",
+            "rawFlags": 1,
+            "roundedFlags": 0
+          },
+          {
+            "city": "bodo-2026",
+            "rawFlags": 2,
+            "roundedFlags": 2
+          },
+          {
+            "city": "bodo-2027",
+            "rawFlags": 2,
+            "roundedFlags": 1
+          },
+          {
+            "city": "kiruna-2026",
+            "rawFlags": 2,
+            "roundedFlags": 2
+          },
+          {
+            "city": "narvik-2027",
+            "rawFlags": 1,
+            "roundedFlags": 1
+          },
+          {
+            "city": "kirkenes-2027",
+            "rawFlags": 2,
+            "roundedFlags": 2
+          },
+          {
+            "city": "rovaniemi-2027",
+            "rawFlags": 7,
+            "roundedFlags": 0
+          }
+        ],
+        "publicFiles": [
+          {
+            "path": "methods/diyanet/index.mjs",
+            "sha256": "1dd8910a8913b6468fa7952b8ca72a24fc4c653bc7d06b086b925bd37a4e94bc"
+          },
+          {
+            "path": "methods/diyanet/implementation/north-civil-row/quality-model.mjs",
+            "sha256": "71f9a6e2c49e7e2284248f47d0a20c4cd1b049fb5f5fa9052f6917d21ac4e0d1"
+          }
+        ]
+      }
+    },
+    "completion.json": {
+      "sha256": "f846fc8899278ac2b2788800d17fba7d030afa3ae0b5b6214b147bb52afff09b",
+      "report": {
+        "createdAtUtc": "2026-09-25T20:34:53.988696+00:00",
+        "result": "Numerical/date/input audits passed; missing ordering-quality adapter identified and resolved in public reviewed entry; no institutional accuracy claim.",
+        "files": [
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/plan.json",
+            "sha256": "0bb8f4a3898cdea740bc0335a03d0a2d3ffd819e974ae6563eee65cde32e46b4"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/review.mjs",
+            "sha256": "f4719ca1e46cc84a0fdbf16ee8dc625223a58ec26686aadec26aa36c61130b73"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/report.json",
+            "sha256": "dcb6ee317bb162fca12b15ed6dd003864dbe1ae68375b686108966a2e7339f5c"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/envelope-check.mjs",
+            "sha256": "d857f33bede78fc4cfeb0c01b49c83b9c872dff4e0b98c10eb6a41fb4e995cbe"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/envelope-check.json",
+            "sha256": "70568ebfc1e78416ffc56e26e2a79b1b8ec93d092514bde24184e9d034f8365c"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/quality-followup.mjs",
+            "sha256": "b4d8884129080716b37a831d2c4e84f6c7d1cef261d7b3d7629ae562821fd8ad"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/quality-followup.json",
+            "sha256": "7bb2e74706c0b10350caeaaf8b957282e6b63c52dc2fac94ad94f6024e4b15dd"
+          },
+          {
+            "path": "research/diyanet-transition-review-2026-09-25/civil-row-review/README.md",
+            "sha256": "277dd4578a9c0370cb59c4c497bbdd20f1b4e005580288eb06d27426d94e60dd"
+          }
+        ]
+      }
+    }
+  }
+}
