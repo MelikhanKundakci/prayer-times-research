@@ -52,7 +52,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 
 - Only the fixed Singapore region is offered. Numerical date support is wider than the three tested source years.
 - All available 2024–2026 calendars were already known before selecting this own candidate; no fresh holdout is claimed.
-- The later [prospective 2027 annual comparison](PROSPECTIVE-2027.md) froze the full local forecast before a normally accessible official PDF was read. A predeclared Ramadan Maghrib diagnostic removes its ten two-minute differences, but is not a documented MUIS rule or part of this default calculator.
+- The later [prospective 2027 annual comparison](PROSPECTIVE-2027.md) froze the full local forecast before a normally accessible official PDF was read. A predeclared Ramadan Maghrib diagnostic removes its ten two-minute differences, but is not a documented MUIS rule or part of this default calculator. A follow-up of general Maghrib, rounding and ephemeris alternatives found no validated general correction; see [the residual review](MAGHRIB-RESIDUAL-REVIEW.md).
 
 ## Historical validation
 
