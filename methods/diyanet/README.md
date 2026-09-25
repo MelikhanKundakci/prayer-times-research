@@ -4,7 +4,9 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
-[Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies the official API fields needed for the next targeted comparison.
+[Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies remaining source gaps.
+
+The [second offline refinement study](RESEARCH-ROUND-2.md) raises retrospective Berlin/Stockholm agreement from **3,862 to 4,257 of 4,380 minutes** using fixed diagnostic points inferred from a separate year's observations. These are not verified institutional coordinates. Five seasonal hypotheses and two solar coefficient alternatives were rejected. The calculation defaults remain unchanged; a new [offline point-consistency tool](diagnostics/README.md) makes the diagnostic available to contributors.
 
 ## Run the selected example
 
@@ -29,6 +31,12 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 The uniform entry is [`calculate(options)`](index.mjs). **Default:** north-missing-window (annual); this is an explicit experimental default, not automatic religious or latitude-based method selection.
 
 Public options.variant selects north-missing-window, north-reviewed, north-baseline, low-latitude or south. Northern inputs use year; low-latitude/south use date. The default is an experiment, not a certification.
+
+### Fully local calculation
+
+The Diyanet entry calculates from the supplied date/year, latitude, longitude and IANA timezone. It needs no API key, remote request, downloaded prayer calendar or third-party prayer-time library. Timezone rules are bundled locally. Source calendars are used only by separate research comparisons.
+
+The [offline regression test](../../tests/diyanet-offline.test.mjs) runs all five exported variants in a subprocess that denies network access and file access to calendar examples, test snapshots and `node_modules`. It reproduces the stored results under two host timezones. This verifies the local execution contract; matching an institution still depends on its actual calculation point and complete rules.
 
 ### Runnable implementations
 
