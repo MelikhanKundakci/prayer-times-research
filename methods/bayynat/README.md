@@ -34,6 +34,7 @@ The underlying signatures remain method-specific. These links point to the code 
 | Variant | Module / export |
 |---|---|
 | `point-utc12-h5over6-ceil` | [`calculateDay`](implementation/selected-model.mjs) |
+| `point-utc12-h5over6-nearest` — rejected general replacement, research only | [`calculateNearestCandidate`](implementation/nearest-candidate.mjs) |
 
 ### Inputs and boundaries
 
@@ -77,9 +78,13 @@ These are archived research comparisons, **not results of the public snapshot te
 
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 
+## Rounding counterexperiment
+
+The [uniform nearest-minute experiment](NEAREST-MINUTE.md) is retained as a **rejected general replacement**, with the ceiling default unchanged. It improves 238→482/546 exact on known source months. On three new 2031 point-months frozen before source acquisition, it improves 299→454/552 exact but worsens 62 individual differences and creates **three new two-minute errors**; ceiling stays within one minute on all 552. Tokyo Fajr exposes a mismatch already present in the unrounded calculation. Both datasets and the older timezone-conflicted counterevidence remain separate in the [aggregate report](research/nearest-2026-09-25.json).
+
 ## Sources
 
-- [Primary calendar frontend](https://prayertime.bayynat.org.lb/)
+- [Primary public calendar frontend](https://www.bayynat.org.lb/prayer-time)
 - [Original March 2024 rules and calendar](https://prayertime.bayynat.org.lb/uploadImages/MawaKitAlSalatImages/Mawakit-1105481..pdf)
 - [Original September 2024 rules and calendar](https://prayertime.bayynat.org.lb/uploadImages/MawaKitAlSalatImages/Mawakit-3662407..pdf)
 - [Primary discussion of sunset/Maghrib; distinguish quoted scholarly positions](https://www.bayynat.org.lb/article/مقالات-فقهية-حول-الصوم/28345/رأي-العلم-والعلماء-في-دخول-وقت-المغرب/ar)

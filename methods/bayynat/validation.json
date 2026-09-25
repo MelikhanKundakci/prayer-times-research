@@ -48,6 +48,78 @@
         "A later moving-coordinate five-marker comparison uses known data and is not an additional fresh accuracy sample."
       ],
       "evidenceIdentifier": "research/bayynat/point-recipe/outcome.json"
+    },
+    {
+      "id": "nearest-known-months",
+      "recipe": "utc12-h5over6-nearest",
+      "exposure": "retrospective selection on already exposed sources",
+      "scope": "Same Jakarta April2024, Singapore July2024, Tokyo November2024 cells as three-point-months; do not pool",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 546,
+      "comparedSlots": 546,
+      "uncomparedSlots": 0,
+      "exactCount": 482,
+      "withinOneMinuteCount": 546,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 88.2784,
+      "nonExactRatePercent": 11.7216,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "All planned six-marker slots; no missing values in this sample.",
+      "dateInterpretation": "Actual IANA at each printed Gregorian date; source UTC semantics unconfirmed.",
+      "caveats": [
+        "Nearest is rejected as a general replacement: fresh maximum grows1→2minutes;62cells worsen, including59lost exact values.",
+        "Historical timezone-conflicted210cells remain separate; their conditional fixed-offset nearest exact count declines153→129."
+      ],
+      "evidenceIdentifier": "research/bayynat-followup-2026-09-25/report.json"
+    },
+    {
+      "id": "rounding-fresh-ceil",
+      "recipe": "utc12-h5over6-ceil",
+      "exposure": "new source calendars after both forecasts and evaluation freeze",
+      "scope": "Tokyo April2031, Cape Town July2031, Quito October2031;92days; paired with rounding-fresh-nearest",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 552,
+      "comparedSlots": 552,
+      "uncomparedSlots": 0,
+      "exactCount": 299,
+      "withinOneMinuteCount": 552,
+      "maxAbsoluteMinutes": 1,
+      "exactPercent": 54.1667,
+      "nonExactRatePercent": 45.8333,
+      "withinOneMinutePercent": 100.0,
+      "overOneMinuteRatePercent": 0.0,
+      "denominator": "All planned six-marker slots; no missing values in this sample.",
+      "dateInterpretation": "Actual IANA at each printed Gregorian date; source UTC semantics unconfirmed.",
+      "caveats": [
+        "Nearest is rejected as a general replacement: fresh maximum grows1→2minutes;62cells worsen, including59lost exact values.",
+        "Historical timezone-conflicted210cells remain separate; their conditional fixed-offset nearest exact count declines153→129."
+      ],
+      "evidenceIdentifier": "research/bayynat-followup-2026-09-25/prospective/result.json"
+    },
+    {
+      "id": "rounding-fresh-nearest",
+      "recipe": "utc12-h5over6-nearest",
+      "exposure": "new source calendars after both forecasts and evaluation freeze",
+      "scope": "Same552cells as rounding-fresh-ceil; do not pool",
+      "eventSet": "Fajr, sunrise, Dhuhr, Asr table, Maghrib compared to sunset, Isha table",
+      "expectedSlots": 552,
+      "comparedSlots": 552,
+      "uncomparedSlots": 0,
+      "exactCount": 454,
+      "withinOneMinuteCount": 549,
+      "maxAbsoluteMinutes": 2,
+      "exactPercent": 82.2464,
+      "nonExactRatePercent": 17.7536,
+      "withinOneMinutePercent": 99.4565,
+      "overOneMinuteRatePercent": 0.5435,
+      "denominator": "All planned six-marker slots; no missing values in this sample.",
+      "dateInterpretation": "Actual IANA at each printed Gregorian date; source UTC semantics unconfirmed.",
+      "caveats": [
+        "Nearest is rejected as a general replacement: fresh maximum grows1→2minutes;62cells worsen, including59lost exact values.",
+        "Historical timezone-conflicted210cells remain separate; their conditional fixed-offset nearest exact count declines153→129."
+      ],
+      "evidenceIdentifier": "research/bayynat-followup-2026-09-25/prospective/result.json"
     }
   ],
   "implementationProvenance": [
@@ -56,6 +128,13 @@
       "module": "methods/bayynat/implementation/selected-model.mjs",
       "export": "calculateDay",
       "sourceIdentifier": "research/bayynat/point-recipe/selected-model.mjs"
+    },
+    {
+      "variant": "point-utc12-h5over6-nearest",
+      "module": "methods/bayynat/implementation/nearest-candidate.mjs",
+      "export": "calculateNearestCandidate",
+      "status": "rejected as a general replacement; reproducibility research only",
+      "sourceIdentifier": "additive wrapper selecting unchanged mapped candidate-model.mjs recipe"
     }
   ],
   "historicalEvidence": [
@@ -88,21 +167,89 @@
       "sha256": "00330e1e71dc08142b42ad6e1f1493c3dbe93812a9d54373fd457861bb8f0096",
       "bytes": 634,
       "distribution": "provenance identifier only; historical internal artifact is not bundled here"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/plan.json",
+      "sha256": "cc5bf118690cfa55c28c958dc48a169c1512d95fc4b1e5c750a67649502d5986",
+      "bytes": 4420,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/report.json",
+      "sha256": "df373c019ee41d3d339c41df1e6a2cbfae8d420c1e729cfd419325f4b08dcaf2",
+      "bytes": 2686146,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/recheck.json",
+      "sha256": "346ae2442bc6da2c39bf66994afbca4a01763fde65d0a59578ee01c3c6d65e8c",
+      "bytes": 484,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/review/completion.json",
+      "sha256": "995eec8127d02c07a4b6e3bce5ab537e37589798da3750d3a518071e8db91aac",
+      "bytes": 524,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/plan.json",
+      "sha256": "43255bb20c596040cc825bda6d84c29427e1f0216fec3e4d604602b51c8d6ac7",
+      "bytes": 6578,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/freeze.json",
+      "sha256": "3d33559a43dafb183f92bff11a3de37b84513ec585e8c3202f39b48b7f07a8b6",
+      "bytes": 8707,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/forecast.json",
+      "sha256": "2faa9d2a366fd498ae88cb6858db89445a5fbe9614a71d1e0eed99b7231702d5",
+      "bytes": 18874067,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/result.json",
+      "sha256": "6b4f9a9ac533a95dd0fccf958fd27d138192973060a4a4fdd281bf9b1b446fd7",
+      "bytes": 472220,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/audit/recount.py",
+      "sha256": "9a02b7467b1b995568ebd25dac235711e91d073cdf47e83f6ca97f192e456169",
+      "bytes": 9001,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/audit/recount.json",
+      "sha256": "7e4fed4395fc4f3cadfc8e6184eb0fb46da419cc40c9374c5aaf7b2418314a19",
+      "bytes": 8228,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/review/fresh-source-review.json",
+      "sha256": "247ab49418249be4e5a4fea7aaa10f1a0b0512e003afae49b8cad16d4c6183c0",
+      "bytes": 5688,
+      "distribution": "provenance identifier only; private artifact is not bundled"
     }
   ],
   "limitations": [
     "Selecting a point recipe followed a known-source timezone compatibility diagnosis; the selection is empirical, not a discovered official algorithm.",
     "Known Beirut March2024 shows a printed clock jump onMarch25 instead of the actual March31 DST transition; September has a contradictory Hijri header and only29days. These source defects remain in historical records.",
     "Known Berlin March2026 point data behaves compatibly with fixedUTC+2. Subsequent UTC-versus-Europe/Berlin frontend requests returned identical source clocks, so the backend mechanism is unproven. Do not silently reinterpret those clocks as provider-asserted UTC instants.",
-    "The comparison maps source Maghrib to model sunset as an explicit assumption; this does not prove identical institutional production geometry or legal onset."
+    "The comparison maps source Maghrib to model sunset as an explicit assumption; this does not prove identical institutional production geometry or legal onset.",
+    "Uniform nearest rounding increases fresh exact matches299→454/552 but creates three two-minute Tokyo Fajr differences; the public default remains ceiling."
   ],
   "publicationNotes": [
-    "The export supplies numerical table markers, not a fatwa or a full legal-windows engine. Uncertain source clocks were never repaired in place."
+    "The export supplies numerical table markers, not a fatwa or a full legal-windows engine. Uncertain source clocks were never repaired in place.",
+    "The optional nearest export preserves a rejected general replacement and must not be interpreted as recommended for production."
   ],
   "primaryAndSoftwareSources": [
     {
-      "url": "https://prayertime.bayynat.org.lb/",
-      "role": "Primary calendar frontend"
+      "url": "https://www.bayynat.org.lb/prayer-time",
+      "role": "Primary public calendar frontend; separate from the prayer-time subdomain login"
     },
     {
       "url": "https://prayertime.bayynat.org.lb/uploadImages/MawaKitAlSalatImages/Mawakit-1105481..pdf",
@@ -116,5 +263,6 @@
       "url": "https://www.bayynat.org.lb/article/مقالات-فقهية-حول-الصوم/28345/رأي-العلم-والعلماء-في-دخول-وقت-المغرب/ar",
       "role": "Primary discussion of sunset/Maghrib; distinguish quoted scholarly positions"
     }
-  ]
+  ],
+  "updatedAtUtc": "2026-09-25T13:16:54.531795+00:00"
 }

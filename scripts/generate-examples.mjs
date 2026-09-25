@@ -37,6 +37,13 @@ write('methods/shia-angles/examples/arc-compatibility-output.json', {
   input: arcInput,
   output: (await loadMethod('shia-angles')).calculate(arcInput),
 });
+const bayynatInput = JSON.parse(fs.readFileSync(new URL('methods/bayynat/examples/nearest-input.json', root), 'utf8'));
+write('methods/bayynat/examples/nearest-output.json', {
+  evidenceType: 'generated-model-example-not-institutional-reference',
+  runtime: {node: process.versions.node, icu: process.versions.icu, tz: process.versions.tz},
+  input: bayynatInput,
+  output: (await loadMethod('bayynat')).calculate(bayynatInput),
+});
 const cases = JSON.parse(fs.readFileSync(new URL('tests/cases.json', root), 'utf8')).cases;
 const snapshots = [];
 for (const item of cases) {

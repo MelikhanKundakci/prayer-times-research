@@ -1,0 +1,1604 @@
+{
+  "schemaVersion": 1,
+  "methodId": "bayynat",
+  "decision": "Rejected as a general replacement: more exact minutes, but 62 fresh cells worsen and maximum difference increases from one to two minutes. Ceiling default unchanged. Explicit research export retained for reproducibility only.",
+  "official": false,
+  "productionReady": false,
+  "notificationEligible": false,
+  "distribution": "Aggregate counts and evidence hashes only; no original calendar rows, forms or response headers.",
+  "retrospective": {
+    "scope": "Retrospective bounded quantization diagnostic on already exposed point calendars; no source-confirmed rounding rule and no new holdout.",
+    "planSha256": "cc5bf118690cfa55c28c958dc48a169c1512d95fc4b1e5c750a67649502d5986",
+    "runtime": {
+      "node": "v26.7.0",
+      "tzdb": "2026d",
+      "icu": "78.3"
+    },
+    "slotsPerCandidate": 546,
+    "unchangedRawEventComparisons": 1638,
+    "sourceRowsConfirmedByTwoPriorParsers": 91,
+    "summaries": [
+      {
+        "id": "utc12-h5over6-ceil",
+        "overall": {
+          "slots": 546,
+          "compared": 546,
+          "exact": 238,
+          "withinOneMinute": 545,
+          "maxAbsoluteMinutes": 2,
+          "absoluteErrorMinutes": 309,
+          "histogram": {
+            "0": 238,
+            "1": 307,
+            "2": 1
+          },
+          "becameExact": 0,
+          "lostExact": 0,
+          "improved": 0,
+          "worsened": 0,
+          "unchanged": 546,
+          "localDateDiffers": 0
+        },
+        "byCity": {
+          "jakarta": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 87,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 93,
+            "histogram": {
+              "0": 87,
+              "1": 93
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 180,
+            "localDateDiffers": 0
+          },
+          "singapore": {
+            "slots": 186,
+            "compared": 186,
+            "exact": 82,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 104,
+            "histogram": {
+              "0": 82,
+              "1": 104
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 186,
+            "localDateDiffers": 0
+          },
+          "tokyo": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 69,
+            "withinOneMinute": 179,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 112,
+            "histogram": {
+              "0": 69,
+              "1": 110,
+              "2": 1
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 180,
+            "localDateDiffers": 0
+          }
+        },
+        "byEvent": {
+          "fajr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 31,
+            "withinOneMinute": 90,
+            "maxAbsoluteMinutes": 2,
+            "absoluteErrorMinutes": 61,
+            "histogram": {
+              "0": 31,
+              "1": 59,
+              "2": 1
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          },
+          "sunrise": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 31,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 60,
+            "histogram": {
+              "0": 31,
+              "1": 60
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          },
+          "dhuhr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 43,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 48,
+            "histogram": {
+              "0": 43,
+              "1": 48
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          },
+          "asrTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 51,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 40,
+            "histogram": {
+              "0": 51,
+              "1": 40
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          },
+          "sunset": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 40,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 51,
+            "histogram": {
+              "0": 40,
+              "1": 51
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          },
+          "ishaTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 42,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 49,
+            "histogram": {
+              "0": 42,
+              "1": 49
+            },
+            "becameExact": 0,
+            "lostExact": 0,
+            "improved": 0,
+            "worsened": 0,
+            "unchanged": 91,
+            "localDateDiffers": 0
+          }
+        }
+      },
+      {
+        "id": "utc12-h5over6-nearest",
+        "overall": {
+          "slots": 546,
+          "compared": 546,
+          "exact": 482,
+          "withinOneMinute": 546,
+          "maxAbsoluteMinutes": 1,
+          "absoluteErrorMinutes": 64,
+          "histogram": {
+            "0": 482,
+            "1": 44,
+            "-1": 20
+          },
+          "becameExact": 264,
+          "lostExact": 20,
+          "improved": 265,
+          "worsened": 20,
+          "unchanged": 261,
+          "localDateDiffers": 0
+        },
+        "byCity": {
+          "jakarta": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 173,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 7,
+            "histogram": {
+              "0": 173,
+              "-1": 7
+            },
+            "becameExact": 93,
+            "lostExact": 7,
+            "improved": 93,
+            "worsened": 7,
+            "unchanged": 80,
+            "localDateDiffers": 0
+          },
+          "singapore": {
+            "slots": 186,
+            "compared": 186,
+            "exact": 183,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 3,
+            "histogram": {
+              "0": 183,
+              "1": 3
+            },
+            "becameExact": 101,
+            "lostExact": 0,
+            "improved": 101,
+            "worsened": 0,
+            "unchanged": 85,
+            "localDateDiffers": 0
+          },
+          "tokyo": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 126,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 54,
+            "histogram": {
+              "0": 126,
+              "1": 41,
+              "-1": 13
+            },
+            "becameExact": 70,
+            "lostExact": 13,
+            "improved": 71,
+            "worsened": 13,
+            "unchanged": 96,
+            "localDateDiffers": 0
+          }
+        },
+        "byEvent": {
+          "fajr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 72,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 19,
+            "histogram": {
+              "0": 72,
+              "1": 16,
+              "-1": 3
+            },
+            "becameExact": 44,
+            "lostExact": 3,
+            "improved": 45,
+            "worsened": 3,
+            "unchanged": 43,
+            "localDateDiffers": 0
+          },
+          "sunrise": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 66,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 25,
+            "histogram": {
+              "0": 66,
+              "1": 24,
+              "-1": 1
+            },
+            "becameExact": 36,
+            "lostExact": 1,
+            "improved": 36,
+            "worsened": 1,
+            "unchanged": 54,
+            "localDateDiffers": 0
+          },
+          "dhuhr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 85,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 6,
+            "histogram": {
+              "0": 85,
+              "1": 4,
+              "-1": 2
+            },
+            "becameExact": 44,
+            "lostExact": 2,
+            "improved": 44,
+            "worsened": 2,
+            "unchanged": 45,
+            "localDateDiffers": 0
+          },
+          "asrTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 84,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 7,
+            "histogram": {
+              "0": 84,
+              "-1": 7
+            },
+            "becameExact": 40,
+            "lostExact": 7,
+            "improved": 40,
+            "worsened": 7,
+            "unchanged": 44,
+            "localDateDiffers": 0
+          },
+          "sunset": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 87,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 4,
+            "histogram": {
+              "0": 87,
+              "-1": 4
+            },
+            "becameExact": 51,
+            "lostExact": 4,
+            "improved": 51,
+            "worsened": 4,
+            "unchanged": 36,
+            "localDateDiffers": 0
+          },
+          "ishaTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 88,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 3,
+            "histogram": {
+              "0": 88,
+              "-1": 3
+            },
+            "becameExact": 49,
+            "lostExact": 3,
+            "improved": 49,
+            "worsened": 3,
+            "unchanged": 39,
+            "localDateDiffers": 0
+          }
+        }
+      },
+      {
+        "id": "utc12-h5over6-floor",
+        "overall": {
+          "slots": 546,
+          "compared": 546,
+          "exact": 307,
+          "withinOneMinute": 546,
+          "maxAbsoluteMinutes": 1,
+          "absoluteErrorMinutes": 239,
+          "histogram": {
+            "0": 307,
+            "1": 1,
+            "-1": 238
+          },
+          "becameExact": 307,
+          "lostExact": 238,
+          "improved": 308,
+          "worsened": 238,
+          "unchanged": 0,
+          "localDateDiffers": 0
+        },
+        "byCity": {
+          "jakarta": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 93,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 87,
+            "histogram": {
+              "0": 93,
+              "-1": 87
+            },
+            "becameExact": 93,
+            "lostExact": 87,
+            "improved": 93,
+            "worsened": 87,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "singapore": {
+            "slots": 186,
+            "compared": 186,
+            "exact": 104,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 82,
+            "histogram": {
+              "0": 104,
+              "-1": 82
+            },
+            "becameExact": 104,
+            "lostExact": 82,
+            "improved": 104,
+            "worsened": 82,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "tokyo": {
+            "slots": 180,
+            "compared": 180,
+            "exact": 110,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 70,
+            "histogram": {
+              "0": 110,
+              "1": 1,
+              "-1": 69
+            },
+            "becameExact": 110,
+            "lostExact": 69,
+            "improved": 111,
+            "worsened": 69,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          }
+        },
+        "byEvent": {
+          "fajr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 59,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 32,
+            "histogram": {
+              "0": 59,
+              "1": 1,
+              "-1": 31
+            },
+            "becameExact": 59,
+            "lostExact": 31,
+            "improved": 60,
+            "worsened": 31,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "sunrise": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 60,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 31,
+            "histogram": {
+              "0": 60,
+              "-1": 31
+            },
+            "becameExact": 60,
+            "lostExact": 31,
+            "improved": 60,
+            "worsened": 31,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "dhuhr": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 48,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 43,
+            "histogram": {
+              "0": 48,
+              "-1": 43
+            },
+            "becameExact": 48,
+            "lostExact": 43,
+            "improved": 48,
+            "worsened": 43,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "asrTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 40,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 51,
+            "histogram": {
+              "0": 40,
+              "-1": 51
+            },
+            "becameExact": 40,
+            "lostExact": 51,
+            "improved": 40,
+            "worsened": 51,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "sunset": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 51,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 40,
+            "histogram": {
+              "0": 51,
+              "-1": 40
+            },
+            "becameExact": 51,
+            "lostExact": 40,
+            "improved": 51,
+            "worsened": 40,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          },
+          "ishaTable": {
+            "slots": 91,
+            "compared": 91,
+            "exact": 49,
+            "withinOneMinute": 91,
+            "maxAbsoluteMinutes": 1,
+            "absoluteErrorMinutes": 42,
+            "histogram": {
+              "0": 49,
+              "-1": 42
+            },
+            "becameExact": 49,
+            "lostExact": 42,
+            "improved": 49,
+            "worsened": 42,
+            "unchanged": 0,
+            "localDateDiffers": 0
+          }
+        }
+      }
+    ],
+    "historicalDevelopmentSeparate": [
+      {
+        "id": "utc12-h5over6-ceil",
+        "actualIana": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 17,
+          "withinOneMinute": 30,
+          "maxAbsoluteMinutes": 61,
+          "histogram": {
+            "0": 17,
+            "1": 12,
+            "-60": 136,
+            "-59": 31,
+            "-61": 13,
+            "-1": 1
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "conditionalFixedSourceOffset": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 153,
+          "withinOneMinute": 210,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 153,
+            "1": 43,
+            "-1": 14
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "warning": "Previously exposed and timezone-conflicted development; these 210 slots never enter the 546-cell total."
+      },
+      {
+        "id": "utc12-h5over6-nearest",
+        "actualIana": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 21,
+          "withinOneMinute": 30,
+          "maxAbsoluteMinutes": 61,
+          "histogram": {
+            "0": 21,
+            "1": 4,
+            "-61": 72,
+            "-60": 108,
+            "-1": 5
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "conditionalFixedSourceOffset": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 129,
+          "withinOneMinute": 210,
+          "maxAbsoluteMinutes": 1,
+          "histogram": {
+            "0": 129,
+            "1": 4,
+            "-1": 77
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "warning": "Previously exposed and timezone-conflicted development; these 210 slots never enter the 546-cell total."
+      },
+      {
+        "id": "utc12-h5over6-floor",
+        "actualIana": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 12,
+          "withinOneMinute": 29,
+          "maxAbsoluteMinutes": 62,
+          "histogram": {
+            "0": 12,
+            "-61": 136,
+            "-60": 31,
+            "-62": 13,
+            "-1": 17,
+            "-2": 1
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "conditionalFixedSourceOffset": {
+          "slots": 210,
+          "compared": 210,
+          "notCompared": 0,
+          "unavailable": {},
+          "exact": 43,
+          "withinOneMinute": 196,
+          "maxAbsoluteMinutes": 2,
+          "histogram": {
+            "0": 43,
+            "-1": 153,
+            "-2": 14
+          },
+          "forecastLocalDateDiffers": 0
+        },
+        "warning": "Previously exposed and timezone-conflicted development; these 210 slots never enter the 546-cell total."
+      }
+    ]
+  },
+  "prospective": {
+    "createdAtUtc": "2026-09-25T13:08:12.293Z",
+    "scope": "Prospective comparison of unchanged public ceiling versus additive public nearest candidate. No new angle/coordinate/epoch/offset fitting. No source calendar obtained before plan/forecast/freeze.",
+    "comparison": "Assign every printed clock to its printedGregorian date in requested actualIANA zone; compare absoluteUTCminutes. No modulo, conditionaloffset, date shift or source clock correction. This is a comparison interpretation, not publisher UTC/date affirmation.",
+    "freezeSha256": "3d33559a43dafb183f92bff11a3de37b84513ec585e8c3202f39b48b7f07a8b6",
+    "forecastSha256": "2faa9d2a366fd498ae88cb6858db89445a5fbe9614a71d1e0eed99b7231702d5",
+    "total": {
+      "expected": 552,
+      "ceil": {
+        "compared": 552,
+        "notCompared": 0,
+        "exact": 299,
+        "withinOneMinute": 552,
+        "maxAbsoluteMinutes": 1,
+        "histogram": {
+          "0": 299,
+          "1": 227,
+          "-1": 26
+        },
+        "unavailable": {},
+        "localDateDiffers": 0
+      },
+      "nearest": {
+        "compared": 552,
+        "notCompared": 0,
+        "exact": 454,
+        "withinOneMinute": 549,
+        "maxAbsoluteMinutes": 2,
+        "histogram": {
+          "0": 454,
+          "1": 13,
+          "-1": 82,
+          "-2": 3
+        },
+        "unavailable": {},
+        "localDateDiffers": 0
+      },
+      "paired": 552,
+      "becameExact": 214,
+      "lostExact": 59,
+      "improved": 214,
+      "worsened": 62
+    },
+    "cases": [
+      {
+        "id": "tokyo-2031-04",
+        "month": "2031-04",
+        "sourceStatus": "parsed",
+        "sourceFieldsPreserved": 270,
+        "summary": {
+          "expected": 180,
+          "ceil": {
+            "compared": 180,
+            "notCompared": 0,
+            "exact": 87,
+            "withinOneMinute": 180,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 87,
+              "1": 67,
+              "-1": 26
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 180,
+            "notCompared": 0,
+            "exact": 113,
+            "withinOneMinute": 177,
+            "maxAbsoluteMinutes": 2,
+            "histogram": {
+              "0": 113,
+              "1": 8,
+              "-1": 56,
+              "-2": 3
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "paired": 180,
+          "becameExact": 59,
+          "lostExact": 33,
+          "improved": 59,
+          "worsened": 36
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 13,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 13,
+                "-1": 17
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 0,
+              "withinOneMinute": 27,
+              "maxAbsoluteMinutes": 2,
+              "histogram": {
+                "-1": 27,
+                "-2": 3
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 0,
+            "lostExact": 13,
+            "improved": 0,
+            "worsened": 16
+          },
+          "sunrise": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 21,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 21,
+                "-1": 9
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 4,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 4,
+                "-1": 26
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 0,
+            "lostExact": 17,
+            "improved": 0,
+            "worsened": 17
+          },
+          "dhuhr": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 18,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 18,
+                "1": 12
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 27,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 27,
+                "-1": 3
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 12,
+            "lostExact": 3,
+            "improved": 12,
+            "worsened": 3
+          },
+          "asrTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 14,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 14,
+                "1": 16
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 30
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 16,
+            "lostExact": 0,
+            "improved": 16,
+            "worsened": 0
+          },
+          "sunset": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 12,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 12,
+                "1": 18
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 26,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 26,
+                "1": 4
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 14,
+            "lostExact": 0,
+            "improved": 14,
+            "worsened": 0
+          },
+          "ishaTable": {
+            "expected": 30,
+            "ceil": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 9,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 9,
+                "1": 21
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 30,
+              "notCompared": 0,
+              "exact": 26,
+              "withinOneMinute": 30,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 26,
+                "1": 4
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 30,
+            "becameExact": 17,
+            "lostExact": 0,
+            "improved": 17,
+            "worsened": 0
+          }
+        }
+      },
+      {
+        "id": "cape-town-2031-07",
+        "month": "2031-07",
+        "sourceStatus": "parsed",
+        "sourceFieldsPreserved": 279,
+        "summary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "notCompared": 0,
+            "exact": 117,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 117,
+              "1": 69
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "notCompared": 0,
+            "exact": 163,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 163,
+              "-1": 23
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "paired": 186,
+          "becameExact": 69,
+          "lostExact": 23,
+          "improved": 69,
+          "worsened": 23
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 19,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 19,
+                "1": 12
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 27,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 27,
+                "-1": 4
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 12,
+            "lostExact": 4,
+            "improved": 12,
+            "worsened": 4
+          },
+          "sunrise": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 20,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 20,
+                "1": 11
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 25,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 25,
+                "-1": 6
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 11,
+            "lostExact": 6,
+            "improved": 11,
+            "worsened": 6
+          },
+          "dhuhr": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 21,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 21,
+                "1": 10
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 31,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 31
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 10,
+            "lostExact": 0,
+            "improved": 10,
+            "worsened": 0
+          },
+          "asrTable": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 16,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 16,
+                "1": 15
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 31,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 31
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 15,
+            "lostExact": 0,
+            "improved": 15,
+            "worsened": 0
+          },
+          "sunset": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 20,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 20,
+                "1": 11
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 25,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 25,
+                "-1": 6
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 11,
+            "lostExact": 6,
+            "improved": 11,
+            "worsened": 6
+          },
+          "ishaTable": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 21,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 21,
+                "1": 10
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 24,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 24,
+                "-1": 7
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 10,
+            "lostExact": 7,
+            "improved": 10,
+            "worsened": 7
+          }
+        }
+      },
+      {
+        "id": "quito-2031-10",
+        "month": "2031-10",
+        "sourceStatus": "parsed",
+        "sourceFieldsPreserved": 279,
+        "summary": {
+          "expected": 186,
+          "ceil": {
+            "compared": 186,
+            "notCompared": 0,
+            "exact": 95,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 95,
+              "1": 91
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "nearest": {
+            "compared": 186,
+            "notCompared": 0,
+            "exact": 178,
+            "withinOneMinute": 186,
+            "maxAbsoluteMinutes": 1,
+            "histogram": {
+              "0": 178,
+              "1": 5,
+              "-1": 3
+            },
+            "unavailable": {},
+            "localDateDiffers": 0
+          },
+          "paired": 186,
+          "becameExact": 86,
+          "lostExact": 3,
+          "improved": 86,
+          "worsened": 3
+        },
+        "byEvent": {
+          "fajr": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 14,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 14,
+                "1": 17
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 31,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 31
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 17,
+            "lostExact": 0,
+            "improved": 17,
+            "worsened": 0
+          },
+          "sunrise": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 17,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 17,
+                "1": 14
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 31,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 0,
+              "histogram": {
+                "0": 31
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 14,
+            "lostExact": 0,
+            "improved": 14,
+            "worsened": 0
+          },
+          "dhuhr": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 16,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 16,
+                "1": 15
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 30,
+                "1": 1
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 14,
+            "lostExact": 0,
+            "improved": 14,
+            "worsened": 0
+          },
+          "asrTable": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 19,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 19,
+                "1": 12
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 28,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 28,
+                "-1": 3
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 12,
+            "lostExact": 3,
+            "improved": 12,
+            "worsened": 3
+          },
+          "sunset": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 11,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 11,
+                "1": 20
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 28,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 28,
+                "1": 3
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 17,
+            "lostExact": 0,
+            "improved": 17,
+            "worsened": 0
+          },
+          "ishaTable": {
+            "expected": 31,
+            "ceil": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 18,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 18,
+                "1": 13
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "nearest": {
+              "compared": 31,
+              "notCompared": 0,
+              "exact": 30,
+              "withinOneMinute": 31,
+              "maxAbsoluteMinutes": 1,
+              "histogram": {
+                "0": 30,
+                "1": 1
+              },
+              "unavailable": {},
+              "localDateDiffers": 0
+            },
+            "paired": 31,
+            "becameExact": 12,
+            "lostExact": 0,
+            "improved": 12,
+            "worsened": 0
+          }
+        }
+      }
+    ],
+    "sourceUtcConfirmed": false
+  },
+  "freeze": {
+    "frozenAtUtc": "2026-09-25T13:05:34.334635+00:00",
+    "runtime": {
+      "node": "26.7.0",
+      "icu": "78.3",
+      "tz": "2026d"
+    },
+    "filesPinned": 64,
+    "forecastPointDays": 1095,
+    "forecastEventSlotsPerModel": 6570,
+    "referenceEventSlotsPerModel": 552
+  },
+  "independentAudit": {
+    "passed": true,
+    "method": "Independent Python arithmetic, ZoneInfo civil-time conversion and row/summary reconstruction; no evaluator or calculation-module imports. Raw parity and rounding also checked over the complete frozen year.",
+    "limitations": "The OS ZoneInfo check independently agrees with frozen ICU 2026d on these three constant-offset zones; this is not a new timezone bundle or a DST validation. Publisher UTC/date semantics remain unconfirmed.",
+    "verifiedFrozenFiles": 64,
+    "originalMarkersComparedAcrossParsers": 828,
+    "fullYearRawGeometryPairs": 6570,
+    "sourceForecastRows": 552,
+    "summaryGroups": 22,
+    "historicalCounterevidencePreserved": true,
+    "recordedChronologyPassed": true,
+    "chronology": [
+      {
+        "id": "tokyo-2031-04",
+        "startedAtUtc": "2026-09-25T13:07:14.497226+00:00",
+        "completedAtUtc": "2026-09-25T13:07:15.484614+00:00",
+        "acceptedAtUtc": "2026-09-25T13:07:15.723423+00:00"
+      },
+      {
+        "id": "cape-town-2031-07",
+        "startedAtUtc": "2026-09-25T13:07:40.257425+00:00",
+        "completedAtUtc": "2026-09-25T13:07:40.569626+00:00",
+        "acceptedAtUtc": "2026-09-25T13:07:40.801982+00:00"
+      },
+      {
+        "id": "quito-2031-10",
+        "startedAtUtc": "2026-09-25T13:07:50.364352+00:00",
+        "completedAtUtc": "2026-09-25T13:07:51.549920+00:00",
+        "acceptedAtUtc": "2026-09-25T13:07:51.776356+00:00"
+      }
+    ],
+    "secondRawSourceReview": "All92dates and828 original markers reproduced through both independent readers;64freeze files and sequential acquisition records verified."
+  },
+  "evidence": [
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/plan.json",
+      "sha256": "cc5bf118690cfa55c28c958dc48a169c1512d95fc4b1e5c750a67649502d5986",
+      "bytes": 4420,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/report.json",
+      "sha256": "df373c019ee41d3d339c41df1e6a2cbfae8d420c1e729cfd419325f4b08dcaf2",
+      "bytes": 2686146,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/recheck.json",
+      "sha256": "346ae2442bc6da2c39bf66994afbca4a01763fde65d0a59578ee01c3c6d65e8c",
+      "bytes": 484,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/review/completion.json",
+      "sha256": "995eec8127d02c07a4b6e3bce5ab537e37589798da3750d3a518071e8db91aac",
+      "bytes": 524,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/plan.json",
+      "sha256": "43255bb20c596040cc825bda6d84c29427e1f0216fec3e4d604602b51c8d6ac7",
+      "bytes": 6578,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/freeze.json",
+      "sha256": "3d33559a43dafb183f92bff11a3de37b84513ec585e8c3202f39b48b7f07a8b6",
+      "bytes": 8707,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/forecast.json",
+      "sha256": "2faa9d2a366fd498ae88cb6858db89445a5fbe9614a71d1e0eed99b7231702d5",
+      "bytes": 18874067,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/result.json",
+      "sha256": "6b4f9a9ac533a95dd0fccf958fd27d138192973060a4a4fdd281bf9b1b446fd7",
+      "bytes": 472220,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/audit/recount.py",
+      "sha256": "9a02b7467b1b995568ebd25dac235711e91d073cdf47e83f6ca97f192e456169",
+      "bytes": 9001,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/audit/recount.json",
+      "sha256": "7e4fed4395fc4f3cadfc8e6184eb0fb46da419cc40c9374c5aaf7b2418314a19",
+      "bytes": 8228,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    },
+    {
+      "identifier": "research/bayynat-followup-2026-09-25/prospective/review/fresh-source-review.json",
+      "sha256": "247ab49418249be4e5a4fea7aaa10f1a0b0512e003afae49b8cad16d4c6183c0",
+      "bytes": 5688,
+      "distribution": "provenance identifier only; private artifact is not bundled"
+    }
+  ]
+}

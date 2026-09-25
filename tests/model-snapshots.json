@@ -131,6 +131,11 @@
       "id": "shia-angles/arc-publisher-compatibility",
       "projectedFields": 41,
       "sha256": "bf7e53304f00576f413639e50b0cea9c6edb8ffb602906615a11be4ac1e558cb"
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-nearest",
+      "projectedFields": 55,
+      "sha256": "2c8313048c5129f8e8661d25c753938d6a13deb7a81d0af308a50178658842cc"
     }
   ]
 }

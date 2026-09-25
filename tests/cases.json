@@ -273,6 +273,17 @@
         "timeZone": "Europe/London",
         "maghribAngle": 3.75
       }
+    },
+    {
+      "id": "bayynat/point-utc12-h5over6-nearest",
+      "family": "bayynat",
+      "input": {
+        "variant": "point-utc12-h5over6-nearest",
+        "date": "2026-06-21",
+        "latitude": 35.68,
+        "longitude": 139.68,
+        "timeZone": "Asia/Tokyo"
+      }
     }
   ]
 }
