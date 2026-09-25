@@ -1,0 +1,154 @@
+{
+  "study": "Retrospective fixed-latitude six-event longitude intervals for frozen La Paz and Suva 2027 Diyanet annuals",
+  "model": "Existing southern USNO UTC00, fixed daily spherical geometry, published Temkin adjustment, nearest UTC minute",
+  "scope": "Latitude held at independently chosen UNGEGN proxy; longitude varies only within proxy +/-0.25 degrees; all source HH:mm resolved on printed Gregorian date in named IANA timezone",
+  "inference": "Per-event incompatibility at the proxy latitude does not rule out a different latitude. Dhuhr is latitude-independent and has a separate stronger feasibility result.",
+  "cities": [
+    {
+      "city": "La Paz",
+      "year": 2027,
+      "proxy": {
+        "latitude": -16.481233644,
+        "longitude": -68.1257171577,
+        "timeZone": "America/La_Paz"
+      },
+      "sourceXlsxSha256": "92571873f41495bf6adf22e0f7f931f9998ee61657faf5a1438682968323fa85",
+      "frozenForecastSha256": "9fdc1de7618da6a711fdda3bbc0cb65e08c018307156f4095d6556dc6684e9eb",
+      "events": {
+        "fajr": {
+          "observations": 365,
+          "lower": -68.1496569668634,
+          "upper": -68.15957130910787,
+          "feasible": false,
+          "gapSeconds": 2.3794421386730846,
+          "activeLower": "2027-12-09",
+          "activeUpper": "2027-07-11",
+          "maximumRetrospectiveExact": 360
+        },
+        "sunrise": {
+          "observations": 365,
+          "lower": -68.15222484711244,
+          "upper": -68.1609572740737,
+          "feasible": false,
+          "gapSeconds": 2.095782470702261,
+          "activeLower": "2027-12-22",
+          "activeUpper": "2027-06-19",
+          "maximumRetrospectiveExact": 360
+        },
+        "dhuhr": {
+          "observations": 365,
+          "lower": -68.15249584524068,
+          "upper": -68.15413971527649,
+          "feasible": false,
+          "gapSeconds": 0.3945288085935772,
+          "activeLower": "2027-03-26",
+          "activeUpper": "2027-09-11",
+          "maximumRetrospectiveExact": 364
+        },
+        "asr": {
+          "observations": 365,
+          "lower": -68.15096139394674,
+          "upper": -68.15382160512839,
+          "feasible": false,
+          "gapSeconds": 0.6864506835938755,
+          "activeLower": "2027-04-30",
+          "activeUpper": "2027-12-03",
+          "maximumRetrospectiveExact": 363
+        },
+        "maghrib": {
+          "observations": 365,
+          "lower": -68.14973086823059,
+          "upper": -68.15856992564433,
+          "feasible": false,
+          "gapSeconds": 2.1213737792970733,
+          "activeLower": "2027-05-07",
+          "activeUpper": "2027-10-17",
+          "maximumRetrospectiveExact": 361
+        },
+        "isha": {
+          "observations": 365,
+          "lower": -68.15162450328106,
+          "upper": -68.16264352895651,
+          "feasible": false,
+          "gapSeconds": 2.6445661621085037,
+          "activeLower": "2027-07-08",
+          "activeUpper": "2027-12-20",
+          "maximumRetrospectiveExact": 357
+        }
+      }
+    },
+    {
+      "city": "Suva",
+      "year": 2027,
+      "proxy": {
+        "latitude": -18.1179065976,
+        "longitude": 178.491287276,
+        "timeZone": "Pacific/Fiji"
+      },
+      "sourceXlsxSha256": "158e864d59a5e525d1a5d7c516e79167077b8fdd3f013ceb1f493fc708ed6b9d",
+      "frozenForecastSha256": "f47a7cf0dcfaa7a8d19a8dc1b47acec809998c643c40146a2a1b6b207be9e705",
+      "events": {
+        "fajr": {
+          "observations": 365,
+          "lower": 178.44442187784733,
+          "upper": 178.42549994282945,
+          "feasible": false,
+          "gapSeconds": 4.541264404292633,
+          "activeLower": "2027-01-04",
+          "activeUpper": "2027-07-23",
+          "maximumRetrospectiveExact": 356
+        },
+        "sunrise": {
+          "observations": 365,
+          "lower": 178.43771451192123,
+          "upper": 178.41868199747626,
+          "feasible": false,
+          "gapSeconds": 4.567803466793521,
+          "activeLower": "2027-12-25",
+          "activeUpper": "2027-06-16",
+          "maximumRetrospectiveExact": 355
+        },
+        "dhuhr": {
+          "observations": 365,
+          "lower": 178.43094866109115,
+          "upper": 178.4292042142731,
+          "feasible": false,
+          "gapSeconds": 0.418667236328929,
+          "activeLower": "2027-04-15",
+          "activeUpper": "2027-09-30",
+          "maximumRetrospectiveExact": 364
+        },
+        "asr": {
+          "observations": 365,
+          "lower": 178.43771969685776,
+          "upper": 178.41945912862045,
+          "feasible": false,
+          "gapSeconds": 4.382536376954249,
+          "activeLower": "2027-01-28",
+          "activeUpper": "2027-02-08",
+          "maximumRetrospectiveExact": 359
+        },
+        "maghrib": {
+          "observations": 365,
+          "lower": 178.44084013854885,
+          "upper": 178.42218017761132,
+          "feasible": false,
+          "gapSeconds": 4.478390625006341,
+          "activeLower": "2027-05-31",
+          "activeUpper": "2027-12-12",
+          "maximumRetrospectiveExact": 353
+        },
+        "isha": {
+          "observations": 365,
+          "lower": 178.4374105008942,
+          "upper": 178.4189746152741,
+          "feasible": false,
+          "gapSeconds": 4.424612548825735,
+          "activeLower": "2027-05-13",
+          "activeUpper": "2027-12-22",
+          "maximumRetrospectiveExact": 356
+        }
+      }
+    }
+  ]
+}

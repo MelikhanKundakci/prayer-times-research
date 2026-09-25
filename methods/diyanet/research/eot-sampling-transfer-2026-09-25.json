@@ -1,0 +1,243 @@
+{
+  "study": "Retrospective Diyanet Dhuhr EOT-epoch alternatives on six frozen 2027 annuals",
+  "basis": "Same frozen UNGEGN city proxies, same USNO solar-coordinate approximation, +5-minute Dhuhr adjustment, nearest-minute rounding; only equation-of-time sampling epoch changes",
+  "sourceInterpretation": "Original annual XLSX HH:mm assigned to printed Gregorian local date with frozen IANA timezone; no zero noon cells",
+  "variants": {
+    "utc00": "Current USNO equation of time at carrier UTC00",
+    "iteratedTransit": "Equation of time reevaluated at the solved apparent transit, iterated 12 times",
+    "utc12": "Equation of time at carrier UTC12",
+    "meanNoonEot": "Equation of time at mean solar noon at the frozen longitude"
+  },
+  "inputsSha256": {
+    "research/diyanet-la-paz-2027/source/la-paz-2027.xlsx": "92571873f41495bf6adf22e0f7f931f9998ee61657faf5a1438682968323fa85",
+    "research/diyanet-la-paz-2027/forecast.json": "9fdc1de7618da6a711fdda3bbc0cb65e08c018307156f4095d6556dc6684e9eb",
+    "research/diyanet-suva-2027/source/suva-2027.xlsx": "158e864d59a5e525d1a5d7c516e79167077b8fdd3f013ceb1f493fc708ed6b9d",
+    "research/diyanet-suva-2027/forecast.json": "f47a7cf0dcfaa7a8d19a8dc1b47acec809998c643c40146a2a1b6b207be9e705",
+    "research/diyanet-kathmandu-2027/source/kathmandu-2027.xlsx": "fd03ed195569cb4fef484b1407b9227d7342157dc51414dcc5202ef83fd13822",
+    "research/diyanet-kathmandu-2027/forecast.json": "91ee60dc184c3953c0b86ae8d4043c5b8f3fc042d96b43eb751389abfcb43f0e",
+    "research/diyanet-worldwide-transfer-2026-09-25/forecast-2027.json": "339b38dd3ab8770092d6e0fbe7774788e36035955db4ea7af385ef66accb2cb0",
+    "research/diyanet-worldwide-transfer-2026-09-25/source/auckland-2027.xlsx": "5f8ee42948b203623aa8e163a8a591a38e248bc7eda42e5f232dfdbde167c8bf",
+    "research/diyanet-worldwide-transfer-2026-09-25/source/cape-town-2027.xlsx": "24bbbe04b277d3c5ebcd0ab18417e4a53b36f6757afc9b3ab34e0b8eb48e4a5b",
+    "research/diyanet-worldwide-transfer-2026-09-25/source/jakarta-2027.xlsx": "4c6ecf3b1fcca2cf70a7177bdc08fde0c0a3f7b6f9ba476a71a17cf16df4d1b5"
+  },
+  "cities": [
+    {
+      "city": "La Paz",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 321,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 60.395
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 302,
+          "pairedGains": 17,
+          "pairedLosses": 36,
+          "residualSpanSeconds": 89.454
+        },
+        "utc12": {
+          "exactPublishedMinute": 314,
+          "pairedGains": 13,
+          "pairedLosses": 20,
+          "residualSpanSeconds": 80.265
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 302,
+          "pairedGains": 17,
+          "pairedLosses": 36,
+          "residualSpanSeconds": 89.618
+        }
+      }
+    },
+    {
+      "city": "Suva",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 280,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 60.419
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 280,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 60.303
+        },
+        "utc12": {
+          "exactPublishedMinute": 277,
+          "pairedGains": 20,
+          "pairedLosses": 23,
+          "residualSpanSeconds": 84.28
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 279,
+          "pairedGains": 0,
+          "pairedLosses": 1,
+          "residualSpanSeconds": 60.44
+        }
+      }
+    },
+    {
+      "city": "Kathmandu",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 335,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 59.238
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 331,
+          "pairedGains": 12,
+          "pairedLosses": 16,
+          "residualSpanSeconds": 71.464
+        },
+        "utc12": {
+          "exactPublishedMinute": 315,
+          "pairedGains": 15,
+          "pairedLosses": 35,
+          "residualSpanSeconds": 83.653
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 330,
+          "pairedGains": 12,
+          "pairedLosses": 17,
+          "residualSpanSeconds": 71.628
+        }
+      }
+    },
+    {
+      "city": "Jakarta",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 279,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 59.996
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 277,
+          "pairedGains": 6,
+          "pairedLosses": 8,
+          "residualSpanSeconds": 66.554
+        },
+        "utc12": {
+          "exactPublishedMinute": 283,
+          "pairedGains": 21,
+          "pairedLosses": 17,
+          "residualSpanSeconds": 80.478
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 277,
+          "pairedGains": 6,
+          "pairedLosses": 8,
+          "residualSpanSeconds": 66.663
+        }
+      }
+    },
+    {
+      "city": "Cape Town",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 335,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 60.733
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 315,
+          "pairedGains": 13,
+          "pairedLosses": 33,
+          "residualSpanSeconds": 81.19
+        },
+        "utc12": {
+          "exactPublishedMinute": 313,
+          "pairedGains": 13,
+          "pairedLosses": 35,
+          "residualSpanSeconds": 83.888
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 315,
+          "pairedGains": 13,
+          "pairedLosses": 33,
+          "residualSpanSeconds": 81.306
+        }
+      }
+    },
+    {
+      "city": "Auckland",
+      "year": 2027,
+      "observations": 365,
+      "variants": {
+        "utc00": {
+          "exactPublishedMinute": 346,
+          "pairedGains": 0,
+          "pairedLosses": 0,
+          "residualSpanSeconds": 59.2
+        },
+        "iteratedTransit": {
+          "exactPublishedMinute": 344,
+          "pairedGains": 0,
+          "pairedLosses": 2,
+          "residualSpanSeconds": 59.612
+        },
+        "utc12": {
+          "exactPublishedMinute": 318,
+          "pairedGains": 4,
+          "pairedLosses": 32,
+          "residualSpanSeconds": 82.695
+        },
+        "meanNoonEot": {
+          "exactPublishedMinute": 344,
+          "pairedGains": 0,
+          "pairedLosses": 2,
+          "residualSpanSeconds": 59.562
+        }
+      }
+    }
+  ],
+  "total": {
+    "observations": 2190,
+    "variants": {
+      "utc00": {
+        "exactPublishedMinute": 1896,
+        "pairedGains": 0,
+        "pairedLosses": 0
+      },
+      "iteratedTransit": {
+        "exactPublishedMinute": 1849,
+        "pairedGains": 48,
+        "pairedLosses": 95
+      },
+      "utc12": {
+        "exactPublishedMinute": 1820,
+        "pairedGains": 86,
+        "pairedLosses": 162
+      },
+      "meanNoonEot": {
+        "exactPublishedMinute": 1847,
+        "pairedGains": 48,
+        "pairedLosses": 97
+      }
+    }
+  },
+  "limitations": [
+    "Existing exposed annuals: retrospective diagnostic, not unseen validation",
+    "Fixed independent city proxies; no institutional production coordinates identified",
+    "Only Dhuhr tested; no six-field candidate selected",
+    "Residual span is source-minute-start minus unrounded adjusted transit range at fixed proxy; it is not observed timing error",
+    "No runtime default, notification eligibility, or city-point preset changed"
+  ]
+}

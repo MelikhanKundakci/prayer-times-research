@@ -12,6 +12,10 @@ A [prospectively frozen Kathmandu 2027 full-year check](KATHMANDU-2027.md) tests
 
 A subsequent [noon feasibility check](LA-PAZ-SUVA-NOON-FEASIBILITY.md) finds that neither full-year Dhuhr column can be made exact by choosing one fixed longitude in the declared city-proxy box under the unchanged southern UTC00 and nearest-minute recipe. This is a constraint on that model, not a discovered Diyanet coordinate or a replacement formula.
 
+The [six-event interval diagnostic](LA-PAZ-SUVA-EVENT-INTERVALS.md) extends the same conditional test at each frozen proxy latitude; all twelve individual annual event columns have empty fixed-longitude intersections. Non-noon conclusions are limited to those latitudes.
+
+A [six-city Dhuhr equation-of-time epoch test](EOT-SAMPLING-TRANSFER.md) rejects three unfitted later-sampling alternatives on known 2027 annuals: the current UTC00 recipe has 1,896/2,190 exact noon minutes versus 1,849 at solved transit, 1,820 at UTC12 and 1,847 at mean solar noon. It changes no default.
+
 [Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies remaining source gaps.
 
 New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart 2027](HOBART-2027.md), [Apia 2027 across the Pacific civil-time boundary](APIA-2027.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All five city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.
