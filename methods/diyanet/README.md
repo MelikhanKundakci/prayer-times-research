@@ -6,6 +6,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
 
+A [prospectively frozen Kathmandu 2027 full-year check](KATHMANDU-2027.md) tests the unchanged low-latitude recipe in a UTC+05:45 zone at an independent city proxy: 2,017/2,190 exact printed minutes, with all others one minute earlier than Diyanet. This does not establish its hidden production point or release eligibility.
+
 [Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies remaining source gaps.
 
 New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart 2027](HOBART-2027.md), [Apia 2027 across the Pacific civil-time boundary](APIA-2027.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All five city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.

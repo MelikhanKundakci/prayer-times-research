@@ -1,0 +1,130 @@
+{
+  "study": "Prospective Diyanet Kathmandu 2027 fractional-zone check",
+  "year": 2027,
+  "frozenAtUtc": "2026-09-25T18:01:40.869Z",
+  "forecastSha256": "91ee60dc184c3953c0b86ae8d4043c5b8f3fc042d96b43eb751389abfcb43f0e",
+  "planSha256": "847a984bb094f371f8d66056db6ece1c1861aa8097889934808bda8c5dc6f600",
+  "modelSha256": "1f6c00873f3082efa0ce9fa0807a0f2342c1891c437c6794cff8418e2450ebf2",
+  "officialPage": "https://namazvakitleri.diyanet.gov.tr/tr-TR/15563/kathmandu-icin-namaz-vakti",
+  "officialCityId": "15563",
+  "annualRows": 365,
+  "sourceXlsxSha256": "fd03ed195569cb4fef484b1407b9227d7342157dc51414dcc5202ef83fd13822",
+  "namedCityProxy": {
+    "latitude": 27.70877,
+    "longitude": 85.32716,
+    "timeZone": "Asia/Kathmandu",
+    "source": "https://ungegn.un.org/dashboard/cities/details?id=101"
+  },
+  "comparison": "Absolute UTC via printed Gregorian row date and pinned IANA zone; original source 00:00 unresolved. No modulo-24 matching.",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "score": {
+    "slots": 2190,
+    "compared": 2190,
+    "notCompared": 0,
+    "exact": 2017,
+    "withinOneMinute": 2190,
+    "maxAbsoluteMinutes": 1,
+    "predictedDateDiffers": 0,
+    "histogram": {
+      "0": 2017,
+      "-1": 173
+    },
+    "unavailable": {}
+  },
+  "byField": {
+    "fajr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 331,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 331,
+        "-1": 34
+      },
+      "unavailable": {}
+    },
+    "sunrise": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 339,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 339,
+        "-1": 26
+      },
+      "unavailable": {}
+    },
+    "dhuhr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 335,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 335,
+        "-1": 30
+      },
+      "unavailable": {}
+    },
+    "asr": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 341,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 341,
+        "-1": 24
+      },
+      "unavailable": {}
+    },
+    "maghrib": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 330,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 330,
+        "-1": 35
+      },
+      "unavailable": {}
+    },
+    "isha": {
+      "slots": 365,
+      "compared": 365,
+      "notCompared": 0,
+      "exact": 341,
+      "withinOneMinute": 365,
+      "maxAbsoluteMinutes": 1,
+      "predictedDateDiffers": 0,
+      "histogram": {
+        "0": 341,
+        "-1": 24
+      },
+      "unavailable": {}
+    }
+  },
+  "sourceZeroClocks": [],
+  "limitations": [
+    "UNGEGN city coordinate is not a confirmed Diyanet production point",
+    "Printed HH:mm and row date do not prove provider event-date semantics",
+    "No source seconds, height/horizon, or rounding internals are published"
+  ]
+}
