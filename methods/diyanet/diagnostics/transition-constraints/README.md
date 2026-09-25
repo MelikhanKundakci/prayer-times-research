@@ -31,9 +31,32 @@ print(possible.as_dict())  # slope in [7/4, 9/4)
 Requires Python 3.9 or later, with no third-party dependencies. Run the source-free tests from this directory:
 
 ```sh
-python3 -m unittest discover -s . -p test_affine_constraints.py -v
+python3 -m unittest discover -s . -p 'test_*.py' -v
 ```
 
 Nine tests cover endpoint reversal, ties, positive contradictions, projections, exact float conversion, fractional anchors, global-shift covariance and compound-conflict precedence. An exact synthetic grid includes **1,485** comparisons between projected-value membership and independently expressed fixed-point slope feasibility.
 
 This is the additive V2 diagnostic. Its compound-conflict classification correction leaves every interval and classification in the associated frozen endpoint and quotient studies unchanged. Those reused study results are identification evidence, not fresh accuracy validation or production timing recommendations.
+
+## Segment discovery and positive interval ratios
+
+[identification.py](identification.py) adds two source-free helpers. The suite now has **19 tests**: the original nine plus ten identification tests.
+
+- `affine_runs(values, minimum_length=7)` returns **all inclusion-maximal** contiguous compatible intervals, preserving overlapping alternatives. Inputs are ordered `(x, minute, label)` triples with strictly increasing finite `x`. The minimum must be an integer at least two. Split missing/unresolved observations into separate calls before invoking it; no calendar dates, institutional transition days or date interpretations are inferred. A compatible line need not be the generating rule.
+- `positive_ratio(numerator, denominator)` returns the exact interval image of all independently possible `A / D`, retaining open/closed bounds and empty-input conflicts. Nonempty input intervals must be bounded with strictly positive lower bounds. Zero-touching, sign-changing and unbounded domains reject explicitly. This restricted contract covers the reviewed factor intervals; it is not unrestricted interval division.
+
+```python
+from fractions import Fraction
+from affine_constraints import Interval
+from identification import affine_runs, positive_ratio
+
+runs = affine_runs([(day, 20-day, str(day)) for day in range(12)])
+assert [(r['startIndex'], r['endIndex']) for r in runs] == [(0, 11)]
+
+a = Interval(lower=Fraction(9), upper=Fraction(10))
+d = Interval(lower=Fraction(10), upper=Fraction(11))
+possible = positive_ratio(a, d)  # (9/11, 1), both ends open
+assert possible.contains(Fraction(19, 20))
+```
+
+The new tests include an exhaustive projection-based oracle over 243 synthetic sequences, a separate ratio/intersection comparison, strict ties, closed singletons, domain errors and empty-set propagation. See the [study](../../AUTUMN-IDENTIFICATION.md) for reference-derived research uses and their limits. None of these helpers is called by the prayer-time runtime.

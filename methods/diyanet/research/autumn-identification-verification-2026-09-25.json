@@ -1,0 +1,97 @@
+{
+  "scope": "Independent reviews and hashes; reused reference interpretations are not independent accuracy samples.",
+  "factor": {
+    "factorReportSha256": "e96f0619259ca7a54a950479c2c7f5a7534b8b741cf9da6353b7893bb5ab8132",
+    "cases": 28,
+    "membershipComparisons": 4150,
+    "emptyEndpointCases": 1,
+    "method": "Exact intersection of numerator interval with k times denominator interval; no calls to ratio_interval or affine module."
+  },
+  "discovery": {
+    "reportSha256": "5ab33707325c4e4818612b66d53b80fbdac717b41c19d81763c4418fc6c5257e",
+    "method": "Independent public maximal-run implementation, rebuilding each input from original archived row and checking complete feasible-interval closure.",
+    "modes": [
+      {
+        "mode": "printed-date-actual-IANA",
+        "eventScans": 56,
+        "resolvedObservations": 9911,
+        "breaks": 1,
+        "maximalRuns": 1778,
+        "allFeasibleRuns": 73691
+      },
+      {
+        "mode": "conditional-isha-after-maghrib-actual-IANA",
+        "eventScans": 56,
+        "resolvedObservations": 9911,
+        "breaks": 1,
+        "maximalRuns": 1779,
+        "allFeasibleRuns": 73701
+      }
+    ]
+  },
+  "publicHelpers": {
+    "reviewedUtc": "2026-09-25T21:06:05.077627+00:00",
+    "verdict": "no algorithmic defect found in reviewed helper paths",
+    "fullPublicTests": {
+      "passed": 19,
+      "failed": 0
+    },
+    "independentCorrectedReportOracle": {
+      "ratioRowsCompared": 84,
+      "k18over16IntersectionChecks": 84,
+      "emptyRows": [
+        {
+          "city": "helsinki-2026",
+          "trim": "0",
+          "status": "tie-only-conflict"
+        }
+      ]
+    },
+    "independentAffineRunsOracle": {
+      "sequenceMinimumCases": 2187,
+      "alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "sequenceLength": 6,
+      "minimumLengths": [
+        2,
+        3,
+        4
+      ]
+    },
+    "publicFilesSha256": {
+      "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/identification.py": "2303858d5f46fb4db3307f92ac07b4371a4b84675466ecd930e638c3c2d10c50",
+      "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/test_identification.py": "b4e68e9c5a4cb72234d944295f54697299a71c5a493f8fa68698efdd1b829a57",
+      "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/README.md": "d79b32041564b8120d5d128bd849c845d8a64282b6cb1ab9fe16fdfcff293d75",
+      "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/affine_constraints.py": "7a5d538cf1b1def6b5bb4482cc9e7a50ceeeb72848f6df55c2531d8d687e9a50",
+      "research/diyanet-fajr-factor-2026-09-25/public-review/review.py": "ef472d9dd498ebe5acef1c74c2d8837300704970360034512b69b19561b6646e",
+      "research/diyanet-fajr-factor-2026-09-25/public-review/REVIEW.md": "91ac895740cab7cee495a65c40be7c2201149d3049b1b1597a53942157d9c704"
+    },
+    "documentationFinding": "Public README and AUTUMN-ENDPOINTS.md document only the original nine affine tests, not the new identification module/API or its ten tests."
+  },
+  "pipeline": {
+    "anchorStagePairsVerified": 224,
+    "preservedModelRowValues": 40880,
+    "exactMembershipChecks": 2688,
+    "dependencySupplement": {
+      "createdUtc": "2026-09-25T21:04:48.125099+00:00",
+      "scope": "Post-result reproducibility supplement: imported dependencies omitted from initial plan file list; does not retroactively change frozen plan.",
+      "files": [
+        {
+          "path": "public/prayer-times-research/methods/diyanet/implementation/missing-window/seasonal.mjs",
+          "sha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28"
+        },
+        {
+          "path": "public/prayer-times-research/core/astronomy/solar-usno-v2.mjs",
+          "sha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc"
+        },
+        {
+          "path": "public/prayer-times-research/core/astronomy/physical-asr-solver.mjs",
+          "sha256": "8ed4b1d5df42c70f2356e63363b68b87a0ee1b72e4c2ce825e561b250bec9064"
+        }
+      ]
+    }
+  }
+}

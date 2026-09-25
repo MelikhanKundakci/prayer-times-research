@@ -1,0 +1,14 @@
+[
+  {"name":"Berlin standard and DST 2027","type":"geographic","year":2027,"latitude":52.52,"longitude":13.405,"timeZone":"Europe/Berlin"},
+  {"name":"Berlin leap and DST 2028","type":"geographic","year":2028,"latitude":52.52,"longitude":13.405,"timeZone":"Europe/Berlin"},
+  {"name":"Helsinki 60-degree DST 2028","type":"geographic","year":2028,"latitude":60,"longitude":24.94,"timeZone":"Europe/Helsinki"},
+  {"name":"Anadyr antimeridian alias west 2027","type":"meridian-alias","year":2027,"latitude":64.7,"longitude":-180,"timeZone":"Asia/Anadyr"},
+  {"name":"Anadyr antimeridian alias east 2027","type":"meridian-alias","year":2027,"latitude":64.7,"longitude":180,"timeZone":"Asia/Anadyr"},
+  {"name":"Kiritimati UTC+14 2028","type":"synthetic-zone-stress","year":2028,"latitude":50,"longitude":179.9,"timeZone":"Pacific/Kiritimati"},
+  {"name":"UTC-12 stress pair 2027","type":"synthetic-zone-stress","year":2027,"latitude":50,"longitude":-179.9,"timeZone":"Etc/GMT+12"},
+  {"name":"Northern input floor 2027","type":"synthetic-limit-stress","year":2027,"latitude":44.5,"longitude":0,"timeZone":"UTC"},
+  {"name":"Northern input ceiling leap 2028","type":"synthetic-limit-stress","year":2028,"latitude":75,"longitude":0,"timeZone":"UTC"},
+  {"name":"Mismatched UTC and east antimeridian control","type":"mismatched-zone-control","year":2027,"latitude":60,"longitude":180,"timeZone":"UTC"},
+  {"name":"Mismatched UTC and west antimeridian control","type":"mismatched-zone-control","year":2027,"latitude":60,"longitude":-180,"timeZone":"UTC"},
+  {"name":"Unsupported southern extension control","type":"unsupported-policy-region","expect":"unsupported","year":2028,"latitude":-44.5,"longitude":0,"timeZone":"Atlantic/South_Georgia"}
+]
