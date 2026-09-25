@@ -77,11 +77,13 @@
     }
   ],
   "limitations": [
-    "Only the angles and Asr factor have clear institutional rule evidence; horizon, ephemeris and rounding are assumptions.",
+    "Default profile retains only the institutional angles and Asr factor. Optional zawal-plus-five additionally implements the published minute-scale wait from a rounded model Zawal proxy; horizon, ephemeris, rounding and production point remain unconfirmed.",
     "The month form lacks a year.2026 is a retrieval-year comparison assumption, not independently verified calendar-year metadata. A perpetual calendar remains possible.",
     "No high-latitude replacement, current official point or source-data redistribution license is established."
   ],
-  "publicationNotes": [],
+  "publicationNotes": [
+    "2026-09-25 rule audit: optional zawal-plus-five applies the published five-minute wait to rounded model transit used as an unconfirmed calendar-Zawal proxy. Default and six historical comparison markers unchanged; no independent Dhuhr score. See RULE-EVIDENCE.md."
+  ],
   "primaryAndSoftwareSources": [
     {
       "url": "https://www.banuri.edu.pk/readquestion/144707100380/25-12-2025",
@@ -98,6 +100,10 @@
     {
       "url": "https://www.banuri.edu.pk/assets/uploads/2020/04/1587988961_book_pdf.pdf",
       "role": "Primary published calculation/calendar material"
+    },
+    {
+      "url": "https://www.banuri.edu.pk/readquestion/143406200082/20-04-2013",
+      "role": "Institutional five-minute wait after calendar Zawal; not a specification of the astronomical Zawal kernel"
     }
   ]
 }

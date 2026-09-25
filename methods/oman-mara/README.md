@@ -4,6 +4,8 @@ A bounded empirical reconstruction of calendars published by Oman’s Ministry o
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule evidence audit](RULE-EVIDENCE.md) separates inspected institutional guidance from reconstruction assumptions and identifies the next mathematical gap.
+
 ## Run the selected example
 
 Run from the repository root:

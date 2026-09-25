@@ -8,6 +8,16 @@
   "recipe": "SHA256(JSON.stringify(renderedProjection(result))); see scripts/output.mjs",
   "cases": [
     {
+      "id": "banuri-town/zawal-plus-five",
+      "projectedFields": 30,
+      "sha256": "fd36c81a21ba41f8fca30f1d8d4e06f2639c8c8cd43b166121e28952b690e967"
+    },
+    {
+      "id": "moonsighting-committee/published-dhuhr-five-minutes",
+      "projectedFields": 8395,
+      "sha256": "2cc52bdfa630357a463b8fbb2e71f8c836edfcfbe8ed51fa368f25fa2f52e8b7"
+    },
+    {
       "id": "moonsighting-committee/usno-v4.2",
       "projectedFields": 8395,
       "sha256": "6b4e9ddd15b284bd012eb0ae71ebcde2ff6721f517b9a061197810b3cf6f8228"

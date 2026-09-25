@@ -4,6 +4,8 @@ Four named parameter publications with separate provenance. Tehran, Leva, ARC, J
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule-evidence audit](RULE-EVIDENCE.md) records institutional support for ARC's 18° Fajr, distinguishes legal windows from angle markers, and explains why an approximate precaution is not a universal fixed-minute conversion.
+
 The [cross-method priority assessment](../../docs/ACCURACY-PRIORITIES.md#arc-separate-physical-calculation-from-publisher-compatibility) diagnoses the larger ARC residuals and reports a separate retrospective publisher-compatibility replay. The candidate is now available as an explicitly separate [ARC compatibility experiment](ARC-COMPATIBILITY.md), with three new annual comparisons; it changes none of the physical profiles below.
 
 ## Run the selected example

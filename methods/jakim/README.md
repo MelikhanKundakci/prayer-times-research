@@ -122,6 +122,8 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 ## Sources
 
+The [rule evidence audit](RULE-EVIDENCE.md) distinguishes the confirmed 18° Fajr criterion and rounding directions from the unconfirmed seconds, zonal points and ephemeris choices.
+
 - [Primary JAKIM calendar service](https://www.e-solat.gov.my/)
 - [Primary 2025 coordinate tables and maps](https://www.jupem.gov.my/storage/upload/almanak/almanak2025-1732247258.pdf)
 - [Primary multi-point research article, dated 2015](https://www.islam.gov.my/images/ePenerbitan/jurnal_falak_bil1_2015.pdf)

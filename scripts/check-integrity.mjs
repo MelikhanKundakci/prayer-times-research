@@ -15,7 +15,7 @@ for (const file of sourceMap.files) {
 }
 verifiedBundle();
 for (const family of methodIds) {
-  for (const file of ['README.md', 'index.mjs', 'validation.json', 'examples/input.json', 'examples/output.json']) {
+  for (const file of ['README.md', 'RULE-EVIDENCE.md', 'index.mjs', 'validation.json', 'examples/input.json', 'examples/output.json']) {
     assert.ok(fs.existsSync(path.join(root, 'methods', family, file)), `Missing method artifact: ${family}/${file}`);
   }
   const validation = JSON.parse(read(`methods/${family}/validation.json`));

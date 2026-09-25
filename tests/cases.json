@@ -2,6 +2,28 @@
   "scope": "Model regression cases. No institutional calendar values.",
   "cases": [
     {
+      "id": "banuri-town/zawal-plus-five",
+      "family": "banuri-town",
+      "input": {
+        "variant": "zawal-plus-five",
+        "date": "2026-06-21",
+        "latitude": 24.9,
+        "longitude": 67.1,
+        "timeZone": "Asia/Karachi"
+      }
+    },
+    {
+      "id": "moonsighting-committee/published-dhuhr-five-minutes",
+      "family": "moonsighting-committee",
+      "input": {
+        "variant": "published-dhuhr-five-minutes",
+        "year": 2026,
+        "latitude": 52.5,
+        "longitude": 13.4,
+        "timeZone": "Europe/Berlin"
+      }
+    },
+    {
       "id": "moonsighting-committee/usno-v4.2",
       "family": "moonsighting-committee",
       "input": {

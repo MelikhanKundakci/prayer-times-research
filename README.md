@@ -16,6 +16,7 @@ This repository makes the research useful to contributors: readable calculation 
 - **Plan prayer alerts:** read the [notification-readiness criteria](docs/NOTIFICATION-READINESS.md) before treating a displayed minute as an alarm time.
 - **Help improve a method:** start with the [largest remaining discrepancies and research priorities](docs/ACCURACY-PRIORITIES.md), its open questions and the [contribution guide](CONTRIBUTING.md).
 - **Understand the religious scope:** read [methods, institutions, and jurisprudence](docs/SCOPE.md).
+- **Check the source of a rule:** the [15-family evidence audit](docs/METHOD-EVIDENCE.md) separates primary publications from reconstruction assumptions and documents the two explicit Dhuhr rule alternatives.
 
 ## Quick start
 
@@ -55,7 +56,7 @@ Examples return the native research result, including actual event dates, UTC in
 | [UAE / Awqaf](methods/uae-awqaf/) | V2 geometry and an opt-in own dry-atmosphere ray integral, with explicit width, height and horizon assumptions. |
 | [Indonesia / Kemenag](methods/kemenag/) | A published worked-example reconstruction; the scope of an 18° Fajr comparison is stated separately. |
 | [Oman / MARA](methods/oman-mara/) | An empirical regional NOAA-based candidate, with its validation and unconfirmed parameters. |
-| [Banuri Town](methods/banuri-town/) | Published 18°/18° and Hanafi Asr rules; unresolved Zawal/Dhuhr semantics remain explicit. |
+| [Banuri Town](methods/banuri-town/) | Published 18°/18° and Hanafi Asr rules, plus an opt-in printed-Zawal +5-minute interpretation with an explicit model-proxy limitation. |
 | [Malaysia / JAKIM](methods/jakim/) | Single-point and multiple-point zone models, Selangor's two-point hypothesis, and a separate Kedah map interpretation. |
 | [Singapore / MUIS](methods/muis-singapore/) | Own solar calculations at a representative point, with documented rounding and remaining discrepancies. |
 | [FCNA recommendations](methods/fcna/) | Named 15°/15° and 13°/13° recommendation profiles, a physically reviewed Asr solver, and an opt-in two-event Roseville publisher experiment. |
@@ -99,6 +100,7 @@ These are historical research measurements, not results freshly downloaded by `n
 ```text
 methods/<family>/
   README.md             Method, equations, rules, limits, evidence, and open questions
+  RULE-EVIDENCE.md      Published-rule audit, source scope, assumptions and gaps
   index.mjs             Small public entry point; no new astronomical formula
   implementation/       The method's calculation modules and named variants
   validation.json       Machine-readable historical accuracy and provenance

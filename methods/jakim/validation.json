@@ -255,7 +255,9 @@
     "Selangor announced preparation for district-based2027 calendars; historical point contracts must not be extended automatically.",
     "R19 belongs to a neighboring-zone table while appearing on the shared map boundary. The map inclusion remains a single unconfirmed hypothesis. Tg.Rhu village coordinates are not a certified prayer-calculation station."
   ],
-  "publicationNotes": [],
+  "publicationNotes": [
+    "25 September 2026 public-rule audit is documented in RULE-EVIDENCE.md; existing historical studies are unchanged."
+  ],
   "primaryAndSoftwareSources": [
     {
       "url": "https://www.e-solat.gov.my/",
@@ -280,6 +282,10 @@
     {
       "url": "https://www.muftiselangor.gov.my/2026/02/12/bengkel-penyelarasan-takwim-waktu-solat-negeri-selangor-tahun-2027/",
       "role": "Primary notice of preparations for2027 zone/district changes"
+    },
+    {
+      "url": "https://www.muftiselangor.gov.my/2025/07/03/15-taudhih-al-falak-fajar-sadiq-dalam-menentukan-permulaan-waktu-solat-subuh/",
+      "role": "Primary July 2025 explanation of Fajr criterion change and September 2019 deliberation; not a universal state adoption date"
     }
   ]
 }

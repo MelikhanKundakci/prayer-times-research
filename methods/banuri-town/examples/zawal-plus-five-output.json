@@ -1,0 +1,133 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "zawal-plus-five",
+    "date": "2026-06-21",
+    "latitude": 24.9,
+    "longitude": 67.1,
+    "timeZone": "Asia/Karachi"
+  },
+  "output": {
+    "date": "2026-06-21",
+    "location": {
+      "latitude": 24.9,
+      "longitude": 67.1,
+      "timeZone": "Asia/Karachi"
+    },
+    "profile": {
+      "id": "banuri-rounded-zawal-plus-five-research",
+      "version": "0.1.0-research",
+      "institution": "Jamia Uloom Islamia Allama Muhammad Yusuf Banuri Town, Karachi",
+      "official": false,
+      "appReady": false,
+      "rules": {
+        "fajrAngle": 18,
+        "ishaAngle": 18,
+        "asrShadowFactor": 2,
+        "dhuhrMinutesAfterRoundedZawal": 5
+      },
+      "ruleSources": [
+        "https://www.banuri.edu.pk/readquestion/144707100380/25-12-2025",
+        "https://www.banuri.edu.pk/readquestion/143409200025/21-07-2013",
+        "https://www.banuri.edu.pk/readquestion/143406200082/20-04-2013"
+      ],
+      "inferredAstronomy": {
+        "engine": "own-USNO-v2",
+        "horizonDegrees": -0.833,
+        "anchorsLocalSolarHours": "Fajr5, Sunrise6, Transit12, Asr13, Sunset/Isha18",
+        "rounding": "nearest-minute",
+        "offsetsMinutes": 0,
+        "highLatitudeRule": "none",
+        "elevationCorrection": "none"
+      },
+      "dhuhrBasis": "nearest-minute-model-transit-used-as-unconfirmed-published-zawal-proxy"
+    },
+    "events": {
+      "fajr": {
+        "status": "estimated",
+        "semanticRole": "prayer-beginning-angle-model",
+        "time": "04:14",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-20T23:14:00.000Z",
+        "rawUtc": "2026-06-20T23:13:37.016Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "sunrise": {
+        "status": "estimated",
+        "semanticRole": "sunrise-model",
+        "time": "05:43",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T00:43:00.000Z",
+        "rawUtc": "2026-06-21T00:42:48.358Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "transit": {
+        "status": "estimated",
+        "semanticRole": "solar-transit-not-adhan-or-dhuhr-caution",
+        "time": "12:33",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T07:33:00.000Z",
+        "rawUtc": "2026-06-21T07:33:23.168Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "asr": {
+        "status": "estimated",
+        "semanticRole": "prayer-beginning-shadow-factor-two",
+        "time": "17:16",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T12:16:00.000Z",
+        "rawUtc": "2026-06-21T12:16:08.786Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "sunset": {
+        "status": "estimated",
+        "semanticRole": "sunset-model",
+        "time": "19:24",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T14:24:00.000Z",
+        "rawUtc": "2026-06-21T14:23:57.993Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "isha": {
+        "status": "estimated",
+        "semanticRole": "prayer-beginning-angle-model",
+        "time": "20:53",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T15:53:00.000Z",
+        "rawUtc": "2026-06-21T15:53:08.818Z",
+        "eligibleForAutomaticNotifications": false
+      },
+      "dhuhr": {
+        "status": "estimated",
+        "semanticRole": "dhuhr-from-rounded-model-zawal-plus-five-minutes",
+        "time": "12:38",
+        "localDate": "2026-06-21",
+        "utc": "2026-06-21T07:38:00.000Z",
+        "rawUtc": null,
+        "basisUtc": "2026-06-21T07:33:00.000Z",
+        "resolution": "minute",
+        "offsetMinutes": 5,
+        "ruleSource": "https://www.banuri.edu.pk/readquestion/143406200082/20-04-2013",
+        "eligibleForAutomaticNotifications": false
+      }
+    },
+    "qualityFlags": [
+      "independent-unapproved-reconstruction",
+      "astronomy-horizon-and-rounding-unconfirmed",
+      "official-city-reference-point-unknown",
+      "no-jamaat-or-iqama-calculation",
+      "published-five-minute-rule-with-unconfirmed-model-zawal-proxy",
+      "dhuhr-minute-resolution-not-second-certified",
+      "dhuhr-not-independently-calendar-validated"
+    ],
+    "runtime": {
+      "node": "v26.7.0",
+      "tzdb": "2026d"
+    }
+  }
+}

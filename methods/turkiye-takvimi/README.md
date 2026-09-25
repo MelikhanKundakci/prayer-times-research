@@ -4,6 +4,8 @@ A deliberately unsuccessful, bounded reconstruction of Türkiye Takvimi’s publ
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule-evidence audit](RULE-EVIDENCE.md) maps the publisher's ephemeris and Temkin statements to the current reconstruction and its unresolved assumptions.
+
 ## Run the selected example
 
 Run from the repository root:

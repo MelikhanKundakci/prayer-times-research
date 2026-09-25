@@ -23,7 +23,7 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 }
 ```
 
-The uniform entry is [`calculate(options)`](index.mjs). **Default:** V4.2 annual rows; shafaq=general unless explicitly supplied.
+The uniform entry is [`calculate(options)`](index.mjs). **Default:** V4.2 annual rows; shafaq=general unless explicitly supplied. The explicit `published-dhuhr-five-minutes` variant applies the primary page's 300-second Dhuhr margin; it is a narrow alternative, not a complete new MSC specification. It worsens archived calendar matching and does not replace the default; see the [paired rule audit](RULE-EVIDENCE.md).
 
 The method index calls the declared selected entry. Use the example command for a complete valid input; method-specific fields are not silently inferred from religious labels.
 
@@ -34,6 +34,7 @@ The underlying signatures remain method-specific. These links point to the code 
 | Variant | Module / export |
 |---|---|
 | `usno-v4.2` | [`calculateGeometry`](implementation/moonsighting-usno-v4.2.mjs) |
+| `published-dhuhr-five-minutes` | [`calculatePublishedDhuhr`](implementation/published-dhuhr.mjs) |
 
 ### Inputs and boundaries
 
@@ -48,6 +49,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 - Own USNO solar coordinates and spherical hour-angle geometry. Coordinates are sampled at local solar-hour anchors: Fajr 5, sunrise 6, noon 12, Asr 13, sunset/Isha 18.
 - Nominal Fajr/Isha depression 18°; horizon is the literal −0.833°, not exact −50′. Seasonal twilight bounds use the separately attributed MIT-derived MSC coefficient functions.
 - V4.2 applies Dhuhr +0.083 decimal hours (4 min 58.8 s), Maghrib +3 min, then nearest absolute UTC minute. The precise Dhuhr constant is an empirical compatibility hypothesis, not a provider-confirmed rule.
+- The opt-in published-margin alternative uses Dhuhr +300 seconds with the same nearest-minute convention and all other reconstructed events unchanged. Its unrounded `dhuhrCalculation.adjustedEpochMs` is a model value, not certified institutional seconds.
 - Asr shadow factors 1 and 2 are returned separately. There is no city-specific timing table or residual correction in the calculation.
 
 ## Special rules and unresolved semantics
@@ -98,6 +100,9 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 ## Sources
 
+The [rule evidence audit and retrospective comparison](RULE-EVIDENCE.md) separates primary guidance from minute-output compatibility, including unresolved seasonal and high-latitude details.
+
+- [Primary MSC calculation explanation, updated 1 March 2024](https://www.moonsighting.com/how-we.html)
 - [Institutional public calendar generator; primary output comparison](https://www.moonsighting.com/praytable.php)
 - [Primary astronomical approximation](https://aa.usno.navy.mil/faq/sun_approx)
 - [Secondary software provenance for seasonal MSC rules, not institutional certification](https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/PrayerTimes.ts)

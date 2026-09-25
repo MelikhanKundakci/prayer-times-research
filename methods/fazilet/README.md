@@ -4,6 +4,8 @@ A publisher-specific reconstruction of Fazilet calendars in a bounded Turkish re
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule-evidence audit](RULE-EVIDENCE.md) distinguishes publisher-confirmed angles and the Imsak/Sabah separation from reconstructed margins and rounding.
+
 ## Run the selected example
 
 Run from the repository root:
@@ -47,7 +49,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 
 - Own USNO local solar-hour anchors 5/6/12/13/18; Imsak/Fajr-angle 19°, Isha 17°, horizon−1°, Asr factor 1.
 - Empirical margins in minutes: Imsak−10, sunrise−7, Dhuhr +10, Asr+10, Maghrib +7, Isha+10. These fixed margins are an unconfirmed reconstruction; institutional text also discusses city height/extent.
-- V2 floors Imsak and sunrise, ceils Maghrib and Isha, and rounds Dhuhr/Asr to nearest UTC minute. Sabah is rounded Imsak +20 minutes and remains a distinct later marker.
+- V2 floors Imsak and sunrise, ceils Maghrib and Isha, and rounds Dhuhr/Asr to nearest UTC minute. Sabah is rounded Imsak +20 minutes and remains a distinct later marker. The publisher confirms the 20-minute separation; this exact rounding sequence remains reconstructed.
 
 ## Special rules and unresolved semantics
 
@@ -96,7 +98,7 @@ Source websites and institution names are cited for attribution, not affiliation
 ## Useful contributions
 
 - What current operational coordinates, maximum height and city extent are used?
-- Are the event-specific rounding directions and Sabah +20 rule confirmed production behavior?
+- What is the exact rounding sequence behind the published Imsak/Sabah separation and other markers?
 - Can full annual references test the reconstruction beyond the already sampled seasons?
 
 For a proposed numerical change, document the primary rule or bounded hypothesis, preserve the previous results, freeze the recipe and full forecasts before reading new references, and report every planned date, missing value and regression. Keep coordinate/height provenance independent of timing residuals. Do not promote a city-specific fit to a universal method.

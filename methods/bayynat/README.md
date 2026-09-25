@@ -4,6 +4,8 @@ A selected astronomical compatibility candidate for Bayynat point-calendar table
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule-evidence audit](RULE-EVIDENCE.md) separates primary legal definitions from the empirical table angles, solar sampling and rounding.
+
 ## Run the selected example
 
 Run from the repository root:

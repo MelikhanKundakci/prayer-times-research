@@ -138,7 +138,9 @@
     "The two regional calendar comparisons were reconstructed from indexed official-PDF text transcripts; raw PDF bytes and visual verification were unavailable. The book PDF itself was obtained and visually checked.",
     "BauBau Gregorian dates were tied to the published Ramadan-start decision; do not treat that mapping as an unspecified perpetual-calendar rule."
   ],
-  "publicationNotes": [],
+  "publicationNotes": [
+    "25 September 2026 public-rule audit is documented in RULE-EVIDENCE.md; existing historical studies are unchanged."
+  ],
   "primaryAndSoftwareSources": [
     {
       "url": "https://gerubok.kemenagbelitungtimur.id/uploads/ebook/1790043937_ebook_ephemeris_hisab_rukyat_2026_69566ee622db8.pdf",
@@ -147,6 +149,14 @@
     {
       "url": "https://muhammadiyah.or.id/2021/03/waktu-subuh-muhammadiyah-kriteria-18-derajat/",
       "role": "Primary Muhammadiyah explanation of its different Fajr criterion"
+    },
+    {
+      "url": "https://temanggung.kemenag.go.id/bimbingan-masyarakat-islam/standar-baku-hisab-rukyat-dalam-pelatihan-perhitungan-jadwal-shalat/",
+      "role": "Primary institutional report of 14 April 2016 training, webpage dated 24 October 2022; corroborates rounding and margin order"
+    },
+    {
+      "url": "https://kalteng.kemenag.go.id/kanwil/cetak/537222/Soal-Penetapan-Waktu-Subuh-di-Indonesia-Ini-Penjelasan-Kemenag",
+      "role": "Primary regional publication of national December 2025 Fajr explanation; approximately minus 20 degrees for Indonesia"
     }
   ]
 }

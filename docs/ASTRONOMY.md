@@ -48,6 +48,8 @@ Temkin and other institutional adjustments are explicit model parameters. Their 
 
 An astronomical event carries an instant and an actual local date. Isha can occur after midnight. A source may place that clock in the previous day's prayer row without specifying an absolute timestamp. Comparison must state how that ambiguity was interpreted.
 
-Rounding is part of a published calendar's algorithm: nearest minute, upward rounding, downward rounding, and intermediate second rounding can differ at boundaries. Adding a minute after rounding is not always equivalent to changing a raw-time offset before rounding.
+Rounding is part of a published calendar's algorithm: nearest minute, upward rounding, downward rounding, and intermediate second rounding can differ at boundaries. A whole-minute offset commutes with a fixed, translation-invariant minute-rounding rule: for integer `n`, `R(t + n minutes) = R(t) + n minutes`. Fractional-minute offsets, different tie rules and intermediate rounding can change the result. This identity assumes the same absolute-time scale and does not justify editing a local clock string across midnight or an offset transition.
+
+Keep the unrounded solar event, any method-specific adjustment, and the final rounded result distinct. A calendar match at minute resolution does not establish second-level accuracy; see the [rule-evidence and display guidance](METHOD-EVIDENCE.md#location-and-seconds-in-the-future-app).
 
 The CLI uses pinned IANA/ICU timezone data, including actual offset changes. Fixed UTC offsets are used only where a method explicitly models a source convention; they are never a silent replacement for the caller's named timezone.

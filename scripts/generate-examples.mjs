@@ -52,6 +52,15 @@ write('methods/bayynat/examples/continuous-output.json', {
   output: (await loadMethod('bayynat')).calculate(continuousBayynatInput),
 });
 const cases = JSON.parse(fs.readFileSync(new URL('tests/cases.json', root), 'utf8')).cases;
+for (const [family, name] of [['banuri-town', 'zawal-plus-five'], ['moonsighting-committee', 'published-dhuhr']]) {
+  const input = JSON.parse(fs.readFileSync(new URL(`methods/${family}/examples/${name}-input.json`, root), 'utf8'));
+  write(`methods/${family}/examples/${name}-output.json`, {
+    evidenceType: 'generated-model-example-not-institutional-reference',
+    runtime: {node: process.versions.node, icu: process.versions.icu, tz: process.versions.tz},
+    input,
+    output: preview((await loadMethod(family)).calculate(input)),
+  });
+}
 const snapshots = [];
 for (const item of cases) {
   const projection = renderedProjection((await loadMethod(item.family)).calculate(item.input));

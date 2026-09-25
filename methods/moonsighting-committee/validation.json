@@ -137,7 +137,9 @@
     "Use current timezone data. The historically tested Node/ICU stack was pinned to tzdb2026d; mathematical year support is not a guarantee against later timezone-law changes."
   ],
   "publicationNotes": [
-    "The own solar engine has no Adhan runtime dependency; seasonal coefficients retain MIT attribution. The old research/msc-cli.mjs invokes V4.1, not this V4.2 recipe."
+    "The own solar engine has no Adhan runtime dependency; seasonal coefficients retain MIT attribution. The old research/msc-cli.mjs invokes V4.1, not this V4.2 recipe.",
+    "25 September 2026 public-rule audit is documented in RULE-EVIDENCE.md; existing historical studies are unchanged.",
+    "Optional published-dhuhr-five-minutes applies the primary 300-second margin, with unconfirmed nearest-minute rounding and all other reconstruction rules retained. Retrospective 27-case comparison: 193 changed Dhuhr minutes, 2 exact gains and 191 losses; does not replace the 298.8-second default."
   ],
   "primaryAndSoftwareSources": [
     {
@@ -151,6 +153,10 @@
     {
       "url": "https://github.com/batoulapps/adhan-js/blob/v4.4.6/src/PrayerTimes.ts",
       "role": "Secondary software provenance for seasonal MSC rules, not institutional certification"
+    },
+    {
+      "url": "https://www.moonsighting.com/how-we.html",
+      "role": "Primary calculation guidance, updated 1 March 2024; five-minute Dhuhr margin differs from default empirical compatibility constant"
     }
   ]
 }

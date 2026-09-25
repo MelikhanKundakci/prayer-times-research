@@ -1,0 +1,5963 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-09-25",
+  "exposure": "Retrospective replay of previously archived comparisons; no new holdout or source retrieval",
+  "recipe": "Dhuhr margin 300s, nearest UTC minute; baseline margin 298.8s. All other event formulas unchanged.",
+  "guidanceUrl": "https://www.moonsighting.com/how-we.html",
+  "metric": "Strict displayed HH:mm differences; missing values never exact; existing source date/DST disagreements retained",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "modelHashes": {
+    "methods/moonsighting-committee/index.mjs": "18e3441f36f04ae7fb93092b5c09a7e21c872eed65f0fd0b7cb1cf7c30dd2e25",
+    "methods/moonsighting-committee/implementation/published-dhuhr.mjs": "5827d0a56b4d45b55b58a985903b83fe3a2f9c5434ea2bc6439ccf416ede4c5b",
+    "methods/moonsighting-committee/implementation/moonsighting-usno-v4.2.mjs": "42dd1f8086ff9d63b9b27ee8799f674a33ab940e5a2385cacbdcbde29f1b4e52",
+    "methods/moonsighting-committee/implementation/moonsighting-usno-v4.1.mjs": "a53d3077c02b1efcce4fa940902bba7422fb0c8145d6b2151c91919532bcc232",
+    "methods/moonsighting-committee/implementation/msc-seasonal.mjs": "91eead589efd5b11b1f98c73ae6390d7018343ae7b0d09afc8a5ddf2c8f42667",
+    "core/astronomy/solar-usno-v2.mjs": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc"
+  },
+  "evaluatorSha256": "a1206f2065416c12a44e41994861a0a0d5021ffa348cf77d3fb9cc4e95235d1f",
+  "manifestHashes": {
+    "moonsighting-usno-manifest.json": "0caa0b6f85b35e0d6bbbdcdf1bd3f26227d44f8a7aa03ca3a1d19eb5bc328f45",
+    "moonsighting-geometry-manifest.json": "ca41e7a1a957b40dc9377002cf3e2f291578a7d2e3c4edddef6924866154a96a",
+    "moonsighting-manifest.json": "6ee6d98e4a4451132ffc56d517173782f5f09da9a52b5747574b012c137b3aac",
+    "moonsighting-v4.2-manifest.json": "51d789c826ba03d5964e17f766831b8807d159a1f34292a4a7c05960e097af3c",
+    "moonsighting-stack-manifest.json": "5c37498c412399645948b9faf77730ab32b022f3df9607eb94056fa7778b758d"
+  },
+  "total": {
+    "baseline": {
+      "expected": 69055,
+      "compared": 68256,
+      "exact": 67599,
+      "withinOne": 68227,
+      "sourceMissing": 799,
+      "modelMissing": 799,
+      "bothMissing": 799,
+      "signedMinuteHistogram": {
+        "0": 67599,
+        "1": 314,
+        "2": 1,
+        "60": 14,
+        "-60": 14,
+        "-1": 314
+      },
+      "maxAbsoluteMinutes": 60
+    },
+    "candidate": {
+      "expected": 69055,
+      "compared": 68256,
+      "exact": 67410,
+      "withinOne": 68227,
+      "sourceMissing": 799,
+      "modelMissing": 799,
+      "bothMissing": 799,
+      "signedMinuteHistogram": {
+        "0": 67410,
+        "1": 505,
+        "2": 1,
+        "60": 14,
+        "-60": 14,
+        "-1": 312
+      },
+      "maxAbsoluteMinutes": 60
+    },
+    "exactGains": 2,
+    "exactLosses": 191,
+    "changedDhuhrMinutes": 193
+  },
+  "cases": [
+    {
+      "city": "vancouver",
+      "options": {
+        "year": 2024,
+        "latitude": 49.2827,
+        "longitude": -123.1207,
+        "timeZone": "America/Vancouver",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2024&tz=America%2FVancouver&lat=49.2827&lon=-123.1207&method=0&both=true&time=0",
+      "sourceSha256": "c1918b4c8e7bf28b8f28a05bb9a7c8ba8017acb7264b0b06967d77b5bbe6b2a3",
+      "archiveManifest": "moonsighting-usno-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 357,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 357,
+              "1": 9
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 9,
+      "changedDhuhrMinutes": 9
+    },
+    {
+      "city": "makkah",
+      "options": {
+        "year": 2030,
+        "latitude": 21.4225,
+        "longitude": 39.8262,
+        "timeZone": "Asia/Riyadh",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2030&tz=Asia%2FRiyadh&lat=21.4225&lon=39.8262&method=0&both=true&time=0",
+      "sourceSha256": "6fb6d807f0336404de33bf8d6a7ac4e051a6f7c9ca8f7b67159de53a21015dc8",
+      "archiveManifest": "moonsighting-usno-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 361,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 361,
+              "1": 4
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 4,
+      "changedDhuhrMinutes": 4
+    },
+    {
+      "city": "dhaka",
+      "options": {
+        "year": 2025,
+        "latitude": 23.8103,
+        "longitude": 90.4125,
+        "timeZone": "Asia/Dhaka",
+        "shafaq": "abyad"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2025&tz=Asia%2FDhaka&lat=23.8103&lon=90.4125&method=1&both=true&time=0",
+      "sourceSha256": "5393fe0ffa4178bb303bcdab51a6fab7369131e40e1bf70617e35ed6a8bad7e7",
+      "archiveManifest": "moonsighting-usno-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 359,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 359,
+              "1": 6
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 6,
+      "changedDhuhrMinutes": 6
+    },
+    {
+      "city": "tokyo",
+      "options": {
+        "year": 2029,
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "timeZone": "Asia/Tokyo",
+        "shafaq": "ahmar"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2029&tz=Asia%2FTokyo&lat=35.6762&lon=139.6503&method=2&both=true&time=0",
+      "sourceSha256": "ef47cdcff8d3c981858709451d50192452e062dec4ec7e8d017b001c42349f27",
+      "archiveManifest": "moonsighting-usno-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 360,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 360,
+              "1": 5
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 5,
+      "changedDhuhrMinutes": 5
+    },
+    {
+      "city": "hammerfest",
+      "options": {
+        "year": 2028,
+        "latitude": 70.6634,
+        "longitude": 23.6821,
+        "timeZone": "Europe/Oslo",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=Europe%2FOslo&lat=70.6634&lon=23.6821&method=0&both=true&time=0",
+      "sourceSha256": "da1ec2108493a9e1c1174c6b147a0b2f98f135215dead9b53d4257b5f3cc4284",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 288,
+            "exact": 288,
+            "withinOne": 288,
+            "sourceMissing": 78,
+            "modelMissing": 78,
+            "bothMissing": 78,
+            "signedMinuteHistogram": {
+              "0": 288
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 288,
+            "exact": 288,
+            "withinOne": 288,
+            "sourceMissing": 78,
+            "modelMissing": 78,
+            "bothMissing": 78,
+            "signedMinuteHistogram": {
+              "0": 288
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 228,
+            "exact": 228,
+            "withinOne": 228,
+            "sourceMissing": 138,
+            "modelMissing": 138,
+            "bothMissing": 138,
+            "signedMinuteHistogram": {
+              "0": 228
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 228,
+            "exact": 228,
+            "withinOne": 228,
+            "sourceMissing": 138,
+            "modelMissing": 138,
+            "bothMissing": 138,
+            "signedMinuteHistogram": {
+              "0": 228
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 362,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 362,
+              "1": 4
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 230,
+            "exact": 230,
+            "withinOne": 230,
+            "sourceMissing": 136,
+            "modelMissing": 136,
+            "bothMissing": 136,
+            "signedMinuteHistogram": {
+              "0": 230
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 230,
+            "exact": 230,
+            "withinOne": 230,
+            "sourceMissing": 136,
+            "modelMissing": 136,
+            "bothMissing": 136,
+            "signedMinuteHistogram": {
+              "0": 230
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 289,
+            "exact": 289,
+            "withinOne": 289,
+            "sourceMissing": 77,
+            "modelMissing": 77,
+            "bothMissing": 77,
+            "signedMinuteHistogram": {
+              "0": 289
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 289,
+            "exact": 289,
+            "withinOne": 289,
+            "sourceMissing": 77,
+            "modelMissing": 77,
+            "bothMissing": 77,
+            "signedMinuteHistogram": {
+              "0": 289
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 4,
+      "changedDhuhrMinutes": 4
+    },
+    {
+      "city": "reykjavik",
+      "options": {
+        "year": 2026,
+        "latitude": 64.1466,
+        "longitude": -21.9426,
+        "timeZone": "Atlantic/Reykjavik",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2026&tz=Atlantic%2FReykjavik&lat=64.1466&lon=-21.9426&method=0&both=true&time=0",
+      "sourceSha256": "1dd7007e2921b8fd624ed6a482a0e8465171eda182f81cddc0b21215ac76dea4",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 358,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 358,
+              "1": 7
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 7,
+      "changedDhuhrMinutes": 7
+    },
+    {
+      "city": "anchorage",
+      "options": {
+        "year": 2028,
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=America%2FAnchorage&lat=61.2181&lon=-149.9003&method=0&both=true&time=0",
+      "sourceSha256": "f0c7e7da31dc91dd0b05e8c9a3a1b7383fc04fcf4cff7568537c1cc0f021308f",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 358,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 358,
+              "1": 8
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 8,
+      "changedDhuhrMinutes": 8
+    },
+    {
+      "city": "buenosaires",
+      "options": {
+        "year": 2028,
+        "latitude": -34.6037,
+        "longitude": -58.3816,
+        "timeZone": "America/Argentina/Buenos_Aires",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=America%2FArgentina%2FBuenos_Aires&lat=-34.6037&lon=-58.3816&method=0&both=true&time=0",
+      "sourceSha256": "00580411f33adcc2ab63af80491bd0b0f4d70517d3582dd1407b17402411242c",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 356,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 356,
+              "1": 10
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 10,
+      "changedDhuhrMinutes": 10
+    },
+    {
+      "city": "wellington",
+      "options": {
+        "year": 2028,
+        "latitude": -41.2865,
+        "longitude": 174.7762,
+        "timeZone": "Pacific/Auckland",
+        "shafaq": "ahmar"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=Pacific%2FAuckland&lat=-41.2865&lon=174.7762&method=2&both=true&time=0",
+      "sourceSha256": "539bbe244e2d4f04a6578c6c248d286aae3d1f6e8e13e8cd4e8297780c1fef11",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 354,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 354,
+              "1": 10,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 364,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 364,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 10,
+      "changedDhuhrMinutes": 10
+    },
+    {
+      "city": "delhi",
+      "options": {
+        "year": 2026,
+        "latitude": 28.6139,
+        "longitude": 77.209,
+        "timeZone": "Asia/Kolkata",
+        "shafaq": "abyad"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2026&tz=Asia%2FKolkata&lat=28.6139&lon=77.209&method=1&both=true&time=0",
+      "sourceSha256": "9d8915ddfc26a92d369d898cf6d210707c3fd43a1b3768a6a00ef52e46b1f980",
+      "archiveManifest": "moonsighting-geometry-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 355,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 355,
+              "1": 10
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 10,
+      "changedDhuhrMinutes": 10
+    },
+    {
+      "city": "london",
+      "options": {
+        "year": 2027,
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "timeZone": "Europe/London",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Europe%2FLondon&lat=51.5074&lon=-0.1278&method=0&both=true&time=0",
+      "sourceSha256": "1f74d391ce7d49e7046d8b4052676f64e5f6380a34aa4be4ce6d821e628fdfe2",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 358,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 358,
+              "1": 7
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 7,
+      "changedDhuhrMinutes": 7
+    },
+    {
+      "city": "sydney",
+      "options": {
+        "year": 2027,
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Australia%2FSydney&lat=-33.8688&lon=151.2093&method=0&both=true&time=0",
+      "sourceSha256": "d8aadc5c52c415a2fdf70c765318f52c81126999de409e6432a16b2492208d2f",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 359,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 359,
+              "1": 4,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 363,
+            "withinOne": 363,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "60": 1,
+              "-60": 1
+            },
+            "maxAbsoluteMinutes": 60
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 4,
+      "changedDhuhrMinutes": 4
+    },
+    {
+      "city": "capetown",
+      "options": {
+        "year": 2027,
+        "latitude": -33.9249,
+        "longitude": 18.4241,
+        "timeZone": "Africa/Johannesburg",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Africa%2FJohannesburg&lat=-33.9249&lon=18.4241&method=0&both=true&time=0",
+      "sourceSha256": "a3abaeb32d2a2778b69b84cfa41c6fd89629a6c51125eaa5d74129f6d9ad9467",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 359,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 359,
+              "1": 6
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 6,
+      "changedDhuhrMinutes": 6
+    },
+    {
+      "city": "jakarta",
+      "options": {
+        "year": 2027,
+        "latitude": -6.2088,
+        "longitude": 106.8456,
+        "timeZone": "Asia/Jakarta",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Asia%2FJakarta&lat=-6.2088&lon=106.8456&method=0&both=true&time=0",
+      "sourceSha256": "b064565530137bd1b7159b0a983fa08b3863f8fd174af1b557b65c8e2c5d15e4",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 359,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 359,
+              "1": 6
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 6,
+      "changedDhuhrMinutes": 6
+    },
+    {
+      "city": "toronto",
+      "options": {
+        "year": 2027,
+        "latitude": 43.6532,
+        "longitude": -79.3832,
+        "timeZone": "America/Toronto",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=America%2FToronto&lat=43.6532&lon=-79.3832&method=0&both=true&time=0",
+      "sourceSha256": "7fa74b1bbd42dd63ec5ed17952b710d4a55b175acad518bbbf2bea73e208a235",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 357,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 357,
+              "1": 8
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 8,
+      "changedDhuhrMinutes": 8
+    },
+    {
+      "city": "oslo",
+      "options": {
+        "year": 2027,
+        "latitude": 59.9139,
+        "longitude": 10.7522,
+        "timeZone": "Europe/Oslo",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Europe%2FOslo&lat=59.9139&lon=10.7522&method=0&both=true&time=0",
+      "sourceSha256": "942b4240c39864ce2274a146466bd82a83265771a2368e6ac50b016cdb9d5481",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 358,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 358,
+              "1": 7
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 7,
+      "changedDhuhrMinutes": 7
+    },
+    {
+      "city": "tromso",
+      "options": {
+        "year": 2027,
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Europe%2FOslo&lat=69.6492&lon=18.9553&method=0&both=true&time=0",
+      "sourceSha256": "0fe8735e046d40f882e419b478085258bb149e6613c3699649cc92782d39f587",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 297,
+            "exact": 297,
+            "withinOne": 297,
+            "sourceMissing": 68,
+            "modelMissing": 68,
+            "bothMissing": 68,
+            "signedMinuteHistogram": {
+              "0": 297
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 297,
+            "exact": 297,
+            "withinOne": 297,
+            "sourceMissing": 68,
+            "modelMissing": 68,
+            "bothMissing": 68,
+            "signedMinuteHistogram": {
+              "0": 297
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 249,
+            "exact": 249,
+            "withinOne": 249,
+            "sourceMissing": 116,
+            "modelMissing": 116,
+            "bothMissing": 116,
+            "signedMinuteHistogram": {
+              "0": 249
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 249,
+            "exact": 249,
+            "withinOne": 249,
+            "sourceMissing": 116,
+            "modelMissing": 116,
+            "bothMissing": 116,
+            "signedMinuteHistogram": {
+              "0": 249
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 360,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 360,
+              "1": 5
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 248,
+            "exact": 248,
+            "withinOne": 248,
+            "sourceMissing": 117,
+            "modelMissing": 117,
+            "bothMissing": 117,
+            "signedMinuteHistogram": {
+              "0": 248
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 248,
+            "exact": 248,
+            "withinOne": 248,
+            "sourceMissing": 117,
+            "modelMissing": 117,
+            "bothMissing": 117,
+            "signedMinuteHistogram": {
+              "0": 248
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 296,
+            "exact": 296,
+            "withinOne": 296,
+            "sourceMissing": 69,
+            "modelMissing": 69,
+            "bothMissing": 69,
+            "signedMinuteHistogram": {
+              "0": 296
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 296,
+            "exact": 296,
+            "withinOne": 296,
+            "sourceMissing": 69,
+            "modelMissing": 69,
+            "bothMissing": 69,
+            "signedMinuteHistogram": {
+              "0": 296
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 5,
+      "changedDhuhrMinutes": 5
+    },
+    {
+      "city": "kiritimati",
+      "options": {
+        "year": 2027,
+        "latitude": 1.8721,
+        "longitude": -157.4278,
+        "timeZone": "Pacific/Kiritimati",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Pacific%2FKiritimati&lat=1.8721&lon=-157.4278&method=0&both=true&time=0",
+      "sourceSha256": "5a2d193d3aaf0d83875aef236c7d5654d43393991ebacfdbff9e8e38173d2394",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 280,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 280,
+              "1": 43,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 280,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 280,
+              "1": 43,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 285,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 285,
+              "1": 40,
+              "-1": 40
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 285,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 285,
+              "1": 40,
+              "-1": 40
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 283,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 283,
+              "1": 41,
+              "-1": 41
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 283,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 283,
+              "1": 43,
+              "-1": 39
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 233,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 233,
+              "1": 65,
+              "2": 1,
+              "-1": 66
+            },
+            "maxAbsoluteMinutes": 2
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 233,
+            "withinOne": 364,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 233,
+              "1": 65,
+              "2": 1,
+              "-1": 66
+            },
+            "maxAbsoluteMinutes": 2
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 283,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 283,
+              "1": 41,
+              "-1": 41
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 283,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 283,
+              "1": 41,
+              "-1": 41
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 281,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 281,
+              "1": 42,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 281,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 281,
+              "1": 42,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 281,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 281,
+              "1": 42,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 281,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 281,
+              "1": 42,
+              "-1": 42
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        }
+      },
+      "exactGains": 2,
+      "exactLosses": 2,
+      "changedDhuhrMinutes": 4
+    },
+    {
+      "city": "newyork",
+      "options": {
+        "year": 2028,
+        "latitude": 40.7128,
+        "longitude": -74.006,
+        "timeZone": "America/New_York",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=America%2FNew_York&lat=40.7128&lon=-74.006&method=0&both=true&time=0",
+      "sourceSha256": "f067838f248d6f4cf01c0fe7a25548b1b62862a531f8301469aa9059da0871fa",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 357,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 357,
+              "1": 9
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 9,
+      "changedDhuhrMinutes": 9
+    },
+    {
+      "city": "karachi",
+      "options": {
+        "year": 2027,
+        "latitude": 24.8607,
+        "longitude": 67.0011,
+        "timeZone": "Asia/Karachi",
+        "shafaq": "abyad"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2027&tz=Asia%2FKarachi&lat=24.8607&lon=67.0011&method=1&both=true&time=0",
+      "sourceSha256": "072610dfc3a1fb9ccd5294c13cf5fd44f781e6d88f1eeb7661535c26a2482af0",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 355,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 355,
+              "1": 10
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 10,
+      "changedDhuhrMinutes": 10
+    },
+    {
+      "city": "london",
+      "options": {
+        "year": 2028,
+        "latitude": 51.5074,
+        "longitude": -0.1278,
+        "timeZone": "Europe/London",
+        "shafaq": "ahmar"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=Europe%2FLondon&lat=51.5074&lon=-0.1278&method=2&both=true&time=0",
+      "sourceSha256": "6f18dadf209fbd56cfca23a0331f132af1b867b5609f6dcd67cb05e563f200e8",
+      "archiveManifest": "moonsighting-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 358,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 358,
+              "1": 8
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 8,
+      "changedDhuhrMinutes": 8
+    },
+    {
+      "city": "santiago",
+      "options": {
+        "year": 2028,
+        "latitude": -33.4489,
+        "longitude": -70.6693,
+        "timeZone": "America/Santiago",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=America%2FSantiago&lat=-33.4489&lon=-70.6693&method=0&both=true&time=0",
+      "sourceSha256": "9a6cb330170515a837c6ac6e0e8ed4b8fbfb8f9c10e7f11634bcbc2ae5948f65",
+      "archiveManifest": "moonsighting-v4.2-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 355,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 355,
+              "1": 11
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 11,
+      "changedDhuhrMinutes": 11
+    },
+    {
+      "city": "chicago",
+      "options": {
+        "year": 2025,
+        "latitude": 41.8781,
+        "longitude": -87.6298,
+        "timeZone": "America/Chicago",
+        "shafaq": "abyad"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2025&tz=America%2FChicago&lat=41.8781&lon=-87.6298&method=1&both=true&time=0",
+      "sourceSha256": "282d218bee742f6112ade01070add8ea5927a0582fd4e4aef35deff665e41971",
+      "archiveManifest": "moonsighting-v4.2-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 359,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 359,
+              "1": 6
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 6,
+      "changedDhuhrMinutes": 6
+    },
+    {
+      "city": "kualalumpur",
+      "options": {
+        "year": 2032,
+        "latitude": 3.139,
+        "longitude": 101.6869,
+        "timeZone": "Asia/Kuala_Lumpur",
+        "shafaq": "ahmar"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2032&tz=Asia%2FKuala_Lumpur&lat=3.139&lon=101.6869&method=2&both=true&time=0",
+      "sourceSha256": "9865465e94e6927e14b537e7f6db5982d3125df89fe60f60d73982d4b8c03235",
+      "archiveManifest": "moonsighting-v4.2-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 363,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 363,
+              "1": 3
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 3,
+      "changedDhuhrMinutes": 3
+    },
+    {
+      "city": "casablanca",
+      "options": {
+        "year": 2029,
+        "latitude": 33.5731,
+        "longitude": -7.5898,
+        "timeZone": "Africa/Casablanca",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2029&tz=Africa%2FCasablanca&lat=33.5731&lon=-7.5898&method=0&both=true&time=0",
+      "sourceSha256": "ce4286196d97c886e5668840b42be5bf9e693800b2bf5b2f151452ee8a71cd4e",
+      "archiveManifest": "moonsighting-v4.2-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 354,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 354,
+              "1": 11
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 11,
+      "changedDhuhrMinutes": 11
+    },
+    {
+      "city": "casablanca",
+      "options": {
+        "year": 2028,
+        "latitude": 33.5731,
+        "longitude": -7.5898,
+        "timeZone": "Africa/Casablanca",
+        "shafaq": "general"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2028&tz=Africa%2FCasablanca&lat=33.5731&lon=-7.5898&method=0&both=true&time=0",
+      "sourceSha256": "c27595127a4e67eb594d5638d007f27578b9079a2db5039aaadd102161512874",
+      "archiveManifest": "moonsighting-stack-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 361,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 361,
+              "1": 5
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 366,
+            "compared": 366,
+            "exact": 366,
+            "withinOne": 366,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 366
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 5,
+      "changedDhuhrMinutes": 5
+    },
+    {
+      "city": "kathmandu",
+      "options": {
+        "year": 2031,
+        "latitude": 27.7172,
+        "longitude": 85.324,
+        "timeZone": "Asia/Kathmandu",
+        "shafaq": "abyad"
+      },
+      "sourceUrl": "https://www.moonsighting.com/praytable.php?year=2031&tz=Asia%2FKathmandu&lat=27.7172&lon=85.324&method=1&both=true&time=0",
+      "sourceSha256": "723c06df2eea92cb47fc31822011415784bec0532eecde9f0a70dbc1beb44932",
+      "archiveManifest": "moonsighting-stack-manifest.json",
+      "byEvent": {
+        "fajr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "sunrise": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "dhuhr": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 355,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 355,
+              "1": 10
+            },
+            "maxAbsoluteMinutes": 1
+          }
+        },
+        "asr_standard": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "asr_hanafi": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "maghrib": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        },
+        "isha": {
+          "baseline": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          },
+          "candidate": {
+            "expected": 365,
+            "compared": 365,
+            "exact": 365,
+            "withinOne": 365,
+            "sourceMissing": 0,
+            "modelMissing": 0,
+            "bothMissing": 0,
+            "signedMinuteHistogram": {
+              "0": 365
+            },
+            "maxAbsoluteMinutes": 0
+          }
+        }
+      },
+      "exactGains": 0,
+      "exactLosses": 10,
+      "changedDhuhrMinutes": 10
+    }
+  ],
+  "excluded": []
+}

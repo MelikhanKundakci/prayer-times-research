@@ -4,6 +4,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
+
 The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
 
 A new [fully offline inverse study](SHARED-NOON-INVERSE.md) learns two shared annual noon coefficients and fixed diagnostic city intercepts from 2026 alone. It matches all 4,380 fitting noons and 4,366/4,380 of the same cities' 2027 noons. The common correction alone regresses at the original proxies; fitted intercepts are not production coordinates, and this retrospective result changes no runtime default.

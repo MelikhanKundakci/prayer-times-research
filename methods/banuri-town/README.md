@@ -4,6 +4,8 @@ A reconstruction tied to Jamia Uloom Islamia Banuri Town’s explicit angle and 
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [rule evidence audit](RULE-EVIDENCE.md) separates inspected institutional guidance from reconstruction assumptions and identifies the next mathematical gap.
+
 ## Run the selected example
 
 Run from the repository root:
@@ -23,9 +25,9 @@ The checked-in [example input](examples/input.json) and [computed output](exampl
 }
 ```
 
-The uniform entry is [`calculate(options)`](index.mjs). **Default:** strict own regional recipe; transit is not certified Dhuhr.
+The uniform entry is [`calculate(options)`](index.mjs). **Default:** strict own regional recipe; transit is not certified Dhuhr. The opt-in `zawal-plus-five` variant adds a minute-scale Dhuhr estimate from a published five-minute wait after calendar Zawal; its calculated Zawal proxy remains unconfirmed.
 
-The public wrapper converts its options into the unchanged (date, location) signature.
+The public wrapper converts its options into the unchanged (date, location) signature. Use `variant: "zawal-plus-five"` for the additive rule described in the [evidence audit](RULE-EVIDENCE.md); omit `variant` to retain the original output.
 
 ### Runnable implementations
 
@@ -34,6 +36,7 @@ The underlying signatures remain method-specific. These links point to the code 
 | Variant | Module / export |
 |---|---|
 | `strict` | [`calculateBanuriStrict`](implementation/strict-api.mjs) |
+| `zawal-plus-five` | [`calculateBanuriZawalPlusFive`](implementation/zawal-plus-five.mjs), additive minute-scale Dhuhr estimate |
 
 ### Inputs and boundaries
 
@@ -51,7 +54,7 @@ For fixed declination δ, cos(H)=(sin(h)−sin(φ)sin(δ))/(cos(φ)cos(δ)); tra
 
 ## Special rules and unresolved semantics
 
-- Only the angles and Asr factor have clear institutional rule evidence; horizon, ephemeris and rounding are assumptions.
+- The angles, Asr factor and a five-minute wait after calendar Zawal have institutional evidence. Horizon, ephemeris, Zawal rounding and the correspondence of our transit proxy to the printed calendar remain assumptions. The wait is implemented only in the opt-in variant.
 - The month form lacks a year.2026 is a retrieval-year comparison assumption, not independently verified calendar-year metadata. A perpetual calendar remains possible.
 - No high-latitude replacement, current official point or source-data redistribution license is established.
 
@@ -77,6 +80,7 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 - [Institutional Fajr/Isha 18° explanation](https://www.banuri.edu.pk/readquestion/144707100380/25-12-2025)
 - [Institutional Asr factor 2 explanation](https://www.banuri.edu.pk/readquestion/143409200025/21-07-2013)
+- [Institutional five-minute wait after calendar Zawal](https://www.banuri.edu.pk/readquestion/143406200082/20-04-2013)
 - [Primary calendar publisher](https://www.banuri.edu.pk/namaz-times)
 - [Primary published calculation/calendar material](https://www.banuri.edu.pk/assets/uploads/2020/04/1587988961_book_pdf.pdf)
 
@@ -84,7 +88,7 @@ Source websites and institution names are cited for attribution, not affiliation
 
 ## Useful contributions
 
-- What exactly distinguishes the Zawal column from permitted Dhuhr commencement?
+- Which production point and rounding generate the Zawal calendar marker to which the published five-minute wait applies?
 - Does the web calendar have an operational year or a perpetual month table?
 - What official points, horizon and rounding rules should replace auxiliary assumptions?
 

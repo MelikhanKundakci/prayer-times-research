@@ -93,6 +93,8 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 ## Sources
 
+The [rule evidence audit](RULE-EVIDENCE.md) adds primary corroboration of the rounding and safety-margin order, with training dates separated from webpage dates. It changes no numerical rule.
+
 - [Primary Kemenag ephemeris book and worked calculation](https://gerubok.kemenagbelitungtimur.id/uploads/ebook/1790043937_ebook_ephemeris_hisab_rukyat_2026_69566ee622db8.pdf)
 - [Primary Muhammadiyah explanation of its different Fajr criterion](https://muhammadiyah.or.id/2021/03/waktu-subuh-muhammadiyah-kriteria-18-derajat/)
 

@@ -77,6 +77,8 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 ## Sources
 
+The [rule evidence audit](RULE-EVIDENCE.md) records a bounded search for institutional numerical guidance. The software preset remains secondary evidence; no additional primary formula was confirmed.
+
 - [Official dataset collection](https://data.gov.sg/datasets?resultId=2312&sort=updatedAt)
 - [Official dataset metadata](https://api-production.data.gov.sg/v2/public/api/collections/2312/metadata)
 - [Institutional calendar publication](https://www.muis.gov.sg/resources/islamic-calendar/)

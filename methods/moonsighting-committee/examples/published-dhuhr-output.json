@@ -1,0 +1,172 @@
+{
+  "evidenceType": "generated-model-example-not-institutional-reference",
+  "runtime": {
+    "node": "26.7.0",
+    "icu": "78.3",
+    "tz": "2026d"
+  },
+  "input": {
+    "variant": "published-dhuhr-five-minutes",
+    "year": 2026,
+    "latitude": 52.5,
+    "longitude": 13.4,
+    "timeZone": "Europe/Berlin"
+  },
+  "output": {
+    "preview": true,
+    "totalDays": 365,
+    "displayedDays": 3,
+    "days": [
+      {
+        "date": "2026-01-01",
+        "eventStatus": {
+          "fajr": "calculated",
+          "sunrise": "calculated",
+          "dhuhr": "calculated",
+          "asr_standard": "calculated",
+          "asr_hanafi": "calculated",
+          "maghrib": "calculated",
+          "isha": "calculated"
+        },
+        "qualityFlags": [],
+        "solarCalculationDate": "2026-01-01",
+        "calculationLatitude": 52.5,
+        "times": {
+          "fajr": "06:36",
+          "sunrise": "08:17",
+          "dhuhr": "12:15",
+          "asr_standard": "13:47",
+          "asr_hanafi": "14:16",
+          "maghrib": "16:06",
+          "isha": "17:40"
+        },
+        "eventDates": {
+          "fajr": "2026-01-01",
+          "sunrise": "2026-01-01",
+          "dhuhr": "2026-01-01",
+          "asr_standard": "2026-01-01",
+          "asr_hanafi": "2026-01-01",
+          "maghrib": "2026-01-01",
+          "isha": "2026-01-01"
+        },
+        "instants": {
+          "fajr": "2026-01-01T05:36:00.000Z",
+          "sunrise": "2026-01-01T07:17:00.000Z",
+          "dhuhr": "2026-01-01T11:15:00.000Z",
+          "asr_standard": "2026-01-01T12:47:00.000Z",
+          "asr_hanafi": "2026-01-01T13:16:00.000Z",
+          "maghrib": "2026-01-01T15:06:00.000Z",
+          "isha": "2026-01-01T16:40:00.000Z"
+        },
+        "dhuhrCalculation": {
+          "adjustedEpochMs": 1767266097030.4731,
+          "adjustmentSeconds": 300,
+          "adjustmentEvidence": "MSC published guidance: five minutes after solar transit",
+          "minuteRounding": "nearest absolute UTC minute; research convention, not confirmed by the guidance",
+          "precision": "Unrounded model value, not a claim of one-second observational accuracy",
+          "notificationEligible": false
+        }
+      },
+      {
+        "date": "2026-01-02",
+        "eventStatus": {
+          "fajr": "calculated",
+          "sunrise": "calculated",
+          "dhuhr": "calculated",
+          "asr_standard": "calculated",
+          "asr_hanafi": "calculated",
+          "maghrib": "calculated",
+          "isha": "calculated"
+        },
+        "qualityFlags": [],
+        "solarCalculationDate": "2026-01-02",
+        "calculationLatitude": 52.5,
+        "times": {
+          "fajr": "06:36",
+          "sunrise": "08:17",
+          "dhuhr": "12:15",
+          "asr_standard": "13:48",
+          "asr_hanafi": "14:17",
+          "maghrib": "16:07",
+          "isha": "17:41"
+        },
+        "eventDates": {
+          "fajr": "2026-01-02",
+          "sunrise": "2026-01-02",
+          "dhuhr": "2026-01-02",
+          "asr_standard": "2026-01-02",
+          "asr_hanafi": "2026-01-02",
+          "maghrib": "2026-01-02",
+          "isha": "2026-01-02"
+        },
+        "instants": {
+          "fajr": "2026-01-02T05:36:00.000Z",
+          "sunrise": "2026-01-02T07:17:00.000Z",
+          "dhuhr": "2026-01-02T11:15:00.000Z",
+          "asr_standard": "2026-01-02T12:48:00.000Z",
+          "asr_hanafi": "2026-01-02T13:17:00.000Z",
+          "maghrib": "2026-01-02T15:07:00.000Z",
+          "isha": "2026-01-02T16:41:00.000Z"
+        },
+        "dhuhrCalculation": {
+          "adjustedEpochMs": 1767352525097.4204,
+          "adjustmentSeconds": 300,
+          "adjustmentEvidence": "MSC published guidance: five minutes after solar transit",
+          "minuteRounding": "nearest absolute UTC minute; research convention, not confirmed by the guidance",
+          "precision": "Unrounded model value, not a claim of one-second observational accuracy",
+          "notificationEligible": false
+        }
+      },
+      {
+        "date": "2026-01-03",
+        "eventStatus": {
+          "fajr": "calculated",
+          "sunrise": "calculated",
+          "dhuhr": "calculated",
+          "asr_standard": "calculated",
+          "asr_hanafi": "calculated",
+          "maghrib": "calculated",
+          "isha": "calculated"
+        },
+        "qualityFlags": [],
+        "solarCalculationDate": "2026-01-03",
+        "calculationLatitude": 52.5,
+        "times": {
+          "fajr": "06:36",
+          "sunrise": "08:17",
+          "dhuhr": "12:16",
+          "asr_standard": "13:49",
+          "asr_hanafi": "14:18",
+          "maghrib": "16:08",
+          "isha": "17:42"
+        },
+        "eventDates": {
+          "fajr": "2026-01-03",
+          "sunrise": "2026-01-03",
+          "dhuhr": "2026-01-03",
+          "asr_standard": "2026-01-03",
+          "asr_hanafi": "2026-01-03",
+          "maghrib": "2026-01-03",
+          "isha": "2026-01-03"
+        },
+        "instants": {
+          "fajr": "2026-01-03T05:36:00.000Z",
+          "sunrise": "2026-01-03T07:17:00.000Z",
+          "dhuhr": "2026-01-03T11:16:00.000Z",
+          "asr_standard": "2026-01-03T12:49:00.000Z",
+          "asr_hanafi": "2026-01-03T13:18:00.000Z",
+          "maghrib": "2026-01-03T15:08:00.000Z",
+          "isha": "2026-01-03T16:42:00.000Z"
+        },
+        "dhuhrCalculation": {
+          "adjustedEpochMs": 1767438952809.747,
+          "adjustmentSeconds": 300,
+          "adjustmentEvidence": "MSC published guidance: five minutes after solar transit",
+          "minuteRounding": "nearest absolute UTC minute; research convention, not confirmed by the guidance",
+          "precision": "Unrounded model value, not a claim of one-second observational accuracy",
+          "notificationEligible": false
+        }
+      }
+    ]
+  }
+}

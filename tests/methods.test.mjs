@@ -37,6 +37,16 @@ for (const id of methodIds) {
 test('Unknown method cannot escape the method registry', async () => {
   await assert.rejects(loadMethod('../core/input'), /Unknown method/);
 });
+for (const [family, name] of [['banuri-town', 'zawal-plus-five'], ['moonsighting-committee', 'published-dhuhr']]) {
+  test(`Runnable sourced-rule example: ${family}/${name}`, async () => {
+    const input = read(`../methods/${family}/examples/${name}-input.json`);
+    const saved = read(`../methods/${family}/examples/${name}-output.json`);
+    const result = (await loadMethod(family)).calculate(input);
+    assert.equal(saved.evidenceType, 'generated-model-example-not-institutional-reference');
+    assert.deepEqual(input, saved.input);
+    assert.deepEqual(renderedProjection(preview(result)), renderedProjection(saved.output));
+  });
+}
 test('All public wrappers reject getters and inherited records', async () => {
   for (const id of methodIds) {
     const {calculate} = await loadMethod(id);
