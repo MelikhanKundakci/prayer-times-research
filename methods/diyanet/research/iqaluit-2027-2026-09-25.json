@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "caseId": "diyanet-iqaluit-2027",
+  "source": {
+    "url": "https://namazvakitleri.diyanet.gov.tr/en-US/9085/iqaluit-prayer-times",
+    "providerCityId": 9085,
+    "retrievedDate": "2026-09-25",
+    "printedRows": 365,
+    "consecutiveDates": true,
+    "allSixFieldsPopulated": true,
+    "zeroClockCells": 0,
+    "workbookSha256": "f1aead2a58c10623fb3c8630517aa9c75aab3dd8e5e54a4c3ea337fa824e9320",
+    "rawRowsStoredPrivately": true
+  },
+  "forecast": {
+    "variant": "north-missing-window",
+    "coordinates": {
+      "latitude": 63.75,
+      "longitude": -68.5166666667
+    },
+    "timeZone": "America/Iqaluit",
+    "frozenAt": "2026-09-25T17:00:11.496Z",
+    "sha256": "16e87fba6c2ec01ca868232f1b05c4f5df81b059236c356873325cba3c0d561d",
+    "runtime": {
+      "node": "26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "sourceValuesReadBeforeFreeze": false,
+    "allSixEventsCalculatedAllDays": true,
+    "allLocalDatesEqualOutputDate": true,
+    "allAutomaticNotificationsDisabled": true
+  },
+  "clockComparison": {
+    "interpretation": "Compare source HH:mm to frozen model HH:mm on the printed Gregorian row date; this is a diagnostic assumption, not a source-certified event-date rule.",
+    "sourceMinusModelMinutes": [
+      {
+        "event": "fajr",
+        "total": 365,
+        "exact": 252,
+        "oneMinuteLater": 113,
+        "oneMinuteEarlier": 0
+      },
+      {
+        "event": "sunrise",
+        "total": 365,
+        "exact": 314,
+        "oneMinuteLater": 51,
+        "oneMinuteEarlier": 0
+      },
+      {
+        "event": "dhuhr",
+        "total": 365,
+        "exact": 314,
+        "oneMinuteLater": 51,
+        "oneMinuteEarlier": 0
+      },
+      {
+        "event": "asr",
+        "total": 365,
+        "exact": 314,
+        "oneMinuteLater": 51,
+        "oneMinuteEarlier": 0
+      },
+      {
+        "event": "maghrib",
+        "total": 365,
+        "exact": 322,
+        "oneMinuteLater": 43,
+        "oneMinuteEarlier": 0
+      },
+      {
+        "event": "isha",
+        "total": 365,
+        "exact": 323,
+        "oneMinuteLater": 35,
+        "oneMinuteEarlier": 7
+      }
+    ],
+    "exactTotal": 1839,
+    "withinOneMinute": 2190
+  },
+  "civilTime": {
+    "timeZoneDatabase": "IANA tzdb 2026d, pinned ICU",
+    "occurrenceCountsByNumberOfUtcInstants": {
+      "1": 2190
+    },
+    "nonUniqueOrMissingLocalTimes": 0,
+    "ishaBeforeSameRowMaghribRows": 0,
+    "rowDateIsOnlyTestedInterpretation": true,
+    "transitions": [
+      {
+        "date": "2027-03-14",
+        "offsetBeforeMinutes": -300,
+        "offsetAfterMinutes": -240,
+        "sourceAndModelWallClockJumpObserved": true
+      },
+      {
+        "date": "2027-11-07",
+        "offsetBeforeMinutes": -240,
+        "offsetAfterMinutes": -300,
+        "sourceAndModelWallClockJumpObserved": true
+      }
+    ]
+  },
+  "limitations": [
+    "One independently selected city proxy and year; not Diyanet production coordinates.",
+    "Diyanet page publishes row labels and minute clocks, not event-specific UTC instants or an explicit event-date rule.",
+    "Clock agreement does not validate calculation seconds, rounding, horizon, or global notification safety.",
+    "Separate public Apia 2027 case covers date-line behavior; neither city establishes a universal rule."
+  ]
+}
