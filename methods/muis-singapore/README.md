@@ -71,8 +71,7 @@ These are archived research comparisons, **not results of the public snapshot te
 **Compared markers:** Fajr, sunrise, Dhuhr, Asr, Maghrib/sunset, Isha. **Date treatment:** Displayed-minute comparison; source does not supply event-specific UTC instants.
 
 - The old Adhan comparator had 4541 exact and 6559 within 1: own geometry gains 67 exact but introduces three additional two-minute mismatches.
-- No new independently acquired calendar after model freeze.
-- The preceding statement describes this older study's exposure at the time. A separate [2027 study](PROSPECTIVE-2027.md) later acquired an official PDF after freezing all predictions; it must not be pooled with these known development counts.
+- At the time this older 2024–2026 study was first reported, no new calendar had been acquired. A separate [2027 study](PROSPECTIVE-2027.md) later acquired an official PDF after freezing all predictions; it must not be pooled with these known development counts.
 
 Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`](validation.json). Historical `research/...` strings there are provenance identifiers, not links to files included in this public package. Raw reference calendars are deliberately not bundled; these hashes alone do not let a new reader independently rerun publisher accuracy. Contributions that add lawfully redistributable fixtures or reproducible, authorized acquisition procedures are welcome.
 
