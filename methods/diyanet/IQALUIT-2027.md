@@ -12,6 +12,8 @@ The annual export contained 365 consecutive Gregorian dates from 1 January throu
 
 The comparison kept each official clock beside its own printed row date and compared its minute label with the frozen forecast's local clock for that date. **1,839 of 2,190** values matched exactly; all remaining **351** differed by one minute. The table reports the sign of **source minus model**.
 
+An independent read-only extraction of the original 368-row XLSX file (three header rows and 365 data rows) verified its published SHA-256 and reproduced the full signed distribution: seven source-minus-model −1, 1,839 exact, and 344 +1 minutes.
+
 | Event | Exact / 365 | Source one minute later | Source one minute earlier |
 |---|---:|---:|---:|
 | Fajr | 252 | 113 | 0 |
@@ -34,6 +36,6 @@ Iqaluit tests high latitude and daylight-saving behavior, not the international 
 
 ## Reproducibility and limits
 
-The frozen model forecast SHA-256 is `16e87fba6c2ec01ca868232f1b05c4c5df81b059236c356873325cba3c0d561d`. The exported official annual workbook SHA-256 is `f1aead2a58c10623fb3c8630517aa9c75aab3dd8e5e54a4c3ea337fa824e9320`; original row values are retained in private research, not this public repository. The comparison used Node 26.7.0, ICU 78.3 and the repository-pinned tzdb 2026d. The aggregate counts are in [`research/iqaluit-2027-2026-09-25.json`](research/iqaluit-2027-2026-09-25.json).
+The frozen model forecast SHA-256 is `16e87fba6c2ec01ca868232f1b05c4f5df81b059236c356873325cba3c0d561d`. The exported official annual workbook SHA-256 is `f1aead2a58c10623fb3c8630517aa9c75aab3dd8e5e54a4c3ea337fa824e9320`; original row values are retained in private research, not this public repository. The comparison used Node 26.7.0, ICU 78.3 and the repository-pinned tzdb 2026d. The aggregate counts are in [`research/iqaluit-2027-2026-09-25.json`](research/iqaluit-2027-2026-09-25.json).
 
 The minute table cannot establish source seconds, rounding convention, horizon, production coordinates, or semantic event dates. The current Diyanet method remains experimental and notification-ineligible. No runtime behavior was changed because this audit found no date, availability, DST, or dateline defect to justify a general correction.

@@ -58,7 +58,7 @@ Keep the requested GPS position and the actual calculation position explicit. A 
 
 A versioned catalogue of independently documented reference locations could be bundled locally; the arithmetic needs no runtime API. Such a catalogue would still need coverage, versioning and geographic selection evidence. Our earlier inferred effective points and coordinate-quantization experiments do not supply that authority. No runtime lookup, city preset, mathematical correction or notification release is added by this study.
 
-No new city/year holdout was requested. Future validation must fix its intended target, independent coordinates, timezone and full forecast before accessing new source calendars. An arbitrary proxy can test a declared approximation; it cannot silently become the publisher's production point.
+This location-scope study did not add a new city/year holdout. Future validation must fix its intended target, independent coordinates, timezone and full forecast before accessing new source calendars. An arbitrary proxy can test a declared approximation; it cannot silently become the publisher's production point.
 
 ## Evidence and limits
 

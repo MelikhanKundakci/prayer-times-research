@@ -4,6 +4,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The [worldwide status and release boundary](WORLDWIDE-STATUS.md) brings together the new geographic comparisons, missing-twilight scan, city-assignment evidence and the remaining requirements for an offline app.
+
 [Further residual and source diagnosis (25 September 2026)](RESEARCH-NOTES-2026-09-25.md) explains why tested global rounding changes were not adopted and identifies remaining source gaps.
 
 New frozen full-year transfer checks cover [Nairobi 2027](NAIROBI-2027.md), [Tokyo 2027 and the official-source audit](GLOBAL-SOURCES-2026-09-25.md), [Hobart 2027](HOBART-2027.md), [Apia 2027 across the Pacific civil-time boundary](APIA-2027.md), and [Anchorage 2027](ANCHORAGE-2027.md). The [location-scope study](LOCATION-SCOPE.md) explains why an arbitrary GPS calculation cannot yet be labeled the official Diyanet time for its assigned city. All five city proxies were chosen independently of the target calendar. Their agreement does not certify worldwide coverage, unknown production points or after-midnight event dates.

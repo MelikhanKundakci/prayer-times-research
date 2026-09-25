@@ -8,6 +8,8 @@ The full baseline and candidate forecasts were frozen on 25 September 2026 at **
 
 After the freeze, official annual tables were exported using each page's own Excel button. Each downloaded workbook contains exactly 365 rows from 1 January through 31 December 2027. The source links and SHA-256 hashes are in the [public aggregate](research/worldwide-transfer-2027-2026-09-25.json). Original exports and normalized rows remain in the private research folder and are not redistributed here.
 
+The comparison was first run with the host's tzdb 2026a, then rerun with the repository-pinned tzdb 2026d. Only the comparison timestamp and reported tzdb version changed; every city result and the frozen forecast hash stayed identical. The original host-tzdb report is retained privately for audit, and the public aggregate reports the pinned rerun.
+
 | Official Diyanet calendar | Independent named-city proxy | Zone | Baseline and candidate result |
 |---|---|---|---|
 | [Jakarta, ID 12726](https://namazvakitleri.diyanet.gov.tr/tr-TR/12726/jakarta-icin-namaz-vakti) | −6.17797994918°, 106.774887126° | `Asia/Jakarta` | 1,660 / 2,190 exact; all within 1 min |
@@ -19,6 +21,8 @@ These independent coordinates come from the [UNGEGN named-city records](https://
 ## Results and interpretation
 
 All **6,570 of 6,570** source cells were present and resolved as a unique absolute instant under the proxy's IANA time zone and the printed Gregorian row date. There were no source `00:00` cells, missing events, model-unavailable events, or predicted local-date changes. No comparison uses modulo-24 clock arithmetic. Exact counts by event are in the aggregate; the signed model-minus-source residuals are:
+
+A separate read-only extraction of the three original XLSX files verified each pinned SHA-256, all 365 ordered Gregorian dates per city, the six original column labels, and the signed distributions below directly against the frozen forecast.
 
 | City | −1 min | exact | +1 min | >1 min |
 |---|---:|---:|---:|---:|

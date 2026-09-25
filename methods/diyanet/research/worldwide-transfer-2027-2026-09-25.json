@@ -6,7 +6,7 @@
   "comparisonRuntime": {
     "node": "v26.7.0",
     "icu": "78.3",
-    "tzdb": "2026a"
+    "tzdb": "2026d"
   },
   "scope": "Official annual page Excel exports compared against complete, prospectively frozen baseline and pre-existing civil-row forecast at independent named-city proxy points. Printed-date absolute IANA instants, no modulo-24 comparisons.",
   "result": "Across these three C=D controls the candidate forecasts are identical to baseline. All 6,570 event slots resolve, have unchanged printed local event dates and differ from source by at most one minute. This does not test the candidate where C!=D and does not change any method default.",
