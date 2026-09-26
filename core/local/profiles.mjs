@@ -73,6 +73,33 @@ const rawProfiles=[
     northern:null,domain:{latitude:[-12,8],longitude:[94,142],timeZones:['Asia/Jakarta','Asia/Pontianak','Asia/Makassar','Asia/Jayapura']},events:kemenagEvents},
 ];
 
+// An angle source does not become the authority for this complete composition.
+const COMMON={signs:'https://kurul.diyanet.gov.tr/tr/fetva/45-enlemin-otesinde-namaz-vakitleri/d681fdc5-924c-4f02-bb74-08dd1c135350',
+  asr:D.asr,horizon:'https://aa.usno.navy.mil/faq/RST_defs',night:'https://praytimes.org/docs/calculation'};
+const pairs=[
+  {key:'18-17',fajr:18,isha:17,label:'18° / 17°',source:D.twilight,scope:'Angles described in the Diyanet 2013 statement; no Diyanet Temkin or seasonal algorithm.'},
+  {key:'19p5-17p5',fajr:19.5,isha:17.5,label:'19.5° / 17.5°',source:EGYPT.fatwa,scope:'Egyptian angle criteria; not a full Egyptian Survey calculation recipe.'},
+  {key:'15-15',fajr:15,isha:15,label:'15° / 15°',source:FCNA.recommendation,scope:'FCNA 2017 USA angle criteria; not a full FCNA timetable recipe.'},
+  {key:'13-13',fajr:13,isha:13,label:'13° / 13°',source:FCNA.recommendation,scope:'FCNA 2017 Canada angle criteria; not a full FCNA timetable recipe.'},
+];
+for(const pair of pairs)for(const factor of [1,2])for(const mode of ['physical','angle-night']){
+  const events={
+    fajr:prayer('solar-crossing','prayer-start-model',0,'none','model-instant','published-criterion',['angles'],`Fajr at −${pair.fajr}° under the explicitly selected angle criterion.`),
+    sunrise:prayer('solar-crossing','sunrise-marker',0,'none','model-instant','local-convention',['horizon'],'Unadjusted apparent-horizon sunrise marker using the flat −50′ convention.'),
+    dhuhr:prayer('solar-transit','prayer-start-model',1,'none','model-instant','local-convention',['signs'],'Solar transit plus one elapsed minute: an explicit project margin after the meridian crossing.'),
+    asr:prayer('noon-shadow','prayer-start-model',0,'none','model-instant','published-criterion',['asr'],`Afternoon shadow factor ${factor} beyond the fixed noon shadow; explicit selection independent of the twilight source.`),
+    maghrib:prayer('solar-crossing','prayer-start-model',0,'none','model-instant','local-convention',['signs','horizon'],'Apparent sunset under the flat −50′ horizon convention, with no added Temkin.'),
+    isha:prayer('solar-crossing','prayer-start-model',0,'none','model-instant','published-criterion',['angles'],`Isha at −${pair.isha}° under the explicitly selected angle criterion.`),
+  };
+  rawProfiles.push({id:`local-${pair.key}-shadow${factor}-${mode}-v1`,
+    label:`Local ${pair.label} · Asr ${factor} · ${mode==='physical'?'no estimates':'angle-night estimates'}`,
+    authority:'Explicit local software composition of prayer-start signs and selected twilight criteria',
+    sourceScope:`${pair.scope} Common prayer signs are combined with project astronomy, a one-minute Dhuhr margin and explicitly selected Asr. ${mode==='physical'?'Missing crossings remain unavailable.':'Angle/60 night limits are an opt-in software convention, not a universal religious rule.'}`,
+    sources:{...COMMON,angles:pair.source},astronomy:{fajrAngleDegrees:pair.fajr,ishaAngleDegrees:pair.isha,asrShadowFactor:factor,horizonDepressionDegrees:50/60,solarModel:'spa'},
+    northern:null,domain:null,events,composition:{twilightPair:pair.key,asrShadowFactor:factor,highLatitudeMode:mode},
+    nightPolicy:mode==='angle-night'?{kind:'angle-fraction',fajrAngleDegrees:pair.fajr,ishaAngleDegrees:pair.isha}:null});
+}
+
 function deepFreeze(value){
   if(value&&typeof value==='object'&&!Object.isFrozen(value)){
     for(const child of Object.values(value))deepFreeze(child);

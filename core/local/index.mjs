@@ -3,10 +3,11 @@ import {calculateLocalSolarDay} from './solar.mjs';
 import {buildNorthernContext} from './northern.mjs';
 import {buildLocalSummerContext} from './summer.mjs';
 import {selectRuleInstant} from './selection.mjs';
+import {selectNightFraction} from './night-fraction.mjs';
 import {getLocalProfile,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
 export {getLocalProfile,listLocalProfiles,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
 
-export const LOCAL_VERSION='0.4.0';
+export const LOCAL_VERSION='0.5.0';
 export const LOCAL_EVENTS=Object.freeze(['fajr','sunrise','dhuhr','asr','maghrib','isha']);
 const PRAYERS=LOCAL_EVENTS.filter(name=>name!=='sunrise');
 const MINUTE=60000,DAY=86400000;
@@ -52,6 +53,13 @@ function validateDomain(definition,location){
   if(!domain.timeZones.includes(location.timeZone))throw new RangeError(`${definition.id}: an explicitly supported Indonesian IANA zone is required`);
 }
 
+function neighboringSolarDay(date,offset,definition,location){
+  const neighbor=new Date(Date.parse(`${date}T00:00:00Z`)+offset*DAY).toISOString().slice(0,10);
+  if(neighbor<'2001-01-01'||neighbor>'2098-12-31')return null;
+  try{return calculateLocalSolarDay({date:neighbor,...location,...definition.astronomy});}
+  catch(error){if(error instanceof RangeError)return null;throw error;}
+}
+
 /** Continuous local astronomy followed by an explicitly selected event-rule profile. */
 export function calculateLocalDay(input){
   fields(input,['date','latitude','longitude','timeZone','profile']);
@@ -68,6 +76,10 @@ export function calculateLocalDay(input){
   if(seasonal&&context&&!context.summer)context.summer=buildLocalSummerContext(northern);
   const summer=seasonal?context?.summer??null:null;
   const northernDay=northern?.days[date]??null,summerDay=summer?.days[date]??null;
+  const nightNeighbors=definition.nightPolicy?{
+    previous:neighboringSolarDay(date,-1,definition,astronomy.location),
+    next:neighboringSolarDay(date,1,definition,astronomy.location),
+  }:null;
   const formatter=new Intl.DateTimeFormat('en-GB-u-ca-gregory-nu-latn',{
     timeZone,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23',
   });
@@ -76,7 +88,18 @@ export function calculateLocalDay(input){
     const event=astronomy.events[name],eventRule=definition.events[name];
     const legacy=profile===LOCAL_PROFILE||profile===LOCAL_SEASONAL_PROFILE;
     const rule=`${profile}.${legacy?LEGACY_RULES[name]:`${name}.${eventRule.kind}.${eventRule.rounding}.margin-${eventRule.marginMinutes}`}`;
-    if(north&&(name==='fajr'||name==='isha')){
+    if(nightNeighbors&&(name==='fajr'||name==='isha')){
+      const evening=name==='fajr'?nightNeighbors.previous?.events.maghrib:astronomy.events.maghrib;
+      const morning=name==='fajr'?astronomy.events.sunrise:nightNeighbors.next?.events.sunrise;
+      const selection=selectNightFraction({event:name,rawEpochMilliseconds:event.epochMilliseconds,rawStatus:event.status,rawReason:event.reason,
+        sunsetEpochMilliseconds:evening?.status==='calculated'?evening.epochMilliseconds:null,
+        sunriseEpochMilliseconds:morning?.status==='calculated'?morning.epochMilliseconds:null,
+        angleDegrees:definition.nightPolicy[`${name}AngleDegrees`]});
+      const selectedRule=`${profile}.${name}.${selection.status==='estimated'?'angle-night-estimate':'angle-night-guard'}`;
+      events[name]=['calculated','estimated'].includes(selection.status)
+        ?{...render(selection.epochMilliseconds,date,formatter,selectedRule,eventRule,selection.status),reason:selection.reason,selection:selection.selection}
+        :{...empty(selection.status,selection.reason,selectedRule,eventRule),selection:selection.selection};
+    }else if(north&&(name==='fajr'||name==='isha')){
       if(seasonal){
         const selection=summerDay?.[name];
         const selectedRule=`${profile}.${name}.${selection?.mode??'unavailable'}`;
@@ -124,12 +147,15 @@ export function calculateLocalDay(input){
     const event=events[name],declared=definition.events[name];
     Object.assign(event,{role:declared.role,resolution:declared.resolution,
       ruleEvidence:{classification:declared.evidence,sourceKeys:[...declared.sourceKeys],description:declared.description}});
+    if(definition.nightPolicy&&event.status==='estimated')event.ruleEvidence={classification:'software-estimate',sourceKeys:['night'],
+      description:'Explicit angle/60 limit within the actual adjacent sunset-to-sunrise night; a selected software estimate, not a recovered institutional rule.'};
     if(event.dateOffset!==null&&event.dateOffset!==0)qualityFlags.push({code:'event-on-different-civil-date',event:name,date:event.localDate});
   }
   const available=name=>['calculated','estimated'].includes(events[name].status);
   return {date,location:{latitude,longitude,timeZone},
     profile:{id:profile,label:definition.label,authority:definition.authority,official:false,
       institutionalEquivalence:'not-claimed',sources:{...definition.sources},sourceScope:definition.sourceScope,
+      composition:definition.composition?structuredClone(definition.composition):null,
       northernPolicyThresholdDegrees:definition.northern?.thresholdLatitude??null},
     calculation:{version:LOCAL_VERSION,kind:'continuous-local-point',astronomicalModel:astronomy.model,
       secondsMeaning:'model precision where provided; minute-defined profile markers have no seconds field; no observed or institutional seconds guarantee',

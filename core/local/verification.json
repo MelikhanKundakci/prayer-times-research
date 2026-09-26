@@ -1,9 +1,9 @@
 {
   "schema": "local-point-verification/v1",
   "recordedDate": "2026-09-26",
-  "localVersion": "0.4.0",
+  "localVersion": "0.5.0",
   "profile": "diyanet-published-point-v1",
-  "purpose": "Numerical implementation, rule-selection and event-role contract verification for explicit local point profiles; not city-calendar replication",
+  "purpose": "Offline local point computations, complete explicit software compositions and dated schedules; separately verified astronomical models and rule contracts, not institutional calendar replication",
   "numerical": {
     "result": "PASS",
     "cases": 139,
@@ -44,7 +44,12 @@
     "tests/local-profile-registry.test.mjs",
     "tests/local-profiles-point.test.mjs",
     "tests/local-profile-conformance.test.mjs",
-    "tests/local-profiles-oracle.test.mjs"
+    "tests/local-profiles-oracle.test.mjs",
+    "tests/local-night-fraction.test.mjs",
+    "tests/local-schedule.test.mjs",
+    "tests/local-composed.test.mjs",
+    "tests/local-app.test.mjs",
+    "tests/local-spa-reference.test.mjs"
   ],
   "regressionScope": [
     "fixed-transit factor-one Asr geometry",
@@ -71,8 +76,13 @@
     "immutable profile registry and detached listings with evidence and source scope per event",
     "Egypt/FCNA source-supported twilight starts and explicitly separate geometric markers",
     "Kemenag worked-example domain, quantize-then-add margins and minute-defined selected events",
-    "all-six-profile conformance across 195 point/date/profile cases",
-    "284 independently calculated profile/parameter cases, including missing events and civil-date ownership rejections"
+    "all-22-profile conformance across 755 point/date/profile cases",
+    "284 independently calculated profile/parameter cases, including missing events and civil-date ownership rejections",
+    "separate SPA apparent-coordinate and continuous event comparison against independently executed pvlib/Python",
+    "explicit complete local five-prayer compositions with independent twilight and Asr choices",
+    "optional angle/60 adjacent-night caps and missing-angle estimates with preserved provenance",
+    "dated schedule cross-night guards, stable overlapping-window entry IDs and timezone-sensitive invalidation",
+    "preceding-day Isha padding, separate minute/seconds display dates and loopback browser calculator"
   ],
   "boundaries": {
     "institutionalEquivalence": false,
@@ -108,16 +118,19 @@
     "seasonalDomain": "Latitude at least 44.5 north, 2002–2097, complete real-horizon annual context with every raw/selected day/night over five hours and all seasonal preflight checks passing; ordinary rules inherited elsewhere",
     "summerObservedAccuracySeconds": null,
     "profileScope": "Each named local profile has explicit evidence, roles and domain; geometry markers do not complete a five-prayer prescription",
-    "minuteDefinedProfile": "Kemenag selected values use whole-minute rounding and margins; seconds display fields are null"
+    "minuteDefinedProfile": "Kemenag selected values use whole-minute rounding and margins; seconds display fields are null",
+    "composedProfileScope": "16 explicit local software compositions with five prayer-start roles; no institutional equivalence, default physical-only or separately selected angle/night convention; no polar horizon substitute",
+    "spaTimeScale": "UT1=UTC and fixed deltaT=69.184 seconds; not a future Earth-orientation or leap-second prediction",
+    "usableDeliverable": "Local browser calculator and offline dated schedule API; no mobile OS notification delivery"
   },
   "files": [
     {
       "path": "core/local/solar.mjs",
-      "sha256": "fff519bd6eec03c5bea42fb8677847653ae5b71706de6fa7eb296330708f4e68"
+      "sha256": "deeb0f95301a1b80b831ac8f4a6bea576cd15b89bffab2e4a20062b34ea30250"
     },
     {
       "path": "core/local/index.mjs",
-      "sha256": "f3d48ed0be25bf13c689394880fa617d529f0939e8b66fb11473d011ed8578cb"
+      "sha256": "fb730cd6feebceb39d8656b760362a2f22552cc5e96d6fa57af9d3f8bca12942"
     },
     {
       "path": "core/local/verification/oracle.py",
@@ -165,7 +178,7 @@
     },
     {
       "path": "core/local/profiles.mjs",
-      "sha256": "13f30f8612b8e79b1088dd79570b33b991255f820e44af077a966d3c61760749"
+      "sha256": "4f15958d5d3405f9df53dbb2293c40384d33e55cc4a6acd7e2cc326c11c73285"
     },
     {
       "path": "core/local/selection.mjs",
@@ -182,24 +195,74 @@
     {
       "path": "core/local/verification/profiles-verify.mjs",
       "sha256": "f8906bb9041cb7c4cc13d61c4178551f675d3ffcfeec5039ef6c96b17a5fb028"
+    },
+    {
+      "path": "core/local/night-fraction.mjs",
+      "sha256": "35d69827377c1d599d04f49b22c332a57159c963f59c3e79ddb9d1b8ed10ae2e"
+    },
+    {
+      "path": "core/local/schedule.mjs",
+      "sha256": "18ea48902e6cca0dd367829494b4940ff6ef7664001fc1b5debd4aa0859d9a07"
+    },
+    {
+      "path": "core/astronomy/spa-point.mjs",
+      "sha256": "db2cd841739692ab1c7269b914dd69958d7815770a07f19da8e12551916578e8"
+    },
+    {
+      "path": "core/astronomy/spa-coefficients.json",
+      "sha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b"
+    },
+    {
+      "path": "core/astronomy/spa-point-fixtures.json",
+      "sha256": "4e3308f67ce9475e723ba52c01ec0cc23230b846b345e015523c0895e59cbddd"
+    },
+    {
+      "path": "core/local/verification/spa-oracle.py",
+      "sha256": "a8c942741833a78f2b49bb9adbabbc7762d99607e9a4663fa0ec00cfc2037e00"
+    },
+    {
+      "path": "core/local/verification/spa-fixtures.json",
+      "sha256": "9f0d6bd56cbf0e540b935b78d58ca8b9012e1986d1bee0867db816a1f684e904"
+    },
+    {
+      "path": "core/local/verification/spa-verify.mjs",
+      "sha256": "7a0fc8e495803e3ddc590e8d4c17b701faaaed9705d5b15dd786ca25935d18d3"
+    },
+    {
+      "path": "core/local/verification/spa-comparison.json",
+      "sha256": "6e6abcc5cbfe9cceda850736fa46314133b05b01c24ec72761d3ff55e624b123"
+    },
+    {
+      "path": "core/local/verification/usable-grid.mjs",
+      "sha256": "03838bf60aef95899504ad3ff8e46762eacb1ebd7056d42a56677a8a311f222e"
+    },
+    {
+      "path": "scripts/local-app.mjs",
+      "sha256": "cda9bd744e3f28c6bcb2a42c6833d7ec76f88cf747f7a16d58021bb3f2d2df6a"
+    },
+    {
+      "path": "examples/local-app/app.mjs",
+      "sha256": "de25a915354972323a621b2bbd3c8b889beb582921094d9b2b0f643718d18886"
     }
   ],
   "softwareChecks": {
     "result": "PASS",
-    "nodeTests": 236,
+    "nodeTests": 264,
     "diyanetPythonTests": 61,
     "independentUaeFixtures": 108,
-    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 719 local documentation links verified",
+    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 756 local documentation links verified",
     "commands": [
       "npm test",
       "npm run check",
       "python3 scripts/verify-uae-radial.py",
-      "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'"
+      "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'",
+      "node core/timezones/with-tzdata.mjs core/local/verification/usable-grid.mjs"
     ],
-    "localTests": 62,
+    "localTests": 90,
     "addedInVersion020": 13,
     "addedInVersion030": 15,
-    "addedInVersion040": 16
+    "addedInVersion040": 16,
+    "addedInVersion050": 28
   },
   "northernNumerical": {
     "result": "PASS",
@@ -288,7 +351,23 @@
     "egypt-published-angles-point-v1",
     "fcna-usa-2017-point-v1",
     "fcna-canada-2017-point-v1",
-    "kemenag-worked-example-point-v1"
+    "kemenag-worked-example-point-v1",
+    "local-18-17-shadow1-physical-v1",
+    "local-18-17-shadow1-angle-night-v1",
+    "local-18-17-shadow2-physical-v1",
+    "local-18-17-shadow2-angle-night-v1",
+    "local-19p5-17p5-shadow1-physical-v1",
+    "local-19p5-17p5-shadow1-angle-night-v1",
+    "local-19p5-17p5-shadow2-physical-v1",
+    "local-19p5-17p5-shadow2-angle-night-v1",
+    "local-15-15-shadow1-physical-v1",
+    "local-15-15-shadow1-angle-night-v1",
+    "local-15-15-shadow2-physical-v1",
+    "local-15-15-shadow2-angle-night-v1",
+    "local-13-13-shadow1-physical-v1",
+    "local-13-13-shadow1-angle-night-v1",
+    "local-13-13-shadow2-physical-v1",
+    "local-13-13-shadow2-angle-night-v1"
   ],
   "summerNumerical": {
     "result": "PASS",
@@ -767,8 +846,106 @@
   "profileInterpretation": "Independent Python assembly of published angles, fixed-noon shadow geometry, horizons and explicit minute rules on the same USNO approximation; agreement establishes implementation consistency, not observed accuracy, a complete institutional specification or notification approval",
   "profileConformance": {
     "result": "PASS",
-    "profiles": 6,
-    "cases": 195,
+    "profiles": 22,
+    "cases": 755,
     "scope": "UTC instants, civil dates, presentation precision, source-key roles, unavailability and selected chronology"
+  },
+  "spaNumerical": {
+    "result": "PASS",
+    "cases": 348,
+    "calculatedCycles": 339,
+    "expectedOwnershipRejections": 9,
+    "eventTimestampComparisons": 1874,
+    "unavailableEventComparisons": 160,
+    "cycleBoundaryComparisons": 678,
+    "nearestMinuteMatches": 1874,
+    "maximumRootDifferenceSeconds": 0.00022649765014648438,
+    "maximumCycleBoundaryDifferenceSeconds": 0.00022983551025390625,
+    "medianAbsoluteRootDifferenceSeconds": 7.939338684082031e-05,
+    "p95AbsoluteRootDifferenceSeconds": 0.00017023086547851562,
+    "maximumThresholdDifferenceDegrees": 4.950635457134922e-10,
+    "rootToleranceSeconds": 0.01,
+    "usno": {
+      "sharedEvents": 1874,
+      "bothUnavailable": 158,
+      "modelOnly": 2,
+      "referenceOnly": 0,
+      "nearestMinuteMatches": 1849,
+      "maximumAbsoluteSeconds": 104.69517874717712,
+      "medianAbsoluteSeconds": 0.48378992080688477,
+      "p95AbsoluteSeconds": 2.0336174964904785
+    },
+    "fixtureSha256": "9f0d6bd56cbf0e540b935b78d58ca8b9012e1986d1bee0867db816a1f684e904",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "byCohort": {
+      "existing-profile-grid": {
+        "cases": 275,
+        "comparedEvents": 1558,
+        "unavailableEvents": 92,
+        "maximumRootDifferenceSeconds": 0.00022649765014648438
+      },
+      "near-tangent-stress": {
+        "cases": 24,
+        "comparedEvents": 106,
+        "unavailableEvents": 38,
+        "maximumRootDifferenceSeconds": 0.00017023086547851562
+      },
+      "year-range-edge": {
+        "cases": 32,
+        "comparedEvents": 184,
+        "unavailableEvents": 8,
+        "maximumRootDifferenceSeconds": 0.00021696090698242188
+      },
+      "horizon-transition": {
+        "cases": 8,
+        "comparedEvents": 26,
+        "unavailableEvents": 22,
+        "maximumRootDifferenceSeconds": 0.00015616416931152344
+      }
+    }
+  },
+  "spaInterpretation": "Synthetic geocentric astronomical-model comparison under identical declared conventions; not observed or institutional prayer accuracy",
+  "usableAnnualGrid": {
+    "result": "PASS",
+    "profile": "local-18-17-shadow1-angle-night-v1",
+    "meaning": "Complete five-prayer outputs and dated chronology under the selected composition; not observed timing accuracy or institutional agreement",
+    "summaries": [
+      {
+        "id": "frankfurt-2028",
+        "days": 366,
+        "completeDays": 366,
+        "estimatedFajr": 81,
+        "estimatedIsha": 77,
+        "crossNightChecks": 367
+      },
+      {
+        "id": "oslo-2027",
+        "days": 365,
+        "completeDays": 365,
+        "estimatedFajr": 143,
+        "estimatedIsha": 141,
+        "crossNightChecks": 366
+      },
+      {
+        "id": "new-york-2027",
+        "days": 365,
+        "completeDays": 365,
+        "estimatedFajr": 0,
+        "estimatedIsha": 0,
+        "crossNightChecks": 366
+      },
+      {
+        "id": "sydney-2027",
+        "days": 365,
+        "completeDays": 365,
+        "estimatedFajr": 0,
+        "estimatedIsha": 0,
+        "crossNightChecks": 366
+      }
+    ]
   }
 }

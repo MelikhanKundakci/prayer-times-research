@@ -12,6 +12,7 @@ The app's primary direction is now **local times at the user's point under docum
 
 ## Start here
 
+- **Try the local calculator:** run `npm run preview:local` and open the printed loopback URL. The [browser prototype](examples/local-app/README.md) shows five prayer starts, explicit twilight/Asr choices, optional night estimates, a seven-day schedule, the next calculated start and a JSON export. It uses no prayer-data service. The [complete local compositions](core/local/COMPOSED.md) use independently checked SPA astronomy; they are distinct from official institution calendars.
 - **Start local app calculations:** the [local point core](core/local/) accepts coordinates, a civil date, IANA timezone and an explicit documented profile. Read the [local validation contract](docs/LOCAL-VALIDATION.md) for numerical evidence, rule coverage and physical limits.
 - **Explore the Diyanet calendar reconstruction:** the [standalone offline reconstruction](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
 - **Understand the Diyanet default:** version 1.2 adopts `civil-date`; the [scope, comparison and migration](core/diyanet/CIVIL-DATE.md) explain the existing Pacific gains, individual regressions, coordinate-symmetry checks and explicit historical replay.
@@ -33,6 +34,9 @@ git clone https://github.com/MelikhanKundakci/prayer-times-research.git
 cd prayer-times-research
 npm ci
 npm test
+
+# Open a usable local calculator at http://127.0.0.1:4377.
+npm run preview:local
 
 # List the available method families.
 node scripts/run.mjs --list

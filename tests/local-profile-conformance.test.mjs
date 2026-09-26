@@ -54,5 +54,5 @@ test('every registered local profile obeys the shared UTC, role, precision, avai
   let cases=0;
   for(const profile of LOCAL_PROFILES)for(const [latitude,longitude,timeZone] of profile==='kemenag-worked-example-point-v1'?indonesia:world)
     for(const date of dates){conform(calculateLocalDay({date,latitude,longitude,timeZone,profile}));cases++;}
-  assert.equal(cases,195);
+  assert.equal(cases,755);
 });

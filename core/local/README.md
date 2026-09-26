@@ -1,6 +1,6 @@
 # Local point calculations under documented rules
 
-This is the shared implementation of the app's primary goal: compute astronomical events at a supplied GPS point and apply an explicitly named, documented prayer rule. Matching a city calendar is a separate compatibility question. No city lookup, empirical city correction, prayer API or reference calendar enters this calculation.
+This is the shared implementation of the app's primary goal: compute astronomical events at a supplied point and apply an explicitly named prayer-rule profile. Matching a city calendar is a separate compatibility question. No city lookup, empirical city correction, prayer API or reference calendar enters this calculation.
 
 The first profile, `diyanet-published-point-v1`, independently applies published Diyanet criteria and margins to continuous point astronomy. It is **not an official Diyanet GPS service or its undisclosed production algorithm**. The [rule contract](RULES.md) identifies the evidence, interpretations and missing regional policies. The earlier [Diyanet calendar reconstruction](../diyanet/) remains available for its different research purpose.
 
@@ -30,7 +30,7 @@ All five fields are required; unknown fields and executable/getter inputs are re
 
 ## Shared profile registry
 
-Version **0.4.0** defines all local profiles in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution. Six profiles are available: the two existing Diyanet-inspired variants, Egyptian published angles, FCNA USA and Canada recommendations, and a bounded continuous-point adaptation of the Kemenag worked example. Read [PROFILES.md](PROFILES.md) for the exact source-versus-convention boundary.
+Version **0.5.0** defines **22 local profiles** in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution: six existing institution-inspired or worked-example profiles, plus 16 explicitly composed five-prayer profiles. Read [PROFILES.md](PROFILES.md) for the source-versus-convention boundary and [COMPOSED.md](COMPOSED.md) for the compositions. The angle/night variants require opting into their estimate rule.
 
 ```js
 import {calculateLocalDay, listLocalProfiles, getLocalProfile} from './core/local/index.mjs';
@@ -54,7 +54,7 @@ An astronomical marker is not automatically a selected prayer start. Egypt and F
 
 `coverage.complete` checks the presence of all six output fields. `coverage.prayerStartsComplete` additionally requires all five prayer names to carry `prayer-start-model` roles and available values; it stays false for the current Egypt/FCNA angle-only profiles. `coverage.nonPrayerStartEvents` lists the remaining geometric markers among those five names. Neither completeness field is institutional endorsement or notification approval.
 
-## Optional local summer calculation
+## Explicit local summer calculation
 
 Introduced in version **0.3.0**, a second explicitly selected profile, `local-northern-seasonal-v1`, supplies seasonal estimates. It inherits the ordinary point rules and northern threshold, and uses a fully specified local night-fraction policy for northern Fajr/Isha. It can produce a complete annual series at supported real-horizon points, including summer dates with no true Fajr or Isha crossing. It does not change the first profile or claim to recover Diyanet's undisclosed transition algorithm.
 
@@ -91,9 +91,9 @@ The seasonal policy requires a complete annual context within 2002–2097. It do
 
 ## Astronomy and selected prayer times
 
-`astronomy` retains the raw solar-cycle events. The model evaluates the published [USNO approximate coordinates](https://aa.usno.navy.mil/faq/sun_approx) at each trial event instant and solves altitude crossings continuously. It uses a level, unobstructed horizon with an explicit solar-center threshold: −50 arcminutes in the existing and angle-only profiles, and −1° in the Kemenag worked-example adaptation. It does not model terrain, observer height, changing weather or topocentric solar parallax. The numerical root tolerance is not a statement of observational accuracy.
+`astronomy` retains the raw solar-cycle events. The 16 new compositions explicitly select the Reda–Andreas Solar Position Algorithm (SPA) point implementation in [`../astronomy/spa-point.mjs`](../astronomy/spa-point.mjs) and continuously solve crossings at the requested location. The six earlier profiles retain their prior USNO numerical model. Each profile keeps its own thresholds, roles and conventions. The SPA point model uses a level, unobstructed horizon; it does not model terrain, observer height, changing weather or a local skyline. The numerical root tolerance is not a statement of observational accuracy. See the [SPA method, assumptions and independent implementation evidence](../astronomy/SPA-POINT.md).
 
-The current named profiles use a shadow factor of one beyond the shadow at that day's meridian transit. The raw kernel also supports independently verified factor-two geometry for future explicitly sourced profiles. That noon reference stays fixed while the afternoon Sun moves. This is an explicit conventional interpretation of the noon-shadow criterion. Raw crossings carry their direction and physical availability; a grazing contact is not silently turned into a crossing.
+The six earlier profiles retain their documented factor-one rules where selected; the 16 new compositions explicitly offer factor one or two beyond the shadow at that day's meridian transit. That noon reference stays fixed while the afternoon Sun moves. This is an explicit conventional interpretation of the noon-shadow criterion. Raw crossings carry their direction and physical availability; a grazing contact is not silently turned into a crossing.
 
 For the two Diyanet-inspired profiles, `events` contains the **selected** times after the published margins. GPS does not automatically remove Temkin. The profile retains Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0 minutes. `sunrise` is the profile's adjusted sunrise marker, seven minutes before `astronomy.events.sunrise`, the model's horizon crossing. It is not a prayer-start event. The standard twilight angles are 18° Fajr and 17° Isha. See [the rule evidence](RULES.md) for dates and scope.
 
@@ -114,7 +114,7 @@ When the northern noon Sun is not above the geometric horizon, the documented As
 
 Every selected event keeps its selected `rawEpochMilliseconds` (fractional for model instants, whole-minute for minute-defined rules), integer `epochMilliseconds`/`utc`, actual `localDate`, and separate nearest-minute display fields. `time` is display rounding, not an alarm cursor. `seconds`, where provided, is model precision, not a guarantee of true prayer onset to the second. Actual event dates can differ from the owning solar-cycle date; no modulo-day conversion conceals that fact. `coverage.complete` means all six selected fields have results under the implemented profile, not institutional approval or guaranteed physical accuracy.
 
-This version supplies a day calculation. App notification scheduling, location permissions, timezone discovery and platform background execution are outside this module.
+The day API is complemented by [`schedule.mjs`](schedule.mjs), which calculates a bounded 1–31-day local schedule with actual event dates and exports `nextLocalPrayer(schedule, nowEpochMilliseconds)` to select the next event by absolute instant. The browser prototype uses the seven-day schedule to display the next available event in that period. The app requests location only after user action; the operating system timezone is a suggested IANA identifier that the user must verify for the selected point. Platform background execution and mobile alarms remain outside this module.
 
 ## Acceptance and limits
 

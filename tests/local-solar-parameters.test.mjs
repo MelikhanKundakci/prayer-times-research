@@ -41,7 +41,7 @@ test('each configurable solar rule changes only its corresponding event family',
 });
 
 test('parameter input remains strict about own data, explicit undefined, and domains',()=>{
-  for(const key of ['fajrAngleDegrees','ishaAngleDegrees','asrShadowFactor','horizonDepressionDegrees']){
+  for(const key of ['fajrAngleDegrees','ishaAngleDegrees','asrShadowFactor','horizonDepressionDegrees','solarModel']){
     assert.throws(()=>calculateLocalSolarDay({...base,[key]:undefined}),/must be omitted or set/);
   }
   const getter={...base};Object.defineProperty(getter,'fajrAngleDegrees',{enumerable:true,get(){return 18;}});
@@ -49,6 +49,7 @@ test('parameter input remains strict about own data, explicit undefined, and dom
   for(const value of [0,-1,30.01,NaN,Infinity])assert.throws(()=>calculateLocalSolarDay({...base,fajrAngleDegrees:value}),/fajrAngleDegrees/);
   for(const value of [0,-1,30.01,NaN,Infinity])assert.throws(()=>calculateLocalSolarDay({...base,ishaAngleDegrees:value}),/ishaAngleDegrees/);
   for(const value of [0,1.5,3,NaN,Infinity])assert.throws(()=>calculateLocalSolarDay({...base,asrShadowFactor:value}),/asrShadowFactor/);
+  for(const value of [null,'unknown',0])assert.throws(()=>calculateLocalSolarDay({...base,solarModel:value}),/solarModel/);
   for(const value of [0,-1,2.01,NaN,Infinity])assert.throws(()=>calculateLocalSolarDay({...base,horizonDepressionDegrees:value}),/horizonDepressionDegrees/);
 });
 

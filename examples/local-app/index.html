@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light"><title>Lokale Gebetszeiten</title>
+  <link rel="stylesheet" href="/style.css"><script type="module" src="/app.mjs"></script>
+</head>
+<body>
+  <main>
+    <header><a class="brand" href="/">◒ &nbsp; NAMAZ VAKTI</a><span class="tag">Lokal berechnet · ohne Werbung</span></header>
+    <section class="intro"><p class="eyebrow">DEIN ORT. DEINE AUSWAHL.</p><h1>Deine Gebetszeiten.<br><span>Nachvollziehbar berechnet.</span></h1><p>Wähle den Ort und die Regeln, denen du folgen möchtest. Die Berechnung bleibt auf deinem Gerät.</p><a class="adjust" href="#settings-title">Ort &amp; Regeln anpassen ↓</a></section>
+    <div class="layout">
+      <section class="settings panel" aria-labelledby="settings-title">
+        <h2 id="settings-title">Ort &amp; Berechnung</h2>
+        <form id="settings">
+          <label>Beispielort<select id="city"><option value="frankfurt">Frankfurt am Main</option><option value="istanbul">Istanbul</option><option value="cairo">Kairo</option><option value="new-york">New York</option><option value="jakarta">Jakarta</option><option value="sydney">Sydney</option><option value="oslo">Oslo</option><option value="custom">Eigener Standort</option></select></label>
+          <div class="two"><label>Breitengrad<input id="latitude" type="number" min="-89" max="89" step="any" required value="50.1109"></label><label>Längengrad<input id="longitude" type="number" min="-180" max="180" step="any" required value="8.6821"></label></div>
+          <button class="secondary" type="button" id="gps">Meinen Standort verwenden</button>
+          <p id="location-note" class="hint">Beispielkoordinaten. GPS wird nur auf deinen Wunsch abgefragt.</p>
+          <label>Zeitzone<input id="timeZone" required value="Europe/Berlin" list="zones" autocomplete="off"></label>
+          <datalist id="zones"><option value="Europe/Berlin"><option value="Europe/Istanbul"><option value="Africa/Cairo"><option value="America/New_York"><option value="Asia/Jakarta"><option value="Asia/Makassar"><option value="Asia/Jayapura"><option value="Australia/Sydney"><option value="Europe/Oslo"><option value="UTC"></datalist>
+          <label>Datum<input id="date" type="date" min="2002-01-01" max="2097-12-24" required></label>
+          <label>Berechnungsprofil<select id="profile" required></select></label>
+          <div id="composition">
+            <label>Fajr / Ischa<select id="angles"><option value="18-17">18° / 17° · veröffentlichte Diyanet-Winkel</option><option value="19p5-17p5">19,5° / 17,5° · ägyptische Winkel</option><option value="15-15">15° / 15° · FCNA USA 2017</option><option value="13-13">13° / 13° · FCNA Kanada 2017</option></select></label>
+            <label>Asr-Schattenfaktor<select id="shadow"><option value="1">Faktor 1 · Asr-i evvel</option><option value="2">Faktor 2 · Asr-i sani</option></select></label>
+            <label>Kurze Nächte<select id="night"><option value="physical">Keine Schätzungen</option><option value="angle-night">Winkelanteil der Nacht · Schätzregel</option></select></label>
+            <p class="hint">Eigene lokale Kombination: Dhuhr eine Minute nach Sonnenhöchststand, Maghrib beim berechneten Sonnenuntergang. Die optionale Nachtregel begrenzt auch sehr frühe/späte Dämmerungszeiten. Sie ist keine allgemeingültige religiöse Vorgabe.</p>
+          </div>
+          <p class="hint" id="profile-note"></p>
+          <label class="checkbox"><input id="seconds" type="checkbox"> Modellzeiten mit Sekunden anzeigen</label>
+          <p class="hint">Sekunden zeigen die Rechenauflösung, nicht eine nachgewiesene Genauigkeit der beobachteten Gebetszeit.</p>
+          <button type="submit" id="calculate">Gebetszeiten berechnen</button>
+        </form>
+      </section>
+      <section class="results" aria-label="Berechnete Gebetszeiten">
+        <div id="message" role="status" aria-live="polite">Berechnung wird vorbereitet …</div>
+        <div id="output" hidden>
+          <section class="next panel"><p class="eyebrow">NÄCHSTER BERECHNETER GEBETSBEGINN</p><div id="next">—</div><p id="next-detail"></p></section>
+          <div class="day-heading"><div><h2 id="day-title"></h2><p id="day-subtitle"></p></div><button id="download" class="text-button" type="button">Ergebnis speichern ↓</button></div>
+          <div id="prayers" class="prayers"></div>
+          <p id="sunrise" class="sunrise"></p>
+          <section class="panel explanation"><h2>Was diese Zeiten bedeuten</h2><p id="coverage"></p><p id="method-summary"></p><details><summary>Regeln und Quellen ansehen</summary><div id="rules"></div></details></section>
+          <section class="panel week"><h2>Die nächsten sieben Tage</h2><div class="table-scroll"><table><thead><tr><th>Datum</th><th>Fajr</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Ischa</th></tr></thead><tbody id="week"></tbody></table></div><p class="hint">* Geschätzter Beginn nach der ausdrücklich gewählten Regel. Ein Strich bedeutet: kein berechneter Gebetsbeginn verfügbar.</p></section>
+        </div>
+      </section>
+    </div>
+    <footer>Lokaler Prototyp · Keine Verbindung zu Gebetszeiten-APIs · Keine Gerätebenachrichtigungen<br>Freier Horizont ohne Gelände- oder Höhenmodell. Eigenständige Berechnung, kein offizieller Kalender eines Instituts.</footer>
+  </main>
+</body>
+</html>

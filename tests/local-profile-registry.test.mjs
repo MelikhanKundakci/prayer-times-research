@@ -6,9 +6,10 @@ const EXPECTED=[
   'diyanet-published-point-v1','local-northern-seasonal-v1','egypt-published-angles-point-v1',
   'fcna-usa-2017-point-v1','fcna-canada-2017-point-v1','kemenag-worked-example-point-v1',
 ];
+for(const pair of ['18-17','19p5-17p5','15-15','13-13'])for(const factor of [1,2])for(const mode of ['physical','angle-night'])EXPECTED.push(`local-${pair}-shadow${factor}-${mode}-v1`);
 const EVENTS=['fajr','sunrise','dhuhr','asr','maghrib','isha'];
 
-test('registry has the six stable unique profile IDs and returns detached ID lists',()=>{
+test('registry has stable unique profile IDs and returns detached definitions',()=>{
   assert.deepEqual(LOCAL_PROFILES,EXPECTED);
   assert.equal(new Set(LOCAL_PROFILES).size,LOCAL_PROFILES.length);
   const first=listLocalProfiles();

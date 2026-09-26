@@ -24,6 +24,10 @@ The research modules use selected numerical parameters from public descriptions,
 
 The project contains original implementations of published astronomical equations, with attribution to [USNO's approximate solar coordinates](https://aa.usno.navy.mil/faq/sun_approx) and [NOAA/Meeus calculation details](https://gml.noaa.gov/grad/solcalc/calcdetails.html). Downloaded source-site JavaScript and original publications used during research are not part of this code distribution. Scientific attribution does not confer rights to unrelated institutional data.
 
+## SPA coefficient tables
+
+The [SPA point provider](core/astronomy/SPA-POINT.md) independently implements the Reda–Andreas equations. Its [coefficient tables](core/astronomy/spa-coefficients.json) were extracted from [pvlib-python v0.13.1](https://github.com/pvlib/pvlib-python/blob/v0.13.1/pvlib/spa.py) under BSD-3-Clause. Preserve the full [pvlib license and copyright notice](core/astronomy/LICENSE-pvlib-SPA), including the pvlib contributors and Sandia attributions, when redistributing these tables in source or binary form. The earlier [SPA research experiment](methods/diyanet/research/spa-reference/README.md) retains the same notice with its own table copy. No institutional endorsement is implied.
+
 ## Excluded research material
 
 This repository does not redistribute the downloaded institutional calendars, PDFs, website HTML, raw API responses, extracted clock tables, screenshots, HTTP headers or public-site client keys used in the private evaluation archive. Published research summaries describe comparisons; access to an original public URL is not a redistribution license. Reproducing source-based comparisons may require obtaining the relevant material independently under its applicable terms.

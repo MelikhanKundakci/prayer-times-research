@@ -1,0 +1,415 @@
+{
+  "schema": "local-spa-comparison/v1",
+  "scope": "Synthetic geocentric astronomical-model comparison under identical declared conventions; not observed or institutional prayer accuracy",
+  "caseCount": 348,
+  "source": {
+    "name": "pvlib-python v0.13.1 SPA",
+    "url": "https://github.com/pvlib/pvlib-python/blob/v0.13.1/pvlib/spa.py",
+    "sha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+    "license": "BSD-3-Clause"
+  },
+  "conventions": {
+    "UT1MinusUTCSeconds": 0,
+    "deltaTSeconds": 69.184,
+    "coordinates": "apparent geocentric; GAST-based hour angle",
+    "topocentricParallax": false,
+    "weatherRefractionApplied": false,
+    "asr": "fixed transit declination with explicitly selected shadow factor"
+  },
+  "oldUSNO": {
+    "allFields": {
+      "fields": 2034,
+      "bothCalculated": 1874,
+      "bothUnavailable": 158,
+      "modelOnly": 2,
+      "referenceOnly": 0,
+      "nearestMinuteMatches": 1849,
+      "maximumAbsoluteSeconds": 104.69517874717712,
+      "medianAbsoluteSeconds": 0.48378992080688477,
+      "p95AbsoluteSecondsNearestRank": 2.0336174964904785,
+      "minimumSignedSeconds": -37.283732414245605,
+      "maximumSignedSeconds": 104.69517874717712,
+      "withinOneSecond": 1568,
+      "withinFiveSeconds": 1841,
+      "withinTenSeconds": 1849,
+      "withinThirtySeconds": 1866,
+      "withinSixtySeconds": 1873
+    },
+    "byEvent": {
+      "fajr": {
+        "fields": 339,
+        "bothCalculated": 285,
+        "bothUnavailable": 54,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 279,
+        "maximumAbsoluteSeconds": 43.569960594177246,
+        "medianAbsoluteSeconds": 0.5321700572967529,
+        "p95AbsoluteSecondsNearestRank": 2.416398525238037,
+        "minimumSignedSeconds": -3.7029287815093994,
+        "maximumSignedSeconds": 43.569960594177246,
+        "withinOneSecond": 227,
+        "withinFiveSeconds": 276,
+        "withinTenSeconds": 278,
+        "withinThirtySeconds": 283,
+        "withinSixtySeconds": 285
+      },
+      "sunrise": {
+        "fields": 339,
+        "bothCalculated": 316,
+        "bothUnavailable": 23,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 312,
+        "maximumAbsoluteSeconds": 104.69517874717712,
+        "medianAbsoluteSeconds": 0.5525243282318115,
+        "p95AbsoluteSecondsNearestRank": 2.665344715118408,
+        "minimumSignedSeconds": -2.1768040657043457,
+        "maximumSignedSeconds": 104.69517874717712,
+        "withinOneSecond": 234,
+        "withinFiveSeconds": 303,
+        "withinTenSeconds": 306,
+        "withinThirtySeconds": 312,
+        "withinSixtySeconds": 315
+      },
+      "dhuhr": {
+        "fields": 339,
+        "bothCalculated": 339,
+        "bothUnavailable": 0,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 335,
+        "maximumAbsoluteSeconds": 2.612241268157959,
+        "medianAbsoluteSeconds": 0.3910176753997803,
+        "p95AbsoluteSecondsNearestRank": 1.0489873886108398,
+        "minimumSignedSeconds": -1.2238306999206543,
+        "maximumSignedSeconds": 2.612241268157959,
+        "withinOneSecond": 316,
+        "withinFiveSeconds": 339,
+        "withinTenSeconds": 339,
+        "withinThirtySeconds": 339,
+        "withinSixtySeconds": 339
+      },
+      "asr": {
+        "fields": 339,
+        "bothCalculated": 331,
+        "bothUnavailable": 8,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 330,
+        "maximumAbsoluteSeconds": 3.8720593452453613,
+        "medianAbsoluteSeconds": 0.46488189697265625,
+        "p95AbsoluteSecondsNearestRank": 1.2468538284301758,
+        "minimumSignedSeconds": -1.289959192276001,
+        "maximumSignedSeconds": 3.8720593452453613,
+        "withinOneSecond": 289,
+        "withinFiveSeconds": 331,
+        "withinTenSeconds": 331,
+        "withinThirtySeconds": 331,
+        "withinSixtySeconds": 331
+      },
+      "maghrib": {
+        "fields": 339,
+        "bothCalculated": 314,
+        "bothUnavailable": 23,
+        "modelOnly": 2,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 306,
+        "maximumAbsoluteSeconds": 37.283732414245605,
+        "medianAbsoluteSeconds": 0.45075953006744385,
+        "p95AbsoluteSecondsNearestRank": 2.828919291496277,
+        "minimumSignedSeconds": -37.283732414245605,
+        "maximumSignedSeconds": 4.513708114624023,
+        "withinOneSecond": 262,
+        "withinFiveSeconds": 304,
+        "withinTenSeconds": 307,
+        "withinThirtySeconds": 312,
+        "withinSixtySeconds": 314
+      },
+      "isha": {
+        "fields": 339,
+        "bothCalculated": 289,
+        "bothUnavailable": 50,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 287,
+        "maximumAbsoluteSeconds": 22.831017017364502,
+        "medianAbsoluteSeconds": 0.4628875255584717,
+        "p95AbsoluteSecondsNearestRank": 2.4005496501922607,
+        "minimumSignedSeconds": -22.831017017364502,
+        "maximumSignedSeconds": 4.988940715789795,
+        "withinOneSecond": 240,
+        "withinFiveSeconds": 288,
+        "withinTenSeconds": 288,
+        "withinThirtySeconds": 289,
+        "withinSixtySeconds": 289
+      }
+    },
+    "byCohort": {
+      "existing-profile-grid": {
+        "fields": 1650,
+        "bothCalculated": 1558,
+        "bothUnavailable": 92,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 1547,
+        "maximumAbsoluteSeconds": 24.62224817276001,
+        "medianAbsoluteSeconds": 0.4356917142868042,
+        "p95AbsoluteSecondsNearestRank": 1.3119118213653564,
+        "minimumSignedSeconds": -22.831017017364502,
+        "maximumSignedSeconds": 24.62224817276001,
+        "withinOneSecond": 1394,
+        "withinFiveSeconds": 1556,
+        "withinTenSeconds": 1556,
+        "withinThirtySeconds": 1558,
+        "withinSixtySeconds": 1558
+      },
+      "horizon-transition": {
+        "fields": 48,
+        "bothCalculated": 26,
+        "bothUnavailable": 22,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 24,
+        "maximumAbsoluteSeconds": 19.49173140525818,
+        "medianAbsoluteSeconds": 0.6710771322250366,
+        "p95AbsoluteSecondsNearestRank": 18.900500774383545,
+        "minimumSignedSeconds": -18.900500774383545,
+        "maximumSignedSeconds": 19.49173140525818,
+        "withinOneSecond": 16,
+        "withinFiveSeconds": 17,
+        "withinTenSeconds": 23,
+        "withinThirtySeconds": 26,
+        "withinSixtySeconds": 26
+      },
+      "near-tangent-stress": {
+        "fields": 144,
+        "bothCalculated": 106,
+        "bothUnavailable": 36,
+        "modelOnly": 2,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 97,
+        "maximumAbsoluteSeconds": 104.69517874717712,
+        "medianAbsoluteSeconds": 0.6275718212127686,
+        "p95AbsoluteSecondsNearestRank": 35.89575147628784,
+        "minimumSignedSeconds": -37.283732414245605,
+        "maximumSignedSeconds": 104.69517874717712,
+        "withinOneSecond": 60,
+        "withinFiveSeconds": 84,
+        "withinTenSeconds": 86,
+        "withinThirtySeconds": 98,
+        "withinSixtySeconds": 105
+      },
+      "year-range-edge": {
+        "fields": 192,
+        "bothCalculated": 184,
+        "bothUnavailable": 8,
+        "modelOnly": 0,
+        "referenceOnly": 0,
+        "nearestMinuteMatches": 181,
+        "maximumAbsoluteSeconds": 4.988940715789795,
+        "medianAbsoluteSeconds": 0.9819307923316956,
+        "p95AbsoluteSecondsNearestRank": 3.239037036895752,
+        "minimumSignedSeconds": -2.416398525238037,
+        "maximumSignedSeconds": 4.988940715789795,
+        "withinOneSecond": 98,
+        "withinFiveSeconds": 184,
+        "withinTenSeconds": 184,
+        "withinThirtySeconds": 184,
+        "withinSixtySeconds": 184
+      }
+    }
+  },
+  "explicitSPA": {
+    "result": "PASS",
+    "cases": 348,
+    "calculatedCycles": 339,
+    "expectedOwnershipRejections": 9,
+    "eventTimestampComparisons": 1874,
+    "unavailableEventComparisons": 160,
+    "cycleBoundaryComparisons": 678,
+    "nearestMinuteMatches": 1874,
+    "maximumRootDifferenceSeconds": 0.00022649765014648438,
+    "maximumCycleBoundaryDifferenceSeconds": 0.00022983551025390625,
+    "medianAbsoluteRootDifferenceSeconds": 7.939338684082031e-05,
+    "p95AbsoluteRootDifferenceSeconds": 0.00017023086547851562,
+    "maximumThresholdDifferenceDegrees": 4.950635457134922e-10,
+    "rootToleranceSeconds": 0.01,
+    "usno": {
+      "sharedEvents": 1874,
+      "bothUnavailable": 158,
+      "modelOnly": 2,
+      "referenceOnly": 0,
+      "nearestMinuteMatches": 1849,
+      "maximumAbsoluteSeconds": 104.69517874717712,
+      "medianAbsoluteSeconds": 0.48378992080688477,
+      "p95AbsoluteSeconds": 2.0336174964904785
+    },
+    "fixtureSha256": "9f0d6bd56cbf0e540b935b78d58ca8b9012e1986d1bee0867db816a1f684e904",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "byCohort": {
+      "existing-profile-grid": {
+        "cases": 275,
+        "comparedEvents": 1558,
+        "unavailableEvents": 92,
+        "maximumRootDifferenceSeconds": 0.00022649765014648438
+      },
+      "near-tangent-stress": {
+        "cases": 24,
+        "comparedEvents": 106,
+        "unavailableEvents": 38,
+        "maximumRootDifferenceSeconds": 0.00017023086547851562
+      },
+      "year-range-edge": {
+        "cases": 32,
+        "comparedEvents": 184,
+        "unavailableEvents": 8,
+        "maximumRootDifferenceSeconds": 0.00021696090698242188
+      },
+      "horizon-transition": {
+        "cases": 8,
+        "comparedEvents": 26,
+        "unavailableEvents": 22,
+        "maximumRootDifferenceSeconds": 0.00015616416931152344
+      }
+    }
+  },
+  "timeScaleSensitivity": {
+    "scenarios": 24,
+    "comparedFields": 96,
+    "availabilityChanges": 0,
+    "maximumAbsoluteSeconds": 0.18668174743652344,
+    "largest": [
+      {
+        "id": "deltaT:edmonton:2098-12-21:9.184",
+        "event": "maghrib",
+        "deltaTSeconds": 9.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": -0.18668174743652344
+      },
+      {
+        "id": "deltaT:edmonton:2098-12-21:129.184",
+        "event": "maghrib",
+        "deltaTSeconds": 129.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": 0.18652057647705078
+      },
+      {
+        "id": "deltaT:edmonton:2098-12-21:129.184",
+        "event": "asr",
+        "deltaTSeconds": 129.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": 0.18643951416015625
+      },
+      {
+        "id": "deltaT:edmonton:2098-12-21:9.184",
+        "event": "isha",
+        "deltaTSeconds": 9.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": -0.1863231658935547
+      },
+      {
+        "id": "deltaT:edmonton:2098-12-21:129.184",
+        "event": "isha",
+        "deltaTSeconds": 129.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": 0.186309814453125
+      },
+      {
+        "id": "deltaT:edmonton:2098-12-21:9.184",
+        "event": "asr",
+        "deltaTSeconds": 9.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": -0.18619346618652344
+      },
+      {
+        "id": "deltaT:oslo:2098-12-21:9.184",
+        "event": "maghrib",
+        "deltaTSeconds": 9.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": -0.18610191345214844
+      },
+      {
+        "id": "deltaT:oslo:2098-12-21:9.184",
+        "event": "isha",
+        "deltaTSeconds": 9.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": -0.18610191345214844
+      },
+      {
+        "id": "deltaT:oslo:2098-12-21:129.184",
+        "event": "maghrib",
+        "deltaTSeconds": 129.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": 0.18592262268066406
+      },
+      {
+        "id": "deltaT:oslo:2098-12-21:129.184",
+        "event": "asr",
+        "deltaTSeconds": 129.184,
+        "baselineAvailable": true,
+        "scenarioAvailable": true,
+        "scenarioMinusBaselineSeconds": 0.18584918975830078
+      }
+    ]
+  },
+  "numericalRefinement": {
+    "result": "PASS",
+    "selection": "All 20 largest shared-event records and every availability mismatch; unique cases only",
+    "cases": 15,
+    "eventStatesCompared": 90,
+    "stepSeconds": 30,
+    "maximumTimestampDifferenceSeconds": 0.0003151893615722656
+  },
+  "evidencePins": {
+    "preImplementationFreezeSha256": "8c9d1f6e1ff8af630c30d38148a3368aa77796ddeb20478b0293ea42f9bce972",
+    "originalSPAReferenceSha256": "c9d7b252f6a68648197efb3a9e50325284d6d19b3ef9832baef4f3ab73b04809"
+  },
+  "publicPins": [
+    {
+      "path": "core/astronomy/spa-point.mjs",
+      "sha256": "db2cd841739692ab1c7269b914dd69958d7815770a07f19da8e12551916578e8"
+    },
+    {
+      "path": "core/astronomy/spa-coefficients.json",
+      "sha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b"
+    },
+    {
+      "path": "core/astronomy/LICENSE-pvlib-SPA",
+      "sha256": "a02e12ddaada3cf0d5dbdd8affdd577c2eec640758a95842a304f7513b8c0be4"
+    },
+    {
+      "path": "core/astronomy/spa-point-fixtures.json",
+      "sha256": "4e3308f67ce9475e723ba52c01ec0cc23230b846b345e015523c0895e59cbddd"
+    },
+    {
+      "path": "core/local/verification/spa-fixtures.json",
+      "sha256": "9f0d6bd56cbf0e540b935b78d58ca8b9012e1986d1bee0867db816a1f684e904"
+    },
+    {
+      "path": "core/local/verification/spa-verify.mjs",
+      "sha256": "7a0fc8e495803e3ddc590e8d4c17b701faaaed9705d5b15dd786ca25935d18d3"
+    },
+    {
+      "path": "core/local/verification/spa-oracle.py",
+      "sha256": "a8c942741833a78f2b49bb9adbabbc7762d99607e9a4663fa0ec00cfc2037e00"
+    },
+    {
+      "path": "tests/local-spa-reference.test.mjs",
+      "sha256": "950bbca3fa50e8793810f5a077d9c09823846dd788a4fb7359b6ab8d44ee7ad6"
+    }
+  ]
+}

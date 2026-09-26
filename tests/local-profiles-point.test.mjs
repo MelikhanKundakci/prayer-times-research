@@ -111,10 +111,12 @@ test('CLI lists exact known profiles and labels geometry markers without automat
   assert.ok(shown.stdout.includes('complete set of five prayer-start models is not available'));
 });
 
-test('all new profiles run with no access to network, source calendars or legacy implementations',()=>{
+test('representative legacy and composed profiles run with no access to network, source calendars or legacy implementations',()=>{
   const inputCases=[{...base,profile:EGYPT},{...base,profile:USA},{...base,profile:CANADA},
-    {...base,latitude:-6.2,longitude:106.8,timeZone:'Asia/Jakarta',profile:KEMENAG}];
-  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/local/profiles.mjs','core/local/selection.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
+    {...base,latitude:-6.2,longitude:106.8,timeZone:'Asia/Jakarta',profile:KEMENAG},
+    {...base,profile:'local-18-17-shadow2-physical-v1'},
+    {...base,date:'2027-06-21',latitude:59.9139,longitude:10.7522,timeZone:'Europe/Oslo',profile:'local-18-17-shadow1-angle-night-v1'}];
+  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/local/profiles.mjs','core/local/selection.mjs','core/local/night-fraction.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
   const program=`
     import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
     import {calculateLocalDay} from ${JSON.stringify(new URL('core/local/index.mjs',root).href)};

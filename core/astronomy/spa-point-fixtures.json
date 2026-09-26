@@ -1,0 +1,648 @@
+{
+  "schema": "independent-spa-point-coordinates/v1",
+  "sampleCount": 80,
+  "reference": "Direct retained pvlib-python v0.13.1 sst output; independent UTC-phase arithmetic",
+  "referenceSourceSha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+  "records": [
+    {
+      "jdUtc": 2451544.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.61012289726007,
+      "rightAscensionDegrees": 280.7494761383914,
+      "declination": -23.069570704974357,
+      "effectiveEquationOfTimeHours": -0.050956885970674645
+    },
+    {
+      "jdUtc": 2451647.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.67959374213949,
+      "rightAscensionDegrees": 21.225512109905427,
+      "declination": 8.920003951347468,
+      "effectiveEquationOfTimeHours": -0.011394557354357933
+    },
+    {
+      "jdUtc": 2451726.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.997588281309,
+      "rightAscensionDegrees": 100.32289418055188,
+      "declination": 23.098551392120992,
+      "effectiveEquationOfTimeHours": -0.0633537298447815
+    },
+    {
+      "jdUtc": 2451835.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.227221766711,
+      "rightAscensionDegrees": 202.90490635956445,
+      "declination": -9.577519667426039,
+      "effectiveEquationOfTimeHours": 0.24648769430647613
+    },
+    {
+      "jdUtc": 2452275.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.11769440019509,
+      "rightAscensionDegrees": 281.31799338806377,
+      "declination": -23.03101077461686,
+      "effectiveEquationOfTimeHours": -0.05501993575316343
+    },
+    {
+      "jdUtc": 2452377.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.2016239435905,
+      "rightAscensionDegrees": 20.773083351109527,
+      "declination": 8.74173773342629,
+      "effectiveEquationOfTimeHours": -0.01309729333789657
+    },
+    {
+      "jdUtc": 2452456.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.5199640184546,
+      "rightAscensionDegrees": 99.81961150741921,
+      "declination": 23.132219928352043,
+      "effectiveEquationOfTimeHours": -0.061643169159560786
+    },
+    {
+      "jdUtc": 2452565.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.74993069445793,
+      "rightAscensionDegrees": 202.45824067986305,
+      "declination": -9.404489854871578,
+      "effectiveEquationOfTimeHours": 0.2444460014696972
+    },
+    {
+      "jdUtc": 2453005.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.64137250056461,
+      "rightAscensionDegrees": 280.7848969557714,
+      "declination": -23.070056898641703,
+      "effectiveEquationOfTimeHours": -0.05123496690903646
+    },
+    {
+      "jdUtc": 2453108.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.711366724073535,
+      "rightAscensionDegrees": 21.25288124551763,
+      "declination": 8.931802986285195,
+      "effectiveEquationOfTimeHours": -0.011100967599567942
+    },
+    {
+      "jdUtc": 2453187.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.0297171332326,
+      "rightAscensionDegrees": 100.35793518168855,
+      "declination": 23.098785138635712,
+      "effectiveEquationOfTimeHours": -0.06354787312564743
+    },
+    {
+      "jdUtc": 2453296.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.2598789394133,
+      "rightAscensionDegrees": 202.94229314355113,
+      "declination": -9.593230210949741,
+      "effectiveEquationOfTimeHours": 0.2461723868875159
+    },
+    {
+      "jdUtc": 2453736.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.15219364869843,
+      "rightAscensionDegrees": 281.35890225107426,
+      "declination": -23.03015951917203,
+      "effectiveEquationOfTimeHours": -0.0554472433869743
+    },
+    {
+      "jdUtc": 2453838.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.236480182506,
+      "rightAscensionDegrees": 20.810762266725664,
+      "declination": 8.757389225737608,
+      "effectiveEquationOfTimeHours": -0.013285471784606291
+    },
+    {
+      "jdUtc": 2453917.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.55506061255016,
+      "rightAscensionDegrees": 99.86763407481807,
+      "declination": 23.13081358308483,
+      "effectiveEquationOfTimeHours": -0.06250490071311106
+    },
+    {
+      "jdUtc": 2454026.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.78533633863003,
+      "rightAscensionDegrees": 202.48796492379776,
+      "declination": -9.416387672423031,
+      "effectiveEquationOfTimeHours": 0.24482476148552337
+    },
+    {
+      "jdUtc": 2454466.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.67749446804817,
+      "rightAscensionDegrees": 280.82340053223345,
+      "declination": -23.067407614105214,
+      "effectiveEquationOfTimeHours": -0.051393740840937126
+    },
+    {
+      "jdUtc": 2454569.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.74753807782657,
+      "rightAscensionDegrees": 21.293825789991647,
+      "declination": 8.948082208204806,
+      "effectiveEquationOfTimeHours": -0.011419180314300092
+    },
+    {
+      "jdUtc": 2454648.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.0658876086254,
+      "rightAscensionDegrees": 100.3997004344199,
+      "declination": 23.095763856586434,
+      "effectiveEquationOfTimeHours": -0.06392085828154753
+    },
+    {
+      "jdUtc": 2454757.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.2960265580684,
+      "rightAscensionDegrees": 202.96997884582362,
+      "declination": -9.603321507557496,
+      "effectiveEquationOfTimeHours": 0.24673651464635593
+    },
+    {
+      "jdUtc": 2455197.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.18769540137677,
+      "rightAscensionDegrees": 281.3910091272753,
+      "declination": -23.0255958397061,
+      "effectiveEquationOfTimeHours": -0.05522091828848753
+    },
+    {
+      "jdUtc": 2455299.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.27174796599475,
+      "rightAscensionDegrees": 20.84250592363012,
+      "declination": 8.76916230295018,
+      "effectiveEquationOfTimeHours": -0.01305053001231992
+    },
+    {
+      "jdUtc": 2455378.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.59008683844024,
+      "rightAscensionDegrees": 99.90235277442726,
+      "declination": 23.126229651330327,
+      "effectiveEquationOfTimeHours": -0.0624843989610478
+    },
+    {
+      "jdUtc": 2455487.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.8200131916864,
+      "rightAscensionDegrees": 202.5255783236384,
+      "declination": -9.42964347973729,
+      "effectiveEquationOfTimeHours": 0.2446289916999073
+    },
+    {
+      "jdUtc": 2455927.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.71040600062108,
+      "rightAscensionDegrees": 280.85678891471207,
+      "declination": -23.061352151844954,
+      "effectiveEquationOfTimeHours": -0.051425530834651074
+    },
+    {
+      "jdUtc": 2456030.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.77994237865264,
+      "rightAscensionDegrees": 21.316125986475285,
+      "declination": 8.95533794533069,
+      "effectiveEquationOfTimeHours": -0.010745573358137032
+    },
+    {
+      "jdUtc": 2456109.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.09792597709117,
+      "rightAscensionDegrees": 100.4367758876573,
+      "declination": 23.089469382972656,
+      "effectiveEquationOfTimeHours": -0.0642566639329895
+    },
+    {
+      "jdUtc": 2456218.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.32752827057163,
+      "rightAscensionDegrees": 203.00507883982704,
+      "declination": -9.615476161649607,
+      "effectiveEquationOfTimeHours": 0.2464966292130119
+    },
+    {
+      "jdUtc": 2456658.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.21695910798778,
+      "rightAscensionDegrees": 281.4214184774604,
+      "declination": -23.019769458702356,
+      "effectiveEquationOfTimeHours": -0.05529729452676027
+    },
+    {
+      "jdUtc": 2456760.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.30055169325312,
+      "rightAscensionDegrees": 20.869560046696133,
+      "declination": 8.778263196138752,
+      "effectiveEquationOfTimeHours": -0.012933889732829584
+    },
+    {
+      "jdUtc": 2456839.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.6184997209951,
+      "rightAscensionDegrees": 99.93542607924941,
+      "declination": 23.120538378641005,
+      "effectiveEquationOfTimeHours": -0.06279509377886824
+    },
+    {
+      "jdUtc": 2456948.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.84791532541124,
+      "rightAscensionDegrees": 202.54777014539488,
+      "declination": -9.437302277939096,
+      "effectiveEquationOfTimeHours": 0.24500967916446256
+    },
+    {
+      "jdUtc": 2457388.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.73667416360466,
+      "rightAscensionDegrees": 280.88262463870024,
+      "declination": -23.057499946792188,
+      "effectiveEquationOfTimeHours": -0.05139670156828894
+    },
+    {
+      "jdUtc": 2457491.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.805859581196756,
+      "rightAscensionDegrees": 21.345718227038567,
+      "declination": 8.96578641726562,
+      "effectiveEquationOfTimeHours": -0.010990575892748211
+    },
+    {
+      "jdUtc": 2457570.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.12368586082846,
+      "rightAscensionDegrees": 100.45923408021591,
+      "declination": 23.086088533621833,
+      "effectiveEquationOfTimeHours": -0.06403655118774623
+    },
+    {
+      "jdUtc": 2457679.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.35306131341633,
+      "rightAscensionDegrees": 203.02537160960105,
+      "declination": -9.622677852179523,
+      "effectiveEquationOfTimeHours": 0.24684598075105743
+    },
+    {
+      "jdUtc": 2458119.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.24217355333805,
+      "rightAscensionDegrees": 281.4521512556863,
+      "declination": -23.017395693812052,
+      "effectiveEquationOfTimeHours": -0.055665183385137124
+    },
+    {
+      "jdUtc": 2458221.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.325883306766386,
+      "rightAscensionDegrees": 20.89220412343842,
+      "declination": 8.787126420870457,
+      "effectiveEquationOfTimeHours": -0.012754720614763453
+    },
+    {
+      "jdUtc": 2458300.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.64390520796445,
+      "rightAscensionDegrees": 99.96076120405604,
+      "declination": 23.11920272717046,
+      "effectiveEquationOfTimeHours": -0.06279040296802425
+    },
+    {
+      "jdUtc": 2458409.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.87348005127905,
+      "rightAscensionDegrees": 202.57292234429104,
+      "declination": -9.447069992292269,
+      "effectiveEquationOfTimeHours": 0.24503718096257215
+    },
+    {
+      "jdUtc": 2458849.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.76349543495766,
+      "rightAscensionDegrees": 280.9123146111783,
+      "declination": -23.057193764196594,
+      "effectiveEquationOfTimeHours": -0.05158794830996195
+    },
+    {
+      "jdUtc": 2458952.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.83302738234769,
+      "rightAscensionDegrees": 21.3720268590833,
+      "declination": 8.97731566691017,
+      "effectiveEquationOfTimeHours": -0.010933297952336336
+    },
+    {
+      "jdUtc": 2459031.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.1511943540299,
+      "rightAscensionDegrees": 100.49874279664625,
+      "declination": 23.085725108377193,
+      "effectiveEquationOfTimeHours": -0.06483656606967543
+    },
+    {
+      "jdUtc": 2459140.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.38104567590665,
+      "rightAscensionDegrees": 203.0531656124695,
+      "declination": -9.63434684672599,
+      "effectiveEquationOfTimeHours": 0.24685867139251438
+    },
+    {
+      "jdUtc": 2459580.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.27227229068386,
+      "rightAscensionDegrees": 281.4751220465198,
+      "declination": -23.018440830007737,
+      "effectiveEquationOfTimeHours": -0.055189986950980104
+    },
+    {
+      "jdUtc": 2459682.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.35653814030832,
+      "rightAscensionDegrees": 20.926531758021625,
+      "declination": 8.802106578468699,
+      "effectiveEquationOfTimeHours": -0.01299957401751423
+    },
+    {
+      "jdUtc": 2459761.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.67494437824433,
+      "rightAscensionDegrees": 100.0047748883355,
+      "declination": 23.11932703563936,
+      "effectiveEquationOfTimeHours": -0.06365537056799439
+    },
+    {
+      "jdUtc": 2459870.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.90506606776023,
+      "rightAscensionDegrees": 202.60111440980018,
+      "declination": -9.459098091447979,
+      "effectiveEquationOfTimeHours": 0.2452634443607091
+    },
+    {
+      "jdUtc": 2460310.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.79713990332314,
+      "rightAscensionDegrees": 280.94434619063145,
+      "declination": -23.05687425597089,
+      "effectiveEquationOfTimeHours": -0.051480422382472094
+    },
+    {
+      "jdUtc": 2460413.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.867071545717586,
+      "rightAscensionDegrees": 21.400639808660166,
+      "declination": 8.989403998448104,
+      "effectiveEquationOfTimeHours": -0.010571217032800935
+    },
+    {
+      "jdUtc": 2460492.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.1855468292048,
+      "rightAscensionDegrees": 100.53371783597736,
+      "declination": 23.085175804960432,
+      "effectiveEquationOfTimeHours": -0.06487807034676128
+    },
+    {
+      "jdUtc": 2460601.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.41578826761713,
+      "rightAscensionDegrees": 203.08500677314888,
+      "declination": -9.647400254207323,
+      "effectiveEquationOfTimeHours": 0.24705210012792236
+    },
+    {
+      "jdUtc": 2461041.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.30811673890726,
+      "rightAscensionDegrees": 281.5181518575115,
+      "declination": -23.015533037363006,
+      "effectiveEquationOfTimeHours": -0.05566901113553513
+    },
+    {
+      "jdUtc": 2461143.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.39254574577057,
+      "rightAscensionDegrees": 20.950976716363336,
+      "declination": 8.811729374991238,
+      "effectiveEquationOfTimeHours": -0.01222873087614668
+    },
+    {
+      "jdUtc": 2461222.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.71102556143876,
+      "rightAscensionDegrees": 100.03630087184867,
+      "declination": 23.11710077475875,
+      "effectiveEquationOfTimeHours": -0.06335169058924445
+    },
+    {
+      "jdUtc": 2461331.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.94121806277246,
+      "rightAscensionDegrees": 202.64050887514009,
+      "declination": -9.47458511667472,
+      "effectiveEquationOfTimeHours": 0.24504727967219728
+    },
+    {
+      "jdUtc": 2461771.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 107.83308509467892,
+      "rightAscensionDegrees": 280.9855376698739,
+      "declination": -23.05261913178407,
+      "effectiveEquationOfTimeHours": -0.051830174908250606
+    },
+    {
+      "jdUtc": 2461874.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.90283959294554,
+      "rightAscensionDegrees": 21.433746314844342,
+      "declination": 9.001449936630637,
+      "effectiveEquationOfTimeHours": -0.010393780963215703
+    },
+    {
+      "jdUtc": 2461953.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 287.2211700205224,
+      "rightAscensionDegrees": 100.57296338052704,
+      "declination": 23.08038627981784,
+      "effectiveEquationOfTimeHours": -0.06511956056222819
+    },
+    {
+      "jdUtc": 2462062.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 319.4511572541928,
+      "rightAscensionDegrees": 203.12193587048984,
+      "declination": -9.66095520453765,
+      "effectiveEquationOfTimeHours": 0.24694809274357113
+    },
+    {
+      "jdUtc": 2462502.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 108.341992310297,
+      "rightAscensionDegrees": 281.5544624148248,
+      "declination": -23.010045008576494,
+      "effectiveEquationOfTimeHours": -0.055831343530437984
+    },
+    {
+      "jdUtc": 2462604.062847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 43.425989516336,
+      "rightAscensionDegrees": 20.991371554141498,
+      "declination": 8.826204613495873,
+      "effectiveEquationOfTimeHours": -0.012692135356995019
+    },
+    {
+      "jdUtc": 2462683.5211805557,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 286.7441104826496,
+      "rightAscensionDegrees": 100.07755753716108,
+      "declination": 23.11108811069479,
+      "effectiveEquationOfTimeHours": -0.06389647352934844
+    },
+    {
+      "jdUtc": 2462792.312847222,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 318.9737979624394,
+      "rightAscensionDegrees": 202.66414641844838,
+      "declination": -9.48227097924724,
+      "effectiveEquationOfTimeHours": 0.24564343676277264
+    },
+    {
+      "jdUtc": 2451988.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 177.59100412751405,
+      "rightAscensionDegrees": 359.4866960934612,
+      "declination": -0.22266374180745144,
+      "effectiveEquationOfTimeHours": -0.12637946439647674
+    },
+    {
+      "jdUtc": 2451989.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 358.08382481238147,
+      "rightAscensionDegrees": 359.94259776482124,
+      "declination": -0.025033903865918118,
+      "effectiveEquationOfTimeHours": -0.12391819682931858
+    },
+    {
+      "jdUtc": 2452081.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 269.2560344099067,
+      "rightAscensionDegrees": 89.66918856289999,
+      "declination": 23.438176956260627,
+      "effectiveEquationOfTimeHours": -0.027543610199548613
+    },
+    {
+      "jdUtc": 2452082.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 89.74887969735181,
+      "rightAscensionDegrees": 90.18948330037833,
+      "declination": 23.43842855737884,
+      "effectiveEquationOfTimeHours": -0.029373573535101134
+    },
+    {
+      "jdUtc": 2452175.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 1.906835279795274,
+      "rightAscensionDegrees": 180.03470163282333,
+      "declination": -0.014991897422973563,
+      "effectiveEquationOfTimeHours": 0.12480890979812974
+    },
+    {
+      "jdUtc": 2452176.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 182.39966368114588,
+      "rightAscensionDegrees": 180.4837883004211,
+      "declination": -0.2097082260807886,
+      "effectiveEquationOfTimeHours": 0.12772502538165137
+    },
+    {
+      "jdUtc": 2452264.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 89.62955407191951,
+      "rightAscensionDegrees": 269.10475238228463,
+      "declination": -23.436600268126554,
+      "effectiveEquationOfTimeHours": 0.034986779308993236
+    },
+    {
+      "jdUtc": 2452265.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 270.1223741836136,
+      "rightAscensionDegrees": 269.65974889533373,
+      "declination": -23.43879352720445,
+      "effectiveEquationOfTimeHours": 0.030841685885324446
+    },
+    {
+      "jdUtc": 2487417.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 178.094292023801,
+      "rightAscensionDegrees": 359.9353542585716,
+      "declination": -0.028054362989642805,
+      "effectiveEquationOfTimeHours": -0.12273748231803931
+    },
+    {
+      "jdUtc": 2487418.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 358.5871075363472,
+      "rightAscensionDegrees": 0.3913617122844435,
+      "declination": 0.16953006158186937,
+      "effectiveEquationOfTimeHours": -0.1202836117291478
+    },
+    {
+      "jdUtc": 2487510.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 269.7598594615933,
+      "rightAscensionDegrees": 90.25665745028134,
+      "declination": 23.428508425653863,
+      "effectiveEquationOfTimeHours": -0.03311986591253723
+    },
+    {
+      "jdUtc": 2487511.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 90.2526756002452,
+      "rightAscensionDegrees": 90.77675042661276,
+      "declination": 23.426817194780835,
+      "effectiveEquationOfTimeHours": -0.03493832175783685
+    },
+    {
+      "jdUtc": 2487604.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 2.4110670874244784,
+      "rightAscensionDegrees": 180.5074855773914,
+      "declination": -0.2196796521328113,
+      "effectiveEquationOfTimeHours": 0.12690543400220425
+    },
+    {
+      "jdUtc": 2487605.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 182.90387765082093,
+      "rightAscensionDegrees": 180.95643384944213,
+      "declination": -0.4142206550566593,
+      "effectiveEquationOfTimeHours": 0.1298295867585864
+    },
+    {
+      "jdUtc": 2487693.5,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 90.13397026550628,
+      "rightAscensionDegrees": 269.6126266488671,
+      "declination": -23.428339770827833,
+      "effectiveEquationOfTimeHours": 0.03475624110927811
+    },
+    {
+      "jdUtc": 2487694.0,
+      "deltaTSeconds": 69.184,
+      "apparentSiderealTimeDegrees": 270.62681399465254,
+      "rightAscensionDegrees": 270.16763221735675,
+      "declination": -23.428734452580795,
+      "effectiveEquationOfTimeHours": 0.0306121184863855
+    }
+  ]
+}
