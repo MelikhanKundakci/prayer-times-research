@@ -110,7 +110,7 @@ test('Annual edge-year restriction does not suppress independently valid daily h
 });
 
 test('Northern guard remains local with calendar data, oracle fixtures, legacy modules and network denied',()=>{
-  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
+  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
   const program=`
     import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
     import {calculateLocalDay} from ${JSON.stringify(new URL('core/local/index.mjs',root).href)};

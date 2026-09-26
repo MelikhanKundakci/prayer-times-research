@@ -216,14 +216,14 @@ export function buildNorthernContext(input){
       &&rawIsha.epochMilliseconds<next.nextRawFajrEpochMilliseconds;
     entry.fajr={eligible:fajrEligible,reason:fajrEligible?null:!isReal(rawFajr)?'real-fajr-unavailable'
       :fajrPhase<=annualFajrUpperPhase?'inside-or-before-annual-fajr-transition-envelope':'fails-direct-fajr-estimate-bound',
-      rawEpochMilliseconds:isReal(rawFajr)?rawFajr.epochMilliseconds:null,phaseMinutes:fajrPhase,
+      rawEpochMilliseconds:isReal(rawFajr)?rawFajr.epochMilliseconds:null,rawReason:rawFajr?.reason??null,phaseMinutes:fajrPhase,
       upperEstimateEpochMilliseconds:fajrUpper,transitionUpperEpochMilliseconds:fajrTransitionUpper,
       annualTransitionUpperPhaseMinutes:annualFajrUpperPhase,
       directCondition:isReal(rawFajr)&&Number.isFinite(fajrTransitionUpper)?rawFajr.epochMilliseconds>fajrTransitionUpper:false};
     entry.isha={eligible:ishaEligible,reason:ishaEligible?null:!isReal(rawIsha)?'real-isha-unavailable'
       :missingNight?'following-fajr-is-seasonally-absent'
       :ishaPhase>=annualIshaLowerPhase?'inside-or-after-annual-isha-transition-envelope':'fails-direct-isha-estimate-bound',
-      rawEpochMilliseconds:isReal(rawIsha)?rawIsha.epochMilliseconds:null,phaseMinutes:ishaPhase,
+      rawEpochMilliseconds:isReal(rawIsha)?rawIsha.epochMilliseconds:null,rawReason:rawIsha?.reason??null,phaseMinutes:ishaPhase,
       estimateEpochMilliseconds:ishaEstimate,transitionLowerEpochMilliseconds:ishaTransitionLower,
       annualTransitionLowerPhaseMinutes:annualIshaLowerPhase,
       directCondition:isReal(rawIsha)&&Number.isFinite(ishaTransitionLower)?rawIsha.epochMilliseconds<ishaTransitionLower:false,

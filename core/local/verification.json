@@ -1,7 +1,7 @@
 {
   "schema": "local-point-verification/v1",
   "recordedDate": "2026-09-26",
-  "localVersion": "0.2.0",
+  "localVersion": "0.3.0",
   "profile": "diyanet-published-point-v1",
   "purpose": "Numerical implementation and rule-contract verification for local point calculations, not city-calendar replication",
   "numerical": {
@@ -36,7 +36,10 @@
     "tests/local-point.test.mjs",
     "tests/local-northern-point.test.mjs",
     "tests/local-northern-context.test.mjs",
-    "tests/local-northern-oracle.test.mjs"
+    "tests/local-northern-oracle.test.mjs",
+    "tests/local-summer-policy.test.mjs",
+    "tests/local-summer-point.test.mjs",
+    "tests/local-summer-oracle.test.mjs"
   ],
   "regressionScope": [
     "fixed-transit factor-one Asr geometry",
@@ -53,7 +56,12 @@
     "real/missing-Fajr night thirds with frozen quotient",
     "year-boundary and skipped-date context failures",
     "bounded annual context cache with detached returned diagnostics",
-    "valid daily horizons preserved when edge-year padding blocks annual twilight"
+    "valid daily horizons preserved when edge-year padding blocks annual twilight",
+    "explicit opt-in local summer profile with unchanged original-profile selection",
+    "full-year fixed night quotient, candidate provenance and one-sided cubic blend",
+    "physical-absence boundaries and raw year-seam preflight",
+    "all padded selected nights and supported annual six-event order",
+    "independent summer candidates, selected UTC instants, modes and weights"
   ],
   "boundaries": {
     "institutionalEquivalence": false,
@@ -82,7 +90,10 @@
       "minimum": 2002,
       "maximum": 2097
     },
-    "ordinaryNorthernScope": "Only real-angle events passing both daily and full-year conservative guard; every annual and padded horizon interval must exceed five hours"
+    "ordinaryNorthernScope": "Only real-angle events passing both daily and full-year conservative guard; every annual and padded horizon interval must exceed five hours",
+    "seasonalProfile": "local-northern-seasonal-v1: project-defined annual ratio and interpolation; no institutional or religious approval claimed",
+    "seasonalDomain": "Latitude at least 44.5 north, 2002\u20132097, complete real-horizon annual context with every raw/selected day/night over five hours and all seasonal preflight checks passing; ordinary rules inherited elsewhere",
+    "summerObservedAccuracySeconds": null
   },
   "files": [
     {
@@ -91,7 +102,7 @@
     },
     {
       "path": "core/local/index.mjs",
-      "sha256": "d4eb61253d756267d273d9893d04465e18711915fb68a339e927ce5184ece631"
+      "sha256": "80fee5b6b9d993367be20e2bb8ade3cc2db6869381870e8720bba243c48df1e9"
     },
     {
       "path": "core/local/verification/oracle.py",
@@ -107,7 +118,7 @@
     },
     {
       "path": "core/local/northern.mjs",
-      "sha256": "03ed92d25fac5e9a9976ea494c73b4e719163dcd54aedd1066febeb4c0e5add4"
+      "sha256": "d11c49e6bd5ae2519a127582e31f16d818bd32eff21661b1328f2c3554e94c38"
     },
     {
       "path": "core/local/verification/northern-oracle.py",
@@ -120,22 +131,39 @@
     {
       "path": "core/local/verification/northern-verify.mjs",
       "sha256": "8e72717a94b9a26e8a4bb32c1547ed10a049f7f6b53b1a31a2fae1396f0f6205"
+    },
+    {
+      "path": "core/local/summer.mjs",
+      "sha256": "932e4cdd65e244f4913022da68d7e1788b3f272f304cd0bd90381499db64517a"
+    },
+    {
+      "path": "core/local/verification/summer-oracle.py",
+      "sha256": "2ec63e235913f3ba5ae6924a5745f06d1145166157e503f7143effb5c219a185"
+    },
+    {
+      "path": "core/local/verification/summer-fixtures.json",
+      "sha256": "be6bd66341d1d5e4f4a133453741519dbb2ea42d666614ba999100c02b8ab803"
+    },
+    {
+      "path": "core/local/verification/summer-verify.mjs",
+      "sha256": "12022819c1e52b157304e0817985a8a51213cc44d27144bbb465ad3b8bbd264e"
     }
   ],
   "softwareChecks": {
     "result": "PASS",
-    "nodeTests": 205,
+    "nodeTests": 220,
     "diyanetPythonTests": 61,
     "independentUaeFixtures": 108,
-    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 684 local documentation links verified",
+    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 698 local documentation links verified",
     "commands": [
       "npm test",
       "npm run check",
       "python3 scripts/verify-uae-radial.py",
       "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'"
     ],
-    "localTests": 31,
-    "addedInVersion020": 13
+    "localTests": 46,
+    "addedInVersion020": 13,
+    "addedInVersion030": 15
   },
   "northernNumerical": {
     "result": "PASS",
@@ -217,5 +245,453 @@
       }
     ]
   },
-  "northernInterpretation": "Explicit conservative ordinary-event guard with selected horizon/real-Fajr nights and transit-relative UTC envelopes; not the unpublished Diyanet seasonal transition algorithm"
+  "northernInterpretation": "Explicit conservative ordinary-event guard with selected horizon/real-Fajr nights and transit-relative UTC envelopes; not the unpublished Diyanet seasonal transition algorithm",
+  "profiles": [
+    "diyanet-published-point-v1",
+    "local-northern-seasonal-v1"
+  ],
+  "summerNumerical": {
+    "result": "PASS",
+    "cases": 12,
+    "availableContexts": 11,
+    "blockedContexts": 1,
+    "ownedDays": 4381,
+    "selectedTimestampComparisons": 8032,
+    "candidateTimestampComparisons": 8032,
+    "blockedEventComparisons": 730,
+    "blendArithmeticChecks": 14,
+    "paddingChecks": 44,
+    "gapNeighborChecks": 22,
+    "nightOrderChecks": 4027,
+    "sixEventOrderChecks": 4016,
+    "maximumSelectedDifferenceSeconds": 4.2236328125e-05,
+    "maximumCandidateDifferenceSeconds": 3.6865234375e-05,
+    "maximumWeightDifference": 3.918674995606608e-08,
+    "maximumPhaseJumpDifferenceMinutes": 1.223596012955852e-06,
+    "fixtureSha256": "be6bd66341d1d5e4f4a133453741519dbb2ea42d666614ba999100c02b8ab803",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    },
+    "summaries": [
+      {
+        "id": "bordeaux-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 338,
+            "transition": 27,
+            "night-fraction": 0,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 296,
+            "transition": 41,
+            "night-fraction": 28,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-05-02",
+            "toDate": "2027-05-03",
+            "signedChangeMinutes": -2.0702432576497394,
+            "absoluteChangeMinutes": 2.0702432576497394,
+            "fromMode": "ordinary",
+            "toMode": "ordinary"
+          },
+          "isha": {
+            "fromDate": "2027-05-20",
+            "toDate": "2027-05-21",
+            "signedChangeMinutes": 2.4064718139648438,
+            "absoluteChangeMinutes": 2.4064718139648438,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 240,
+            "transition": 20,
+            "night-fraction": 105,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 204,
+            "transition": 34,
+            "night-fraction": 127,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-23",
+            "toDate": "2027-04-24",
+            "signedChangeMinutes": -4.036964046223958,
+            "absoluteChangeMinutes": 4.036964046223958,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-04-06",
+            "toDate": "2027-04-07",
+            "signedChangeMinutes": 3.093531856282552,
+            "absoluteChangeMinutes": 3.093531856282552,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2028",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 243,
+            "transition": 20,
+            "night-fraction": 103,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 209,
+            "transition": 32,
+            "night-fraction": 125,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2028-04-23",
+            "toDate": "2028-04-24",
+            "signedChangeMinutes": -4.117824576822916,
+            "absoluteChangeMinutes": 4.117824576822916,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2028-04-07",
+            "toDate": "2028-04-08",
+            "signedChangeMinutes": 3.135830643717448,
+            "absoluteChangeMinutes": 3.135830643717448,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "berlin-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 226,
+            "transition": 18,
+            "night-fraction": 121,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 190,
+            "transition": 33,
+            "night-fraction": 142,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-15",
+            "toDate": "2027-04-16",
+            "signedChangeMinutes": -4.402884431966146,
+            "absoluteChangeMinutes": 4.402884431966146,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-03-30",
+            "toDate": "2027-03-31",
+            "signedChangeMinutes": 3.2759222819010416,
+            "absoluteChangeMinutes": 3.2759222819010416,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "edinburgh-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 214,
+            "transition": 16,
+            "night-fraction": 135,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 184,
+            "transition": 27,
+            "night-fraction": 154,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-09",
+            "toDate": "2027-04-10",
+            "signedChangeMinutes": -5.200589916992188,
+            "absoluteChangeMinutes": 5.200589916992188,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-03-26",
+            "toDate": "2027-03-27",
+            "signedChangeMinutes": 3.769387186686198,
+            "absoluteChangeMinutes": 3.769387186686198,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "oslo-2027",
+        "status": "blocked",
+        "counts": {
+          "fajr": {
+            "ordinary": 0,
+            "transition": 0,
+            "night-fraction": 0,
+            "unavailable": 365
+          },
+          "isha": {
+            "ordinary": 0,
+            "transition": 0,
+            "night-fraction": 0,
+            "unavailable": 365
+          }
+        }
+      },
+      {
+        "id": "east-antimeridian-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 243,
+            "transition": 20,
+            "night-fraction": 102,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 208,
+            "transition": 33,
+            "night-fraction": 124,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-25",
+            "toDate": "2027-04-26",
+            "signedChangeMinutes": -4.066593037923177,
+            "absoluteChangeMinutes": 4.066593037923177,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-04-08",
+            "toDate": "2027-04-09",
+            "signedChangeMinutes": 3.1256918782552083,
+            "absoluteChangeMinutes": 3.1256918782552083,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "west-antimeridian-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 243,
+            "transition": 20,
+            "night-fraction": 102,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 208,
+            "transition": 33,
+            "night-fraction": 124,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-25",
+            "toDate": "2027-04-26",
+            "signedChangeMinutes": -4.066593037923177,
+            "absoluteChangeMinutes": 4.066593037923177,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-04-08",
+            "toDate": "2027-04-09",
+            "signedChangeMinutes": 3.1256918782552083,
+            "absoluteChangeMinutes": 3.1256918782552083,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "synthetic-new-york-zone-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 245,
+            "transition": 20,
+            "night-fraction": 100,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 211,
+            "transition": 32,
+            "night-fraction": 122,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-04-25",
+            "toDate": "2027-04-26",
+            "signedChangeMinutes": -4.148177787272135,
+            "absoluteChangeMinutes": 4.148177787272135,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2027-04-09",
+            "toDate": "2027-04-10",
+            "signedChangeMinutes": 3.1672907958984373,
+            "absoluteChangeMinutes": 3.1672907958984373,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "northern-threshold-2027",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 353,
+            "transition": 12,
+            "night-fraction": 0,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 301,
+            "transition": 50,
+            "night-fraction": 14,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2027-05-01",
+            "toDate": "2027-05-02",
+            "signedChangeMinutes": -2.0290994791666668,
+            "absoluteChangeMinutes": 2.0290994791666668,
+            "fromMode": "ordinary",
+            "toMode": "ordinary"
+          },
+          "isha": {
+            "fromDate": "2027-05-23",
+            "toDate": "2027-05-24",
+            "signedChangeMinutes": 2.236316784667969,
+            "absoluteChangeMinutes": 2.236316784667969,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2002",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 239,
+            "transition": 21,
+            "night-fraction": 105,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 203,
+            "transition": 34,
+            "night-fraction": 128,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2002-04-22",
+            "toDate": "2002-04-23",
+            "signedChangeMinutes": -4.0357612670898435,
+            "absoluteChangeMinutes": 4.0357612670898435,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2002-04-05",
+            "toDate": "2002-04-06",
+            "signedChangeMinutes": 3.073202652994792,
+            "absoluteChangeMinutes": 3.073202652994792,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      },
+      {
+        "id": "frankfurt-2097",
+        "status": "available",
+        "counts": {
+          "fajr": {
+            "ordinary": 240,
+            "transition": 20,
+            "night-fraction": 105,
+            "unavailable": 0
+          },
+          "isha": {
+            "ordinary": 204,
+            "transition": 34,
+            "night-fraction": 127,
+            "unavailable": 0
+          }
+        },
+        "maxDailyPhaseJumps": {
+          "fajr": {
+            "fromDate": "2097-04-21",
+            "toDate": "2097-04-22",
+            "signedChangeMinutes": -4.026251383463542,
+            "absoluteChangeMinutes": 4.026251383463542,
+            "fromMode": "transition",
+            "toMode": "transition"
+          },
+          "isha": {
+            "fromDate": "2097-04-05",
+            "toDate": "2097-04-06",
+            "signedChangeMinutes": 3.088119588216146,
+            "absoluteChangeMinutes": 3.088119588216146,
+            "fromMode": "transition",
+            "toMode": "transition"
+          }
+        }
+      }
+    ],
+    "timestampToleranceSeconds": 0.1,
+    "weightTolerance": 1e-07
+  },
+  "summerInterpretation": "Separately selected project policy with one annual q, effective-night Fajr multiplier 11/8 and one-sided 20-minute cubic transition; not a reconstruction of the source missing-Fajr two-degree conversion or institutional seasonal algorithm"
 }

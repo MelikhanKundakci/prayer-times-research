@@ -25,7 +25,11 @@ For the factor-1 Asr crossing, let `h₀` be the modeled solar altitude at that 
 
 The −50′ horizon is the model's conventional flat apparent-horizon threshold. The Temkin page establishes the published minute margins, but it does not specify the solver's horizon/refraction model, ephemeris, point height, numerical root tolerance, or final display rounding. Those are implementation choices and limitations, not additional Diyanet criteria.
 
-## Northern seasonal policy is intentionally incomplete
+## Separate local seasonal profile
+
+`local-northern-seasonal-v1` is an explicit opt-in extension documented in [SEASONAL.md](SEASONAL.md). It inherits this profile's point geometry, margins, latitude threshold and non-twilight rules, but selects northern Fajr/Isha through its own frozen-ratio and smooth-transition policy. Its rule identifiers use its own profile name. Replacement and blended events are `estimated`; unchanged real twilight remains `calculated`. It does not claim to complete the institutional algorithm described below. Where the local seasonal domain or checks fail, the selected twilight stays `policy-blocked`.
+
+## Northern policy of the original profile is intentionally incomplete
 
 At latitude **44.5° north and above**, raw twilight crossings are not automatically complete selected Fajr or Isha beginnings. The archived detailed high-latitude criteria specify true Fajr at −18° and true Isha at −16°, but then add seasonal selection: Isha may be replaced by Maghrib plus one-third of the religious night; Fajr may be replaced by a determined value; missing-Fajr periods use a frozen night ratio; and gradual transition rules apply. The technical criteria also specify five-hour minimum day/night handling and identify 44.5° as the threshold. The newer [Diyanet activity report](https://kurul.diyanet.gov.tr/tr/faaliyetler/2020-2025/ibadet-vakitleri-dini-gun-ve-gecelerin-tespiti/ileri-enlemlerde-namaz-vakitleri) summarizes the current scope as 45° north and above and says implementation began in 2023. These documents have different scopes and dates; the local profile conservatively uses 44.5° as its explicit policy gate and does not claim that this is a complete current worldwide implementation boundary.
 
@@ -42,7 +46,7 @@ These northern rules are not mirrored into the southern hemisphere. A southern e
 - **`unavailable`**: required geometry does not exist and no supported substitute applies.
 - **`policy-blocked`**: geometry may exist, but selection requires an unimplemented seasonal/horizon policy or the event fails a required safety check. Keep raw diagnostic crossings separate and leave selected time null.
 
-After margins are applied, check chronology without altering event clocks. Fajr must precede sunrise, Dhuhr must precede Asr, and Maghrib must precede Isha. Equal Dhuhr/Asr instants are permitted only for the documented northern no-daylight-shadow Dhuhr substitute, which is marked `estimated`; every other equality or reversal blocks the affected selection. The one-day API cannot establish `Isha < next Fajr` without evaluating the following day; a multi-day schedule consumer must perform that comparison before treating the night as a complete sequence. If a night event falls after local midnight, report the actual local date and UTC instant; do not assume the event belongs to the label date's clock day.
+After margins are applied, check chronology without altering event clocks. Fajr must precede sunrise, Dhuhr must precede Asr, and Maghrib must precede Isha. Equal Dhuhr/Asr instants are permitted only for the documented northern no-daylight-shadow Dhuhr substitute, which is marked `estimated`; every other equality or reversal blocks the affected selection. The original profile does not supply missing summer Fajr for a cross-night comparison. The optional seasonal profile evaluates the padded annual sequence and checks `Isha < next Fajr`; a multi-day schedule consumer must preserve this ordering when combining years, profiles or locations. If a night event falls after local midnight, report the actual local date and UTC instant; do not assume the event belongs to the label date's clock day.
 
 ## Source trail and limits
 

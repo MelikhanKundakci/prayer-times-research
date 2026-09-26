@@ -1,6 +1,6 @@
-import {calculateLocalDay,LOCAL_EVENTS,LOCAL_PROFILE} from '../core/local/index.mjs';
+import {calculateLocalDay,LOCAL_EVENTS,LOCAL_PROFILES} from '../core/local/index.mjs';
 
-const usage=`Usage: npm run calculate:local -- YYYY-MM-DD LATITUDE LONGITUDE IANA_TIME_ZONE ${LOCAL_PROFILE} [--json]`;
+const usage=`Usage: npm run calculate:local -- YYYY-MM-DD LATITUDE LONGITUDE IANA_TIME_ZONE ${LOCAL_PROFILES.join('|')} [--json]`;
 const args=process.argv.slice(2);
 if(args.length===1&&args[0]==='--help')console.log(usage);
 else{
@@ -18,6 +18,7 @@ else{
         console.log(`${name.padEnd(10)}${(e.time??'—').padEnd(8)}${(e.seconds??'—').padEnd(15)}${e.status}${e.reason?` · ${e.reason}`:''}`);
       }
       console.log('Level-horizon model with published margins; seconds are model precision.');
+      console.log('Estimated events follow the named local policy; they are not observed signs or an official timetable.');
       console.log('Blocked or unavailable events have no selected prayer time.');
     }
   }catch(error){console.error(error.message);process.exitCode=1;}
