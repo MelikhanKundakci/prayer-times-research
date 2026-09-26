@@ -4,6 +4,8 @@ Reviewed **2026-09-25**. The objective is an offline calculation from explicit l
 
 Prayer-specific evidence clarified **2026-09-26**. Primary publications confirm distinctions already present in the code; no new calendar comparison or formula change follows.
 
+See the per-prayer operational boundary in [LOCAL-RULE-AUDIT.md](LOCAL-RULE-AUDIT.md).
+
 ## Current primary evidence
 
 | Element | Evidence and scope | Runtime consequence |

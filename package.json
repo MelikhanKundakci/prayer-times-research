@@ -19,7 +19,8 @@
     "examples:generate": "node core/timezones/with-tzdata.mjs scripts/generate-examples.mjs",
     "calculate:diyanet": "node core/timezones/with-tzdata.mjs scripts/calculate-diyanet.mjs",
     "calculate:local": "node core/timezones/with-tzdata.mjs scripts/calculate-local.mjs",
-    "preview:local": "node core/timezones/with-tzdata.mjs scripts/local-app.mjs"
+    "preview:local": "node core/timezones/with-tzdata.mjs scripts/local-app.mjs",
+    "compare:diyanet": "node core/timezones/with-tzdata.mjs scripts/compare-diyanet.mjs"
   },
   "dependencies": {
     "adhan": "4.4.6"
