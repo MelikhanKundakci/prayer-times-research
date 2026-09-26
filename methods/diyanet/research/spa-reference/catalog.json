@@ -1,0 +1,740 @@
+{
+  "cases": [
+    {
+      "id": "berlin-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "berlin-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "frankfurt-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 50.11666667,
+        "longitude": 8.683333333,
+        "timeZone": "Europe/Berlin"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "oslo-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 59.9076424165,
+        "longitude": 10.840360556,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "stockholm-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "stockholm-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 59.32531504,
+        "longitude": 18.0603652,
+        "timeZone": "Europe/Stockholm"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "helsinki-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "helsinki-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 60.17523,
+        "longitude": 24.94459,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "tromso-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "tromso-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "bodo-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "bodo-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 67.28324,
+        "longitude": 14.38305,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "kiruna-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "kiruna-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 67.85572,
+        "longitude": 20.22513,
+        "timeZone": "Europe/Stockholm"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "reykjavik-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "reykjavik-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 64.1289,
+        "longitude": -21.9082,
+        "timeZone": "Atlantic/Reykjavik"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "trondheim-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "trondheim-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 63.4352,
+        "longitude": 10.39188,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "oulu-2026",
+      "year": 2026,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "oulu-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 65.00637,
+        "longitude": 25.393248,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "zagreb-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 45.8131708,
+        "longitude": 15.9817349,
+        "timeZone": "Europe/Zagreb"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "kuopio-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 62.89256,
+        "longitude": 27.63331,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "narvik-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 68.438284479,
+        "longitude": 17.427768424,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "kirkenes-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 69.727080887,
+        "longitude": 30.044998601,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "vienna-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 48.20849,
+        "longitude": 16.37208,
+        "timeZone": "Europe/Vienna"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "bremen-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 53.07582,
+        "longitude": 8.80717,
+        "timeZone": "Europe/Berlin"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "bergen-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 60.39299,
+        "longitude": 5.32415,
+        "timeZone": "Europe/Oslo"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "rovaniemi-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "north28",
+      "location": {
+        "latitude": 66.49897,
+        "longitude": 25.68867,
+        "timeZone": "Europe/Helsinki"
+      },
+      "region": "Europe"
+    },
+    {
+      "id": "istanbul-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 41.018611,
+        "longitude": 28.964722,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "izmir-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 38.412726,
+        "longitude": 27.138376,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "van-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 38.494565,
+        "longitude": 43.383231,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "ankara-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 39.9198743755027,
+        "longitude": 32.8542709350586,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "adana-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 36.987,
+        "longitude": 35.326,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "karaman-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 37.181,
+        "longitude": 33.214,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "tekirdag-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 40.973,
+        "longitude": 27.511,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "hatay-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "turkey8",
+      "location": {
+        "latitude": 36.2,
+        "longitude": 36.153,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/development-report.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "mexico-city-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "mexico-delhi2",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/report.json",
+      "region": "North America"
+    },
+    {
+      "id": "new-delhi-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "mexico-delhi2",
+      "location": {
+        "latitude": 28.6566562885,
+        "longitude": 77.1323165071,
+        "timeZone": "Asia/Kolkata"
+      },
+      "referenceReport": "research/diyanet-low-latitude-own/report.json",
+      "region": "South Asia"
+    },
+    {
+      "id": "istanbul-2026",
+      "year": 2026,
+      "route": "low",
+      "cohort": "turkey-temporal3",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-coordinate-precision/temporal-report.json",
+      "originalSource": "research/diyanet-coordinate-precision/sources/istanbul-2026.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "ankara-2025",
+      "year": 2025,
+      "route": "low",
+      "cohort": "turkey-temporal3",
+      "location": {
+        "latitude": 39.938,
+        "longitude": 32.848,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-coordinate-precision/continuation-report.json",
+      "originalSource": "research/diyanet-coordinate-precision/sources/ankara-2025.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "adana-2026",
+      "year": 2026,
+      "route": "low",
+      "cohort": "turkey-temporal3",
+      "location": {
+        "latitude": 36.987,
+        "longitude": 35.326,
+        "timeZone": "Europe/Istanbul"
+      },
+      "referenceReport": "research/diyanet-coordinate-precision/continuation-report.json",
+      "originalSource": "research/diyanet-coordinate-precision/sources/adana-2026.json",
+      "region": "Turkey"
+    },
+    {
+      "id": "cape-town-2026",
+      "year": 2026,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "referenceReport": "research/diyanet-south-own/development-report.json",
+      "referenceKey": "cape-town-2026",
+      "region": "Southern Africa"
+    },
+    {
+      "id": "cape-town-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "referenceReport": "research/diyanet-south-own/development-report.json",
+      "referenceKey": "cape-town-2027",
+      "region": "Southern Africa"
+    },
+    {
+      "id": "ushuaia-2026",
+      "year": 2026,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "referenceReport": "research/diyanet-south-own/development-report.json",
+      "referenceKey": "ushuaia-2026",
+      "region": "South America"
+    },
+    {
+      "id": "ushuaia-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "referenceReport": "research/diyanet-south-own/development-report.json",
+      "referenceKey": "ushuaia-2027",
+      "region": "South America"
+    },
+    {
+      "id": "sydney-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -33.88333333,
+        "longitude": 151.2166667,
+        "timeZone": "Australia/Sydney"
+      },
+      "referenceReport": "research/diyanet-south-own/html-2027-diagnostic/report.json",
+      "referenceKey": "sydney",
+      "region": "Oceania"
+    },
+    {
+      "id": "punta-arenas-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "southern6",
+      "location": {
+        "latitude": -53.1627,
+        "longitude": -70.908008,
+        "timeZone": "America/Punta_Arenas"
+      },
+      "referenceReport": "research/diyanet-south-own/html-2027-diagnostic/report.json",
+      "referenceKey": "punta-arenas",
+      "region": "South America"
+    },
+    {
+      "id": "tokyo-2027",
+      "cohort": "new-global3",
+      "route": "low",
+      "year": 2027,
+      "location": {
+        "latitude": 35.68,
+        "longitude": 139.68,
+        "timeZone": "Asia/Tokyo"
+      },
+      "region": "East Asia"
+    },
+    {
+      "id": "nairobi-2027",
+      "cohort": "new-global3",
+      "route": "south",
+      "year": 2027,
+      "location": {
+        "latitude": -1.28,
+        "longitude": 36.82,
+        "timeZone": "Africa/Nairobi"
+      },
+      "region": "East Africa"
+    },
+    {
+      "id": "anchorage-2027",
+      "cohort": "new-global3",
+      "route": "north",
+      "year": 2027,
+      "location": {
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "region": "North America"
+    },
+    {
+      "id": "hobart-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -42.89,
+        "longitude": 147.33,
+        "timeZone": "Australia/Hobart"
+      },
+      "region": "Oceania"
+    },
+    {
+      "id": "apia-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "region": "Oceania"
+    },
+    {
+      "id": "nukualofa-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -21.1345386521,
+        "longitude": -175.223892147,
+        "timeZone": "Pacific/Tongatapu"
+      },
+      "region": "Oceania"
+    },
+    {
+      "id": "jakarta-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -6.17797994918,
+        "longitude": 106.774887126,
+        "timeZone": "Asia/Jakarta"
+      },
+      "region": "Southeast Asia"
+    },
+    {
+      "id": "auckland-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -36.86666667,
+        "longitude": 174.7666667,
+        "timeZone": "Pacific/Auckland"
+      },
+      "region": "Oceania"
+    },
+    {
+      "id": "iqaluit-2027",
+      "year": 2027,
+      "route": "north",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": 63.75,
+        "longitude": -68.5166666667,
+        "timeZone": "America/Iqaluit"
+      },
+      "region": "North America"
+    },
+    {
+      "id": "kathmandu-2027",
+      "year": 2027,
+      "route": "low",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": 27.70877,
+        "longitude": 85.32716,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "region": "South Asia"
+    },
+    {
+      "id": "la-paz-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -16.481233644,
+        "longitude": -68.1257171577,
+        "timeZone": "America/La_Paz"
+      },
+      "region": "South America"
+    },
+    {
+      "id": "suva-2027",
+      "year": 2027,
+      "route": "south",
+      "cohort": "newly-integrated-annual",
+      "location": {
+        "latitude": -18.1179065976,
+        "longitude": 178.491287276,
+        "timeZone": "Pacific/Fiji"
+      },
+      "region": "Oceania"
+    }
+  ]
+}

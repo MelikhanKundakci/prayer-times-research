@@ -1,0 +1,795 @@
+{
+  "scope": "One predeclared apparent-geocentric SPA substitution on 59 previously exposed annuals. Reference implementation and scoring checks pass; the calendar replacement gate fails. No new official-calendar requests or notification/default promotion.",
+  "planText": "# SPA astronomical-reference experiment\n\nDeclared before SPA calendar forecasts or scoring on 2026-09-26. Existing calendar observations are exposed development data, not a holdout.\n\n## One candidate and unchanged control\n\n`baseline` retains the current USNO daily UTC00 recipe exactly. `spa-utc00` substitutes the Reda/Andreas SPA apparent geocentric declination and equation of time at the identical daily solar-carrier UTC00 sample. The declared conversion is UT1=UTC and TT=UT1+69.184 seconds, constant for this experiment. This is a numerical convention, not a reconstructed Diyanet time-scale specification or a claim about future leap seconds. The official SPA worked example is verified separately with its specified deltaT=67 seconds.\n\nKeep daily spherical geometry, latitude/longitude, height model (none), horizon threshold, all angle and shadow rules, Temkin, five-hour limits, solstice envelopes, missing-window/last-real-night quotients, interpolation, carrier selection, IANA zones and nearest-minute rounding unchanged. All downstream numerical quantities and seasonal boundaries are recomputed from the candidate astronomy. Neither city offsets nor new curve parameters are fitted. Do not apply topocentric/refraction additions from a SPA zenith routine to the existing geocentric horizon recipe. Existing USNO continuous-Asr metadata stays diagnostic-only and is omitted from exported candidate timing evidence; it never chooses the prayer clock. The southern continuous solver is outside this daily-recipe experiment.\n\nThis is a compatibility experiment with a documented astronomical reference. Better physical solar coordinates need not reproduce the institutional calendar better. It is not a full continuous-event SPA prayer-time solver.\n\n## Inputs\n\nReuse the complete prior global-numerics50 corpus and append already-exposed Hobart, Apia, Nuku'alofa, Jakarta, Cape Town, Auckland, Iqaluit, Kathmandu, La Paz and Suva 2027 annuals. Deduplicate on original case identity and retain prior full-year coordinates. Anchorage2027 is already in prior50. No new calendar/API retrieval or institute contact. The prepared catalog and all reference mappings/provenance must be frozen before scoring. If an intended addition fails unchanged-baseline reconciliation, disclose and resolve the mapping; never quietly exclude a case based on SPA results.\n\nAll six calendar events and all original days/fields remain in the denominator. Keep printed-date and explicitly conditional evening-cycle source interpretations independently of predictions. They describe the same observations, not two datasets. Source00:00, unavailable fields and date ambiguity stay visible. Baseline raw/rounded output must reconcile with the public unchanged entry points and prior archives.\n\n## Outputs and attribution\n\nSave full candidate and control forecasts, raw UTC instants, rounded UTCs, availability, carrier date, raw declination/EOT/horizon events, adjusted horizon/night duration, seasonal branch, annual anchor metadata and rounding shifts. Separate intermediate model differences from calendar-minute error; the archive does not contain the institution's unrounded seconds. Hash code, constants, sources, references and forecasts before scoring.\n\nReport exact/within-one-minute counts, maximum, signed errors, newly missing values and paired gains/losses by case, event, region, cohort and total. Characterize where the astronomy perturbation is amplified by seasonal branches; no causal attribution of official residuals from mere correlation. Retain changes of branch, anchor, carrier, local event date and chronology as distinct diagnostics.\n\n## Verification and acceptance\n\nVerify official SPA intermediates with their printed precision and compare against a separately executed openly licensed implementation on a deterministic multi-year/time grid. Audit source-table licensing and attribution. Independently verify all scoring decisions, baseline reconciliation and representative raw calendar geometry; verify northern wiring and traces separately. Reusable source-free code/tests may be published even if the calendar candidate fails.\n\nRetain the existing conservative replacement gate: increase total exactness, with no loss of exact or within-one counts, no larger maximum and no new nonzero-source missingness at any case, case/event, event, region or cohort under either source-date interpretation. Preserve individual regressions even if an aggregate passes. A pass would justify further validation, not automatic institutional equivalence or notification eligibility. No new sources or automatic runtime/default promotion in this bounded experiment. If the candidate fails, publish full negative findings and preserve the baseline; do not tune another variant after seeing scores.\n",
+  "declaration": {
+    "declaredAtUtc": "2026-09-26T09:26:28.726597+00:00",
+    "planSha256": "1f8500a51f37d1eda439fbe4adafd6fff53600bf5f91bda8a237ffbe589a2d4e",
+    "candidateForecastsExist": false,
+    "candidateScoresExist": false,
+    "catalogStatus": "prior50 plus explicitly listed10 additions; mapping in preparation before freeze"
+  },
+  "catalogPin": {
+    "recordedAtUtc": "2026-09-26T09:32:58.987042+00:00",
+    "purpose": "Before forecast: resolved declared catalog; CapeTown and Anchorage already present in prior50. No candidate changes.",
+    "cityYears": 59,
+    "days": 21535,
+    "uniquePlannedFields": 129210,
+    "pins": {
+      "PLAN.md": "1f8500a51f37d1eda439fbe4adafd6fff53600bf5f91bda8a237ffbe589a2d4e",
+      "independent-review/catalog.json": "29ebf28e9c46b7dceec38e3f433cbb7bb5744bbe8674ae56823c9bbe5bd673e6",
+      "independent-review/references.json": "e81e30e2a64db84893e0cfda8e942b32afd177d10a5dc21f042ad51d1c3a8978",
+      "independent-review/provenance.json": "5f4f1499649bbf4942477cda03148fe4edcb36aaccd4e0097b103831709161ae"
+    }
+  },
+  "forecastFreeze": {
+    "frozenAtUtc": "2026-09-26T09:33:55.069169+00:00",
+    "purpose": "All candidate forecasts and source-free imports fixed before scoring; existing references are exposed development observations.",
+    "files": [
+      {
+        "path": "public/prayer-times-research/core/astronomy/continuous-solver.mjs",
+        "sha256": "04c8032ddd739d45e3559f97d138f264fff4646e97a2a3c4dfc6de139ad19922"
+      },
+      {
+        "path": "public/prayer-times-research/core/astronomy/noaa-coordinates.mjs",
+        "sha256": "1d10f1037b66af4592629b5c3dbad9fdae8eb99fcb2fc9999781412ebae3b7dc"
+      },
+      {
+        "path": "public/prayer-times-research/core/astronomy/physical-asr-solver.mjs",
+        "sha256": "8ed4b1d5df42c70f2356e63363b68b87a0ee1b72e4c2ce825e561b250bec9064"
+      },
+      {
+        "path": "public/prayer-times-research/core/astronomy/solar-usno-v2.mjs",
+        "sha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/ICU-LICENSE.txt",
+        "sha256": "f72db45707e93c90c4bf400edfa5d38ce44fe692789e385548e627459c1bf6c9"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/bundle.mjs",
+        "sha256": "077b13b92bf22aa9b1b3efca387b7f40982554d3bba095d499e3cd6480f6a415"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/icu-2026d-le/metaZones.res",
+        "sha256": "5b484c7f02c99d5164208ce84e18fba67c6314d77cf60503e2b19f708b66c6da"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/icu-2026d-le/timezoneTypes.res",
+        "sha256": "5e77ce5afb7374a36cbe3be197d0a6deaa919e6f672c2a372f7a9d91b7f8534f"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/icu-2026d-le/windowsZones.res",
+        "sha256": "b8c3a7adb94fd659f8203ee4af4dc72a4e6b14566baac1855c493096f337184b"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/icu-2026d-le/zoneinfo64.res",
+        "sha256": "1407004c74321d5d7c5089f75a63bf70b7fde0da7df96a14dd514716193a12dc"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/manifest.json",
+        "sha256": "2ca6b2910eef8737271991b25e7bfe0eba581ae0a51bceeb0849a7a63566db9f"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/sources/iana-africa.txt",
+        "sha256": "f2851d4be4a4925cbdc9d56e10d780bccadb89d6ffb9aed78c3e35f97c200aed"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/sources/iana-version.txt",
+        "sha256": "e5991d2ec7b3c5fbd147d25d2ac1344d70da4bdaaf88e9df51525b9f72fb53f0"
+      },
+      {
+        "path": "public/prayer-times-research/core/timezones/with-tzdata.mjs",
+        "sha256": "48fd24ddf45052719275f66787ba1babbdad70503088a5db1727844ebecc08d6"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/low-latitude/model.mjs",
+        "sha256": "1f6c00873f3082efa0ce9fa0807a0f2342c1891c437c6794cff8418e2450ebf2"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/missing-window/kernel.mjs",
+        "sha256": "afbb301bab15a7fe15bc085c1454e2a09674b84821f32b76121b8a060b13b40e"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/missing-window/model.mjs",
+        "sha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/missing-window/seasonal.mjs",
+        "sha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/north/solar.mjs",
+        "sha256": "6b51ec5ba8c17b4a241d8bfff144a6d10aa800de79251aa2cbb2f1b0f3f72a14"
+      },
+      {
+        "path": "public/prayer-times-research/methods/diyanet/implementation/south/model.mjs",
+        "sha256": "a01307814863bb712801be2caea0f6b23a6563c937d7905252ae05e51d414797"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/PLAN.md",
+        "sha256": "1f8500a51f37d1eda439fbe4adafd6fff53600bf5f91bda8a237ffbe589a2d4e"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/adapter.mjs",
+        "sha256": "3ef36ed4b578a65f46f4893d3cfabff6fd1ebf17fef10b9d141765c4d988f848"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/README.md",
+        "sha256": "b002cb4a0bafef3ce300250939b05c082333f71604fc661a28fcd977f3ff8055"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/coefficients.json",
+        "sha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/extract-coefficients.py",
+        "sha256": "8326d135ad3548235c7906b7ad4dd959253c2e58f4733caddf937e067de3a299"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/generate-pvlib-fixture.py",
+        "sha256": "42e56f23f6b3eb837e07fcd1c413cc0fd87af00950daba04ff63a9c52261c313"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/pvlib-grid-fixture.json",
+        "sha256": "9897330120d53fa42f5b6317070f19a19b46865ca06dc198da6fb06295c21a2b"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/spa.mjs",
+        "sha256": "de8c185858f37e5d6d25dbc4cb51f4dbc0ff1f9779a6ae342d619454d9205d49"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/spa.test.mjs",
+        "sha256": "25f8651581bee7bdc84eacc170bddd14aaeba2ce153462d5eb22fd9745435d42"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/vendor/LICENSE-pvlib",
+        "sha256": "a02e12ddaada3cf0d5dbdd8affdd577c2eec640758a95842a304f7513b8c0be4"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/vendor/acquisition.json",
+        "sha256": "6ac8f1b29b1aefe40ee08c78dcdcf9295d58ad5f6c631a5235033df2e9a700a9"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/vendor/spa-report.pdf",
+        "sha256": "1b9e2b6131d89ebc17fe4c047e64a0168143c949bfe6fafe06d856d651555cc2"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/astronomy/vendor/spa.py",
+        "sha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/calendar.mjs",
+        "sha256": "b58770105de3e59fcf5bb9d05ff487107fcb47dbe5a387717382dfc442789888"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/catalog-pin.json",
+        "sha256": "d05b837565704250cc76407c4d664d6eded60573827aec52de6e16e2324d25d3"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clone-manifest.json",
+        "sha256": "c6eb988ce7282617bd9913ce45ad71f3626f71349b530a75ff9a6ff9fef8de8d"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/low-latitude/model.mjs",
+        "sha256": "fbbdfe43e47a3ea365d37c511e269cac1caf2167a7f9e9f76ec4bc4b1eede297"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/kernel.mjs",
+        "sha256": "3175dcf03c3f58345235118ca4f93916199dffd0b12c59a622474cc7fe811a4f"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/model.mjs",
+        "sha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/seasonal.mjs",
+        "sha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/north/solar.mjs",
+        "sha256": "2324eaa8aa70a0e9d44bd6f0cc50159e5a6d6cfd013ee026b2e3da18e66dfe03"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/south/model.mjs",
+        "sha256": "9f8b187c9228451ba2b46f88f006e72a6a1cab887aa8db86821852b461bc216f"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/declaration.json",
+        "sha256": "25136497c93ffd6588125ed9364f88a06693e1544a7de7616ef70deaaa7baa4e"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/diagnose.mjs",
+        "sha256": "4538f1b67cd78fb0b77f400d03ca0a914add7d8f113ec9756fa979b9aaef59c2"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/evaluate.mjs",
+        "sha256": "0aa7d5a88b9e0c50b2c1c847a4d67f073faf9a71f4bc6330cb96c8b714db9c1c"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/forecast.json",
+        "sha256": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/forecast.mjs",
+        "sha256": "dbdd9cefc9fdf0eac5ecb0f059567baaecbfddeb3c06183b350be57ad2780a5a"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/freeze.py",
+        "sha256": "e2f1525adf042b301fd3bea8c823fb1c900997f39a678ccd2315e61ad5ae0981"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/independent-review/catalog.json",
+        "sha256": "29ebf28e9c46b7dceec38e3f433cbb7bb5744bbe8674ae56823c9bbe5bd673e6"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/independent-review/prepare.py",
+        "sha256": "2aa4bb75a8ee08d849f0885d12d025c9432ee663095c6d52e92e77198be3e047"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/independent-review/provenance.json",
+        "sha256": "5f4f1499649bbf4942477cda03148fe4edcb36aaccd4e0097b103831709161ae"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/independent-review/references.json",
+        "sha256": "e81e30e2a64db84893e0cfda8e942b32afd177d10a5dc21f042ad51d1c3a8978"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/prepare_clones.py",
+        "sha256": "d56cbba8e8a49610a251be5fcc3cebb73371965b41bd86affe110d9c03827e28"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/traces.json",
+        "sha256": "1f9d293b25549cebf320455e091633250fd5a9de0c78d1a08d0d2f7079ff4b7d"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/transition-audit/test-trace.mjs",
+        "sha256": "95676939d0a259d716559667920cbbb4b35e0ac303f1d50cd3da682c251cd350"
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/transition-audit/trace.mjs",
+        "sha256": "0cb8fd1e4909b0978b373304427c2067e03c32602419f3175fa06dcab79378d4"
+      }
+    ]
+  },
+  "referenceProvenance": {
+    "preparedAtUtc": "2026-09-26T09:31:33.296729+00:00",
+    "baseCatalogSha256": "3b68f1429b4f7963b97bfd164b74eae3ff714db2dff195bab79a3c31ee07c409",
+    "baseReferencesSha256": "0168d8346e26f613205409ceb09b4dcc8a6df95d44363d1262b0c73bb9eea4b3",
+    "caseInputs": {
+      "public/prayer-times-research/methods/diyanet/research/iqaluit-2027-2026-09-25.json": "d2c4cc4e8898fa3dcbb45990fb58c294fe1f12ee5dc512bbf3c6e88d8eb152ee",
+      "research/diyanet-apia-2027-2026-09-25/apia-page.html": "fdfb67d2b74385608afc6f8ae10562a99e074e0033d56f62e2b7eccefc7ab59e",
+      "research/diyanet-apia-2027-2026-09-25/forecast.json": "ef78e2a7b3092e883e6ae464d35e4996afc48803244191cdc99c3f4ad7cd6927",
+      "research/diyanet-apia-2027-2026-09-25/parse.py": "caed12b24b616f90dfc557a39997e0c67ebafc75396c9e110244943b273224b5",
+      "research/diyanet-apia-2027-2026-09-25/reference.json": "e564ac2cc4a0299668a2b263f4f07f8aa0577218f3ad88507e0502a5d2c5ecac",
+      "research/diyanet-civil-ephemeris-2026-09-25/prospective/acquisition.json": "fe76b5256969cd2b2ef921ae9c07314a26d95ebd6fb59a9dacbd8036650f97d2",
+      "research/diyanet-civil-ephemeris-2026-09-25/prospective/forecast.json": "389fa55588c6f77335bb3cf711b80f14668c922dc337a0159f3880d33de69b42",
+      "research/diyanet-civil-ephemeris-2026-09-25/prospective/reference.json": "b20449cf95ca6024b26d983d5d146955090bcb440222e29eff331dd426c48358",
+      "research/diyanet-civil-ephemeris-2026-09-25/prospective/source.html": "cff7558fe2fb08c34e38ccb098bee70c2a6f1a9bed5d3786f91936d1f52e1c62",
+      "research/diyanet-civil-ephemeris-2026-09-25/prospective/tonga-locations.json": "70b0759d1dbb28d21408627a4661462d09082411b94a5dfd8523818e64fd1a56",
+      "research/diyanet-hobart-2027-2026-09-25/forecast.json": "d9eb0f94d8c6900c143dc649cc16d2f1c69562000f83895d9e0208afba158c64",
+      "research/diyanet-hobart-2027-2026-09-25/hobart-page.html": "6a12c675d81cb597d6466a273e7dd7e7d82c3dbfaa12ae5e22adddad29dc71c7",
+      "research/diyanet-hobart-2027-2026-09-25/parse.py": "bb25946e0e2079f2b6e24d14c5e09256e57ea4184ab1b8bd328c21c90be8bbb6",
+      "research/diyanet-hobart-2027-2026-09-25/reference.json": "cddac37a2055e288e33c74ce08bd52be24a59f301eacb1ee17e71534865f2835",
+      "research/diyanet-kathmandu-2027/comparison.json": "503571e26f1ca303a78b3b76c6eb9456b4abc3d9dfe909b7b8e5a58424062aa5",
+      "research/diyanet-kathmandu-2027/forecast.json": "91ee60dc184c3953c0b86ae8d4043c5b8f3fc042d96b43eb751389abfcb43f0e",
+      "research/diyanet-kathmandu-2027/source/kathmandu-2027.json": "22eff2fa75f2dd34ded6f6c74056587449b31beb4a5e8677df58e4b3901959da",
+      "research/diyanet-kathmandu-2027/source/kathmandu-2027.xlsx": "fd03ed195569cb4fef484b1407b9227d7342157dc51414dcc5202ef83fd13822",
+      "research/diyanet-la-paz-2027/comparison.json": "846260195bee4261a3e846d81b8445999c6801e78da4d66e4d45cbc92ce9cfd4",
+      "research/diyanet-la-paz-2027/forecast.json": "9fdc1de7618da6a711fdda3bbc0cb65e08c018307156f4095d6556dc6684e9eb",
+      "research/diyanet-la-paz-2027/source/la-paz-2027.json": "d415dc4d968ccd2523697e5a06e1ac2e1f2745ba7be0888ab9d9e08205718056",
+      "research/diyanet-la-paz-2027/source/la-paz-2027.xlsx": "92571873f41495bf6adf22e0f7f931f9998ee61657faf5a1438682968323fa85",
+      "research/diyanet-nukualofa-2027-2026-09-25/baseline-forecast.json": "58540992f2cadcb52c197fd7d2b1ddd49e514fdc4fb13a1f42e5d17b5fa933f1",
+      "research/diyanet-suva-2027/comparison.json": "c04d4a5ddf27a0c3433a7b13d9d1ae164e881bd12ffe3dd5da69f18990268d11",
+      "research/diyanet-suva-2027/forecast.json": "f47a7cf0dcfaa7a8d19a8dc1b47acec809998c643c40146a2a1b6b207be9e705",
+      "research/diyanet-suva-2027/source/suva-2027.json": "69e7124df7986d270b3e5d5c15c843348dee8947b8f68baf0ade58af637e0e13",
+      "research/diyanet-suva-2027/source/suva-2027.xlsx": "158e864d59a5e525d1a5d7c516e79167077b8fdd3f013ceb1f493fc708ed6b9d",
+      "research/diyanet-worldwide-transfer-2026-09-25/comparison-2027.json": "90aa116d2b2750c434f77c75e8d861bc1ef11b867d84a3b8027727bc727b610d",
+      "research/diyanet-worldwide-transfer-2026-09-25/forecast-2027.json": "339b38dd3ab8770092d6e0fbe7774788e36035955db4ea7af385ef66accb2cb0",
+      "research/diyanet-worldwide-transfer-2026-09-25/source/auckland-2027.json": "870a6a958ffcb3392502d138a22a2690156f9db3426d041f7d290c392bfe0c58",
+      "research/diyanet-worldwide-transfer-2026-09-25/source/auckland-2027.xlsx": "5f8ee42948b203623aa8e163a8a591a38e248bc7eda42e5f232dfdbde167c8bf",
+      "research/diyanet-worldwide-transfer-2026-09-25/source/jakarta-2027.json": "7a9c074cad798b1f36436f1fb3e3385fb9b362e4b58de686332adc1bf55472b9",
+      "research/diyanet-worldwide-transfer-2026-09-25/source/jakarta-2027.xlsx": "4c6ecf3b1fcca2cf70a7177bdc08fde0c0a3f7b6f9ba476a71a17cf16df4d1b5",
+      "research/diyanet-worldwide-workstream-b-2026-09-25/forecast.json": "16e87fba6c2ec01ca868232f1b05c4f5df81b059236c356873325cba3c0d561d",
+      "research/diyanet-worldwide-workstream-b-2026-09-25/official-calendar-rows.json": "45e7259e2d5be48eb97849471f6e807279357d2bc38b00fc9ed6beb529286a62",
+      "research/diyanet-worldwide-workstream-b-2026-09-25/official-calendar.xlsx": "f1aead2a58c10623fb3c8630517aa9c75aab3dd8e5e54a4c3ea337fa824e9320"
+    },
+    "deduplication": {
+      "baseCaseCount": 50,
+      "newCaseCount": 9,
+      "includedTotal": 59,
+      "excludedAlreadyPresent": [
+        "anchorage-2027",
+        "cape-town-2027"
+      ],
+      "notFound": [
+        "none"
+      ]
+    },
+    "sourceInterpretation": "Use printed Gregorian date in each archived local HH:mm row with actual IANA timezone. Conditional interpretation advances only Isha by one civil day when printed Isha clock is earlier than that row Maghrib clock. Any source 00:00 is kept as ambiguous and sourceUtc=null for both interpretations. No modulo-day comparison.",
+    "baselineCompatibility": "baselineUtc copied from already-frozen existing unchanged forecasts. Root must recompute candidate baseline per public existing route and require exact UTC identity; studies mixing variant labels/routes must remain excluded if identity fails.",
+    "newCases": [
+      "hobart-2027",
+      "apia-2027",
+      "nukualofa-2027",
+      "jakarta-2027",
+      "auckland-2027",
+      "iqaluit-2027",
+      "kathmandu-2027",
+      "la-paz-2027",
+      "suva-2027"
+    ],
+    "plannedRows": 129210,
+    "newRows": 19710
+  },
+  "independentScoring": {
+    "verifiedAtUtc": "2026-09-26T09:37:29.164704+00:00",
+    "status": "pass",
+    "cityYears": 59,
+    "uniquePlannedFields": 129210,
+    "interpretationRowsVerified": 258420,
+    "sourceRowsIndependentlyReparsed": 19710,
+    "newSourceRowsWithAmbiguousZero": 0,
+    "baselineUtcFieldsReproduced": 129210,
+    "quantizationCellsReproduced": 257528,
+    "scoreRowsRecomputed": 258420,
+    "aggregateVariantGroupsChecked": 1748,
+    "decisions": {
+      "spa-utc00": {
+        "passesDevelopmentGate": false,
+        "lossGroups": 498
+      }
+    },
+    "freezeFilesHashChecked": 56,
+    "catalogAndReferencePinsChecked": true,
+    "scope": "Previously exposed development observations; no holdout claim. This verifier checks data mapping, quantization, scoring and aggregates, not an independent SPA implementation.",
+    "forecastSha256": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967",
+    "rowsSha256": "ff0685362b4f9c13febc9f31ee6098af70510fbdd29e2093789a6a8ac67fa2aa",
+    "reportSha256": "348be6b311e80d43932790ab514ca937737db8a25ca0bb973a024c44d4ffb234"
+  },
+  "independentAstronomy": {
+    "reference": "pvlib-python v0.13.1 vendor/spa.py, directly executed with bundled NumPy",
+    "pvlibSourceSha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+    "traceSource": "../traces.json",
+    "traceRowsVisited": 43070,
+    "modelsVisited": [
+      "baseline",
+      "spa-utc00"
+    ],
+    "caseCount": 59,
+    "uniqueCarrierJulianDateCount": 1095,
+    "spaUtc00RowsCompared": 1095,
+    "deltaTSeconds": 69.184,
+    "timeConvention": "input carrier JD treated as UTC with UT1=UTC; TT=UT1+69.184 s",
+    "maxAbsoluteDifference": {
+      "declinationDegrees": {
+        "value": 7.274181257344026e-13,
+        "at": {
+          "jd": 2461310.5,
+          "trace": -1.5553398715717206,
+          "pvlib": -1.555339871572448
+        }
+      },
+      "equationOfTimeHours": {
+        "value": 2.4253515862326935e-13,
+        "at": {
+          "jd": 2461218.5,
+          "trace": -0.04983529934882729,
+          "pvlib": -0.04983529934906983
+        }
+      }
+    },
+    "scope": "Daily apparent geocentric coordinate substitution only; no independent topocentric/physical prayer-time accuracy claim."
+  },
+  "independentWiringAndTransitions": {
+    "scope": "Read-only audit of frozen forecasts, traces, clone wiring, and prior50 baseline identity; no source calendars read.",
+    "freezeFilesVerified": 56,
+    "cloneFilesVerified": 6,
+    "cloneChecks": [
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/low-latitude/model.mjs",
+        "expectedImportRewrites": 1,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/south/model.mjs",
+        "expectedImportRewrites": 2,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/north/solar.mjs",
+        "expectedImportRewrites": 1,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/model.mjs",
+        "expectedImportRewrites": 1,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/kernel.mjs",
+        "expectedImportRewrites": 3,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      },
+      {
+        "path": "research/diyanet-spa-reference-2026-09-26/clones/methods/diyanet/implementation/missing-window/seasonal.mjs",
+        "expectedImportRewrites": 0,
+        "sourceHashMatches": true,
+        "cloneHashMatches": true
+      }
+    ],
+    "importPathReview": {
+      "treatmentProviders": [
+        "low-latitude/model.mjs -> adapter.mjs",
+        "south/model.mjs -> adapter.mjs",
+        "north/solar.mjs -> adapter.mjs"
+      ],
+      "unchangedTransitiveSolarPaths": [
+        "south/model.mjs -> public continuous-solver.mjs (unused by corpus daily variant)",
+        "missing-window/kernel.mjs -> public physical-asr-solver.mjs (continuousAsr diagnostic only; excluded from trace)"
+      ],
+      "noOtherDirectSolarCoordinateImportsInClonedRecipeSources": true
+    },
+    "totals": {
+      "cases": 59,
+      "days": 21535,
+      "finiteEpochChecks": 257528,
+      "nearestRoundingChecks": 257528,
+      "baselinePriorCells": 109500,
+      "baselinePriorCaseDays": 18250,
+      "lowSouthRawReconstructionChecks": 126128,
+      "seasonalBranchComparisons": 43800,
+      "seasonalBranchChanges": 13,
+      "candidateNorthStaticUsnoLabels": 30
+    },
+    "sharedPriorCaseCount": 50,
+    "changedNorthSeasonMetadataCases": [
+      "berlin-2026",
+      "berlin-2027",
+      "frankfurt-2027",
+      "oslo-2027",
+      "stockholm-2026",
+      "stockholm-2027",
+      "helsinki-2026",
+      "helsinki-2027",
+      "tromso-2026",
+      "tromso-2027",
+      "bodo-2026",
+      "bodo-2027",
+      "kiruna-2026",
+      "kiruna-2027",
+      "reykjavik-2026",
+      "reykjavik-2027",
+      "trondheim-2026",
+      "trondheim-2027",
+      "oulu-2026",
+      "oulu-2027",
+      "zagreb-2027",
+      "kuopio-2027",
+      "narvik-2027",
+      "kirkenes-2027",
+      "vienna-2027",
+      "bremen-2027",
+      "bergen-2027",
+      "rovaniemi-2027",
+      "anchorage-2027",
+      "iqaluit-2027"
+    ],
+    "changedNorthSeasonMetadataCounts": {
+      "ratio": 30,
+      "ratioAnchor": 1,
+      "firstMissingDay": 1,
+      "lastMissingDay": 0,
+      "springAnchor": 1,
+      "autumnAnchor": 0,
+      "transitionCoordinates": 30
+    },
+    "staleCandidateNorthSolarVariantMetadataCases": [
+      "berlin-2026",
+      "berlin-2027",
+      "frankfurt-2027",
+      "oslo-2027",
+      "stockholm-2026",
+      "stockholm-2027",
+      "helsinki-2026",
+      "helsinki-2027",
+      "tromso-2026",
+      "tromso-2027",
+      "bodo-2026",
+      "bodo-2027",
+      "kiruna-2026",
+      "kiruna-2027",
+      "reykjavik-2026",
+      "reykjavik-2027",
+      "trondheim-2026",
+      "trondheim-2027",
+      "oulu-2026",
+      "oulu-2027",
+      "zagreb-2027",
+      "kuopio-2027",
+      "narvik-2027",
+      "kirkenes-2027",
+      "vienna-2027",
+      "bremen-2027",
+      "bergen-2027",
+      "rovaniemi-2027",
+      "anchorage-2027",
+      "iqaluit-2027"
+    ],
+    "reykjavik2026": {
+      "baseline": {
+        "ratioAnchor": "2026-04-09",
+        "firstMissingDayIndex": 99,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 146,
+        "ratio": 0.18952488169090573
+      },
+      "spa": {
+        "ratioAnchor": "2026-04-10",
+        "firstMissingDayIndex": 100,
+        "lastMissingDayIndex": 244,
+        "missingDayCount": 145,
+        "ratio": 0.16787052949825143
+      },
+      "ratioRecomputedFromAnchor": {
+        "baseline": {
+          "n": 563.8779624023438,
+          "q": 0.18952488169090567,
+          "route": "baseline"
+        },
+        "spa": {
+          "n": 557.3320884847005,
+          "q": 0.16787052949825143,
+          "route": "spa-utc00"
+        }
+      },
+      "onsetTrace": [
+        {
+          "date": "2026-04-09",
+          "baselineRawFajr": 1775700481176.808,
+          "spaRawFajr": 1775700484567.472,
+          "baselineBranch": "spring-linear-transition",
+          "spaBranch": "spring-linear-transition"
+        },
+        {
+          "date": "2026-04-10",
+          "baselineRawFajr": null,
+          "spaRawFajr": 1775784662976.4138,
+          "baselineBranch": "frozen-night-ratio",
+          "spaBranch": "spring-linear-transition"
+        },
+        {
+          "date": "2026-04-11",
+          "baselineRawFajr": null,
+          "spaRawFajr": null,
+          "baselineBranch": "frozen-night-ratio",
+          "spaBranch": "frozen-night-ratio"
+        },
+        {
+          "date": "2026-09-02",
+          "baselineRawFajr": null,
+          "spaRawFajr": null,
+          "baselineBranch": "frozen-night-ratio",
+          "spaBranch": "frozen-night-ratio"
+        },
+        {
+          "date": "2026-09-03",
+          "baselineRawFajr": 1788400737737.6333,
+          "spaRawFajr": 1788400741859.0388,
+          "baselineBranch": "autumn-linear-transition",
+          "spaBranch": "autumn-linear-transition"
+        }
+      ],
+      "april10FajrGeometryBoundary": {
+        "latitude": 64.1289,
+        "baselineDeclinationDegrees": 7.871948640673931,
+        "spaDeclinationDegrees": 7.870095691506421,
+        "declinationChangeArcseconds": -6.670617003037194,
+        "baselineFajrHourAngleCosine": -1.000032590236745,
+        "spaFajrHourAngleCosine": -0.9999614320474184,
+        "baselineHasCrossing": false,
+        "spaHasCrossing": true,
+        "rawGeometryEpochs": {
+          "baseline": null,
+          "spa": 1775784662976.4138
+        }
+      },
+      "sep2Amplification": {
+        "nightMinutesBaseline": 555.2771138264974,
+        "nightMinutesSpa": 555.2954361572266,
+        "expectedFajrDeltaSeconds": 812.1259821758645,
+        "actualFajrDeltaSeconds": 812.1259821777344,
+        "expectedIshaDeltaSeconds": -721.6623846825814,
+        "actualIshaDeltaSeconds": -721.662384765625,
+        "baselineBranch": {
+          "fajr": "frozen-night-ratio",
+          "isha": "frozen-night-ratio"
+        },
+        "spaBranch": {
+          "fajr": "frozen-night-ratio",
+          "isha": "frozen-night-ratio"
+        }
+      }
+    }
+  },
+  "publicCalculationParity": {
+    "status": "pass",
+    "cityYears": 59,
+    "models": [
+      "baseline",
+      "spa-utc00"
+    ],
+    "exactRawFields": 258420,
+    "exactRoundedFields": 258420,
+    "exactCarrierDays": 43070,
+    "forecastSha256": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967"
+  },
+  "publicationTransforms": [
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/spa.mjs",
+      "studySha256": "de8c185858f37e5d6d25dbc4cb51f4dbc0ff1f9779a6ae342d619454d9205d49",
+      "publicSha256": "de8c185858f37e5d6d25dbc4cb51f4dbc0ff1f9779a6ae342d619454d9205d49",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/coefficients.json",
+      "studySha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b",
+      "publicSha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/spa.test.mjs",
+      "studySha256": "25f8651581bee7bdc84eacc170bddd14aaeba2ce153462d5eb22fd9745435d42",
+      "publicSha256": "25f8651581bee7bdc84eacc170bddd14aaeba2ce153462d5eb22fd9745435d42",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/pvlib-grid-fixture.json",
+      "studySha256": "9897330120d53fa42f5b6317070f19a19b46865ca06dc198da6fb06295c21a2b",
+      "publicSha256": "9897330120d53fa42f5b6317070f19a19b46865ca06dc198da6fb06295c21a2b",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/extract-coefficients.py",
+      "studySha256": "8326d135ad3548235c7906b7ad4dd959253c2e58f4733caddf937e067de3a299",
+      "publicSha256": "8326d135ad3548235c7906b7ad4dd959253c2e58f4733caddf937e067de3a299",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/generate-pvlib-fixture.py",
+      "studySha256": "42e56f23f6b3eb837e07fcd1c413cc0fd87af00950daba04ff63a9c52261c313",
+      "publicSha256": "42e56f23f6b3eb837e07fcd1c413cc0fd87af00950daba04ff63a9c52261c313",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/vendor/LICENSE-pvlib",
+      "studySha256": "a02e12ddaada3cf0d5dbdd8affdd577c2eec640758a95842a304f7513b8c0be4",
+      "publicSha256": "a02e12ddaada3cf0d5dbdd8affdd577c2eec640758a95842a304f7513b8c0be4",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/astronomy/vendor/acquisition.json",
+      "studySha256": "6ac8f1b29b1aefe40ee08c78dcdcf9295d58ad5f6c631a5235033df2e9a700a9",
+      "publicSha256": "6ac8f1b29b1aefe40ee08c78dcdcf9295d58ad5f6c631a5235033df2e9a700a9",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/transition-audit/trace.mjs",
+      "studySha256": "0cb8fd1e4909b0978b373304427c2067e03c32602419f3175fa06dcab79378d4",
+      "publicSha256": "0cb8fd1e4909b0978b373304427c2067e03c32602419f3175fa06dcab79378d4",
+      "change": "none"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/adapter.mjs",
+      "studySha256": "3ef36ed4b578a65f46f4893d3cfabff6fd1ebf17fef10b9d141765c4d988f848",
+      "publicSha256": "26fc59f1de957b00dae5a386ddf6775dd1c691f0f39b9f508387d9f44553193c",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/calendar.mjs",
+      "studySha256": "b58770105de3e59fcf5bb9d05ff487107fcb47dbe5a387717382dfc442789888",
+      "publicSha256": "b58770105de3e59fcf5bb9d05ff487107fcb47dbe5a387717382dfc442789888",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/low-latitude/model.mjs",
+      "studySha256": "fbbdfe43e47a3ea365d37c511e269cac1caf2167a7f9e9f76ec4bc4b1eede297",
+      "publicSha256": "fbbdfe43e47a3ea365d37c511e269cac1caf2167a7f9e9f76ec4bc4b1eede297",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/south/model.mjs",
+      "studySha256": "9f8b187c9228451ba2b46f88f006e72a6a1cab887aa8db86821852b461bc216f",
+      "publicSha256": "c2b84f8cf94be2e7ce53cbc3e6775a1bea7377e0b7efce0a276ee718e815454e",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/north/solar.mjs",
+      "studySha256": "2324eaa8aa70a0e9d44bd6f0cc50159e5a6d6cfd013ee026b2e3da18e66dfe03",
+      "publicSha256": "2324eaa8aa70a0e9d44bd6f0cc50159e5a6d6cfd013ee026b2e3da18e66dfe03",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/model.mjs",
+      "studySha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+      "publicSha256": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/kernel.mjs",
+      "studySha256": "3175dcf03c3f58345235118ca4f93916199dffd0b12c59a622474cc7fe811a4f",
+      "publicSha256": "cc4f6ff9aa52487c59ec5d0f7e5614b27365f86fb74dccfeeb59afeb49c2fa5c",
+      "change": "import targets only"
+    },
+    {
+      "file": "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/seasonal.mjs",
+      "studySha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28",
+      "publicSha256": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28",
+      "change": "import targets only"
+    }
+  ],
+  "implementationReviewCorrectionsBeforeForecast": [
+    "Fixed SPA diagnostic equationOfTimeDegrees to be minutes/4; the main equationOfTime minutes output was correct.",
+    "Fixed low/south trace temkinAdjustedRawEpoch to include the declared minute adjustment; calculation outputs were unchanged.",
+    "Preserved explicit null northern raw diagnostics rather than filling them from recomputed geometry."
+  ],
+  "metadataCaveat": "Inherited recipe descriptions retain USNO names inside audit copies. Active provider is the explicit enclosing solarModel/models key. The CLI shows that identity; no mixed provider controls the scored event outputs.",
+  "reproducibility": "Public source-free code, coefficients and synthetic/reference fixtures run offline. Full institutional score replay requires the private archived original calendars. Technical reference downloads are identified but pvlib oracle code and the official report PDF are not bundled publicly.",
+  "studyFilesSha256": {
+    "PLAN.md": "1f8500a51f37d1eda439fbe4adafd6fff53600bf5f91bda8a237ffbe589a2d4e",
+    "declaration.json": "25136497c93ffd6588125ed9364f88a06693e1544a7de7616ef70deaaa7baa4e",
+    "catalog-pin.json": "d05b837565704250cc76407c4d664d6eded60573827aec52de6e16e2324d25d3",
+    "freeze.json": "1d6be3cbe6019048aadd094d2a0150a3b1face94f702037b4f193c36e4f09a30",
+    "forecast.json": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967",
+    "traces.json": "1f9d293b25549cebf320455e091633250fd5a9de0c78d1a08d0d2f7079ff4b7d",
+    "report.json": "348be6b311e80d43932790ab514ca937737db8a25ca0bb973a024c44d4ffb234",
+    "trace-report.json": "bf06ea1f14f2f79a16cf53ad9b8408e6d57d9e86c1f4a7ca0e9c25233e1787ef",
+    "evaluate.mjs": "0aa7d5a88b9e0c50b2c1c847a4d67f073faf9a71f4bc6330cb96c8b714db9c1c",
+    "diagnose.mjs": "4538f1b67cd78fb0b77f400d03ca0a914add7d8f113ec9756fa979b9aaef59c2",
+    "prepare_clones.py": "d56cbba8e8a49610a251be5fcc3cebb73371965b41bd86affe110d9c03827e28",
+    "forecast.mjs": "dbdd9cefc9fdf0eac5ecb0f059567baaecbfddeb3c06183b350be57ad2780a5a",
+    "freeze.py": "e2f1525adf042b301fd3bea8c823fb1c900997f39a678ccd2315e61ad5ae0981",
+    "publish.py": "46b0f499311fd1a40595b0633178779975a73fc751e4cf945d42f4563946e33e",
+    "verify_public.mjs": "e6c06c55feab918a93db8ed9a94ed561b4c243d1cc34703249eb6f63f91431c4",
+    "public-parity.json": "74d75bdb050cae628d9b3e0ee25891d9e346f29d4d336461f968ec0b45b76911",
+    "independent-review/prepare.py": "2aa4bb75a8ee08d849f0885d12d025c9432ee663095c6d52e92e77198be3e047",
+    "independent-review/verify-inputs.py": "d7a10be63dc8d5123fef6aaca97ce9077a5694d882411476275805ec7eecfe74",
+    "independent-review/verify-results.py": "eebb51449e9453232c68aaa1fe7cab51c877ea53142117a06f7c777fbeb8c37a",
+    "independent-review/verification.json": "41c8d28fdf4f13e49eea2a98db48e6701d2789c81b77e0e9726035b0a90d025d",
+    "independent-review/provenance.json": "5f4f1499649bbf4942477cda03148fe4edcb36aaccd4e0097b103831709161ae",
+    "transition-audit/independent-review.mjs": "51822a73079509023350348fa9f12a9e501b91b757e21efcfa77cbadc31741a6",
+    "transition-audit/independent-review.json": "121e60e38768cf9e4a52d8fa4035530f96e51e8c30950bafb580ed4286090ef3",
+    "astronomy/full-grid-review.py": "c388b0503eb1311af821edd3f7162ca1d37787d5e897a710d24cf790a4d24887",
+    "astronomy/full-grid-review.json": "c1336e6ee18d6c052bd60549a1ca84dc3ce3674585208e09465efe75de26d4ad"
+  },
+  "publicFilesSha256": {
+    "methods/diyanet/SPA-REFERENCE.md": "76b3320d439668503ef4ba96edb68652dbf7b1c84842231179c3111175998f89",
+    "methods/diyanet/research/spa-calendar-comparison-2026-09-26.json": "348be6b311e80d43932790ab514ca937737db8a25ca0bb973a024c44d4ffb234",
+    "methods/diyanet/research/spa-intermediate-differences-2026-09-26.json": "bf06ea1f14f2f79a16cf53ad9b8408e6d57d9e86c1f4a7ca0e9c25233e1787ef",
+    "methods/diyanet/research/spa-reference/README.md": "0b2e547a7e01a5433be4c70fe0a8fea90e2a2399183673f71ec85f65177a3758",
+    "methods/diyanet/research/spa-reference/adapter.mjs": "26fc59f1de957b00dae5a386ddf6775dd1c691f0f39b9f508387d9f44553193c",
+    "methods/diyanet/research/spa-reference/astronomy/coefficients.json": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b",
+    "methods/diyanet/research/spa-reference/astronomy/extract-coefficients.py": "8326d135ad3548235c7906b7ad4dd959253c2e58f4733caddf937e067de3a299",
+    "methods/diyanet/research/spa-reference/astronomy/generate-pvlib-fixture.py": "42e56f23f6b3eb837e07fcd1c413cc0fd87af00950daba04ff63a9c52261c313",
+    "methods/diyanet/research/spa-reference/astronomy/pvlib-grid-fixture.json": "9897330120d53fa42f5b6317070f19a19b46865ca06dc198da6fb06295c21a2b",
+    "methods/diyanet/research/spa-reference/astronomy/spa.mjs": "de8c185858f37e5d6d25dbc4cb51f4dbc0ff1f9779a6ae342d619454d9205d49",
+    "methods/diyanet/research/spa-reference/astronomy/spa.test.mjs": "25f8651581bee7bdc84eacc170bddd14aaeba2ce153462d5eb22fd9745435d42",
+    "methods/diyanet/research/spa-reference/astronomy/vendor/LICENSE-pvlib": "a02e12ddaada3cf0d5dbdd8affdd577c2eec640758a95842a304f7513b8c0be4",
+    "methods/diyanet/research/spa-reference/astronomy/vendor/acquisition.json": "6ac8f1b29b1aefe40ee08c78dcdcf9295d58ad5f6c631a5235033df2e9a700a9",
+    "methods/diyanet/research/spa-reference/calendar.mjs": "b58770105de3e59fcf5bb9d05ff487107fcb47dbe5a387717382dfc442789888",
+    "methods/diyanet/research/spa-reference/catalog.json": "51cc722394099fbddee5e8ef47ad2ce333235fd65fee1916ee3f75a7657d594a",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/low-latitude/model.mjs": "fbbdfe43e47a3ea365d37c511e269cac1caf2167a7f9e9f76ec4bc4b1eede297",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/kernel.mjs": "cc4f6ff9aa52487c59ec5d0f7e5614b27365f86fb74dccfeeb59afeb49c2fa5c",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/model.mjs": "4d1c93ab09270a231093d6acd4f3104597cede8b7bad594f5de1b26c4ea6fb55",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/missing-window/seasonal.mjs": "fb18f7ec1ab023111577a99d7233c349d14064199be739630422c4114a91ff28",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/north/solar.mjs": "2324eaa8aa70a0e9d44bd6f0cc50159e5a6d6cfd013ee026b2e3da18e66dfe03",
+    "methods/diyanet/research/spa-reference/clones/methods/diyanet/implementation/south/model.mjs": "c2b84f8cf94be2e7ce53cbc3e6775a1bea7377e0b7efce0a276ee718e815454e",
+    "methods/diyanet/research/spa-reference/run.mjs": "8c5bd32ff68a30d9b0426fb92c7a2376e10a8a7d432ac530a177a2695a8b93a1",
+    "methods/diyanet/research/spa-reference/transition-audit/trace.mjs": "0cb8fd1e4909b0978b373304427c2067e03c32602419f3175fa06dcab79378d4",
+    "tests/diyanet-spa-reference.test.mjs": "2d1c38f2be7da9b235f9577629fcd9cb3aba97bee3bd4e71888dedf2a362b429"
+  }
+}

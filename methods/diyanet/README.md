@@ -6,7 +6,9 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
-The latest [three-case cause study](THREE-CASE-CAUSES.md) isolates minimum source-cell contradictions in Berlin and Helsinki. Berlin's endpoint exclusions are sensitive to horizon changes of a few seconds; Helsinki's full-run conflict has zero but unattained extra-tolerance infimum. Fixed-quotient controls and exact source-free tools narrow what these failures mean without selecting a timing correction.
+The latest [independent SPA comparison](SPA-REFERENCE.md) tests a documented apparent-geocentric solar model across 59 already exposed annual calendars. It loses institutional matches and reveals a sensitive last-real-day quotient in Reykjavík's seasonal reconstruction. A runnable source-free reference and intermediate traces are published; no calendar default changes.
+
+The preceding [three-case cause study](THREE-CASE-CAUSES.md) isolates minimum source-cell contradictions in Berlin and Helsinki. Berlin's endpoint exclusions are sensitive to horizon changes of a few seconds; Helsinki's full-run conflict has zero but unattained extra-tolerance infimum. Fixed-quotient controls and exact source-free tools narrow what these failures mean without selecting a timing correction.
 
 The preceding [joint feasible-region study](JOINT-FEASIBLE-REGIONS.md) varies the autumn location, quotient and Fajr factor together. It finds 25/28 full-run cases compatible with some location/quotient at the existing factor, while retaining three conflicts; a specific angle-to-time interpretation fails its necessary endpoint screen. Exact coupled constraints and source-free tools are published, with no new timing default or accuracy claim.
 

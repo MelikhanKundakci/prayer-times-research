@@ -1,0 +1,519 @@
+{
+  "reference": "pvlib-python v0.13.1 spa.py (BSD-3-Clause)",
+  "sampleCount": 64,
+  "purpose": "Independent regression check of apparent geocentric SPA quantities; topocentric values omitted.",
+  "records": [
+    {
+      "utc": "2000-01-01T00:30:30+00:00",
+      "jdUtc": 2451544.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.7494761383914,
+      "declination": -23.069570704974357,
+      "equationOfTime": -3.053776033755412
+    },
+    {
+      "utc": "2000-04-12T13:30:30+00:00",
+      "jdUtc": 2451647.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.225512109905427,
+      "declination": 8.920003951347468,
+      "equationOfTime": -0.6800388567894515
+    },
+    {
+      "utc": "2000-07-01T00:30:30+00:00",
+      "jdUtc": 2451726.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.32289418055188,
+      "declination": 23.098551392120992,
+      "equationOfTime": -3.7975911780952174
+    },
+    {
+      "utc": "2000-10-17T19:30:30+00:00",
+      "jdUtc": 2451835.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.90490635956445,
+      "declination": -9.577519667426039,
+      "equationOfTime": 14.79289156591949
+    },
+    {
+      "utc": "2002-01-01T00:30:30+00:00",
+      "jdUtc": 2452275.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.31799338806377,
+      "declination": -23.03101077461686,
+      "equationOfTime": -3.2975772446084193
+    },
+    {
+      "utc": "2002-04-12T13:30:30+00:00",
+      "jdUtc": 2452377.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.773083351109527,
+      "declination": 8.74173773342629,
+      "equationOfTime": -0.7822212527489683
+    },
+    {
+      "utc": "2002-07-01T00:30:30+00:00",
+      "jdUtc": 2452456.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 99.81961150741921,
+      "declination": 23.132219928352043,
+      "equationOfTime": -3.694975803534362
+    },
+    {
+      "utc": "2002-10-17T19:30:30+00:00",
+      "jdUtc": 2452565.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.45824067986305,
+      "declination": -9.404489854871578,
+      "equationOfTime": 14.670371688865089
+    },
+    {
+      "utc": "2004-01-01T00:30:30+00:00",
+      "jdUtc": 2453005.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.7848969557714,
+      "declination": -23.070056898641703,
+      "equationOfTime": -3.070497584023542
+    },
+    {
+      "utc": "2004-04-12T13:30:30+00:00",
+      "jdUtc": 2453108.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.25288124551763,
+      "declination": 8.931802986285195,
+      "equationOfTime": -0.6624602417941787
+    },
+    {
+      "utc": "2004-07-01T00:30:30+00:00",
+      "jdUtc": 2453187.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.35793518168855,
+      "declination": 23.098785138635712,
+      "equationOfTime": -3.8092766042800577
+    },
+    {
+      "utc": "2004-10-17T19:30:30+00:00",
+      "jdUtc": 2453296.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.94229314355113,
+      "declination": -9.593230210949741,
+      "equationOfTime": 14.77393621088504
+    },
+    {
+      "utc": "2006-01-01T00:30:30+00:00",
+      "jdUtc": 2453736.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.35890225107426,
+      "declination": -23.03015951917203,
+      "equationOfTime": -3.3232529396773316
+    },
+    {
+      "utc": "2006-04-12T13:30:30+00:00",
+      "jdUtc": 2453838.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.810762266725664,
+      "declination": 8.757389225737608,
+      "equationOfTime": -0.7935492716751469
+    },
+    {
+      "utc": "2006-07-01T00:30:30+00:00",
+      "jdUtc": 2453917.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 99.86763407481807,
+      "declination": 23.13081358308483,
+      "equationOfTime": -3.746717067881036
+    },
+    {
+      "utc": "2006-10-17T19:30:30+00:00",
+      "jdUtc": 2454026.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.48796492379776,
+      "declination": -9.416387672423031,
+      "equationOfTime": 14.6930598379422
+    },
+    {
+      "utc": "2008-01-01T00:30:30+00:00",
+      "jdUtc": 2454466.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.82340053223345,
+      "declination": -23.067407614105214,
+      "equationOfTime": -3.0800617988315935
+    },
+    {
+      "utc": "2008-04-12T13:30:30+00:00",
+      "jdUtc": 2454569.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.293825789991647,
+      "declination": 8.948082208204806,
+      "equationOfTime": -0.6815908594962821
+    },
+    {
+      "utc": "2008-07-01T00:30:30+00:00",
+      "jdUtc": 2454648.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.3997004344199,
+      "declination": 23.095763856586434,
+      "equationOfTime": -3.83169362699482
+    },
+    {
+      "utc": "2008-10-17T19:30:30+00:00",
+      "jdUtc": 2454757.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.96997884582362,
+      "declination": -9.603321507557496,
+      "equationOfTime": 14.807745881385927
+    },
+    {
+      "utc": "2010-01-01T00:30:30+00:00",
+      "jdUtc": 2455197.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.3910091272753,
+      "declination": -23.0255958397061,
+      "equationOfTime": -3.30971175464947
+    },
+    {
+      "utc": "2010-04-12T13:30:30+00:00",
+      "jdUtc": 2455299.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.84250592363012,
+      "declination": 8.76916230295018,
+      "equationOfTime": -0.7794911615383171
+    },
+    {
+      "utc": "2010-07-01T00:30:30+00:00",
+      "jdUtc": 2455378.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 99.90235277442726,
+      "declination": 23.126229651330327,
+      "equationOfTime": -3.745525418429679
+    },
+    {
+      "utc": "2010-10-17T19:30:30+00:00",
+      "jdUtc": 2455487.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.5255783236384,
+      "declination": -9.42964347973729,
+      "equationOfTime": 14.681275113935044
+    },
+    {
+      "utc": "2012-01-01T00:30:30+00:00",
+      "jdUtc": 2455927.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.85678891471207,
+      "declination": -23.061352151844954,
+      "equationOfTime": -3.0820080607118143
+    },
+    {
+      "utc": "2012-04-12T13:30:30+00:00",
+      "jdUtc": 2456030.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.316125986475285,
+      "declination": 8.95533794533069,
+      "equationOfTime": -0.6412133812336833
+    },
+    {
+      "utc": "2012-07-01T00:30:30+00:00",
+      "jdUtc": 2456109.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.4367758876573,
+      "declination": 23.089469382972656,
+      "equationOfTime": -3.851880964190059
+    },
+    {
+      "utc": "2012-10-17T19:30:30+00:00",
+      "jdUtc": 2456218.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 203.00507883982704,
+      "declination": -9.615476161649607,
+      "equationOfTime": 14.793313677469996
+    },
+    {
+      "utc": "2014-01-01T00:30:30+00:00",
+      "jdUtc": 2456658.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.4214184774604,
+      "declination": -23.019769458702356,
+      "equationOfTime": -3.3143337350411457
+    },
+    {
+      "utc": "2014-04-12T13:30:30+00:00",
+      "jdUtc": 2456760.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.869560046696133,
+      "declination": 8.778263196138752,
+      "equationOfTime": -0.7725322266342118
+    },
+    {
+      "utc": "2014-07-01T00:30:30+00:00",
+      "jdUtc": 2456839.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 99.93542607924941,
+      "declination": 23.120538378641005,
+      "equationOfTime": -3.7642066474472813
+    },
+    {
+      "utc": "2014-10-17T19:30:30+00:00",
+      "jdUtc": 2456948.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.54777014539488,
+      "declination": -9.437302277939096,
+      "equationOfTime": 14.704076742058533
+    },
+    {
+      "utc": "2016-01-01T00:30:30+00:00",
+      "jdUtc": 2457388.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.88262463870024,
+      "declination": -23.057499946792188,
+      "equationOfTime": -3.080318253585574
+    },
+    {
+      "utc": "2016-04-12T13:30:30+00:00",
+      "jdUtc": 2457491.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.345718227038567,
+      "declination": 8.96578641726562,
+      "equationOfTime": -0.6559535580745433
+    },
+    {
+      "utc": "2016-07-01T00:30:30+00:00",
+      "jdUtc": 2457570.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.45923408021591,
+      "declination": 23.086088533621833,
+      "equationOfTime": -3.8387142832471
+    },
+    {
+      "utc": "2016-10-17T19:30:30+00:00",
+      "jdUtc": 2457679.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 203.02537160960105,
+      "declination": -9.622677852179523,
+      "equationOfTime": 14.814234605244565
+    },
+    {
+      "utc": "2018-01-01T00:30:30+00:00",
+      "jdUtc": 2458119.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.4521512556863,
+      "declination": -23.017395693812052,
+      "equationOfTime": -3.336447557354404
+    },
+    {
+      "utc": "2018-04-12T13:30:30+00:00",
+      "jdUtc": 2458221.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.89220412343842,
+      "declination": 8.787126420870457,
+      "equationOfTime": -0.7618226452104864
+    },
+    {
+      "utc": "2018-07-01T00:30:30+00:00",
+      "jdUtc": 2458300.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 99.96076120405604,
+      "declination": 23.11920272717046,
+      "equationOfTime": -3.763965824386105
+    },
+    {
+      "utc": "2018-10-17T19:30:30+00:00",
+      "jdUtc": 2458409.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.57292234429104,
+      "declination": -9.447069992292269,
+      "equationOfTime": 14.70568614361764
+    },
+    {
+      "utc": "2020-01-01T00:30:30+00:00",
+      "jdUtc": 2458849.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.9123146111783,
+      "declination": -23.057193764196594,
+      "equationOfTime": -3.091834091639612
+    },
+    {
+      "utc": "2020-04-12T13:30:30+00:00",
+      "jdUtc": 2458952.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.3720268590833,
+      "declination": 8.97731566691017,
+      "equationOfTime": -0.6525579892586393
+    },
+    {
+      "utc": "2020-07-01T00:30:30+00:00",
+      "jdUtc": 2459031.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.49874279664625,
+      "declination": 23.085725108377193,
+      "equationOfTime": -3.886756344640162
+    },
+    {
+      "utc": "2020-10-17T19:30:30+00:00",
+      "jdUtc": 2459140.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 203.0531656124695,
+      "declination": -9.63434684672599,
+      "equationOfTime": 14.814954795459926
+    },
+    {
+      "utc": "2022-01-01T00:30:30+00:00",
+      "jdUtc": 2459580.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.4751220465198,
+      "declination": -23.018440830007737,
+      "equationOfTime": -3.307977344007668
+    },
+    {
+      "utc": "2022-04-12T13:30:30+00:00",
+      "jdUtc": 2459682.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.926531758021625,
+      "declination": 8.802106578468699,
+      "equationOfTime": -0.7765554988000076
+    },
+    {
+      "utc": "2022-07-01T00:30:30+00:00",
+      "jdUtc": 2459761.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.0047748883355,
+      "declination": 23.11932703563936,
+      "equationOfTime": -3.8159055869473377
+    },
+    {
+      "utc": "2022-10-17T19:30:30+00:00",
+      "jdUtc": 2459870.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.60111440980018,
+      "declination": -9.459098091447979,
+      "equationOfTime": 14.719220159284305
+    },
+    {
+      "utc": "2024-01-01T00:30:30+00:00",
+      "jdUtc": 2460310.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.94434619063145,
+      "declination": -23.05687425597089,
+      "equationOfTime": -3.085424648648768
+    },
+    {
+      "utc": "2024-04-12T13:30:30+00:00",
+      "jdUtc": 2460413.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.400639808660166,
+      "declination": 8.989403998448104,
+      "equationOfTime": -0.6308753245102707
+    },
+    {
+      "utc": "2024-07-01T00:30:30+00:00",
+      "jdUtc": 2460492.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.53371783597736,
+      "declination": 23.085175804960432,
+      "equationOfTime": -3.88928884883353
+    },
+    {
+      "utc": "2024-10-17T19:30:30+00:00",
+      "jdUtc": 2460601.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 203.08500677314888,
+      "declination": -9.647400254207323,
+      "equationOfTime": 14.826518190355273
+    },
+    {
+      "utc": "2026-01-01T00:30:30+00:00",
+      "jdUtc": 2461041.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.5181518575115,
+      "declination": -23.015533037363006,
+      "equationOfTime": -3.336761454331281
+    },
+    {
+      "utc": "2026-04-12T13:30:30+00:00",
+      "jdUtc": 2461143.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.950976716363336,
+      "declination": 8.811729374991238,
+      "equationOfTime": -0.7303476443994441
+    },
+    {
+      "utc": "2026-07-01T00:30:30+00:00",
+      "jdUtc": 2461222.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.03630087184867,
+      "declination": 23.11710077475875,
+      "equationOfTime": -3.797727583179949
+    },
+    {
+      "utc": "2026-10-17T19:30:30+00:00",
+      "jdUtc": 2461331.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.64050887514009,
+      "declination": -9.47458511667472,
+      "equationOfTime": 14.706207403221924
+    },
+    {
+      "utc": "2028-01-01T00:30:30+00:00",
+      "jdUtc": 2461771.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 280.9855376698739,
+      "declination": -23.05261913178407,
+      "equationOfTime": -3.1064530012226896
+    },
+    {
+      "utc": "2028-04-12T13:30:30+00:00",
+      "jdUtc": 2461874.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 21.433746314844342,
+      "declination": 9.001449936630637,
+      "equationOfTime": -0.6202724391623633
+    },
+    {
+      "utc": "2028-07-01T00:30:30+00:00",
+      "jdUtc": 2461953.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.57296338052704,
+      "declination": 23.08038627981784,
+      "equationOfTime": -3.903821599582443
+    },
+    {
+      "utc": "2028-10-17T19:30:30+00:00",
+      "jdUtc": 2462062.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 203.12193587048984,
+      "declination": -9.66095520453765,
+      "equationOfTime": 14.820234329679806
+    },
+    {
+      "utc": "2030-01-01T00:30:30+00:00",
+      "jdUtc": 2462502.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 281.5544624148248,
+      "declination": -23.010045008576494,
+      "equationOfTime": -3.346545140062517
+    },
+    {
+      "utc": "2030-04-12T13:30:30+00:00",
+      "jdUtc": 2462604.062847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 20.991371554141498,
+      "declination": 8.826204613495873,
+      "equationOfTime": -0.7581957301226794
+    },
+    {
+      "utc": "2030-07-01T00:30:30+00:00",
+      "jdUtc": 2462683.5211805557,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 100.07755753716108,
+      "declination": 23.11108811069479,
+      "equationOfTime": -3.830458435448236
+    },
+    {
+      "utc": "2030-10-17T19:30:30+00:00",
+      "jdUtc": 2462792.312847222,
+      "deltaTSeconds": 69.184,
+      "rightAscension": 202.66414641844838,
+      "declination": -9.48227097924724,
+      "equationOfTime": 14.741932871111203
+    }
+  ]
+}
