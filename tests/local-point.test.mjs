@@ -160,7 +160,7 @@ test('Point profile requires an explicit known rule and rejects accidental or ex
 });
 
 test('Point API runs with network, calendars, legacy models and verification fixtures inaccessible',()=>{
-  const permitted=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
+  const permitted=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/local/profiles.mjs','core/local/selection.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
   const denied=['core/local/verification/oracle-fixtures.json','core/diyanet/index.mjs','methods/diyanet/index.mjs','tests/model-snapshots.json','node_modules/adhan/package.json'];
   const program=`
     import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {get} from 'node:https';

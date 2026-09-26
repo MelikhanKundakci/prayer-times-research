@@ -16,12 +16,14 @@ const validDate=date=>typeof date==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(date)
 
 function checkedInput(input){
   if(!input||Object.getPrototypeOf(input)!==Object.prototype)throw new TypeError('Plain input object required');
-  const allowed=['date','latitude','longitude','timeZone','ishaAngleDegrees'];
+  const allowed=['date','latitude','longitude','timeZone','fajrAngleDegrees','ishaAngleDegrees','asrShadowFactor','horizonDepressionDegrees'];
   const descriptors=Object.getOwnPropertyDescriptors(input),keys=Reflect.ownKeys(descriptors);
   if(keys.some(key=>typeof key!=='string'||!allowed.includes(key)||!descriptors[key].enumerable||!Object.hasOwn(descriptors[key],'value'))
-    ||['date','latitude','longitude','timeZone'].some(key=>!Object.hasOwn(descriptors,key)))throw new TypeError('Expected own data fields date, latitude, longitude, timeZone, and optional ishaAngleDegrees');
+    ||['date','latitude','longitude','timeZone'].some(key=>!Object.hasOwn(descriptors,key)))throw new TypeError('Expected own data fields date, latitude, longitude, timeZone, and optional solar-rule parameters');
   const value=Object.fromEntries(keys.map(key=>[key,descriptors[key].value]));
-  if(Object.hasOwn(value,'ishaAngleDegrees')&&value.ishaAngleDegrees===undefined)throw new TypeError('ishaAngleDegrees must be omitted or set to 16 or 17');
+  for(const key of ['fajrAngleDegrees','ishaAngleDegrees','asrShadowFactor','horizonDepressionDegrees']){
+    if(Object.hasOwn(value,key)&&value[key]===undefined)throw new TypeError(`${key} must be omitted or set to a valid value`);
+  }
   if(!validDate(value.date)||value.date<'2001-01-01'||value.date>'2098-12-31')throw new RangeError('Date must be a valid Gregorian date from 2001 through 2098');
   if(!Number.isFinite(value.latitude)||value.latitude< -89||value.latitude>89)throw new RangeError('Latitude must be from −89° through 89°');
   if(!Number.isFinite(value.longitude)||Math.abs(value.longitude)>180)throw new RangeError('Longitude must be from −180° through 180°');
@@ -29,9 +31,16 @@ function checkedInput(input){
   let formatter;
   try{formatter=new Intl.DateTimeFormat('en-CA-u-ca-gregory-nu-latn',{timeZone:value.timeZone,year:'numeric',month:'2-digit',day:'2-digit'});}
   catch{throw new RangeError('A valid IANA time zone is required');}
+  const fajrAngleDegrees=Object.hasOwn(value,'fajrAngleDegrees')?value.fajrAngleDegrees:18;
   const ishaAngleDegrees=Object.hasOwn(value,'ishaAngleDegrees')?value.ishaAngleDegrees:17;
-  if(ishaAngleDegrees!==16&&ishaAngleDegrees!==17)throw new RangeError('ishaAngleDegrees must be 16 or 17');
-  return{date:value.date,latitude:value.latitude,longitude:normalizeLongitude(value.longitude),timeZone:value.timeZone,ishaAngleDegrees,formatter};
+  const asrShadowFactor=Object.hasOwn(value,'asrShadowFactor')?value.asrShadowFactor:1;
+  const horizonDepressionDegrees=Object.hasOwn(value,'horizonDepressionDegrees')?value.horizonDepressionDegrees:50/60;
+  if(!Number.isFinite(fajrAngleDegrees)||fajrAngleDegrees<=0||fajrAngleDegrees>30)throw new RangeError('fajrAngleDegrees must be greater than 0° and at most 30°');
+  if(!Number.isFinite(ishaAngleDegrees)||ishaAngleDegrees<=0||ishaAngleDegrees>30)throw new RangeError('ishaAngleDegrees must be greater than 0° and at most 30°');
+  if(asrShadowFactor!==1&&asrShadowFactor!==2)throw new RangeError('asrShadowFactor must be 1 or 2');
+  if(!Number.isFinite(horizonDepressionDegrees)||horizonDepressionDegrees<=0||horizonDepressionDegrees>2)throw new RangeError('horizonDepressionDegrees must be greater than 0° and at most 2°');
+  return{date:value.date,latitude:value.latitude,longitude:normalizeLongitude(value.longitude),timeZone:value.timeZone,
+    fajrAngleDegrees,ishaAngleDegrees,asrShadowFactor,horizonDepressionDegrees,formatter};
 }
 
 function localDateAt(epoch,formatter){
@@ -122,13 +131,13 @@ export function calculateLocalSolarDay(input){
   const sunAtTransit=solarCoordinatesUSNO(jd(transit.epoch));
   const noonAltitude=90-Math.abs(x.latitude-sunAtTransit.declination);
   const declinationDifference=Math.abs(x.latitude-sunAtTransit.declination);
-  const asrDenominator=1+Math.tan(declinationDifference*RAD);
+  const asrDenominator=x.asrShadowFactor+Math.tan(declinationDifference*RAD);
   const asrAltitude=asrDenominator>0?Math.atan(1/asrDenominator)/RAD:NaN;
   const events={};
   events.fajr=eventCrossing({startEpoch:previous.epoch,endEpoch:transit.epoch,transitEpoch:transit.epoch,latitude:x.latitude,longitude:x.longitude,
-    thresholdDegrees:-18,direction:'rising',side:'before'});
+    thresholdDegrees:-x.fajrAngleDegrees,direction:'rising',side:'before'});
   events.sunrise=eventCrossing({startEpoch:previous.epoch,endEpoch:transit.epoch,transitEpoch:transit.epoch,latitude:x.latitude,longitude:x.longitude,
-    thresholdDegrees:-50/60,direction:'rising',side:'before'});
+    thresholdDegrees:-x.horizonDepressionDegrees,direction:'rising',side:'before'});
   events.dhuhr={status:'calculated',reason:null,epochMilliseconds:transit.epoch,thresholdDegrees:null,rootDirection:null,
     residualDegrees:null,diagnosticStatus:null};
   if(!(noonAltitude>0))events.asr=unavailable('sun-not-above-geometric-horizon-at-transit',asrAltitude);
@@ -136,14 +145,17 @@ export function calculateLocalSolarDay(input){
   else events.asr=eventCrossing({startEpoch:transit.epoch,endEpoch:next.epoch,transitEpoch:transit.epoch,latitude:x.latitude,longitude:x.longitude,
     thresholdDegrees:asrAltitude,direction:'setting',side:'after'});
   events.maghrib=eventCrossing({startEpoch:transit.epoch,endEpoch:next.epoch,transitEpoch:transit.epoch,latitude:x.latitude,longitude:x.longitude,
-    thresholdDegrees:-50/60,direction:'setting',side:'after'});
+    thresholdDegrees:-x.horizonDepressionDegrees,direction:'setting',side:'after'});
   events.isha=eventCrossing({startEpoch:transit.epoch,endEpoch:next.epoch,transitEpoch:transit.epoch,latitude:x.latitude,longitude:x.longitude,
     thresholdDegrees:-x.ishaAngleDegrees,direction:'setting',side:'after'});
   return{
     date:x.date,location:{latitude:x.latitude,longitude:x.longitude,timeZone:x.timeZone},
-    model:{id:MODEL,coordinates:'USNO approximate apparent geocentric solar coordinates',horizon:'flat geometric horizon; −50 arcminutes encodes standard solar semidiameter/refraction convention',
-      observerElevationMetres:null,terrain:null,topocentricParallax:false,asrShadowFactor:1,asrConvention:'afternoon crossing of the factor-one shadow altitude computed from solar declination at transit',
-      ishaAngleDegrees:x.ishaAngleDegrees,temkinApplied:false},
+    model:{id:MODEL,coordinates:'USNO approximate apparent geocentric solar coordinates',
+      horizon:x.horizonDepressionDegrees===50/60?'flat geometric horizon; −50 arcminutes encodes standard solar semidiameter/refraction convention':`flat geometric horizon; ${x.horizonDepressionDegrees}° depression`,
+      horizonDepressionDegrees:x.horizonDepressionDegrees,observerElevationMetres:null,terrain:null,topocentricParallax:false,
+      fajrAngleDegrees:x.fajrAngleDegrees,ishaAngleDegrees:x.ishaAngleDegrees,asrShadowFactor:x.asrShadowFactor,
+      asrConvention:x.asrShadowFactor===1?'afternoon crossing of the factor-one shadow altitude computed from solar declination at transit'
+        :'afternoon crossing of the factor-two shadow altitude computed from solar declination at transit',temkinApplied:false},
     solarCycle:{startEpochMilliseconds:previous.epoch,endEpochMilliseconds:next.epoch,
       startHourAngleResidualHours:previous.residualHours,endHourAngleResidualHours:next.residualHours},
     transit:{status:'calculated',epochMilliseconds:transit.epoch,localDate:x.date,declinationDegrees:sunAtTransit.declination,

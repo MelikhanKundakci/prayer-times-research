@@ -130,7 +130,7 @@ test('kernel rejects invalid records and accessors without coercing values', () 
   assert.throws(() => calculateLocalSolarDay({ ...BASE, latitude: '52.52' }), RangeError);
   assert.throws(() => calculateLocalSolarDay({ ...BASE, longitude: '-74' }), RangeError);
   assert.throws(() => calculateLocalSolarDay({ ...BASE, ishaAngleDegrees: undefined }), TypeError);
-  for (const angle of [null, 18, '17', false, NaN]) {
+  for (const angle of [null, 31, '17', false, NaN]) {
     assert.throws(() => calculateLocalSolarDay({ ...BASE, ishaAngleDegrees: angle }), RangeError);
   }
 });

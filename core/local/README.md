@@ -1,6 +1,6 @@
 # Local point calculations under documented rules
 
-This is the first implementation of the app's primary goal: compute astronomical events at a supplied GPS point and apply an explicitly named, documented prayer rule. Matching a city calendar is a separate compatibility question. No city lookup, empirical city correction, prayer API or reference calendar enters this calculation.
+This is the shared implementation of the app's primary goal: compute astronomical events at a supplied GPS point and apply an explicitly named, documented prayer rule. Matching a city calendar is a separate compatibility question. No city lookup, empirical city correction, prayer API or reference calendar enters this calculation.
 
 The first profile, `diyanet-published-point-v1`, independently applies published Diyanet criteria and margins to continuous point astronomy. It is **not an official Diyanet GPS service or its undisclosed production algorithm**. The [rule contract](RULES.md) identifies the evidence, interpretations and missing regional policies. The earlier [Diyanet calendar reconstruction](../diyanet/) remains available for its different research purpose.
 
@@ -28,9 +28,35 @@ npm run calculate:local -- 2027-03-20 41.0082 28.9784 Europe/Istanbul diyanet-pu
 
 All five fields are required; unknown fields and executable/getter inputs are rejected. Dates span 2001–2098, latitude −89° through 89°, and longitude −180° through 180°. Supply an appropriate IANA timezone; this module does not request GPS permission or infer a timezone. These mathematical input bounds do not imply complete religious-policy coverage at every point. A skipped civil date or non-unique solar-transit date fails explicitly.
 
+## Shared profile registry
+
+Version **0.4.0** defines all local profiles in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution. Six profiles are available: the two existing Diyanet-inspired variants, Egyptian published angles, FCNA USA and Canada recommendations, and a bounded continuous-point adaptation of the Kemenag worked example. Read [PROFILES.md](PROFILES.md) for the exact source-versus-convention boundary.
+
+```js
+import {calculateLocalDay, listLocalProfiles, getLocalProfile} from './core/local/index.mjs';
+const definitions = listLocalProfiles(); // detached definitions; safe for a selector UI
+const definition = getLocalProfile('fcna-usa-2017-point-v1'); // deeply frozen
+const day = calculateLocalDay({
+  date: '2027-03-20', latitude: 40.7128, longitude: -74.006,
+  timeZone: 'America/New_York', profile: definition.id,
+});
+console.log(day.events.fajr.role); // prayer-start-model
+console.log(day.events.dhuhr.role); // solar-noon-marker
+console.log(day.coverage.prayerStartsComplete); // false: three starts are unspecified
+```
+
+```sh
+npm run calculate:local -- --profiles
+npm run calculate:local -- 2027-03-20 -6.2 106.8 Asia/Jakarta kemenag-worked-example-point-v1
+```
+
+An astronomical marker is not automatically a selected prayer start. Egypt and FCNA supply source-backed Fajr/Isha rules; their other events explicitly remain project-defined geometry markers. Kemenag's selections quantize to minutes before the stated margins, so `seconds` and `secondsDate` are null even though an ISO serialization can end in `:00`. `basis` retains the raw astronomical input, minute quantization and elapsed margin. None of these four profiles inherits the Diyanet northern policy or its Temkin values.
+
+`coverage.complete` checks the presence of all six output fields. `coverage.prayerStartsComplete` additionally requires all five prayer names to carry `prayer-start-model` roles and available values; it stays false for the current Egypt/FCNA angle-only profiles. `coverage.nonPrayerStartEvents` lists the remaining geometric markers among those five names. Neither completeness field is institutional endorsement or notification approval.
+
 ## Optional local summer calculation
 
-Version **0.3.0** adds a second explicitly selected profile, `local-northern-seasonal-v1`. It inherits the ordinary point rules and northern threshold, and uses a fully specified local night-fraction policy for northern Fajr/Isha. It can produce a complete annual series at supported real-horizon points, including summer dates with no true Fajr or Isha crossing. It does not change the first profile or claim to recover Diyanet's undisclosed transition algorithm.
+Introduced in version **0.3.0**, a second explicitly selected profile, `local-northern-seasonal-v1`, supplies seasonal estimates. It inherits the ordinary point rules and northern threshold, and uses a fully specified local night-fraction policy for northern Fajr/Isha. It can produce a complete annual series at supported real-horizon points, including summer dates with no true Fajr or Isha crossing. It does not change the first profile or claim to recover Diyanet's undisclosed transition algorithm.
 
 ```js
 import {calculateLocalDay, LOCAL_SEASONAL_PROFILE} from './core/local/index.mjs';
@@ -65,11 +91,11 @@ The seasonal policy requires a complete annual context within 2002–2097. It do
 
 ## Astronomy and selected prayer times
 
-`astronomy` retains the raw solar-cycle events. The model evaluates the published [USNO approximate coordinates](https://aa.usno.navy.mil/faq/sun_approx) at each trial event instant and solves altitude crossings continuously. It uses a level, unobstructed horizon with the conventional −50 arcminute solar-center threshold for rise/set. It does not model terrain, observer height, changing weather or topocentric solar parallax. The numerical root tolerance is not a statement of observational accuracy.
+`astronomy` retains the raw solar-cycle events. The model evaluates the published [USNO approximate coordinates](https://aa.usno.navy.mil/faq/sun_approx) at each trial event instant and solves altitude crossings continuously. It uses a level, unobstructed horizon with an explicit solar-center threshold: −50 arcminutes in the existing and angle-only profiles, and −1° in the Kemenag worked-example adaptation. It does not model terrain, observer height, changing weather or topocentric solar parallax. The numerical root tolerance is not a statement of observational accuracy.
 
-Asr uses a shadow factor of one beyond the shadow at that day's meridian transit. That noon reference stays fixed while the afternoon Sun moves. This is an explicit conventional interpretation of the noon-shadow criterion. Raw crossings carry their direction and physical availability; a grazing contact is not silently turned into a crossing.
+The current named profiles use a shadow factor of one beyond the shadow at that day's meridian transit. The raw kernel also supports independently verified factor-two geometry for future explicitly sourced profiles. That noon reference stays fixed while the afternoon Sun moves. This is an explicit conventional interpretation of the noon-shadow criterion. Raw crossings carry their direction and physical availability; a grazing contact is not silently turned into a crossing.
 
-`events` contains the **selected** times after the published margins. GPS does not automatically remove Temkin. The profile retains Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0 minutes. `sunrise` is the profile's adjusted sunrise marker, seven minutes before `astronomy.events.sunrise`, the model's horizon crossing. It is not a prayer-start event. The standard twilight angles are 18° Fajr and 17° Isha. See [the rule evidence](RULES.md) for dates and scope.
+For the two Diyanet-inspired profiles, `events` contains the **selected** times after the published margins. GPS does not automatically remove Temkin. The profile retains Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0 minutes. `sunrise` is the profile's adjusted sunrise marker, seven minutes before `astronomy.events.sunrise`, the model's horizon crossing. It is not a prayer-start event. The standard twilight angles are 18° Fajr and 17° Isha. See [the rule evidence](RULES.md) for dates and scope.
 
 | Selected-event status | Meaning |
 |---|---|
@@ -80,13 +106,13 @@ Asr uses a shadow factor of one beyond the shadow at that day's meridian transit
 
 In the original `diyanet-published-point-v1` profile, at and above **44.5° north**, the API can select a bounded subset of ordinary 18°/16° Fajr/Isha crossings using the documented [northern annual guard](NORTHERN-ORDINARY.md). It requires a complete padded year of point calculations and admits only real events strictly outside the declared daily and annual transition bounds. The night endpoints and transit-relative time frame are explicit local conventions; this is not a recovered Diyanet seasonal algorithm. Missing summer events and dates near the unresolved transition remain `policy-blocked`. A raw crossing alone is insufficient.
 
-Northern sunrise/Maghrib use actual preceding/following horizon nights, along with the current day, checked both before and after the published margins. Every relevant interval must exceed five hours. Missing or shorter horizons remain blocked; no replacement endpoints are invented. A failed annual twilight guard does not suppress a separately valid current-day sunrise or Maghrib. Southern missing twilight is not given a mirrored northern rule.
+The two Diyanet-inspired profiles’ northern sunrise/Maghrib use actual preceding/following horizon nights, along with the current day, checked both before and after the published margins. Every relevant interval must exceed five hours. Missing or shorter horizons remain blocked; no replacement endpoints are invented. A failed annual twilight guard does not suppress a separately valid current-day sunrise or Maghrib. Southern missing twilight is not given a mirrored northern rule.
 
 `calculation.northernPolicy` contains the annual guard status, failure reason, parameters and the queried day's evidence. Its padded-year scope is 2002–2097. Up to four computed annual contexts are cached locally; returned diagnostics are detached copies, so caller edits cannot change later results. The first northern query for a point/year computes its annual context, while subsequent day queries reuse it.
 
 When the northern noon Sun is not above the geometric horizon, the documented Asr substitution returns selected Dhuhr as `estimated`, with its reason and rule identifier. It keeps Dhuhr's +5-minute margin, without adding another +4. Other unresolved northern Asr cases stay blocked. Selected instants are checked in chronological order, including across missing intermediate events; only this documented Dhuhr/Asr substitution permits equal instants. The optional summer policy checks its complete padded sequence across nights; a schedule consumer must still preserve chronology when combining years, locations or different profiles.
 
-Every selected event keeps the adjusted fractional `rawEpochMilliseconds`, integer `epochMilliseconds`/`utc`, actual `localDate`, and separate nearest-minute display fields. `time` is display rounding, not an alarm cursor. `seconds` is model precision, not a guarantee of true prayer onset to the second. Actual event dates can differ from the owning solar-cycle date; no modulo-day conversion conceals that fact. `coverage.complete` means all six selected fields have results under the implemented profile, not institutional approval or guaranteed physical accuracy.
+Every selected event keeps its selected `rawEpochMilliseconds` (fractional for model instants, whole-minute for minute-defined rules), integer `epochMilliseconds`/`utc`, actual `localDate`, and separate nearest-minute display fields. `time` is display rounding, not an alarm cursor. `seconds`, where provided, is model precision, not a guarantee of true prayer onset to the second. Actual event dates can differ from the owning solar-cycle date; no modulo-day conversion conceals that fact. `coverage.complete` means all six selected fields have results under the implemented profile, not institutional approval or guaranteed physical accuracy.
 
 This version supplies a day calculation. App notification scheduling, location permissions, timezone discovery and platform background execution are outside this module.
 

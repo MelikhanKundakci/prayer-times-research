@@ -97,7 +97,7 @@ test('Seasonal cache stays isolated from result mutation and profile query order
 });
 
 test('Local summer CLI and calculation run without calendars or network permission',()=>{
-  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
+  const allowed=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/local/summer.mjs','core/local/profiles.mjs','core/local/selection.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
   const program=`
     import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';
     import {calculateLocalDay} from ${JSON.stringify(new URL('core/local/index.mjs',root).href)};

@@ -1,9 +1,9 @@
 {
   "schema": "local-point-verification/v1",
   "recordedDate": "2026-09-26",
-  "localVersion": "0.3.0",
+  "localVersion": "0.4.0",
   "profile": "diyanet-published-point-v1",
-  "purpose": "Numerical implementation and rule-contract verification for local point calculations, not city-calendar replication",
+  "purpose": "Numerical implementation, rule-selection and event-role contract verification for explicit local point profiles; not city-calendar replication",
   "numerical": {
     "result": "PASS",
     "cases": 139,
@@ -39,7 +39,12 @@
     "tests/local-northern-oracle.test.mjs",
     "tests/local-summer-policy.test.mjs",
     "tests/local-summer-point.test.mjs",
-    "tests/local-summer-oracle.test.mjs"
+    "tests/local-summer-oracle.test.mjs",
+    "tests/local-solar-parameters.test.mjs",
+    "tests/local-profile-registry.test.mjs",
+    "tests/local-profiles-point.test.mjs",
+    "tests/local-profile-conformance.test.mjs",
+    "tests/local-profiles-oracle.test.mjs"
   ],
   "regressionScope": [
     "fixed-transit factor-one Asr geometry",
@@ -61,7 +66,13 @@
     "full-year fixed night quotient, candidate provenance and one-sided cubic blend",
     "physical-absence boundaries and raw year-seam preflight",
     "all padded selected nights and supported annual six-event order",
-    "independent summer candidates, selected UTC instants, modes and weights"
+    "independent summer candidates, selected UTC instants, modes and weights",
+    "explicit Fajr/Isha angles, horizon depression and factor-one/factor-two solar geometry",
+    "immutable profile registry and detached listings with evidence and source scope per event",
+    "Egypt/FCNA source-supported twilight starts and explicitly separate geometric markers",
+    "Kemenag worked-example domain, quantize-then-add margins and minute-defined selected events",
+    "all-six-profile conformance across 195 point/date/profile cases",
+    "284 independently calculated profile/parameter cases, including missing events and civil-date ownership rejections"
   ],
   "boundaries": {
     "institutionalEquivalence": false,
@@ -69,10 +80,12 @@
     "notificationReleaseApproved": false,
     "observedTimingAccuracySeconds": null,
     "missingPolicies": [
-      "northern summer replacement and complete seasonal transition selection",
+      "complete institutional Diyanet northern summer replacement and seasonal transition selection",
       "northern five-hour horizon substitution",
       "unresolved northern Asr cases outside proven no-daylight-shadow condition",
-      "southern replacement rules for absent signs"
+      "southern replacement rules for absent signs",
+      "full source-supported five-prayer prescription for Egyptian and FCNA local profiles",
+      "absent-angle and polar substitution for the new Egyptian, FCNA and Kemenag profiles"
     ],
     "unmodeled": [
       "terrain and skyline",
@@ -82,7 +95,7 @@
     ],
     "assumptions": [
       "level unobstructed horizon",
-      "conventional -50 arcminute rise/set threshold",
+      "profile-declared horizon depression: 50 arcminutes, or 1 degree for the Kemenag worked-example profile",
       "caller supplies appropriate IANA timezone"
     ],
     "seconds": "Numerical model precision, not a guarantee of observed or religious timing accuracy",
@@ -92,17 +105,19 @@
     },
     "ordinaryNorthernScope": "Only real-angle events passing both daily and full-year conservative guard; every annual and padded horizon interval must exceed five hours",
     "seasonalProfile": "local-northern-seasonal-v1: project-defined annual ratio and interpolation; no institutional or religious approval claimed",
-    "seasonalDomain": "Latitude at least 44.5 north, 2002\u20132097, complete real-horizon annual context with every raw/selected day/night over five hours and all seasonal preflight checks passing; ordinary rules inherited elsewhere",
-    "summerObservedAccuracySeconds": null
+    "seasonalDomain": "Latitude at least 44.5 north, 2002–2097, complete real-horizon annual context with every raw/selected day/night over five hours and all seasonal preflight checks passing; ordinary rules inherited elsewhere",
+    "summerObservedAccuracySeconds": null,
+    "profileScope": "Each named local profile has explicit evidence, roles and domain; geometry markers do not complete a five-prayer prescription",
+    "minuteDefinedProfile": "Kemenag selected values use whole-minute rounding and margins; seconds display fields are null"
   },
   "files": [
     {
       "path": "core/local/solar.mjs",
-      "sha256": "c1f60c480b8c52990ed4430232bc6d0dfc60cb8634e75f26eb4dff540f2f194e"
+      "sha256": "fff519bd6eec03c5bea42fb8677847653ae5b71706de6fa7eb296330708f4e68"
     },
     {
       "path": "core/local/index.mjs",
-      "sha256": "80fee5b6b9d993367be20e2bb8ade3cc2db6869381870e8720bba243c48df1e9"
+      "sha256": "f3d48ed0be25bf13c689394880fa617d529f0939e8b66fb11473d011ed8578cb"
     },
     {
       "path": "core/local/verification/oracle.py",
@@ -147,23 +162,44 @@
     {
       "path": "core/local/verification/summer-verify.mjs",
       "sha256": "12022819c1e52b157304e0817985a8a51213cc44d27144bbb465ad3b8bbd264e"
+    },
+    {
+      "path": "core/local/profiles.mjs",
+      "sha256": "13f30f8612b8e79b1088dd79570b33b991255f820e44af077a966d3c61760749"
+    },
+    {
+      "path": "core/local/selection.mjs",
+      "sha256": "f96e2456bc6dffafd7aed2f7754e55ee5f53dba59850c2226a1038566d8f1b72"
+    },
+    {
+      "path": "core/local/verification/profiles-oracle.py",
+      "sha256": "5ead97d0a275ec93f0b92474b2c78a860ee8e7dd5c8936b92fd68385d90b8ec0"
+    },
+    {
+      "path": "core/local/verification/profiles-fixtures.json",
+      "sha256": "6ee2c65e77a1497713cfa178c6fc91a068d972f8adfe5c569ffca13514c6b250"
+    },
+    {
+      "path": "core/local/verification/profiles-verify.mjs",
+      "sha256": "f8906bb9041cb7c4cc13d61c4178551f675d3ffcfeec5039ef6c96b17a5fb028"
     }
   ],
   "softwareChecks": {
     "result": "PASS",
-    "nodeTests": 220,
+    "nodeTests": 236,
     "diyanetPythonTests": 61,
     "independentUaeFixtures": 108,
-    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 698 local documentation links verified",
+    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 719 local documentation links verified",
     "commands": [
       "npm test",
       "npm run check",
       "python3 scripts/verify-uae-radial.py",
       "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'"
     ],
-    "localTests": 46,
+    "localTests": 62,
     "addedInVersion020": 13,
-    "addedInVersion030": 15
+    "addedInVersion030": 15,
+    "addedInVersion040": 16
   },
   "northernNumerical": {
     "result": "PASS",
@@ -248,7 +284,11 @@
   "northernInterpretation": "Explicit conservative ordinary-event guard with selected horizon/real-Fajr nights and transit-relative UTC envelopes; not the unpublished Diyanet seasonal transition algorithm",
   "profiles": [
     "diyanet-published-point-v1",
-    "local-northern-seasonal-v1"
+    "local-northern-seasonal-v1",
+    "egypt-published-angles-point-v1",
+    "fcna-usa-2017-point-v1",
+    "fcna-canada-2017-point-v1",
+    "kemenag-worked-example-point-v1"
   ],
   "summerNumerical": {
     "result": "PASS",
@@ -693,5 +733,42 @@
     "timestampToleranceSeconds": 0.1,
     "weightTolerance": 1e-07
   },
-  "summerInterpretation": "Separately selected project policy with one annual q, effective-night Fajr multiplier 11/8 and one-sided 20-minute cubic transition; not a reconstruction of the source missing-Fajr two-degree conversion or institutional seasonal algorithm"
+  "summerInterpretation": "Separately selected project policy with one annual q, effective-night Fajr multiplier 11/8 and one-sided 20-minute cubic transition; not a reconstruction of the source missing-Fajr two-degree conversion or institutional seasonal algorithm",
+  "profileNumerical": {
+    "result": "PASS",
+    "cases": 284,
+    "baselinePythonParityCases": 139,
+    "calculatedCycles": 275,
+    "profileCases": 259,
+    "factorTwoCases": 25,
+    "expectedOwnershipRejections": 9,
+    "physicalEventComparisons": 1558,
+    "unavailablePhysicalEvents": 92,
+    "cycleBoundaryComparisons": 550,
+    "selectedEventComparisons": 1430,
+    "unavailableSelectedEvents": 70,
+    "blockedSelectedEvents": 0,
+    "calendarMinuteComparisons": 1430,
+    "kemenagMinuteComparisons": 240,
+    "minuteArithmeticComparisons": 228,
+    "roleComparisons": 1500,
+    "maximumRootDifferenceSeconds": 2.0503997802734375e-05,
+    "maximumCycleBoundaryDifferenceSeconds": 1.5974044799804688e-05,
+    "maximumSelectedDifferenceSeconds": 2.0503997802734375e-05,
+    "maximumThresholdDifferenceDegrees": 9.189449201585376e-11,
+    "rootToleranceSeconds": 0.1,
+    "fixtureSha256": "6ee2c65e77a1497713cfa178c6fc91a068d972f8adfe5c569ffca13514c6b250",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    }
+  },
+  "profileInterpretation": "Independent Python assembly of published angles, fixed-noon shadow geometry, horizons and explicit minute rules on the same USNO approximation; agreement establishes implementation consistency, not observed accuracy, a complete institutional specification or notification approval",
+  "profileConformance": {
+    "result": "PASS",
+    "profiles": 6,
+    "cases": 195,
+    "scope": "UTC instants, civil dates, presentation precision, source-key roles, unavailability and selected chronology"
+  }
 }

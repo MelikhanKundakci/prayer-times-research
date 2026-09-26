@@ -4,6 +4,8 @@ This page specifies the first **Diyanet-inspired point profile** for the continu
 
 The input point is latitude and longitude plus the requested local civil date and an appropriate IANA time zone. The application must supply the time zone separately: GPS coordinates do not identify one without a zone resolver. The initial model accepts dates from 2001 through 2098 and latitudes from −89° through +89°. It does not accept observer elevation and does not model terrain, local obstructions, or topocentric parallax. A flat-horizon crossing is not an observation from the user's actual skyline.
 
+Other local profiles use the [shared registry contract](PROFILES.md); the Diyanet margins and northern policies below are not global defaults for every profile.
+
 ## Selected event rules
 
 The API keeps each **raw geometric event** separate from its **selected event time**. It first solves solar crossings in continuous UTC time, then applies the selected profile's published minute margins to produce the selected clock. The continuous solver's subsecond root precision is numerical precision, not demonstrated subsecond or second-level timing accuracy.

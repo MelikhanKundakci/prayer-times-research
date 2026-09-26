@@ -37,3 +37,11 @@ The public tests use the same launcher. Node 26.7.0 is the checked publication r
 Arithmetic should remain unchanged by import relocation. The publication checks compare exported calculations with the corresponding original local modules and record their scope. This parity check is distinct from matching an institution's original calendar.
 
 The public repository intentionally has its own test count. The larger research workspace's cumulative historical test count does not imply that all those tests, original datasets, or native GPL-dependent experiments are present here.
+
+## Shared local event-rule registry
+
+[profiles.mjs](../core/local/profiles.mjs) is the single source for the six local profile definitions. Each event declares its solar-rule kind, role, source evidence, margin, quantization and resolution. Definitions are deeply frozen; `getLocalProfile(id)` returns one immutable definition, while `listLocalProfiles()` supplies detached records for consumer interfaces. Profiles are selected explicitly, never inferred from coordinates or a method-name alias.
+
+The local physical kernel accepts bounded twilight/horizon parameters and shadow factor 1 or 2. [selection.mjs](../core/local/selection.mjs) quantizes raw UTC instants, when specified, before adding elapsed margins. Existing Diyanet selections retain their numerical rules. Only profiles declaring a northern policy build an annual northern context; angle-only profiles do not inherit its substitutions.
+
+The output separates geometry markers from five `prayer-start-model` fields. Egypt/FCNA intentionally retain noon, shadow and sunset markers until their remaining prayer rules are explicitly selected. The Kemenag continuous-point adaptation applies its source-example minute operations inside a stated input domain. See [the profile guide](../core/local/PROFILES.md) and [independent parameter/profile verification](../core/local/verification/profiles-README.md). The shared contract test also checks all six profiles over 195 point/date/profile combinations.
