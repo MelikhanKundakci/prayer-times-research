@@ -1,0 +1,1013 @@
+{
+  "schema": "noon-physical-vs-fitted-diagnostic/v1",
+  "status": "Retrospective diagnostic only; previously exposed source archive; not a fresh holdout or runtime model",
+  "split": {
+    "training": "2026, 12 fixed cities, city intercept profile only",
+    "evaluation": "2027, same cities and frozen parameters",
+    "cities": [
+      "adana",
+      "berlin",
+      "bodo",
+      "cape-town",
+      "helsinki",
+      "kiruna",
+      "oulu",
+      "reykjavik",
+      "stockholm",
+      "tromso",
+      "trondheim",
+      "ushuaia"
+    ],
+    "observationsPerYear": 4380
+  },
+  "definitions": {
+    "hybridPhysicalShape": "For each unchanged UTC00 carrier, compute rawHybrid = rawUSNO + 3600*(EOT_USNO - EOT_centerHybrid) seconds; no fitted global coefficients.",
+    "cityProfile": "For each city, midpoint of min/max 2026 residual (sourceEpoch - rawHybrid), clipped to the existing ±60-second bound; freeze and transfer to 2027.",
+    "baselineCityOnly": "Previously frozen 2026 residual-range midpoint nuisance constants from shared-noon candidate.json.",
+    "priorFittedHarmonic": "Previously frozen two USNO-anomaly coefficients plus 2026 city nuisance constants; no refit."
+  },
+  "training": {
+    "baselineUnshifted": {
+      "observations": 4380,
+      "exact": 4118,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineUnshifted",
+      "pairedGains": 0,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 327,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 335,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 356,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 361,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 359,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 344,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 255,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 360,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 337,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 354,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "hybridUnshifted": {
+      "observations": 4380,
+      "exact": 4121,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineUnshifted",
+      "pairedGains": 7,
+      "pairedLosses": 4,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 327,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 1
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 336,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 355,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 1
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 359,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 344,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 255,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 1
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 337,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 1
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 354,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "baselineCityOnly": {
+      "observations": 4380,
+      "exact": 4370,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 0,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "hybridWith2026CityProfile": {
+      "observations": 4380,
+      "exact": 4380,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 0,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 10,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 3,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 3,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "priorFittedHarmonic": {
+      "observations": 4380,
+      "exact": 4380,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 0,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 10,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 3,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 3,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    }
+  },
+  "evaluation2027": {
+    "baselineUnshifted": {
+      "observations": 4380,
+      "exact": 4116,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineUnshifted",
+      "pairedGains": 0,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 328,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 330,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 360,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 344,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 248,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 335,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 355,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "hybridUnshifted": {
+      "observations": 4380,
+      "exact": 4119,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineUnshifted",
+      "pairedGains": 8,
+      "pairedLosses": 5,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 328,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 331,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 1
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 360,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 1
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 361,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 1
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 345,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 249,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 333,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 2
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 355,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "baselineCityOnly": {
+      "observations": 4380,
+      "exact": 4358,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 0,
+      "pairedLosses": 0,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 358,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "hybridWith2026CityProfile": {
+      "observations": 4380,
+      "exact": 4371,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 16,
+      "pairedLosses": 3,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 1
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 362,
+          "withinOneMinute": 365,
+          "pairedGains": 6,
+          "pairedLosses": 2
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 363,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        }
+      }
+    },
+    "priorFittedHarmonic": {
+      "observations": 4380,
+      "exact": 4366,
+      "withinOneMinute": 4380,
+      "maximumAbsoluteMinutes": 1,
+      "pairedAgainst": "baselineCityOnly",
+      "pairedGains": 18,
+      "pairedLosses": 10,
+      "cities": {
+        "berlin": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "stockholm": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "helsinki": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 1
+        },
+        "tromso": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 1
+        },
+        "bodo": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "kiruna": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 0
+        },
+        "reykjavik": {
+          "observations": 365,
+          "exact": 360,
+          "withinOneMinute": 365,
+          "pairedGains": 4,
+          "pairedLosses": 2
+        },
+        "trondheim": {
+          "observations": 365,
+          "exact": 360,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 5
+        },
+        "oulu": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 2,
+          "pairedLosses": 1
+        },
+        "adana": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 0,
+          "pairedLosses": 0
+        },
+        "cape-town": {
+          "observations": 365,
+          "exact": 364,
+          "withinOneMinute": 365,
+          "pairedGains": 1,
+          "pairedLosses": 0
+        },
+        "ushuaia": {
+          "observations": 365,
+          "exact": 365,
+          "withinOneMinute": 365,
+          "pairedGains": 3,
+          "pairedLosses": 0
+        }
+      }
+    }
+  },
+  "hybridCityOffsetsSeconds": {
+    "adana": 0.3169299316406242,
+    "berlin": 7.360870117187499,
+    "bodo": -0.16319665527343652,
+    "cape-town": -4.0017177734375,
+    "helsinki": -0.026436035156249815,
+    "kiruna": -0.49293200683593774,
+    "oulu": -18.466245117187498,
+    "reykjavik": -1.1977255859374996,
+    "stockholm": 6.241108886718749,
+    "tromso": 1.1952728271484379,
+    "trondheim": -4.124113769531249,
+    "ushuaia": 2.305297363281248
+  },
+  "physicalShiftSeconds": {
+    "trainMin": -0.435119140625,
+    "trainMax": 0.439268798828125,
+    "testMin": -0.44589453125,
+    "testMax": 0.450018310546875
+  },
+  "inputs": {
+    "train": "research/diyanet-shared-eot-inverse-2026-09-25/train.json",
+    "test": "research/diyanet-shared-eot-inverse-2026-09-25/test.json",
+    "priorCandidate": "research/diyanet-shared-eot-inverse-2026-09-25/candidate.json",
+    "solarProvider": "research/diyanet-next-2026-09-26/numerical/solar-center.mjs",
+    "research/diyanet-shared-eot-inverse-2026-09-25/train.json": "faddfddda57044abe76864adaded06e81353ff82ea976bc017354207efff7b43",
+    "research/diyanet-shared-eot-inverse-2026-09-25/test.json": "a39364f7dbe76e59051ec0a6d5b93c6ba836db649ec60d935d3e8c3f3e985c91",
+    "research/diyanet-shared-eot-inverse-2026-09-25/candidate.json": "c0bee134cb3d9725b4efdf68c03f3a98de598756b866fbf16ee862d99cb8d263",
+    "research/diyanet-next-2026-09-26/numerical/solar-center.mjs": "5eb76669a8b4bca7da6a8fbdf9f953e99600689eabae7b29a62510321850807f"
+  }
+}

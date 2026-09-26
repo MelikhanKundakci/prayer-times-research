@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "independentRoute": "Python profiles raw public-core calendar forecasts and source UTC minutes; agent used EOT-derived noon shifts and earlier noon split.",
+  "calendarDays": 8760,
+  "minuteDecisions": 35040,
+  "profiledOffsets": 24,
+  "checkedPerCityAggregates": 96,
+  "agentReportSha256": "3e03f52ae5b010dbc5429d3778fe2f8fa3409fff6555cc69d30cf19d9ae3d870",
+  "results": {
+    "2026": {
+      "baselineUnshifted": {
+        "observations": 4380,
+        "exact": 4118,
+        "withinOneMinute": 4380,
+        "pairedGains": 0,
+        "pairedLosses": 0
+      },
+      "hybridUnshifted": {
+        "observations": 4380,
+        "exact": 4121,
+        "withinOneMinute": 4380,
+        "pairedGains": 7,
+        "pairedLosses": 4
+      },
+      "baselineCityOnly": {
+        "observations": 4380,
+        "exact": 4370,
+        "withinOneMinute": 4380,
+        "pairedGains": 0,
+        "pairedLosses": 0
+      },
+      "hybridWith2026CityProfile": {
+        "observations": 4380,
+        "exact": 4380,
+        "withinOneMinute": 4380,
+        "pairedGains": 10,
+        "pairedLosses": 0
+      }
+    },
+    "2027": {
+      "baselineUnshifted": {
+        "observations": 4380,
+        "exact": 4116,
+        "withinOneMinute": 4380,
+        "pairedGains": 0,
+        "pairedLosses": 0
+      },
+      "hybridUnshifted": {
+        "observations": 4380,
+        "exact": 4119,
+        "withinOneMinute": 4380,
+        "pairedGains": 8,
+        "pairedLosses": 5
+      },
+      "baselineCityOnly": {
+        "observations": 4380,
+        "exact": 4358,
+        "withinOneMinute": 4380,
+        "pairedGains": 0,
+        "pairedLosses": 0
+      },
+      "hybridWith2026CityProfile": {
+        "observations": 4380,
+        "exact": 4371,
+        "withinOneMinute": 4380,
+        "pairedGains": 16,
+        "pairedLosses": 3
+      }
+    }
+  }
+}
