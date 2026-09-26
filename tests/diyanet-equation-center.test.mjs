@@ -5,3 +5,7 @@ test('Research equation-of-center provider agrees with an independent Python exp
   // Keep the rejected candidate outside the standalone prayer-time API.
   await import('../methods/diyanet/research/equation-center/verify-center.mjs');
 });
+
+test('Research channel decomposition preserves the transit-versus-declination boundary', async () => {
+  await import('../methods/diyanet/research/equation-center/verify-channels.mjs');
+});

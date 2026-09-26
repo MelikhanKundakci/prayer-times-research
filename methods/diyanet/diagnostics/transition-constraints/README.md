@@ -40,7 +40,7 @@ This is the additive V2 diagnostic. Its compound-conflict classification correct
 
 ## Segment discovery and positive interval ratios
 
-[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor, envelope, joint-space and sensitivity tests below, the complete suite has **53 tests**.
+[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor, envelope, joint-space, sensitivity and noon-shift tests below, the complete suite has **61 tests**.
 
 - `affine_runs(values, minimum_length=7)` returns **all inclusion-maximal** contiguous compatible intervals, preserving overlapping alternatives. Inputs are ordered `(x, minute, label)` triples with strictly increasing finite `x`. The minimum must be an integer at least two. Split missing/unresolved observations into separate calls before invoking it; no calendar dates, institutional transition days or date interpretations are inferred. A compatible line need not be the generating rule.
 - `positive_ratio(numerator, denominator)` returns the exact interval image of all independently possible `A / D`, retaining open/closed bounds and empty-input conflicts. Nonempty input intervals must be bounded with strictly positive lower bounds. Zero-touching, sign-changing and unbounded domains reject explicitly. This restricted contract covers the reviewed factor intervals; it is not unrestricted interval division.
@@ -105,3 +105,29 @@ Six envelope tests and ten joint-space tests brought the suite at this stage to 
 [fixed_quotient.py](fixed_quotient.py) supplies `projected_fixed_quotient` with an additional explicit `q` argument before `k`. It retains `0<q<1`, recomputes both endpoint responses to the perturbed night length, and requires `N′>0`. It does not recalculate a location-dependent solar model or quotient rule. Normalized unions can be built with the existing `joint_space.normalize` helper.
 
 Eight perturbation tests and three fixed-quotient tests bring the public suite to **53**. They cover 1,250 elimination/point-oracle comparisons, open versus attained optima, physical-night exclusions, unchanged versus recomputed night terms, unbounded eliminated directions and isolated temporal knots. The [three-case study](../../THREE-CASE-CAUSES.md) explains why these sensitivities do not identify city coordinates or authorize clock offsets.
+
+## Eliminate a constant noon shift
+
+[noon_shift.py](noon_shift.py) reuses the exact interval kernel to ask whether one constant shift can make supplied raw noon values agree with every reference minute. It returns the complete interval and limiting record IDs; it never selects a shift or produces adjusted prayer times. The [noon-shape study](../../NOON-SHAPE-TRANSFER.md) explains the institutional inference limits.
+
+```python
+from noon_shift import analyze_noon_shift
+
+# Synthetic epochs, not prayer observations.
+result = analyze_noon_shift([
+    {"id": "a", "rawEpochMilliseconds": 1_000.125,
+     "referenceEpochMilliseconds": 60_000},
+    {"id": "b", "rawEpochMilliseconds": 12_345.5,
+     "referenceEpochMilliseconds": 60_000},
+])
+assert result["status"] == "complete"  # input completeness, not feasibility
+print(result["unbounded"]["status"])
+print(result["bounded"]["status"])    # closed ±60,000 ms bound by default
+assert result["offsetSelected"] is False
+```
+
+Records must be nonempty, have distinct nonblank string IDs, finite numeric raw epochs (integers, floats or `Fraction`), and integer reference epochs aligned to UTC minutes. Booleans are rejected as numbers. Unresolved values reject by default. With `allow_incomplete=True`, any missing raw/reference value returns `insufficient-data`, without presenting the resolved subset as feasible. Empty inputs always reject. `bound_milliseconds=None` omits the bounded result; a finite nonnegative bound changes only that result.
+
+Each row constrains the shift to `[reference − raw − 30,000, reference − raw + 30,000)` milliseconds. Endpoint closure, exact rational values, signed interval width and residual span remain explicit. A positive conflict gap is a constraint contradiction under the supplied assumptions, not an observed event-time error. Adding eight noon-shift tests brings the complete public suite to **61 tests**.
+
+The caller must establish that one constant shift is a meaningful shared assumption for the supplied records. This helper does not identify the city, date, prayer, solar model or source, and cannot establish that two records belong to the same institutional calculation point.

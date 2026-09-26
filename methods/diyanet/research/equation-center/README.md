@@ -7,11 +7,14 @@ Research-only, rejected candidate. Read the [full comparison and limitations](..
 - `verify-center.mjs`: cross-language arithmetic check over 710 Julian dates and invalid-input checks.
 - `comparison.json`: source-free aggregates, provenance hashes and failed replacement conditions. It contains no official calendar clocks.
 - `noon-comparison.json` and `noon-verification.json`: the secondary retrospective noon diagnostic and its independent check. City terms are source-fitted nuisance parameters, never runtime coordinates or GPS corrections.
+- `channels.mjs` and `verify-channels.mjs`: source-free diagnostic decomposition into equation-of-time and declination changes. These isolated channels are not physically self-consistent ephemerides or app options.
+- `transfer-comparison.json`: the subsequent [offset-elimination and channel study](../../NOON-SHAPE-TRANSFER.md), including all annual and joint compatibility constraints.
 
 From the repository root, with Node.js and Python 3 installed:
 
 ```sh
 node methods/diyanet/research/equation-center/verify-center.mjs
+TZ=UTC node core/timezones/with-tzdata.mjs methods/diyanet/research/equation-center/verify-channels.mjs
 ```
 
 `npm test` also runs this arithmetic check. It covers samples from 1800 through 2200 and J2000 ±3 centuries; this is a numerical check of the expressions, not a claim of astronomical accuracy over that range. The standalone prayer core retains its existing 2001–2098 domain.
