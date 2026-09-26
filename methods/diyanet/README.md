@@ -6,6 +6,8 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
+**For app integration, start with the [standalone offline core](../../core/diyanet/README.md).** It consolidates the selected northern, low-latitude and southern recipes behind one day/year/next-prayer API. It computes locally without importing the research implementations or reading calendars. The 59-calendar parity check preserves all 129,210 raw and rounded baseline model fields; the institutional accuracy limits below remain in force.
+
 The latest [independent SPA comparison](SPA-REFERENCE.md) tests a documented apparent-geocentric solar model across 59 already exposed annual calendars. It loses institutional matches and reveals a sensitive last-real-day quotient in Reykjavík's seasonal reconstruction. A runnable source-free reference and intermediate traces are published; no calendar default changes.
 
 The preceding [three-case cause study](THREE-CASE-CAUSES.md) isolates minimum source-cell contradictions in Berlin and Helsinki. Berlin's endpoint exclusions are sensitive to horizon changes of a few seconds; Helsinki's full-run conflict has zero but unattained extra-tolerance infimum. Fixed-quotient controls and exact source-free tools narrow what these failures mean without selecting a timing correction.

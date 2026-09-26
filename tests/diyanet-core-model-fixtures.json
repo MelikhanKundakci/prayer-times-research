@@ -1,0 +1,1308 @@
+{
+  "schema": "diyanet-core-model-fixtures/v1",
+  "provenance": {
+    "kind": "frozen-local-reconstruction-baseline",
+    "forecastSha256": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967",
+    "forecast": "research/diyanet-spa-reference-2026-09-26/forecast.json",
+    "note": "Model predictions only; contains no publisher/source prayer-time clocks and implies no institutional validation."
+  },
+  "rowCount": 36,
+  "rows": [
+    {
+      "id": "berlin-2026/2026-01-01",
+      "caseId": "berlin-2026",
+      "route": "north",
+      "date": "2026-01-01",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "carrier": "2026-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1767244213330.341,
+        "sunrise": 1767251412003.0022,
+        "dhuhr": 1767266082730.1602,
+        "asr": 1767271811848.6338,
+        "maghrib": 1767280153457.318,
+        "isha": 1767286532012.7983
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1767244200000,
+        "sunrise": 1767251400000,
+        "dhuhr": 1767266100000,
+        "asr": 1767271800000,
+        "maghrib": 1767280140000,
+        "isha": 1767286560000
+      },
+      "localDates": {
+        "fajr": "2026-01-01",
+        "sunrise": "2026-01-01",
+        "dhuhr": "2026-01-01",
+        "asr": "2026-01-01",
+        "maghrib": "2026-01-01",
+        "isha": "2026-01-01"
+      }
+    },
+    {
+      "id": "berlin-2026/2026-03-29",
+      "caseId": "berlin-2026",
+      "route": "north",
+      "date": "2026-03-29",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "carrier": "2026-03-29",
+      "rawEpochMilliseconds": {
+        "fajr": 1774752504579.9534,
+        "sunrise": 1774759292767.3408,
+        "dhuhr": 1774782977545.307,
+        "asr": 1774795381253.4822,
+        "maghrib": 1774806062323.273,
+        "isha": 1774811940804.1072
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1774752480000,
+        "sunrise": 1774759320000,
+        "dhuhr": 1774782960000,
+        "asr": 1774795380000,
+        "maghrib": 1774806060000,
+        "isha": 1774811940000
+      },
+      "localDates": {
+        "fajr": "2026-03-29",
+        "sunrise": "2026-03-29",
+        "dhuhr": "2026-03-29",
+        "asr": "2026-03-29",
+        "maghrib": "2026-03-29",
+        "isha": "2026-03-29"
+      }
+    },
+    {
+      "id": "berlin-2026/2026-06-21",
+      "caseId": "berlin-2026",
+      "route": "north",
+      "date": "2026-06-21",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "carrier": "2026-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1782004202142.9534,
+        "sunrise": 1782009364957.963,
+        "dhuhr": 1782040385870.2007,
+        "asr": 1782056222415.8677,
+        "maghrib": 1782070806782.4385,
+        "isha": 1782075395951.336
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1782004200000,
+        "sunrise": 1782009360000,
+        "dhuhr": 1782040380000,
+        "asr": 1782056220000,
+        "maghrib": 1782070800000,
+        "isha": 1782075420000
+      },
+      "localDates": {
+        "fajr": "2026-06-21",
+        "sunrise": "2026-06-21",
+        "dhuhr": "2026-06-21",
+        "asr": "2026-06-21",
+        "maghrib": "2026-06-21",
+        "isha": "2026-06-21"
+      }
+    },
+    {
+      "id": "berlin-2026/2026-12-31",
+      "caseId": "berlin-2026",
+      "route": "north",
+      "date": "2026-12-31",
+      "location": {
+        "latitude": 52.52,
+        "longitude": 13.405,
+        "timeZone": "Europe/Berlin"
+      },
+      "carrier": "2026-12-31",
+      "rawEpochMilliseconds": {
+        "fajr": 1798693807245.504,
+        "sunrise": 1798701017171.525,
+        "dhuhr": 1798715647092.2346,
+        "asr": 1798721345127.121,
+        "maghrib": 1798729677012.9446,
+        "isha": 1798736066187.5234
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1798693800000,
+        "sunrise": 1798701000000,
+        "dhuhr": 1798715640000,
+        "asr": 1798721340000,
+        "maghrib": 1798729680000,
+        "isha": 1798736040000
+      },
+      "localDates": {
+        "fajr": "2026-12-31",
+        "sunrise": "2026-12-31",
+        "dhuhr": "2026-12-31",
+        "asr": "2026-12-31",
+        "maghrib": "2026-12-31",
+        "isha": "2026-12-31"
+      }
+    },
+    {
+      "id": "tromso-2026/2026-02-01",
+      "caseId": "tromso-2026",
+      "route": "north",
+      "date": "2026-02-01",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "carrier": "2026-02-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1769920515141.0774,
+        "sunrise": 1769933931806.7153,
+        "dhuhr": 1769943760077.8801,
+        "asr": 1769945529754.0515,
+        "maghrib": 1769952988349.045,
+        "isha": 1769965021549.4167
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1769920500000,
+        "sunrise": 1769933940000,
+        "dhuhr": 1769943780000,
+        "asr": 1769945520000,
+        "maghrib": 1769952960000,
+        "isha": 1769965020000
+      },
+      "localDates": {
+        "fajr": "2026-02-01",
+        "sunrise": "2026-02-01",
+        "dhuhr": "2026-02-01",
+        "asr": "2026-02-01",
+        "maghrib": "2026-02-01",
+        "isha": "2026-02-01"
+      }
+    },
+    {
+      "id": "tromso-2026/2026-06-20",
+      "caseId": "tromso-2026",
+      "route": "north",
+      "date": "2026-06-20",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "carrier": "2026-06-20",
+      "rawEpochMilliseconds": {
+        "fajr": 1781914723119.8613,
+        "sunrise": 1781918453798.2007,
+        "dhuhr": 1781952640719.2278,
+        "asr": 1781971282860.9648,
+        "maghrib": 1781986840719.2278,
+        "isha": 1781990159287.3042
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1781914740000,
+        "sunrise": 1781918460000,
+        "dhuhr": 1781952660000,
+        "asr": 1781971260000,
+        "maghrib": 1781986860000,
+        "isha": 1781990160000
+      },
+      "localDates": {
+        "fajr": "2026-06-20",
+        "sunrise": "2026-06-20",
+        "dhuhr": "2026-06-20",
+        "asr": "2026-06-20",
+        "maghrib": "2026-06-20",
+        "isha": "2026-06-20"
+      }
+    },
+    {
+      "id": "tromso-2026/2026-06-21",
+      "caseId": "tromso-2026",
+      "route": "north",
+      "date": "2026-06-21",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "carrier": "2026-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1782001123119.8613,
+        "sunrise": 1782004853798.2007,
+        "dhuhr": 1782039053798.2007,
+        "asr": 1782057698055.7864,
+        "maghrib": 1782073253798.2007,
+        "isha": 1782076569956.7246
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1782001140000,
+        "sunrise": 1782004860000,
+        "dhuhr": 1782039060000,
+        "asr": 1782057720000,
+        "maghrib": 1782073260000,
+        "isha": 1782076560000
+      },
+      "localDates": {
+        "fajr": "2026-06-21",
+        "sunrise": "2026-06-21",
+        "dhuhr": "2026-06-21",
+        "asr": "2026-06-21",
+        "maghrib": "2026-06-21",
+        "isha": "2026-06-21"
+      }
+    },
+    {
+      "id": "tromso-2026/2026-12-21",
+      "caseId": "tromso-2026",
+      "route": "north",
+      "date": "2026-12-21",
+      "location": {
+        "latitude": 69.6492,
+        "longitude": 18.9553,
+        "timeZone": "Europe/Oslo"
+      },
+      "carrier": "2026-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1797830888967.6147,
+        "sunrise": 1797841019588.579,
+        "dhuhr": 1797850019588.579,
+        "asr": 1797850019588.579,
+        "maghrib": 1797859019588.579,
+        "isha": 1797867062736.7075
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1797830880000,
+        "sunrise": 1797841020000,
+        "dhuhr": 1797850020000,
+        "asr": 1797850020000,
+        "maghrib": 1797859020000,
+        "isha": 1797867060000
+      },
+      "localDates": {
+        "fajr": "2026-12-21",
+        "sunrise": "2026-12-21",
+        "dhuhr": "2026-12-21",
+        "asr": "2026-12-21",
+        "maghrib": "2026-12-21",
+        "isha": "2026-12-21"
+      }
+    },
+    {
+      "id": "anchorage-2027/2027-03-14",
+      "caseId": "anchorage-2027",
+      "route": "north",
+      "date": "2027-03-14",
+      "location": {
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "carrier": "2027-03-14",
+      "rawEpochMilliseconds": {
+        "fajr": 1805032425531.3535,
+        "sunrise": 1805040888210.016,
+        "dhuhr": 1805062439480.639,
+        "asr": 1805072623081.4807,
+        "maghrib": 1805083390751.2615,
+        "isha": 1805090734072.3892
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1805032440000,
+        "sunrise": 1805040900000,
+        "dhuhr": 1805062440000,
+        "asr": 1805072640000,
+        "maghrib": 1805083380000,
+        "isha": 1805090760000
+      },
+      "localDates": {
+        "fajr": "2027-03-14",
+        "sunrise": "2027-03-14",
+        "dhuhr": "2027-03-14",
+        "asr": "2027-03-14",
+        "maghrib": "2027-03-14",
+        "isha": "2027-03-14"
+      }
+    },
+    {
+      "id": "anchorage-2027/2027-06-21",
+      "caseId": "anchorage-2027",
+      "route": "north",
+      "date": "2027-06-21",
+      "location": {
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "carrier": "2027-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1813577742999.7085,
+        "sunrise": 1813581376118.9192,
+        "dhuhr": 1813615576118.9192,
+        "asr": 1813632608501.684,
+        "maghrib": 1813649776118.9192,
+        "isha": 1813653005558.2175
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1813577760000,
+        "sunrise": 1813581360000,
+        "dhuhr": 1813615560000,
+        "asr": 1813632600000,
+        "maghrib": 1813649760000,
+        "isha": 1813653000000
+      },
+      "localDates": {
+        "fajr": "2027-06-21",
+        "sunrise": "2027-06-21",
+        "dhuhr": "2027-06-21",
+        "asr": "2027-06-21",
+        "maghrib": "2027-06-21",
+        "isha": "2027-06-22"
+      }
+    },
+    {
+      "id": "anchorage-2027/2027-08-01",
+      "caseId": "anchorage-2027",
+      "route": "north",
+      "date": "2027-08-01",
+      "location": {
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "carrier": "2027-08-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1817121828253.8845,
+        "sunrise": 1817126612806.6729,
+        "dhuhr": 1817158260463.6592,
+        "asr": 1817174031805.786,
+        "maghrib": 1817189308120.6455,
+        "isha": 1817193561056.4573
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1817121840000,
+        "sunrise": 1817126640000,
+        "dhuhr": 1817158260000,
+        "asr": 1817174040000,
+        "maghrib": 1817189280000,
+        "isha": 1817193540000
+      },
+      "localDates": {
+        "fajr": "2027-08-01",
+        "sunrise": "2027-08-01",
+        "dhuhr": "2027-08-01",
+        "asr": "2027-08-01",
+        "maghrib": "2027-08-01",
+        "isha": "2027-08-01"
+      }
+    },
+    {
+      "id": "anchorage-2027/2027-12-21",
+      "caseId": "anchorage-2027",
+      "route": "north",
+      "date": "2027-12-21",
+      "location": {
+        "latitude": 61.2181,
+        "longitude": -149.9003,
+        "timeZone": "America/Anchorage"
+      },
+      "carrier": "2027-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1829405868535.9185,
+        "sunrise": 1829416003922.1064,
+        "dhuhr": 1829426537573.1167,
+        "asr": 1829429086491.9075,
+        "maghrib": 1829436471224.1267,
+        "isha": 1829445558843.574
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1829405880000,
+        "sunrise": 1829416020000,
+        "dhuhr": 1829426520000,
+        "asr": 1829429100000,
+        "maghrib": 1829436480000,
+        "isha": 1829445540000
+      },
+      "localDates": {
+        "fajr": "2027-12-21",
+        "sunrise": "2027-12-21",
+        "dhuhr": "2027-12-21",
+        "asr": "2027-12-21",
+        "maghrib": "2027-12-21",
+        "isha": "2027-12-21"
+      }
+    },
+    {
+      "id": "istanbul-2026/2026-01-01",
+      "caseId": "istanbul-2026",
+      "route": "low",
+      "date": "2026-01-01",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "carrier": "2026-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1767239406625.17,
+        "sunrise": 1767244920755.1091,
+        "dhuhr": 1767262346170.1602,
+        "asr": 1767270722339.798,
+        "maghrib": 1767279171585.2112,
+        "isha": 1767284355470.3022
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1767239400000,
+        "sunrise": 1767244920000,
+        "dhuhr": 1767262320000,
+        "asr": 1767270720000,
+        "maghrib": 1767279180000,
+        "isha": 1767284340000
+      },
+      "localDates": {
+        "fajr": "2026-01-01",
+        "sunrise": "2026-01-01",
+        "dhuhr": "2026-01-01",
+        "asr": "2026-01-01",
+        "maghrib": "2026-01-01",
+        "isha": "2026-01-01"
+      }
+    },
+    {
+      "id": "istanbul-2026/2026-03-20",
+      "caseId": "istanbul-2026",
+      "route": "low",
+      "date": "2026-03-20",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "carrier": "2026-03-20",
+      "rawEpochMilliseconds": {
+        "fajr": 1773974156096.4746,
+        "sunrise": 1773979268316.42,
+        "dhuhr": 1774001802934.4836,
+        "asr": 1774014027793.4053,
+        "maghrib": 1774023737552.5474,
+        "isha": 1774028519596.3677
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1773974160000,
+        "sunrise": 1773979260000,
+        "dhuhr": 1774001820000,
+        "asr": 1774014000000,
+        "maghrib": 1774023720000,
+        "isha": 1774028520000
+      },
+      "localDates": {
+        "fajr": "2026-03-20",
+        "sunrise": "2026-03-20",
+        "dhuhr": "2026-03-20",
+        "asr": "2026-03-20",
+        "maghrib": "2026-03-20",
+        "isha": "2026-03-20"
+      }
+    },
+    {
+      "id": "istanbul-2026/2026-06-21",
+      "caseId": "istanbul-2026",
+      "route": "low",
+      "date": "2026-06-21",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "carrier": "2026-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1782001449099.2524,
+        "sunrise": 1782008700946.1707,
+        "dhuhr": 1782036649310.2007,
+        "asr": 1782051043196.324,
+        "maghrib": 1782063997674.2307,
+        "isha": 1782070683766.3047
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1782001440000,
+        "sunrise": 1782008700000,
+        "dhuhr": 1782036660000,
+        "asr": 1782051060000,
+        "maghrib": 1782064020000,
+        "isha": 1782070680000
+      },
+      "localDates": {
+        "fajr": "2026-06-21",
+        "sunrise": "2026-06-21",
+        "dhuhr": "2026-06-21",
+        "asr": "2026-06-21",
+        "maghrib": "2026-06-21",
+        "isha": "2026-06-21"
+      }
+    },
+    {
+      "id": "istanbul-2026/2026-12-21",
+      "caseId": "istanbul-2026",
+      "route": "low",
+      "date": "2026-12-21",
+      "location": {
+        "latitude": 41.012,
+        "longitude": 28.974,
+        "timeZone": "Europe/Istanbul"
+      },
+      "carrier": "2026-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1797824759776.032,
+        "sunrise": 1797830298938.0117,
+        "dhuhr": 1797847615100.579,
+        "asr": 1797855899334.3396,
+        "maghrib": 1797864331263.1465,
+        "isha": 1797869539269.9158
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1797824760000,
+        "sunrise": 1797830280000,
+        "dhuhr": 1797847620000,
+        "asr": 1797855900000,
+        "maghrib": 1797864360000,
+        "isha": 1797869520000
+      },
+      "localDates": {
+        "fajr": "2026-12-21",
+        "sunrise": "2026-12-21",
+        "dhuhr": "2026-12-21",
+        "asr": "2026-12-21",
+        "maghrib": "2026-12-21",
+        "isha": "2026-12-21"
+      }
+    },
+    {
+      "id": "kathmandu-2027/2027-01-01",
+      "caseId": "kathmandu-2027",
+      "route": "low",
+      "date": "2027-01-01",
+      "location": {
+        "latitude": 27.70877,
+        "longitude": 85.32716,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "carrier": "2027-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1798760760757.4954,
+        "sunrise": 1798765339885.4058,
+        "dhuhr": 1798784814374.2693,
+        "asr": 1798795167466.361,
+        "maghrib": 1798803688863.1328,
+        "isha": 1798807984016.2747
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1798760760000,
+        "sunrise": 1798765320000,
+        "dhuhr": 1798784820000,
+        "asr": 1798795140000,
+        "maghrib": 1798803660000,
+        "isha": 1798807980000
+      },
+      "localDates": {
+        "fajr": "2027-01-01",
+        "sunrise": "2027-01-01",
+        "dhuhr": "2027-01-01",
+        "asr": "2027-01-01",
+        "maghrib": "2027-01-01",
+        "isha": "2027-01-01"
+      }
+    },
+    {
+      "id": "kathmandu-2027/2027-03-20",
+      "caseId": "kathmandu-2027",
+      "route": "low",
+      "date": "2027-03-20",
+      "location": {
+        "latitude": 27.70877,
+        "longitude": 85.32716,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "carrier": "2027-03-20",
+      "rawEpochMilliseconds": {
+        "fajr": 1805497524756.6497,
+        "sunrise": 1805501779043.6284,
+        "dhuhr": 1805524282415.8381,
+        "asr": 1805536621335.0002,
+        "maghrib": 1805546185788.0479,
+        "isha": 1805550165509.743
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1805497500000,
+        "sunrise": 1805501760000,
+        "dhuhr": 1805524260000,
+        "asr": 1805536620000,
+        "maghrib": 1805546160000,
+        "isha": 1805550180000
+      },
+      "localDates": {
+        "fajr": "2027-03-20",
+        "sunrise": "2027-03-20",
+        "dhuhr": "2027-03-20",
+        "asr": "2027-03-20",
+        "maghrib": "2027-03-20",
+        "isha": "2027-03-20"
+      }
+    },
+    {
+      "id": "kathmandu-2027/2027-06-21",
+      "caseId": "kathmandu-2027",
+      "route": "low",
+      "date": "2027-06-21",
+      "location": {
+        "latitude": 27.70877,
+        "longitude": 85.32716,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "carrier": "2027-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1813528233471.3643,
+        "sunrise": 1813533390030.0535,
+        "dhuhr": 1813559121528.519,
+        "asr": 1813571623610.8677,
+        "maghrib": 1813584253026.9846,
+        "isha": 1813589058050.0574
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1813528260000,
+        "sunrise": 1813533420000,
+        "dhuhr": 1813559100000,
+        "asr": 1813571640000,
+        "maghrib": 1813584240000,
+        "isha": 1813589040000
+      },
+      "localDates": {
+        "fajr": "2027-06-21",
+        "sunrise": "2027-06-21",
+        "dhuhr": "2027-06-21",
+        "asr": "2027-06-21",
+        "maghrib": "2027-06-21",
+        "isha": "2027-06-21"
+      }
+    },
+    {
+      "id": "kathmandu-2027/2027-12-31",
+      "caseId": "kathmandu-2027",
+      "route": "low",
+      "date": "2027-12-31",
+      "location": {
+        "latitude": 27.70877,
+        "longitude": 85.32716,
+        "timeZone": "Asia/Kathmandu"
+      },
+      "carrier": "2027-12-31",
+      "rawEpochMilliseconds": {
+        "fajr": 1830210335290.9644,
+        "sunrise": 1830214917992.2188,
+        "dhuhr": 1830234378650.5867,
+        "asr": 1830244720028.049,
+        "maghrib": 1830253239308.9546,
+        "isha": 1830257537872.4624
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1830210360000,
+        "sunrise": 1830214920000,
+        "dhuhr": 1830234360000,
+        "asr": 1830244740000,
+        "maghrib": 1830253260000,
+        "isha": 1830257520000
+      },
+      "localDates": {
+        "fajr": "2027-12-31",
+        "sunrise": "2027-12-31",
+        "dhuhr": "2027-12-31",
+        "asr": "2027-12-31",
+        "maghrib": "2027-12-31",
+        "isha": "2027-12-31"
+      }
+    },
+    {
+      "id": "mexico-city-2027/2027-01-01",
+      "caseId": "mexico-city-2027",
+      "route": "low",
+      "date": "2027-01-01",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "carrier": "2027-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1798804338896.8289,
+        "sunrise": 1798808610217.9946,
+        "dhuhr": 1798829094605.9082,
+        "asr": 1798840291460.6118,
+        "maghrib": 1798848978993.8218,
+        "isha": 1798852981346.9255
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1798804320000,
+        "sunrise": 1798808640000,
+        "dhuhr": 1798829100000,
+        "asr": 1798840320000,
+        "maghrib": 1798848960000,
+        "isha": 1798852980000
+      },
+      "localDates": {
+        "fajr": "2027-01-01",
+        "sunrise": "2027-01-01",
+        "dhuhr": "2027-01-01",
+        "asr": "2027-01-01",
+        "maghrib": "2027-01-01",
+        "isha": "2027-01-01"
+      }
+    },
+    {
+      "id": "mexico-city-2027/2027-03-20",
+      "caseId": "mexico-city-2027",
+      "route": "low",
+      "date": "2027-03-20",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "carrier": "2027-03-20",
+      "rawEpochMilliseconds": {
+        "fajr": 1805542102516.421,
+        "sunrise": 1805546059131.354,
+        "dhuhr": 1805568562647.477,
+        "asr": 1805580722299.0244,
+        "maghrib": 1805590466163.6,
+        "isha": 1805594166905.7185
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1805542080000,
+        "sunrise": 1805546040000,
+        "dhuhr": 1805568540000,
+        "asr": 1805580720000,
+        "maghrib": 1805590440000,
+        "isha": 1805594160000
+      },
+      "localDates": {
+        "fajr": "2027-03-20",
+        "sunrise": "2027-03-20",
+        "dhuhr": "2027-03-20",
+        "asr": "2027-03-20",
+        "maghrib": "2027-03-20",
+        "isha": "2027-03-20"
+      }
+    },
+    {
+      "id": "mexico-city-2027/2027-06-21",
+      "caseId": "mexico-city-2027",
+      "route": "low",
+      "date": "2027-06-21",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "carrier": "2027-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1813574144604.0176,
+        "sunrise": 1813578738685.455,
+        "dhuhr": 1813603401760.1582,
+        "asr": 1813615459908.016,
+        "maghrib": 1813627464834.8613,
+        "isha": 1813631753428.5964
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1813574160000,
+        "sunrise": 1813578720000,
+        "dhuhr": 1813603380000,
+        "asr": 1813615440000,
+        "maghrib": 1813627440000,
+        "isha": 1813631760000
+      },
+      "localDates": {
+        "fajr": "2027-06-21",
+        "sunrise": "2027-06-21",
+        "dhuhr": "2027-06-21",
+        "asr": "2027-06-21",
+        "maghrib": "2027-06-21",
+        "isha": "2027-06-21"
+      }
+    },
+    {
+      "id": "mexico-city-2027/2027-12-21",
+      "caseId": "mexico-city-2027",
+      "route": "low",
+      "date": "2027-12-21",
+      "location": {
+        "latitude": 19.4143542825,
+        "longitude": -99.173805163,
+        "timeZone": "America/Mexico_City"
+      },
+      "carrier": "2027-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1829389633179.5566,
+        "sunrise": 1829393918177.5315,
+        "dhuhr": 1829414363214.3557,
+        "asr": 1829425528429.7612,
+        "maghrib": 1829434208251.18,
+        "isha": 1829438223583.5234
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1829389620000,
+        "sunrise": 1829393940000,
+        "dhuhr": 1829414340000,
+        "asr": 1829425500000,
+        "maghrib": 1829434200000,
+        "isha": 1829438220000
+      },
+      "localDates": {
+        "fajr": "2027-12-21",
+        "sunrise": "2027-12-21",
+        "dhuhr": "2027-12-21",
+        "asr": "2027-12-21",
+        "maghrib": "2027-12-21",
+        "isha": "2027-12-21"
+      }
+    },
+    {
+      "id": "cape-town-2026/2026-01-01",
+      "caseId": "cape-town-2026",
+      "route": "south",
+      "date": "2026-01-01",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "carrier": "2026-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": 1767232501086.431,
+        "sunrise": 1767238300734.1035,
+        "dhuhr": 1767264879797.36,
+        "asr": 1767278321051.9407,
+        "maghrib": 1767290858860.6167,
+        "isha": 1767296249943.2515
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1767232500000,
+        "sunrise": 1767238320000,
+        "dhuhr": 1767264900000,
+        "asr": 1767278340000,
+        "maghrib": 1767290880000,
+        "isha": 1767296220000
+      },
+      "localDates": {
+        "fajr": "2026-01-01",
+        "sunrise": "2026-01-01",
+        "dhuhr": "2026-01-01",
+        "asr": "2026-01-01",
+        "maghrib": "2026-01-01",
+        "isha": "2026-01-01"
+      }
+    },
+    {
+      "id": "cape-town-2026/2026-03-20",
+      "caseId": "cape-town-2026",
+      "route": "south",
+      "date": "2026-03-20",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "carrier": "2026-03-20",
+      "rawEpochMilliseconds": {
+        "fajr": 1773977146710.888,
+        "sunrise": 1773981736494.0884,
+        "dhuhr": 1774004336561.6838,
+        "asr": 1774016728587.8215,
+        "maghrib": 1774026336629.2793,
+        "isha": 1774030630069.4104
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1773977160000,
+        "sunrise": 1773981720000,
+        "dhuhr": 1774004340000,
+        "asr": 1774016700000,
+        "maghrib": 1774026360000,
+        "isha": 1774030620000
+      },
+      "localDates": {
+        "fajr": "2026-03-20",
+        "sunrise": "2026-03-20",
+        "dhuhr": "2026-03-20",
+        "asr": "2026-03-20",
+        "maghrib": "2026-03-20",
+        "isha": "2026-03-20"
+      }
+    },
+    {
+      "id": "cape-town-2026/2026-06-21",
+      "caseId": "cape-town-2026",
+      "route": "south",
+      "date": "2026-06-21",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "carrier": "2026-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1782015707489.8306,
+        "sunrise": 1782020657935.0732,
+        "dhuhr": 1782039182937.4006,
+        "asr": 1782048653215.453,
+        "maghrib": 1782057107939.728,
+        "isha": 1782061756098.2314
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1782015720000,
+        "sunrise": 1782020640000,
+        "dhuhr": 1782039180000,
+        "asr": 1782048660000,
+        "maghrib": 1782057120000,
+        "isha": 1782061740000
+      },
+      "localDates": {
+        "fajr": "2026-06-21",
+        "sunrise": "2026-06-21",
+        "dhuhr": "2026-06-21",
+        "asr": "2026-06-21",
+        "maghrib": "2026-06-21",
+        "isha": "2026-06-21"
+      }
+    },
+    {
+      "id": "cape-town-2026/2026-12-21",
+      "caseId": "cape-town-2026",
+      "route": "south",
+      "date": "2026-12-21",
+      "location": {
+        "latitude": -33.92888,
+        "longitude": 18.41722,
+        "timeZone": "Africa/Johannesburg"
+      },
+      "carrier": "2026-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1797817635006.4514,
+        "sunrise": 1797823484940.8147,
+        "dhuhr": 1797850148727.7793,
+        "asr": 1797863590425.0317,
+        "maghrib": 1797876212514.744,
+        "isha": 1797881648893.6995
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1797817620000,
+        "sunrise": 1797823500000,
+        "dhuhr": 1797850140000,
+        "asr": 1797863580000,
+        "maghrib": 1797876240000,
+        "isha": 1797881640000
+      },
+      "localDates": {
+        "fajr": "2026-12-21",
+        "sunrise": "2026-12-21",
+        "dhuhr": "2026-12-21",
+        "asr": "2026-12-21",
+        "maghrib": "2026-12-21",
+        "isha": "2026-12-21"
+      }
+    },
+    {
+      "id": "ushuaia-2027/2027-01-01",
+      "caseId": "ushuaia-2027",
+      "route": "south",
+      "date": "2027-01-01",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "carrier": "2027-01-01",
+      "rawEpochMilliseconds": {
+        "fajr": null,
+        "sunrise": 1798789984710.4475,
+        "dhuhr": 1798821683859.336,
+        "asr": 1798837748848.5781,
+        "maghrib": 1798852783008.2244,
+        "isha": null
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": null,
+        "sunrise": 1798789980000,
+        "dhuhr": 1798821660000,
+        "asr": 1798837740000,
+        "maghrib": 1798852800000,
+        "isha": null
+      },
+      "localDates": {
+        "fajr": null,
+        "sunrise": "2027-01-01",
+        "dhuhr": "2027-01-01",
+        "asr": "2027-01-01",
+        "maghrib": "2027-01-01",
+        "isha": null
+      }
+    },
+    {
+      "id": "ushuaia-2027/2027-06-21",
+      "caseId": "ushuaia-2027",
+      "route": "south",
+      "date": "2027-06-21",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "carrier": "2027-06-21",
+      "rawEpochMilliseconds": {
+        "fajr": 1813574507218.5793,
+        "sunrise": 1813582300929.2292,
+        "dhuhr": 1813595991013.5857,
+        "asr": 1813600887596.241,
+        "maghrib": 1813609081097.9421,
+        "isha": 1813616441439.7668
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1813574520000,
+        "sunrise": 1813582320000,
+        "dhuhr": 1813596000000,
+        "asr": 1813600860000,
+        "maghrib": 1813609080000,
+        "isha": 1813616460000
+      },
+      "localDates": {
+        "fajr": "2027-06-21",
+        "sunrise": "2027-06-21",
+        "dhuhr": "2027-06-21",
+        "asr": "2027-06-21",
+        "maghrib": "2027-06-21",
+        "isha": "2027-06-21"
+      }
+    },
+    {
+      "id": "ushuaia-2027/2027-09-18",
+      "caseId": "ushuaia-2027",
+      "route": "south",
+      "date": "2027-09-18",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "carrier": "2027-09-18",
+      "rawEpochMilliseconds": {
+        "fajr": 1821256274887.7139,
+        "sunrise": 1821263181895.8364,
+        "dhuhr": 1821285154606.237,
+        "asr": 1821296251261.7822,
+        "maghrib": 1821306527316.6377,
+        "isha": 1821312983578.4324
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1821256260000,
+        "sunrise": 1821263160000,
+        "dhuhr": 1821285180000,
+        "asr": 1821296280000,
+        "maghrib": 1821306540000,
+        "isha": 1821312960000
+      },
+      "localDates": {
+        "fajr": "2027-09-18",
+        "sunrise": "2027-09-18",
+        "dhuhr": "2027-09-18",
+        "asr": "2027-09-18",
+        "maghrib": "2027-09-18",
+        "isha": "2027-09-18"
+      }
+    },
+    {
+      "id": "ushuaia-2027/2027-12-21",
+      "caseId": "ushuaia-2027",
+      "route": "south",
+      "date": "2027-12-21",
+      "location": {
+        "latitude": -54.81088888888888,
+        "longitude": -68.29569444444444,
+        "timeZone": "America/Argentina/Ushuaia"
+      },
+      "carrier": "2027-12-21",
+      "rawEpochMilliseconds": {
+        "fajr": null,
+        "sunrise": 1829375044907.8909,
+        "dhuhr": 1829406952467.7832,
+        "asr": 1829423083337.6194,
+        "maghrib": 1829438260027.6755,
+        "isha": null
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": null,
+        "sunrise": 1829375040000,
+        "dhuhr": 1829406960000,
+        "asr": 1829423100000,
+        "maghrib": 1829438280000,
+        "isha": null
+      },
+      "localDates": {
+        "fajr": null,
+        "sunrise": "2027-12-21",
+        "dhuhr": "2027-12-21",
+        "asr": "2027-12-21",
+        "maghrib": "2027-12-21",
+        "isha": null
+      }
+    },
+    {
+      "id": "apia-2027/2027-01-01",
+      "caseId": "apia-2027",
+      "route": "south",
+      "date": "2027-01-01",
+      "location": {
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "carrier": "2026-12-31",
+      "rawEpochMilliseconds": {
+        "fajr": 1798731753758.3154,
+        "sunrise": 1798736095946.197,
+        "dhuhr": 1798760088579.7874,
+        "asr": 1798772347948.4036,
+        "maghrib": 1798783481213.3777,
+        "isha": 1798787537720.4238
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1798731780000,
+        "sunrise": 1798736100000,
+        "dhuhr": 1798760100000,
+        "asr": 1798772340000,
+        "maghrib": 1798783500000,
+        "isha": 1798787520000
+      },
+      "localDates": {
+        "fajr": "2027-01-01",
+        "sunrise": "2027-01-01",
+        "dhuhr": "2027-01-01",
+        "asr": "2027-01-01",
+        "maghrib": "2027-01-01",
+        "isha": "2027-01-01"
+      }
+    },
+    {
+      "id": "apia-2027/2027-03-20",
+      "caseId": "apia-2027",
+      "route": "south",
+      "date": "2027-03-20",
+      "location": {
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "carrier": "2027-03-19",
+      "rawEpochMilliseconds": {
+        "fajr": 1805473203078.0735,
+        "sunrise": 1805477033473.9077,
+        "dhuhr": 1805499602771.2505,
+        "asr": 1805511489963.888,
+        "maghrib": 1805521572068.5933,
+        "isha": 1805525154258.8506
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1805473200000,
+        "sunrise": 1805477040000,
+        "dhuhr": 1805499600000,
+        "asr": 1805511480000,
+        "maghrib": 1805521560000,
+        "isha": 1805525160000
+      },
+      "localDates": {
+        "fajr": "2027-03-20",
+        "sunrise": "2027-03-20",
+        "dhuhr": "2027-03-20",
+        "asr": "2027-03-20",
+        "maghrib": "2027-03-20",
+        "isha": "2027-03-20"
+      }
+    },
+    {
+      "id": "apia-2027/2027-09-18",
+      "caseId": "apia-2027",
+      "route": "south",
+      "date": "2027-09-18",
+      "location": {
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "carrier": "2027-09-17",
+      "rawEpochMilliseconds": {
+        "fajr": 1821197402658.841,
+        "sunrise": 1821201226657.7695,
+        "dhuhr": 1821223609384.6475,
+        "asr": 1821235573020.6587,
+        "maghrib": 1821245392111.5254,
+        "isha": 1821248968818.666
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1821197400000,
+        "sunrise": 1821201240000,
+        "dhuhr": 1821223620000,
+        "asr": 1821235560000,
+        "maghrib": 1821245400000,
+        "isha": 1821248940000
+      },
+      "localDates": {
+        "fajr": "2027-09-18",
+        "sunrise": "2027-09-18",
+        "dhuhr": "2027-09-18",
+        "asr": "2027-09-18",
+        "maghrib": "2027-09-18",
+        "isha": "2027-09-18"
+      }
+    },
+    {
+      "id": "apia-2027/2027-12-31",
+      "caseId": "apia-2027",
+      "route": "south",
+      "date": "2027-12-31",
+      "location": {
+        "latitude": -13.830099455068957,
+        "longitude": -171.76786480270255,
+        "timeZone": "Pacific/Apia"
+      },
+      "carrier": "2027-12-30",
+      "rawEpochMilliseconds": {
+        "fajr": 1830181307968.2607,
+        "sunrise": 1830185653949.951,
+        "dhuhr": 1830209652525.4128,
+        "asr": 1830221920748.7024,
+        "maghrib": 1830233051100.8748,
+        "isha": 1830237111127.5884
+      },
+      "roundedEpochMilliseconds": {
+        "fajr": 1830181320000,
+        "sunrise": 1830185640000,
+        "dhuhr": 1830209640000,
+        "asr": 1830221940000,
+        "maghrib": 1830233040000,
+        "isha": 1830237120000
+      },
+      "localDates": {
+        "fajr": "2027-12-31",
+        "sunrise": "2027-12-31",
+        "dhuhr": "2027-12-31",
+        "asr": "2027-12-31",
+        "maghrib": "2027-12-31",
+        "isha": "2027-12-31"
+      }
+    }
+  ]
+}

@@ -10,6 +10,7 @@ This repository makes the research useful to contributors: readable calculation 
 
 ## Start here
 
+- **Build with the Diyanet reconstruction:** the [standalone offline core](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
 - **Use a calculation:** choose a method below, read its input contract, and run its example.
 - **Understand the mathematics:** [calculation architecture](docs/ARCHITECTURE.md) and [astronomical conventions](docs/ASTRONOMY.md).
 - **Assess accuracy:** each method has a `validation.json` and a README explaining its denominators, limits, and source coverage. Read the [validation protocol](docs/VALIDATION.md) before comparing percentages.
@@ -32,6 +33,7 @@ npm test
 node scripts/run.mjs --list
 
 # Run a documented input using the bundled timezone data.
+npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 node scripts/run.mjs diyanet --example
 node scripts/run.mjs moonsighting-committee --example
 node scripts/run.mjs shia-angles --example
@@ -41,6 +43,8 @@ node scripts/run.mjs diyanet --input methods/diyanet/examples/input.json
 ```
 
 The first dependency installation requires internet access. Calculations and the public test suite then run locally, without API keys, a server, or requests for prayer calendars. The Adhan dependency is retained only for explicitly identified historical comparison branches; see [third-party notices](THIRD_PARTY_NOTICES.md).
+
+For app integration, import `createDiyanetCalculator` from `core/diyanet/index.mjs`. The [API guide](core/diyanet/README.md) covers day/year queries, a consistent millisecond/ISO cursor for the next prayer, date ownership, missing events, and bounded caching. The core itself has no third-party dependency. It preserves all **129,210** raw and rounded model fields in the existing 59-calendar baseline; this is software parity, not a new claim of agreement with official Diyanet calendars.
 
 Examples return the native research result, including actual event dates, UTC instants where supplied by the method, missing-event reasons, and diagnostic metadata. An annual result is previewed by default; add `--full` for the entire result. Different methods deliberately retain different event names when the underlying religious or source meaning is unresolved.
 

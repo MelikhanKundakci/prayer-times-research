@@ -1,0 +1,50 @@
+{
+  "schema": "diyanet-unified-core-parity/v1",
+  "date": "2026-09-26",
+  "purpose": "Exact software parity with frozen model predictions, not new institutional accuracy or second-level validation",
+  "environment": {
+    "node": "26.7.0",
+    "timezoneData": "2026d",
+    "TZ": "UTC"
+  },
+  "baseline": {
+    "annualCases": 59,
+    "days": 21535,
+    "plannedEventFields": 129210
+  },
+  "additionalProvider": "SPA is checked for interface parity only and remains unselected",
+  "acceptance": {
+    "status": "pass",
+    "cases": 59,
+    "models": [
+      "baseline",
+      "spa-utc00"
+    ],
+    "carrierDays": 43070,
+    "compared": {
+      "rawFields": 258420,
+      "roundedFields": 258420
+    },
+    "baselineSha256": "cda870e05f7d1d81715ee3be658134d00e47468e4c89cba5941c1338f3a44967",
+    "mismatchCounts": {},
+    "mismatchCount": 0,
+    "maximumRawDifferenceMs": {
+      "baseline": 0,
+      "spa-utc00": 0
+    },
+    "firstMismatches": []
+  },
+  "publicReproduction": {
+    "test": "tests/diyanet-core.test.mjs",
+    "fixtures": "tests/diyanet-core-model-fixtures.json",
+    "selectedModelRows": 36,
+    "fullForecast": "Retained in the original research workspace; full corpus is not bundled in this public export"
+  },
+  "implementationSha256": {
+    "core/diyanet/astronomy.mjs": "63c6e773ffad2885b3c152d3b4df5e6197adf26a520d549a29b0bc16812e0bcf",
+    "core/diyanet/calendar.mjs": "531a32ba6197dda856a226c07f4e2e943610bab248218e4c194244ab0ee6733b",
+    "core/diyanet/horizons.mjs": "1fdd28ede791322e8164aabd7c5dde50b78cec6816bfd3b062ade27b169588b3",
+    "core/diyanet/index.mjs": "f98fc6f126cba4b8b9203bc041bf6f482b0f049b1105b7c8ed9bb59dafb915de",
+    "core/diyanet/seasonal.mjs": "8ce93fe11c233c13692d2348898d5ca681f11907922698a750567472ce780035"
+  }
+}

@@ -2,6 +2,8 @@
 
 This repository is a source-only extraction from a larger prayer-time research workspace. Historical publisher calendars, HTTP responses, and internal working records are not redistributed here.
 
+The later [standalone Diyanet core](../core/diyanet/README.md) is a fresh, pure implementation of the selected baseline recipes, reusing the mapped own USNO solar routine. It imports no method/research implementation and leaves the original extraction intact. Its [separate parity record](../core/diyanet/verification.json) checks 59 annual inputs against frozen model outputs, including an additional injected SPA provider run; the public suite carries 36 model-only regression rows and API/offline checks. Neither those fixtures nor numerical parity are new institutional reference observations.
+
 - [`source-map.json`](source-map.json) records the original research-relative identifier, source SHA-256, destination SHA-256, import rewrites, and declared extraction changes for each transferred file. Research identifiers are provenance labels, not paths promised to exist in this repository.
 - [`entrypoints.json`](entrypoints.json) lists the selected native calculation functions and contracts.
 - [`relocation-verification.json`](relocation-verification.json) records the local comparison of the original and exported modules, including one complete-output sample for each of the 23 selected entry points. Annual samples compare every day. This verifies extraction equivalence on those inputs; it is not a new comparison with institutional calendars.
