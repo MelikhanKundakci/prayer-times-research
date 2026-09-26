@@ -4,10 +4,10 @@ import {buildNorthernContext} from './northern.mjs';
 import {buildLocalSummerContext} from './summer.mjs';
 import {selectRuleInstant} from './selection.mjs';
 import {selectNightFraction} from './night-fraction.mjs';
-import {getLocalProfile,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
-export {getLocalProfile,listLocalProfiles,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
+import {getLocalProfile,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_DIYANET_SPA_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
+export {getLocalProfile,listLocalProfiles,LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_DIYANET_SPA_PROFILE,LOCAL_PROFILES} from './profiles.mjs';
 
-export const LOCAL_VERSION='0.5.0';
+export const LOCAL_VERSION='0.6.0';
 export const LOCAL_EVENTS=Object.freeze(['fajr','sunrise','dhuhr','asr','maghrib','isha']);
 const PRAYERS=LOCAL_EVENTS.filter(name=>name!=='sunrise');
 const MINUTE=60000,DAY=86400000;
@@ -17,11 +17,12 @@ const LEGACY_RULES=Object.freeze({fajr:'fajr.altitude-18.temkin-0',sunrise:'sunr
 // Bounded annual contexts are computed only for profiles declaring this policy.
 const northernContexts=new Map();
 function northernContext(input){
-  const key=JSON.stringify([input.year,input.latitude,input.longitude,input.timeZone]);
+  const solarModel=input.solarModel??'usno';
+  const key=JSON.stringify([input.year,input.latitude,input.longitude,input.timeZone,solarModel]);
   if(northernContexts.has(key)){
     const value=northernContexts.get(key);northernContexts.delete(key);northernContexts.set(key,value);return value;
   }
-  const value={northern:buildNorthernContext(input),summer:null};
+  const value={northern:buildNorthernContext({...input,solarModel}),summer:null};
   northernContexts.set(key,value);
   if(northernContexts.size>4)northernContexts.delete(northernContexts.keys().next().value);
   return value;
@@ -71,7 +72,7 @@ export function calculateLocalDay(input){
     ishaAngleDegrees:north?definition.northern.ishaAngleDegrees:definition.astronomy.ishaAngleDegrees});
   validateDomain(definition,astronomy.location);
   const context=north?northernContext({year:Number(date.slice(0,4)),latitude,
-    longitude:astronomy.location.longitude,timeZone}):null;
+    longitude:astronomy.location.longitude,timeZone,solarModel:definition.astronomy.solarModel??'usno'}):null;
   const northern=context?.northern??null;
   if(seasonal&&context&&!context.summer)context.summer=buildLocalSummerContext(northern);
   const summer=seasonal?context?.summer??null:null;

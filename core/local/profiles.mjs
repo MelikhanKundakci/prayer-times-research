@@ -100,6 +100,12 @@ for(const pair of pairs)for(const factor of [1,2])for(const mode of ['physical',
     nightPolicy:mode==='angle-night'?{kind:'angle-fraction',fajrAngleDegrees:pair.fajr,ishaAngleDegrees:pair.isha}:null});
 }
 
+rawProfiles.push({id:'diyanet-published-spa-point-v1',label:'Diyanet published point rules · SPA astronomy',
+  authority:'Presidency of Religious Affairs of Türkiye (Diyanet)',
+  sourceScope:'Published Diyanet criteria with the same declared local point conventions as the USNO Diyanet profile, using the offline SPA solar-coordinate provider. This provider choice does not establish Diyanet production equivalence or greater agreement with an institutional timetable.',
+  sources:D,astronomy:{fajrAngleDegrees:18,ishaAngleDegrees:17,asrShadowFactor:1,horizonDepressionDegrees:50/60,solarModel:'spa'},
+  northern:{thresholdLatitude:44.5,ishaAngleDegrees:16,mode:'ordinary-guard'},domain:null,events:diyanetEvents});
+
 function deepFreeze(value){
   if(value&&typeof value==='object'&&!Object.isFrozen(value)){
     for(const child of Object.values(value))deepFreeze(child);
@@ -114,6 +120,7 @@ export const LOCAL_PROFILE_IDS=Object.freeze([...registry.keys()]);
 export const LOCAL_PROFILES=LOCAL_PROFILE_IDS;
 export const LOCAL_PROFILE='diyanet-published-point-v1';
 export const LOCAL_SEASONAL_PROFILE='local-northern-seasonal-v1';
+export const LOCAL_DIYANET_SPA_PROFILE='diyanet-published-spa-point-v1';
 
 export function getLocalProfile(id){
   if(typeof id!=='string'||!registry.has(id))throw new RangeError(`Unknown local profile. Supported IDs: ${LOCAL_PROFILE_IDS.join(', ')}`);

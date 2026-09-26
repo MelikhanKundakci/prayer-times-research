@@ -1,12 +1,13 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_PROFILES,getLocalProfile,listLocalProfiles} from '../core/local/profiles.mjs';
+import {LOCAL_PROFILE,LOCAL_SEASONAL_PROFILE,LOCAL_DIYANET_SPA_PROFILE,LOCAL_PROFILES,getLocalProfile,listLocalProfiles} from '../core/local/profiles.mjs';
 
 const EXPECTED=[
   'diyanet-published-point-v1','local-northern-seasonal-v1','egypt-published-angles-point-v1',
   'fcna-usa-2017-point-v1','fcna-canada-2017-point-v1','kemenag-worked-example-point-v1',
 ];
 for(const pair of ['18-17','19p5-17p5','15-15','13-13'])for(const factor of [1,2])for(const mode of ['physical','angle-night'])EXPECTED.push(`local-${pair}-shadow${factor}-${mode}-v1`);
+EXPECTED.push('diyanet-published-spa-point-v1');
 const EVENTS=['fajr','sunrise','dhuhr','asr','maghrib','isha'];
 
 test('registry has stable unique profile IDs and returns detached definitions',()=>{
@@ -19,6 +20,7 @@ test('registry has stable unique profile IDs and returns detached definitions',(
   assert.equal(getLocalProfile('kemenag-worked-example-point-v1').astronomy.fajrAngleDegrees,20);
   assert.equal(LOCAL_PROFILE,'diyanet-published-point-v1');
   assert.equal(LOCAL_SEASONAL_PROFILE,'local-northern-seasonal-v1');
+  assert.equal(LOCAL_DIYANET_SPA_PROFILE,'diyanet-published-spa-point-v1');
   assert.throws(()=>getLocalProfile('not-a-profile'),/Unknown local profile/);
   const unsafe={toString(){throw new Error('should not run');}};
   assert.throws(()=>getLocalProfile(unsafe),/Unknown local profile/);

@@ -1,0 +1,1944 @@
+{
+  "schema": "independent-diyanet-spa-reference/v1",
+  "caseCount": 22,
+  "meaning": "Synthetic independent SPA roots under the declared fixed geocentric conventions; not institutional accuracy",
+  "parameters": {
+    "northernFajrAngleDegrees": 18,
+    "northernIshaAngleDegrees": 16,
+    "ordinaryFajrAngleDegrees": 18,
+    "ordinaryIshaAngleDegrees": 17,
+    "horizonDepressionDegrees": 0.8333333333333334,
+    "asrShadowFactor": 1
+  },
+  "timeScale": {
+    "deltaTSeconds": 69.184,
+    "UT1MinusUTCSeconds": 0
+  },
+  "sourceSha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+  "inputDeclarationSha256": "0c6762583e65e4c848257865f8718474981456c5e2fc42930376fedec7e958bf",
+  "rows": [
+    {
+      "id": "frankfurt:2027-03-20",
+      "input": {
+        "date": "2027-03-20",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1805542368.8507097,
+        "startEpochSeconds": 1805499177.715947,
+        "endEpochSeconds": 1805585559.950711,
+        "transitHeightDegrees": 39.744042884197675,
+        "transitDeclinationDegrees": -0.14595711580232187,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1805513951.3708549,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805513951.3708549
+            ],
+            "minimumSineResidual": -0.33688730492957836,
+            "maximumSineResidual": 0.9483760554265084,
+            "altitudeSlopeDegreesPerSecond": 0.0024750027308648725
+          },
+          "sunrise": {
+            "epochSeconds": 1805520532.062346,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805520532.062346
+            ],
+            "minimumSineResidual": -0.631360401652943,
+            "maximumSineResidual": 0.6539029587031436,
+            "altitudeSlopeDegreesPerSecond": 0.0026760391632391634
+          },
+          "dhuhr": {
+            "epochSeconds": 1805542368.8507097,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1805554299.389852,
+            "thresholdDegrees": 24.418240026515825,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805554299.389852
+            ],
+            "minimumSineResidual": -1.0540200707979253,
+            "maximumSineResidual": 0.22596529246141694,
+            "altitudeSlopeDegreesPerSecond": -0.0022354405552036383
+          },
+          "maghrib": {
+            "epochSeconds": 1805564263.0541406,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805564263.0541406
+            ],
+            "minimumSineResidual": -0.6260818494657874,
+            "maximumSineResidual": 0.6539035137935547,
+            "altitudeSlopeDegreesPerSecond": -0.0026688809588280016
+          },
+          "isha": {
+            "epochSeconds": 1805570066.1763906,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805570066.1763906
+            ],
+            "minimumSineResidual": -0.3649883913003709,
+            "maximumSineResidual": 0.9149969719589712,
+            "altitudeSlopeDegreesPerSecond": -0.0025073676939477707
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt:2027-06-21",
+      "input": {
+        "date": "2027-06-21",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1813577222.5114362,
+        "startEpochSeconds": 1813534016.015126,
+        "endEpochSeconds": 1813620429.0025966,
+        "transitHeightDegrees": 63.327216557508414,
+        "transitDeclinationDegrees": 23.437216557508414,
+        "events": {
+          "fajr": {
+            "epochSeconds": null,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.025770569278567523,
+            "maximumSineResidual": 1.202601716757961,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "sunrise": {
+            "epochSeconds": 1813547719.093576,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813547719.093576
+            ],
+            "minimumSineResidual": -0.2687025274447972,
+            "maximumSineResidual": 0.9081286200345964,
+            "altitudeSlopeDegreesPerSecond": 0.002058135047896925
+          },
+          "dhuhr": {
+            "epochSeconds": 1813577222.5114362,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1813592818.4712768,
+            "thresholdDegrees": 33.64863798992888,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813592818.4712768
+            ],
+            "minimumSineResidual": -0.8373309889336542,
+            "maximumSineResidual": 0.3394863115522372,
+            "altitudeSlopeDegreesPerSecond": -0.002668268213813718
+          },
+          "maghrib": {
+            "epochSeconds": 1813606726.158517,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813606726.158517
+            ],
+            "minimumSineResidual": -0.26868868045038385,
+            "maximumSineResidual": 0.9081286200355075,
+            "altitudeSlopeDegreesPerSecond": -0.002058087924998453
+          },
+          "isha": {
+            "epochSeconds": 1813618217.0143137,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813618217.0143137
+            ],
+            "minimumSineResidual": -0.00759522228496734,
+            "maximumSineResidual": 1.169222078200924,
+            "altitudeSlopeDegreesPerSecond": -0.00040841026087345966
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt:2027-09-23",
+      "input": {
+        "date": "2027-09-23",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1821698263.4807127,
+        "startEpochSeconds": 1821655074.0316646,
+        "endEpochSeconds": 1821741452.9653804,
+        "transitHeightDegrees": 39.80464076757954,
+        "transitDeclinationDegrees": -0.08535923242045985,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1821669742.8191166,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821669742.8191166
+            ],
+            "minimumSineResidual": -0.3308357912701982,
+            "maximumSineResidual": 0.9491894579055846,
+            "altitudeSlopeDegreesPerSecond": 0.0024575396313171183
+          },
+          "sunrise": {
+            "epochSeconds": 1821676353.1204157,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821676353.1204157
+            ],
+            "minimumSineResidual": -0.6253088879935629,
+            "maximumSineResidual": 0.65471636118222,
+            "altitudeSlopeDegreesPerSecond": 0.0026689086977804144
+          },
+          "dhuhr": {
+            "epochSeconds": 1821698263.4807127,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1821710164.3076534,
+            "thresholdDegrees": 24.443566081343967,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821710164.3076534
+            ],
+            "minimumSineResidual": -1.0588541062341974,
+            "maximumSineResidual": 0.22637515750143428,
+            "altitudeSlopeDegreesPerSecond": -0.002239585591208737
+          },
+          "maghrib": {
+            "epochSeconds": 1821720117.2360554,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821720117.2360554
+            ],
+            "minimumSineResidual": -0.6305134402887054,
+            "maximumSineResidual": 0.6547158234469264,
+            "altitudeSlopeDegreesPerSecond": -0.0026760908154839225
+          },
+          "isha": {
+            "epochSeconds": 1821725899.288632,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821725899.288632
+            ],
+            "minimumSineResidual": -0.3694199821232889,
+            "maximumSineResidual": 0.9158092816123429,
+            "altitudeSlopeDegreesPerSecond": -0.0025199133314321998
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt:2027-12-21",
+      "input": {
+        "date": "2027-12-21",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1829388191.8028371,
+        "startEpochSeconds": 1829344976.9028442,
+        "endEpochSeconds": 1829431406.7234294,
+        "transitHeightDegrees": 16.45449157789956,
+        "transitDeclinationDegrees": -23.43550842210044,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1829366493.722601,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829366493.722601
+            ],
+            "minimumSineResidual": -0.5845270038446753,
+            "maximumSineResidual": 0.5922706862428533,
+            "altitudeSlopeDegreesPerSecond": 0.0025769007016016587
+          },
+          "sunrise": {
+            "epochSeconds": 1829373689.713426,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829373689.713426
+            ],
+            "minimumSineResidual": -0.87900010056804,
+            "maximumSineResidual": 0.2977975895194886,
+            "altitudeSlopeDegreesPerSecond": 0.0021313287537054193
+          },
+          "dhuhr": {
+            "epochSeconds": 1829388191.8028371,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1829394507.9303856,
+            "thresholdDegrees": 12.844303110648072,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829394507.9303856
+            ],
+            "minimumSineResidual": -1.1158857294453812,
+            "maximumSineResidual": 0.060951240646173105,
+            "altitudeSlopeDegreesPerSecond": -0.0011141621522829936
+          },
+          "maghrib": {
+            "epochSeconds": 1829402693.239469,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829402693.239469
+            ],
+            "minimumSineResidual": -0.8790393807236273,
+            "maximumSineResidual": 0.2977975893679269,
+            "altitudeSlopeDegreesPerSecond": -0.0021312968355525763
+          },
+          "isha": {
+            "epochSeconds": 1829409108.5389,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829409108.5389
+            ],
+            "minimumSineResidual": -0.6179459225582109,
+            "maximumSineResidual": 0.5588910475333434,
+            "altitudeSlopeDegreesPerSecond": -0.0025464727109953955
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-03-20",
+      "input": {
+        "date": "2027-03-20",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1805541872.1528482,
+        "startEpochSeconds": 1805498681.0176563,
+        "endEpochSeconds": 1805585063.2532787,
+        "transitHeightDegrees": 29.94177128649998,
+        "transitDeclinationDegrees": -0.1482287135000217,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1805511297.0173402,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805511297.0173402
+            ],
+            "minimumSineResidual": -0.19755533388367713,
+            "maximumSineResidual": 0.808136609622752,
+            "altitudeSlopeDegreesPerSecond": 0.0017488892153814106
+          },
+          "sunrise": {
+            "epochSeconds": 1805519980.5886369,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805519980.5886369
+            ],
+            "minimumSineResidual": -0.4920284306070419,
+            "maximumSineResidual": 0.5136635128993873,
+            "altitudeSlopeDegreesPerSecond": 0.0020931331523310615
+          },
+          "dhuhr": {
+            "epochSeconds": 1805541872.1528482,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1805553043.964397,
+            "thresholdDegrees": 20.0763790519103,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805553043.964397
+            ],
+            "minimumSineResidual": -0.843888848514851,
+            "maximumSineResidual": 0.15584800576965263,
+            "altitudeSlopeDegreesPerSecond": -0.0016110154093542661
+          },
+          "maghrib": {
+            "epochSeconds": 1805563846.806477,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805563846.806477
+            ],
+            "minimumSineResidual": -0.4860724395820409,
+            "maximumSineResidual": 0.5136644147024627,
+            "altitudeSlopeDegreesPerSecond": -0.002084887078798281
+          },
+          "isha": {
+            "epochSeconds": 1805571464.1155734,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805571464.1155734
+            ],
+            "minimumSineResidual": -0.22497898141662437,
+            "maximumSineResidual": 0.7747578728678792,
+            "altitudeSlopeDegreesPerSecond": -0.0018120868877238294
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-06-21",
+      "input": {
+        "date": "2027-06-21",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1813576725.6367636,
+        "startEpochSeconds": 1813533519.1404533,
+        "endEpochSeconds": 1813619932.127924,
+        "transitHeightDegrees": 53.527211686594924,
+        "transitDeclinationDegrees": 23.437211686594924,
+        "events": {
+          "fajr": {
+            "epochSeconds": null,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.19314223984980478,
+            "maximumSineResidual": 1.113156265605342,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "sunrise": {
+            "epochSeconds": 1813542823.9121957,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813542823.9121957
+            ],
+            "minimumSineResidual": -0.10133085687355997,
+            "maximumSineResidual": 0.8186831688819772,
+            "altitudeSlopeDegreesPerSecond": 0.0012000533971882055
+          },
+          "dhuhr": {
+            "epochSeconds": 1813576725.6367636,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1813593624.1702585,
+            "thresholdDegrees": 29.897536351486572,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813593624.1702585
+            ],
+            "minimumSineResidual": -0.6143101912072597,
+            "maximumSineResidual": 0.3056888074406188,
+            "altitudeSlopeDegreesPerSecond": -0.0020824942376798106
+          },
+          "maghrib": {
+            "epochSeconds": 1813610627.8963647,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813610627.8963647
+            ],
+            "minimumSineResidual": -0.10131582976366588,
+            "maximumSineResidual": 0.8186831688842128,
+            "altitudeSlopeDegreesPerSecond": -0.0011999457885027986
+          },
+          "isha": {
+            "epochSeconds": null,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.15977762840175064,
+            "maximumSineResidual": 1.0797766270496292,
+            "altitudeSlopeDegreesPerSecond": null
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-09-23",
+      "input": {
+        "date": "2027-09-23",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1821697766.801734,
+        "startEpochSeconds": 1821654577.353115,
+        "endEpochSeconds": 1821740956.2864017,
+        "transitHeightDegrees": 30.006878525281692,
+        "transitDeclinationDegrees": -0.08312147471831302,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1821667012.9760861,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821667012.9760861
+            ],
+            "minimumSineResidual": -0.19065986782917843,
+            "maximumSineResidual": 0.8091218336233534,
+            "altitudeSlopeDegreesPerSecond": 0.0017231428196922138
+          },
+          "sunrise": {
+            "epochSeconds": 1821675766.589148,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821675766.589148
+            ],
+            "minimumSineResidual": -0.4851329645525432,
+            "maximumSineResidual": 0.5146487368999887,
+            "altitudeSlopeDegreesPerSecond": 0.002084953796411493
+          },
+          "dhuhr": {
+            "epochSeconds": 1821697766.801734,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1821708898.4536867,
+            "thresholdDegrees": 20.10715987077117,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821708898.4536867
+            ],
+            "minimumSineResidual": -0.8493250391216958,
+            "maximumSineResidual": 0.15632692103314866,
+            "altitudeSlopeDegreesPerSecond": -0.0016153339939588562
+          },
+          "maghrib": {
+            "epochSeconds": 1821719685.0608726,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821719685.0608726
+            ],
+            "minimumSineResidual": -0.4910040972334971,
+            "maximumSineResidual": 0.5146478629213475,
+            "altitudeSlopeDegreesPerSecond": -0.0020930271531557354
+          },
+          "isha": {
+            "epochSeconds": 1821727257.3031645,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821727257.3031645
+            ],
+            "minimumSineResidual": -0.22991063906808057,
+            "maximumSineResidual": 0.7757413210867639,
+            "altitudeSlopeDegreesPerSecond": -0.0018289764581895795
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-12-21",
+      "input": {
+        "date": "2027-12-21",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1829387694.8311758,
+        "startEpochSeconds": 1829344479.931612,
+        "endEpochSeconds": 1829430909.751768,
+        "transitHeightDegrees": 6.654520535136967,
+        "transitDeclinationDegrees": -23.435479464863032,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1829367137.4880948,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829367137.4880948
+            ],
+            "minimumSineResidual": -0.4950678658301733,
+            "maximumSineResidual": 0.42489934951856084,
+            "altitudeSlopeDegreesPerSecond": 0.002008731251745388
+          },
+          "sunrise": {
+            "epochSeconds": 1829377073.9196382,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829377073.9196382
+            ],
+            "minimumSineResidual": -0.789540962553538,
+            "maximumSineResidual": 0.1304262527951961,
+            "altitudeSlopeDegreesPerSecond": 0.0013367767599019587
+          },
+          "dhuhr": {
+            "epochSeconds": 1829387694.8311758,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1829390839.232356,
+            "thresholdDegrees": 5.9645638838288315,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829390839.232356
+            ],
+            "minimumSineResidual": -0.9080506981839667,
+            "maximumSineResidual": 0.011969000437136154,
+            "altitudeSlopeDegreesPerSecond": -0.0004365979242266782
+          },
+          "maghrib": {
+            "epochSeconds": 1829398314.8730302,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829398314.8730302
+            ],
+            "minimumSineResidual": -0.7895934460374284,
+            "maximumSineResidual": 0.13042625258367435,
+            "altitudeSlopeDegreesPerSecond": -0.001336786500644227
+          },
+          "isha": {
+            "epochSeconds": 1829407246.3725953,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829407246.3725953
+            ],
+            "minimumSineResidual": -0.528499987872012,
+            "maximumSineResidual": 0.39151971074909087,
+            "altitudeSlopeDegreesPerSecond": -0.001971013598291549
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-03-20",
+      "input": {
+        "date": "2027-03-20",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1805539902.157969,
+        "startEpochSeconds": 1805496711.0210605,
+        "endEpochSeconds": 1805583093.259687,
+        "transitHeightDegrees": 20.192761647245163,
+        "transitDeclinationDegrees": -0.1572383527548296,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1805503703.2064729,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805503703.2064729
+            ],
+            "minimumSineResidual": -0.04453612487581288,
+            "maximumSineResidual": 0.6541966278966845,
+            "altitudeSlopeDegreesPerSecond": 0.0007465209130153028
+          },
+          "sunrise": {
+            "epochSeconds": 1805517898.3788428,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805517898.3788428
+            ],
+            "minimumSineResidual": -0.3390092215991776,
+            "maximumSineResidual": 0.3597235311733198,
+            "altitudeSlopeDegreesPerSecond": 0.001453052888524986
+          },
+          "dhuhr": {
+            "epochSeconds": 1805539902.157969,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1805549797.4140964,
+            "thresholdDegrees": 15.050330064243301,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805549797.4140964
+            ],
+            "minimumSineResidual": -0.6067639208530284,
+            "maximumSineResidual": 0.08551371988849227,
+            "altitudeSlopeDegreesPerSecond": -0.0009848424324383487
+          },
+          "maghrib": {
+            "epochSeconds": 1805562036.5940738,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805562036.5940738
+            ],
+            "minimumSineResidual": -0.33255258434807694,
+            "maximumSineResidual": 0.3597250563934438,
+            "altitudeSlopeDegreesPerSecond": -0.0014440170860802737
+          },
+          "isha": {
+            "epochSeconds": 1805574077.5929103,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805574077.5929103
+            ],
+            "minimumSineResidual": -0.07145912618266043,
+            "maximumSineResidual": 0.6208185145588603,
+            "altitudeSlopeDegreesPerSecond": -0.0009148756948142989
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-06-21",
+      "input": {
+        "date": "2027-06-21",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1813574754.9406476,
+        "startEpochSeconds": 1813531548.4439082,
+        "endEpochSeconds": 1813617961.4322371,
+        "transitHeightDegrees": 43.787190126436386,
+        "transitDeclinationDegrees": 23.437190126436395,
+        "events": {
+          "fajr": {
+            "epochSeconds": null,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.36284864269305306,
+            "maximumSineResidual": 1.0009987837873338,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "sunrise": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.06837554596968831,
+            "maximumSineResidual": 0.706525687063969,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "dhuhr": {
+            "epochSeconds": 1813574754.9406476,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1813593463.0017867,
+            "thresholdDegrees": 26.077803381369254,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813593463.0017867
+            ],
+            "minimumSineResidual": -0.3857417462431033,
+            "maximumSineResidual": 0.25239055211275596,
+            "altitudeSlopeDegreesPerSecond": -0.001447211760643441
+          },
+          "maghrib": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.06839338871470885,
+            "maximumSineResidual": 0.7065256870705682,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "isha": {
+            "epochSeconds": null,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.32948684688012536,
+            "maximumSineResidual": 0.9676191452359846,
+            "altitudeSlopeDegreesPerSecond": null
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-09-23",
+      "input": {
+        "date": "2027-09-23",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1821695796.8823857,
+        "startEpochSeconds": 1821652607.4354835,
+        "endEpochSeconds": 1821738986.3649077,
+        "transitHeightDegrees": 20.27575380308899,
+        "transitDeclinationDegrees": -0.07424619691100116,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1821659027.9829865,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821659027.9829865
+            ],
+            "minimumSineResidual": -0.03676901136879712,
+            "maximumSineResidual": 0.6555572012952173,
+            "altitudeSlopeDegreesPerSecond": 0.0006816742262660824
+          },
+          "sunrise": {
+            "epochSeconds": 1821673610.3852057,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821673610.3852057
+            ],
+            "minimumSineResidual": -0.33124210809216187,
+            "maximumSineResidual": 0.3610841045718525,
+            "altitudeSlopeDegreesPerSecond": 0.0014439076730389244
+          },
+          "dhuhr": {
+            "epochSeconds": 1821695796.8823857,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1821705637.7339807,
+            "thresholdDegrees": 15.097254125765591,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821705637.7339807
+            ],
+            "minimumSineResidual": -0.6126079657583994,
+            "maximumSineResidual": 0.08608048995806344,
+            "altitudeSlopeDegreesPerSecond": -0.0009894746408223298
+          },
+          "maghrib": {
+            "epochSeconds": 1821717854.3442268,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821717854.3442268
+            ],
+            "minimumSineResidual": -0.3376058296010474,
+            "maximumSineResidual": 0.3610826261154154,
+            "altitudeSlopeDegreesPerSecond": -0.0014528706634600597
+          },
+          "isha": {
+            "epochSeconds": 1821729733.8329701,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821729733.8329701
+            ],
+            "minimumSineResidual": -0.07651237143563089,
+            "maximumSineResidual": 0.6221760842808319,
+            "altitudeSlopeDegreesPerSecond": -0.0009442324916815181
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-12-21",
+      "input": {
+        "date": "2027-12-21",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1829385723.7513967,
+        "startEpochSeconds": 1829342508.852262,
+        "endEpochSeconds": 1829428938.6707015,
+        "transitHeightDegrees": -3.0853620552127126,
+        "transitDeclinationDegrees": -23.435362055212707,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1829366887.8906202,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829366887.8906202
+            ],
+            "minimumSineResidual": -0.3828963801658543,
+            "maximumSineResidual": 0.25519328996347806,
+            "altitudeSlopeDegreesPerSecond": 0.0013690724551320699
+          },
+          "sunrise": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": -0.677369476889219,
+            "maximumSineResidual": -0.039279806759886675,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "dhuhr": {
+            "epochSeconds": 1829385723.7513967,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": null,
+            "thresholdDegrees": null,
+            "direction": "setting",
+            "rootCount": 0,
+            "reason": "no-positive-transit-height"
+          },
+          "maghrib": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": -0.677435472952929,
+            "maximumSineResidual": -0.03927980709078826,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "isha": {
+            "epochSeconds": 1829403069.9350882,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829403069.9350882
+            ],
+            "minimumSineResidual": -0.4163420147875126,
+            "maximumSineResidual": 0.22181365107462825,
+            "altitudeSlopeDegreesPerSecond": -0.0013167613122151423
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt:2027-05-20",
+      "input": {
+        "date": "2027-05-20",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1810812108.7264555,
+        "startEpochSeconds": 1810768907.1220653,
+        "endEpochSeconds": 1810855310.466029,
+        "transitHeightDegrees": 59.87607077800109,
+        "transitDeclinationDegrees": 19.986070778001096,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1810773474.920364,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810773474.920364
+            ],
+            "minimumSineResidual": -0.0331470608905276,
+            "maximumSineResidual": 1.1739588866926396,
+            "altitudeSlopeDegreesPerSecond": 0.000863889136923035
+          },
+          "sunrise": {
+            "epochSeconds": 1810783971.2893958,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810783971.2893958
+            ],
+            "minimumSineResidual": -0.32762015761389235,
+            "maximumSineResidual": 0.8794857899692748,
+            "altitudeSlopeDegreesPerSecond": 0.00223592493027025
+          },
+          "dhuhr": {
+            "epochSeconds": 1810812108.7264555,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1810827268.2519155,
+            "thresholdDegrees": 32.32628859185984,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810827268.2519155
+            ],
+            "minimumSineResidual": -0.8734865016578282,
+            "maximumSineResidual": 0.33020184399685304,
+            "altitudeSlopeDegreesPerSecond": -0.0026492033369436285
+          },
+          "maghrib": {
+            "epochSeconds": 1810840296.2367258,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810840296.2367258
+            ],
+            "minimumSineResidual": -0.3242024857417706,
+            "maximumSineResidual": 0.8794858599129106,
+            "altitudeSlopeDegreesPerSecond": -0.00222583644140667
+          },
+          "isha": {
+            "epochSeconds": 1810848946.5832648,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810848946.5832648
+            ],
+            "minimumSineResidual": -0.06310902757635406,
+            "maximumSineResidual": 1.140579318078327,
+            "altitudeSlopeDegreesPerSecond": -0.0011633114809823653
+          }
+        }
+      }
+    },
+    {
+      "id": "frankfurt:2027-08-01",
+      "input": {
+        "date": "2027-08-01",
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1817119899.187948,
+        "startEpochSeconds": 1817076700.9026306,
+        "endEpochSeconds": 1817163097.3226326,
+        "transitHeightDegrees": 57.89076844659935,
+        "transitDeclinationDegrees": 18.000768446599356,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1817082959.5649076,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1817082959.5649076
+            ],
+            "minimumSineResidual": -0.06176531541227387,
+            "maximumSineResidual": 1.1560533987649533,
+            "altitudeSlopeDegreesPerSecond": 0.00117127124936367
+          },
+          "sunrise": {
+            "epochSeconds": 1817092423.8728657,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1817092423.8728657
+            ],
+            "minimumSineResidual": -0.3562384121356386,
+            "maximumSineResidual": 0.8615803020415885,
+            "altitudeSlopeDegreesPerSecond": 0.002309726307647475
+          },
+          "dhuhr": {
+            "epochSeconds": 1817119899.187948,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1817134764.8611674,
+            "thresholdDegrees": 31.56783450687049,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1817134764.8611674
+            ],
+            "minimumSineResidual": -0.8983704939871162,
+            "maximumSineResidual": 0.3235286216771972,
+            "altitudeSlopeDegreesPerSecond": -0.002635135809693878
+          },
+          "maghrib": {
+            "epochSeconds": 1817147318.3207211,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1817147318.3207211
+            ],
+            "minimumSineResidual": -0.36031892709740415,
+            "maximumSineResidual": 0.8615801885669093,
+            "altitudeSlopeDegreesPerSecond": -0.0023208530462663357
+          },
+          "isha": {
+            "epochSeconds": 1817155161.500783,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1817155161.500783
+            ],
+            "minimumSineResidual": -0.09922546893198764,
+            "maximumSineResidual": 1.1226736467323257,
+            "altitudeSlopeDegreesPerSecond": -0.0014461722970091628
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-04-01",
+      "input": {
+        "date": "2027-04-01",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1806578455.7732534,
+        "startEpochSeconds": 1806535264.6749687,
+        "endEpochSeconds": 1806621646.9024372,
+        "transitHeightDegrees": 34.64177187334311,
+        "transitDeclinationDegrees": 4.551771873343106,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1806545178.788289,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1806545178.788289
+            ],
+            "minimumSineResidual": -0.12513559789140344,
+            "maximumSineResidual": 0.8774607015683993,
+            "altitudeSlopeDegreesPerSecond": 0.0014503998953241393
+          },
+          "sunrise": {
+            "epochSeconds": 1806554605.6540947,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1806554605.6540947
+            ],
+            "minimumSineResidual": -0.4196086946147682,
+            "maximumSineResidual": 0.5829876048450345,
+            "altitudeSlopeDegreesPerSecond": 0.0020592895452905546
+          },
+          "dhuhr": {
+            "epochSeconds": 1806578455.7732534,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1806590895.4997072,
+            "thresholdDegrees": 22.22539546170879,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1806590895.4997072
+            ],
+            "minimumSineResidual": -0.8063263012329948,
+            "maximumSineResidual": 0.19019335823669198,
+            "altitudeSlopeDegreesPerSecond": -0.0017650358140635092
+          },
+          "maghrib": {
+            "epochSeconds": 1806602396.270917,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1806602396.270917
+            ],
+            "minimumSineResidual": -0.41353127617767205,
+            "maximumSineResidual": 0.5829883832920147,
+            "altitudeSlopeDegreesPerSecond": -0.0020486309875691333
+          },
+          "isha": {
+            "epochSeconds": 1806610584.5966525,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1806610584.5966525
+            ],
+            "minimumSineResidual": -0.15243781801225553,
+            "maximumSineResidual": 0.8440818414574311,
+            "altitudeSlopeDegreesPerSecond": -0.0015568749627270506
+          }
+        }
+      }
+    },
+    {
+      "id": "oslo:2027-09-01",
+      "input": {
+        "date": "2027-09-01",
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1819797425.3508997,
+        "startEpochSeconds": 1819754234.7809029,
+        "endEpochSeconds": 1819840615.8457947,
+        "transitHeightDegrees": 38.354534102828644,
+        "transitDeclinationDegrees": 8.264534102828643,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1819761084.4155416,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1819761084.4155416
+            ],
+            "minimumSineResidual": -0.05982916731974525,
+            "maximumSineResidual": 0.9295433240444517,
+            "altitudeSlopeDegreesPerSecond": 0.0010345048627105058
+          },
+          "sunrise": {
+            "epochSeconds": 1819771881.3189135,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1819771881.3189135
+            ],
+            "minimumSineResidual": -0.35430226404311,
+            "maximumSineResidual": 0.6350702273210871,
+            "altitudeSlopeDegreesPerSecond": 0.0019790301785388986
+          },
+          "dhuhr": {
+            "epochSeconds": 1819797425.3508997,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1819810760.013896,
+            "thresholdDegrees": 23.83324869703918,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1819810760.013896
+            ],
+            "minimumSineResidual": -0.7787970349879809,
+            "maximumSineResidual": 0.21644952204864587,
+            "altitudeSlopeDegreesPerSecond": -0.001868595339509227
+          },
+          "maghrib": {
+            "epochSeconds": 1819822874.8370762,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1819822874.8370762
+            ],
+            "minimumSineResidual": -0.3601769585645679,
+            "maximumSineResidual": 0.635069598472059,
+            "altitudeSlopeDegreesPerSecond": -0.0019914921973310795
+          },
+          "isha": {
+            "epochSeconds": 1819831805.2520185,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1819831805.2520185
+            ],
+            "minimumSineResidual": -0.09908350039915137,
+            "maximumSineResidual": 0.8961630566374754,
+            "altitudeSlopeDegreesPerSecond": -0.0012905732610235532
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-05-15",
+      "input": {
+        "date": "2027-05-15",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1810377631.582541,
+        "startEpochSeconds": 1810334431.3484378,
+        "endEpochSeconds": 1810420831.9535441,
+        "transitHeightDegrees": 39.218460675680994,
+        "transitDeclinationDegrees": 18.868460675681,
+        "events": {
+          "fajr": {
+            "epochSeconds": null,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.28109222127670275,
+            "maximumSineResidual": 0.9412959510123728,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "sunrise": {
+            "epochSeconds": 1810338337.0434885,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810338337.0434885
+            ],
+            "minimumSineResidual": -0.013380875446661993,
+            "maximumSineResidual": 0.6468228542890081,
+            "altitudeSlopeDegreesPerSecond": 0.00038725762243402295
+          },
+          "dhuhr": {
+            "epochSeconds": 1810377631.582541,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1810394722.3746948,
+            "thresholdDegrees": 24.19794019173644,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810394722.3746948
+            ],
+            "minimumSineResidual": -0.43369898439056986,
+            "maximumSineResidual": 0.22238910594576683,
+            "altitudeSlopeDegreesPerSecond": -0.0014201369349482462
+          },
+          "maghrib": {
+            "epochSeconds": 1810417532.7233453,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1810417532.7233453
+            ],
+            "minimumSineResidual": -0.009264844278312305,
+            "maximumSineResidual": 0.6468232460580244,
+            "altitudeSlopeDegreesPerSecond": -0.0003229413965427086
+          },
+          "isha": {
+            "epochSeconds": null,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.2518286138871042,
+            "maximumSineResidual": 0.9079167042234408,
+            "altitudeSlopeDegreesPerSecond": null
+          }
+        }
+      }
+    },
+    {
+      "id": "tromso:2027-07-25",
+      "input": {
+        "date": "2027-07-25",
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 16,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1816512642.498774,
+        "startEpochSeconds": 1816469442.1496577,
+        "endEpochSeconds": 1816555842.7036948,
+        "transitHeightDegrees": 39.996075171251036,
+        "transitDeclinationDegrees": 19.646075171251045,
+        "events": {
+          "fajr": {
+            "epochSeconds": null,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.2985996454386096,
+            "maximumSineResidual": 0.9517524487228977,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "sunrise": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.004126548715244878,
+            "maximumSineResidual": 0.6572793519995329,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "dhuhr": {
+            "epochSeconds": 1816512642.498774,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1816529954.5847783,
+            "thresholdDegrees": 24.52347494345275,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1816529954.5847783
+            ],
+            "minimumSineResidual": -0.4292440025738626,
+            "maximumSineResidual": 0.22766910055553896,
+            "altitudeSlopeDegreesPerSecond": -0.0014303006855413969
+          },
+          "maghrib": {
+            "epochSeconds": null,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.00036592774911021336,
+            "maximumSineResidual": 0.6572790308785118,
+            "altitudeSlopeDegreesPerSecond": null
+          },
+          "isha": {
+            "epochSeconds": null,
+            "thresholdDegrees": -16,
+            "direction": "setting",
+            "rootCount": 0,
+            "rootsEpochSeconds": [],
+            "minimumSineResidual": 0.2614593859145267,
+            "maximumSineResidual": 0.9183724890439282,
+            "altitudeSlopeDegreesPerSecond": null
+          }
+        }
+      }
+    },
+    {
+      "id": "istanbul:2027-03-20",
+      "input": {
+        "date": "2027-03-20",
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 17,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1805537498.2359247,
+        "startEpochSeconds": 1805494307.0972996,
+        "endEpochSeconds": 1805580689.3397884,
+        "transitHeightDegrees": 48.823567330117065,
+        "transitDeclinationDegrees": -0.16823266988293034,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1805510169.1099844,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805510169.1099844
+            ],
+            "minimumSineResidual": -0.4497724195880897,
+            "maximumSineResidual": 1.0617027767055276,
+            "altitudeSlopeDegreesPerSecond": 0.003026396243994256
+          },
+          "sunrise": {
+            "epochSeconds": 1805515693.5983396,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805515693.5983396
+            ],
+            "minimumSineResidual": -0.7442455163114544,
+            "maximumSineResidual": 0.767229679982163,
+            "altitudeSlopeDegreesPerSecond": 0.003147859384605267
+          },
+          "dhuhr": {
+            "epochSeconds": 1805537498.2359247,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1805549805.1256948,
+            "thresholdDegrees": 28.076198447360206,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805549805.1256948
+            ],
+            "minimumSineResidual": -1.2249260358820462,
+            "maximumSineResidual": 0.2820407367851638,
+            "altitudeSlopeDegreesPerSecond": -0.0027778590410800774
+          },
+          "maghrib": {
+            "epochSeconds": 1805559344.522183,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805559344.522183
+            ],
+            "minimumSineResidual": -0.739736746780174,
+            "maximumSineResidual": 0.7672300258870359,
+            "altitudeSlopeDegreesPerSecond": -0.0031417324418243076
+          },
+          "isha": {
+            "epochSeconds": 1805564553.5360017,
+            "thresholdDegrees": -17,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1805564553.5360017
+            ],
+            "minimumSineResidual": -0.4619089397090199,
+            "maximumSineResidual": 1.0450578329581899,
+            "altitudeSlopeDegreesPerSecond": -0.003029492976095227
+          }
+        }
+      }
+    },
+    {
+      "id": "istanbul:2027-06-21",
+      "input": {
+        "date": "2027-06-21",
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 17,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1813572350.1633005,
+        "startEpochSeconds": 1813529143.666132,
+        "endEpochSeconds": 1813615556.65489,
+        "transitHeightDegrees": 72.42895896780506,
+        "transitDeclinationDegrees": 23.437158967805065,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1813537446.0253482,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813537446.0253482
+            ],
+            "minimumSineResidual": -0.12237778689046053,
+            "maximumSineResidual": 1.2623603670240735,
+            "altitudeSlopeDegreesPerSecond": 0.0017216924695642177
+          },
+          "sunrise": {
+            "epochSeconds": 1813545118.1141481,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813545118.1141481
+            ],
+            "minimumSineResidual": -0.4168508836138253,
+            "maximumSineResidual": 0.9678872703007088,
+            "altitudeSlopeDegreesPerSecond": 0.002646526113497083
+          },
+          "dhuhr": {
+            "epochSeconds": 1813572350.1633005,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1813586805.8623495,
+            "thresholdDegrees": 37.21652811636663,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813586805.8623495
+            ],
+            "minimumSineResidual": -1.0362045094329213,
+            "maximumSineResidual": 0.34851450792144545,
+            "altitudeSlopeDegreesPerSecond": -0.0031437387564778874
+          },
+          "maghrib": {
+            "epochSeconds": 1813599582.4189396,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813599582.4189396
+            ],
+            "minimumSineResidual": -0.4168317470529186,
+            "maximumSineResidual": 0.9678872703014482,
+            "altitudeSlopeDegreesPerSecond": -0.0026464735866328915
+          },
+          "isha": {
+            "epochSeconds": 1813606689.040247,
+            "thresholdDegrees": -17,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1813606689.040247
+            ],
+            "minimumSineResidual": -0.13900393998176447,
+            "maximumSineResidual": 1.2457150773726022,
+            "altitudeSlopeDegreesPerSecond": -0.0018127866776591617
+          }
+        }
+      }
+    },
+    {
+      "id": "istanbul:2027-09-23",
+      "input": {
+        "date": "2027-09-23",
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 17,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1821693393.0526094,
+        "startEpochSeconds": 1821650203.607853,
+        "endEpochSeconds": 1821736582.5334148,
+        "transitHeightDegrees": 48.92838385357416,
+        "transitDeclinationDegrees": -0.06341614642583825,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1821665984.342762,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821665984.342762
+            ],
+            "minimumSineResidual": -0.44409527607815774,
+            "maximumSineResidual": 1.062906286646933,
+            "altitudeSlopeDegreesPerSecond": 0.003012386411672452
+          },
+          "sunrise": {
+            "epochSeconds": 1821671526.0249643,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821671526.0249643
+            ],
+            "minimumSineResidual": -0.7385683728015224,
+            "maximumSineResidual": 0.7684331899235683,
+            "altitudeSlopeDegreesPerSecond": 0.0031417424953598116
+          },
+          "dhuhr": {
+            "epochSeconds": 1821693393.0526094,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1821705682.905744,
+            "thresholdDegrees": 28.11716956129267,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821705682.905744
+            ],
+            "minimumSineResidual": -1.228839199108251,
+            "maximumSineResidual": 0.2826127551154122,
+            "altitudeSlopeDegreesPerSecond": -0.002783155507286139
+          },
+          "maghrib": {
+            "epochSeconds": 1821715219.0136375,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821715219.0136375
+            ],
+            "minimumSineResidual": -0.7430190985107892,
+            "maximumSineResidual": 0.768432855712874,
+            "altitudeSlopeDegreesPerSecond": -0.003147812888709467
+          },
+          "isha": {
+            "epochSeconds": 1821720415.5460358,
+            "thresholdDegrees": -17,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1821720415.5460358
+            ],
+            "minimumSineResidual": -0.4651912914396351,
+            "maximumSineResidual": 1.046260662784028,
+            "altitudeSlopeDegreesPerSecond": -0.0030387475082100934
+          }
+        }
+      }
+    },
+    {
+      "id": "istanbul:2027-12-21",
+      "input": {
+        "date": "2027-12-21",
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul",
+        "fajrAngleDegrees": 18,
+        "ishaAngleDegrees": 17,
+        "asrShadowFactor": 1,
+        "horizonDepressionDegrees": 0.8333333333333334
+      },
+      "reference": {
+        "status": "calculated",
+        "transitEpochSeconds": 1829383318.505414,
+        "startEpochSeconds": 1829340103.607996,
+        "endEpochSeconds": 1829426533.4238605,
+        "transitHeightDegrees": 25.556586755208755,
+        "transitDeclinationDegrees": -23.43521324479124,
+        "events": {
+          "fajr": {
+            "epochSeconds": 1829360755.2711225,
+            "thresholdDegrees": -18,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829360755.2711225
+            ],
+            "minimumSineResidual": -0.6442965690896407,
+            "maximumSineResidual": 0.7404192971764989,
+            "altitudeSlopeDegreesPerSecond": 0.003024933989049572
+          },
+          "sunrise": {
+            "epochSeconds": 1829366716.2996387,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "rising",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829366716.2996387
+            ],
+            "minimumSineResidual": -0.9387696658130055,
+            "maximumSineResidual": 0.4459462004531342,
+            "altitudeSlopeDegreesPerSecond": 0.0026953493390698413
+          },
+          "dhuhr": {
+            "epochSeconds": 1829383318.505414,
+            "thresholdDegrees": null,
+            "direction": null,
+            "rootCount": 1
+          },
+          "asr": {
+            "epochSeconds": 1829391665.4756126,
+            "thresholdDegrees": 17.926200076942784,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829391665.4756126
+            ],
+            "minimumSineResidual": -1.2611340462126674,
+            "maximumSineResidual": 0.12361057420475235,
+            "altitudeSlopeDegreesPerSecond": -0.0017284417516947315
+          },
+          "maghrib": {
+            "epochSeconds": 1829399920.1630354,
+            "thresholdDegrees": -0.8333333333333334,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829399920.1630354
+            ],
+            "minimumSineResidual": -0.9387984200992368,
+            "maximumSineResidual": 0.445946200318183,
+            "altitudeSlopeDegreesPerSecond": -0.0026952997430324532
+          },
+          "isha": {
+            "epochSeconds": 1829405549.913044,
+            "thresholdDegrees": -17,
+            "direction": "setting",
+            "rootCount": 1,
+            "rootsEpochSeconds": [
+              1829405549.913044
+            ],
+            "minimumSineResidual": -0.6609706130280827,
+            "maximumSineResidual": 0.7237740073893371,
+            "altitudeSlopeDegreesPerSecond": -0.0030125188044696216
+          }
+        }
+      }
+    }
+  ]
+}

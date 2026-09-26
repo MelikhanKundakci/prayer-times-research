@@ -11,6 +11,7 @@ test('local app exposes complete dated point schedules without external services
   assert.match(page.headers.get('content-security-policy'),/connect-src 'self'/);
   const profiles=await(await fetch(base+'/api/profiles')).json();
   assert.ok(profiles.profiles.some(p=>p.id==='local-18-17-shadow1-physical-v1'));
+  assert.ok(profiles.profiles.some(p=>p.id==='diyanet-published-spa-point-v1'));
   const response=await fetch(base+'/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
     date:'2027-03-20',latitude:30.0444,longitude:31.2357,timeZone:'Africa/Cairo',profile:'local-18-17-shadow1-physical-v1'})});
   assert.equal(response.status,200);const result=await response.json();
@@ -28,4 +29,24 @@ test('local app exposes complete dated point schedules without external services
   });
   assert.equal(hostileHostStatus,403);
   for(const path of ['/package.json','/.git/config','/core/local/index.mjs','/api/profiles?extra=1'])assert.equal((await fetch(base+path)).status,404);
+});
+
+test('local app calculates the opt-in Diyanet SPA profile through its day and schedule endpoints',async t=>{
+  const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base=`http://127.0.0.1:${server.address().port}`;
+  const response=await fetch(base+'/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+    date:'2026-09-26',latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin',profile:'diyanet-published-spa-point-v1'})});
+  assert.equal(response.status,200);
+  const {day,schedule}=await response.json();
+  assert.equal(day.profile.id,'diyanet-published-spa-point-v1');
+  assert.match(day.calculation.astronomicalModel.id,/SPA/);
+  assert.equal(day.calculation.northernPolicy.metadata.solarModel,'spa');
+  assert.equal(day.coverage.prayerStartsComplete,true);
+  assert.equal(schedule.complete,true);
+  assert.equal(schedule.entries.length,40);
+  const today=schedule.entries.filter(e=>e.sourceDate==='2026-09-26');
+  assert.equal(today.length,5);
+  for(const event of today)assert.equal(event.epochMilliseconds,day.events[event.event].epochMilliseconds);
+  assert.equal(day.profile.institutionalEquivalence,'not-claimed');
 });

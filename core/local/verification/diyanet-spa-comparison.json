@@ -1,0 +1,5162 @@
+{
+  "schema": "diyanet-spa-annual-comparison/v1",
+  "meaning": "Predeclared source-free comparison of physical-model choices under the same declared local Diyanet rules; not a comparison to institutional calendars",
+  "createdAt": "2026-09-26T19:21:47.865Z",
+  "declaration": {
+    "schema": "diyanet-spa-annual-declaration/v1",
+    "profiles": {
+      "usno": "diyanet-published-point-v1",
+      "spa": "diyanet-published-spa-point-v1"
+    },
+    "grid": [
+      {
+        "id": "istanbul-2027",
+        "year": 2027,
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul"
+      },
+      {
+        "id": "frankfurt-2027",
+        "year": 2027,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      {
+        "id": "frankfurt-2028",
+        "year": 2028,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      {
+        "id": "oslo-2027",
+        "year": 2027,
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo"
+      },
+      {
+        "id": "tromso-2027",
+        "year": 2027,
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo"
+      },
+      {
+        "id": "tokyo-2027",
+        "year": 2027,
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "timeZone": "Asia/Tokyo"
+      },
+      {
+        "id": "sydney-2027",
+        "year": 2027,
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney"
+      },
+      {
+        "id": "synthetic-antimeridian-2027",
+        "year": 2027,
+        "latitude": 50,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      }
+    ],
+    "meaning": "Predeclared source-free comparison of physical-model choices under the same declared local Diyanet rules; not a comparison to institutional calendars",
+    "events": [
+      "fajr",
+      "sunrise",
+      "dhuhr",
+      "asr",
+      "maghrib",
+      "isha"
+    ],
+    "expectedPointDays": 2921,
+    "expectedFieldsPerProfile": 17526,
+    "primary": "selected profile events including blocked/unavailable states",
+    "secondary": "unadjusted physical events and northern guard metadata",
+    "differenceSign": "SPA minus USNO; absolute elapsed UTC seconds, never wrapped clock subtraction"
+  },
+  "declarationSha256": "768e29fb37e242ed32ca0d3f7d7561d39a562b37a7e20c6ee9f68ccc6a322cec",
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d"
+  },
+  "pointDays": 2921,
+  "selected": {
+    "fields": 17526,
+    "status": {
+      "usno": {
+        "calculated": 14697,
+        "policy-blocked": 2773,
+        "estimated": 56
+      },
+      "spa": {
+        "calculated": 14697,
+        "policy-blocked": 2773,
+        "estimated": 56
+      }
+    },
+    "bothAvailable": 14753,
+    "bothAbsent": 2773,
+    "usnoOnly": 0,
+    "spaOnly": 0,
+    "sameAvailableStatus": 14753,
+    "sameNearestMinute": 14618,
+    "changedNearestMinute": 135,
+    "maximumAbsoluteSeconds": 3.918884765625,
+    "medianAbsoluteSeconds": 0.489174072265625,
+    "p95AbsoluteSecondsNearestRank": 1.401829833984375,
+    "minimumSignedSeconds": -3.112215087890625,
+    "maximumSignedSeconds": 3.918884765625,
+    "largestDifferences": [
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-07",
+        "event": "sunrise",
+        "differenceSeconds": 3.918884765625
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-08",
+        "event": "sunrise",
+        "differenceSeconds": 3.90101220703125
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-06",
+        "event": "sunrise",
+        "differenceSeconds": 3.89840234375
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-09",
+        "event": "sunrise",
+        "differenceSeconds": 3.84734033203125
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-05",
+        "event": "sunrise",
+        "differenceSeconds": 3.8385849609375
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-10",
+        "event": "sunrise",
+        "differenceSeconds": 3.762317626953125
+      }
+    ]
+  },
+  "physical": {
+    "fields": 17526,
+    "status": {
+      "usno": {
+        "calculated": 16541,
+        "unavailable": 985
+      },
+      "spa": {
+        "calculated": 16541,
+        "unavailable": 985
+      }
+    },
+    "bothAvailable": 16541,
+    "bothAbsent": 985,
+    "usnoOnly": 0,
+    "spaOnly": 0,
+    "sameAvailableStatus": 16541,
+    "sameNearestMinute": 16370,
+    "changedNearestMinute": 171,
+    "maximumAbsoluteSeconds": 56.428392578125,
+    "medianAbsoluteSeconds": 0.528888427734375,
+    "p95AbsoluteSecondsNearestRank": 1.745508056640625,
+    "minimumSignedSeconds": -30.834527587890626,
+    "maximumSignedSeconds": 56.428392578125,
+    "largestDifferences": [
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-03-31",
+        "event": "isha",
+        "differenceSeconds": 56.428392578125
+      },
+      {
+        "caseId": "frankfurt-2027",
+        "date": "2027-07-13",
+        "event": "fajr",
+        "differenceSeconds": -30.834527587890626
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-27",
+        "event": "maghrib",
+        "differenceSeconds": -21.821721923828125
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-11-27",
+        "event": "sunrise",
+        "differenceSeconds": 21.50499072265625
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-05-18",
+        "event": "sunrise",
+        "differenceSeconds": -19.491611083984374
+      },
+      {
+        "caseId": "tromso-2027",
+        "date": "2027-05-17",
+        "event": "maghrib",
+        "differenceSeconds": 18.9005810546875
+      }
+    ]
+  },
+  "byEvent": {
+    "fajr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 1714,
+          "policy-blocked": 1207
+        },
+        "spa": {
+          "calculated": 1714,
+          "policy-blocked": 1207
+        }
+      },
+      "bothAvailable": 1714,
+      "bothAbsent": 1207,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 1714,
+      "sameNearestMinute": 1699,
+      "changedNearestMinute": 15,
+      "maximumAbsoluteSeconds": 2.26453076171875,
+      "medianAbsoluteSeconds": 0.55341357421875,
+      "p95AbsoluteSecondsNearestRank": 1.512333984375,
+      "minimumSignedSeconds": -1.90198388671875,
+      "maximumSignedSeconds": 2.26453076171875,
+      "largestDifferences": [
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-23",
+          "event": "fajr",
+          "differenceSeconds": 2.26453076171875
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-24",
+          "event": "fajr",
+          "differenceSeconds": 2.26160888671875
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-22",
+          "event": "fajr",
+          "differenceSeconds": 2.24302294921875
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-25",
+          "event": "fajr",
+          "differenceSeconds": 2.235095703125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-21",
+          "event": "fajr",
+          "differenceSeconds": 2.197220947265625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-11-26",
+          "event": "fajr",
+          "differenceSeconds": 2.1865380859375
+        }
+      ]
+    },
+    "sunrise": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2724,
+          "policy-blocked": 197
+        },
+        "spa": {
+          "calculated": 2724,
+          "policy-blocked": 197
+        }
+      },
+      "bothAvailable": 2724,
+      "bothAbsent": 197,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2724,
+      "sameNearestMinute": 2684,
+      "changedNearestMinute": 40,
+      "maximumAbsoluteSeconds": 3.918884765625,
+      "medianAbsoluteSeconds": 0.7198045654296875,
+      "p95AbsoluteSecondsNearestRank": 1.90354150390625,
+      "minimumSignedSeconds": -2.793137451171875,
+      "maximumSignedSeconds": 3.918884765625,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-07",
+          "event": "sunrise",
+          "differenceSeconds": 3.918884765625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-08",
+          "event": "sunrise",
+          "differenceSeconds": 3.90101220703125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-06",
+          "event": "sunrise",
+          "differenceSeconds": 3.89840234375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-09",
+          "event": "sunrise",
+          "differenceSeconds": 3.84734033203125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-05",
+          "event": "sunrise",
+          "differenceSeconds": 3.8385849609375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-10",
+          "event": "sunrise",
+          "differenceSeconds": 3.762317626953125
+        }
+      ]
+    },
+    "dhuhr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2921
+        },
+        "spa": {
+          "calculated": 2921
+        }
+      },
+      "bothAvailable": 2921,
+      "bothAbsent": 0,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2921,
+      "sameNearestMinute": 2904,
+      "changedNearestMinute": 17,
+      "maximumAbsoluteSeconds": 1.58691650390625,
+      "medianAbsoluteSeconds": 0.360912109375,
+      "p95AbsoluteSecondsNearestRank": 1.005752197265625,
+      "minimumSignedSeconds": -1.58691650390625,
+      "maximumSignedSeconds": 1.49180078125,
+      "largestDifferences": [
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-15",
+          "event": "dhuhr",
+          "differenceSeconds": -1.58691650390625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-14",
+          "event": "dhuhr",
+          "differenceSeconds": -1.586609130859375
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-14",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57920703125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-13",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57829931640625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-15",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57618994140625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-16",
+          "event": "dhuhr",
+          "differenceSeconds": -1.575658203125
+        }
+      ]
+    },
+    "asr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2863,
+          "estimated": 56,
+          "policy-blocked": 2
+        },
+        "spa": {
+          "calculated": 2863,
+          "estimated": 56,
+          "policy-blocked": 2
+        }
+      },
+      "bothAvailable": 2919,
+      "bothAbsent": 2,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2919,
+      "sameNearestMinute": 2896,
+      "changedNearestMinute": 23,
+      "maximumAbsoluteSeconds": 1.815375,
+      "medianAbsoluteSeconds": 0.445952392578125,
+      "p95AbsoluteSecondsNearestRank": 1.1668330078125,
+      "minimumSignedSeconds": -1.815375,
+      "maximumSignedSeconds": 1.36089990234375,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-21",
+          "event": "asr",
+          "differenceSeconds": -1.815375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-22",
+          "event": "asr",
+          "differenceSeconds": -1.814901611328125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-20",
+          "event": "asr",
+          "differenceSeconds": -1.784198486328125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-19",
+          "event": "asr",
+          "differenceSeconds": -1.73584375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-18",
+          "event": "asr",
+          "differenceSeconds": -1.6765322265625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-17",
+          "event": "asr",
+          "differenceSeconds": -1.612037353515625
+        }
+      ]
+    },
+    "maghrib": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2724,
+          "policy-blocked": 197
+        },
+        "spa": {
+          "calculated": 2724,
+          "policy-blocked": 197
+        }
+      },
+      "bothAvailable": 2724,
+      "bothAbsent": 197,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2724,
+      "sameNearestMinute": 2697,
+      "changedNearestMinute": 27,
+      "maximumAbsoluteSeconds": 3.112215087890625,
+      "medianAbsoluteSeconds": 0.5226539306640625,
+      "p95AbsoluteSecondsNearestRank": 1.33652197265625,
+      "minimumSignedSeconds": -3.112215087890625,
+      "maximumSignedSeconds": 1.768498779296875,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-10",
+          "event": "maghrib",
+          "differenceSeconds": -3.112215087890625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-09",
+          "event": "maghrib",
+          "differenceSeconds": -3.078703857421875
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-08",
+          "event": "maghrib",
+          "differenceSeconds": -3.046303955078125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-07",
+          "event": "maghrib",
+          "differenceSeconds": -3.01276953125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-06",
+          "event": "maghrib",
+          "differenceSeconds": -2.97656787109375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-05",
+          "event": "maghrib",
+          "differenceSeconds": -2.93680615234375
+        }
+      ]
+    },
+    "isha": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 1751,
+          "policy-blocked": 1170
+        },
+        "spa": {
+          "calculated": 1751,
+          "policy-blocked": 1170
+        }
+      },
+      "bothAvailable": 1751,
+      "bothAbsent": 1170,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 1751,
+      "sameNearestMinute": 1738,
+      "changedNearestMinute": 13,
+      "maximumAbsoluteSeconds": 1.362766845703125,
+      "medianAbsoluteSeconds": 0.4955859375,
+      "p95AbsoluteSecondsNearestRank": 1.08773388671875,
+      "minimumSignedSeconds": -1.288111328125,
+      "maximumSignedSeconds": 1.362766845703125,
+      "largestDifferences": [
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-12-24",
+          "event": "isha",
+          "differenceSeconds": 1.362766845703125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-12-25",
+          "event": "isha",
+          "differenceSeconds": 1.35356689453125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-12-23",
+          "event": "isha",
+          "differenceSeconds": 1.35031591796875
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-12-26",
+          "event": "isha",
+          "differenceSeconds": 1.3228642578125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-12-22",
+          "event": "isha",
+          "differenceSeconds": 1.31656103515625
+        },
+        {
+          "caseId": "synthetic-antimeridian-2027",
+          "date": "2027-01-01",
+          "event": "isha",
+          "differenceSeconds": -1.288111328125
+        }
+      ]
+    }
+  },
+  "physicalByEvent": {
+    "fajr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2499,
+          "unavailable": 422
+        },
+        "spa": {
+          "calculated": 2499,
+          "unavailable": 422
+        }
+      },
+      "bothAvailable": 2499,
+      "bothAbsent": 422,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2499,
+      "sameNearestMinute": 2472,
+      "changedNearestMinute": 27,
+      "maximumAbsoluteSeconds": 30.834527587890626,
+      "medianAbsoluteSeconds": 0.69974609375,
+      "p95AbsoluteSecondsNearestRank": 2.238689453125,
+      "minimumSignedSeconds": -30.834527587890626,
+      "maximumSignedSeconds": 6.11607275390625,
+      "largestDifferences": [
+        {
+          "caseId": "frankfurt-2027",
+          "date": "2027-07-13",
+          "event": "fajr",
+          "differenceSeconds": -30.834527587890626
+        },
+        {
+          "caseId": "frankfurt-2027",
+          "date": "2027-05-31",
+          "event": "fajr",
+          "differenceSeconds": -18.00454296875
+        },
+        {
+          "caseId": "synthetic-antimeridian-2027",
+          "date": "2027-06-01",
+          "event": "fajr",
+          "differenceSeconds": -13.720349365234375
+        },
+        {
+          "caseId": "oslo-2027",
+          "date": "2027-04-22",
+          "event": "fajr",
+          "differenceSeconds": -13.16811572265625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-05-30",
+          "event": "fajr",
+          "differenceSeconds": -9.847551025390626
+        },
+        {
+          "caseId": "frankfurt-2027",
+          "date": "2027-05-30",
+          "event": "fajr",
+          "differenceSeconds": -8.89783056640625
+        }
+      ]
+    },
+    "sunrise": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2804,
+          "unavailable": 117
+        },
+        "spa": {
+          "calculated": 2804,
+          "unavailable": 117
+        }
+      },
+      "bothAvailable": 2804,
+      "bothAbsent": 117,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2804,
+      "sameNearestMinute": 2761,
+      "changedNearestMinute": 43,
+      "maximumAbsoluteSeconds": 21.50499072265625,
+      "medianAbsoluteSeconds": 0.7383717041015625,
+      "p95AbsoluteSecondsNearestRank": 2.086816162109375,
+      "minimumSignedSeconds": -19.491611083984374,
+      "maximumSignedSeconds": 21.50499072265625,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-27",
+          "event": "sunrise",
+          "differenceSeconds": 21.50499072265625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-05-18",
+          "event": "sunrise",
+          "differenceSeconds": -19.491611083984374
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-26",
+          "event": "sunrise",
+          "differenceSeconds": 10.682730712890624
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-05-17",
+          "event": "sunrise",
+          "differenceSeconds": -10.320118408203125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-01-15",
+          "event": "sunrise",
+          "differenceSeconds": 8.814296142578126
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-05-16",
+          "event": "sunrise",
+          "differenceSeconds": -8.07714013671875
+        }
+      ]
+    },
+    "dhuhr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2921
+        },
+        "spa": {
+          "calculated": 2921
+        }
+      },
+      "bothAvailable": 2921,
+      "bothAbsent": 0,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2921,
+      "sameNearestMinute": 2904,
+      "changedNearestMinute": 17,
+      "maximumAbsoluteSeconds": 1.58691650390625,
+      "medianAbsoluteSeconds": 0.360912109375,
+      "p95AbsoluteSecondsNearestRank": 1.005752197265625,
+      "minimumSignedSeconds": -1.58691650390625,
+      "maximumSignedSeconds": 1.49180078125,
+      "largestDifferences": [
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-15",
+          "event": "dhuhr",
+          "differenceSeconds": -1.58691650390625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-14",
+          "event": "dhuhr",
+          "differenceSeconds": -1.586609130859375
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-14",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57920703125
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-13",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57829931640625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-07-15",
+          "event": "dhuhr",
+          "differenceSeconds": -1.57618994140625
+        },
+        {
+          "caseId": "frankfurt-2028",
+          "date": "2028-06-16",
+          "event": "dhuhr",
+          "differenceSeconds": -1.575658203125
+        }
+      ]
+    },
+    "asr": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2865,
+          "unavailable": 56
+        },
+        "spa": {
+          "calculated": 2865,
+          "unavailable": 56
+        }
+      },
+      "bothAvailable": 2865,
+      "bothAbsent": 56,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2865,
+      "sameNearestMinute": 2842,
+      "changedNearestMinute": 23,
+      "maximumAbsoluteSeconds": 1.815375,
+      "medianAbsoluteSeconds": 0.45246923828125,
+      "p95AbsoluteSecondsNearestRank": 1.16865380859375,
+      "minimumSignedSeconds": -1.815375,
+      "maximumSignedSeconds": 1.36089990234375,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-21",
+          "event": "asr",
+          "differenceSeconds": -1.815375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-22",
+          "event": "asr",
+          "differenceSeconds": -1.814901611328125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-20",
+          "event": "asr",
+          "differenceSeconds": -1.784198486328125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-19",
+          "event": "asr",
+          "differenceSeconds": -1.73584375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-18",
+          "event": "asr",
+          "differenceSeconds": -1.6765322265625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-17",
+          "event": "asr",
+          "differenceSeconds": -1.612037353515625
+        }
+      ]
+    },
+    "maghrib": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2804,
+          "unavailable": 117
+        },
+        "spa": {
+          "calculated": 2804,
+          "unavailable": 117
+        }
+      },
+      "bothAvailable": 2804,
+      "bothAbsent": 117,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2804,
+      "sameNearestMinute": 2772,
+      "changedNearestMinute": 32,
+      "maximumAbsoluteSeconds": 21.821721923828125,
+      "medianAbsoluteSeconds": 0.5415738525390625,
+      "p95AbsoluteSecondsNearestRank": 1.522720703125,
+      "minimumSignedSeconds": -21.821721923828125,
+      "maximumSignedSeconds": 18.9005810546875,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-27",
+          "event": "maghrib",
+          "differenceSeconds": -21.821721923828125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-05-17",
+          "event": "maghrib",
+          "differenceSeconds": 18.9005810546875
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-26",
+          "event": "maghrib",
+          "differenceSeconds": -11.183154296875
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-05-16",
+          "event": "maghrib",
+          "differenceSeconds": 9.862939453125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-25",
+          "event": "maghrib",
+          "differenceSeconds": -8.4509033203125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-01-15",
+          "event": "maghrib",
+          "differenceSeconds": -8.362254150390624
+        }
+      ]
+    },
+    "isha": {
+      "fields": 2921,
+      "status": {
+        "usno": {
+          "calculated": 2648,
+          "unavailable": 273
+        },
+        "spa": {
+          "calculated": 2648,
+          "unavailable": 273
+        }
+      },
+      "bothAvailable": 2648,
+      "bothAbsent": 273,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 2648,
+      "sameNearestMinute": 2619,
+      "changedNearestMinute": 29,
+      "maximumAbsoluteSeconds": 56.428392578125,
+      "medianAbsoluteSeconds": 0.5942894287109375,
+      "p95AbsoluteSecondsNearestRank": 1.86714501953125,
+      "minimumSignedSeconds": -7.57011083984375,
+      "maximumSignedSeconds": 56.428392578125,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-03-31",
+          "event": "isha",
+          "differenceSeconds": 56.428392578125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-09-12",
+          "event": "isha",
+          "differenceSeconds": -7.57011083984375
+        },
+        {
+          "caseId": "oslo-2027",
+          "date": "2027-04-27",
+          "event": "isha",
+          "differenceSeconds": 7.489132568359375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-09-13",
+          "event": "isha",
+          "differenceSeconds": -5.028965087890625
+        },
+        {
+          "caseId": "frankfurt-2027",
+          "date": "2027-06-13",
+          "event": "isha",
+          "differenceSeconds": 4.170793212890625
+        },
+        {
+          "caseId": "frankfurt-2027",
+          "date": "2027-06-12",
+          "event": "isha",
+          "differenceSeconds": 4.169416748046875
+        }
+      ]
+    }
+  },
+  "groups": [
+    {
+      "input": {
+        "id": "istanbul-2027",
+        "year": 2027,
+        "latitude": 41.0082,
+        "longitude": 28.9784,
+        "timeZone": "Europe/Istanbul"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2176,
+        "changedNearestMinute": 14,
+        "maximumAbsoluteSeconds": 1.90198388671875,
+        "medianAbsoluteSeconds": 0.41921704101562496,
+        "p95AbsoluteSecondsNearestRank": 1.184246826171875,
+        "minimumSignedSeconds": -1.90198388671875,
+        "maximumSignedSeconds": 1.235047607421875,
+        "largestDifferences": [
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -1.90198388671875
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -1.89596533203125
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -1.888052734375
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -1.871680419921875
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-06-01",
+            "event": "fajr",
+            "differenceSeconds": -1.853544677734375
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-06-27",
+            "event": "fajr",
+            "differenceSeconds": -1.84892919921875
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2176,
+        "changedNearestMinute": 14,
+        "maximumAbsoluteSeconds": 1.90198388671875,
+        "medianAbsoluteSeconds": 0.41921704101562496,
+        "p95AbsoluteSecondsNearestRank": 1.184246826171875,
+        "minimumSignedSeconds": -1.90198388671875,
+        "maximumSignedSeconds": 1.235047607421875,
+        "largestDifferences": [
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -1.90198388671875
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -1.89596533203125
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -1.888052734375
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -1.871680419921875
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-06-01",
+            "event": "fajr",
+            "differenceSeconds": -1.853544677734375
+          },
+          {
+            "caseId": "istanbul-2027",
+            "date": "2027-06-27",
+            "event": "fajr",
+            "differenceSeconds": -1.84892919921875
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 361,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 1.90198388671875,
+          "medianAbsoluteSeconds": 0.642202392578125,
+          "p95AbsoluteSecondsNearestRank": 1.64724609375,
+          "minimumSignedSeconds": -1.90198388671875,
+          "maximumSignedSeconds": 1.209070068359375,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-30",
+              "event": "fajr",
+              "differenceSeconds": -1.90198388671875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-29",
+              "event": "fajr",
+              "differenceSeconds": -1.89596533203125
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-31",
+              "event": "fajr",
+              "differenceSeconds": -1.888052734375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-28",
+              "event": "fajr",
+              "differenceSeconds": -1.871680419921875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-01",
+              "event": "fajr",
+              "differenceSeconds": -1.853544677734375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-27",
+              "event": "fajr",
+              "differenceSeconds": -1.84892919921875
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.485702392578125,
+          "medianAbsoluteSeconds": 0.595990234375,
+          "p95AbsoluteSecondsNearestRank": 1.323349853515625,
+          "minimumSignedSeconds": -1.485702392578125,
+          "maximumSignedSeconds": 1.235047607421875,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-29",
+              "event": "sunrise",
+              "differenceSeconds": -1.485702392578125
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-28",
+              "event": "sunrise",
+              "differenceSeconds": -1.479062255859375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-30",
+              "event": "sunrise",
+              "differenceSeconds": -1.473424072265625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-27",
+              "event": "sunrise",
+              "differenceSeconds": -1.455192626953125
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-31",
+              "event": "sunrise",
+              "differenceSeconds": -1.441289306640625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-05-26",
+              "event": "sunrise",
+              "differenceSeconds": -1.416360107421875
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.049230712890625,
+          "medianAbsoluteSeconds": 0.331606689453125,
+          "p95AbsoluteSecondsNearestRank": 0.91062109375,
+          "minimumSignedSeconds": -1.049230712890625,
+          "maximumSignedSeconds": 0.461341796875,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.049230712890625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0487177734375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.03321728515625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0311650390625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-03-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.00562451171875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-04-26",
+              "event": "dhuhr",
+              "differenceSeconds": -1.001583251953125
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.12520654296875,
+          "medianAbsoluteSeconds": 0.368887939453125,
+          "p95AbsoluteSecondsNearestRank": 0.936119140625,
+          "minimumSignedSeconds": -1.12520654296875,
+          "maximumSignedSeconds": 0.205868408203125,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-01",
+              "event": "asr",
+              "differenceSeconds": -1.12520654296875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-02",
+              "event": "asr",
+              "differenceSeconds": -1.082833740234375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-20",
+              "event": "asr",
+              "differenceSeconds": -1.030935302734375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-21",
+              "event": "asr",
+              "differenceSeconds": -1.024744140625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-03",
+              "event": "asr",
+              "differenceSeconds": -1.0189169921875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-19",
+              "event": "asr",
+              "differenceSeconds": -1.010461181640625
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 365,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": 1.21266064453125,
+          "medianAbsoluteSeconds": 0.3718115234375,
+          "p95AbsoluteSecondsNearestRank": 1.00290966796875,
+          "minimumSignedSeconds": -1.21266064453125,
+          "maximumSignedSeconds": 0.651613037109375,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-01",
+              "event": "maghrib",
+              "differenceSeconds": -1.21266064453125
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-02",
+              "event": "maghrib",
+              "differenceSeconds": -1.16734130859375
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-20",
+              "event": "maghrib",
+              "differenceSeconds": -1.1063447265625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-03",
+              "event": "maghrib",
+              "differenceSeconds": -1.100012939453125
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-21",
+              "event": "maghrib",
+              "differenceSeconds": -1.097664306640625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-12-19",
+              "event": "maghrib",
+              "differenceSeconds": -1.087880615234375
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.108821044921875,
+          "medianAbsoluteSeconds": 0.39833056640625,
+          "p95AbsoluteSecondsNearestRank": 0.95522021484375,
+          "minimumSignedSeconds": -1.08773388671875,
+          "maximumSignedSeconds": 1.108821044921875,
+          "largestDifferences": [
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-10",
+              "event": "isha",
+              "differenceSeconds": 1.108821044921875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-11",
+              "event": "isha",
+              "differenceSeconds": 1.10051513671875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-01",
+              "event": "isha",
+              "differenceSeconds": -1.08773388671875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-09",
+              "event": "isha",
+              "differenceSeconds": 1.08748388671875
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-06-12",
+              "event": "isha",
+              "differenceSeconds": 1.064693603515625
+            },
+            {
+              "caseId": "istanbul-2027",
+              "date": "2027-01-02",
+              "event": "isha",
+              "differenceSeconds": -1.04352294921875
+            }
+          ]
+        }
+      },
+      "northern": null,
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 365,
+        "spa": 365
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 8423.149667
+    },
+    {
+      "input": {
+        "id": "frankfurt-2027",
+        "year": 2027,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 1884,
+            "policy-blocked": 306
+          },
+          "spa": {
+            "calculated": 1884,
+            "policy-blocked": 306
+          }
+        },
+        "bothAvailable": 1884,
+        "bothAbsent": 306,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1884,
+        "sameNearestMinute": 1867,
+        "changedNearestMinute": 17,
+        "maximumAbsoluteSeconds": 1.748115966796875,
+        "medianAbsoluteSeconds": 0.493734130859375,
+        "p95AbsoluteSecondsNearestRank": 1.258577880859375,
+        "minimumSignedSeconds": -1.748115966796875,
+        "maximumSignedSeconds": 1.558497314453125,
+        "largestDifferences": [
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-29",
+            "event": "sunrise",
+            "differenceSeconds": -1.748115966796875
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-30",
+            "event": "sunrise",
+            "differenceSeconds": -1.742962890625
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-28",
+            "event": "sunrise",
+            "differenceSeconds": -1.734489013671875
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-31",
+            "event": "sunrise",
+            "differenceSeconds": -1.717690185546875
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-27",
+            "event": "sunrise",
+            "differenceSeconds": -1.7042294921875
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-06-01",
+            "event": "sunrise",
+            "differenceSeconds": -1.67211083984375
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2148,
+            "unavailable": 42
+          },
+          "spa": {
+            "calculated": 2148,
+            "unavailable": 42
+          }
+        },
+        "bothAvailable": 2148,
+        "bothAbsent": 42,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2148,
+        "sameNearestMinute": 2127,
+        "changedNearestMinute": 21,
+        "maximumAbsoluteSeconds": 30.834527587890626,
+        "medianAbsoluteSeconds": 0.5209019775390624,
+        "p95AbsoluteSecondsNearestRank": 1.6107392578125,
+        "minimumSignedSeconds": -30.834527587890626,
+        "maximumSignedSeconds": 4.170793212890625,
+        "largestDifferences": [
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-07-13",
+            "event": "fajr",
+            "differenceSeconds": -30.834527587890626
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -18.00454296875
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -8.89783056640625
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -6.74408447265625
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -5.633384033203125
+          },
+          {
+            "caseId": "frankfurt-2027",
+            "date": "2027-05-27",
+            "event": "fajr",
+            "differenceSeconds": -4.914962646484375
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 206,
+              "policy-blocked": 159
+            },
+            "spa": {
+              "calculated": 206,
+              "policy-blocked": 159
+            }
+          },
+          "bothAvailable": 206,
+          "bothAbsent": 159,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 206,
+          "sameNearestMinute": 205,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.514228515625,
+          "medianAbsoluteSeconds": 0.5126767578125,
+          "p95AbsoluteSecondsNearestRank": 1.35898095703125,
+          "minimumSignedSeconds": -1.26594140625,
+          "maximumSignedSeconds": 1.514228515625,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-07",
+              "event": "fajr",
+              "differenceSeconds": 1.514228515625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-08",
+              "event": "fajr",
+              "differenceSeconds": 1.512766845703125
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-06",
+              "event": "fajr",
+              "differenceSeconds": 1.48874169921875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-09",
+              "event": "fajr",
+              "differenceSeconds": 1.485052490234375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-05",
+              "event": "fajr",
+              "differenceSeconds": 1.43653173828125
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-10-10",
+              "event": "fajr",
+              "differenceSeconds": 1.432607421875
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 359,
+          "changedNearestMinute": 6,
+          "maximumAbsoluteSeconds": 1.748115966796875,
+          "medianAbsoluteSeconds": 0.719482666015625,
+          "p95AbsoluteSecondsNearestRank": 1.549854736328125,
+          "minimumSignedSeconds": -1.748115966796875,
+          "maximumSignedSeconds": 1.558497314453125,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-05-29",
+              "event": "sunrise",
+              "differenceSeconds": -1.748115966796875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-05-30",
+              "event": "sunrise",
+              "differenceSeconds": -1.742962890625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-05-28",
+              "event": "sunrise",
+              "differenceSeconds": -1.734489013671875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-05-31",
+              "event": "sunrise",
+              "differenceSeconds": -1.717690185546875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-05-27",
+              "event": "sunrise",
+              "differenceSeconds": -1.7042294921875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-06-01",
+              "event": "sunrise",
+              "differenceSeconds": -1.67211083984375
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.049648193359375,
+          "medianAbsoluteSeconds": 0.332982421875,
+          "p95AbsoluteSecondsNearestRank": 0.91239990234375,
+          "minimumSignedSeconds": -1.049648193359375,
+          "maximumSignedSeconds": 0.461683349609375,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.049648193359375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.048184326171875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0345458984375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.02966455078125
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-03-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.005752197265625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-04-26",
+              "event": "dhuhr",
+              "differenceSeconds": -1.003762451171875
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.304688232421875,
+          "medianAbsoluteSeconds": 0.419172119140625,
+          "p95AbsoluteSecondsNearestRank": 1.06857421875,
+          "minimumSignedSeconds": -1.304688232421875,
+          "maximumSignedSeconds": 0.33001513671875,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-01",
+              "event": "asr",
+              "differenceSeconds": -1.304688232421875
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-02",
+              "event": "asr",
+              "differenceSeconds": -1.258577880859375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-03",
+              "event": "asr",
+              "differenceSeconds": -1.189562744140625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-20",
+              "event": "asr",
+              "differenceSeconds": -1.1829140625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-21",
+              "event": "asr",
+              "differenceSeconds": -1.17510009765625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-19",
+              "event": "asr",
+              "differenceSeconds": -1.1629658203125
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.47940380859375,
+          "medianAbsoluteSeconds": 0.504887451171875,
+          "p95AbsoluteSecondsNearestRank": 1.201357666015625,
+          "minimumSignedSeconds": -1.47940380859375,
+          "maximumSignedSeconds": 0.953099853515625,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-01",
+              "event": "maghrib",
+              "differenceSeconds": -1.47940380859375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-02",
+              "event": "maghrib",
+              "differenceSeconds": -1.428386962890625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-03",
+              "event": "maghrib",
+              "differenceSeconds": -1.353299072265625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-20",
+              "event": "maghrib",
+              "differenceSeconds": -1.334205078125
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-21",
+              "event": "maghrib",
+              "differenceSeconds": -1.323665771484375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-19",
+              "event": "maghrib",
+              "differenceSeconds": -1.31590869140625
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 218,
+              "policy-blocked": 147
+            },
+            "spa": {
+              "calculated": 218,
+              "policy-blocked": 147
+            }
+          },
+          "bothAvailable": 218,
+          "bothAbsent": 147,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 218,
+          "sameNearestMinute": 215,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.276442626953125,
+          "medianAbsoluteSeconds": 0.618998046875,
+          "p95AbsoluteSecondsNearestRank": 1.12380419921875,
+          "minimumSignedSeconds": -1.276442626953125,
+          "maximumSignedSeconds": 0.3554580078125,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-01",
+              "event": "isha",
+              "differenceSeconds": -1.276442626953125
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-02",
+              "event": "isha",
+              "differenceSeconds": -1.2281865234375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-20",
+              "event": "isha",
+              "differenceSeconds": -1.160455322265625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-01-03",
+              "event": "isha",
+              "differenceSeconds": -1.15774072265625
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-21",
+              "event": "isha",
+              "differenceSeconds": -1.14856396484375
+            },
+            {
+              "caseId": "frankfurt-2027",
+              "date": "2027-12-19",
+              "event": "isha",
+              "differenceSeconds": -1.14481982421875
+            }
+          ]
+        }
+      },
+      "northern": {
+        "usno": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "usno",
+          "solarProvider": "USNO-continuous-point-v1",
+          "anchorDate": "2027-05-31",
+          "q": 0.17488538810389845,
+          "missingFajrStartDate": "2027-06-01",
+          "missingFajrEndDate": "2027-07-12",
+          "missingFajrDayCount": 42,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.41779591471357,
+          "annualFajrTransitionUpperPhaseMinutes": -505.413608992513
+        },
+        "spa": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "spa",
+          "solarProvider": "SPA-continuous-point-v1",
+          "anchorDate": "2027-05-31",
+          "q": 0.1746806886292559,
+          "missingFajrStartDate": "2027-06-01",
+          "missingFajrEndDate": "2027-07-12",
+          "missingFajrDayCount": 42,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.41318142496743,
+          "annualFajrTransitionUpperPhaseMinutes": -505.4087464152018
+        }
+      },
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 206,
+        "spa": 206
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 16457.303375
+    },
+    {
+      "input": {
+        "id": "frankfurt-2028",
+        "year": 2028,
+        "latitude": 50.11,
+        "longitude": 8.68,
+        "timeZone": "Europe/Berlin"
+      },
+      "dayCount": 366,
+      "selected": {
+        "fields": 2196,
+        "status": {
+          "usno": {
+            "calculated": 1890,
+            "policy-blocked": 306
+          },
+          "spa": {
+            "calculated": 1890,
+            "policy-blocked": 306
+          }
+        },
+        "bothAvailable": 1890,
+        "bothAbsent": 306,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1890,
+        "sameNearestMinute": 1867,
+        "changedNearestMinute": 23,
+        "maximumAbsoluteSeconds": 2.49769677734375,
+        "medianAbsoluteSeconds": 0.753575927734375,
+        "p95AbsoluteSecondsNearestRank": 1.720677734375,
+        "minimumSignedSeconds": -2.14906982421875,
+        "maximumSignedSeconds": 2.49769677734375,
+        "largestDifferences": [
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-23",
+            "event": "sunrise",
+            "differenceSeconds": 2.49769677734375
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-24",
+            "event": "sunrise",
+            "differenceSeconds": 2.49105615234375
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-22",
+            "event": "sunrise",
+            "differenceSeconds": 2.47830615234375
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-25",
+            "event": "sunrise",
+            "differenceSeconds": 2.459414306640625
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-21",
+            "event": "sunrise",
+            "differenceSeconds": 2.43288330078125
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-11-26",
+            "event": "sunrise",
+            "differenceSeconds": 2.404591064453125
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2196,
+        "status": {
+          "usno": {
+            "calculated": 2153,
+            "unavailable": 43
+          },
+          "spa": {
+            "calculated": 2153,
+            "unavailable": 43
+          }
+        },
+        "bothAvailable": 2153,
+        "bothAbsent": 43,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2153,
+        "sameNearestMinute": 2124,
+        "changedNearestMinute": 29,
+        "maximumAbsoluteSeconds": 9.847551025390626,
+        "medianAbsoluteSeconds": 0.774011962890625,
+        "p95AbsoluteSecondsNearestRank": 1.85642431640625,
+        "minimumSignedSeconds": -9.847551025390626,
+        "maximumSignedSeconds": 2.49769677734375,
+        "largestDifferences": [
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-05-30",
+            "event": "fajr",
+            "differenceSeconds": -9.847551025390626
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-07-13",
+            "event": "fajr",
+            "differenceSeconds": -8.485654541015625
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-07-14",
+            "event": "fajr",
+            "differenceSeconds": -6.153972900390625
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-05-29",
+            "event": "fajr",
+            "differenceSeconds": -6.121503662109375
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-07-15",
+            "event": "fajr",
+            "differenceSeconds": -5.17668603515625
+          },
+          {
+            "caseId": "frankfurt-2028",
+            "date": "2028-05-28",
+            "event": "fajr",
+            "differenceSeconds": -4.91915625
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 207,
+              "policy-blocked": 159
+            },
+            "spa": {
+              "calculated": 207,
+              "policy-blocked": 159
+            }
+          },
+          "bothAvailable": 207,
+          "bothAbsent": 159,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 207,
+          "sameNearestMinute": 205,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 2.26453076171875,
+          "medianAbsoluteSeconds": 1.0882802734375,
+          "p95AbsoluteSecondsNearestRank": 2.118121826171875,
+          "minimumSignedSeconds": -1.282540771484375,
+          "maximumSignedSeconds": 2.26453076171875,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-23",
+              "event": "fajr",
+              "differenceSeconds": 2.26453076171875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-24",
+              "event": "fajr",
+              "differenceSeconds": 2.26160888671875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-22",
+              "event": "fajr",
+              "differenceSeconds": 2.24302294921875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-25",
+              "event": "fajr",
+              "differenceSeconds": 2.235095703125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-21",
+              "event": "fajr",
+              "differenceSeconds": 2.197220947265625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-26",
+              "event": "fajr",
+              "differenceSeconds": 2.1865380859375
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 366
+            },
+            "spa": {
+              "calculated": 366
+            }
+          },
+          "bothAvailable": 366,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 366,
+          "sameNearestMinute": 357,
+          "changedNearestMinute": 9,
+          "maximumAbsoluteSeconds": 2.49769677734375,
+          "medianAbsoluteSeconds": 1.2343822021484376,
+          "p95AbsoluteSecondsNearestRank": 2.143247802734375,
+          "minimumSignedSeconds": -2.14906982421875,
+          "maximumSignedSeconds": 2.49769677734375,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-23",
+              "event": "sunrise",
+              "differenceSeconds": 2.49769677734375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-24",
+              "event": "sunrise",
+              "differenceSeconds": 2.49105615234375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-22",
+              "event": "sunrise",
+              "differenceSeconds": 2.47830615234375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-25",
+              "event": "sunrise",
+              "differenceSeconds": 2.459414306640625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-21",
+              "event": "sunrise",
+              "differenceSeconds": 2.43288330078125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-11-26",
+              "event": "sunrise",
+              "differenceSeconds": 2.404591064453125
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 366
+            },
+            "spa": {
+              "calculated": 366
+            }
+          },
+          "bothAvailable": 366,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 366,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 1.58691650390625,
+          "medianAbsoluteSeconds": 0.7485137939453125,
+          "p95AbsoluteSecondsNearestRank": 1.45526123046875,
+          "minimumSignedSeconds": -1.58691650390625,
+          "maximumSignedSeconds": 1.49180078125,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-15",
+              "event": "dhuhr",
+              "differenceSeconds": -1.58691650390625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-07-14",
+              "event": "dhuhr",
+              "differenceSeconds": -1.586609130859375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-14",
+              "event": "dhuhr",
+              "differenceSeconds": -1.57920703125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-07-13",
+              "event": "dhuhr",
+              "differenceSeconds": -1.57829931640625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-07-15",
+              "event": "dhuhr",
+              "differenceSeconds": -1.57618994140625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-16",
+              "event": "dhuhr",
+              "differenceSeconds": -1.575658203125
+            }
+          ]
+        },
+        "asr": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 366
+            },
+            "spa": {
+              "calculated": 366
+            }
+          },
+          "bothAvailable": 366,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 366,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 1.413645751953125,
+          "medianAbsoluteSeconds": 0.6274664306640625,
+          "p95AbsoluteSecondsNearestRank": 1.30530322265625,
+          "minimumSignedSeconds": -1.413645751953125,
+          "maximumSignedSeconds": 1.36089990234375,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-15",
+              "event": "asr",
+              "differenceSeconds": -1.413645751953125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-14",
+              "event": "asr",
+              "differenceSeconds": -1.411715576171875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-07-14",
+              "event": "asr",
+              "differenceSeconds": -1.399934326171875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-16",
+              "event": "asr",
+              "differenceSeconds": -1.39788134765625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-07-13",
+              "event": "asr",
+              "differenceSeconds": -1.395036865234375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-06-13",
+              "event": "asr",
+              "differenceSeconds": -1.3921865234375
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 366
+            },
+            "spa": {
+              "calculated": 366
+            }
+          },
+          "bothAvailable": 366,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 366,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 1.32596484375,
+          "medianAbsoluteSeconds": 0.63316259765625,
+          "p95AbsoluteSecondsNearestRank": 1.112665283203125,
+          "minimumSignedSeconds": -1.160405029296875,
+          "maximumSignedSeconds": 1.32596484375,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-25",
+              "event": "maghrib",
+              "differenceSeconds": 1.32596484375
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-24",
+              "event": "maghrib",
+              "differenceSeconds": 1.32493701171875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-26",
+              "event": "maghrib",
+              "differenceSeconds": 1.304446044921875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-23",
+              "event": "maghrib",
+              "differenceSeconds": 1.30149267578125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-27",
+              "event": "maghrib",
+              "differenceSeconds": 1.260868408203125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-22",
+              "event": "maghrib",
+              "differenceSeconds": 1.256279296875
+            }
+          ]
+        },
+        "isha": {
+          "fields": 366,
+          "status": {
+            "usno": {
+              "calculated": 219,
+              "policy-blocked": 147
+            },
+            "spa": {
+              "calculated": 219,
+              "policy-blocked": 147
+            }
+          },
+          "bothAvailable": 219,
+          "bothAbsent": 147,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 219,
+          "sameNearestMinute": 219,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": 1.362766845703125,
+          "medianAbsoluteSeconds": 0.556580810546875,
+          "p95AbsoluteSecondsNearestRank": 1.1312353515625,
+          "minimumSignedSeconds": -1.138311767578125,
+          "maximumSignedSeconds": 1.362766845703125,
+          "largestDifferences": [
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-24",
+              "event": "isha",
+              "differenceSeconds": 1.362766845703125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-25",
+              "event": "isha",
+              "differenceSeconds": 1.35356689453125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-23",
+              "event": "isha",
+              "differenceSeconds": 1.35031591796875
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-26",
+              "event": "isha",
+              "differenceSeconds": 1.3228642578125
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-22",
+              "event": "isha",
+              "differenceSeconds": 1.31656103515625
+            },
+            {
+              "caseId": "frankfurt-2028",
+              "date": "2028-12-27",
+              "event": "isha",
+              "differenceSeconds": 1.27142578125
+            }
+          ]
+        }
+      },
+      "northern": {
+        "usno": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "usno",
+          "solarProvider": "USNO-continuous-point-v1",
+          "anchorDate": "2028-05-30",
+          "q": 0.17765925465100388,
+          "missingFajrStartDate": "2028-05-31",
+          "missingFajrEndDate": "2028-07-12",
+          "missingFajrDayCount": 43,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.41777026367185,
+          "annualFajrTransitionUpperPhaseMinutes": -505.4157120727539
+        },
+        "spa": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "spa",
+          "solarProvider": "SPA-continuous-point-v1",
+          "anchorDate": "2028-05-30",
+          "q": 0.17754934283932022,
+          "missingFajrStartDate": "2028-05-31",
+          "missingFajrEndDate": "2028-07-12",
+          "missingFajrDayCount": 43,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.41596839599606,
+          "annualFajrTransitionUpperPhaseMinutes": -505.4139600708007
+        }
+      },
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 207,
+        "spa": 207
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 16724.247084000002
+    },
+    {
+      "input": {
+        "id": "oslo-2027",
+        "year": 2027,
+        "latitude": 59.91,
+        "longitude": 10.75,
+        "timeZone": "Europe/Oslo"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "policy-blocked": 756,
+            "calculated": 1434
+          },
+          "spa": {
+            "policy-blocked": 756,
+            "calculated": 1434
+          }
+        },
+        "bothAvailable": 1434,
+        "bothAbsent": 756,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1434,
+        "sameNearestMinute": 1413,
+        "changedNearestMinute": 21,
+        "maximumAbsoluteSeconds": 2.40713720703125,
+        "medianAbsoluteSeconds": 0.60696240234375,
+        "p95AbsoluteSecondsNearestRank": 1.78336083984375,
+        "minimumSignedSeconds": -2.40713720703125,
+        "maximumSignedSeconds": 2.1596689453125,
+        "largestDifferences": [
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-05-31",
+            "event": "sunrise",
+            "differenceSeconds": -2.40713720703125
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-05-30",
+            "event": "sunrise",
+            "differenceSeconds": -2.406437744140625
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-06-01",
+            "event": "sunrise",
+            "differenceSeconds": -2.386367431640625
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-05-29",
+            "event": "sunrise",
+            "differenceSeconds": -2.385473876953125
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-05-28",
+            "event": "sunrise",
+            "differenceSeconds": -2.34667919921875
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-06-02",
+            "event": "sunrise",
+            "differenceSeconds": -2.344606689453125
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 1960,
+            "unavailable": 230
+          },
+          "spa": {
+            "calculated": 1960,
+            "unavailable": 230
+          }
+        },
+        "bothAvailable": 1960,
+        "bothAbsent": 230,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1960,
+        "sameNearestMinute": 1933,
+        "changedNearestMinute": 27,
+        "maximumAbsoluteSeconds": 13.16811572265625,
+        "medianAbsoluteSeconds": 0.6798880615234375,
+        "p95AbsoluteSecondsNearestRank": 1.8438720703125,
+        "minimumSignedSeconds": -13.16811572265625,
+        "maximumSignedSeconds": 7.489132568359375,
+        "largestDifferences": [
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-22",
+            "event": "fajr",
+            "differenceSeconds": -13.16811572265625
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-27",
+            "event": "isha",
+            "differenceSeconds": 7.489132568359375
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-21",
+            "event": "fajr",
+            "differenceSeconds": -5.544462646484375
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-20",
+            "event": "fajr",
+            "differenceSeconds": -4.419960205078125
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-19",
+            "event": "fajr",
+            "differenceSeconds": -3.902737548828125
+          },
+          {
+            "caseId": "oslo-2027",
+            "date": "2027-04-18",
+            "event": "fajr",
+            "differenceSeconds": -3.583588134765625
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 365
+            },
+            "spa": {
+              "policy-blocked": 365
+            }
+          },
+          "bothAvailable": 0,
+          "bothAbsent": 365,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 0,
+          "sameNearestMinute": 0,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": null,
+          "medianAbsoluteSeconds": null,
+          "p95AbsoluteSecondsNearestRank": null,
+          "minimumSignedSeconds": null,
+          "maximumSignedSeconds": null,
+          "largestDifferences": []
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 352,
+              "policy-blocked": 13
+            },
+            "spa": {
+              "calculated": 352,
+              "policy-blocked": 13
+            }
+          },
+          "bothAvailable": 352,
+          "bothAbsent": 13,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 352,
+          "sameNearestMinute": 343,
+          "changedNearestMinute": 9,
+          "maximumAbsoluteSeconds": 2.40713720703125,
+          "medianAbsoluteSeconds": 0.9830228271484376,
+          "p95AbsoluteSecondsNearestRank": 2.117271728515625,
+          "minimumSignedSeconds": -2.40713720703125,
+          "maximumSignedSeconds": 2.1596689453125,
+          "largestDifferences": [
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-05-31",
+              "event": "sunrise",
+              "differenceSeconds": -2.40713720703125
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-05-30",
+              "event": "sunrise",
+              "differenceSeconds": -2.406437744140625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-06-01",
+              "event": "sunrise",
+              "differenceSeconds": -2.386367431640625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-05-29",
+              "event": "sunrise",
+              "differenceSeconds": -2.385473876953125
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-05-28",
+              "event": "sunrise",
+              "differenceSeconds": -2.34667919921875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-06-02",
+              "event": "sunrise",
+              "differenceSeconds": -2.344606689453125
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.04960791015625,
+          "medianAbsoluteSeconds": 0.332796142578125,
+          "p95AbsoluteSecondsNearestRank": 0.912220947265625,
+          "minimumSignedSeconds": -1.04960791015625,
+          "maximumSignedSeconds": 0.461641357421875,
+          "largestDifferences": [
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.04960791015625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.048240966796875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.034412841796875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.02981982421875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-03-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.005741455078125
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-04-26",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0035419921875
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.5798916015625,
+          "medianAbsoluteSeconds": 0.46939892578125,
+          "p95AbsoluteSecondsNearestRank": 1.27495947265625,
+          "minimumSignedSeconds": -1.5798916015625,
+          "maximumSignedSeconds": 0.535949462890625,
+          "largestDifferences": [
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-01",
+              "event": "asr",
+              "differenceSeconds": -1.5798916015625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-02",
+              "event": "asr",
+              "differenceSeconds": -1.53014404296875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-03",
+              "event": "asr",
+              "differenceSeconds": -1.4551572265625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-12-20",
+              "event": "asr",
+              "differenceSeconds": -1.4132275390625
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-12-21",
+              "event": "asr",
+              "differenceSeconds": -1.405420654296875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-11-22",
+              "event": "asr",
+              "differenceSeconds": -1.402082275390625
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 352,
+              "policy-blocked": 13
+            },
+            "spa": {
+              "calculated": 352,
+              "policy-blocked": 13
+            }
+          },
+          "bothAvailable": 352,
+          "bothAbsent": 13,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 352,
+          "sameNearestMinute": 345,
+          "changedNearestMinute": 7,
+          "maximumAbsoluteSeconds": 2.1237646484375,
+          "medianAbsoluteSeconds": 0.81209228515625,
+          "p95AbsoluteSecondsNearestRank": 1.756339599609375,
+          "minimumSignedSeconds": -2.1237646484375,
+          "maximumSignedSeconds": 1.768498779296875,
+          "largestDifferences": [
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-01",
+              "event": "maghrib",
+              "differenceSeconds": -2.1237646484375
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-02",
+              "event": "maghrib",
+              "differenceSeconds": -2.0593046875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-01-03",
+              "event": "maghrib",
+              "differenceSeconds": -1.96532080078125
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-12-20",
+              "event": "maghrib",
+              "differenceSeconds": -1.894422607421875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-12-21",
+              "event": "maghrib",
+              "differenceSeconds": -1.8834404296875
+            },
+            {
+              "caseId": "oslo-2027",
+              "date": "2027-12-19",
+              "event": "maghrib",
+              "differenceSeconds": -1.8722353515625
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 365
+            },
+            "spa": {
+              "policy-blocked": 365
+            }
+          },
+          "bothAvailable": 0,
+          "bothAbsent": 365,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 0,
+          "sameNearestMinute": 0,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": null,
+          "medianAbsoluteSeconds": null,
+          "p95AbsoluteSecondsNearestRank": null,
+          "minimumSignedSeconds": null,
+          "maximumSignedSeconds": null,
+          "largestDifferences": []
+        }
+      },
+      "northern": {
+        "usno": {
+          "status": "blocked",
+          "reason": "annual-five-hour-horizon-gate-not-met",
+          "solarModel": "usno",
+          "solarProvider": "USNO-continuous-point-v1",
+          "anchorDate": "2027-04-22",
+          "q": 0.17558838373217067,
+          "missingFajrStartDate": "2027-04-23",
+          "missingFajrEndDate": "2027-08-21",
+          "missingFajrDayCount": 121,
+          "horizonGatePassed": false,
+          "annualIshaTransitionLowerPhaseMinutes": 468.6295278198242,
+          "annualFajrTransitionUpperPhaseMinutes": -468.6181403889974
+        },
+        "spa": {
+          "status": "blocked",
+          "reason": "annual-five-hour-horizon-gate-not-met",
+          "solarModel": "spa",
+          "solarProvider": "SPA-continuous-point-v1",
+          "anchorDate": "2027-04-22",
+          "q": 0.17545525508211593,
+          "missingFajrStartDate": "2027-04-23",
+          "missingFajrEndDate": "2027-08-21",
+          "missingFajrDayCount": 121,
+          "horizonGatePassed": false,
+          "annualIshaTransitionLowerPhaseMinutes": 468.6200897745768,
+          "annualFajrTransitionUpperPhaseMinutes": -468.6084266113281
+        }
+      },
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 0,
+        "spa": 0
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 15729.521167000006
+    },
+    {
+      "input": {
+        "id": "tromso-2027",
+        "year": 2027,
+        "latitude": 69.65,
+        "longitude": 18.96,
+        "timeZone": "Europe/Oslo"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "policy-blocked": 1100,
+            "calculated": 1034,
+            "estimated": 56
+          },
+          "spa": {
+            "policy-blocked": 1100,
+            "calculated": 1034,
+            "estimated": 56
+          }
+        },
+        "bothAvailable": 1090,
+        "bothAbsent": 1100,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1090,
+        "sameNearestMinute": 1077,
+        "changedNearestMinute": 13,
+        "maximumAbsoluteSeconds": 3.918884765625,
+        "medianAbsoluteSeconds": 0.5198476562500001,
+        "p95AbsoluteSecondsNearestRank": 2.1263291015625,
+        "minimumSignedSeconds": -3.112215087890625,
+        "maximumSignedSeconds": 3.918884765625,
+        "largestDifferences": [
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-07",
+            "event": "sunrise",
+            "differenceSeconds": 3.918884765625
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-08",
+            "event": "sunrise",
+            "differenceSeconds": 3.90101220703125
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-06",
+            "event": "sunrise",
+            "differenceSeconds": 3.89840234375
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-09",
+            "event": "sunrise",
+            "differenceSeconds": 3.84734033203125
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-05",
+            "event": "sunrise",
+            "differenceSeconds": 3.8385849609375
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-10",
+            "event": "sunrise",
+            "differenceSeconds": 3.762317626953125
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 1561,
+            "unavailable": 629
+          },
+          "spa": {
+            "calculated": 1561,
+            "unavailable": 629
+          }
+        },
+        "bothAvailable": 1561,
+        "bothAbsent": 629,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1561,
+        "sameNearestMinute": 1533,
+        "changedNearestMinute": 28,
+        "maximumAbsoluteSeconds": 56.428392578125,
+        "medianAbsoluteSeconds": 0.77534033203125,
+        "p95AbsoluteSecondsNearestRank": 3.277635498046875,
+        "minimumSignedSeconds": -21.821721923828125,
+        "maximumSignedSeconds": 56.428392578125,
+        "largestDifferences": [
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-03-31",
+            "event": "isha",
+            "differenceSeconds": 56.428392578125
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-27",
+            "event": "maghrib",
+            "differenceSeconds": -21.821721923828125
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-27",
+            "event": "sunrise",
+            "differenceSeconds": 21.50499072265625
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-05-18",
+            "event": "sunrise",
+            "differenceSeconds": -19.491611083984374
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-05-17",
+            "event": "maghrib",
+            "differenceSeconds": 18.9005810546875
+          },
+          {
+            "caseId": "tromso-2027",
+            "date": "2027-11-26",
+            "event": "maghrib",
+            "differenceSeconds": -11.183154296875
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 365
+            },
+            "spa": {
+              "policy-blocked": 365
+            }
+          },
+          "bothAvailable": 0,
+          "bothAbsent": 365,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 0,
+          "sameNearestMinute": 0,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": null,
+          "medianAbsoluteSeconds": null,
+          "p95AbsoluteSecondsNearestRank": null,
+          "minimumSignedSeconds": null,
+          "maximumSignedSeconds": null,
+          "largestDifferences": []
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 184,
+              "calculated": 181
+            },
+            "spa": {
+              "policy-blocked": 184,
+              "calculated": 181
+            }
+          },
+          "bothAvailable": 181,
+          "bothAbsent": 184,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 181,
+          "sameNearestMinute": 177,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 3.918884765625,
+          "medianAbsoluteSeconds": 1.268973876953125,
+          "p95AbsoluteSecondsNearestRank": 3.237916259765625,
+          "minimumSignedSeconds": -2.793137451171875,
+          "maximumSignedSeconds": 3.918884765625,
+          "largestDifferences": [
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-07",
+              "event": "sunrise",
+              "differenceSeconds": 3.918884765625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-08",
+              "event": "sunrise",
+              "differenceSeconds": 3.90101220703125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-06",
+              "event": "sunrise",
+              "differenceSeconds": 3.89840234375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-09",
+              "event": "sunrise",
+              "differenceSeconds": 3.84734033203125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-05",
+              "event": "sunrise",
+              "differenceSeconds": 3.8385849609375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-10",
+              "event": "sunrise",
+              "differenceSeconds": 3.762317626953125
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 364,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.049443359375,
+          "medianAbsoluteSeconds": 0.332052978515625,
+          "p95AbsoluteSecondsNearestRank": 0.911505615234375,
+          "minimumSignedSeconds": -1.049443359375,
+          "maximumSignedSeconds": 0.461468505859375,
+          "largestDifferences": [
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.049443359375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.048461181640625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.033879150390625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.03043115234375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-03-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.005693603515625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-04-26",
+              "event": "dhuhr",
+              "differenceSeconds": -1.00266455078125
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "estimated": 56,
+              "policy-blocked": 2,
+              "calculated": 307
+            },
+            "spa": {
+              "estimated": 56,
+              "policy-blocked": 2,
+              "calculated": 307
+            }
+          },
+          "bothAvailable": 363,
+          "bothAbsent": 2,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 363,
+          "sameNearestMinute": 360,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.815375,
+          "medianAbsoluteSeconds": 0.483022705078125,
+          "p95AbsoluteSecondsNearestRank": 1.500923828125,
+          "minimumSignedSeconds": -1.815375,
+          "maximumSignedSeconds": 0.85086962890625,
+          "largestDifferences": [
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-21",
+              "event": "asr",
+              "differenceSeconds": -1.815375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-22",
+              "event": "asr",
+              "differenceSeconds": -1.814901611328125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-20",
+              "event": "asr",
+              "differenceSeconds": -1.784198486328125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-19",
+              "event": "asr",
+              "differenceSeconds": -1.73584375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-18",
+              "event": "asr",
+              "differenceSeconds": -1.6765322265625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-17",
+              "event": "asr",
+              "differenceSeconds": -1.612037353515625
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 184,
+              "calculated": 181
+            },
+            "spa": {
+              "policy-blocked": 184,
+              "calculated": 181
+            }
+          },
+          "bothAvailable": 181,
+          "bothAbsent": 184,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 181,
+          "sameNearestMinute": 176,
+          "changedNearestMinute": 5,
+          "maximumAbsoluteSeconds": 3.112215087890625,
+          "medianAbsoluteSeconds": 1.03884228515625,
+          "p95AbsoluteSecondsNearestRank": 2.73947802734375,
+          "minimumSignedSeconds": -3.112215087890625,
+          "maximumSignedSeconds": 1.5998349609375,
+          "largestDifferences": [
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-10",
+              "event": "maghrib",
+              "differenceSeconds": -3.112215087890625
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-09",
+              "event": "maghrib",
+              "differenceSeconds": -3.078703857421875
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-08",
+              "event": "maghrib",
+              "differenceSeconds": -3.046303955078125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-07",
+              "event": "maghrib",
+              "differenceSeconds": -3.01276953125
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-06",
+              "event": "maghrib",
+              "differenceSeconds": -2.97656787109375
+            },
+            {
+              "caseId": "tromso-2027",
+              "date": "2027-11-05",
+              "event": "maghrib",
+              "differenceSeconds": -2.93680615234375
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "policy-blocked": 365
+            },
+            "spa": {
+              "policy-blocked": 365
+            }
+          },
+          "bothAvailable": 0,
+          "bothAbsent": 365,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 0,
+          "sameNearestMinute": 0,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": null,
+          "medianAbsoluteSeconds": null,
+          "p95AbsoluteSecondsNearestRank": null,
+          "minimumSignedSeconds": null,
+          "maximumSignedSeconds": null,
+          "largestDifferences": []
+        }
+      },
+      "northern": {
+        "usno": {
+          "status": "blocked",
+          "reason": "annual-night-horizon-incomplete",
+          "solarModel": "usno",
+          "solarProvider": "USNO-continuous-point-v1",
+          "anchorDate": "2027-03-26",
+          "q": 0.18825316063739053,
+          "missingFajrStartDate": "2027-03-27",
+          "missingFajrEndDate": "2027-09-17",
+          "missingFajrDayCount": 175,
+          "horizonGatePassed": false,
+          "annualIshaTransitionLowerPhaseMinutes": null,
+          "annualFajrTransitionUpperPhaseMinutes": null
+        },
+        "spa": {
+          "status": "blocked",
+          "reason": "annual-night-horizon-incomplete",
+          "solarModel": "spa",
+          "solarProvider": "SPA-continuous-point-v1",
+          "anchorDate": "2027-03-26",
+          "q": 0.18823769282667016,
+          "missingFajrStartDate": "2027-03-27",
+          "missingFajrEndDate": "2027-09-17",
+          "missingFajrDayCount": 175,
+          "horizonGatePassed": false,
+          "annualIshaTransitionLowerPhaseMinutes": null,
+          "annualFajrTransitionUpperPhaseMinutes": null
+        }
+      },
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 0,
+        "spa": 0
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 15782.081999999995
+    },
+    {
+      "input": {
+        "id": "tokyo-2027",
+        "year": 2027,
+        "latitude": 35.6762,
+        "longitude": 139.6503,
+        "timeZone": "Asia/Tokyo"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2177,
+        "changedNearestMinute": 13,
+        "maximumAbsoluteSeconds": 1.62964306640625,
+        "medianAbsoluteSeconds": 0.39586657714843754,
+        "p95AbsoluteSecondsNearestRank": 1.061436767578125,
+        "minimumSignedSeconds": -1.62964306640625,
+        "maximumSignedSeconds": 1.092572998046875,
+        "largestDifferences": [
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -1.62964306640625
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -1.62861767578125
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -1.611058349609375
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -1.60947216796875
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-27",
+            "event": "fajr",
+            "differenceSeconds": -1.57437109375
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-06-01",
+            "event": "fajr",
+            "differenceSeconds": -1.5722958984375
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2177,
+        "changedNearestMinute": 13,
+        "maximumAbsoluteSeconds": 1.62964306640625,
+        "medianAbsoluteSeconds": 0.39586657714843754,
+        "p95AbsoluteSecondsNearestRank": 1.061436767578125,
+        "minimumSignedSeconds": -1.62964306640625,
+        "maximumSignedSeconds": 1.092572998046875,
+        "largestDifferences": [
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -1.62964306640625
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -1.62861767578125
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -1.611058349609375
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -1.60947216796875
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-05-27",
+            "event": "fajr",
+            "differenceSeconds": -1.57437109375
+          },
+          {
+            "caseId": "tokyo-2027",
+            "date": "2027-06-01",
+            "event": "fajr",
+            "differenceSeconds": -1.5722958984375
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 361,
+          "changedNearestMinute": 4,
+          "maximumAbsoluteSeconds": 1.62964306640625,
+          "medianAbsoluteSeconds": 0.579878662109375,
+          "p95AbsoluteSecondsNearestRank": 1.424597900390625,
+          "minimumSignedSeconds": -1.62964306640625,
+          "maximumSignedSeconds": 1.0736826171875,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-30",
+              "event": "fajr",
+              "differenceSeconds": -1.62964306640625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-29",
+              "event": "fajr",
+              "differenceSeconds": -1.62861767578125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-31",
+              "event": "fajr",
+              "differenceSeconds": -1.611058349609375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-28",
+              "event": "fajr",
+              "differenceSeconds": -1.60947216796875
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-27",
+              "event": "fajr",
+              "differenceSeconds": -1.57437109375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-06-01",
+              "event": "fajr",
+              "differenceSeconds": -1.5722958984375
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.38027392578125,
+          "medianAbsoluteSeconds": 0.518814208984375,
+          "p95AbsoluteSecondsNearestRank": 1.2290302734375,
+          "minimumSignedSeconds": -1.38027392578125,
+          "maximumSignedSeconds": 1.092572998046875,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-29",
+              "event": "sunrise",
+              "differenceSeconds": -1.38027392578125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-28",
+              "event": "sunrise",
+              "differenceSeconds": -1.371041748046875
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-30",
+              "event": "sunrise",
+              "differenceSeconds": -1.370885009765625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-27",
+              "event": "sunrise",
+              "differenceSeconds": -1.3448955078125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-31",
+              "event": "sunrise",
+              "differenceSeconds": -1.3418720703125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-30",
+              "event": "sunrise",
+              "differenceSeconds": -1.33436376953125
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 364,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.050674072265625,
+          "medianAbsoluteSeconds": 0.3394228515625,
+          "p95AbsoluteSecondsNearestRank": 0.913337890625,
+          "minimumSignedSeconds": -1.050674072265625,
+          "maximumSignedSeconds": 0.46303466796875,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.050674072265625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.046032470703125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.038388427734375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.025103515625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-05-01",
+              "event": "dhuhr",
+              "differenceSeconds": -1.008973876953125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-03-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0040615234375
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.046401611328125,
+          "medianAbsoluteSeconds": 0.360356689453125,
+          "p95AbsoluteSecondsNearestRank": 0.924474853515625,
+          "minimumSignedSeconds": -1.046401611328125,
+          "maximumSignedSeconds": 0.19982421875,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-01",
+              "event": "asr",
+              "differenceSeconds": -1.046401611328125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-02",
+              "event": "asr",
+              "differenceSeconds": -1.012123046875
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-28",
+              "event": "asr",
+              "differenceSeconds": -0.975615478515625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-29",
+              "event": "asr",
+              "differenceSeconds": -0.97545068359375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-03-30",
+              "event": "asr",
+              "differenceSeconds": -0.9637783203125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-04-27",
+              "event": "asr",
+              "differenceSeconds": -0.958384521484375
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.1120625,
+          "medianAbsoluteSeconds": 0.349803466796875,
+          "p95AbsoluteSecondsNearestRank": 0.92105322265625,
+          "minimumSignedSeconds": -1.1120625,
+          "maximumSignedSeconds": 0.5363232421875,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-01",
+              "event": "maghrib",
+              "differenceSeconds": -1.1120625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-02",
+              "event": "maghrib",
+              "differenceSeconds": -1.075380126953125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-03",
+              "event": "maghrib",
+              "differenceSeconds": -1.016716552734375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-12-20",
+              "event": "maghrib",
+              "differenceSeconds": -1.011670166015625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-12-21",
+              "event": "maghrib",
+              "differenceSeconds": -1.011243896484375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-29",
+              "event": "maghrib",
+              "differenceSeconds": -1.000788330078125
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 364,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.0106962890625,
+          "medianAbsoluteSeconds": 0.315093505859375,
+          "p95AbsoluteSecondsNearestRank": 0.88553125,
+          "minimumSignedSeconds": -1.0106962890625,
+          "maximumSignedSeconds": 0.808034912109375,
+          "largestDifferences": [
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-01",
+              "event": "isha",
+              "differenceSeconds": -1.0106962890625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-02",
+              "event": "isha",
+              "differenceSeconds": -0.974443115234375
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-29",
+              "event": "isha",
+              "differenceSeconds": -0.954890625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-30",
+              "event": "isha",
+              "differenceSeconds": -0.94944189453125
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-01-28",
+              "event": "isha",
+              "differenceSeconds": -0.93606494140625
+            },
+            {
+              "caseId": "tokyo-2027",
+              "date": "2027-12-20",
+              "event": "isha",
+              "differenceSeconds": -0.9269267578125
+            }
+          ]
+        }
+      },
+      "northern": null,
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 365,
+        "spa": 365
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 7711.494208000004
+    },
+    {
+      "input": {
+        "id": "sydney-2027",
+        "year": 2027,
+        "latitude": -33.8688,
+        "longitude": 151.2093,
+        "timeZone": "Australia/Sydney"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2173,
+        "changedNearestMinute": 17,
+        "maximumAbsoluteSeconds": 1.3615556640625,
+        "medianAbsoluteSeconds": 0.41627490234375,
+        "p95AbsoluteSecondsNearestRank": 1.09110595703125,
+        "minimumSignedSeconds": -1.3615556640625,
+        "maximumSignedSeconds": 1.26670556640625,
+        "largestDifferences": [
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-01-01",
+            "event": "fajr",
+            "differenceSeconds": -1.3615556640625
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-01-02",
+            "event": "fajr",
+            "differenceSeconds": -1.33614404296875
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-28",
+            "event": "maghrib",
+            "differenceSeconds": -1.3350380859375
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-29",
+            "event": "maghrib",
+            "differenceSeconds": -1.3343466796875
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-27",
+            "event": "maghrib",
+            "differenceSeconds": -1.3178349609375
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-30",
+            "event": "maghrib",
+            "differenceSeconds": -1.3144365234375
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2190
+          },
+          "spa": {
+            "calculated": 2190
+          }
+        },
+        "bothAvailable": 2190,
+        "bothAbsent": 0,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2190,
+        "sameNearestMinute": 2173,
+        "changedNearestMinute": 17,
+        "maximumAbsoluteSeconds": 1.3615556640625,
+        "medianAbsoluteSeconds": 0.41627490234375,
+        "p95AbsoluteSecondsNearestRank": 1.09110595703125,
+        "minimumSignedSeconds": -1.3615556640625,
+        "maximumSignedSeconds": 1.26670556640625,
+        "largestDifferences": [
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-01-01",
+            "event": "fajr",
+            "differenceSeconds": -1.3615556640625
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-01-02",
+            "event": "fajr",
+            "differenceSeconds": -1.33614404296875
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-28",
+            "event": "maghrib",
+            "differenceSeconds": -1.3350380859375
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-29",
+            "event": "maghrib",
+            "differenceSeconds": -1.3343466796875
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-27",
+            "event": "maghrib",
+            "differenceSeconds": -1.3178349609375
+          },
+          {
+            "caseId": "sydney-2027",
+            "date": "2027-05-30",
+            "event": "maghrib",
+            "differenceSeconds": -1.3144365234375
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 362,
+          "changedNearestMinute": 3,
+          "maximumAbsoluteSeconds": 1.3615556640625,
+          "medianAbsoluteSeconds": 0.402371826171875,
+          "p95AbsoluteSecondsNearestRank": 1.0828642578125,
+          "minimumSignedSeconds": -1.3615556640625,
+          "maximumSignedSeconds": 0.385701904296875,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-01",
+              "event": "fajr",
+              "differenceSeconds": -1.3615556640625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-02",
+              "event": "fajr",
+              "differenceSeconds": -1.33614404296875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-03",
+              "event": "fajr",
+              "differenceSeconds": -1.285112060546875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-12-21",
+              "event": "fajr",
+              "differenceSeconds": -1.219365234375
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-04",
+              "event": "fajr",
+              "differenceSeconds": -1.21131396484375
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-12-22",
+              "event": "fajr",
+              "differenceSeconds": -1.207615966796875
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.1032265625,
+          "medianAbsoluteSeconds": 0.341705078125,
+          "p95AbsoluteSecondsNearestRank": 0.915208740234375,
+          "minimumSignedSeconds": -1.1032265625,
+          "maximumSignedSeconds": 0.48529443359375,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-01",
+              "event": "sunrise",
+              "differenceSeconds": -1.1032265625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-02",
+              "event": "sunrise",
+              "differenceSeconds": -1.079489013671875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-03",
+              "event": "sunrise",
+              "differenceSeconds": -1.03251953125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-12-21",
+              "event": "sunrise",
+              "differenceSeconds": -0.99944580078125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-01-30",
+              "event": "sunrise",
+              "differenceSeconds": -0.987880126953125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-12-22",
+              "event": "sunrise",
+              "differenceSeconds": -0.98680224609375
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.050785400390625,
+          "medianAbsoluteSeconds": 0.338761962890625,
+          "p95AbsoluteSecondsNearestRank": 0.911660400390625,
+          "minimumSignedSeconds": -1.050785400390625,
+          "maximumSignedSeconds": 0.4631240234375,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.050785400390625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.04560888671875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.039049072265625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.02417236328125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-01",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0101826171875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-03-31",
+              "event": "dhuhr",
+              "differenceSeconds": -1.004033203125
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 360,
+          "changedNearestMinute": 5,
+          "maximumAbsoluteSeconds": 1.272427001953125,
+          "medianAbsoluteSeconds": 0.450033447265625,
+          "p95AbsoluteSecondsNearestRank": 1.122679443359375,
+          "minimumSignedSeconds": -1.272427001953125,
+          "maximumSignedSeconds": 0.696799072265625,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-29",
+              "event": "asr",
+              "differenceSeconds": -1.272427001953125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-28",
+              "event": "asr",
+              "differenceSeconds": -1.272239013671875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-27",
+              "event": "asr",
+              "differenceSeconds": -1.254091064453125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-30",
+              "event": "asr",
+              "differenceSeconds": -1.25338232421875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-29",
+              "event": "asr",
+              "differenceSeconds": -1.24720166015625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-30",
+              "event": "asr",
+              "differenceSeconds": -1.24684521484375
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 365,
+          "changedNearestMinute": 0,
+          "maximumAbsoluteSeconds": 1.3350380859375,
+          "medianAbsoluteSeconds": 0.50632177734375,
+          "p95AbsoluteSecondsNearestRank": 1.182297119140625,
+          "minimumSignedSeconds": -1.3350380859375,
+          "maximumSignedSeconds": 1.061226806640625,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-28",
+              "event": "maghrib",
+              "differenceSeconds": -1.3350380859375
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-29",
+              "event": "maghrib",
+              "differenceSeconds": -1.3343466796875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-27",
+              "event": "maghrib",
+              "differenceSeconds": -1.3178349609375
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-30",
+              "event": "maghrib",
+              "differenceSeconds": -1.3144365234375
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-30",
+              "event": "maghrib",
+              "differenceSeconds": -1.30804248046875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-29",
+              "event": "maghrib",
+              "differenceSeconds": -1.307490966796875
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 360,
+          "changedNearestMinute": 5,
+          "maximumAbsoluteSeconds": 1.27699951171875,
+          "medianAbsoluteSeconds": 0.533013671875,
+          "p95AbsoluteSecondsNearestRank": 1.181462158203125,
+          "minimumSignedSeconds": -1.27699951171875,
+          "maximumSignedSeconds": 1.26670556640625,
+          "largestDifferences": [
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-29",
+              "event": "isha",
+              "differenceSeconds": -1.27699951171875
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-30",
+              "event": "isha",
+              "differenceSeconds": -1.273796142578125
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-11-06",
+              "event": "isha",
+              "differenceSeconds": 1.26670556640625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-04-28",
+              "event": "isha",
+              "differenceSeconds": -1.26606494140625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-11-05",
+              "event": "isha",
+              "differenceSeconds": 1.261687744140625
+            },
+            {
+              "caseId": "sydney-2027",
+              "date": "2027-05-01",
+              "event": "isha",
+              "differenceSeconds": -1.25575146484375
+            }
+          ]
+        }
+      },
+      "northern": null,
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 365,
+        "spa": 365
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 7695.963250000001
+    },
+    {
+      "input": {
+        "id": "synthetic-antimeridian-2027",
+        "year": 2027,
+        "latitude": 50,
+        "longitude": 180,
+        "timeZone": "Asia/Anadyr"
+      },
+      "dayCount": 365,
+      "selected": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 1885,
+            "policy-blocked": 305
+          },
+          "spa": {
+            "calculated": 1885,
+            "policy-blocked": 305
+          }
+        },
+        "bothAvailable": 1885,
+        "bothAbsent": 305,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 1885,
+        "sameNearestMinute": 1868,
+        "changedNearestMinute": 17,
+        "maximumAbsoluteSeconds": 1.743611328125,
+        "medianAbsoluteSeconds": 0.491810302734375,
+        "p95AbsoluteSecondsNearestRank": 1.257404296875,
+        "minimumSignedSeconds": -1.743611328125,
+        "maximumSignedSeconds": 1.555009033203125,
+        "largestDifferences": [
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-30",
+            "event": "sunrise",
+            "differenceSeconds": -1.743611328125
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-29",
+            "event": "sunrise",
+            "differenceSeconds": -1.73974755859375
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-31",
+            "event": "sunrise",
+            "differenceSeconds": -1.7278818359375
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-28",
+            "event": "sunrise",
+            "differenceSeconds": -1.718038818359375
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-06-01",
+            "event": "sunrise",
+            "differenceSeconds": -1.691772216796875
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-27",
+            "event": "sunrise",
+            "differenceSeconds": -1.680889892578125
+          }
+        ]
+      },
+      "physical": {
+        "fields": 2190,
+        "status": {
+          "usno": {
+            "calculated": 2149,
+            "unavailable": 41
+          },
+          "spa": {
+            "calculated": 2149,
+            "unavailable": 41
+          }
+        },
+        "bothAvailable": 2149,
+        "bothAbsent": 41,
+        "usnoOnly": 0,
+        "spaOnly": 0,
+        "sameAvailableStatus": 2149,
+        "sameNearestMinute": 2127,
+        "changedNearestMinute": 22,
+        "maximumAbsoluteSeconds": 13.720349365234375,
+        "medianAbsoluteSeconds": 0.520248046875,
+        "p95AbsoluteSecondsNearestRank": 1.61710546875,
+        "minimumSignedSeconds": -13.720349365234375,
+        "maximumSignedSeconds": 3.8754072265625,
+        "largestDifferences": [
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-06-01",
+            "event": "fajr",
+            "differenceSeconds": -13.720349365234375
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-31",
+            "event": "fajr",
+            "differenceSeconds": -8.36672802734375
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-07-13",
+            "event": "fajr",
+            "differenceSeconds": -6.767054931640625
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-30",
+            "event": "fajr",
+            "differenceSeconds": -6.569592041015625
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-29",
+            "event": "fajr",
+            "differenceSeconds": -5.56835400390625
+          },
+          {
+            "caseId": "synthetic-antimeridian-2027",
+            "date": "2027-05-28",
+            "event": "fajr",
+            "differenceSeconds": -4.895984619140625
+          }
+        ]
+      },
+      "byEvent": {
+        "fajr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 206,
+              "policy-blocked": 159
+            },
+            "spa": {
+              "calculated": 206,
+              "policy-blocked": 159
+            }
+          },
+          "bothAvailable": 206,
+          "bothAbsent": 159,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 206,
+          "sameNearestMinute": 205,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.512333984375,
+          "medianAbsoluteSeconds": 0.50962646484375,
+          "p95AbsoluteSecondsNearestRank": 1.3544853515625,
+          "minimumSignedSeconds": -1.257404296875,
+          "maximumSignedSeconds": 1.512333984375,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-10-08",
+              "event": "fajr",
+              "differenceSeconds": 1.512333984375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-10-07",
+              "event": "fajr",
+              "differenceSeconds": 1.500982421875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-10-09",
+              "event": "fajr",
+              "differenceSeconds": 1.4970234375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-10-06",
+              "event": "fajr",
+              "differenceSeconds": 1.46270654296875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-10-10",
+              "event": "fajr",
+              "differenceSeconds": 1.456212646484375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-11-06",
+              "event": "fajr",
+              "differenceSeconds": 1.401829833984375
+            }
+          ]
+        },
+        "sunrise": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 360,
+          "changedNearestMinute": 5,
+          "maximumAbsoluteSeconds": 1.743611328125,
+          "medianAbsoluteSeconds": 0.72898486328125,
+          "p95AbsoluteSecondsNearestRank": 1.54541357421875,
+          "minimumSignedSeconds": -1.743611328125,
+          "maximumSignedSeconds": 1.555009033203125,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-30",
+              "event": "sunrise",
+              "differenceSeconds": -1.743611328125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-29",
+              "event": "sunrise",
+              "differenceSeconds": -1.73974755859375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-31",
+              "event": "sunrise",
+              "differenceSeconds": -1.7278818359375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-28",
+              "event": "sunrise",
+              "differenceSeconds": -1.718038818359375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-06-01",
+              "event": "sunrise",
+              "differenceSeconds": -1.691772216796875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-27",
+              "event": "sunrise",
+              "differenceSeconds": -1.680889892578125
+            }
+          ]
+        },
+        "dhuhr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 363,
+          "changedNearestMinute": 2,
+          "maximumAbsoluteSeconds": 1.05098779296875,
+          "medianAbsoluteSeconds": 0.34069384765625,
+          "p95AbsoluteSecondsNearestRank": 0.910878173828125,
+          "minimumSignedSeconds": -1.05098779296875,
+          "maximumSignedSeconds": 0.463273193359375,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-04-29",
+              "event": "dhuhr",
+              "differenceSeconds": -1.05098779296875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-04-28",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0444814453125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-04-30",
+              "event": "dhuhr",
+              "differenceSeconds": -1.0406181640625
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-04-27",
+              "event": "dhuhr",
+              "differenceSeconds": -1.021783935546875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-05-01",
+              "event": "dhuhr",
+              "differenceSeconds": -1.01311767578125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-03-31",
+              "event": "dhuhr",
+              "differenceSeconds": -1.004584228515625
+            }
+          ]
+        },
+        "asr": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 364,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.31523388671875,
+          "medianAbsoluteSeconds": 0.4172177734375,
+          "p95AbsoluteSecondsNearestRank": 1.07585546875,
+          "minimumSignedSeconds": -1.31523388671875,
+          "maximumSignedSeconds": 0.3262470703125,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-01",
+              "event": "asr",
+              "differenceSeconds": -1.31523388671875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-02",
+              "event": "asr",
+              "differenceSeconds": -1.281057373046875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-03",
+              "event": "asr",
+              "differenceSeconds": -1.222594482421875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-21",
+              "event": "asr",
+              "differenceSeconds": -1.180179443359375
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-20",
+              "event": "asr",
+              "differenceSeconds": -1.17473388671875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-22",
+              "event": "asr",
+              "differenceSeconds": -1.15789697265625
+            }
+          ]
+        },
+        "maghrib": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 365
+            },
+            "spa": {
+              "calculated": 365
+            }
+          },
+          "bothAvailable": 365,
+          "bothAbsent": 0,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 365,
+          "sameNearestMinute": 358,
+          "changedNearestMinute": 7,
+          "maximumAbsoluteSeconds": 1.490078369140625,
+          "medianAbsoluteSeconds": 0.514775390625,
+          "p95AbsoluteSecondsNearestRank": 1.204903564453125,
+          "minimumSignedSeconds": -1.490078369140625,
+          "maximumSignedSeconds": 0.9480185546875,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-01",
+              "event": "maghrib",
+              "differenceSeconds": -1.490078369140625
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-02",
+              "event": "maghrib",
+              "differenceSeconds": -1.451638671875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-03",
+              "event": "maghrib",
+              "differenceSeconds": -1.3876826171875
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-21",
+              "event": "maghrib",
+              "differenceSeconds": -1.328659423828125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-20",
+              "event": "maghrib",
+              "differenceSeconds": -1.325430908203125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-22",
+              "event": "maghrib",
+              "differenceSeconds": -1.3031083984375
+            }
+          ]
+        },
+        "isha": {
+          "fields": 365,
+          "status": {
+            "usno": {
+              "calculated": 219,
+              "policy-blocked": 146
+            },
+            "spa": {
+              "calculated": 219,
+              "policy-blocked": 146
+            }
+          },
+          "bothAvailable": 219,
+          "bothAbsent": 146,
+          "usnoOnly": 0,
+          "spaOnly": 0,
+          "sameAvailableStatus": 219,
+          "sameNearestMinute": 218,
+          "changedNearestMinute": 1,
+          "maximumAbsoluteSeconds": 1.288111328125,
+          "medianAbsoluteSeconds": 0.621990234375,
+          "p95AbsoluteSecondsNearestRank": 1.12578857421875,
+          "minimumSignedSeconds": -1.288111328125,
+          "maximumSignedSeconds": 0.3507216796875,
+          "largestDifferences": [
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-01",
+              "event": "isha",
+              "differenceSeconds": -1.288111328125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-02",
+              "event": "isha",
+              "differenceSeconds": -1.2514814453125
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-01-03",
+              "event": "isha",
+              "differenceSeconds": -1.191244384765625
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-21",
+              "event": "isha",
+              "differenceSeconds": -1.15542431640625
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-12-20",
+              "event": "isha",
+              "differenceSeconds": -1.15420556640625
+            },
+            {
+              "caseId": "synthetic-antimeridian-2027",
+              "date": "2027-11-22",
+              "event": "isha",
+              "differenceSeconds": -1.134947998046875
+            }
+          ]
+        }
+      },
+      "northern": {
+        "usno": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "usno",
+          "solarProvider": "USNO-continuous-point-v1",
+          "anchorDate": "2027-06-01",
+          "q": 0.1776230795255024,
+          "missingFajrStartDate": "2027-06-02",
+          "missingFajrEndDate": "2027-07-12",
+          "missingFajrDayCount": 41,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.70054961751305,
+          "annualFajrTransitionUpperPhaseMinutes": -505.6964592366536
+        },
+        "spa": {
+          "status": "available",
+          "reason": null,
+          "solarModel": "spa",
+          "solarProvider": "SPA-continuous-point-v1",
+          "anchorDate": "2027-06-01",
+          "q": 0.1774695144280685,
+          "missingFajrStartDate": "2027-06-02",
+          "missingFajrEndDate": "2027-07-12",
+          "missingFajrDayCount": 41,
+          "horizonGatePassed": true,
+          "annualIshaTransitionLowerPhaseMinutes": 505.6958756062826,
+          "annualFajrTransitionUpperPhaseMinutes": -505.69172979329426
+        }
+      },
+      "eligibilityChanges": [],
+      "guardReasonChanges": [],
+      "statusChanges": [],
+      "completeDayCounts": {
+        "usno": 206,
+        "spa": 206
+      },
+      "completeDayChanges": {
+        "newlyComplete": [],
+        "newlyIncomplete": []
+      },
+      "elapsedMilliseconds": 15521.41691700001
+    }
+  ],
+  "implementationPins": [
+    {
+      "path": "local/index.mjs",
+      "sha256": "c6944fb0040858132bf5ffd6b9395edca6538a505f3be7a9f735c4952264f017"
+    },
+    {
+      "path": "local/profiles.mjs",
+      "sha256": "4ddc744aa84b3ed5d082353382611fee082d95b6ca22a351da0bb6dbfdbaae8b"
+    },
+    {
+      "path": "local/solar.mjs",
+      "sha256": "deeb0f95301a1b80b831ac8f4a6bea576cd15b89bffab2e4a20062b34ea30250"
+    },
+    {
+      "path": "local/northern.mjs",
+      "sha256": "769b00f7c5d5cfd5bbf3fb8a4732b41ba1b3ec50acb773e0eb7d5a77b74879fa"
+    },
+    {
+      "path": "astronomy/continuous-solver.mjs",
+      "sha256": "04c8032ddd739d45e3559f97d138f264fff4646e97a2a3c4dfc6de139ad19922"
+    },
+    {
+      "path": "astronomy/solar-usno-v2.mjs",
+      "sha256": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc"
+    },
+    {
+      "path": "astronomy/spa-point.mjs",
+      "sha256": "db2cd841739692ab1c7269b914dd69958d7815770a07f19da8e12551916578e8"
+    },
+    {
+      "path": "astronomy/spa-coefficients.json",
+      "sha256": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b"
+    }
+  ],
+  "evaluatorSha256": "a29590dffff664f5813e57e0df9fad7987ce3a7ebf654978efa40eaed830c634",
+  "elapsedMilliseconds": 104076.52395799999
+}

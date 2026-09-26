@@ -1,11 +1,12 @@
-# Additional local rule profiles
+# Local profile registry and source boundaries
 
-These profiles apply named published criteria to the local continuous-solar model. They keep source-backed prayer-start rules separate from project-defined markers and software conventions. A profile name identifies its evidence and scope; it is not a complete replica of an institution's timetable, an endorsement, or a religious ruling. The caller selects a profile explicitly. Coordinates and timezone never infer an authority, country, madhhab or Asr choice.
+The 0.6.0 local registry has 23 profiles. These additional profiles apply named published criteria to the local continuous-solar model and keep source-backed prayer-start rules separate from project-defined markers and software conventions. A profile name identifies its evidence and scope; it is not a complete replica of an institution's timetable, an endorsement, or a religious ruling. The caller selects a profile explicitly. Coordinates and timezone never infer an authority, country, madhhab or Asr choice.
 
 ## Profile registry
 
 | Profile ID | Prayer-start rules | Other returned events | Coverage meaning |
 |---|---|---|---|
+| `diyanet-published-spa-point-v1` | Same selected Diyanet criteria, ordinary angles and Temkin margins as `diyanet-published-point-v1`, using SPA for point events and the annual northern guard. | Same markers, Asr rule and bounded 44.5°N ordinary-only northern policy; unresolved seasonal transitions remain blocked. | An optional astronomy-provider profile. It does not change the six original profiles or establish closer Diyanet timetable agreement. |
 | `egypt-published-angles-point-v1` | Fajr −19.5°; Isha −17.5°. | Sunrise, Dhuhr, Asr and Maghrib are project-defined geometric markers, not Egyptian Survey-selected prayer starts. | All six model fields can be present, but only Fajr/Isha are modeled as prayer starts. |
 | `fcna-usa-2017-point-v1` | Fajr/Isha −15° throughout the year for the USA profile. | Sunrise, Dhuhr, Asr and Maghrib are project-defined geometric markers, not FCNA-selected prayer starts. | All six model fields can be present, but only Fajr/Isha are modeled as prayer starts. |
 | `fcna-canada-2017-point-v1` | Fajr/Isha −13° throughout the year for the Canada profile. | Same project-defined markers as the USA profile. | All six model fields can be present, but only Fajr/Isha are modeled as prayer starts. |
@@ -17,7 +18,7 @@ The Kemenag profile uses the documented −1° horizon marker and factor-one Asr
 
 The Kemenag computational domain is latitude −12° through +8°, longitude 94° through 142°, and the four named Indonesian timezones `Asia/Jakarta`, `Asia/Pontianak`, `Asia/Makassar` and `Asia/Jayapura`. This is an implementation boundary for the cited zone-based example, not a statement of Indonesia's political borders or national institutional authority. Its solar engine continuously evaluates the independent USNO model rather than reproducing the printed ephemeris tables; that is an explicit implementation deviation.
 
-For all four profiles, a missing physical crossing remains unavailable. No profile here defines a polar fallback. The shared flat-horizon model does not include terrain, observer elevation, local obstructions or topocentric parallax. Displayed minute precision does not establish observed or religious accuracy to the second.
+For the Egypt/FCNA and Kemenag profiles, a missing physical crossing remains unavailable; none defines a polar fallback. The Diyanet SPA profile has only the bounded northern ordinary guard described in [RULES.md](RULES.md); it does not add a summer twilight estimate. The shared flat-horizon model does not include terrain, observer elevation, local obstructions or topocentric parallax. Displayed minute precision does not establish observed or religious accuracy to the second.
 
 ## Source evidence and limits
 

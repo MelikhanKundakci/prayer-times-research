@@ -25,13 +25,16 @@ function yearDates(year){
 function phaseMinutes(epoch,transitEpoch){return(epoch-transitEpoch)/MINUTE_MS;}
 
 function validate(input){
-  fields(input,['year','latitude','longitude','timeZone']);
+  fields(input,['year','latitude','longitude','timeZone'],['solarModel']);
   if(!Number.isInteger(input.year)||input.year<2001||input.year>2098)throw new RangeError('Northern context year must be 2001 through 2098');
   if(!Number.isFinite(input.latitude)||input.latitude<44.5||input.latitude>89)throw new RangeError('Northern context latitude must be 44.5° through 89°');
   if(!Number.isFinite(input.longitude)||Math.abs(input.longitude)>180)throw new RangeError('Longitude must be −180° through 180°');
   if(typeof input.timeZone!=='string'||!(input.timeZone==='UTC'||input.timeZone.includes('/')))throw new RangeError('An explicit IANA time zone is required');
   try{new Intl.DateTimeFormat('en-US',{timeZone:input.timeZone}).format(0);}
   catch{throw new RangeError('timeZone must be a supported IANA identifier');}
+  const solarModel=Object.hasOwn(input,'solarModel')?input.solarModel:'usno';
+  if(!['usno','spa'].includes(solarModel))throw new RangeError('solarModel must be usno or spa');
+  return solarModel;
 }
 
 function nightDurations(start,end){
@@ -56,14 +59,14 @@ function dayDurations(row){
  * render the raw event themselves.
  */
 export function buildNorthernContext(input){
-  validate(input);
+  const solarModel=validate(input);
   const {year,latitude,longitude,timeZone}=input,ownedDates=yearDates(year);
   // In 2001/2098, the out-of-domain padding still blocks the annual twilight
   // guard. Calculate the valid rows so independent daily horizons are retained.
   const dates=[dateOf(Date.UTC(year,0,1)-DAY_MS),...ownedDates,dateOf(Date.UTC(year+1,0,1))];
   const rows=[],failures=[];
   for(const date of dates){
-    try{rows.push({date,solar:calculateLocalSolarDay({date,latitude,longitude,timeZone,ishaAngleDegrees:16})});}
+    try{rows.push({date,solar:calculateLocalSolarDay({date,latitude,longitude,timeZone,ishaAngleDegrees:16,solarModel})});}
     catch(error){rows.push({date,solar:null,error:error instanceof Error?error.message:String(error)});failures.push({date,reason:'solar-day-unavailable',detail:error instanceof Error?error.message:String(error)});}
   }
   const rowByDate=new Map(rows.map(row=>[row.date,row]));
@@ -244,5 +247,6 @@ export function buildNorthernContext(input){
       ordinaryOnly:true,interpolationApplied:false,sourceSemanticsFullyConfirmed:false,horizonGatePassed,
       horizonGate:'all padded-row raw and selected daylight and every consecutive padded raw and selected night are strictly greater than 300 minutes',
       transitionEnvelopeBasis:'minimum/maximum across every consecutive padded night, including previous-December-31 Isha and following-January-1 Fajr candidates',
+      solarModel,solarProvider:solarModel==='spa'?'SPA-continuous-point-v1':'USNO-continuous-point-v1',
       failures},days};
 }

@@ -1,5 +1,13 @@
 const $=id=>document.getElementById(id);
 const names={fajr:'Fajr',dhuhr:'Dhuhr',asr:'Asr',maghrib:'Maghrib',isha:'Ischa'};
+const profileLabels={
+  'diyanet-published-spa-point-v1':'Diyanet-Regeln · neue lokale Sonnenberechnung',
+  'diyanet-published-point-v1':'Diyanet-Regeln · bisherige lokale Sonnenberechnung',
+};
+const profileNotes={
+  'diyanet-published-spa-point-v1':'Veröffentlichte Diyanet-Regeln mit SPA-Sonnenberechnung, auch für die jährliche Prüfung nördlicher Zeiten. Kein offizieller Diyanet-Kalender. Noch ungeklärte Sommer- und Übergangszeiten bleiben offen.',
+  'diyanet-published-point-v1':'Veröffentlichte Diyanet-Regeln mit der bisherigen USNO-Sonnenberechnung. Kein offizieller Diyanet-Kalender. Noch ungeklärte Sommer- und Übergangszeiten bleiben offen.',
+};
 const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.9784,'Europe/Istanbul'],cairo:[30.0444,31.2357,'Africa/Cairo'],
   'new-york':[40.7128,-74.006,'America/New_York'],jakarta:[-6.2,106.8,'Asia/Jakarta'],sydney:[-33.8688,151.2093,'Australia/Sydney'],oslo:[59.9139,10.7522,'Europe/Oslo']};
 let definitions=[],result=null,generation=0,requestSequence=0;
@@ -11,7 +19,7 @@ function clockDate(e){return $('seconds').checked&&e.seconds?e.secondsDate:e.cal
 function message(value,error=false){$('message').textContent=value;$('message').classList.toggle('error',error);$('message').hidden=!value;}
 function invalidate(){generation++;result=null;$('output').hidden=true;message('Eingaben geändert. Bitte neu berechnen.');}
 function selectedProfile(){return $('profile').value==='composed'?`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`:$('profile').value;}
-function profileNote(){const composed=$('profile').value==='composed';$('composition').hidden=!composed;const d=definitions.find(d=>d.id===selectedProfile());$('profile-note').textContent=composed?'Vollständiges lokales Profil mit den unten gewählten Regeln. Kein offizieller Institutskalender.':d?.sourceScope??'';}
+function profileNote(){const composed=$('profile').value==='composed';$('composition').hidden=!composed;const d=definitions.find(d=>d.id===selectedProfile());$('profile-note').textContent=composed?'Vollständiges lokales Profil mit den unten gewählten Regeln. Kein offizieller Institutskalender.':profileNotes[d?.id]??d?.sourceScope??'';}
 function render(){
   if(!result)return;
   const {day,schedule}=result;
@@ -30,7 +38,7 @@ function render(){
   $('coverage').textContent=day.coverage.prayerStartsComplete?'Alle fünf Gebetsbeginne sind für diesen Tag nach dem gewählten Profil berechnet.':
     'Dieses Profil liefert hier keine vollständigen fünf Gebetsbeginne. Fehlende Zeiten werden nicht erfunden. Wähle bei Bedarf bewusst ein vollständiges lokales Profil oder eine passende Schätzregel.';
   const composition=day.profile.composition;
-  $('method-summary').textContent=`${composition?`Lokale Regeln · Asr-Faktor ${composition.asrShadowFactor} · ${composition.highLatitudeMode==='physical'?'ohne Schätzung':'mit gewählter Nachtregel'}`:day.profile.label}. ${day.coverage.estimatedEvents.length?`Geschätzt: ${day.coverage.estimatedEvents.map(n=>names[n]??n).join(', ')}.`:''}`;
+  $('method-summary').textContent=`${composition?`Lokale Regeln · Asr-Faktor ${composition.asrShadowFactor} · ${composition.highLatitudeMode==='physical'?'ohne Schätzung':'mit gewählter Nachtregel'}`:profileLabels[day.profile.id]??day.profile.label}. ${day.coverage.estimatedEvents.length?`Geschätzt: ${day.coverage.estimatedEvents.map(n=>names[n]??n).join(', ')}.`:''}`;
   const list=document.createElement('ul');
   for(const name of Object.keys(names)){const e=day.events[name];list.append(text('li',`${names[name]}: ${e.ruleEvidence.description}${e.reason?` (${e.reason})`:''}`));}
   $('rules').replaceChildren(list,text('p',day.profile.sourceScope),text('p',`Berechnungsversion ${day.calculation.version}; Zeitzonendaten ${result.runtime.tzdb}.`));
@@ -92,7 +100,7 @@ try{
   $('date').value=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
   const response=await fetch('/api/profiles');if(!response.ok)throw new Error('Profilauswahl nicht verfügbar');const data=await response.json();definitions=data.profiles;
   const composed=text('option','Eigene lokale Regeln · fünf Gebete');composed.value='composed';$('profile').append(composed);
-  for(const d of definitions.filter(d=>!d.composition)){const option=text('option',d.label);option.value=d.id;$('profile').append(option);}
+  for(const d of definitions.filter(d=>!d.composition)){const option=text('option',profileLabels[d.id]??d.label);option.value=d.id;$('profile').append(option);}
   $('profile').value='composed';profileNote();await calculate();
 }catch(error){message(error.message,true);}
 setInterval(renderNext,15000);

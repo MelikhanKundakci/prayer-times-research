@@ -30,7 +30,7 @@ All five fields are required; unknown fields and executable/getter inputs are re
 
 ## Shared profile registry
 
-Version **0.5.0** defines **22 local profiles** in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution: six existing institution-inspired or worked-example profiles, plus 16 explicitly composed five-prayer profiles. Read [PROFILES.md](PROFILES.md) for the source-versus-convention boundary and [COMPOSED.md](COMPOSED.md) for the compositions. The angle/night variants require opting into their estimate rule.
+Version **0.6.0** defines **23 local profiles** in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution: six original profiles, an optional Diyanet-criteria profile using SPA astronomy, and 16 explicitly composed five-prayer profiles. The six original profile outputs retain their USNO model. Read [PROFILES.md](PROFILES.md) for the source-versus-convention boundary, [COMPOSED.md](COMPOSED.md) for the compositions, and [RULES.md](RULES.md) for the new Diyanet SPA option. The angle/night variants require opting into their estimate rule.
 
 ```js
 import {calculateLocalDay, listLocalProfiles, getLocalProfile} from './core/local/index.mjs';
@@ -53,6 +53,29 @@ npm run calculate:local -- 2027-03-20 -6.2 106.8 Asia/Jakarta kemenag-worked-exa
 An astronomical marker is not automatically a selected prayer start. Egypt and FCNA supply source-backed Fajr/Isha rules; their other events explicitly remain project-defined geometry markers. Kemenag's selections quantize to minutes before the stated margins, so `seconds` and `secondsDate` are null even though an ISO serialization can end in `:00`. `basis` retains the raw astronomical input, minute quantization and elapsed margin. None of these four profiles inherits the Diyanet northern policy or its Temkin values.
 
 `coverage.complete` checks the presence of all six output fields. `coverage.prayerStartsComplete` additionally requires all five prayer names to carry `prayer-start-model` roles and available values; it stays false for the current Egypt/FCNA angle-only profiles. `coverage.nonPrayerStartEvents` lists the remaining geometric markers among those five names. Neither completeness field is institutional endorsement or notification approval.
+
+## Optional Diyanet-criteria profile with SPA astronomy
+
+`diyanet-published-spa-point-v1` is an optional second point-astronomy implementation of the same selected Diyanet criteria and local conventions used by `diyanet-published-point-v1`: Fajr −18°, Isha −17° in ordinary cases, factor-one Asr, the same flat-horizon assumption and the same published Temkin margins. It uses the Reda–Andreas SPA provider for each daily event and for every day in its padded northern annual guard. At and above 44.5° north it applies the same ordinary-only eligibility guard, including −16° ordinary Isha where that guard selects the crossing. Missing summer twilight and other cases requiring the unimplemented seasonal rule remain blocked; this profile does not borrow the project's separate `local-northern-seasonal-v1` estimates.
+
+The SPA option does not alter the existing USNO profiles or establish closer agreement with a Diyanet calendar. Both local profiles are point calculations under named criteria and declared astronomy conventions, not Diyanet production implementations. Their cache identities include the solar provider so the annual guard calculated with SPA cannot be reused from a USNO profile. See the [profile rule details](RULES.md) and [SPA method notes](../astronomy/SPA-POINT.md).
+
+The [SPA comparison report](verification/diyanet-spa-README.md) records a fixed eight-case annual comparison with the USNO profile and a separate independent numerical check. These results compare implementations under the same declared rules; they do not measure agreement with Diyanet calendars or establish observed accuracy.
+
+```js
+import {calculateLocalDay, LOCAL_DIYANET_SPA_PROFILE} from './core/local/index.mjs';
+const day = calculateLocalDay({
+  date: '2027-03-20', latitude: 41.0082, longitude: 28.9784,
+  timeZone: 'Europe/Istanbul', profile: LOCAL_DIYANET_SPA_PROFILE,
+});
+console.log(day.calculation.astronomicalModel.id);
+```
+
+```sh
+npm run calculate:local -- 2027-03-20 41.0082 28.9784 Europe/Istanbul diyanet-published-spa-point-v1
+```
+
+The historical Diyanet city-calendar reconstruction remains separate: its low-latitude daily hypothesis uses the existing USNO UTC-00 carrier ([reconstruction guide](../../methods/diyanet/README.md)). The new local SPA point profile neither changes nor replaces that reconstruction.
 
 ## Explicit local summer calculation
 
@@ -91,11 +114,11 @@ The seasonal policy requires a complete annual context within 2002–2097. It do
 
 ## Astronomy and selected prayer times
 
-`astronomy` retains the raw solar-cycle events. The 16 new compositions explicitly select the Reda–Andreas Solar Position Algorithm (SPA) point implementation in [`../astronomy/spa-point.mjs`](../astronomy/spa-point.mjs) and continuously solve crossings at the requested location. The six earlier profiles retain their prior USNO numerical model. Each profile keeps its own thresholds, roles and conventions. The SPA point model uses a level, unobstructed horizon; it does not model terrain, observer height, changing weather or a local skyline. The numerical root tolerance is not a statement of observational accuracy. See the [SPA method, assumptions and independent implementation evidence](../astronomy/SPA-POINT.md).
+`astronomy` retains the raw solar-cycle events. The new Diyanet SPA profile and 16 compositions explicitly select the Reda–Andreas Solar Position Algorithm (SPA) point implementation in [`../astronomy/spa-point.mjs`](../astronomy/spa-point.mjs) and continuously solve crossings at the requested location. The six original profiles retain their prior USNO numerical model and outputs. Each profile keeps its own thresholds, roles and conventions. The SPA point model uses a level, unobstructed horizon; it does not model terrain, observer height, changing weather or a local skyline. The numerical root tolerance is not a statement of observational accuracy. See the [SPA method, assumptions and independent implementation evidence](../astronomy/SPA-POINT.md).
 
 The six earlier profiles retain their documented factor-one rules where selected; the 16 new compositions explicitly offer factor one or two beyond the shadow at that day's meridian transit. That noon reference stays fixed while the afternoon Sun moves. This is an explicit conventional interpretation of the noon-shadow criterion. Raw crossings carry their direction and physical availability; a grazing contact is not silently turned into a crossing.
 
-For the two Diyanet-inspired profiles, `events` contains the **selected** times after the published margins. GPS does not automatically remove Temkin. The profile retains Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0 minutes. `sunrise` is the profile's adjusted sunrise marker, seven minutes before `astronomy.events.sunrise`, the model's horizon crossing. It is not a prayer-start event. The standard twilight angles are 18° Fajr and 17° Isha. See [the rule evidence](RULES.md) for dates and scope.
+For the two original USNO Diyanet profiles, `events` contains selected times after the published margins; the SPA Diyanet profile applies the same criteria with its distinct provider-specific rule identifiers. GPS does not automatically remove Temkin. These profiles retain Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7 and Isha 0 minutes. `sunrise` is the adjusted sunrise marker, seven minutes before `astronomy.events.sunrise`, the model's horizon crossing. It is not a prayer-start event. The ordinary twilight angles are 18° Fajr and 17° Isha. See [the rule evidence](RULES.md) for dates and scope.
 
 | Selected-event status | Meaning |
 |---|---|
@@ -104,11 +127,11 @@ For the two Diyanet-inspired profiles, `events` contains the **selected** times 
 | `unavailable` | The required astronomical event cannot be established; no replacement time is invented. |
 | `policy-blocked` | The profile needs an unimplemented regional rule or encounters a selected-event order conflict. All selected time fields are null. |
 
-In the original `diyanet-published-point-v1` profile, at and above **44.5° north**, the API can select a bounded subset of ordinary 18°/16° Fajr/Isha crossings using the documented [northern annual guard](NORTHERN-ORDINARY.md). It requires a complete padded year of point calculations and admits only real events strictly outside the declared daily and annual transition bounds. The night endpoints and transit-relative time frame are explicit local conventions; this is not a recovered Diyanet seasonal algorithm. Missing summer events and dates near the unresolved transition remain `policy-blocked`. A raw crossing alone is insufficient.
+The original `diyanet-published-point-v1` profile and the optional `diyanet-published-spa-point-v1` profile use the same [northern annual guard](NORTHERN-ORDINARY.md) at and above **44.5° north**, selecting only a bounded subset of ordinary 18°/16° Fajr/Isha crossings. Each guard uses its profile's own provider for a complete padded year and admits only real events strictly outside the declared daily and annual transition bounds. The night endpoints and transit-relative time frame are explicit local conventions; this is not a recovered Diyanet seasonal algorithm. Missing summer events and dates near the unresolved transition remain `policy-blocked`. A raw crossing alone is insufficient.
 
-The two Diyanet-inspired profiles’ northern sunrise/Maghrib use actual preceding/following horizon nights, along with the current day, checked both before and after the published margins. Every relevant interval must exceed five hours. Missing or shorter horizons remain blocked; no replacement endpoints are invented. A failed annual twilight guard does not suppress a separately valid current-day sunrise or Maghrib. Southern missing twilight is not given a mirrored northern rule.
+The original Diyanet profiles and the SPA Diyanet profile apply the same northern sunrise/Maghrib horizon checks, using each selected provider's actual preceding/following horizon nights and current day, checked before and after published margins. Every relevant interval must exceed five hours. Missing or shorter horizons remain blocked; no replacement endpoints are invented. A failed annual twilight guard does not suppress a separately valid current-day sunrise or Maghrib. Southern missing twilight is not given a mirrored northern rule.
 
-`calculation.northernPolicy` contains the annual guard status, failure reason, parameters and the queried day's evidence. Its padded-year scope is 2002–2097. Up to four computed annual contexts are cached locally; returned diagnostics are detached copies, so caller edits cannot change later results. The first northern query for a point/year computes its annual context, while subsequent day queries reuse it.
+`calculation.northernPolicy` contains the annual guard status, failure reason, parameters and the queried day's evidence. Its padded-year scope is 2002–2097. Up to four computed annual contexts are cached locally; the key includes the selected solar provider, so USNO and SPA contexts stay separate. Returned diagnostics are detached copies, so caller edits cannot change later results. The first northern query for a provider/point/year computes its annual context, while subsequent day queries reuse it.
 
 When the northern noon Sun is not above the geometric horizon, the documented Asr substitution returns selected Dhuhr as `estimated`, with its reason and rule identifier. It keeps Dhuhr's +5-minute margin, without adding another +4. Other unresolved northern Asr cases stay blocked. Selected instants are checked in chronological order, including across missing intermediate events; only this documented Dhuhr/Asr substitution permits equal instants. The optional summer policy checks its complete padded sequence across nights; a schedule consumer must still preserve chronology when combining years, locations or different profiles.
 

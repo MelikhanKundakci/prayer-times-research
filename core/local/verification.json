@@ -1,9 +1,9 @@
 {
   "schema": "local-point-verification/v1",
   "recordedDate": "2026-09-26",
-  "localVersion": "0.5.0",
+  "localVersion": "0.6.0",
   "profile": "diyanet-published-point-v1",
-  "purpose": "Offline local point computations, complete explicit software compositions and dated schedules; separately verified astronomical models and rule contracts, not institutional calendar replication",
+  "purpose": "Offline local point computations, explicit software compositions and dated schedules; opt-in Diyanet SPA point model with the same declared ordinary rules; institutional calendar equivalence remains separate",
   "numerical": {
     "result": "PASS",
     "cases": 139,
@@ -49,7 +49,9 @@
     "tests/local-schedule.test.mjs",
     "tests/local-composed.test.mjs",
     "tests/local-app.test.mjs",
-    "tests/local-spa-reference.test.mjs"
+    "tests/local-spa-reference.test.mjs",
+    "tests/local-diyanet-spa.test.mjs",
+    "tests/local-diyanet-spa-comparison.test.mjs"
   ],
   "regressionScope": [
     "fixed-transit factor-one Asr geometry",
@@ -82,7 +84,8 @@
     "explicit complete local five-prayer compositions with independent twilight and Asr choices",
     "optional angle/60 adjacent-night caps and missing-angle estimates with preserved provenance",
     "dated schedule cross-night guards, stable overlapping-window entry IDs and timezone-sensitive invalidation",
-    "preceding-day Isha padding, separate minute/seconds display dates and loopback browser calculator"
+    "preceding-day Isha padding, separate minute/seconds display dates and loopback browser calculator",
+    "Diyanet SPA daily/annual provider consistency, cache isolation, retained USNO snapshots and explicit unsupported seasonal states"
   ],
   "boundaries": {
     "institutionalEquivalence": false,
@@ -130,7 +133,7 @@
     },
     {
       "path": "core/local/index.mjs",
-      "sha256": "fb730cd6feebceb39d8656b760362a2f22552cc5e96d6fa57af9d3f8bca12942"
+      "sha256": "c6944fb0040858132bf5ffd6b9395edca6538a505f3be7a9f735c4952264f017"
     },
     {
       "path": "core/local/verification/oracle.py",
@@ -146,7 +149,7 @@
     },
     {
       "path": "core/local/northern.mjs",
-      "sha256": "d11c49e6bd5ae2519a127582e31f16d818bd32eff21661b1328f2c3554e94c38"
+      "sha256": "769b00f7c5d5cfd5bbf3fb8a4732b41ba1b3ec50acb773e0eb7d5a77b74879fa"
     },
     {
       "path": "core/local/verification/northern-oracle.py",
@@ -178,7 +181,7 @@
     },
     {
       "path": "core/local/profiles.mjs",
-      "sha256": "4f15958d5d3405f9df53dbb2293c40384d33e55cc4a6acd7e2cc326c11c73285"
+      "sha256": "4ddc744aa84b3ed5d082353382611fee082d95b6ca22a351da0bb6dbfdbaae8b"
     },
     {
       "path": "core/local/selection.mjs",
@@ -242,27 +245,50 @@
     },
     {
       "path": "examples/local-app/app.mjs",
-      "sha256": "de25a915354972323a621b2bbd3c8b889beb582921094d9b2b0f643718d18886"
+      "sha256": "9556deb336d3d716349b6ab94cac5fdd79e3d9b11f0bf62ffd55a415cab0a52d"
+    },
+    {
+      "path": "core/local/verification/diyanet-spa-compare.mjs",
+      "sha256": "a29590dffff664f5813e57e0df9fad7987ce3a7ebf654978efa40eaed830c634"
+    },
+    {
+      "path": "core/local/verification/diyanet-spa-comparison.json",
+      "sha256": "95247264a5a8c616e8a87882272db9d7dc3c7a529a7ce8d25c0ed98b67e14b64"
+    },
+    {
+      "path": "core/local/verification/diyanet-spa-reference-verify.mjs",
+      "sha256": "ee939714977b074e84666096a5ec31526c84a9061f120772a1d72a31928cfce1"
+    },
+    {
+      "path": "core/local/verification/diyanet-spa-reference-fixtures.json",
+      "sha256": "e1b1f1cfbccc271f244497a97cb4cb09b2d73133a846196e6fea67a97679b008"
+    },
+    {
+      "path": "core/local/verification/diyanet-spa-reference-oracle.py",
+      "sha256": "4991f0cbc85c5fb5aa90b591b4b6290d657071d84de76b08047c405449cda000"
     }
   ],
   "softwareChecks": {
     "result": "PASS",
-    "nodeTests": 264,
+    "nodeTests": 273,
     "diyanetPythonTests": 61,
     "independentUaeFixtures": 108,
-    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 756 local documentation links verified",
+    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 780 local documentation links verified",
     "commands": [
       "npm test",
       "npm run check",
       "python3 scripts/verify-uae-radial.py",
       "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'",
-      "node core/timezones/with-tzdata.mjs core/local/verification/usable-grid.mjs"
+      "node core/timezones/with-tzdata.mjs core/local/verification/usable-grid.mjs",
+      "node core/timezones/with-tzdata.mjs core/local/verification/diyanet-spa-compare.mjs",
+      "node core/timezones/with-tzdata.mjs core/local/verification/diyanet-spa-reference-verify.mjs"
     ],
-    "localTests": 90,
+    "localTests": 99,
     "addedInVersion020": 13,
     "addedInVersion030": 15,
     "addedInVersion040": 16,
-    "addedInVersion050": 28
+    "addedInVersion050": 28,
+    "addedInVersion060": 9
   },
   "northernNumerical": {
     "result": "PASS",
@@ -367,7 +393,8 @@
     "local-13-13-shadow1-physical-v1",
     "local-13-13-shadow1-angle-night-v1",
     "local-13-13-shadow2-physical-v1",
-    "local-13-13-shadow2-angle-night-v1"
+    "local-13-13-shadow2-angle-night-v1",
+    "diyanet-published-spa-point-v1"
   ],
   "summerNumerical": {
     "result": "PASS",
@@ -846,8 +873,8 @@
   "profileInterpretation": "Independent Python assembly of published angles, fixed-noon shadow geometry, horizons and explicit minute rules on the same USNO approximation; agreement establishes implementation consistency, not observed accuracy, a complete institutional specification or notification approval",
   "profileConformance": {
     "result": "PASS",
-    "profiles": 22,
-    "cases": 755,
+    "profiles": 23,
+    "cases": 790,
     "scope": "UTC instants, civil dates, presentation precision, source-key roles, unavailability and selected chronology"
   },
   "spaNumerical": {
@@ -947,5 +974,164 @@
         "crossNightChecks": 366
       }
     ]
+  },
+  "diyanetSpaNumerical": {
+    "result": "PASS",
+    "cases": 22,
+    "northernCases": 18,
+    "ordinaryCases": 4,
+    "eventTimestampComparisons": 116,
+    "unavailableEventComparisons": 16,
+    "cycleBoundaryComparisons": 44,
+    "ordinaryMarginComparisons": 24,
+    "maximumRootDifferenceSeconds": 0.00020885467529296875,
+    "maximumCycleBoundaryDifferenceSeconds": 0.000217437744140625,
+    "maximumOrdinaryMarginDifferenceSeconds": 0.0001990795135498047,
+    "rootToleranceSeconds": 0.01,
+    "fixtureSha256": "e1b1f1cfbccc271f244497a97cb4cb09b2d73133a846196e6fea67a97679b008",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    }
+  },
+  "diyanetSpaModelComparison": {
+    "report": "core/local/verification/diyanet-spa-comparison.json",
+    "reportSha256": "95247264a5a8c616e8a87882272db9d7dc3c7a529a7ce8d25c0ed98b67e14b64",
+    "meaning": "Predeclared source-free comparison of physical-model choices under the same declared local Diyanet rules; not a comparison to institutional calendars",
+    "pointDays": 2921,
+    "selectedFieldsPerProfile": 17526,
+    "selected": {
+      "fields": 17526,
+      "status": {
+        "usno": {
+          "calculated": 14697,
+          "policy-blocked": 2773,
+          "estimated": 56
+        },
+        "spa": {
+          "calculated": 14697,
+          "policy-blocked": 2773,
+          "estimated": 56
+        }
+      },
+      "bothAvailable": 14753,
+      "bothAbsent": 2773,
+      "usnoOnly": 0,
+      "spaOnly": 0,
+      "sameAvailableStatus": 14753,
+      "sameNearestMinute": 14618,
+      "changedNearestMinute": 135,
+      "maximumAbsoluteSeconds": 3.918884765625,
+      "medianAbsoluteSeconds": 0.489174072265625,
+      "p95AbsoluteSecondsNearestRank": 1.401829833984375,
+      "minimumSignedSeconds": -3.112215087890625,
+      "maximumSignedSeconds": 3.918884765625,
+      "largestDifferences": [
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-07",
+          "event": "sunrise",
+          "differenceSeconds": 3.918884765625
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-08",
+          "event": "sunrise",
+          "differenceSeconds": 3.90101220703125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-06",
+          "event": "sunrise",
+          "differenceSeconds": 3.89840234375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-09",
+          "event": "sunrise",
+          "differenceSeconds": 3.84734033203125
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-05",
+          "event": "sunrise",
+          "differenceSeconds": 3.8385849609375
+        },
+        {
+          "caseId": "tromso-2027",
+          "date": "2027-11-10",
+          "event": "sunrise",
+          "differenceSeconds": 3.762317626953125
+        }
+      ]
+    },
+    "changedNorthernEligibilityDays": 0,
+    "changedSelectedStatusOrReasonFields": 0,
+    "completeDays": [
+      {
+        "id": "istanbul-2027",
+        "usno": 365,
+        "spa": 365
+      },
+      {
+        "id": "frankfurt-2027",
+        "usno": 206,
+        "spa": 206
+      },
+      {
+        "id": "frankfurt-2028",
+        "usno": 207,
+        "spa": 207
+      },
+      {
+        "id": "oslo-2027",
+        "usno": 0,
+        "spa": 0
+      },
+      {
+        "id": "tromso-2027",
+        "usno": 0,
+        "spa": 0
+      },
+      {
+        "id": "tokyo-2027",
+        "usno": 365,
+        "spa": 365
+      },
+      {
+        "id": "sydney-2027",
+        "usno": 365,
+        "spa": 365
+      },
+      {
+        "id": "synthetic-antimeridian-2027",
+        "usno": 206,
+        "spa": 206
+      }
+    ],
+    "institutionalCalendarObservationsUsed": false
+  },
+  "diyanetSpaIndependentReproduction": {
+    "result": "PASS",
+    "caseCount": 22,
+    "eventTimestampsReproduced": 116,
+    "unavailableEventsReproduced": 16,
+    "cycleBoundariesReproduced": 44,
+    "maximumDifferenceSeconds": 0.0,
+    "referenceSourceSha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+    "fixtureSha256": "e1b1f1cfbccc271f244497a97cb4cb09b2d73133a846196e6fea67a97679b008",
+    "referenceCheck": {
+      "savedCoordinateCases": 64,
+      "maximumDifferenceDegrees": {
+        "rightAscension": 0.0,
+        "declination": 0.0
+      },
+      "officialWorkedExample": "PASS",
+      "referenceSourceSha256": "ad7762ccca5fd9611ef9e2a9b1e37f95fe4c5b31628616b2ad3e84ea1e5f9202",
+      "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+      "numpy": "2.3.5"
+    },
+    "regeneratedFixtureBytesIdentical": true
   }
 }
