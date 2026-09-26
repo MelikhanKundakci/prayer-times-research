@@ -2,11 +2,38 @@
 
 Review date: **2026-09-25**. This audit covers all 15 method families currently in the repository. It reviews rule publications and existing research evidence; it does not acquire new prayer-time calendars or turn a software preset into an institutional specification. All calculations remain local.
 
+Focused update **2026-09-26**: the prayer-by-prayer distinction below was checked against the existing code and primary explanatory sources. This update changes evidence attribution and documentation, not calculated times or validation scores.
+
 The linked audits separate three kinds of evidence:
 
 - **Published rule:** a named primary source explicitly describes the criterion. Its institution, publication date, geographical scope and wording matter.
 - **Implementation hypothesis:** our choice of ephemeris, reference point, rounding, margin or missing-event policy where the source does not completely specify it.
 - **Measured agreement:** a comparison with particular calendar fields, documented in the method's validation record. Matching a minute does not prove the hypothesis is the publisher's actual formula.
+
+## Rules differ by prayer, not only by method name
+
+A calculation profile must specify each event separately. An institution, a school of jurisprudence, a named religious authority and a software parameter set are different kinds of attribution. None is a safe alias for all the others.
+
+| Event or marker | What needs its own rule | Example and evidence boundary |
+|---|---|---|
+| Fajr / Imsak | Dawn criterion, any precaution, and a policy when the criterion does not occur | Diyanet's [2013 statement](https://www.diyanet.gov.tr/tr-TR/Kurumsal/Detay/2921/basin-aciklamasi) names 18° for Imsak and 17° for Isha. Its later northern criteria use 16° for Isha; see the dated [Diyanet audit](../methods/diyanet/RULE-EVIDENCE.md). |
+| Sunrise | Horizon definition, geographical scope and any end-of-Fajr adjustment | This is an astronomical/calendar marker, not a sixth obligatory daily prayer. Diyanet's published adjustment is distinct from its Maghrib adjustment. |
+| Dhuhr | Midday definition, margin and legal-window semantics | Diyanet publishes transit plus five minutes; another authority's legal-midday or table marker must retain its own meaning. |
+| Asr | Shadow factor where applicable, or an authority-specific legal window | Diyanet explicitly chooses the first shadow rule; a generic school-name override must not silently replace that institutional choice. |
+| Maghrib | Sunset criterion versus an additional redness criterion or precaution | [Sistani's ruling 722](https://www.sistani.org/english/book/48/2212/) requires waiting for eastern redness to pass overhead as obligatory precaution. It supplies no universal fixed angle or minute delay. Other named authorities can differ; see [Bayynat](../methods/bayynat/RULE-EVIDENCE.md). |
+| Isha | Twilight criterion, any supported interval prescription, seasonal substitution and event-date ownership | An angle, a fixed elapsed interval and a high-latitude night fraction are distinct rule types. Their numerical values and applicability need separate evidence. |
+
+For Asr, the [Diyanet explanation](https://kurul.diyanet.gov.tr/tr/fetva/asr-i-evvel-ve-asr-i-sani-ne-demektir/0193c42d-4d64-7acf-2961-12b0db4e1723) distinguishes one and two object-lengths **in addition to the noon shadow**, and explicitly states its calendar uses the first rule. It also records differences among Hanafi jurists. Consequently, “Hanafi” does not automatically mean that every Turkish or Diyanet timetable uses factor two.
+
+Legal windows, earliest beginnings, recommended performance times and mosque congregation times are not interchangeable target columns. [Sistani's ruling 717](https://www.sistani.org/english/book/48/2209/) describes Dhuhr/Asr within a legal window and an ordering requirement; it is not a prescription for a separate shadow-factor Asr column. Existing Shia profiles and Bayynat table markers preserve that distinction. Likewise, [Fazilet's separate Sabah marker](../methods/fazilet/RULE-EVIDENCE.md) must not be imported into Diyanet's Imsak meaning.
+
+## What this means for the current calculation work
+
+The offline Diyanet core already uses separate Fajr, horizon, Dhuhr, Asr and Isha rules, separate minute adjustments, and northern seasonal branches. It does not apply one twilight angle to every prayer. The low/southern route uses an Isha angle of 17° while the northern route uses 16°; this is not an accidental inconsistency to repair by making them equal. Published criteria support the distinction in their stated scopes, while the exact worldwide production recipe remains unverified.
+
+Keep a shared, explicitly named astronomical calculation separate from these event rules. Different prayers naturally occur at different solar positions; a model may evaluate solar coordinates at an event's time or at a declared daily approximation. That numerical choice is not itself a religious rule. The [solar-channel experiment](../methods/diyanet/NOON-SHAPE-TRANSFER.md) does not justify selecting a different ephemeris output for each prayer merely because a particular calendar score improves.
+
+For contributors, every proposed event rule should state its authority and source date, applicable geography/season, marker meaning, parameters, fallback, adjustments, and display/date convention. Do not add a value for an unspecified field simply to fill a universal six-column table. Profile overrides must remain explicit custom choices rather than silently retaining an institutional-equivalence label.
 
 ## Family-by-family review
 

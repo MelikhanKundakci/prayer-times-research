@@ -18,6 +18,7 @@ This repository makes the research useful to contributors: readable calculation 
 - **Plan prayer alerts:** read the [notification-readiness criteria](docs/NOTIFICATION-READINESS.md) before treating a displayed minute as an alarm time.
 - **Help improve a method:** start with the [largest remaining discrepancies and research priorities](docs/ACCURACY-PRIORITIES.md), its open questions and the [contribution guide](CONTRIBUTING.md).
 - **Understand the religious scope:** read [methods, institutions, and jurisprudence](docs/SCOPE.md).
+- **Understand differences between prayers:** the [prayer-by-prayer rule guide](docs/METHOD-EVIDENCE.md#rules-differ-by-prayer-not-only-by-method-name) separates twilight criteria, shadow factors, legal windows and institution-specific adjustments.
 - **Check the source of a rule:** the [15-family evidence audit](docs/METHOD-EVIDENCE.md) separates primary publications from reconstruction assumptions and documents the two explicit Dhuhr rule alternatives.
 
 ## Quick start
