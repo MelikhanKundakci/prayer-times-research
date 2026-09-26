@@ -1,8 +1,12 @@
 # Research roadmap
 
-The goal is broader, independently verifiable coverage with explicit religious and institutional scope. There is no claim that the remaining work is only a matter of adding more preset angles.
+The app's primary calculation direction is now a documented local-point model in [`core/local/`](../core/local/README.md), separate from reconstruction of institution-published city calendars. Its first named profile applies documented event criteria and Temkin margins to continuously solved solar crossings. It returns point-specific model estimates, not proof of observed or religious superiority, exact-second accuracy, or notification readiness. See the [rule contract](../core/local/RULES.md) and [independent validation contract](LOCAL-VALIDATION.md).
 
-## Highest-value open questions
+The next work on that path is to validate each raw solar event independently, preserve the boundary between raw astronomy and selected prayer events, and keep unsupported cases explicit. At 44.5° north and above, selected Fajr/Isha and horizon events requiring seasonal or five-hour replacement rules remain blocked; only the documented northern no-daylight-shadow Asr substitute may be estimated. Do not fill these gaps with generic polar estimates or mirror northern rules into the south. GPS provides coordinates, while the caller must supply an appropriate IANA time zone; elevation, terrain, skyline, and topocentric parallax are outside the current point model.
+
+The research track below remains useful, but it addresses a different question: how closely specified methods reconstruct supplied city calendars. It must not be used to tune or silently correct point-model outputs. Broader method coverage still requires independently verified rules and explicit religious and institutional scope; there is no claim that the remaining work is only a matter of adding more preset angles.
+
+## City-calendar reconstruction questions
 
 | Area | What would move the research forward |
 |---|---|
@@ -31,9 +35,10 @@ The current 15 families are a research starting point. Other commonly named prof
 ## Longer-term engineering
 
 - A versioned, documented interchange format for research predictions and reference calendars.
-- Independent astronomy and interval-boundary checks beyond published minute stamps.
+- Independent astronomy and interval-boundary checks beyond published minute stamps, linked to the [local point validation contract](LOCAL-VALIDATION.md).
 - Carefully reviewed mobile ports and offline timezone handling for Android and iOS.
-- Explicit profile selection and geographic-zone mapping with provenance.
-- A free, ad-free app with optional donations, after calculation and notification behavior have been validated for its supported profiles.
+- A separately reviewed geographic-zone resolver; coordinates alone do not identify an IANA time zone.
+- Elevation and local-horizon inputs only with a documented model and suitable validation.
+- Notification behavior only after each supported profile's selected-event and chronology rules are validated; a calculated point time alone is not notification approval.
 
 Adding a new community or method requires its own specification and evidence. Existing city-years are useful regression data but cannot be presented again as newly unseen validation.

@@ -17,7 +17,8 @@
     "calculate": "node scripts/run.mjs",
     "check": "node scripts/check-integrity.mjs",
     "examples:generate": "node core/timezones/with-tzdata.mjs scripts/generate-examples.mjs",
-    "calculate:diyanet": "node core/timezones/with-tzdata.mjs scripts/calculate-diyanet.mjs"
+    "calculate:diyanet": "node core/timezones/with-tzdata.mjs scripts/calculate-diyanet.mjs",
+    "calculate:local": "node core/timezones/with-tzdata.mjs scripts/calculate-local.mjs"
   },
   "dependencies": {
     "adhan": "4.4.6"

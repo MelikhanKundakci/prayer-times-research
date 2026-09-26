@@ -24,6 +24,16 @@ The solar coordinates themselves change during a day. Some institutional reconst
 
 The own implementations refer to the [US Naval Observatory's approximate solar coordinates](https://aa.usno.navy.mil/faq/sun_approx) and the [NOAA solar-calculation description](https://gml.noaa.gov/grad/solcalc/calcdetails.html). Source attribution and inherited implementation details are recorded in the module map and license notices.
 
+## Continuous local point profile
+
+The app's primary point path is [`core/local/`](../core/local/README.md). It evaluates the USNO approximate solar coordinates at trial event instants and numerically solves continuous altitude crossings for the caller's supplied coordinates. The returned `astronomy.events` are raw geometry; the separate `events` are selected values after the explicitly named profile rules and Temkin margins. For example, the point profile's sunrise marker applies the documented −7-minute margin to the model's apparent-horizon crossing. That marker is not a prayer-start event. GPS does not automatically remove Temkin; Diyanet describes those margins as part of producing published locality times.
+
+Asr uses the shadow-factor-1 target referenced to solar altitude at that day's upper meridian transit. The point model keeps that noon-shadow reference fixed while solving the afternoon crossing. This expresses the documented Asr-i evvel convention; it is a model implementation, not a claim that every operational detail is independently specified.
+
+At **44.5° north and above**, raw −18°/−16° twilight crossings remain diagnostics and selected Fajr/Isha are policy-blocked because seasonal substitution and transition rules are not fully implemented. Selected sunrise/Maghrib are also blocked when a crossing is absent or the five-hour horizon rule would require an estimate. A proven northern no-daylight-shadow Asr case may use the documented Dhuhr substitute with `estimated` status; unresolved crossings are not silently substituted. These northern policies are not mirrored into the south. See the [local rule contract](../core/local/RULES.md) and [independent local validation contract](LOCAL-VALIDATION.md).
+
+The supplied time zone selects which solar transit belongs to the requested civil date and renders the event clocks; it does not alter the solar equations. A separate zone resolver is needed to obtain it from GPS coordinates. The model has no observer-height, terrain, skyline or topocentric-parallax input, so its unobstructed flat-horizon events may differ from what is locally observed. Continuous root precision and `seconds` output are model precision, not demonstrated accuracy to the second. The selected times are point-specific predictions under a named rule profile, not proof of observed or religious superiority, a certified local timetable, or notification eligibility. Existing [city-calendar reconstructions](../core/diyanet/README.md) remain a distinct research path.
+
 ## Twilight
 
 Fajr and Isha profiles often specify a solar depression angle. A nominal 18° criterion searches for a center altitude of −18°, but institutions can add observation, seasonal, or high-latitude policies. An angle alone does not specify those policies.

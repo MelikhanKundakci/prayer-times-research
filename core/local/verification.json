@@ -1,0 +1,109 @@
+{
+  "schema": "local-point-verification/v1",
+  "recordedDate": "2026-09-26",
+  "localVersion": "0.1.0",
+  "profile": "diyanet-published-point-v1",
+  "purpose": "Numerical implementation and rule-contract verification for local point calculations, not city-calendar replication",
+  "numerical": {
+    "result": "PASS",
+    "cases": 139,
+    "calculatedCycles": 136,
+    "expectedOwnershipRejections": 3,
+    "calculatedEvents": 723,
+    "unavailableEvents": 93,
+    "cycleBoundaryComparisons": 272,
+    "maximumRootDifferenceSeconds": 2.6226043701171875e-05,
+    "maximumCycleBoundaryDifferenceSeconds": 1.5735626220703125e-05,
+    "maximumTransitDifferenceSeconds": 1.2874603271484375e-05,
+    "maximumThresholdDifferenceDegrees": 1.7783241545998862e-10,
+    "rootToleranceSeconds": 0.1,
+    "oracleSha256": "482a8854a143aa2c437eed516b0d224e612753ec59e9eb7c930aefe5531d9ee6",
+    "runtime": {
+      "node": "v26.7.0",
+      "icu": "78.3",
+      "tzdb": "2026d"
+    }
+  },
+  "independentImplementation": {
+    "language": "Python",
+    "model": "USNO approximate solar coordinates",
+    "timezoneDatabase": "system 2026c.1.0",
+    "fixtureContents": "Synthetic point/date inputs and independently calculated equations; no institutional calendar data",
+    "sharedAssumption": "Both implementations use the same published coordinate approximation; agreement is not an observed-accuracy measurement"
+  },
+  "regressionFiles": [
+    "tests/local-solar.test.mjs",
+    "tests/local-point.test.mjs"
+  ],
+  "regressionScope": [
+    "fixed-transit factor-one Asr geometry",
+    "GPS sensitivity and antimeridian equivalence",
+    "civil-date ownership and UTC rendering",
+    "published event margins",
+    "northern policy blocks and absent-shadow Asr substitution",
+    "selected-event chronology and bounded cross-night sequences",
+    "input validation",
+    "CLI parity",
+    "execution with network, calendar fixtures and legacy models denied"
+  ],
+  "boundaries": {
+    "institutionalEquivalence": false,
+    "worldwideProfileComplete": false,
+    "notificationReleaseApproved": false,
+    "observedTimingAccuracySeconds": null,
+    "missingPolicies": [
+      "northern seasonal Fajr/Isha selection",
+      "northern five-hour horizon substitution",
+      "unresolved northern Asr cases outside proven no-daylight-shadow condition",
+      "southern replacement rules for absent signs"
+    ],
+    "unmodeled": [
+      "terrain and skyline",
+      "observer elevation",
+      "weather-dependent atmospheric refraction",
+      "topocentric solar parallax"
+    ],
+    "assumptions": [
+      "level unobstructed horizon",
+      "conventional -50 arcminute rise/set threshold",
+      "caller supplies appropriate IANA timezone"
+    ],
+    "seconds": "Numerical model precision, not a guarantee of observed or religious timing accuracy"
+  },
+  "files": [
+    {
+      "path": "core/local/solar.mjs",
+      "sha256": "c1f60c480b8c52990ed4430232bc6d0dfc60cb8634e75f26eb4dff540f2f194e"
+    },
+    {
+      "path": "core/local/index.mjs",
+      "sha256": "014d32efc336b3e4f6811d363db3e2afd353128360cd0474da40c329e544847e"
+    },
+    {
+      "path": "core/local/verification/oracle.py",
+      "sha256": "6eae66a43ea9ceb1b73ad64a8c1632e800c5ee4a1dd823e5d4dcce5bac32a5a3"
+    },
+    {
+      "path": "core/local/verification/oracle-fixtures.json",
+      "sha256": "482a8854a143aa2c437eed516b0d224e612753ec59e9eb7c930aefe5531d9ee6"
+    },
+    {
+      "path": "core/local/verification/verify.mjs",
+      "sha256": "70dc17ee91680a2359ffd5805e84f8721ea7a6bedb75bc84d98cd1b320367a97"
+    }
+  ],
+  "softwareChecks": {
+    "result": "PASS",
+    "nodeTests": 192,
+    "newLocalTests": 18,
+    "diyanetPythonTests": 61,
+    "independentUaeFixtures": 108,
+    "integrity": "63 extracted assets, 15 method folders, pinned timezone resources and 671 local documentation links verified",
+    "commands": [
+      "npm test",
+      "npm run check",
+      "python3 scripts/verify-uae-radial.py",
+      "python3 -m unittest discover -s methods/diyanet/diagnostics/transition-constraints -p 'test_*.py'"
+    ]
+  }
+}

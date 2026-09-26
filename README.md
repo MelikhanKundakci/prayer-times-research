@@ -6,11 +6,14 @@ We are building a transparent foundation for an ad-free, free-to-use prayer-time
 
 This repository makes the research useful to contributors: readable calculation modules, runnable examples, per-method explanations, measured error rates, source references, and specific unanswered questions.
 
+The app's primary direction is now **local times at the user's point under documented rules**. The new [local point core](core/local/) separates continuously calculated solar events from named prayer rules and their margins. Its first profile applies published Diyanet criteria with explicit gaps in northern seasonal policy. Existing city-calendar reconstructions remain available as a separate research and compatibility track; agreement with a city clock is not the sole measure of a point calculation's correctness.
+
 **Status: research preview.** Several implementations closely match the reference calendars tested so far. Others are exploratory or have known failures. Accuracy belongs to a particular method, parameter set, place, date range, and interpretation of the source. The project does not claim a perfect worldwide algorithm or endorsement by the institutions named here.
 
 ## Start here
 
-- **Build with the Diyanet reconstruction:** the [standalone offline core](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
+- **Start local app calculations:** the [local point core](core/local/) accepts coordinates, a civil date, IANA timezone and an explicit documented profile. Read the [local validation contract](docs/LOCAL-VALIDATION.md) for numerical evidence, rule coverage and physical limits.
+- **Explore the Diyanet calendar reconstruction:** the [standalone offline reconstruction](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
 - **Understand the Diyanet default:** version 1.2 adopts `civil-date`; the [scope, comparison and migration](core/diyanet/CIVIL-DATE.md) explain the existing Pacific gains, individual regressions, coordinate-symmetry checks and explicit historical replay.
 - **Use a calculation:** choose a method below, read its input contract, and run its example.
 - **Understand the mathematics:** [calculation architecture](docs/ARCHITECTURE.md) and [astronomical conventions](docs/ASTRONOMY.md).
@@ -35,6 +38,7 @@ npm test
 node scripts/run.mjs --list
 
 # Run a documented input using the bundled timezone data.
+npm run calculate:local -- 2027-03-20 41.0082 28.9784 Europe/Istanbul diyanet-published-point-v1
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 node scripts/run.mjs diyanet --example
 node scripts/run.mjs moonsighting-committee --example
@@ -46,7 +50,9 @@ node scripts/run.mjs diyanet --input methods/diyanet/examples/input.json
 
 The first dependency installation requires internet access. Calculations and the public test suite then run locally, without API keys, a server, or requests for prayer calendars. The Adhan dependency is retained only for explicitly identified historical comparison branches; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
-For app integration, import `createDiyanetCalculator` from `core/diyanet/index.mjs`. The [API guide](core/diyanet/README.md) covers day/year queries, a consistent millisecond/ISO cursor for the next prayer, date ownership, missing events, and bounded caching. The core itself has no third-party dependency. Its default reproduces the tested civil-date recipe across **129,210** existing model fields; explicit `solar-carrier` preserves the historical baseline. This is software parity; the [separate calendar comparison](core/diyanet/CIVIL-DATE.md) documents the scoped accuracy evidence.
+For the point-based app direction, import `calculateLocalDay` from `core/local/index.mjs`. The [local API guide](core/local/README.md) documents raw astronomy, selected prayer times, UTC instants, model seconds and unsupported events. The calculation has no third-party runtime dependency or reference-calendar lookup. Its [independent numerical verification](core/local/verification/) covers 139 declared cases; this checks the model equations, not observed accuracy to the second.
+
+For calendar-reconstruction research, import `createDiyanetCalculator` from `core/diyanet/index.mjs`. Its [API guide](core/diyanet/README.md) covers day/year queries, a consistent millisecond/ISO cursor for the next prayer, date ownership, missing events, and bounded caching. This core also has no third-party dependency. Its default reproduces the tested civil-date recipe across **129,210** existing model fields; explicit `solar-carrier` preserves the historical baseline. This is software parity; the [separate calendar comparison](core/diyanet/CIVIL-DATE.md) documents the scoped accuracy evidence.
 
 Examples return the native research result, including actual event dates, UTC instants where supplied by the method, missing-event reasons, and diagnostic metadata. An annual result is previewed by default; add `--full` for the entire result. Different methods deliberately retain different event names when the underlying religious or source meaning is unresolved.
 
