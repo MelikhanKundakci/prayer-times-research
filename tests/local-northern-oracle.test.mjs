@@ -1,0 +1,31 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import { verifyLocalNorthern } from '../core/local/verification/northern-verify.mjs';
+
+test('northern annual guard agrees with the independent Python fixture without dropping padding or summer', () => {
+  const fixture = new URL('../core/local/verification/northern-fixtures.json', import.meta.url);
+  const before = createHash('sha256').update(readFileSync(fixture)).digest('hex');
+  const report = verifyLocalNorthern();
+  assert.equal(report.result, 'PASS');
+  assert.equal(report.cases, 9);
+  assert.equal(report.readyContexts, 8);
+  assert.equal(report.blockedContexts, 1);
+  assert.equal(report.ownedDays, 3286);
+  assert.equal(report.eligibilityComparisons, 6572);
+  assert.equal(report.annualNightCandidateChecks, 3295);
+  assert.equal(report.paddingGuardChecks, 36);
+  assert.equal(report.sampledNights, 71);
+  assert.equal(report.sampledTimestampComparisons, 490);
+  assert.ok(report.maximumTimestampDifferenceSeconds <= .1);
+  assert.ok(report.maximumThresholdDifferenceSeconds <= .1);
+  const oslo = report.summaries.find(row => row.id === 'oslo-2027');
+  assert.deepEqual(oslo, { id: 'oslo-2027', status: 'blocked', fajrOrdinaryDays: 0, ishaOrdinaryDays: 0 });
+  const east = report.summaries.find(row => row.id === 'east-antimeridian-2027');
+  const west = report.summaries.find(row => row.id === 'west-antimeridian-2027');
+  assert.equal(east.fajrOrdinaryDays, west.fajrOrdinaryDays);
+  assert.equal(east.ishaOrdinaryDays, west.ishaOrdinaryDays);
+  assert.equal(report.fixtureSha256, before);
+  assert.equal(createHash('sha256').update(readFileSync(fixture)).digest('hex'), before);
+});

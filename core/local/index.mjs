@@ -1,7 +1,8 @@
 import {fields} from '../input.mjs';
 import {calculateLocalSolarDay} from './solar.mjs';
+import {buildNorthernContext} from './northern.mjs';
 
-export const LOCAL_VERSION='0.1.0';
+export const LOCAL_VERSION='0.2.0';
 export const LOCAL_EVENTS=Object.freeze(['fajr','sunrise','dhuhr','asr','maghrib','isha']);
 export const LOCAL_PROFILE='diyanet-published-point-v1';
 const MINUTE=60000,DAY=86400000;
@@ -15,6 +16,19 @@ const SOURCES=Object.freeze({
   asr:'https://kurul.diyanet.gov.tr/tr/fetva/asr-i-evvel-ve-asr-i-sani-ne-demektir/0193c42d-4d64-7acf-2961-12b0db4e1723',
   north:'https://www.awqatsalah.com/sub/34/tespit-kriterleri',
 });
+// A point's annual guard is shared by its day queries, with a bounded cache.
+// Only copies of the exposed diagnostics leave this module.
+const northernContexts=new Map();
+function northernContext(input){
+  const key=JSON.stringify([input.year,input.latitude,input.longitude,input.timeZone]);
+  if(northernContexts.has(key)){
+    const value=northernContexts.get(key);northernContexts.delete(key);northernContexts.set(key,value);return value;
+  }
+  const value=buildNorthernContext(input);
+  northernContexts.set(key,value);
+  if(northernContexts.size>4)northernContexts.delete(northernContexts.keys().next().value);
+  return value;
+}
 function localParts(epoch,formatter){
   const p=Object.fromEntries(formatter.formatToParts(epoch).map(x=>[x.type,x.value]));
   return {date:`${p.year}-${p.month}-${p.day}`,time:`${p.hour}:${p.minute}`,seconds:`${p.hour}:${p.minute}:${p.second}`};
@@ -42,6 +56,9 @@ export function calculateLocalDay(input){
   if(!Number.isFinite(latitude))throw new RangeError('Finite numeric latitude required');
   const north=latitude>=44.5;
   const astronomy=calculateLocalSolarDay({date,latitude,longitude,timeZone,ishaAngleDegrees:north?16:17});
+  const northern=north?northernContext({year:Number(date.slice(0,4)),latitude,
+    longitude:astronomy.location.longitude,timeZone}):null;
+  const northernDay=northern?.days[date]??null;
   const formatter=new Intl.DateTimeFormat('en-GB-u-ca-gregory-nu-latn',{
     timeZone,year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23',
   });
@@ -50,7 +67,12 @@ export function calculateLocalDay(input){
     const event=astronomy.events[name];
     const rule=`${LOCAL_PROFILE}.${RULES[name]}`;
     if(north&&(name==='fajr'||name==='isha')){
-      events[name]=empty(name,'policy-blocked','northern-seasonal-policy-not-implemented',`${LOCAL_PROFILE}.${name}.northern-seasonal-policy`);
+      if(northern?.status==='available'&&northernDay?.[name].eligible&&event.status==='calculated'){
+        events[name]=render(name,event.epochMilliseconds,date,formatter,
+          `${LOCAL_PROFILE}.${name}.northern-ordinary-${name==='fajr'?18:16}.annual-guard`);
+      }else{
+        events[name]=empty(name,'policy-blocked','northern-seasonal-policy-not-implemented',`${LOCAL_PROFILE}.${name}.northern-seasonal-policy`);
+      }
     }else if(north&&name==='asr'&&event.reason==='sun-not-above-geometric-horizon-at-transit'){
       events[name]={...render(name,events.dhuhr.rawEpochMilliseconds,date,formatter,
         `${LOCAL_PROFILE}.asr.no-daylight-shadow.use-dhuhr`,'estimated'),adjustmentMinutes:MARGINS.dhuhr,
@@ -63,15 +85,11 @@ export function calculateLocalDay(input){
       events[name]=render(name,event.epochMilliseconds+MARGINS[name]*MINUTE,date,formatter,rule);
     }
   }
-  // The five-hour northern horizon rule has unresolved point/transition details.
-  // Preserve astronomy, but do not turn an unimplemented substitute into a clock.
+  // Use actual adjacent nights, not 24 hours minus the same day's daylight.
+  // This ordinary-domain check does not construct five-hour replacement times.
   if(north){
-    const rise=astronomy.events.sunrise.epochMilliseconds,set=astronomy.events.maghrib.epochMilliseconds;
-    const rawLength=rise===null||set===null?null:(set-rise)/MINUTE;
-    const adjustedLength=rawLength===null?null:rawLength+MARGINS.maghrib-MARGINS.sunrise;
-    if(rawLength===null||rawLength<300||rawLength>1140||adjustedLength<300||adjustedLength>1140){
-      for(const name of ['sunrise','maghrib'])events[name]=empty(name,'policy-blocked','northern-horizon-policy-not-implemented',`${LOCAL_PROFILE}.${name}.five-hour-horizon-policy`);
-    }
+    for(const name of ['sunrise','maghrib'])if(!northernDay?.horizons[`${name}Eligible`])
+      events[name]=empty(name,'policy-blocked','northern-horizon-policy-not-implemented',`${LOCAL_PROFILE}.${name}.five-hour-horizon-policy`);
   }
   // Check the selected instants before returning them; no silent chronological clamp.
   const qualityFlags=[];
@@ -93,11 +111,13 @@ export function calculateLocalDay(input){
     if(event.dateOffset!==null&&event.dateOffset!==0)qualityFlags.push({code:'event-on-different-civil-date',event:name,date:event.localDate});
   }
   return {date,location:{latitude,longitude,timeZone},
-    profile:{id:LOCAL_PROFILE,authority:'Diyanet published criteria, independently applied to a point',official:false,
+    profile:{id:LOCAL_PROFILE,authority:'Published Diyanet criteria with explicitly declared local point conventions',official:false,
       institutionalEquivalence:'not-claimed',sources:{...SOURCES},northernPolicyThresholdDegrees:44.5},
     calculation:{version:LOCAL_VERSION,kind:'continuous-local-point',astronomicalModel:astronomy.model,
       secondsMeaning:'model precision, not guaranteed observed or institutional seconds',
-      horizon:'level unobstructed horizon; standard 50-arcminute convention; no terrain or observer-height model'},
+      horizon:'level unobstructed horizon; standard 50-arcminute convention; no terrain or observer-height model',
+      northernPolicy:northern?structuredClone({status:northern.status,reason:northern.reason,
+        metadata:northern.metadata,day:northernDay}):null},
     astronomy,events,qualityFlags,
     coverage:{complete:LOCAL_EVENTS.every(name=>events[name].status==='calculated'||events[name].status==='estimated'),
       unavailableEvents:LOCAL_EVENTS.filter(name=>events[name].status==='unavailable'),

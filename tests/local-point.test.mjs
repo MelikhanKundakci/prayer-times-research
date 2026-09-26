@@ -35,7 +35,7 @@ test('Point profile applies published margins to distinct physical events withou
 });
 
 test('Northern policy cannot be bypassed merely because a twilight crossing exists',()=>{
-  const d=day({latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin'});
+  const d=day({date:'2027-05-01',latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin'});
   for(const name of ['fajr','isha']){
     assert.equal(d.astronomy.events[name].status,'calculated');
     assert.equal(d.events[name].status,'policy-blocked');
@@ -46,7 +46,7 @@ test('Northern policy cannot be bypassed merely because a twilight crossing exis
   assert.equal(d.coverage.complete,false);
   assert.deepEqual(d.coverage.policyBlockedEvents,['fajr','isha']);
   assert.equal(day({latitude:44.4999}).events.fajr.status,'calculated');
-  assert.equal(day({latitude:44.5}).events.fajr.status,'policy-blocked');
+  assert.equal(day({date:'2027-06-21',latitude:44.5}).events.fajr.status,'policy-blocked');
   assert.equal(day({latitude:-44.5}).events.fajr.status,'calculated');
 });
 
@@ -160,7 +160,7 @@ test('Point profile requires an explicit known rule and rejects accidental or ex
 });
 
 test('Point API runs with network, calendars, legacy models and verification fixtures inaccessible',()=>{
-  const permitted=['package.json','core/local/index.mjs','core/local/solar.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
+  const permitted=['package.json','core/local/index.mjs','core/local/solar.mjs','core/local/northern.mjs','core/input.mjs','core/astronomy/','core/timezones/'];
   const denied=['core/local/verification/oracle-fixtures.json','core/diyanet/index.mjs','methods/diyanet/index.mjs','tests/model-snapshots.json','node_modules/adhan/package.json'];
   const program=`
     import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';import {get} from 'node:https';
