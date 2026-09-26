@@ -2,6 +2,8 @@
 
 A deliberately unsuccessful, bounded reconstruction of Türkiye Takvimi’s published Istanbul method. This family is retained to expose the unresolved technical problem, not advertised as an accurate alternative calendar.
 
+**Deferred as of 26 September 2026.** Active implementation effort is directed to Diyanet and broad community coverage in the [delivery roadmap](../../docs/ROADMAP.md#active-delivery-priorities--26-september-2026). The existing code and research record are retained for provenance.
+
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
 The [rule-evidence audit](RULE-EVIDENCE.md) maps the publisher's ephemeris and Temkin statements to the current reconstruction and its unresolved assumptions.

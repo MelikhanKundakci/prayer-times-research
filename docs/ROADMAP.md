@@ -1,5 +1,37 @@
 # Research roadmap
 
+## Active delivery priorities — 26 September 2026
+
+**Diyanet and broad community coverage are the active priorities. Türkiye Takvimi is deferred.** Its existing studies stay available for provenance, but its discrepancies do not determine the next implementation work.
+
+This is a product scope decision, not a measured worldwide popularity ranking. The [Adhan method catalogue](https://github.com/batoulapps/adhan-js/blob/develop/METHODS.md) and [AlAdhan method catalogue](https://aladhan.com/calculation-methods) identify software interoperability targets; inclusion does not prove an institution's complete specification, endorsement, or user count. Research continues from public explanatory publications and retained evidence, without institutional contact or new prayer-calendar/API acquisition. Runtime calculations remain offline.
+
+| Priority | Target | Concrete remaining work |
+|---|---|---|
+| First | **Diyanet** | Keep all five published ordinary prayer rules together; audit point astronomy and annual northern context consistently; resolve supported summer/transition behavior and actual event dates. Keep the local rule profile distinct from the older city-calendar reconstruction. |
+| First expansion | **MWL, Karachi, Egyptian criteria, ISNA and FCNA** | Complete per-prayer rule contracts and trace each convention to its actual source. Add missing method support only under an honest scope label. A matching twilight pair does not establish MWL=Diyanet, ISNA=FCNA, or Karachi=Banuri Town. Keep the Asr choice explicit. |
+| First expansion | **Umm al-Qura** | Add a dated interval-based Isha rule for the explicitly attributed software reconstruction, with an offline Ramadan-calendar convention and month-boundary tests. The [source audit](../methods/umm-al-qura/RULE-EVIDENCE.md) does not establish the complete official numerical recipe; retain that distinction. Do not represent an interval method as another twilight angle. |
+| First expansion | **Kemenag / Indonesia** | Extend the bounded worked-example evidence toward a complete local rule contract; retain its stated minute arithmetic and domain. Do not turn an alternative dawn angle into a complete community-specific method. |
+| Regional expansion | **JAKIM, MUIS, UAE/Awqaf** | Preserve each method's zone/point, horizon and margin semantics. Verify complete local profiles before presenting them as national-calendar equivalents. |
+| Community coverage | **Named Ja'fari/Tehran and other Shia profiles** | Specify Maghrib, prayer windows, combined-prayer semantics and missing event rules for the named source. One generic “Shia” angle preset does not cover these differences. |
+| Reuse existing work | **Moonsighting Committee** | Evaluate its existing reconstruction for the local schedule interface while preserving seasonal rules, both Asr choices, unavailable events and legal event-time timezone handling. Historical clock-match scores alone do not authorize an automatic migration. |
+
+The first expansion items can be investigated in parallel, but each is delivered as a complete, independently checked rule package for a stated domain. Expanding the selector is not the acceptance criterion.
+
+The starting evidence differs: [FCNA](../methods/fcna/RULE-EVIDENCE.md) and [Egypt](../methods/egyptian-survey/RULE-EVIDENCE.md) have direct institutional twilight-angle statements, while MWL/Karachi catalogue parameters alone are software attributions. [Kemenag](../methods/kemenag/RULE-EVIDENCE.md) has a bounded worked example. [Shia sources](../methods/shia-angles/RULE-EVIDENCE.md) also require legal-window semantics that cannot be reduced to another Sunni-style five-angle preset.
+
+### Acceptance for each local rule package
+
+1. **All five prayer starts are defined.** Record each event's sign, angle or interval, Asr interpretation, horizon assumptions, margin, rounding order and evidence. Any project convention is visible. Geometric markers cannot silently stand in for missing institutional prayer-start rules.
+2. **A reproducible offline calculation is independently checked.** Compare unrounded instants and availability states against a separate implementation of the declared equations. This verifies arithmetic, not observed dawn or religious endorsement.
+3. **A predeclared whole-year and boundary grid passes.** Exercise the intended geographical domain, both hemispheres where claimed, leap days, timezone changes, date-line cases, Ramadan boundaries where applicable, and transitions into/out of missing twilight. Preserve chronological event dates across midnight and adjacent days.
+4. **Unsupported situations remain explicit.** A complete ordinary-day profile is useful within its stated domain; an unresolved polar or seasonal rule does not justify fabricating a time. An optional substitute is named and marked as an estimate.
+5. **Any calendar-compatibility claim has its own evidence.** Compare the same point/date and event meaning where these are known; report signed errors per prayer, worst cases, exclusions and regressions. Existing calendars are retrospective evidence, not new unseen validation. A broad one-minute claim cannot be inferred from selected cities or a good aggregate.
+
+The next bounded Diyanet deliverable is a separate opt-in published-criteria profile using the already independently checked SPA solar provider. Daily events, every padded annual-context day and the context cache key must use the same selected provider; test provider isolation and unchanged USNO output. The current USNO daily/annual pair is already consistent, so this is a model extension, not a repair of an existing mixed-provider bug. Preserve its published angles and margins, report effects on all six events and seasonal boundaries, and keep unsupported summer transitions blocked. A more detailed solar-coordinate model does not by itself establish closer Diyanet calendar agreement or recover an unpublished transition rule.
+
+## Current implementation
+
 The app's primary calculation direction is a documented local-point model in [`core/local/`](../core/local/README.md), separate from reconstruction of institution-published city calendars. Version 0.5.0 provides 22 profiles: six existing institution-inspired or bounded worked-example profiles and 16 complete software compositions combining four Fajr/Isha angle pairs, Asr shadow factors 1/2 and physical-only or opt-in angle/night twilight handling. These are point-specific model outputs under declared rules, not proof of observed or religious superiority, exact-second accuracy, or notification readiness. The [local browser prototype](../examples/local-app/README.md) presents one-day results, a seven-day schedule, next available prayer, rule sources and JSON export.
 
 The 16 new compositions use the Reda–Andreas SPA point model; the six earlier profiles retain their prior USNO model. Both preserve the boundary between raw astronomy and profile-selected prayer events. Unsupported cases remain explicit. Existing northern policies apply only to the profiles that declare them; compositions use their own optional angle/night rule and do not inherit Diyanet's northern substitutions. Profiles without a supported polar replacement leave twilight unavailable. GPS provides coordinates; the user must confirm an appropriate IANA timezone. Elevation, terrain, skyline and local obstructions are outside the current point model.
@@ -13,7 +45,7 @@ The research track below remains useful, but it addresses a different question: 
 | Diyanet | Confirm production coordinates, seasonal transition anchors, rounding, and the absolute-date meaning of post-midnight Isha and `00:00`. Explain local regressions such as Bremen as well as improvements. |
 | JAKIM / Selangor / Kedah | Confirm operational point sets, the interpretation of the R19 map/table discrepancy, and the applicable 2027 district/zone changes. |
 | Shia profiles and Bayynat | Confirm event roles, shared/exclusive windows, missing Asr/Isha specifications, and source timezone behavior without reproducing unphysical calendar bugs as religious rules. |
-| Türkiye Takvimi / Fazilet | Obtain complete operational horizon/Temkin, altitude, rounding, and point specifications; expand season/year coverage for hypotheses with limited validation. |
+| Fazilet | Confirm operational horizon/Temkin, altitude, rounding, and point specifications; expand season/year coverage for hypotheses with limited validation. Türkiye Takvimi work is deferred under the active priorities above. |
 | FCNA / North America | Obtain calendars explicitly tied to the cited recommendation version, particularly the historical Canada profile, and clarify auxiliary event conventions. |
 | UAE / Oman / Egypt | Confirm production points and operational geometry; distinguish a close empirical fit from a sourced institutional implementation. |
 | Indonesia | Validate the worked-example reconstruction against a fully identified central calendar service and document complete community-specific procedures beyond a Fajr-angle override. |

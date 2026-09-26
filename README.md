@@ -10,6 +10,8 @@ The app's primary direction is now **local times at the user's point under docum
 
 **Status: research preview.** Several implementations closely match the reference calendars tested so far. Others are exploratory or have known failures. Accuracy belongs to a particular method, parameter set, place, date range, and interpretation of the source. The project does not claim a perfect worldwide algorithm or endorsement by the institutions named here.
 
+**Active focus:** Diyanet and complete local profiles for broad community coverage. Türkiye Takvimi research is deferred. The [delivery priorities and acceptance criteria](docs/ROADMAP.md#active-delivery-priorities--26-september-2026) distinguish planned method support from the profiles already implemented.
+
 ## Start here
 
 - **Try the local calculator:** run `npm run preview:local` and open the printed loopback URL. The [browser prototype](examples/local-app/README.md) shows five prayer starts, explicit twilight/Asr choices, optional night estimates, a seven-day schedule, the next calculated start and a JSON export. It uses no prayer-data service. The [complete local compositions](core/local/COMPOSED.md) use independently checked SPA astronomy; they are distinct from official institution calendars.

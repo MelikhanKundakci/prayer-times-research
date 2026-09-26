@@ -1,6 +1,8 @@
 # Where agreement still needs the most work
 
-This is a research-priority assessment of the repository's current implementations, not a ranking of religious traditions or of the institutions themselves. We compare calculated values with published reference clocks; an institution's complete original implementation is not necessarily available. The observations below have different cities, dates, markers and exposure histories, so they must not be combined into a single accuracy score.
+This is a discrepancy assessment of the repository's current implementations, not a ranking of religious traditions or of the institutions themselves. We compare calculated values with published reference clocks; an institution's complete original implementation is not necessarily available. The observations below have different cities, dates, markers and exposure histories, so they must not be combined into a single accuracy score.
+
+**Active priorities changed on 26 September 2026:** focus on Diyanet and broad community coverage under the [delivery roadmap](ROADMAP.md#active-delivery-priorities--26-september-2026). Türkiye Takvimi is deferred. Its retained negative results below are historical evidence, not the active work queue.
 
 **The clearest widespread numerical mismatch is Türkiye Takvimi. The largest remaining non-hour-scale discrepancies in the broader known sample are in the ARC comparison.** Date, timezone and availability problems remain a separate priority even where clock agreement is otherwise strong.
 
@@ -16,7 +18,7 @@ This is a research-priority assessment of the repository's current implementatio
 
 These rows deliberately retain weak and older alternatives when they explain an unresolved problem. They are not interchangeable with the best result of another variant on another sample.
 
-### Türkiye Takvimi: reconstruct the horizon/Temkin sequence
+### Türkiye Takvimi: deferred horizon/Temkin research
 
 The default assumes a geometric solar-center horizon of 0° and a fixed Istanbul Temkin of ten minutes, subtracting before noon and adding afterward. Its errors have a structured sign: Fajr and sunrise are late; Dhuhr, Asr, Maghrib and Isha are early. That points toward the horizon/adjustment recipe rather than random numerical noise, but it does not identify a unique correction.
 
@@ -84,9 +86,9 @@ An app needs an actual event date and a defined missing-event policy, not only a
 
 ## Recommended work order
 
-1. **The own UAE refraction kernel is implemented, numerically verified, and passed one pre-frozen month in the same regions.** Keep that temporal transfer distinct from the earlier exposed cohorts and from untested geography. The largest unresolved gaps still call for ARC twilight/date-boundary investigation and Türkiye Takvimi horizon/Temkin reconstruction.
+1. **Diyanet first, with complete local rule packages for broad community coverage developed alongside it.** Follow the concrete targets and acceptance criteria in the [active roadmap](ROADMAP.md#active-delivery-priorities--26-september-2026). Türkiye Takvimi is not an active implementation target.
 2. **Before notifications:** resolve the applicable method's event dates, timezone assumptions and unavailable-event behavior. This is necessary even for methods with high exact-minute agreement.
-3. **Then improve minute-level agreement:** study fixed institution calculation points, documented rounding and narrower regional conventions for Diyanet, JAKIM, Bayynat, Fazilet, Oman and MUIS.
+3. **Keep compatibility improvements separate:** study documented points, rounding and regional conventions without silently tuning local physical results to publisher clocks. The UAE own-ray transfer result and the ARC twilight/date investigations remain bounded evidence for their respective methods.
 
 For example, the [Diyanet fixed-point diagnostic](../methods/diyanet/RESEARCH-ROUND-2.md) explains much of the Berlin/Stockholm mismatch without changing the formula, but does not discover official coordinates. All future candidates should retain every observation and regression, preserve the old recipe, and distinguish already exposed development data from genuinely new comparisons.
 
