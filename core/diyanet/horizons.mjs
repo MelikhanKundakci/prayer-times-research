@@ -4,10 +4,14 @@ const RAD = Math.PI / 180;
 export const BASE_ADJUSTMENTS_MINUTES = Object.freeze({ fajr: 0, sunrise: -7, dhuhr: 5, asr: 4, maghrib: 7, isha: 0 });
 export const EVENT_NAMES = Object.freeze(['fajr', 'sunrise', 'dhuhr', 'asr', 'maghrib', 'isha']);
 
-export function dailyGeometry(calculationDate, latitude, longitude, provider, { rejectTangentCrossings = false, combinedHourCrossings = false } = {}) {
-  const midnight = Date.parse(`${calculationDate}T00:00:00Z`);
-  if (!Number.isFinite(midnight) || new Date(midnight).toISOString().slice(0, 10) !== calculationDate) throw new RangeError('Invalid Gregorian solar calculation date');
-  const sun = solarAt(midnight, provider), phi = latitude * RAD, delta = sun.declinationDegrees * RAD;
+export function dailyGeometry(carrierDate, latitude, longitude, provider, {
+  ephemerisDate = carrierDate, rejectTangentCrossings = false, combinedHourCrossings = false,
+} = {}) {
+  const midnight = Date.parse(`${carrierDate}T00:00:00Z`);
+  if (!Number.isFinite(midnight) || new Date(midnight).toISOString().slice(0, 10) !== carrierDate) throw new RangeError('Invalid Gregorian solar carrier date');
+  const ephemerisMidnight = Date.parse(`${ephemerisDate}T00:00:00Z`);
+  if (!Number.isFinite(ephemerisMidnight) || new Date(ephemerisMidnight).toISOString().slice(0, 10) !== ephemerisDate) throw new RangeError('Invalid Gregorian ephemeris date');
+  const sun = solarAt(ephemerisMidnight, provider), phi = latitude * RAD, delta = sun.declinationDegrees * RAD;
   const transitHours = 12 - longitude / 15 - sun.equationOfTimeHours;
   const transit = midnight + transitHours * HOUR_MS;
   const crossing = (altitudeDegrees, morning) => {
@@ -20,7 +24,7 @@ export function dailyGeometry(calculationDate, latitude, longitude, provider, { 
   };
   const asrAltitude = Math.atan(1 / (1 + Math.tan(Math.abs(latitude - sun.declinationDegrees) * RAD))) / RAD;
   return {
-    calculationDate, midnightEpoch: midnight, transitEpoch: transit,
+    calculationDate: carrierDate, carrierDate, ephemerisDate, midnightEpoch: midnight, ephemerisMidnightEpoch: ephemerisMidnight, transitEpoch: transit,
     declinationDegrees: sun.declinationDegrees, equationOfTimeHours: sun.equationOfTimeHours,
     solarNoonAltitudeDegrees: 90 - Math.abs(latitude - sun.declinationDegrees),
     raw: {

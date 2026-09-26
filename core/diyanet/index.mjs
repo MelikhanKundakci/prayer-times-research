@@ -1,7 +1,7 @@
 /** Offline Diyanet reconstruction: public, defensive, location-explicit API. */
 import {calculateAnnualRaw} from './calendar.mjs';
 
-export const VERSION='1.0.0-reconstruction';
+export const VERSION='1.1.0-reconstruction';
 export const EVENTS=Object.freeze(['fajr','sunrise','dhuhr','asr','maghrib','isha']);
 export const PRAYERS=Object.freeze(['fajr','dhuhr','asr','maghrib','isha']);
 const DAY=86400000,MINUTE=60000;
@@ -41,7 +41,8 @@ function parts(epoch,formatter){
   const p=Object.fromEntries(formatter.formatToParts(epoch).map(x=>[x.type,x.value]));
   return {date:`${p.year}-${p.month}-${p.day}`,time:`${p.hour}:${p.minute}`,seconds:`${p.hour}:${p.minute}:${p.second}`};
 }
-function metadata(annual){return {version:VERSION,method:'diyanet-reconstruction',solarModel:'USNO-daily-carrier-UTC00',route:annual.route,
+function metadata(annual){return {version:VERSION,method:'diyanet-reconstruction',dateBasis:annual.dateBasis,
+  solarModel:annual.dateBasis==='civil-date'?'USNO-daily-civil-UTC00':'USNO-daily-carrier-UTC00',route:annual.route,
   official:false,institutionalEquivalence:'not-established',secondsMeaning:'computed model precision, not verified institutional seconds',
   seasonal:clone(annual.seasonal??null)};}
 function renderDay(day,annual,where){
@@ -67,21 +68,24 @@ function renderDay(day,annual,where){
   for(const name of EVENTS)if(events[name].dateOffset!==null&&events[name].dateOffset!==0)
     qualityFlags.push({code:'event-on-different-civil-date',event:name,date:events[name].localDate});
   return {date:day.date,solarCalculationDate:day.solarCalculationDate,
+    solarTimeCarrierDate:day.solarTimeCarrierDate,ephemerisDate:day.ephemerisDate,
     location:{latitude:where.latitude,longitude:where.longitude,timeZone:where.timeZone},
     calculation:metadata(annual),qualityFlags,events};
 }
 
 /** Create an isolated bounded annual cache; no persisted location or network I/O. */
 export function createDiyanetCalculator(options={}){
-  record(options,options&&Object.hasOwn(options,'cacheSize')?['cacheSize']:[]);
+  record(options,['cacheSize','dateBasis'].filter(key=>options&&Object.hasOwn(options,key)));
   const capacity=options.cacheSize===undefined?4:options.cacheSize;
+  const dateBasis=options.dateBasis===undefined?'solar-carrier':options.dateBasis;
+  if(!['solar-carrier','civil-date'].includes(dateBasis))throw new RangeError('dateBasis must be solar-carrier or civil-date');
   if(!Number.isInteger(capacity)||capacity<0||capacity>32)throw new RangeError('cacheSize must be an integer from 0 through 32');
   const cache=new Map();let annualCalculations=0;
   function annual(year,where){
     yearValue(year);
     const key=JSON.stringify([year,where.latitude,where.longitude,where.timeZone]);
     if(cache.has(key)){const value=cache.get(key);cache.delete(key);cache.set(key,value);return value;}
-    const result=freeze(calculateAnnualRaw({year,latitude:where.latitude,longitude:where.longitude,timeZone:where.timeZone}));
+    const result=freeze(calculateAnnualRaw({year,latitude:where.latitude,longitude:where.longitude,timeZone:where.timeZone},undefined,{dateBasis}));
     annualCalculations++;
     if(capacity){cache.set(key,result);while(cache.size>capacity)cache.delete(cache.keys().next().value);}
     return result;

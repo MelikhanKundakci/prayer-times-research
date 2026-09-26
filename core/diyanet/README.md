@@ -2,6 +2,8 @@
 
 This small API computes a complete annual context from solar geometry and a supplied location. It runs offline and does not read source calendars or call a service. It is an independent reconstruction: official equivalence and notification eligibility have not been established.
 
+Version 1.1 adds an explicit **civil-date** recipe across all three routes. It brings the previously separate date-line improvement into this API: known Apia and Nuku'alofa 2027 calendars gain 1,468 exact minute matches in total, while northern antimeridian tests become independent of whether longitude is written as +180° or −180°. The [full scope and comparison](CIVIL-DATE.md) retain the individual regressions and distinguish the existing calendar evidence from new software integration checks.
+
 ## Use the API
 
 ```js
@@ -27,9 +29,17 @@ const next = calculator.nextPrayer({
 if (next) console.log(next.name, next.prayerDate, next.utc);
 ```
 
+Select the civil-date recipe explicitly when evaluating that improvement:
+
+```js
+const calculator = createDiyanetCalculator({dateBasis: 'civil-date'});
+```
+
+`dateBasis: 'solar-carrier'` remains the default for historical comparison. The choice is fixed per calculator, applies to all supported latitudes, and is returned in `calculation.dateBasis`; there are no named-city switches. A factory can also receive `{cacheSize: 4, dateBasis: 'civil-date'}`.
+
 `calculateDay` accepts `{date, latitude, longitude, timeZone}`. `calculateYear` accepts `{year, latitude, longitude, timeZone}` and returns every Gregorian day, including February 29 in leap years. `nextPrayer` accepts `{after, latitude, longitude, timeZone}`, where `after` is a UTC epoch in milliseconds, and returns the first strictly later prayer event or `null`. It searches neighboring prayer-day rows, so Isha may be owned by one date while occurring after local midnight. Sunrise is not a prayer returned by `nextPrayer`.
 
-All inputs are required. Dates use `YYYY-MM-DD`; years are 2001–2098, latitude is −60° through 75°, and longitude is −180° through 180°. Supply an appropriate IANA time-zone identifier for the point. GPS coordinates do not determine a time zone; an application must obtain that separately. The annual algorithm needs every civil day to have an anchorable solar transit. It throws if the supplied zone and point make a date impossible to anchor—for example, 2026 at latitude 60°, longitude 180°, and `UTC` cannot anchor December 14. A civil date skipped by a time-zone change, such as Apia's 2011-12-30, is also unanchorable.
+All query inputs are required. Dates use `YYYY-MM-DD`; years are 2001–2098, latitude is −60° through 75°, and longitude is −180° through 180°. Supply an appropriate IANA time-zone identifier for the point. GPS coordinates do not determine a time zone; an application must obtain that separately. The annual algorithm needs every civil day to have an anchorable solar transit. The solar-carrier recipe throws for some artificial point/zone combinations near midnight; the civil-date recipe resolves the tested ±180°/UTC cases. A civil date skipped by a time-zone change, such as Apia's 2011-12-30, remains unanchorable in either recipe and causes the entire annual context to be rejected.
 
 The optional cache is bounded to four annual calculations by default. Choose a capacity from 0 through 32 with `createDiyanetCalculator({cacheSize})`; zero disables caching. `clearCache()` drops cached years and `cacheInfo()` reports the cache size and calculation count. Returned results are independent values and can be safely modified by the caller.
 
@@ -40,6 +50,7 @@ The command-line interface calculates one date:
 ```sh
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin --json
+npm run calculate:diyanet -- 2027-01-01 -21.1345386521 -175.223892147 Pacific/Tongatapu --civil-date
 ```
 
 ## Output and precision
@@ -54,6 +65,8 @@ Each available event includes its model epoch, integer epoch milliseconds, UTC i
 | `seconds`, `secondsDate` | Independently rounded second and its date. |
 | `dateOffset` | Number of civil days from the owning row to `localDate`. |
 
+At day level, `ephemerisDate` identifies the UTC00 date used to sample solar coordinates. `solarTimeCarrierDate` identifies the UTC00 carrier used to construct absolute event instants; `solarCalculationDate` retains that same carrier meaning for compatibility. They may differ by a day. Northern metadata also identifies the solstice row's civil, carrier and ephemeris dates.
+
 Missing events keep **all time and date fields null**. `qualityFlags` preserves raw event-order reversals and events on a different civil day without moving them to hide the condition. `nextPrayer` carries the originating day's flags; finding the next model event does not approve it for an alarm. At equal millisecond instants its deterministic tie order is Fajr, Dhuhr, Asr, Maghrib, Isha; the cursor is strictly exclusive.
 
 Events have `status: "calculated"`, `"estimated"`, or `"unavailable"`. Estimated means a declared model policy supplied the event, including northern seasonal estimates or a horizon bound. Unavailable means the required solar crossing does not exist and this route has no supported substitute. In particular, southern missing twilight stays unavailable; the northern replacement rule is not mirrored into the south.
@@ -62,7 +75,7 @@ Nearest-minute output uses `floor(epoch / 60000 + 0.5)`, after the model's event
 
 ## Calculation outline
 
-The core evaluates the USNO daily solar coordinates at the UTC 00 carrier, derives transit and solar-altitude crossings from latitude, longitude, and declination, then renders each event in the supplied IANA zone. Event adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7, and Isha 0 minutes.
+The default recipe evaluates the USNO daily solar coordinates at the UTC00 carrier. The civil-date recipe samples at UTC00 of the requested local calendar date instead. Both derive transit and solar-altitude crossings from latitude, longitude, and the selected daily declination, preserve the absolute UTC carrier, then render each event in the supplied IANA zone. Event adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7, and Isha 0 minutes.
 
 Below 44.5° north, the reconstruction uses Fajr at −18°, Isha at −17°, a horizon altitude of −50/60°, and Asr shadow factor 1. The southern route retains real daily crossings and does not invent a twilight replacement. At and above 44.5° north, it reconstructs the archived high-latitude criteria with Fajr at −18°, Isha at −16°, and a minimum five-hour day and night. This 44.5° model split is not an assertion that every Diyanet policy boundary is identical to it.
 
@@ -70,7 +83,7 @@ For a missing Fajr season, let `r` be the last preceding real Fajr day, `R` the 
 
 The exact ratio operands, 18/16 conversion, transition construction and additional solstice envelope at 60° north and above remain reconstruction choices, not confirmed production details. Northern missing-shadow Asr inherits a Dhuhr substitute and is marked estimated. See [the source criteria and implementation evidence](../../methods/diyanet/RULE-EVIDENCE.md) and the [SPA sensitivity study](../../methods/diyanet/SPA-REFERENCE.md).
 
-The layers are [solar coordinates](astronomy.mjs), [geometric crossings](horizons.mjs), [seasonal rules](seasonal.mjs), [annual assembly](calendar.mjs), and [public rendering/cache/query API](index.mjs). Research can inject a solar provider into `calculateAnnualRaw` without a global override; the public factory deliberately selects the frozen USNO recipe. None of these layers imports an old method implementation.
+The layers are [solar coordinates](astronomy.mjs), [geometric crossings](horizons.mjs), [seasonal rules](seasonal.mjs), [annual assembly](calendar.mjs), and [public rendering/cache/query API](index.mjs). Research can inject a solar provider into `calculateAnnualRaw(input, provider, {dateBasis})` without a global override; the public factory always uses USNO. None of these layers imports an old method implementation.
 
 ## Evidence and limits
 

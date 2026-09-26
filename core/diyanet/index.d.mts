@@ -1,11 +1,13 @@
 export const VERSION: string;
 export type EventName = 'fajr'|'sunrise'|'dhuhr'|'asr'|'maghrib'|'isha';
 export type PrayerName = Exclude<EventName,'sunrise'>;
+export type DateBasis = 'solar-carrier'|'civil-date';
 export const EVENTS: readonly EventName[];
 export const PRAYERS: readonly PrayerName[];
 export interface Location { latitude:number; longitude:number; timeZone:string; }
 export interface Calculation {
-  version:string; method:'diyanet-reconstruction'; solarModel:'USNO-daily-carrier-UTC00';
+  version:string; method:'diyanet-reconstruction'; dateBasis:DateBasis;
+  solarModel:'USNO-daily-carrier-UTC00'|'USNO-daily-civil-UTC00';
   route:'low-latitude'|'south'|'north-missing-window'; official:false;
   institutionalEquivalence:'not-established'; secondsMeaning:string;
   seasonal:Record<string,unknown>|null;
@@ -26,7 +28,7 @@ export type QualityFlag =
   {code:'event-order-reversal'; earlier:EventName; later:EventName}|
   {code:'event-on-different-civil-date'; event:EventName; date:string};
 export interface Day {
-  date:string; solarCalculationDate:string; location:Location;
+  date:string; solarCalculationDate:string; solarTimeCarrierDate:string; ephemerisDate:string; location:Location;
   calculation:Calculation; qualityFlags:QualityFlag[]; events:Record<EventName,PrayerEvent>;
 }
 export interface Year { year:number; location:Location; calculation:Calculation; days:Day[]; }
@@ -42,4 +44,4 @@ export interface DiyanetCalculator {
   clearCache():void;
   cacheInfo():{size:number; capacity:number; annualCalculations:number};
 }
-export function createDiyanetCalculator(options?:{cacheSize?:number}):Readonly<DiyanetCalculator>;
+export function createDiyanetCalculator(options?:{cacheSize?:number; dateBasis?:DateBasis}):Readonly<DiyanetCalculator>;

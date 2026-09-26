@@ -11,6 +11,7 @@ This repository makes the research useful to contributors: readable calculation 
 ## Start here
 
 - **Build with the Diyanet reconstruction:** the [standalone offline core](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
+- **Evaluate its date-line improvement:** select `dateBasis: 'civil-date'`; the [scope and full-corpus comparison](core/diyanet/CIVIL-DATE.md) explain the Pacific calendar gains, individual regressions, and coordinate-symmetry checks.
 - **Use a calculation:** choose a method below, read its input contract, and run its example.
 - **Understand the mathematics:** [calculation architecture](docs/ARCHITECTURE.md) and [astronomical conventions](docs/ASTRONOMY.md).
 - **Assess accuracy:** each method has a `validation.json` and a README explaining its denominators, limits, and source coverage. Read the [validation protocol](docs/VALIDATION.md) before comparing percentages.
@@ -54,7 +55,7 @@ Examples return the native research result, including actual event dates, UTC in
 | Method family | What is included |
 |---|---|
 | [Moonsighting Committee](methods/moonsighting-committee/) | Own USNO solar geometry, seasonal twilight rules, both Asr shadow factors, and a tested rounding hypothesis. |
-| [Diyanet](methods/diyanet/) | Separate northern seasonal, lower-latitude, and southern research models; the latest northern seasonal-anchor experiment. |
+| [Diyanet](methods/diyanet/) | Standalone offline day/year/next-prayer core, explicit solar-carrier and civil-date recipes, and regional reconstruction evidence. |
 | [Umm al-Qura](methods/umm-al-qura/) | Angle-based Fajr and interval-based Isha, including the stated Ramadan-calendar convention. |
 | [Egyptian Survey convention](methods/egyptian-survey/) | Own 19.5°/17.5° research geometry and an explicitly identified library baseline. |
 | [UAE / Awqaf](methods/uae-awqaf/) | V2 geometry and an opt-in own dry-atmosphere ray integral, with explicit width, height and horizon assumptions. |

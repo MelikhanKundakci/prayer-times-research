@@ -42,9 +42,10 @@
   },
   "implementationSha256": {
     "core/diyanet/astronomy.mjs": "63c6e773ffad2885b3c152d3b4df5e6197adf26a520d549a29b0bc16812e0bcf",
-    "core/diyanet/calendar.mjs": "531a32ba6197dda856a226c07f4e2e943610bab248218e4c194244ab0ee6733b",
-    "core/diyanet/horizons.mjs": "1fdd28ede791322e8164aabd7c5dde50b78cec6816bfd3b062ade27b169588b3",
-    "core/diyanet/index.mjs": "f98fc6f126cba4b8b9203bc041bf6f482b0f049b1105b7c8ed9bb59dafb915de",
+    "core/diyanet/calendar.mjs": "2380f6ea59c647b3468e43d934b0cdf0e14ad597793a0fd664bdd007bb65096d",
+    "core/diyanet/horizons.mjs": "1a9449b8f851eb3b534d8a5eb6b71236e2f44a2cd30c06026230d49169c07f9c",
+    "core/diyanet/index.mjs": "bbc745b23455414170dc215e4fb21494919c93d0d6d5ecba751dfb495edb019f",
     "core/diyanet/seasonal.mjs": "8ce93fe11c233c13692d2348898d5ca681f11907922698a750567472ce780035"
-  }
+  },
+  "recheckedWithVersion": "1.1.0-reconstruction"
 }

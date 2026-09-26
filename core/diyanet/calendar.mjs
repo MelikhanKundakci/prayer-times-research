@@ -26,11 +26,14 @@ function datesInYear(year) {
   for (let epoch = Date.UTC(year, 0, 1); epoch < Date.UTC(year + 1, 0, 1); epoch += DAY_MS) result.push(dateOf(epoch));
   return result;
 }
-function anchoredDay(date, latitude, longitude, fmt, provider, route) {
+function anchoredDay(date, latitude, longitude, fmt, provider, route, dateBasis) {
   const wanted = Date.parse(`${date}T00:00:00Z`);
   let carrier = wanted;
   for (let i = 0; i < 5; i++) {
-    const geometry = dailyGeometry(dateOf(carrier), latitude, longitude, provider, { rejectTangentCrossings: route !== 'north-missing-window', combinedHourCrossings: route === 'north-missing-window' });
+    const carrierDate = dateOf(carrier);
+    const ephemerisDate = dateBasis === 'civil-date' ? date : carrierDate;
+    const geometry = dailyGeometry(carrierDate, latitude, longitude, provider, { ephemerisDate,
+      rejectTangentCrossings: route !== 'north-missing-window', combinedHourCrossings: route === 'north-missing-window' });
     const dateAnchor = route === 'north-missing-window'
       ? roundAdjustedEpoch(geometry.transitEpoch, 'dhuhr', ADJUST.dhuhr)
       : geometry.transitEpoch;
@@ -63,7 +66,7 @@ function boundHorizons(sunrise, sunset, dhuhr, polarDay) {
   const changed = rise !== sunrise || set !== sunset;
   return { sunrise: rise, maghrib: set, rule: changed ? 'five-hour-horizon-clamp' : 'adjusted-geometric-horizons', estimated: changed };
 }
-function northernRows(geometries, dates, latitude) {
+function northernRows(geometries, dates, latitude, dateBasis) {
   const rows = geometries.map(g => {
     const minute = (epoch, adjustment = 0) => epoch === null ? null : (epoch - g.midnightEpoch) / MINUTE_MS + adjustment;
     const raw = g.raw;
@@ -76,8 +79,8 @@ function northernRows(geometries, dates, latitude) {
       isha: minute(raw.isha), _estimatedHorizons: bounded.estimated, _horizonRule: bounded.rule,
       _polarDay: polarDay, _rawAsr: raw.asr };
   });
-  const solstice = dates.findIndex(d => d.endsWith('-06-21'));
-  if (solstice < 0) throw new RangeError('Northern annual calendar requires June 21');
+  const solstice = geometries.findIndex(g => (dateBasis === 'civil-date' ? g.ephemerisDate : g.carrierDate).endsWith('-06-21'));
+  if (solstice < 0) throw new RangeError(`Northern annual calendar has no June 21 ${dateBasis} anchor`);
   const solsticeNoon = rows[solstice].dhuhr;
   const above60 = latitude >= 60;
   if (above60) {
@@ -115,19 +118,24 @@ function northernRows(geometries, dates, latitude) {
 }
 
 /** Calculate the frozen Diyanet baseline for one complete Gregorian year. */
-export function calculateAnnualRaw(input, astronomy = solarCoordinatesUSNO) {
+export function calculateAnnualRaw(input, astronomy = solarCoordinatesUSNO, { dateBasis = 'solar-carrier' } = {}) {
   if (!input || Object.getPrototypeOf(input) !== Object.prototype) throw new TypeError('Plain options object required');
   const { year, latitude, longitude, timeZone } = input;
   const formatter = validate(input);
+  if (!['solar-carrier', 'civil-date'].includes(dateBasis)) throw new RangeError('dateBasis must be solar-carrier or civil-date');
+  if (typeof astronomy !== 'function') throw new TypeError('Astronomy provider must be a function');
   if (!Number.isFinite(latitude)) throw new TypeError('Latitude must be finite');
   const route = latitude < 0 ? 'south' : latitude < 44.5 ? 'low-latitude' : 'north-missing-window';
   const dates = datesInYear(year);
-  const geometries = dates.map(date => anchoredDay(date, latitude, longitude, formatter, astronomy, route));
+  const geometries = dates.map(date => anchoredDay(date, latitude, longitude, formatter, astronomy, route, dateBasis));
   let seasonalMetadata = null, seasonalRows = null;
   if (route === 'north-missing-window') {
-    const result = northernRows(geometries, dates, latitude);
+    const result = northernRows(geometries, dates, latitude, dateBasis);
     seasonalRows = result;
-    seasonalMetadata = { ...result.seasonal.metadata, variant: 'missing-window', solsticeClockEnvelopeApplied: result.above60 };
+    seasonalMetadata = { ...result.seasonal.metadata, variant: 'missing-window', solsticeClockEnvelopeApplied: result.above60,
+      solsticeAnchorBasis: dateBasis, solsticeCivilDate: dates[result.solsticeIndex],
+      solsticeCarrierDate: geometries[result.solsticeIndex].carrierDate,
+      solsticeEphemerisDate: geometries[result.solsticeIndex].ephemerisDate };
   }
   const days = dates.map((date, index) => {
     const geometry = geometries[index];
@@ -161,9 +169,10 @@ export function calculateAnnualRaw(input, astronomy = solarCoordinatesUSNO) {
           rule: rawEpoch === null ? 'unavailable-no-geometric-crossing' : `daily-utc00-${name}-adjustment-${adjustment}m`, estimated: false };
       }
     }
-    return { date, solarCalculationDate: geometry.calculationDate, events };
+    return { date, solarCalculationDate: geometry.carrierDate, solarTimeCarrierDate: geometry.carrierDate,
+      ephemerisDate: geometry.ephemerisDate, events };
   });
-  return { year, latitude, longitude, timeZone, route, seasonal: seasonalMetadata, days };
+  return { year, latitude, longitude, timeZone, route, dateBasis, seasonal: seasonalMetadata, days };
 }
 
 export { DAY_MS, MINUTE_MS };
