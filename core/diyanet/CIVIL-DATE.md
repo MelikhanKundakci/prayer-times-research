@@ -1,11 +1,11 @@
 # Civil-date recipe in the standalone core
 
-The existing Pacific date-line improvement is now available through the unified day/year/next-prayer API. It is an explicit option, with the historical solar-carrier recipe retained as the default. This release integrates previously studied calculation rules and verifies them against the full existing corpus; it does not introduce a newly discovered Diyanet rule or a new source holdout.
+The existing Pacific date-line improvement is available through the unified day/year/next-prayer API. Version 1.1 introduced it as an explicit option; **version 1.2 now selects it by default**. The historical solar-carrier recipe remains an explicit alternative. These releases integrate previously studied calculation rules and verify them against the full existing corpus; they do not introduce a newly discovered Diyanet rule or a new source holdout.
 
 ```js
 import {createDiyanetCalculator} from './core/diyanet/index.mjs';
 
-const calculator = createDiyanetCalculator({dateBasis: 'civil-date'});
+const calculator = createDiyanetCalculator(); // civil-date since version 1.2
 const day = calculator.calculateDay({
   date: '2027-01-01',
   latitude: -21.1345386521,
@@ -22,6 +22,14 @@ The command-line equivalent is:
 ```sh
 npm run calculate:diyanet -- 2027-01-01 -21.1345386521 -175.223892147 Pacific/Tongatapu --civil-date
 ```
+
+## Default adoption and migration in version 1.2
+
+The public factory and `calculate:diyanet` command now use this already tested rule without an extra option. Historical replay remains available with `createDiyanetCalculator({dateBasis: 'solar-carrier'})` or the new CLI flag `--solar-carrier`. The existing `--civil-date` flag remains valid; conflicting or repeated flags are rejected. The low-level `calculateAnnualRaw` research default and method-specific research entry points remain unchanged.
+
+This choice adopts the scoped comparison below and the antimeridian consistency result. It is not an endorsement of the unknown institutional recipe, a new astronomical formula, or approval for notifications. For callers upgrading from 1.1, outputs can change where the civil row and solar carrier differ; explicitly pin the historical recipe when old outputs are required.
+
+The actual public API was rerun for all 59 existing cases: the new default reproduces all 129,210 frozen civil-date raw and rounded fields, and explicit solar-carrier reproduces all 129,210 historical fields. A separate scorer rechecks both source-date interpretations from those API outputs. The [adoption record](default-verification.json) retains that verification without treating reused observations as a new holdout or adding the two interpretation denominators together.
 
 ## What changes mathematically
 
@@ -65,7 +73,7 @@ Apia was development evidence for the original rule. Nuku'alofa was a separately
 
 ## Software and coordinate checks
 
-The standalone calculation uses its own small numerical layers, without importing the older regional implementations. Full-corpus comparisons verify the integrated civil-date recipe against those implementations and preserve the frozen baseline for the default recipe. Public [regression tests](../../tests/diyanet-core-civil-date.test.mjs) additionally cover:
+The standalone calculation uses its own small numerical layers, without importing the older regional implementations. Full-corpus comparisons verify the integrated civil-date recipe against those implementations and preserve the frozen baseline for explicit solar-carrier replay. Public [regression tests](../../tests/diyanet-core-civil-date.test.mjs) additionally cover:
 
 - Complete regional years, source-free Pacific model snapshots and unavailable southern twilight.
 - Both `C=D−1` and `C=D+1`, leap years, per-event dates and next-prayer cursor behavior.
@@ -79,6 +87,6 @@ Both recipes still reject a year containing an unanchorable skipped civil date s
 
 ## Compatibility note for version 1.1
 
-The default keeps all 129,210 frozen baseline fields unchanged. Its northern envelope now explicitly follows the historical carrier-June-21 convention. Version 1.0 had used civil June 21 in that stage for both routes; the distinction was invisible in its 59-case corpus because every northern case had `C=D`. A new full-year regression at the antimeridian verifies the historical carrier convention. Choose `civil-date` for the consistently civil June 21 convention.
+Version 1.1's default kept all 129,210 frozen baseline fields unchanged; version 1.2 retains that recipe through explicit `solar-carrier` selection. Its northern envelope follows the historical carrier-June-21 convention. Version 1.0 had used civil June 21 in that stage for both routes; the distinction was invisible in its 59-case corpus because every northern case had `C=D`. A full-year regression at the antimeridian verifies the historical carrier convention. The current civil-date default uses the consistently civil June 21 convention.
 
 Neither sampling convention is asserted to be Diyanet's unpublished production procedure or an intrinsically more accurate physical ephemeris. The evidence supports the named compatibility improvement and coordinate consistency; arbitrary GPS positions and worldwide institutional equivalence remain unverified.

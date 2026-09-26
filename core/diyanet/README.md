@@ -2,7 +2,7 @@
 
 This small API computes a complete annual context from solar geometry and a supplied location. It runs offline and does not read source calendars or call a service. It is an independent reconstruction: official equivalence and notification eligibility have not been established.
 
-Version 1.1 adds an explicit **civil-date** recipe across all three routes. It brings the previously separate date-line improvement into this API: known Apia and Nuku'alofa 2027 calendars gain 1,468 exact minute matches in total, while northern antimeridian tests become independent of whether longitude is written as +180° or −180°. The [full scope and comparison](CIVIL-DATE.md) retain the individual regressions and distinguish the existing calendar evidence from new software integration checks.
+Version **1.2 makes civil-date the default** across all three routes. This adopts the already tested date-line improvement: known Apia and Nuku'alofa 2027 calendars gain 1,468 exact minute matches in total relative to the previous default, while northern antimeridian tests become independent of whether longitude is written as +180° or −180°. This is an existing improvement becoming the standard API behavior, not a newly discovered formula or new validation sample. The [full scope, comparison and migration](CIVIL-DATE.md) retain the individual regressions and unresolved limitations.
 
 ## Use the API
 
@@ -29,13 +29,13 @@ const next = calculator.nextPrayer({
 if (next) console.log(next.name, next.prayerDate, next.utc);
 ```
 
-Select the civil-date recipe explicitly when evaluating that improvement:
+To reproduce the pre-1.2 default explicitly:
 
 ```js
-const calculator = createDiyanetCalculator({dateBasis: 'civil-date'});
+const historical = createDiyanetCalculator({dateBasis: 'solar-carrier'});
 ```
 
-`dateBasis: 'solar-carrier'` remains the default for historical comparison. The choice is fixed per calculator, applies to all supported latitudes, and is returned in `calculation.dateBasis`; there are no named-city switches. A factory can also receive `{cacheSize: 4, dateBasis: 'civil-date'}`.
+`dateBasis: 'civil-date'` is the default and can also be selected explicitly. The choice is fixed per calculator, applies to all supported latitudes, and is returned in `calculation.dateBasis`; there are no named-city switches. A factory can also receive `{cacheSize: 4, dateBasis: 'civil-date'}`. Pin `solar-carrier` when replaying historical results; the lower-level research function `calculateAnnualRaw` and older method-specific entry points keep their original defaults.
 
 `calculateDay` accepts `{date, latitude, longitude, timeZone}`. `calculateYear` accepts `{year, latitude, longitude, timeZone}` and returns every Gregorian day, including February 29 in leap years. `nextPrayer` accepts `{after, latitude, longitude, timeZone}`, where `after` is a UTC epoch in milliseconds, and returns the first strictly later prayer event or `null`. It searches neighboring prayer-day rows, so Isha may be owned by one date while occurring after local midnight. Sunrise is not a prayer returned by `nextPrayer`.
 
@@ -51,6 +51,7 @@ The command-line interface calculates one date:
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin --json
 npm run calculate:diyanet -- 2027-01-01 -21.1345386521 -175.223892147 Pacific/Tongatapu --civil-date
+npm run calculate:diyanet -- 2027-01-01 -21.1345386521 -175.223892147 Pacific/Tongatapu --solar-carrier
 ```
 
 ## Output and precision
@@ -75,7 +76,7 @@ Nearest-minute output uses `floor(epoch / 60000 + 0.5)`, after the model's event
 
 ## Calculation outline
 
-The default recipe evaluates the USNO daily solar coordinates at the UTC00 carrier. The civil-date recipe samples at UTC00 of the requested local calendar date instead. Both derive transit and solar-altitude crossings from latitude, longitude, and the selected daily declination, preserve the absolute UTC carrier, then render each event in the supplied IANA zone. Event adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7, and Isha 0 minutes.
+The default civil-date recipe samples USNO solar coordinates at UTC00 of the requested local calendar date. The explicit historical solar-carrier recipe samples at its UTC00 carrier instead. Both derive transit and solar-altitude crossings from latitude, longitude, and the selected daily declination, preserve the absolute UTC carrier, then render each event in the supplied IANA zone. Event adjustments are Fajr 0, sunrise −7, Dhuhr +5, Asr +4, Maghrib +7, and Isha 0 minutes.
 
 Below 44.5° north, the reconstruction uses Fajr at −18°, Isha at −17°, a horizon altitude of −50/60°, and Asr shadow factor 1. The southern route retains real daily crossings and does not invent a twilight replacement. At and above 44.5° north, it reconstructs the archived high-latitude criteria with Fajr at −18°, Isha at −16°, and a minimum five-hour day and night. The detailed northern criteria explicitly name 44.5° as the threshold for estimated times, while a later institutional activity summary broadly describes 45° and above. The [evidence audit](../../methods/diyanet/RULE-EVIDENCE.md) distinguishes these scopes and documents the separate standard twilight and Asr sources; it does not certify the complete operational selector or worldwide recipe.
 
@@ -87,8 +88,8 @@ The layers are [solar coordinates](astronomy.mjs), [geometric crossings](horizon
 
 ## Evidence and limits
 
-The unified core preserves the prior baseline at **59 annual locations/years and 129,210 planned event fields**, exactly for both raw instants and nearest-minute outputs. The regression fixtures contain 36 selected rows across the supported routes and cases. This establishes parity with the prior reconstruction; it is not a new comparison against Diyanet calendars and adds no accuracy claim. The independently checked SPA astronomy substitution is a separate, non-selected experiment; it did not improve full-calendar agreement. See the [SPA comparison and its complete result](../../methods/diyanet/SPA-REFERENCE.md), the [verification record](../../methods/diyanet/research/spa-verification-2026-09-26.json), and the [core regression tests](../../tests/diyanet-core.test.mjs).
+The explicit solar-carrier recipe preserves the prior baseline at **59 annual locations/years and 129,210 planned event fields**, exactly for both raw instants and nearest-minute outputs. Version 1.2's default reproduces the already frozen civil-date recipe over that same complete corpus. The regression fixtures contain 36 selected historical rows across the supported routes and cases, with separate civil-date fixtures. These checks establish software parity; the [existing institutional comparison](CIVIL-DATE.md) supplies the distinct source evidence. The independently checked SPA astronomy substitution is a separate, non-selected experiment; it did not improve full-calendar agreement. See the [SPA comparison and its complete result](../../methods/diyanet/SPA-REFERENCE.md), the [verification record](../../methods/diyanet/research/spa-verification-2026-09-26.json), and the [core regression tests](../../tests/diyanet-core.test.mjs).
 
-The [core parity record](verification.json) records both provider runs, input and implementation hashes, and the distinction between the private full forecast and public model-only fixtures. Run `npm test` for the public regression suite. A permission-restricted test proves that this entry point calculates with network and research-data access denied.
+The historical [core parity record](verification.json) records both provider runs, input and implementation hashes, and the distinction between the private full forecast and public model-only fixtures. The [version 1.2 adoption record](default-verification.json) records the new default and explicit legacy replay. Run `npm test` for the public regression suite. A permission-restricted test proves that this entry point calculates with network and research-data access denied.
 
 No research archives, calendar fixtures, or network access are needed at runtime. The API is suitable as a transparent offline calculation foundation; it does not promise official matching or automatic-notification safety.

@@ -1,0 +1,102 @@
+{
+  "schema": "diyanet-standalone-default-adoption/v1",
+  "date": "2026-09-26",
+  "version": "1.2.0-reconstruction",
+  "scope": "Adoption of an already tested compatibility recipe. Reused observations; no new formula or new source holdout.",
+  "defaultDateBasis": "civil-date",
+  "previousDefaultDateBasis": "solar-carrier",
+  "explicitHistoricalReplayRetained": true,
+  "lowLevelResearchDefault": "solar-carrier",
+  "official": false,
+  "institutionalEquivalence": "not-established",
+  "apiParity": {
+    "cases": 59,
+    "days": 21535,
+    "fields": 129210,
+    "defaultCivilParity": 129210,
+    "explicitLegacyParity": 129210,
+    "pairedUnavailable": 446
+  },
+  "sourceComparisons": [
+    {
+      "interpretation": "printed-date",
+      "plannedFields": 129210,
+      "comparableFields": 128755,
+      "unresolvedSourceCells": 455,
+      "candidate": {
+        "exact": 114590,
+        "withinOneMinute": 128493,
+        "overOneMinute": 262,
+        "maxAbsoluteMinutes": 1443
+      },
+      "baseline": {
+        "exact": 113122,
+        "withinOneMinute": 128493,
+        "overOneMinute": 262,
+        "maxAbsoluteMinutes": 1443
+      },
+      "exactGains": 1520,
+      "exactLosses": 52,
+      "withinOneLosses": 0,
+      "unchangedCases": 57
+    },
+    {
+      "interpretation": "conditional-next-day-isha",
+      "plannedFields": 129210,
+      "comparableFields": 128755,
+      "unresolvedSourceCells": 455,
+      "candidate": {
+        "exact": 114770,
+        "withinOneMinute": 128703,
+        "overOneMinute": 52,
+        "maxAbsoluteMinutes": 3
+      },
+      "baseline": {
+        "exact": 113302,
+        "withinOneMinute": 128703,
+        "overOneMinute": 52,
+        "maxAbsoluteMinutes": 3
+      },
+      "exactGains": 1520,
+      "exactLosses": 52,
+      "withinOneLosses": 0,
+      "unchangedCases": 57
+    }
+  ],
+  "sourceDateCaveat": "Conditional next-day Isha placement is a hypothesis, not confirmed institutional timestamp ownership. Do not add the two interpretation denominators.",
+  "changedAnnuals": [
+    "apia-2027",
+    "nukualofa-2027"
+  ],
+  "unchangedAnnualCount": 57,
+  "changedRoundedFields": 1572,
+  "gates": {
+    "allFrozenCivilRawAndRoundedFieldsMatch": true,
+    "allFrozenLegacyRawAndRoundedFieldsMatch": true,
+    "noCityYearEventAggregateLoss": true,
+    "noCityEventAggregateLoss": true,
+    "noWithinOneMinuteFieldLoss": true,
+    "noAvailabilityChange": true,
+    "all52IndividualOneMinuteRegressionsRetained": true
+  },
+  "verification": {
+    "publicNodeTests": 174,
+    "transitionConstraintPythonTests": 61,
+    "uaeRadialFixtures": 108,
+    "independentNextPrayerCursorChecks": 2104
+  },
+  "evidenceHashes": {
+    "default-plan.json": "60379949a57ed8af5081545831612284dff19a1577ab3636ea50df2f127383ad",
+    "replay-default.mjs": "74471324f3436fcc274d2c8caa002bb6939e9172c88c396d9a84a8aedcc98d50",
+    "default-api-forecast.json": "2db2aa4255a77ed49eef35d92de49e13c8107381edcbafbddc274898de6fd908",
+    "../../public/prayer-times-research/core/diyanet/index.mjs": "f002b7d963931050fb61454ff68ce2d8b072645423874480ac1436798af94b67",
+    "../../public/prayer-times-research/core/diyanet/calendar.mjs": "2380f6ea59c647b3468e43d934b0cdf0e14ad597793a0fd664bdd007bb65096d",
+    "../../public/prayer-times-research/scripts/calculate-diyanet.mjs": "2cce69a6aba439cb94928b0ff086fe2cd37a19d62ebb15ddc9ceab2883f79feb",
+    "references.json": "e81e30e2a64db84893e0cfda8e942b32afd177d10a5dc21f042ad51d1c3a8978",
+    "default-api-parity.json": "57136d2e1489cb3d58aa6c01e48d69fd3c623dc4d51a8224ab042ac0644490b9",
+    "reliability/score-default-api.mjs": "a0dee3ea58684cfac47853ee85c0d31332202ca560476aca97a161bd5fb03bb5",
+    "reliability/default-score.json": "469448f66cabcdc5a2ec93b969fa1793d8bc525ba18b793521d6c17d379c2c51",
+    "reliability/next-prayer-stress.mjs": "f447446b7b54239ea661f31462ffd467a57b38afa7fa97eaaab25320e8720283"
+  },
+  "provenanceNote": "Research-relative names identify retained private audit artifacts, not downloadable paths in this public repository. No original calendar clocks are redistributed here. Earlier complete comparison: civil-date-verification.json."
+}

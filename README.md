@@ -11,7 +11,7 @@ This repository makes the research useful to contributors: readable calculation 
 ## Start here
 
 - **Build with the Diyanet reconstruction:** the [standalone offline core](core/diyanet/) provides daily and annual calculations, the next prayer, actual event dates, optional model seconds, and one input/output contract across its three regional routes.
-- **Evaluate its date-line improvement:** select `dateBasis: 'civil-date'`; the [scope and full-corpus comparison](core/diyanet/CIVIL-DATE.md) explain the Pacific calendar gains, individual regressions, and coordinate-symmetry checks.
+- **Understand the Diyanet default:** version 1.2 adopts `civil-date`; the [scope, comparison and migration](core/diyanet/CIVIL-DATE.md) explain the existing Pacific gains, individual regressions, coordinate-symmetry checks and explicit historical replay.
 - **Use a calculation:** choose a method below, read its input contract, and run its example.
 - **Understand the mathematics:** [calculation architecture](docs/ARCHITECTURE.md) and [astronomical conventions](docs/ASTRONOMY.md).
 - **Assess accuracy:** each method has a `validation.json` and a README explaining its denominators, limits, and source coverage. Read the [validation protocol](docs/VALIDATION.md) before comparing percentages.
@@ -46,7 +46,7 @@ node scripts/run.mjs diyanet --input methods/diyanet/examples/input.json
 
 The first dependency installation requires internet access. Calculations and the public test suite then run locally, without API keys, a server, or requests for prayer calendars. The Adhan dependency is retained only for explicitly identified historical comparison branches; see [third-party notices](THIRD_PARTY_NOTICES.md).
 
-For app integration, import `createDiyanetCalculator` from `core/diyanet/index.mjs`. The [API guide](core/diyanet/README.md) covers day/year queries, a consistent millisecond/ISO cursor for the next prayer, date ownership, missing events, and bounded caching. The core itself has no third-party dependency. It preserves all **129,210** raw and rounded model fields in the existing 59-calendar baseline; this is software parity, not a new claim of agreement with official Diyanet calendars.
+For app integration, import `createDiyanetCalculator` from `core/diyanet/index.mjs`. The [API guide](core/diyanet/README.md) covers day/year queries, a consistent millisecond/ISO cursor for the next prayer, date ownership, missing events, and bounded caching. The core itself has no third-party dependency. Its default reproduces the tested civil-date recipe across **129,210** existing model fields; explicit `solar-carrier` preserves the historical baseline. This is software parity; the [separate calendar comparison](core/diyanet/CIVIL-DATE.md) documents the scoped accuracy evidence.
 
 Examples return the native research result, including actual event dates, UTC instants where supplied by the method, missing-event reasons, and diagnostic metadata. An annual result is previewed by default; add `--full` for the entire result. Different methods deliberately retain different event names when the underlying religious or source meaning is unresolved.
 

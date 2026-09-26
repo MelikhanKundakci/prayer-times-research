@@ -10,8 +10,8 @@ const fixtures=JSON.parse(readFileSync(new URL('diyanet-core-model-fixtures.json
 const berlin={latitude:52.52,longitude:13.405,timeZone:'Europe/Berlin'};
 const reykjavik={latitude:64.1289,longitude:-21.9082,timeZone:'Atlantic/Reykjavik'};
 
-test('Unified core preserves frozen model instants, minutes and dates across all routes',()=>{
-  const calculator=createDiyanetCalculator();
+test('Explicit solar-carrier core preserves historical model instants, minutes and dates across all routes',()=>{
+  const calculator=createDiyanetCalculator({dateBasis:'solar-carrier'});
   assert.equal(fixtures.rows.length,36);
   for(const row of fixtures.rows){
     const result=calculator.calculateDay({date:row.date,...row.location});
@@ -144,8 +144,8 @@ test('Reusing the returned ISO instant as a cursor never repeats a prayer',()=>{
   assert.ok(next.epochMilliseconds>isha.epochMilliseconds);
 });
 
-test('A location/timezone pair with no anchorable noon fails explicitly',()=>{
-  assert.throws(()=>createDiyanetCalculator().calculateYear({year:2026,latitude:60,longitude:180,timeZone:'UTC'}),/Could not anchor calculation to civil date/);
+test('Historical solar-carrier still explicitly rejects its nonconverging noon case',()=>{
+  assert.throws(()=>createDiyanetCalculator({dateBasis:'solar-carrier'}).calculateYear({year:2026,latitude:60,longitude:180,timeZone:'UTC'}),/Could not anchor calculation to civil date/);
 });
 
 test('Core runs without network, calendars, legacy implementations or external dependencies',()=>{

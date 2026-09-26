@@ -44,4 +44,5 @@ export interface DiyanetCalculator {
   clearCache():void;
   cacheInfo():{size:number; capacity:number; annualCalculations:number};
 }
+/** Defaults to civil-date sampling; select solar-carrier to replay the pre-1.2 default. */
 export function createDiyanetCalculator(options?:{cacheSize?:number; dateBasis?:DateBasis}):Readonly<DiyanetCalculator>;

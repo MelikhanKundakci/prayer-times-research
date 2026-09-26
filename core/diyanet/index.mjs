@@ -1,7 +1,7 @@
 /** Offline Diyanet reconstruction: public, defensive, location-explicit API. */
 import {calculateAnnualRaw} from './calendar.mjs';
 
-export const VERSION='1.1.0-reconstruction';
+export const VERSION='1.2.0-reconstruction';
 export const EVENTS=Object.freeze(['fajr','sunrise','dhuhr','asr','maghrib','isha']);
 export const PRAYERS=Object.freeze(['fajr','dhuhr','asr','maghrib','isha']);
 const DAY=86400000,MINUTE=60000;
@@ -73,11 +73,11 @@ function renderDay(day,annual,where){
     calculation:metadata(annual),qualityFlags,events};
 }
 
-/** Create an isolated bounded annual cache; no persisted location or network I/O. */
+/** Create an isolated bounded annual cache with civil-date sampling by default. */
 export function createDiyanetCalculator(options={}){
   record(options,['cacheSize','dateBasis'].filter(key=>options&&Object.hasOwn(options,key)));
   const capacity=options.cacheSize===undefined?4:options.cacheSize;
-  const dateBasis=options.dateBasis===undefined?'solar-carrier':options.dateBasis;
+  const dateBasis=options.dateBasis===undefined?'civil-date':options.dateBasis;
   if(!['solar-carrier','civil-date'].includes(dateBasis))throw new RangeError('dateBasis must be solar-carrier or civil-date');
   if(!Number.isInteger(capacity)||capacity<0||capacity>32)throw new RangeError('cacheSize must be an integer from 0 through 32');
   const cache=new Map();let annualCalculations=0;

@@ -39,8 +39,8 @@ test('Civil-date core reproduces the existing regional recipes for complete year
   }
 });
 
-test('Default baseline preserves historical carrier-solstice semantics away from C=D',()=>{
-  const old=calculateMissingWindowCalendar(seam),fresh=createDiyanetCalculator().calculateYear(seam);
+test('Explicit solar-carrier preserves historical carrier-solstice semantics away from C=D',()=>{
+  const old=calculateMissingWindowCalendar(seam),fresh=createDiyanetCalculator({dateBasis:'solar-carrier'}).calculateYear(seam);
   assert.equal(fresh.calculation.dateBasis,'solar-carrier');
   for(let i=0;i<old.days.length;i++)for(const name of EVENTS)
     assert.equal(fresh.days[i].events[name].rawEpochMilliseconds,old.days[i].events[name].rawEpoch,`${fresh.days[i].date}/${name}`);
@@ -52,8 +52,8 @@ test('Default baseline preserves historical carrier-solstice semantics away from
   assert.equal(improved.calculation.seasonal.solsticeEphemerisDate,'2027-06-21');
 });
 
-test('Civil-date keeps both sides of the antimeridian consistent in all three routes',()=>{
-  const c=civil();
+test('Default calculation keeps both sides of the antimeridian consistent in all three routes',()=>{
+  const c=createDiyanetCalculator();
   for(const latitude of [-45,0,60])for(const year of [2027,2028])for(const magnitude of [180,179.999999]){
     const west=c.calculateYear({year,latitude,longitude:-magnitude,timeZone:'Asia/Anadyr'});
     const east=c.calculateYear({year,latitude,longitude:magnitude,timeZone:'Asia/Anadyr'});
@@ -74,7 +74,7 @@ test('The date-basis choice changes no instants on complete C=D calendars',()=>{
     {latitude:41.012,longitude:28.974,timeZone:'Europe/Istanbul'},
     {latitude:-33.92888,longitude:18.41722,timeZone:'Africa/Johannesburg'},
   ]){
-    const a=createDiyanetCalculator().calculateYear({year:2027,...location}),b=civil().calculateYear({year:2027,...location});
+    const a=createDiyanetCalculator({dateBasis:'solar-carrier'}).calculateYear({year:2027,...location}),b=createDiyanetCalculator().calculateYear({year:2027,...location});
     for(let i=0;i<a.days.length;i++){
       assert.equal(a.days[i].solarCalculationDate,a.days[i].date);
       for(const name of EVENTS)assert.deepEqual(b.days[i].events[name],a.days[i].events[name]);
@@ -82,10 +82,10 @@ test('The date-basis choice changes no instants on complete C=D calendars',()=>{
   }
 });
 
-test('Pacific model snapshots and sampling dates survive unified rendering',()=>{
+test('Default calculation preserves civil-date Pacific model snapshots and sampling dates',()=>{
   const fixture=JSON.parse(readFileSync(new URL('diyanet-civil-ephemeris-snapshots.json',import.meta.url)));
   for(const sample of fixture.cases){
-    const d=civil().calculateDay(sample.input);
+    const d=createDiyanetCalculator().calculateDay(sample.input);
     assert.deepEqual(fixture.events.map(name=>d.events[name].calendarUtc),sample.utc);
     assert.equal(d.solarCalculationDate,sample.carrier);assert.equal(d.solarTimeCarrierDate,sample.carrier);
     assert.equal(d.ephemerisDate,sample.input.date);
@@ -114,7 +114,7 @@ test('The opposite carrier direction retains D geometry without adding a day to 
 });
 
 test('Civil-date resolves the synthetic UTC noon seam while still rejecting skipped civil dates',()=>{
-  const result=civil().calculateYear({...seam,longitude:180,timeZone:'UTC'});
+  const result=createDiyanetCalculator().calculateYear({...seam,longitude:180,timeZone:'UTC'});
   assert.equal(result.days.length,365);
   assert.ok(result.days.every(d=>d.events.dhuhr.calendarDate===d.date));
   assert.throws(()=>civil().calculateDay({date:'2011-12-29',latitude:-13.83,longitude:-171.77,timeZone:'Pacific/Apia'}),/civil date 2011-12-30/);
@@ -145,10 +145,31 @@ test('Unified civil-date runs with legacy modules and reference tables inaccessi
   assert.ifError(child.error);assert.equal(child.status,0,child.stderr);assert.deepEqual(JSON.parse(child.stdout),expected);
 });
 
-test('Command line accepts explicit civil-date selection and rejects duplicated flags',()=>{
+test('Command line defaults to civil-date and keeps explicit legacy replay',()=>{
   const args=[file('scripts/calculate-diyanet.mjs'),'2027-01-01',String(tonga.latitude),String(tonga.longitude),tonga.timeZone];
-  const good=spawnSync(process.execPath,[...args,'--json','--civil-date'],{encoding:'utf8',timeout:10000});
-  assert.equal(good.status,0,good.stderr);assert.equal(JSON.parse(good.stdout).calculation.dateBasis,'civil-date');
-  const bad=spawnSync(process.execPath,[...args,'--civil-date','--civil-date'],{encoding:'utf8',timeout:10000});
-  assert.equal(bad.status,1);assert.equal(bad.stdout,'');
+  for(const [flags,basis] of [[[],'civil-date'],[['--civil-date'],'civil-date'],[['--solar-carrier'],'solar-carrier']]){
+    const good=spawnSync(process.execPath,[...args,'--json',...flags],{encoding:'utf8',timeout:10000});
+    assert.equal(good.status,0,good.stderr);
+    const actual=JSON.parse(good.stdout);
+    const expected=createDiyanetCalculator({dateBasis:basis}).calculateDay({date:'2027-01-01',...tonga});
+    assert.deepEqual(actual,expected);
+  }
+  for(const flags of [['--civil-date','--civil-date'],['--solar-carrier','--solar-carrier'],['--civil-date','--solar-carrier']]){
+    const bad=spawnSync(process.execPath,[...args,...flags],{encoding:'utf8',timeout:10000});
+    assert.equal(bad.status,1);assert.equal(bad.stdout,'');
+  }
+});
+
+test('No-option API uses the improved recipe for day, year and next-prayer queries',()=>{
+  const expected=civil(),input={date:'2027-01-01',...tonga};
+  for(const options of [undefined,{}, {cacheSize:0}, {dateBasis:undefined}]){
+    const actual=createDiyanetCalculator(options),day=actual.calculateDay(input);
+    assert.deepEqual(day,expected.calculateDay(input));
+    assert.equal(day.calculation.dateBasis,'civil-date');
+    assert.equal(day.calculation.official,false);
+    assert.equal(day.calculation.institutionalEquivalence,'not-established');
+    const after=Date.parse(day.events.isha.utc);
+    assert.deepEqual(actual.nextPrayer({after,...tonga}),expected.nextPrayer({after,...tonga}));
+  }
+  assert.deepEqual(createDiyanetCalculator().calculateYear({year:2027,...tonga}),expected.calculateYear({year:2027,...tonga}));
 });
