@@ -6,7 +6,9 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
-The latest [joint feasible-region study](JOINT-FEASIBLE-REGIONS.md) varies the autumn location, quotient and Fajr factor together. It finds 25/28 full-run cases compatible with some location/quotient at the existing factor, while retaining three conflicts; a specific angle-to-time interpretation fails its necessary endpoint screen. Exact coupled constraints and source-free tools are published, with no new timing default or accuracy claim.
+The latest [three-case cause study](THREE-CASE-CAUSES.md) isolates minimum source-cell contradictions in Berlin and Helsinki. Berlin's endpoint exclusions are sensitive to horizon changes of a few seconds; Helsinki's full-run conflict has zero but unattained extra-tolerance infimum. Fixed-quotient controls and exact source-free tools narrow what these failures mean without selecting a timing correction.
+
+The preceding [joint feasible-region study](JOINT-FEASIBLE-REGIONS.md) varies the autumn location, quotient and Fajr factor together. It finds 25/28 full-run cases compatible with some location/quotient at the existing factor, while retaining three conflicts; a specific angle-to-time interpretation fails its necessary endpoint screen. Exact coupled constraints and source-free tools are published, with no new timing default or accuracy claim.
 
 The subsequent [joint autumn-anchor study](JOINT-AUTUMN-ANCHORS.md) computes two adjacent-row calendars and two adaptive night/boundary interactions; all fail their replacement gates. Exact discrete and continuous diagnoses show why anchor changes alone are insufficient under the declared assumptions. No timing default changes.
 

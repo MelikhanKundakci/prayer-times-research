@@ -1,0 +1,6142 @@
+{
+  "planSha256": "41b33522dc3d364da312e29cb6308972a0812ccd20650ef366dd22b515d26bd3",
+  "scope": "Exactly all two-Fajr/two-Isha four-cell subsets of the full Berlin runs; all t in the declared continuous window and free physical q.",
+  "cases": [
+    {
+      "id": "berlin-2026",
+      "search": {
+        "fajrPairs": 465,
+        "ishaPairs": 325,
+        "pairPairCombinations": 151125,
+        "feasibleAtOneCheckedKnot": 150994,
+        "feasibleOnlyAfterContinuousCheck": 0,
+        "infeasibleQuartets": 131
+      },
+      "minimumSourceCellCardinality": 4,
+      "lowerCardinalityProof": {
+        "commonTestDayIndex": {
+          "numerator": "202",
+          "denominator": "1",
+          "approximate": 202.0
+        },
+        "bothCompleteSingleEventsAdmitPhysicalQuotient": {
+          "fajr": {
+            "status": "feasible",
+            "lower": {
+              "numerator": "46612351222120984",
+              "denominator": "255845779575866235",
+              "approximate": 0.1821892520540835
+            },
+            "upper": {
+              "numerator": "33337260467622856",
+              "denominator": "182746985411333025",
+              "approximate": 0.1824230391138121
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          },
+          "isha": {
+            "status": "feasible",
+            "lower": {
+              "numerator": "12651246471501024",
+              "denominator": "69037750044281365",
+              "approximate": 0.18325114105524026
+            },
+            "upper": {
+              "numerator": "447652899267616",
+              "denominator": "2436626472151107",
+              "approximate": 0.18371831069881558
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        },
+        "allObservedXStrictlyGreaterThanTestPoint": true,
+        "argument": "Every at-most-three-cell subset is all-one-event or at-most-two plus one. The entire one-event source set has a physical q at t=lo; any singleton of the other event can attain the required endpoint there with a free slope because its x differs. Thus all such subsets, and all three-plus-one four-cell subsets, are feasible."
+      },
+      "certificates": [
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-06"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "37721125583319",
+                "denominator": "3495347464699904",
+                "approximate": 0.010791809960031422
+              },
+              "upper": {
+                "numerator": "6550067286364429",
+                "denominator": "3495347464699904",
+                "approximate": 1.873938815100544
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "37721125583319",
+              "denominator": "3495347464699904",
+              "approximate": 0.010791809960031422
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "37721125583319",
+              "denominator": "3495347464699904",
+              "approximate": 0.010791809960031422
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-06"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2726151575505",
+                "denominator": "1439260720758784",
+                "approximate": 0.0018941332422854993
+              },
+              "upper": {
+                "numerator": "2543413610409131",
+                "denominator": "1439260720758784",
+                "approximate": 1.767166694487593
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2726151575505",
+              "denominator": "1439260720758784",
+              "approximate": 0.0018941332422854993
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2726151575505",
+              "denominator": "1439260720758784",
+              "approximate": 0.0018941332422854993
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "202670753519121",
+                "denominator": "8897248091963392",
+                "approximate": 0.02277903812777652
+              },
+              "upper": {
+                "numerator": "4059472941230065",
+                "denominator": "2224312022990848",
+                "approximate": 1.8250465309141424
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "202670753519121",
+              "denominator": "8897248091963392",
+              "approximate": 0.02277903812777652
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "202670753519121",
+              "denominator": "8897248091963392",
+              "approximate": 0.02277903812777652
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1847121601811",
+                "denominator": "130841883705344",
+                "approximate": 0.014117204288885958
+              },
+              "upper": {
+                "numerator": "224822260566497",
+                "denominator": "130841883705344",
+                "approximate": 1.718274410301191
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "1847121601811",
+              "denominator": "130841883705344",
+              "approximate": 0.014117204288885958
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "1847121601811",
+              "denominator": "130841883705344",
+              "approximate": 0.014117204288885958
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-11"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9094675390475",
+                "denominator": "1271035441709056",
+                "approximate": 0.007155327925589663
+              },
+              "upper": {
+                "numerator": "585265190939207",
+                "denominator": "317758860427264",
+                "approximate": 1.841853253603218
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "9094675390475",
+              "denominator": "1271035441709056",
+              "approximate": 0.007155327925589663
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "9094675390475",
+              "denominator": "1271035441709056",
+              "approximate": 0.007155327925589663
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-11"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2192614627453",
+                "denominator": "523367534821376",
+                "approximate": 0.004189435686341022
+              },
+              "upper": {
+                "numerator": "227021283822049",
+                "denominator": "130841883705344",
+                "approximate": 1.735081132990267
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2192614627453",
+              "denominator": "523367534821376",
+              "approximate": 0.004189435686341022
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2192614627453",
+              "denominator": "523367534821376",
+              "approximate": 0.004189435686341022
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "32050714307041",
+                "denominator": "1271035441709056",
+                "approximate": 0.025216223918937353
+              },
+              "upper": {
+                "numerator": "569872028150343",
+                "denominator": "317758860427264",
+                "approximate": 1.7934103470288234
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "32050714307041",
+              "denominator": "1271035441709056",
+              "approximate": 0.025216223918937353
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "32050714307041",
+              "denominator": "1271035441709056",
+              "approximate": 0.025216223918937353
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "171884427941393",
+                "denominator": "8897248091963392",
+                "approximate": 0.01931883051531977
+              },
+              "upper": {
+                "numerator": "3751609685452785",
+                "denominator": "2224312022990848",
+                "approximate": 1.6866382264158724
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "171884427941393",
+              "denominator": "8897248091963392",
+              "approximate": 0.01931883051531977
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "171884427941393",
+              "denominator": "8897248091963392",
+              "approximate": 0.01931883051531977
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "322332413796561",
+                "denominator": "24149673392472064",
+                "approximate": 0.013347278389985947
+              },
+              "upper": {
+                "numerator": "10933121651123013",
+                "denominator": "6037418348118016",
+                "approximate": 1.8108935012812364
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "322332413796561",
+              "denominator": "24149673392472064",
+              "approximate": 0.013347278389985947
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "322332413796561",
+              "denominator": "24149673392472064",
+              "approximate": 0.013347278389985947
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "103232329077063",
+                "denominator": "9943983161606144",
+                "approximate": 0.010381386150737307
+              },
+              "upper": {
+                "numerator": "4236438578674611",
+                "denominator": "2485995790401536",
+                "approximate": 1.7041213806682853
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "103232329077063",
+              "denominator": "9943983161606144",
+              "approximate": 0.010381386150737307
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "103232329077063",
+              "denominator": "9943983161606144",
+              "approximate": 0.010381386150737307
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-15"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "169049664557413",
+                "denominator": "6355177208545280",
+                "approximate": 0.026600306963920052
+              },
+              "upper": {
+                "numerator": "2814175768662883",
+                "denominator": "1588794302136320",
+                "approximate": 1.7712650183091003
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "169049664557413",
+              "denominator": "6355177208545280",
+              "approximate": 0.026600306963920052
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "169049664557413",
+              "denominator": "6355177208545280",
+              "approximate": 0.026600306963920052
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-15"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "57798084824581",
+                "denominator": "2616837674106880",
+                "approximate": 0.02208699660528517
+              },
+              "upper": {
+                "numerator": "1088926930743653",
+                "denominator": "654209418526720",
+                "approximate": 1.6644928976961493
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "57798084824581",
+              "denominator": "2616837674106880",
+              "approximate": 0.02208699660528517
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "57798084824581",
+              "denominator": "2616837674106880",
+              "approximate": 0.02208699660528517
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "41454601822439",
+                "denominator": "26691744275890176",
+                "approximate": 0.0015530870292311191
+              },
+              "upper": {
+                "numerator": "4059472941230065",
+                "denominator": "2224312022990848",
+                "approximate": 1.8250465309141424
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "41454601822439",
+              "denominator": "26691744275890176",
+              "approximate": 0.0015530870292311191
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "41454601822439",
+              "denominator": "26691744275890176",
+              "approximate": 0.0015530870292311191
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "249575010672761",
+                "denominator": "13981389858799616",
+                "approximate": 0.017850515091365062
+              },
+              "upper": {
+                "numerator": "6251000123609357",
+                "denominator": "3495347464699904",
+                "approximate": 1.788377317774341
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "249575010672761",
+              "denominator": "13981389858799616",
+              "approximate": 0.017850515091365062
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "249575010672761",
+              "denominator": "13981389858799616",
+              "approximate": 0.017850515091365062
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "85691412057439",
+                "denominator": "5757042883035136",
+                "approximate": 0.014884622852116423
+              },
+              "upper": {
+                "numerator": "2420268308098219",
+                "denominator": "1439260720758784",
+                "approximate": 1.68160519716139
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "85691412057439",
+              "denominator": "5757042883035136",
+              "approximate": 0.014884622852116423
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "85691412057439",
+              "denominator": "5757042883035136",
+              "approximate": 0.014884622852116423
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9094675390475",
+                "denominator": "1271035441709056",
+                "approximate": 0.007155327925589663
+              },
+              "upper": {
+                "numerator": "1718412177473237",
+                "denominator": "953276581281792",
+                "approximate": 1.802637567328708
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "9094675390475",
+              "denominator": "1271035441709056",
+              "approximate": 0.007155327925589663
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "9094675390475",
+              "denominator": "1271035441709056",
+              "approximate": 0.007155327925589663
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2192614627453",
+                "denominator": "523367534821376",
+                "approximate": 0.004189435686341022
+              },
+              "upper": {
+                "numerator": "665670688677283",
+                "denominator": "392525651116032",
+                "approximate": 1.695865446715757
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2192614627453",
+              "denominator": "523367534821376",
+              "approximate": 0.004189435686341022
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2192614627453",
+              "denominator": "523367534821376",
+              "approximate": 0.004189435686341022
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "675967628894483",
+                "denominator": "31775886042726400",
+                "approximate": 0.021272974984413193
+              },
+              "upper": {
+                "numerator": "2814175768662883",
+                "denominator": "1588794302136320",
+                "approximate": 1.7712650183091003
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "675967628894483",
+              "denominator": "31775886042726400",
+              "approximate": 0.021272974984413193
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "675967628894483",
+              "denominator": "31775886042726400",
+              "approximate": 0.021272974984413193
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "228261336756959",
+                "denominator": "13084188370534400",
+                "approximate": 0.01744558625210591
+              },
+              "upper": {
+                "numerator": "1088926930743653",
+                "denominator": "654209418526720",
+                "approximate": 1.6644928976961493
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "228261336756959",
+              "denominator": "13084188370534400",
+              "approximate": 0.01744558625210591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "228261336756959",
+              "denominator": "13084188370534400",
+              "approximate": 0.01744558625210591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "395089816920361",
+                "denominator": "34317956926144512",
+                "approximate": 0.011512626400535197
+              },
+              "upper": {
+                "numerator": "15316176015881597",
+                "denominator": "8579489231536128",
+                "approximate": 1.785208373428926
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "395089816920361",
+              "denominator": "34317956926144512",
+              "approximate": 0.011512626400535197
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "395089816920361",
+              "denominator": "34317956926144512",
+              "approximate": 0.011512626400535197
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "120773246096687",
+                "denominator": "14130923440177152",
+                "approximate": 0.008546734161286556
+              },
+              "upper": {
+                "numerator": "5929463546940091",
+                "denominator": "3532730860044288",
+                "approximate": 1.6784362528159749
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "120773246096687",
+              "denominator": "14130923440177152",
+              "approximate": 0.008546734161286556
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "120773246096687",
+              "denominator": "14130923440177152",
+              "approximate": 0.008546734161286556
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "206762814104871",
+                "denominator": "8897248091963392",
+                "approximate": 0.023238962426104924
+              },
+              "upper": {
+                "numerator": "3909939359852529",
+                "denominator": "2224312022990848",
+                "approximate": 1.7578196401578396
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "206762814104871",
+              "denominator": "8897248091963392",
+              "approximate": 0.023238962426104924
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "206762814104871",
+              "denominator": "8897248091963392",
+              "approximate": 0.023238962426104924
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "9834140912055",
+                "denominator": "523367534821376",
+                "approximate": 0.018790124067231965
+              },
+              "upper": {
+                "numerator": "216026167544289",
+                "denominator": "130841883705344",
+                "approximate": 1.6510475195448886
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "9834140912055",
+              "denominator": "523367534821376",
+              "approximate": 0.018790124067231965
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "9834140912055",
+              "denominator": "523367534821376",
+              "approximate": 0.018790124067231965
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "114212004946239",
+                "denominator": "36860027809562624",
+                "approximate": 0.003098532793743821
+              },
+              "upper": {
+                "numerator": "16561473188448779",
+                "denominator": "9215006952390656",
+                "approximate": 1.7972285071529137
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "114212004946239",
+              "denominator": "36860027809562624",
+              "approximate": 0.003098532793743821
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "114212004946239",
+              "denominator": "36860027809562624",
+              "approximate": 0.003098532793743821
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2013173040681",
+                "denominator": "15177658509819904",
+                "approximate": 0.00013264055449518003
+              },
+              "upper": {
+                "numerator": "6414292440161917",
+                "denominator": "3794414627454976",
+                "approximate": 1.6904563865399627
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2013173040681",
+              "denominator": "15177658509819904",
+              "approximate": 0.00013264055449518003
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2013173040681",
+              "denominator": "15177658509819904",
+              "approximate": 0.00013264055449518003
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "285953712234661",
+                "denominator": "19065531625635840",
+                "approximate": 0.014998465180491622
+              },
+              "upper": {
+                "numerator": "2814175768662883",
+                "denominator": "1588794302136320",
+                "approximate": 1.7712650183091003
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "285953712234661",
+              "denominator": "19065531625635840",
+              "approximate": 0.014998465180491622
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "285953712234661",
+              "denominator": "19065531625635840",
+              "approximate": 0.014998465180491622
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5556580621603",
+                "denominator": "461794883665920",
+                "approximate": 0.012032572941242983
+              },
+              "upper": {
+                "numerator": "1088926930743653",
+                "denominator": "654209418526720",
+                "approximate": 1.6644928976961493
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "5556580621603",
+              "denominator": "461794883665920",
+              "approximate": 0.012032572941242983
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "5556580621603",
+              "denominator": "461794883665920",
+              "approximate": 0.012032572941242983
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "100915479076055",
+                "denominator": "18691697672192",
+                "approximate": 5.398946679208755
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "81124269776087",
+                "denominator": "18691697672192",
+                "approximate": 4.340123149796989
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "74527200009431",
+                "denominator": "18691697672192",
+                "approximate": 3.9871819733264013
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "71228665126103",
+                "denominator": "18691697672192",
+                "approximate": 3.810711385091107
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "1220782911793735",
+                "denominator": "317758860427264",
+                "approximate": 3.841853253603218
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "346247720980531",
+                "denominator": "93458488360960",
+                "approximate": 3.704829032149931
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "488705051232737",
+                "denominator": "130841883705344",
+                "approximate": 3.735081132990267
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "241173786072709",
+                "denominator": "56075093016576",
+                "approximate": 4.3009074635224795
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "181800158172805",
+                "denominator": "56075093016576",
+                "approximate": 3.242083934110715
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "162008948872837",
+                "denominator": "56075093016576",
+                "approximate": 2.8891427576401267
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "152113344222853",
+                "denominator": "56075093016576",
+                "approximate": 2.712672169404833
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "2615613665738453",
+                "denominator": "953276581281792",
+                "approximate": 2.7438140379169433
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "730879907164313",
+                "denominator": "280375465082880",
+                "approximate": 2.6067898164636563
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "1035106595610019",
+                "denominator": "392525651116032",
+                "approximate": 2.6370419173039923
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "661948707062671",
+                "denominator": "168225279049728",
+                "approximate": 3.9348943916270547
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "483827823362959",
+                "denominator": "168225279049728",
+                "approximate": 2.87607086221529
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "424454195463055",
+                "denominator": "168225279049728",
+                "approximate": 2.523129685744702
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "394767381513103",
+                "denominator": "168225279049728",
+                "approximate": 2.346659097509408
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "6800105927572607",
+                "denominator": "2859829743845376",
+                "approximate": 2.3778009660215185
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "110869203865627",
+                "denominator": "49478023249920",
+                "approximate": 2.2407767445682314
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "2674311228741865",
+                "denominator": "1177576953348096",
+                "approximate": 2.2710288454085674
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "4125244323431",
+                "denominator": "1099511627776",
+                "approximate": 3.7518878556793425
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "50337944198359",
+                "denominator": "18691697672192",
+                "approximate": 2.693064326267578
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "43740874431703",
+                "denominator": "18691697672192",
+                "approximate": 2.3401231497969897
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "40442339548375",
+                "denominator": "18691697672192",
+                "approximate": 2.1636525615616953
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "697415376972359",
+                "denominator": "317758860427264",
+                "approximate": 2.1947944300738063
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "192316093091891",
+                "denominator": "93458488360960",
+                "approximate": 2.0577702086205187
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "273200772188641",
+                "denominator": "130841883705344",
+                "approximate": 2.088022309460855
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "1021150976897177",
+                "denominator": "280375465082880",
+                "approximate": 3.642083934110715
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "724282837397657",
+                "denominator": "280375465082880",
+                "approximate": 2.5832604046989505
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "625326790897817",
+                "denominator": "280375465082880",
+                "approximate": 2.230319228228362
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "575848767647897",
+                "denominator": "280375465082880",
+                "approximate": 2.0538486399930678
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "9937863119764009",
+                "denominator": "4766382906408960",
+                "approximate": 2.0849905085051788
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "109232390739589",
+                "denominator": "56075093016576",
+                "approximate": 1.9479662870518915
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "3882507303785519",
+                "denominator": "1962628255580160",
+                "approximate": 1.9782183878922277
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "92146511467",
+                "denominator": "19859928776704",
+                "approximate": 0.0046398208424135575
+              },
+              "upper": {
+                "numerator": "631994435119687",
+                "denominator": "317758860427264",
+                "approximate": 1.9889120771326296
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "92146511467",
+              "denominator": "19859928776704",
+              "approximate": 0.0046398208424135575
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "92146511467",
+              "denominator": "19859928776704",
+              "approximate": 0.0046398208424135575
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "600376055907215",
+                "denominator": "168225279049728",
+                "approximate": 3.5688813197316303
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "422255172207503",
+                "denominator": "168225279049728",
+                "approximate": 2.5100577903198653
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "362881544307599",
+                "denominator": "168225279049728",
+                "approximate": 2.157116613849277
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "333194730357647",
+                "denominator": "168225279049728",
+                "approximate": 1.980646025613983
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "5753370857929855",
+                "denominator": "2859829743845376",
+                "approximate": 2.0117878941260936
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "1576913209938379",
+                "denominator": "841126395248640",
+                "approximate": 1.8747636726728065
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "2243302670653673",
+                "denominator": "1177576953348096",
+                "approximate": 1.9050157735131426
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3503130374641",
+                "denominator": "377338646757376",
+                "approximate": 0.00928378369071077
+              },
+              "upper": {
+                "numerator": "11680789558010693",
+                "denominator": "6037418348118016",
+                "approximate": 1.9347325105691622
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3503130374641",
+              "denominator": "377338646757376",
+              "approximate": 0.00928378369071077
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3503130374641",
+              "denominator": "377338646757376",
+              "approximate": 0.00928378369071077
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "520815995687",
+                "denominator": "155374736900096",
+                "approximate": 0.0033519992122134894
+              },
+              "upper": {
+                "numerator": "4544301834451891",
+                "denominator": "2485995790401536",
+                "approximate": 1.8279603899562111
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "520815995687",
+              "denominator": "155374736900096",
+              "approximate": 0.0033519992122134894
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "520815995687",
+              "denominator": "155374736900096",
+              "approximate": 0.0033519992122134894
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2166980115057",
+                "denominator": "2616837674106880",
+                "approximate": 0.0008280911485258958
+              },
+              "upper": {
+                "numerator": "1109817651671397",
+                "denominator": "654209418526720",
+                "approximate": 1.6964256708053929
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2166980115057",
+              "denominator": "2616837674106880",
+              "approximate": 0.0008280911485258958
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2166980115057",
+              "denominator": "2616837674106880",
+              "approximate": 0.0008280911485258958
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "4328793657573",
+                "denominator": "317758860427264",
+                "approximate": 0.013622888915677851
+              },
+              "upper": {
+                "numerator": "2582178815202147",
+                "denominator": "1588794302136320",
+                "approximate": 1.6252442570634256
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "4328793657573",
+              "denominator": "317758860427264",
+              "approximate": 0.013622888915677851
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "4328793657573",
+              "denominator": "317758860427264",
+              "approximate": 0.013622888915677851
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3451030381511",
+                "denominator": "373833953443840",
+                "approximate": 0.00923145249306371
+              },
+              "upper": {
+                "numerator": "153833186119731",
+                "denominator": "93458488360960",
+                "approximate": 1.646005502738166
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3451030381511",
+              "denominator": "373833953443840",
+              "approximate": 0.00923145249306371
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3451030381511",
+              "denominator": "373833953443840",
+              "approximate": 0.00923145249306371
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "59951566752141",
+                "denominator": "4112173487882240",
+                "approximate": 0.014579046075951412
+              },
+              "upper": {
+                "numerator": "1659179698483761",
+                "denominator": "1028043371970560",
+                "approximate": 1.6139199412408398
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "59951566752141",
+              "denominator": "4112173487882240",
+              "approximate": 0.014579046075951412
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "59951566752141",
+              "denominator": "4112173487882240",
+              "approximate": 0.014579046075951412
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "35393233663713",
+                "denominator": "8598180929208320",
+                "approximate": 0.004116362978997215
+              },
+              "upper": {
+                "numerator": "3505177931920533",
+                "denominator": "2149545232302080",
+                "approximate": 1.6306602341959664
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "35393233663713",
+              "denominator": "8598180929208320",
+              "approximate": 0.004116362978997215
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "35393233663713",
+              "denominator": "8598180929208320",
+              "approximate": 0.004116362978997215
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "154435063207",
+                "denominator": "5841155522560",
+                "approximate": 0.026439128800891065
+              },
+              "upper": {
+                "numerator": "335252604702771",
+                "denominator": "93458488360960",
+                "approximate": 3.5871819733264014
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "154435063207",
+                "denominator": "5841155522560",
+                "approximate": 0.026439128800891065
+              },
+              "upper": {
+                "numerator": "236296558202931",
+                "denominator": "93458488360960",
+                "approximate": 2.5283584439146365
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "154435063207",
+                "denominator": "5841155522560",
+                "approximate": 0.026439128800891065
+              },
+              "upper": {
+                "numerator": "203311209369651",
+                "denominator": "93458488360960",
+                "approximate": 2.175417267444048
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "154435063207",
+                "denominator": "5841155522560",
+                "approximate": 0.026439128800891065
+              },
+              "upper": {
+                "numerator": "186818534953011",
+                "denominator": "93458488360960",
+                "approximate": 1.9989466792087542
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              },
+              "upper": {
+                "numerator": "3225393117451107",
+                "denominator": "1588794302136320",
+                "approximate": 2.0300885477208648
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "318583245934949",
+              "denominator": "6355177208545280",
+              "approximate": 0.050129718728625934
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "318583245934949",
+              "denominator": "6355177208545280",
+              "approximate": 0.050129718728625934
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "154435063207",
+                "denominator": "5841155522560",
+                "approximate": 0.026439128800891065
+              },
+              "upper": {
+                "numerator": "176922930303027",
+                "denominator": "93458488360960",
+                "approximate": 1.8930643262675777
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "154435063207",
+              "denominator": "5841155522560",
+              "approximate": 0.026439128800891065
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "119539448737939",
+                "denominator": "2616837674106880",
+                "approximate": 0.04568088036975297
+              },
+              "upper": {
+                "numerator": "74014807142421",
+                "denominator": "38482906972160",
+                "approximate": 1.923316427107914
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "119539448737939",
+              "denominator": "2616837674106880",
+              "approximate": 0.04568088036975297
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "119539448737939",
+              "denominator": "2616837674106880",
+              "approximate": 0.04568088036975297
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "65731106987223",
+                "denominator": "18691697672192",
+                "approximate": 3.5165937380322836
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "45939897687255",
+                "denominator": "18691697672192",
+                "approximate": 2.457770208620519
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "39342827920599",
+                "denominator": "18691697672192",
+                "approximate": 2.104829032149931
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "36044293037271",
+                "denominator": "18691697672192",
+                "approximate": 1.9283584439146366
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "622648586283591",
+                "denominator": "317758860427264",
+                "approximate": 1.9595003124267474
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "170325860536371",
+                "denominator": "93458488360960",
+                "approximate": 1.82247609097346
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "242414446610913",
+                "denominator": "130841883705344",
+                "approximate": 1.8527281918137963
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "2765958282905",
+                "denominator": "218459216543744",
+                "approximate": 0.012661211216745108
+              },
+              "upper": {
+                "numerator": "6624834077053197",
+                "denominator": "3495347464699904",
+                "approximate": 1.895329189432095
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "2765958282905",
+              "denominator": "218459216543744",
+              "approximate": 0.012661211216745108
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "2765958282905",
+              "denominator": "218459216543744",
+              "approximate": 0.012661211216745108
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "605337473599",
+                "denominator": "89953795047424",
+                "approximate": 0.006729426738247827
+              },
+              "upper": {
+                "numerator": "2574199935986859",
+                "denominator": "1439260720758784",
+                "approximate": 1.788557068819144
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "605337473599",
+              "denominator": "89953795047424",
+              "approximate": 0.006729426738247827
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "605337473599",
+              "denominator": "89953795047424",
+              "approximate": 0.006729426738247827
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "62178858779795",
+                "denominator": "7308453789827072",
+                "approximate": 0.008507799401611355
+              },
+              "upper": {
+                "numerator": "11511665275554913",
+                "denominator": "7308453789827072",
+                "approximate": 1.5751163798255738
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "62178858779795",
+              "denominator": "7308453789827072",
+              "approximate": 0.008507799401611355
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "62178858779795",
+              "denominator": "7308453789827072",
+              "approximate": 0.008507799401611355
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "14115521150509",
+                "denominator": "1719636185841664",
+                "approximate": 0.008208434590250412
+              },
+              "upper": {
+                "numerator": "686082228246353",
+                "denominator": "429909046460416",
+                "approximate": 1.5958776255003144
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "14115521150509",
+              "denominator": "1719636185841664",
+              "approximate": 0.008208434590250412
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "14115521150509",
+              "denominator": "1719636185841664",
+              "approximate": 0.008208434590250412
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "240142302280333",
+                "denominator": "18915998044258304",
+                "approximate": 0.012695195977418963
+              },
+              "upper": {
+                "numerator": "7395171906076795",
+                "denominator": "4728999511064576",
+                "approximate": 1.563792064002988
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "240142302280333",
+              "denominator": "18915998044258304",
+              "approximate": 0.012695195977418963
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "240142302280333",
+              "denominator": "18915998044258304",
+              "approximate": 0.012695195977418963
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "5319428128301",
+                "denominator": "1719636185841664",
+                "approximate": 0.0030933450761839155
+              },
+              "upper": {
+                "numerator": "679485158479697",
+                "denominator": "429909046460416",
+                "approximate": 1.580532356958115
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "5319428128301",
+              "denominator": "1719636185841664",
+              "approximate": 0.0030933450761839155
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "5319428128301",
+              "denominator": "1719636185841664",
+              "approximate": 0.0030933450761839155
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "627937918669",
+                "denominator": "26869315403776",
+                "approximate": 0.02337007509245117
+              },
+              "upper": {
+                "numerator": "1520611553728337",
+                "denominator": "429909046460416",
+                "approximate": 3.5370540960885495
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "627937918669",
+                "denominator": "26869315403776",
+                "approximate": 0.02337007509245117
+              },
+              "upper": {
+                "numerator": "1065413739829073",
+                "denominator": "429909046460416",
+                "approximate": 2.478230566676785
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "627937918669",
+                "denominator": "26869315403776",
+                "approximate": 0.02337007509245117
+              },
+              "upper": {
+                "numerator": "913681135195985",
+                "denominator": "429909046460416",
+                "approximate": 2.1252893902061967
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "627937918669",
+                "denominator": "26869315403776",
+                "approximate": 0.02337007509245117
+              },
+              "upper": {
+                "numerator": "837814832879441",
+                "denominator": "429909046460416",
+                "approximate": 1.9488188019709025
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1405669498749751",
+                "denominator": "29233815159308288",
+                "approximate": 0.04808368292299933
+              },
+              "upper": {
+                "numerator": "14470451065900129",
+                "denominator": "7308453789827072",
+                "approximate": 1.9799606704830133
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "1405669498749751",
+              "denominator": "29233815159308288",
+              "approximate": 0.04808368292299933
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "1405669498749751",
+              "denominator": "29233815159308288",
+              "approximate": 0.04808368292299933
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "627937918669",
+                "denominator": "26869315403776",
+                "approximate": 0.02337007509245117
+              },
+              "upper": {
+                "numerator": "3961475257447573",
+                "denominator": "2149545232302080",
+                "approximate": 1.8429364490297262
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "627937918669",
+              "denominator": "26869315403776",
+              "approximate": 0.02337007509245117
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "525252403732337",
+                "denominator": "12037453300891648",
+                "approximate": 0.04363484456412638
+              },
+              "upper": {
+                "numerator": "5637104923206455",
+                "denominator": "3009363325222912",
+                "approximate": 1.8731885498700622
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "525252403732337",
+              "denominator": "12037453300891648",
+              "approximate": 0.04363484456412638
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "525252403732337",
+              "denominator": "12037453300891648",
+              "approximate": 0.04363484456412638
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "194994297706117",
+                "denominator": "56075093016576",
+                "approximate": 3.477378051757774
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "7977686459189",
+                "denominator": "3298534883328",
+                "approximate": 2.418554522346009
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "115829460506245",
+                "denominator": "56075093016576",
+                "approximate": 2.065613345875421
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "105933855856261",
+                "denominator": "56075093016576",
+                "approximate": 1.8891427576401267
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "1830562363506389",
+                "denominator": "953276581281792",
+                "approximate": 1.9202846261522375
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "499982465331353",
+                "denominator": "280375465082880",
+                "approximate": 1.7832604046989504
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "711850177043875",
+                "denominator": "392525651116032",
+                "approximate": 1.8135125055392864
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "7560702756979",
+                "denominator": "496498219417600",
+                "approximate": 0.015228056136531205
+              },
+              "upper": {
+                "numerator": "2963709350040419",
+                "denominator": "1588794302136320",
+                "approximate": 1.8653826653679237
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "7560702756979",
+              "denominator": "496498219417600",
+              "approximate": 0.015228056136531205
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "7560702756979",
+              "denominator": "496498219417600",
+              "approximate": 0.015228056136531205
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "1900533898709",
+                "denominator": "204440443289600",
+                "approximate": 0.009296271658033923
+              },
+              "upper": {
+                "numerator": "1150499581899109",
+                "denominator": "654209418526720",
+                "approximate": 1.7586105447549727
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "1900533898709",
+              "denominator": "204440443289600",
+              "approximate": 0.009296271658033923
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "1900533898709",
+              "denominator": "204440443289600",
+              "approximate": 0.009296271658033923
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "18890922204065",
+                "denominator": "4130865185554432",
+                "approximate": 0.004573115160021742
+              },
+              "upper": {
+                "numerator": "6347307645150619",
+                "denominator": "4130865185554432",
+                "approximate": 1.5365564742579956
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "18890922204065",
+              "denominator": "4130865185554432",
+              "approximate": 0.004573115160021742
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "18890922204065",
+              "denominator": "4130865185554432",
+              "approximate": 0.004573115160021742
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "7213460387487",
+                "denominator": "971968278953984",
+                "approximate": 0.007421497741932489
+              },
+              "upper": {
+                "numerator": "378415856006891",
+                "denominator": "242992069738496",
+                "approximate": 1.5573177199327362
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "7213460387487",
+              "denominator": "971968278953984",
+              "approximate": 0.007421497741932489
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "7213460387487",
+              "denominator": "971968278953984",
+              "approximate": 0.007421497741932489
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "118905297246399",
+                "denominator": "10691651068493824",
+                "approximate": 0.011121322280783118
+              },
+              "upper": {
+                "numerator": "4076812509109273",
+                "denominator": "2672912767123456",
+                "approximate": 1.5252321584354098
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "118905297246399",
+              "denominator": "10691651068493824",
+              "approximate": 0.011121322280783118
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "118905297246399",
+              "denominator": "10691651068493824",
+              "approximate": 0.011121322280783118
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "51560379623497",
+                "denominator": "22355270415941632",
+                "approximate": 0.002306408227865993
+              },
+              "upper": {
+                "numerator": "8617802781191965",
+                "denominator": "5588817603985408",
+                "approximate": 1.5419724513905366
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "51560379623497",
+              "denominator": "22355270415941632",
+              "approximate": 0.002306408227865993
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "51560379623497",
+              "denominator": "22355270415941632",
+              "approximate": 0.002306408227865993
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "319067792255",
+                "denominator": "15187004358656",
+                "approximate": 0.0210092645474974
+              },
+              "upper": {
+                "numerator": "850106344322795",
+                "denominator": "242992069738496",
+                "approximate": 3.4984941905209714
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "319067792255",
+                "denominator": "15187004358656",
+                "approximate": 0.0210092645474974
+              },
+              "upper": {
+                "numerator": "592820623423211",
+                "denominator": "242992069738496",
+                "approximate": 2.439670661109207
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "319067792255",
+                "denominator": "15187004358656",
+                "approximate": 0.0210092645474974
+              },
+              "upper": {
+                "numerator": "507058716456683",
+                "denominator": "242992069738496",
+                "approximate": 2.0867294846386186
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "319067792255",
+                "denominator": "15187004358656",
+                "approximate": 0.0210092645474974
+              },
+              "upper": {
+                "numerator": "464177762973419",
+                "denominator": "242992069738496",
+                "approximate": 1.9102588964033245
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "768503006879853",
+                "denominator": "16523460742217728",
+                "approximate": 0.04650980922636349
+              },
+              "upper": {
+                "numerator": "8019664830997915",
+                "denominator": "4130865185554432",
+                "approximate": 1.941400764915435
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "768503006879853",
+              "denominator": "16523460742217728",
+              "approximate": 0.04650980922636349
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "768503006879853",
+              "denominator": "16523460742217728",
+              "approximate": 0.04650980922636349
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "319067792255",
+                "denominator": "15187004358656",
+                "approximate": 0.0210092645474974
+              },
+              "upper": {
+                "numerator": "2192245954417303",
+                "denominator": "1214960348692480",
+                "approximate": 1.804376543462148
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "319067792255",
+              "denominator": "15187004358656",
+              "approximate": 0.0210092645474974
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "286173506256459",
+                "denominator": "6803777952677888",
+                "approximate": 0.04206097086749053
+              },
+              "upper": {
+                "numerator": "3120601480364141",
+                "denominator": "1700944488169472",
+                "approximate": 1.834628644302484
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "286173506256459",
+              "denominator": "6803777952677888",
+              "approximate": 0.04206097086749053
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "286173506256459",
+              "denominator": "6803777952677888",
+              "approximate": 0.04206097086749053
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "1739555516566189",
+                "denominator": "504675837149184",
+                "approximate": 3.446876962433155
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "1205192865467053",
+                "denominator": "504675837149184",
+                "approximate": 2.3880534330213905
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "1027071981767341",
+                "denominator": "504675837149184",
+                "approximate": 2.035112256550802
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "938011539917485",
+                "denominator": "504675837149184",
+                "approximate": 1.858641668315508
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "676262063723",
+                "denominator": "19859928776704",
+                "approximate": 0.03405158554829591
+              },
+              "upper": {
+                "numerator": "16213377504146813",
+                "denominator": "8579489231536128",
+                "approximate": 1.8897835368276188
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "676262063723",
+              "denominator": "19859928776704",
+              "approximate": 0.03405158554829591
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "3399221947",
+                "denominator": "1168231104512",
+                "approximate": 0.0029097170361851834
+              },
+              "upper": {
+                "numerator": "4422876374037857",
+                "denominator": "2523379185745920",
+                "approximate": 1.7527593153743315
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "3399221947",
+              "denominator": "1168231104512",
+              "approximate": 0.0029097170361851834
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "229952983837",
+                "denominator": "8177617731584",
+                "approximate": 0.02811980106979863
+              },
+              "upper": {
+                "numerator": "6298899453872827",
+                "denominator": "3532730860044288",
+                "approximate": 1.7830114162146677
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "229952983837",
+              "denominator": "8177617731584",
+              "approximate": 0.02811980106979863
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "berlin-2027",
+      "search": {
+        "fajrPairs": 528,
+        "ishaPairs": 351,
+        "pairPairCombinations": 185328,
+        "feasibleAtOneCheckedKnot": 185319,
+        "feasibleOnlyAfterContinuousCheck": 0,
+        "infeasibleQuartets": 9
+      },
+      "minimumSourceCellCardinality": 4,
+      "lowerCardinalityProof": {
+        "commonTestDayIndex": {
+          "numerator": "203",
+          "denominator": "1",
+          "approximate": 203.0
+        },
+        "bothCompleteSingleEventsAdmitPhysicalQuotient": {
+          "fajr": {
+            "status": "feasible",
+            "lower": {
+              "numerator": "1741216216569552",
+              "denominator": "10198727033439475",
+              "approximate": 0.1707287792741654
+            },
+            "upper": {
+              "numerator": "97448376735709424",
+              "denominator": "569088968465922705",
+              "approximate": 0.17123575070941596
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          },
+          "isha": {
+            "status": "feasible",
+            "lower": {
+              "numerator": "6656894269288367",
+              "denominator": "38755162727070005",
+              "approximate": 0.17176793492441222
+            },
+            "upper": {
+              "numerator": "351867451137397",
+              "denominator": "2039745406687895",
+              "approximate": 0.17250557348171877
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        },
+        "allObservedXStrictlyGreaterThanTestPoint": true,
+        "argument": "Every at-most-three-cell subset is all-one-event or at-most-two plus one. The entire one-event source set has a physical q at t=lo; any singleton of the other event can attain the required endpoint there with a free slope because its x differs. Thus all such subsets, and all three-plus-one four-cell subsets, are feasible."
+      },
+      "certificates": [
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-16"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "98872448983",
+                "denominator": "88785563942912",
+                "approximate": 0.0011136095170446148
+              },
+              "upper": {
+                "numerator": "128935089004557",
+                "denominator": "74766790688768",
+                "approximate": 1.7244967694450812
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "98872448983",
+              "denominator": "88785563942912",
+              "approximate": 0.0011136095170446148
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "98872448983",
+              "denominator": "88785563942912",
+              "approximate": 0.0011136095170446148
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-21"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "373750355927",
+                "denominator": "88785563942912",
+                "approximate": 0.004209584749242757
+              },
+              "upper": {
+                "numerator": "7195368445371109",
+                "denominator": "4261707069259776",
+                "approximate": 1.6883770584027695
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "373750355927",
+              "denominator": "88785563942912",
+              "approximate": 0.004209584749242757
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "373750355927",
+              "denominator": "88785563942912",
+              "approximate": 0.004209584749242757
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-23"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "31660484423559",
+                "denominator": "18467397300125696",
+                "approximate": 0.0017143988353650413
+              },
+              "upper": {
+                "numerator": "31319201402793099",
+                "denominator": "18467397300125696",
+                "approximate": 1.6959185365324831
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "31660484423559",
+              "denominator": "18467397300125696",
+              "approximate": 0.0017143988353650413
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "31660484423559",
+              "denominator": "18467397300125696",
+              "approximate": 0.0017143988353650413
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-24"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "4868579378093",
+                "denominator": "2397210226458624",
+                "approximate": 0.0020309355117699903
+              },
+              "upper": {
+                "numerator": "1245193583385791",
+                "denominator": "752065953398784",
+                "approximate": 1.6556973198406781
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "4868579378093",
+              "denominator": "2397210226458624",
+              "approximate": 0.0020309355117699903
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "4868579378093",
+              "denominator": "2397210226458624",
+              "approximate": 0.0020309355117699903
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-26"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-14"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "450740476669",
+                "denominator": "677574040616960",
+                "approximate": 0.0006652268972090218
+              },
+              "upper": {
+                "numerator": "19034237487015773",
+                "denominator": "10841184649871360",
+                "approximate": 1.7557340919602942
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "450740476669",
+              "denominator": "677574040616960",
+              "approximate": 0.0006652268972090218
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "450740476669",
+              "denominator": "677574040616960",
+              "approximate": 0.0006652268972090218
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-26"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "250608830168503",
+                "denominator": "41196501669511168",
+                "approximate": 0.006083255131199025
+              },
+              "upper": {
+                "numerator": "68580327995292667",
+                "denominator": "41196501669511168",
+                "approximate": 1.664712420133669
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "250608830168503",
+              "denominator": "41196501669511168",
+              "approximate": 0.006083255131199025
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "250608830168503",
+              "denominator": "41196501669511168",
+              "approximate": 0.006083255131199025
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-27"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "383575106969",
+                "denominator": "1331783459143680",
+                "approximate": 0.00028801612179177685
+              },
+              "upper": {
+                "numerator": "6944679794238181",
+                "denominator": "4261707069259776",
+                "approximate": 1.629553528991005
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "383575106969",
+              "denominator": "1331783459143680",
+              "approximate": 0.00028801612179177685
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "383575106969",
+              "denominator": "1331783459143680",
+              "approximate": 0.00028801612179177685
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-28"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-14"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "18639311240427",
+                "denominator": "11588852556759040",
+                "approximate": 0.0016083828100441123
+              },
+              "upper": {
+                "numerator": "20437937586350047",
+                "denominator": "11588852556759040",
+                "approximate": 1.7635859535058023
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "18639311240427",
+              "denominator": "11588852556759040",
+              "approximate": 0.0016083828100441123
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "18639311240427",
+              "denominator": "11588852556759040",
+              "approximate": 0.0016083828100441123
+            }
+          }
+        },
+        {
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-28"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "zeroShiftFeasible": false,
+          "sourceCellCount": 4,
+          "commonClockCorrectionMinutes": [
+            {
+              "status": "feasible",
+              "lower": {
+                "numerator": "152633047820157",
+                "denominator": "44037639715684352",
+                "approximate": 0.003465967949362998
+              },
+              "upper": {
+                "numerator": "73655783237909993",
+                "denominator": "44037639715684352",
+                "approximate": 1.672564281679177
+              },
+              "lowerClosed": false,
+              "upperClosed": false
+            }
+          ],
+          "nearestZeroMinutes": {
+            "status": "feasible",
+            "absoluteInfimum": {
+              "numerator": "152633047820157",
+              "denominator": "44037639715684352",
+              "approximate": 0.003465967949362998
+            },
+            "attained": false,
+            "signedBoundary": {
+              "numerator": "152633047820157",
+              "denominator": "44037639715684352",
+              "approximate": 0.003465967949362998
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "scriptSha256": "0ffd19650f8ca5b057a68e030d7594b98a69cf9cfa8cd0b57d2efea3f17851b6",
+  "limits": "Conditional model/horizon/source-rounding certificate, not a faulty official calendar claim. No source clocks redistributed in this report.",
+  "publicExport": {
+    "originalReportSha256": "9c637a231bbb599c422d042a67dbf1023fc9cd5a022915019a7ac393f9421929",
+    "omitted": "Diagnostic constraint witness details; exact bounds, strictness and statuses retained."
+  }
+}

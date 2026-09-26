@@ -40,7 +40,7 @@ This is the additive V2 diagnostic. Its compound-conflict classification correct
 
 ## Segment discovery and positive interval ratios
 
-[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor, envelope and joint-space tests below, the complete suite has **42 tests**.
+[identification.py](identification.py) adds two source-free helpers covered by ten identification tests, alongside the original nine. With the moving-anchor, envelope, joint-space and sensitivity tests below, the complete suite has **53 tests**.
 
 - `affine_runs(values, minimum_length=7)` returns **all inclusion-maximal** contiguous compatible intervals, preserving overlapping alternatives. Inputs are ordered `(x, minute, label)` triples with strictly increasing finite `x`. The minimum must be an integer at least two. Split missing/unresolved observations into separate calls before invoking it; no calendar dates, institutional transition days or date interpretations are inferred. A compatible line need not be the generating rule.
 - `positive_ratio(numerator, denominator)` returns the exact interval image of all independently possible `A / D`, retaining open/closed bounds and empty-input conflicts. Nonempty input intervals must be bounded with strictly positive lower bounds. Zero-touching, sign-changing and unbounded domains reject explicitly. This restricted contract covers the reviewed factor intervals; it is not unrestricted interval division.
@@ -92,4 +92,16 @@ Seven additional source-free tests brought the total at this stage to **26**. Th
 - `factor_interval(A, D, night)` and `quotient_interval(A, D, night, k)` operate on pointwise `Interval` inputs. The latter preserves coupling between both events at the supplied positive `k` and night length; it is not a product of independent parameter ranges.
 - This module's `normalize` and `intersect_sets` support infinite interval ends as well as strict touching holes. Unlike the finite-only versions in `moving_anchor.py`, they can represent an unbounded factor projection.
 
-Six envelope tests and ten joint-space tests bring the suite to **42**. They check exact point-oracle agreement, optimizing-face attainment, strict physical limits, zero-denominator limits, constant-ratio extrema, isolated boundaries, disconnected unions and the difference between a common factor and a common time. See the [joint feasible-region study](../../JOINT-FEASIBLE-REGIONS.md) for research inputs and limitations. None of these helpers runs inside the prayer-time calculator.
+Six envelope tests and ten joint-space tests brought the suite at this stage to **42**. They check exact point-oracle agreement, optimizing-face attainment, strict physical limits, zero-denominator limits, constant-ratio extrema, isolated boundaries, disconnected unions and the difference between a common factor and a common time. See the [joint feasible-region study](../../JOINT-FEASIBLE-REGIONS.md) for research inputs and limitations. None of these helpers runs inside the prayer-time calculator.
+
+## Conditional horizon sensitivity
+
+[perturbations.py](perturbations.py) provides exact elimination and sensitivity functions. It accepts the affine source bands described above; coefficients and scalar floats are converted to exact binary rationals. These are endpoint constraints with free source-line slopes, not complete prayer calendars.
+
+- `project_second(inequalities)` existentially eliminates `x` from rows `(a, b, rhs, closed, label)` representing `a*x + b*y <= rhs`, or strict `<` when `closed=False`. It returns the exact interval for `y`, including unbounded directions and strict impossibility.
+- `projected_correction(fajr, isha, R, S, N, k, alpha, beta, lo, hi, closed=False, physical=True)` projects the constant correction `z` for perturbed horizons `R+alpha*z`, `S+beta*z` over one temporal piece. Horizon and night inputs are `(intercept,slope)` pairs; source bands include their attainment flags. It requires positive `k` and an ordered finite domain. By default the temporal endpoints are open; evaluate knots separately with `lo=hi` and `closed=True`. With `physical=True`, the shared night duration obeys `0<D<N′`; `physical=False` is only a relaxed lower-bound control.
+- `nearest_zero(intervals)` reports the infimum absolute correction and whether it is attained. An empty set is not a zero correction; an open zero boundary is not an accepted zero.
+
+[fixed_quotient.py](fixed_quotient.py) supplies `projected_fixed_quotient` with an additional explicit `q` argument before `k`. It retains `0<q<1`, recomputes both endpoint responses to the perturbed night length, and requires `N′>0`. It does not recalculate a location-dependent solar model or quotient rule. Normalized unions can be built with the existing `joint_space.normalize` helper.
+
+Eight perturbation tests and three fixed-quotient tests bring the public suite to **53**. They cover 1,250 elimination/point-oracle comparisons, open versus attained optima, physical-night exclusions, unchanged versus recomputed night terms, unbounded eliminated directions and isolated temporal knots. The [three-case study](../../THREE-CASE-CAUSES.md) explains why these sensitivities do not identify city coordinates or authorize clock offsets.

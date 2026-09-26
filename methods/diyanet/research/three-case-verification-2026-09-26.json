@@ -1,0 +1,2498 @@
+{
+  "scope": "Retrospective verification of a conditional endpoint diagnostic. No new production formula, accuracy gain, official equivalence or notification readiness is claimed.",
+  "reproducibility": "Published source-free helpers and synthetic tests are directly runnable. Complete source reparses and archive-based drivers require the previously collected private calendar archives. Hashes identify those inputs; they do not make those archives publicly available.",
+  "mainDriver": {
+    "projectionWitnesses": 3285,
+    "pointOracleQuotients": 2190,
+    "zeroShiftControls": 168
+  },
+  "independentFreeQuotientProjection": {
+    "method": "Independent rational vertex LPs in (t,Bf,Bi) on each open envelope/horizon cell, plus fixed-t (Bf,Bi) vertex LPs at every knot. Strict source/physical/time facets are tested on the full objective face; no perturbation.py or root driver/imported elimination is used.",
+    "checks": {
+      "pieceLPs": 1494,
+      "pointLPs": 1743,
+      "exactModeSetComparisons": 252,
+      "globalMinima": 252
+    },
+    "berlinTwoYearIntersections": {
+      "0": {
+        "commonClock": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "6355177208545280",
+              "approximate": 0.050129718728625934
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "130841883705344",
+              "approximate": 0.3737365951751408
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ],
+        "horizonHalfSpan": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "373833953443840",
+              "approximate": 0.8522052183866409
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "7696581394432",
+              "approximate": 6.353522117977393
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ]
+      },
+      "1": {
+        "commonClock": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "6355177208545280",
+              "approximate": 0.050129718728625934
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "130841883705344",
+              "approximate": 0.3737365951751408
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ],
+        "horizonHalfSpan": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "373833953443840",
+              "approximate": 0.8522052183866409
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "7696581394432",
+              "approximate": 6.353522117977393
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ]
+      },
+      "2": {
+        "commonClock": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "6355177208545280",
+              "approximate": 0.050129718728625934
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "130841883705344",
+              "approximate": 0.3737365951751408
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ],
+        "horizonHalfSpan": [
+          {
+            "lower": {
+              "numerator": "318583245934949",
+              "denominator": "373833953443840",
+              "approximate": 0.8522052183866409
+            },
+            "upper": {
+              "numerator": "48900400122337",
+              "denominator": "7696581394432",
+              "approximate": 6.353522117977393
+            },
+            "lowerClosed": false,
+            "upperClosed": false
+          }
+        ]
+      }
+    },
+    "note": "All reported signed feasible-shift unions and minimum/infimum distances matched exact LP reconstruction."
+  },
+  "independentFixedQuotientProjection": {
+    "method": "Independent exact rational LP projection of (t,z) per open envelope cell, with independent interval constraints at knots; retained half-open rounded source bands and strict Nprime>0. No fixed_quotient.py, project_second, or evaluate_fixed.py imported.",
+    "checks": {
+      "modeSets": 168,
+      "minima": 168,
+      "freeQInclusions": 168
+    },
+    "zeroCommonClockCounts": {
+      "0": 13,
+      "1": 16,
+      "2": 19
+    },
+    "helsinkiFullRunEmpty": true,
+    "hashChecks": {
+      "research/diyanet-three-case-causes-2026-09-26/report.json": {
+        "expected": "ca961dc7af0824bf43f7f51ade71bc3f3f83ef09400e46018f0d011ef68864ce",
+        "actual": "ca961dc7af0824bf43f7f51ade71bc3f3f83ef09400e46018f0d011ef68864ce",
+        "match": true
+      },
+      "research/diyanet-three-case-causes-2026-09-26/plan.json": {
+        "expected": "41b33522dc3d364da312e29cb6308972a0812ccd20650ef366dd22b515d26bd3",
+        "actual": "41b33522dc3d364da312e29cb6308972a0812ccd20650ef366dd22b515d26bd3",
+        "match": true
+      },
+      "research/diyanet-three-case-causes-2026-09-26/evaluate.py": {
+        "expected": "22dd78e0f03b31afa000e3d8434b1cbe76bf7f9ee1094416265d530b45c2eecd",
+        "actual": "22dd78e0f03b31afa000e3d8434b1cbe76bf7f9ee1094416265d530b45c2eecd",
+        "match": true
+      },
+      "research/diyanet-three-case-causes-2026-09-26/perturbations.py": {
+        "expected": "e0729291eb5c0f3057862990f321ae512b4677696b93f20adca704df0ef6ba54",
+        "actual": "e0729291eb5c0f3057862990f321ae512b4677696b93f20adca704df0ef6ba54",
+        "match": true
+      },
+      "research/diyanet-joint-anchor-location-2026-09-25/report.json": {
+        "expected": "e102c04d896adf3af3f91ffc81a7dc51c0ec5301e502bcd90298a9a646612e60",
+        "actual": "e102c04d896adf3af3f91ffc81a7dc51c0ec5301e502bcd90298a9a646612e60",
+        "match": true
+      }
+    },
+    "berlinMinima": {
+      "berlin-2026": {
+        "0": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "1343817498679591142180222466952637259358651889",
+              "denominator": "64829217314696631103765640218938223750356664320",
+              "approximate": 0.020728578168025345
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": null,
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              }
+            },
+            "minimumIncrease": null
+          }
+        },
+        "1": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "1343817498679591142180222466952637259358651889",
+              "denominator": "64829217314696631103765640218938223750356664320",
+              "approximate": 0.020728578168025345
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": null,
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              }
+            },
+            "minimumIncrease": null
+          }
+        },
+        "2": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "25432182300690931325944292827757962146172403",
+                "denominator": "358916082019081694692128111938758332181905408",
+                "approximate": 0.07085829689665128
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "6355177208545280",
+                "approximate": 0.050129718728625934
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "1343817498679591142180222466952637259358651889",
+              "denominator": "64829217314696631103765640218938223750356664320",
+              "approximate": 0.020728578168025345
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": null,
+            "freeQ": {
+              "infimum": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "318583245934949",
+                "denominator": "373833953443840",
+                "approximate": 0.8522052183866409
+              }
+            },
+            "minimumIncrease": null
+          }
+        }
+      },
+      "berlin-2027": {
+        "0": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "6608936332868665010593107656691072822463531",
+                "denominator": "440048760587643655311213287212100346414366720",
+                "approximate": 0.015018645488384181
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "6608936332868665010593107656691072822463531",
+                "denominator": "440048760587643655311213287212100346414366720",
+                "approximate": 0.015018645488384181
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "6042708217769",
+                "denominator": "710284511543296",
+                "approximate": 0.00850744753625486
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "6042708217769",
+                "denominator": "710284511543296",
+                "approximate": 0.00850744753625486
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "3701896008697702321415394769588428520811770067",
+              "denominator": "568542998679235602662087567078033647567361802240",
+              "approximate": 0.006511197952129321
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "77896150351022166564454212121295388803262821",
+                "denominator": "462807778565463648217435003401839851528519680",
+                "approximate": 0.16831210268866265
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "77896150351022166564454212121295388803262821",
+                "denominator": "462807778565463648217435003401839851528519680",
+                "approximate": 0.16831210268866265
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "6042708217769",
+                "denominator": "41781441855488",
+                "approximate": 0.14462660811633263
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "6042708217769",
+                "denominator": "41781441855488",
+                "approximate": 0.14462660811633263
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "26034348927205483749107437895433179659953283",
+              "denominator": "1099168474092976164516408133079369647380234240",
+              "approximate": 0.023685494572330046
+            }
+          }
+        },
+        "1": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "2473322870271622521035561358098858047807473",
+                "denominator": "183682314603745561421458034461565631422529536",
+                "approximate": 0.013465220511878217
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "2473322870271622521035561358098858047807473",
+                "denominator": "183682314603745561421458034461565631422529536",
+                "approximate": 0.013465220511878217
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "6042708217769",
+                "denominator": "710284511543296",
+                "approximate": 0.00850744753625486
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "6042708217769",
+                "denominator": "710284511543296",
+                "approximate": 0.00850744753625486
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "1176566538351577326008590426393505516120724073",
+              "denominator": "237317550468039265356523780524342795797908160512",
+              "approximate": 0.004957772975623357
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "2473322870271622521035561358098858047807473",
+                "denominator": "15922354392020246498218401394166191555084288",
+                "approximate": 0.15533650422397138
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "2473322870271622521035561358098858047807473",
+                "denominator": "15922354392020246498218401394166191555084288",
+                "approximate": 0.15533650422397138
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "6042708217769",
+                "denominator": "41781441855488",
+                "approximate": 0.14462660811633263
+              },
+              "attained": false,
+              "signed": {
+                "numerator": "6042708217769",
+                "denominator": "41781441855488",
+                "approximate": 0.14462660811633263
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "12960033860893259238282541516483202146448729",
+              "denominator": "1210098933793538733864598505956630558186405888",
+              "approximate": 0.010709896107638782
+            }
+          }
+        },
+        "2": {
+          "commonClock": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              },
+              "attained": true,
+              "signed": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              },
+              "attained": true,
+              "signed": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "0",
+              "denominator": "1",
+              "approximate": 0.0
+            }
+          },
+          "horizonHalfSpan": {
+            "fixedQ": {
+              "infimum": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              },
+              "attained": true,
+              "signed": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              }
+            },
+            "freeQ": {
+              "infimum": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              },
+              "attained": true,
+              "signed": {
+                "numerator": "0",
+                "denominator": "1",
+                "approximate": 0.0
+              }
+            },
+            "minimumIncrease": {
+              "numerator": "0",
+              "denominator": "1",
+              "approximate": 0.0
+            }
+          }
+        }
+      }
+    },
+    "conclusion": "Every fixed-q signed correction set and global infimum/attainment matched the frozen report; all 168 sets were contained in the matching free-q sets; zero-shift counts replayed as 13/16/19.",
+    "reviewCodeSha256": {
+      "verify_fixed_quotient.py": "5d7c82a87dfaea0be6b12e2ad9f63907b7a4f51dcc2b77c14ac6263c3f670d83",
+      "reportSha256": "78751b386ae73092105cdba76951702528be05ab90b2044a5877b0bba5717688",
+      "planSha256": "cab34f397a8cc674fd037aca640721c6f6c884bb4585a924ee363e5bd8e8d3cc"
+    }
+  },
+  "berlinOriginalSourceAndQuartetReplay": {
+    "method": "Original source reparse plus independent exact rational projection from each two-cell pair to endpoint values; exact piecewise-linear continuous feasibility proof over [b−3,b+3], including every horizon/source knot, every lower/upper bound intersection, and interval midpoints. It does not trust saved zeroShiftFeasible booleans or root feasibility code.",
+    "hashes": {
+      "berlin2026Json": "e428aee56c9efaa1dc52c88e22684d4e816393fa2fbc3f45db2e2f3b20a8f351",
+      "berlin2027Html": "01f1ca0908e179f90a244e5a541a22a053a25b1209d1b080ab2b2c25bd04e637",
+      "berlin2027JsonCrosscheck": "a19952f506cdcb41fcdf72abaa6d7ba49e6172e8ea7246f750b4bcf14c3f5637",
+      "sourceRosterReport": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6",
+      "rootPlan": "41b33522dc3d364da312e29cb6308972a0812ccd20650ef366dd22b515d26bd3",
+      "rootReport": "ca961dc7af0824bf43f7f51ade71bc3f3f83ef09400e46018f0d011ef68864ce",
+      "witnessFile": "9c637a231bbb599c422d042a67dbf1023fc9cd5a022915019a7ac393f9421929"
+    },
+    "sourceReparse": {
+      "cellsReparsed": 117,
+      "byYearEvent": {
+        "2026-fajr": 31,
+        "2026-isha": 26,
+        "2027-fajr": 33,
+        "2027-isha": 27
+      },
+      "allUtcDateSameAsCivilDate": true,
+      "allIanaRoundTrips": true,
+      "utcOffsets": [
+        "+0200"
+      ],
+      "allMatchInverseRosterUtcMinutes": true,
+      "2027JsonHtmlEndpointAgreement": true
+    },
+    "continuousQuartets": {
+      "certificatesReplayed": 140,
+      "berlin2026": 131,
+      "berlin2027": 9,
+      "recomputedFeasible": 0,
+      "savedFalseReplayedFalse": true,
+      "certificates": [
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-06"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-06"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-11"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-11"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-15"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-15"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-26",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-01"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-04"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-07"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-10"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-13"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-14"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-16"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-17"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-09"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-18"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-19"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-20"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-21"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-22"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-23"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-12"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-13"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-17"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-26",
+            "2026-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-24"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-03"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-07"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-11"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-15"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-16"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-19"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2026",
+          "fajrDates": [
+            "2026-07-29",
+            "2026-08-25"
+          ],
+          "ishaDates": [
+            "2026-07-30",
+            "2026-08-20"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-16"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-21"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-23"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-24"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-26"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-14"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-26"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-27"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-28"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-14"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        },
+        {
+          "id": "berlin-2027",
+          "fajrDates": [
+            "2027-07-28",
+            "2027-08-28"
+          ],
+          "ishaDates": [
+            "2027-07-30",
+            "2027-08-18"
+          ],
+          "independentlyFeasible": false,
+          "criticalPointsChecked": 7
+        }
+      ]
+    }
+  },
+  "helsinkiOriginalSourceReparse": {
+    "sourceRowCount": 20,
+    "allCellsMatchedInverseXU": true,
+    "timezone": "Europe/Helsinki",
+    "dateIndexSensitivity": {
+      "sourceDayIndexFeasibleStatus": "tie-only-conflict",
+      "uniformPlusOneDayFeasibleStatus": "tie-only-conflict",
+      "utcDateIndexEqualsPrintedDateIndex": true,
+      "inverseModesUseIdenticalIshaCells": true
+    }
+  },
+  "helsinkiIndependentReplay": {
+    "independentSubsetStatuses": 1358,
+    "singletons": 20,
+    "pairs": 190,
+    "triples": 1140,
+    "primaryMinimumWitnesses": 84,
+    "allWitnessDatesMatch": true,
+    "timezoneReparsedRows": 20,
+    "result": "PASS",
+    "codeSha256": "dbc9b8353499518e95e6afade14f9f2dd32e605f937825f4781fe6102ce895f5",
+    "sourceReportSha256": "e8f3119e6896e4490196ca7c6b1d47c068daa20477c223b056feedc7fb851f9a"
+  },
+  "helsinkiBranchInterpretation": {
+    "conclusion": "Sep 11 raw-angle and seasonal predictions both round to source 22:14. Crossing onto the endpoint does not change the rounded minute for Sep 11. Sep 10 seasonal value is one minute later than source; Sep 12 angle value matches source. Removing Sep 11 from tie constraints removes the diagnostic contradiction, but this is not a correction or validation.",
+    "crossingDayIndex": 253.02521067509517,
+    "planSha256": "ceb1f7be4a4dff0db4ca7954859a0a8395b559a6f1ba6c67c149e9ec660925c8",
+    "reportSha256": "041314a81c138ded2e2839da8e0597b1b0cfb334e06542e0d851acf5ac8e8b91"
+  },
+  "reviewCorrections": {
+    "emptyCertification": {
+      "issue": "Initial certificate flag was true for an empty source-line case because both bounds were empty. No physical witness exists in that case.",
+      "correction": "Require feasible lower/upper sets before marking an independent-horizon bound certified. All numeric feasible sets and case counts stay unchanged. Remove an unused empty comprehension.",
+      "supersededReportSha256": "d6df6a82c5696e7e278a2a128e2f3a939c0ebaceb4793028a1768e3bb2ee8289"
+    },
+    "positiveToleranceAssertion": {
+      "issue": "Initial independent_check.py asserted that full-run feasibility status should equal feasibility status after positive vertical tolerance. That expectation was wrong: the full Helsinki run is tie-only infeasible under the three real tie policies, while delta=1/1024 must be feasible.",
+      "fix": "Changed the independent assertion to explicitly require positive-tolerance feasibility under every tested tie policy, including closed-bin relaxation.",
+      "result": {
+        "independentSubsetStatuses": 1358,
+        "singletons": 20,
+        "pairs": 190,
+        "triples": 1140,
+        "primaryMinimumWitnesses": 84,
+        "allWitnessDatesMatch": true,
+        "timezoneReparsedRows": 20,
+        "result": "PASS",
+        "codeSha256": "dbc9b8353499518e95e6afade14f9f2dd32e605f937825f4781fe6102ce895f5",
+        "sourceReportSha256": "e8f3119e6896e4490196ca7c6b1d47c068daa20477c223b056feedc7fb851f9a"
+      }
+    }
+  },
+  "publicSourceCopyParity": {
+    "perturbations.py": "e0729291eb5c0f3057862990f321ae512b4677696b93f20adca704df0ef6ba54",
+    "fixed_quotient.py": "4f7ae3a9046003c79aeb83c16e3e44c02ecb39f7fc9aaa10eb6c4d7014e36e5d",
+    "test_perturbations.py": "982a29e040a9f171637dd0d68d64ea627f0fefcb9e176ee34a0082797c688173",
+    "test_fixed_quotient.py": "6d983c1696b121444c75422b2320da150559ef6792b4d0c82687a034d138862b"
+  },
+  "archiveStudyFilesSha256": {
+    "berlin-witnesses.json": "9c637a231bbb599c422d042a67dbf1023fc9cd5a022915019a7ac393f9421929",
+    "berlin_witnesses.py": "0ffd19650f8ca5b057a68e030d7594b98a69cf9cfa8cd0b57d2efea3f17851b6",
+    "evaluate.py": "22dd78e0f03b31afa000e3d8434b1cbe76bf7f9ee1094416265d530b45c2eecd",
+    "export_verification.py": "c9950f97aca1d7e89f3f9ea681105a9019be466ab8237407258ace5992291bd7",
+    "fixed-quotient/evaluate_fixed.py": "3cce81952d62e36668508a2a931e014064c940a85ee18126d6ace09138dc7858",
+    "fixed-quotient/plan-pin.json": "c617dac259b4b66ae459989cd9712f5f7caee6afc741b72d0772ac45d4b3a9e2",
+    "fixed-quotient/plan.json": "cab34f397a8cc674fd037aca640721c6f6c884bb4585a924ee363e5bd8e8d3cc",
+    "fixed-quotient/report.json": "78751b386ae73092105cdba76951702528be05ab90b2044a5877b0bba5717688",
+    "fixed_quotient.py": "4f7ae3a9046003c79aeb83c16e3e44c02ecb39f7fc9aaa10eb6c4d7014e36e5d",
+    "geometry-audit/verification-review.md": "c04fcd9921b9f7ee3e4576be25fc1c69504947867944e9da83db2cfe8634cf03",
+    "geometry-audit/verification.json": "bb815216617cfb925a578759eca1d9fd7ff2fb2e40bb2cc41650a46e2592bbf2",
+    "geometry-audit/verify_berlin_witnesses.py": "e9abcfe4d48ac7ce55bb6d6f3df8fed6ddab3ec0f16e4346689d0529dd7e968b",
+    "helsinki/adaptive-addendum-pin.json": "5d6f62f402aaa67428003a72740184fa678abd8ee4ce7a9c3d1ff968bd8001b1",
+    "helsinki/adaptive-addendum.json": "4cfd85b91b37c8a597a42177a64d82d9bca91f7ee093deb9e614294c604643f0",
+    "helsinki/analyze.py": "e112bc08f1bf9c0e442786983ab7bfa13ef9981dff712b8428df5046940f74f9",
+    "helsinki/independent-check.json": "ded7b30e079e43f14231b138dc9d585e0dceb2be6a7aa3b07e456c83e3d9fd79",
+    "helsinki/independent_check.py": "dbc9b8353499518e95e6afade14f9f2dd32e605f937825f4781fe6102ce895f5",
+    "helsinki/interpretation-plan-pin.json": "21ca57eef29103d8795f26ee785c60f2f9d0596f36868bd59814221f71e56634",
+    "helsinki/interpretation-plan.json": "ceb1f7be4a4dff0db4ca7954859a0a8395b559a6f1ba6c67c149e9ec660925c8",
+    "helsinki/interpretation-report-pin.json": "06b79eefb98d5bb681aa287555728d0e47014150174e628d76233a82ede95c7c",
+    "helsinki/interpretation-report.json": "041314a81c138ded2e2839da8e0597b1b0cfb334e06542e0d851acf5ac8e8b91",
+    "helsinki/interpretation.py": "67f927a699437bb5c385eebb587d18ca3186cfd6bae7ce45e621be3fad57d21c",
+    "helsinki/plan-pin.json": "ea612b368231a1464442ffb9e4e25f868417eb5082f140515a4c9a11dbcc0f2b",
+    "helsinki/plan.json": "73e92f9dc324b8b5bce763774fb66c6d80dca413da68415b754275442a5aa8bf",
+    "helsinki/report.json": "e8f3119e6896e4490196ca7c6b1d47c068daa20477c223b056feedc7fb851f9a",
+    "helsinki/test_helsinki.py": "9ed35e84bc07a4699854bdc220fb2ebe074abdaa15d97b4c74738fc654353627",
+    "independent-review/derivation.md": "15a3f3675a13b240130e59f299a42c1834c0fa9a6acffd2514f107ed71bfe403",
+    "independent-review/fixed-quotient-review.json": "a95b9af38744ff3cce5ac7fa58fee9a52baa3d957ad39ac7046a55cb7c1db3dc",
+    "independent-review/perturbation-replay.json": "effdcc150096dd8483fa0cac7cac29edbaf16010f29148383c106759e9cba0b9",
+    "independent-review/verify_fixed_quotient.py": "5d7c82a87dfaea0be6b12e2ad9f63907b7a4f51dcc2b77c14ac6263c3f670d83",
+    "independent-review/verify_perturbations.py": "eb4a1f36a1b2d452db2babe95d58e3332420f9d18bb39125e873d04f60c8e057",
+    "perturbations.py": "e0729291eb5c0f3057862990f321ae512b4677696b93f20adca704df0ef6ba54",
+    "plan-pin.json": "e9261a0bc451c3a492cf5e5d5284a9fe7f1061734a415f5ebabd8c1265470c02",
+    "plan.json": "41b33522dc3d364da312e29cb6308972a0812ccd20650ef366dd22b515d26bd3",
+    "report-initial-empty-certification.json": "d6df6a82c5696e7e278a2a128e2f3a939c0ebaceb4793028a1768e3bb2ee8289",
+    "report.json": "ca961dc7af0824bf43f7f51ade71bc3f3f83ef09400e46018f0d011ef68864ce",
+    "review-correction.json": "3dd41f5106ec3bdf20c4585bffc2ce4cc6cd4efa189707eb8998d2f123598196",
+    "test_fixed_quotient.py": "6d983c1696b121444c75422b2320da150559ef6792b4d0c82687a034d138862b",
+    "test_perturbations.py": "982a29e040a9f171637dd0d68d64ea627f0fefcb9e176ee34a0082797c688173"
+  },
+  "publicEvidenceSha256": {
+    "three-case-sensitivity-2026-09-26.json": "7b7a38bdfdc13e019ed9af1cd458199854093aa64d3d79b3ea75d5b989ba7b15",
+    "three-case-fixed-quotient-2026-09-26.json": "9a6f854f0df6cee6029ca215dc18d81a53e1aab4a61be2b854861254aa2551dc",
+    "berlin-minimum-witnesses-2026-09-26.json": "0b036fd3bba9bbc454d41ca51cc7e37376d78284fbfdce5be5320a67d367e9a6",
+    "helsinki-minimum-witnesses-2026-09-26.json": "61114f761c5426ab1105b7c58304383a024cc4e4a08eb22b13ea9a162c7eb0ff"
+  }
+}

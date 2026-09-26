@@ -1,0 +1,4058 @@
+{
+  "schemaVersion": 1,
+  "planSha256": "73e92f9dc324b8b5bce763774fb66c6d80dca413da68415b754275442a5aa8bf",
+  "inputSha256": {
+    "research/diyanet-transition-inverse-2026-09-25/report.json": "16ffa6a31dd60911d803af6ec26a0d6058c1da8323184df612ab142306514ef6",
+    "research/diyanet-v2/sources/helsinki-2026.json": "eed65bac41d4cb424791aea149b30c4f4435645e3a8b31ea3b8ac14bdf6aec81",
+    "research/diyanet-v2/sources/manifest.json": "06d070bad1589848b5d0f3c136e40eb201673baf64574514afe12bcbb4621bc7",
+    "research/diyanet-v2/locations.json": "113620695a23c789c542de5577d6cd0a692b5b29b186087a6d92985c1c73000d",
+    "/usr/share/zoneinfo/Europe/Helsinki": "184901ecbb158667a0b7b62eb9685e083bc3182edbecdc3d6d3743192f6a9097"
+  },
+  "selection": {
+    "segmentStart": "2026-08-23",
+    "segmentEnd": "2026-09-11",
+    "fullCellCount": 20,
+    "modelSelected": "selected"
+  },
+  "primaryNearestTiesLater": {
+    "bySizeUntilMinimum": {
+      "1": {
+        "subsetCount": 20,
+        "statuses": {
+          "feasible": 20
+        },
+        "infeasibleCount": 0
+      },
+      "2": {
+        "subsetCount": 190,
+        "statuses": {
+          "feasible": 190
+        },
+        "infeasibleCount": 0
+      },
+      "3": {
+        "subsetCount": 1140,
+        "statuses": {
+          "feasible": 1056,
+          "tie-only-conflict": 84
+        },
+        "infeasibleCount": 84
+      }
+    },
+    "minimumCardinality": 3,
+    "minimumWitnesses": [
+      {
+        "indices": [
+          0,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          0,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-23",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          1,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-24",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-24",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          2,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-25",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-25",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          3,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-26",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-26",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          4,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-27",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-27",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          5,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-28",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-28",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          7,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-08-30",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          8,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-08-31",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-31",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-08-31",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          9,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-01",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-01",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-01",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          10,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-02",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-02",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-02",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          11,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-03",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-03",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-03",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          12,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-04",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-04",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-04",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          13,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-05",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-05",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-05",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          14,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-06",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-06",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-06",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          15,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-07",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-07",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-07",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          16,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-08",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-08",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-08",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          17,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-09",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-09",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      },
+      {
+        "indices": [
+          6,
+          18,
+          19
+        ],
+        "dates": [
+          "2026-08-29",
+          "2026-09-10",
+          "2026-09-11"
+        ],
+        "slopeInterval": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      }
+    ]
+  },
+  "minimumWitnessPattern": {
+    "allWitnessesOneFromLowerEdgeBlockOneFromUpperEdgeBlockPlusLastRow": true,
+    "cartesianProductSize": 84,
+    "firstBlockDates": [
+      "2026-08-23",
+      "2026-08-24",
+      "2026-08-25",
+      "2026-08-26",
+      "2026-08-27",
+      "2026-08-28",
+      "2026-08-29"
+    ],
+    "middleBlockDates": [
+      "2026-08-30",
+      "2026-08-31",
+      "2026-09-01",
+      "2026-09-02",
+      "2026-09-03",
+      "2026-09-04",
+      "2026-09-05",
+      "2026-09-06",
+      "2026-09-07",
+      "2026-09-08",
+      "2026-09-09",
+      "2026-09-10"
+    ],
+    "requiredLastDate": "2026-09-11"
+  },
+  "endpointSensitivity": {
+    "full": {
+      "n": 20,
+      "dates": [
+        "2026-08-23",
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11"
+      ],
+      "status": "tie-only-conflict",
+      "slopeInterval": {
+        "status": "tie-only-conflict",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-09-10",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      }
+    },
+    "dropFirst": {
+      "n": 19,
+      "dates": [
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10",
+        "2026-09-11"
+      ],
+      "status": "tie-only-conflict",
+      "slopeInterval": {
+        "status": "tie-only-conflict",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-09-10",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      }
+    },
+    "dropLast": {
+      "n": 19,
+      "dates": [
+        "2026-08-23",
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10"
+      ],
+      "status": "feasible",
+      "slopeInterval": {
+        "status": "feasible",
+        "lower": {
+          "numerator": "-12",
+          "denominator": "11",
+          "approximate": -1.0909090909090908
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-08-30",
+          "2026-09-10",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      }
+    },
+    "dropBoth": {
+      "n": 18,
+      "dates": [
+        "2026-08-24",
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09",
+        "2026-09-10"
+      ],
+      "status": "feasible",
+      "slopeInterval": {
+        "status": "feasible",
+        "lower": {
+          "numerator": "-12",
+          "denominator": "11",
+          "approximate": -1.0909090909090908
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-08-30",
+          "2026-09-10",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      }
+    },
+    "dropTwoEachEnd": {
+      "n": 16,
+      "dates": [
+        "2026-08-25",
+        "2026-08-26",
+        "2026-08-27",
+        "2026-08-28",
+        "2026-08-29",
+        "2026-08-30",
+        "2026-08-31",
+        "2026-09-01",
+        "2026-09-02",
+        "2026-09-03",
+        "2026-09-04",
+        "2026-09-05",
+        "2026-09-06",
+        "2026-09-07",
+        "2026-09-08",
+        "2026-09-09"
+      ],
+      "status": "feasible",
+      "slopeInterval": {
+        "status": "feasible",
+        "lower": {
+          "numerator": "-11",
+          "denominator": "10",
+          "approximate": -1.1
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-08-30",
+          "2026-09-09",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-09",
+          "upper-pair"
+        ],
+        "contradictions": []
+      }
+    }
+  },
+  "dateIndexSensitivity": {
+    "sourceDayIndexFeasibleStatus": "tie-only-conflict",
+    "uniformPlusOneDayFeasibleStatus": "tie-only-conflict",
+    "utcDateIndexEqualsPrintedDateIndex": true,
+    "inverseModesUseIdenticalIshaCells": true
+  },
+  "interpretation": "Exact conflict combinatorics and rounding-bin sensitivity on one archived 20-row source segment. Local and UTC event dates coincide on every row; no alternate per-row date mapping is justified. This neither identifies a production rule nor licenses per-date exception handling.",
+  "codeSha256": {
+    "research/diyanet-three-case-causes-2026-09-26/helsinki/analyze.py": "e112bc08f1bf9c0e442786983ab7bfa13ef9981dff712b8428df5046940f74f9",
+    "research/diyanet-three-case-causes-2026-09-26/helsinki/test_helsinki.py": "9ed35e84bc07a4699854bdc220fb2ebe074abdaa15d97b4c74738fc654353627",
+    "public/prayer-times-research/methods/diyanet/diagnostics/transition-constraints/affine_constraints.py": "7a5d538cf1b1def6b5bb4482cc9e7a50ceeeb72848f6df55c2531d8d687e9a50"
+  },
+  "sourceReparse": {
+    "sourceRowCount": 20,
+    "allCellsMatchedInverseXU": true,
+    "timezone": "Europe/Helsinki"
+  },
+  "policyResults": {
+    "ties-later": {
+      "fullRun": {
+        "status": "tie-only-conflict",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-09-10",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      },
+      "minimumCardinality": 3,
+      "minimumSubsetCounts": {
+        "1": {
+          "subsetCount": 20,
+          "statuses": {
+            "feasible": 20
+          },
+          "infeasibleCount": 0
+        },
+        "2": {
+          "subsetCount": 190,
+          "statuses": {
+            "feasible": 190
+          },
+          "infeasibleCount": 0
+        },
+        "3": {
+          "subsetCount": 1140,
+          "statuses": {
+            "feasible": 1056,
+            "tie-only-conflict": 84
+          },
+          "infeasibleCount": 84
+        }
+      },
+      "minimumWitnessCount": 84,
+      "minimumVerticalTolerance": {
+        "infimum": {
+          "numerator": "0",
+          "denominator": "1",
+          "approximate": 0.0
+        },
+        "attained": false,
+        "statusAtInfimum": "tie-only-conflict",
+        "slopeAtInfimum": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        },
+        "blockerCount": 1008,
+        "allPositiveDeltaAboveInfimumFeasible": true
+      },
+      "positiveToleranceExample": {
+        "delta": {
+          "numerator": "1",
+          "denominator": "1024",
+          "approximate": 0.0009765625
+        },
+        "status": "feasible",
+        "slopeInterval": {
+          "status": "feasible",
+          "lower": {
+            "numerator": "-6145",
+            "denominator": "6144",
+            "approximate": -1.0001627604166667
+          },
+          "upper": {
+            "numerator": "-9215",
+            "denominator": "9216",
+            "approximate": -0.9998914930555556
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      }
+    },
+    "ties-earlier": {
+      "fullRun": {
+        "status": "tie-only-conflict",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-09-10",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      },
+      "minimumCardinality": 3,
+      "minimumSubsetCounts": {
+        "1": {
+          "subsetCount": 20,
+          "statuses": {
+            "feasible": 20
+          },
+          "infeasibleCount": 0
+        },
+        "2": {
+          "subsetCount": 190,
+          "statuses": {
+            "feasible": 190
+          },
+          "infeasibleCount": 0
+        },
+        "3": {
+          "subsetCount": 1140,
+          "statuses": {
+            "feasible": 1056,
+            "tie-only-conflict": 84
+          },
+          "infeasibleCount": 84
+        }
+      },
+      "minimumWitnessCount": 84,
+      "minimumVerticalTolerance": {
+        "infimum": {
+          "numerator": "0",
+          "denominator": "1",
+          "approximate": 0.0
+        },
+        "attained": false,
+        "statusAtInfimum": "tie-only-conflict",
+        "slopeAtInfimum": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-10",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        },
+        "blockerCount": 1008,
+        "allPositiveDeltaAboveInfimumFeasible": true
+      },
+      "positiveToleranceExample": {
+        "delta": {
+          "numerator": "1",
+          "denominator": "1024",
+          "approximate": 0.0009765625
+        },
+        "status": "feasible",
+        "slopeInterval": {
+          "status": "feasible",
+          "lower": {
+            "numerator": "-6145",
+            "denominator": "6144",
+            "approximate": -1.0001627604166667
+          },
+          "upper": {
+            "numerator": "-9215",
+            "denominator": "9216",
+            "approximate": -0.9998914930555556
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      }
+    },
+    "ties-even": {
+      "fullRun": {
+        "status": "tie-only-conflict",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": false,
+        "upperClosed": false,
+        "lowerWitness": [
+          "2026-09-09",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-29",
+          "2026-09-10",
+          "upper-pair"
+        ],
+        "contradictions": []
+      },
+      "minimumCardinality": 3,
+      "minimumSubsetCounts": {
+        "1": {
+          "subsetCount": 20,
+          "statuses": {
+            "feasible": 20
+          },
+          "infeasibleCount": 0
+        },
+        "2": {
+          "subsetCount": 190,
+          "statuses": {
+            "feasible": 190
+          },
+          "infeasibleCount": 0
+        },
+        "3": {
+          "subsetCount": 1140,
+          "statuses": {
+            "feasible": 1074,
+            "tie-only-conflict": 66
+          },
+          "infeasibleCount": 66
+        }
+      },
+      "minimumWitnessCount": 66,
+      "minimumVerticalTolerance": {
+        "infimum": {
+          "numerator": "0",
+          "denominator": "1",
+          "approximate": 0.0
+        },
+        "attained": false,
+        "statusAtInfimum": "tie-only-conflict",
+        "slopeAtInfimum": {
+          "status": "tie-only-conflict",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-09-09",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-29",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        },
+        "blockerCount": 1008,
+        "allPositiveDeltaAboveInfimumFeasible": true
+      },
+      "positiveToleranceExample": {
+        "delta": {
+          "numerator": "1",
+          "denominator": "1024",
+          "approximate": 0.0009765625
+        },
+        "status": "feasible",
+        "slopeInterval": {
+          "status": "feasible",
+          "lower": {
+            "numerator": "-6145",
+            "denominator": "6144",
+            "approximate": -1.0001627604166667
+          },
+          "upper": {
+            "numerator": "-9215",
+            "denominator": "9216",
+            "approximate": -0.9998914930555556
+          },
+          "lowerClosed": false,
+          "upperClosed": false,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      }
+    },
+    "closed-relaxation": {
+      "fullRun": {
+        "status": "feasible",
+        "lower": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "upper": {
+          "numerator": "-1",
+          "denominator": "1",
+          "approximate": -1.0
+        },
+        "lowerClosed": true,
+        "upperClosed": true,
+        "lowerWitness": [
+          "2026-08-30",
+          "2026-09-11",
+          "lower-pair"
+        ],
+        "upperWitness": [
+          "2026-08-23",
+          "2026-08-30",
+          "upper-pair"
+        ],
+        "contradictions": []
+      },
+      "minimumCardinality": null,
+      "minimumSubsetCounts": {},
+      "minimumWitnessCount": 0,
+      "minimumVerticalTolerance": {
+        "infimum": {
+          "numerator": "0",
+          "denominator": "1",
+          "approximate": 0.0
+        },
+        "attained": true,
+        "statusAtInfimum": "feasible",
+        "slopeAtInfimum": {
+          "status": "feasible",
+          "lower": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "upper": {
+            "numerator": "-1",
+            "denominator": "1",
+            "approximate": -1.0
+          },
+          "lowerClosed": true,
+          "upperClosed": true,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-08-30",
+            "upper-pair"
+          ],
+          "contradictions": []
+        },
+        "blockerCount": 1008,
+        "allPositiveDeltaAboveInfimumFeasible": true
+      },
+      "positiveToleranceExample": {
+        "delta": {
+          "numerator": "1",
+          "denominator": "1024",
+          "approximate": 0.0009765625
+        },
+        "status": "feasible",
+        "slopeInterval": {
+          "status": "feasible",
+          "lower": {
+            "numerator": "-6145",
+            "denominator": "6144",
+            "approximate": -1.0001627604166667
+          },
+          "upper": {
+            "numerator": "-9215",
+            "denominator": "9216",
+            "approximate": -0.9998914930555556
+          },
+          "lowerClosed": true,
+          "upperClosed": true,
+          "lowerWitness": [
+            "2026-08-30",
+            "2026-09-11",
+            "lower-pair"
+          ],
+          "upperWitness": [
+            "2026-08-23",
+            "2026-09-10",
+            "upper-pair"
+          ],
+          "contradictions": []
+        }
+      }
+    }
+  },
+  "frozenPlan": {
+    "schemaVersion": 1,
+    "scope": "Exact, source-local cause analysis of the Helsinki 2026 full-run Isha tie-only affine infeasibility. No source requests, API access, runtime changes, date-specific exceptions, or public-file edits.",
+    "inputs": [
+      {
+        "path": "research/diyanet-transition-inverse-2026-09-25/report.json",
+        "role": "Frozen private inverse report; select its printed-date-actual-IANA full-run Helsinki 2026 Isha source cells."
+      },
+      {
+        "path": "research/diyanet-v2/sources/helsinki-2026.json",
+        "role": "Original archived 365-row calendar response; independently reparse local date and Isha clock strings for the selected cells."
+      },
+      {
+        "path": "research/diyanet-v2/sources/manifest.json",
+        "role": "Archived source-file identity, acquisition record, city identifier, and frozen checksum."
+      },
+      {
+        "path": "research/diyanet-v2/locations.json",
+        "role": "Archived city timezone designation for local-wall-clock to UTC conversion."
+      },
+      {
+        "path": "/usr/share/zoneinfo/Europe/Helsinki",
+        "role": "Exact installed IANA zone file used to verify date/offset conversion."
+      }
+    ],
+    "frozenQuestion": "For the selected n full-run Isha source minute cells (x_i,u_i), find the minimum cardinality subset with no affine line y=a+b*x satisfying the stated rounding cells; enumerate every minimum subset if feasible. Prove all smaller cardinalities feasible. Then independently test explicit half-minute tie conventions, symmetric vertical tolerance, and endpoint/transition-date variants.",
+    "primaryRoundingCell": "Nearest integer minute, ties later: u_i-1/2 <= a+b*x_i < u_i+1/2, exact rational arithmetic.",
+    "SubsetMethod": "Enumerate subsets in increasing cardinality. For each subset use exact pairwise intercept-interval compatibility to project onto a free slope interval, preserving endpoint openness. Stop at first cardinality with infeasible subsets; report all subsets of that size and exact contradiction witnesses. Verify every smaller subset, not merely one deletion-minimal core.",
+    "TiePolicies": [
+      "ties later: [u-1/2,u+1/2)",
+      "ties earlier: (u-1/2,u+1/2]",
+      "ties to even: both endpoints included for even u, excluded for odd u",
+      "closed-bin relaxation: [u-1/2,u+1/2], closure-only upper bound, never a source policy"
+    ],
+    "Tolerance": "For each selected set and convention, widen each bin symmetrically by delta >= 0: [u-1/2-delta,u+1/2+delta], changing endpoint openness only according to the named tie policy. Solve the exact infimum delta and whether it is attained; report positive minimum versus zero-limit tie-only feasibility separately.",
+    "BoundarySensitivity": "Replay exact feasibility after dropping first/last source cells separately and together (trim 1 and trim 2), and after shifting all x by a common +1 day (translation invariance control). Re-evaluate the selected witness against dates/clocks reparsed from the archived original calendar, and verify each local wall-clock to UTC date/index/minute conversion using Europe/Helsinki. No per-row alternate assignment is introduced.",
+    "Reproducibility": "Hash and pin this plan and every input before scoring subsets or tolerances. Keep helper/scripts/tests local to this private diagnostic directory."
+  },
+  "publicExport": {
+    "originalReportSha256": "e8f3119e6896e4490196ca7c6b1d47c068daa20477c223b056feedc7fb851f9a",
+    "omitted": "Original clock rows, repeated witness lists for alternate policies, and redundant tolerance comparison details. Primary minimum witness dates, exact bounds, counts and statuses retained."
+  }
+}

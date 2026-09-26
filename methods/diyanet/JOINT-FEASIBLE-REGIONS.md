@@ -1,5 +1,7 @@
 # Joint autumn location, night quotient and Fajr factor
 
+The subsequent [three-case cause study](THREE-CASE-CAUSES.md) qualifies the Berlin/Helsinki exclusions with minimum conflicting subsets and exact horizon sensitivities. It adds 11 mathematical tests, bringing the public diagnostic suite to 53; counts below describe this earlier study.
+
 **Allowing the anchor and night quotient to vary together explains more endpoint constraints, but supplies no transferable prayer-time formula.** With `k=18/16`, 25 of the 28 already exposed city-years have some compatible autumn location and quotient under the stated assumptions, compared with 13 when the quotient is fixed. Berlin 2026, Berlin 2027 and the Helsinki 2026 Isha tie remain incompatible. No calculation, default, notification status or calendar accuracy score changes.
 
 This is retrospective local research using the existing observations. No new prayer-calendar/API requests or institutional contact were made. These 28 cases are not a fresh holdout. See the preceding [joint-anchor study](JOINT-AUTUMN-ANCHORS.md) for the rejected complete-calendar candidates and the fixed-quotient control.
