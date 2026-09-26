@@ -9,6 +9,8 @@ Neither side is an official timetable or a measured prayer onset. The result is 
 
 ## Run a comparison
 
+The [browser prototype](../../examples/local-app/README.md) also offers this comparison on demand after calculating the Diyanet SPA profile. It keeps the selected schedule unchanged.
+
 ```sh
 npm run compare:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 npm run compare:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin --json

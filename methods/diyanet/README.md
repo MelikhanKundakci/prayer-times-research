@@ -1,5 +1,7 @@
 # Diyanet — own regional reconstructions and northern experiments
 
+Follow-up: [why the local and calendar models differ at Asr/Maghrib](ASR-MAGHRIB-ATTRIBUTION.md), with an on-demand comparison in the local browser prototype.
+
 Distinct reconstructions of published Diyanet/Awqat criteria and sampled institutional calendars. Northern, low-latitude and southern routes have different declared domains. A country, legal school and institutional calendar are not interchangeable labels.
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**

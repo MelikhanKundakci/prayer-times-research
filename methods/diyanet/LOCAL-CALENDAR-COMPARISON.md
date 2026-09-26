@@ -64,6 +64,8 @@ The new [offline comparison API and command](../../core/diagnostics/) make a poi
 
 ## Decision for further work
 
+The follow-up [Asr/Maghrib attribution](ASR-MAGHRIB-ATTRIBUTION.md) separates coordinate-provider and sampling effects using fixed saved model instants. It performs no new source scoring or numerical replacement. The same point/day comparison is also available on demand in the browser prototype.
+
 Keep the two targets explicit. The existing daily-coordinate reconstruction remains the evidence-backed starting point for improving compatibility with these Diyanet calendar publications. The continuous local profile remains a separate implementation of documented criteria under declared point-astronomy conventions. Choosing between them requires the intended product contract; a higher calendar percentage alone does not validate religious onset or real-world physical accuracy.
 
 A new rule change should identify a specific supported mechanism, preserve unavailable cases and source-date uncertainty, and report losses as well as gains. All 59 annuals in this comparison are already known development evidence. Rearranging them into new subsets does not make a prospective holdout. The earlier [Asr](GLOBAL-ASR-GEOMETRY.md) and [rounding/ephemeris](GLOBAL-NUMERICS.md) counterexperiments remain relevant negative evidence.

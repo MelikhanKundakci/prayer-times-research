@@ -1,3 +1,4 @@
+import {diyanetComparisonRows} from './comparison-view.mjs';
 const $=id=>document.getElementById(id);
 const names={fajr:'Fajr',dhuhr:'Dhuhr',asr:'Asr',maghrib:'Maghrib',isha:'Ischa'};
 const profileLabels={
@@ -10,14 +11,15 @@ const profileNotes={
 };
 const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.9784,'Europe/Istanbul'],cairo:[30.0444,31.2357,'Africa/Cairo'],
   'new-york':[40.7128,-74.006,'America/New_York'],jakarta:[-6.2,106.8,'Asia/Jakarta'],sydney:[-33.8688,151.2093,'Australia/Sydney'],oslo:[59.9139,10.7522,'Europe/Oslo']};
-let definitions=[],result=null,generation=0,requestSequence=0;
+let definitions=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0;
 const available=e=>e?.role==='prayer-start-model'&&['calculated','estimated'].includes(e.status);
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
 const labelDate=date=>new Intl.DateTimeFormat('de-DE',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${date}T12:00:00Z`));
 function clock(e){return $('seconds').checked&&e.seconds?e.seconds:e.time;}
 function clockDate(e){return $('seconds').checked&&e.seconds?e.secondsDate:e.calendarDate;}
 function message(value,error=false){$('message').textContent=value;$('message').classList.toggle('error',error);$('message').hidden=!value;}
-function invalidate(){generation++;result=null;$('output').hidden=true;message('Eingaben geändert. Bitte neu berechnen.');}
+function resetComparison(){comparison=null;comparisonRequest++;$('comparison-output').hidden=true;$('comparison-message').textContent='';$('compare-diyanet').disabled=false;}
+function invalidate(){generation++;result=null;resetComparison();$('output').hidden=true;message('Eingaben geändert. Bitte neu berechnen.');}
 function selectedProfile(){return $('profile').value==='composed'?`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`:$('profile').value;}
 function profileNote(){const composed=$('profile').value==='composed';$('composition').hidden=!composed;const d=definitions.find(d=>d.id===selectedProfile());$('profile-note').textContent=composed?'Vollständiges lokales Profil mit den unten gewählten Regeln. Kein offizieller Institutskalender.':profileNotes[d?.id]??d?.sourceScope??'';}
 function render(){
@@ -56,7 +58,38 @@ function render(){
     }
     $('week').append(row);
   }
-  renderNext();
+  renderComparison();renderNext();
+}
+function renderComparison(){
+  $('diyanet-comparison').hidden=result?.day.profile.id!=='diyanet-published-spa-point-v1';
+  $('comparison-output').hidden=!comparison;
+  if(!comparison)return;
+  $('comparison-rows').replaceChildren();
+  for(const row of diyanetComparisonRows(comparison,{seconds:$('seconds').checked})){
+    const tr=document.createElement('tr');tr.append(text('th',row.name));tr.firstChild.scope='row';
+    for(const side of [row.local,row.calendar]){
+      const td=text('td',side.clock);td.append(text('small',side.status));
+      if(side.date&&side.date!==comparison.input.date)td.append(text('small',labelDate(side.date)));
+      tr.append(td);
+    }
+    const difference=text('td',row.difference);difference.append(text('small',row.rawDifference));tr.append(difference);
+    $('comparison-rows').append(tr);
+  }
+}
+async function compareDiyanet(){
+  if(result?.day.profile.id!=='diyanet-published-spa-point-v1')return;
+  const token=generation,request=++comparisonRequest;
+  const {date,location:{latitude,longitude,timeZone}}=result.day;
+  comparison=null;$('comparison-output').hidden=true;$('compare-diyanet').disabled=true;
+  $('comparison-message').textContent='Beide Berechnungen werden für deinen Ort verglichen …';
+  try{
+    const response=await fetch('/api/compare-diyanet',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date,latitude,longitude,timeZone})});
+    const data=await response.json();
+    if(token!==generation||request!==comparisonRequest)return;
+    if(!response.ok)throw new Error(data.error);
+    comparison=data;$('comparison-message').textContent='Vergleich berechnet. Deine gewählten Gebetszeiten bleiben unverändert.';renderComparison();
+  }catch(error){if(token===generation&&request===comparisonRequest)$('comparison-message').textContent=`Vergleich nicht möglich: ${error.message}. Deine Gebetszeiten bleiben unverändert.`;}
+  finally{if(token===generation&&request===comparisonRequest)$('compare-diyanet').disabled=false;}
 }
 function renderNext(){
   if(!result)return;
@@ -70,7 +103,7 @@ function renderNext(){
 }
 async function calculate(event){
   event?.preventDefault();if(!$('settings').reportValidity())return;
-  const token=++generation,request=++requestSequence;result=null;$('output').hidden=true;$('calculate').disabled=true;message('Die Zeiten werden lokal berechnet …');
+  const token=++generation,request=++requestSequence;result=null;resetComparison();$('output').hidden=true;$('calculate').disabled=true;message('Die Zeiten werden lokal berechnet …');
   const input={date:$('date').value,latitude:Number($('latitude').value),longitude:Number($('longitude').value),timeZone:$('timeZone').value.trim(),profile:selectedProfile()};
   try{
     const response=await fetch('/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)}),data=await response.json();
@@ -80,6 +113,7 @@ async function calculate(event){
   finally{if(request===requestSequence)$('calculate').disabled=false;}
 }
 $('settings').addEventListener('submit',calculate);
+$('compare-diyanet').addEventListener('click',compareDiyanet);
 for(const id of ['latitude','longitude','timeZone','date','profile','angles','shadow','night'])$(id).addEventListener('input',()=>{invalidate();if(['profile','angles','shadow','night'].includes(id))profileNote();if(['latitude','longitude','timeZone'].includes(id))$('city').value='custom';});
 $('seconds').addEventListener('change',render);
 $('city').addEventListener('change',()=>{const c=cities[$('city').value];if(c){[$('latitude').value,$('longitude').value,$('timeZone').value]=c;$('location-note').textContent='Beispielkoordinaten für den gewählten Ort.';}invalidate();});

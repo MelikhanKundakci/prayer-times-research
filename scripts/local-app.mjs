@@ -5,10 +5,12 @@ import {fileURLToPath} from 'node:url';
 import {resolve} from 'node:path';
 import {calculateLocalDay,listLocalProfiles,LOCAL_VERSION} from '../core/local/index.mjs';
 import {calculateLocalSchedule} from '../core/local/schedule.mjs';
+import {compareDiyanetPointDay} from '../core/diagnostics/diyanet-comparison.mjs';
 
 const assets=new Map([
   ['/', ['index.html','text/html; charset=utf-8']],
   ['/app.mjs',['app.mjs','text/javascript; charset=utf-8']],
+  ['/comparison-view.mjs',['comparison-view.mjs','text/javascript; charset=utf-8']],
   ['/style.css',['style.css','text/css; charset=utf-8']],
 ]);
 function respond(res,status,value,type='application/json; charset=utf-8'){
@@ -36,6 +38,9 @@ export function createLocalAppServer(){
         return respond(res,200,await readFile(new URL(`../examples/local-app/${name}`,import.meta.url)),type);
       }
       if(req.method==='GET'&&req.url==='/api/profiles')return respond(res,200,{version:LOCAL_VERSION,profiles:listLocalProfiles(),runtime:{node:process.versions.node,tzdb:process.versions.tz}});
+      if(req.method==='POST'&&req.url==='/api/compare-diyanet'){
+        return respond(res,200,compareDiyanetPointDay(await input(req)));
+      }
       if(req.method==='POST'&&req.url==='/api/calculate'){
         const point=await input(req);
         const day=calculateLocalDay(point);

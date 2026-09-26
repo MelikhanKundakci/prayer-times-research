@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {get} from 'node:http';
 import {createLocalAppServer} from '../scripts/local-app.mjs';
+import {compareDiyanetPointDay} from '../core/diagnostics/diyanet-comparison.mjs';
 
 test('local app exposes complete dated point schedules without external services or arbitrary files',async t=>{
   const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
@@ -49,4 +50,24 @@ test('local app calculates the opt-in Diyanet SPA profile through its day and sc
   assert.equal(today.length,5);
   for(const event of today)assert.equal(event.epochMilliseconds,day.events[event.event].epochMilliseconds);
   assert.equal(day.profile.institutionalEquivalence,'not-claimed');
+});
+
+test('on-demand Diyanet comparison keeps source-free model results, domain failures and origin protections',async t=>{
+  const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base=`http://127.0.0.1:${server.address().port}`;
+  const input={date:'2026-09-26',latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin'};
+  const post=(path,value,headers={})=>fetch(base+path,{method:'POST',headers:{'Content-Type':'application/json',...headers},body:JSON.stringify(value)});
+  const scheduleInput={...input,profile:'diyanet-published-spa-point-v1'};
+  const before=await(await post('/api/calculate',scheduleInput)).json();
+  const response=await post('/api/compare-diyanet',input);
+  assert.equal(response.status,200);assert.equal(response.headers.get('cache-control'),'no-store');
+  const comparison=await response.json();assert.deepEqual(comparison,compareDiyanetPointDay(input));
+  assert.equal(comparison.events.maghrib.roundedEpochDifferenceMilliseconds,-60000);
+  assert.equal((await post('/api/compare-diyanet',{...input,latitude:80})).status,400);
+  assert.equal((await post('/api/compare-diyanet',scheduleInput)).status,400);
+  assert.equal((await post('/api/compare-diyanet',input,{Origin:'https://example.com'})).status,403);
+  assert.equal((await fetch(base+'/api/compare-diyanet')).status,404);
+  assert.deepEqual(await(await post('/api/calculate',scheduleInput)).json(),before);
+  assert.equal((await fetch(base+'/comparison-view.mjs')).status,200);
 });

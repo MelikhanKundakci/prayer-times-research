@@ -41,6 +41,17 @@
           <div id="prayers" class="prayers"></div>
           <p id="sunrise" class="sunrise"></p>
           <section class="panel explanation"><h2>Was diese Zeiten bedeuten</h2><p id="coverage"></p><p id="method-summary"></p><details><summary>Regeln und Quellen ansehen</summary><div id="rules"></div></details></section>
+          <section id="diyanet-comparison" class="panel explanation" hidden aria-labelledby="comparison-title">
+            <h2 id="comparison-title">Diyanet-Berechnungen vergleichen</h2>
+            <p>Vergleiche die lokale Sonnenberechnung mit unserer Kalendernachbildung für denselben Ort und Tag. Beide rechnen auf deinem Gerät. Es werden keine offiziellen Diyanet-Zeiten abgerufen.</p>
+            <button id="compare-diyanet" class="secondary" type="button">Mit Kalendernachbildung vergleichen</button>
+            <p id="comparison-message" role="status" aria-live="polite"></p>
+            <div id="comparison-output" hidden>
+              <div class="table-scroll"><table><thead><tr><th>Gebet / Markierung</th><th>Lokale Berechnung</th><th>Kalendernachbildung</th><th>Unterschied</th></tr></thead><tbody id="comparison-rows"></tbody></table></div>
+              <p class="hint">Minus: Die lokale Berechnung ist früher. Plus: Sie ist später. Der Minutenunterschied bezieht sich auf die gerundeten Uhrzeiten einschließlich ihres Datums. Darunter steht der Unterschied vor der Minutenrundung.</p>
+              <p class="hint">Die Kalendernachbildung enthält auch ungeklärte saisonale Annahmen. Geschätzte und fehlende Zeiten bleiben gekennzeichnet. Dieser Vergleich ändert weder deine Gebetszeiten noch den nächsten berechneten Beginn.</p>
+            </div>
+          </section>
           <section class="panel week"><h2>Die nächsten sieben Tage</h2><div class="table-scroll"><table><thead><tr><th>Datum</th><th>Fajr</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Ischa</th></tr></thead><tbody id="week"></tbody></table></div><p class="hint">* Geschätzter Beginn nach der ausdrücklich gewählten Regel. Ein Strich bedeutet: kein berechneter Gebetsbeginn verfügbar.</p></section>
         </div>
       </section>
