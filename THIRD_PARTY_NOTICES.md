@@ -28,6 +28,10 @@ The project contains original implementations of published astronomical equation
 
 The [SPA point provider](core/astronomy/SPA-POINT.md) independently implements the Reda–Andreas equations. Its [coefficient tables](core/astronomy/spa-coefficients.json) were extracted from [pvlib-python v0.13.1](https://github.com/pvlib/pvlib-python/blob/v0.13.1/pvlib/spa.py) under BSD-3-Clause. Preserve the full [pvlib license and copyright notice](core/astronomy/LICENSE-pvlib-SPA), including the pvlib contributors and Sandia attributions, when redistributing these tables in source or binary form. The earlier [SPA research experiment](methods/diyanet/research/spa-reference/README.md) retains the same notice with its own table copy. No institutional endorsement is implied.
 
+## Standalone open-source comparisons
+
+The [comparison harnesses](scripts/oss-relative/) run pinned **mawaqit** and **go-prayer** releases, both identified as MIT-licensed by their upstream repositories. Their exact revisions, dependency locks, generated outputs and runtime metadata are recorded in the [comparison](core/local/OSS-COMPARISON.md). No upstream implementation is vendored into the local engine, and neither library is an app runtime dependency. The retained compressed JSONL contains calculated software outputs, not institutional prayer calendars.
+
 ## Excluded research material
 
 This repository does not redistribute the downloaded institutional calendars, PDFs, website HTML, raw API responses, extracted clock tables, screenshots, HTTP headers or public-site client keys used in the private evaluation archive. Published research summaries describe comparisons; access to an original public URL is not a redistribution license. Reproducing source-based comparisons may require obtaining the relevant material independently under its applicable terms.

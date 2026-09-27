@@ -35,8 +35,9 @@ function profileNote(){
   if(family==='other'){$('other-profile-note').textContent=localizedProfileScope(definitions.find(item=>item.id===selectedProfile())??{id:'',composition:null,sourceScope:''},language);return;}
   const method=methods.find(item=>item.id===family);if(!method)return;
   const mode=method.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
-  $('family-note').textContent=localizedFamilyScope(method.id,language,mode==='reference45'?undefined:mode)
+  $('family-note').textContent=localizedFamilyScope(method.id,language,['reference45','local-relative'].includes(mode)?undefined:mode)
     +(mode==='reference45'?` ${t('night.reference45Summary')}`:'')
+    +(mode==='local-relative'?` ${t('night.relativeSummary')}`:'')
     +((method.asrFactors??[]).length===1?` ${t('family.fixedAsr')}`:'')
     +((method.asrFactors??[]).length>1?` ${t('family.asrIndependent')}`:'')
     +((method.nightModes??[]).length===1?` ${t('family.fixedNight')}`:'');
@@ -69,7 +70,7 @@ function configureFamily(method,reset=false){
   if(reset){
     const defaultId=method.defaultProfile??'';
     factorSelect.value=String(Number(defaultId.match(/shadow([12])/i)?.[1]??factorValues[0]??1));
-    const variant=defaultId.match(/-(physical|angle-night|reference45|calendar|ramadan|ordinary)-v1$/)?.[1];
+    const variant=defaultId.match(/-(physical|angle-night|reference45|local-relative|calendar|ramadan|ordinary)-v1$/)?.[1];
     if(method.ramadanModes?.length)$('ramadan').value=method.ramadanModes.includes(variant)?variant:method.ramadanModes[0];
     else $('familyNight').value=method.nightModes?.includes(variant)?variant:method.nightModes?.[0]??'physical';
   }else factorSelect.value=factorValues.includes(Number(priorFactor))?priorFactor:String(Number(String(method.defaultProfile??'').match(/shadow([12])/i)?.[1]??factorValues[0]??1));

@@ -1,0 +1,2117 @@
+{
+  "result": "PASS",
+  "limits": "Implementation and behavior verification only; not official-calendar or observed prayer-time accuracy.",
+  "years": [
+    2026,
+    2027,
+    2028
+  ],
+  "points": [
+    {
+      "id": "frankfurt",
+      "latitude": 50.1109,
+      "longitude": 8.6821,
+      "timeZone": "Europe/Berlin"
+    },
+    {
+      "id": "berlin",
+      "latitude": 52.52,
+      "longitude": 13.405,
+      "timeZone": "Europe/Berlin"
+    },
+    {
+      "id": "edinburgh",
+      "latitude": 55.9533,
+      "longitude": -3.1883,
+      "timeZone": "Europe/London"
+    },
+    {
+      "id": "oslo",
+      "latitude": 59.9139,
+      "longitude": 10.7522,
+      "timeZone": "Europe/Oslo"
+    },
+    {
+      "id": "ushuaia",
+      "latitude": -54.8019,
+      "longitude": -68.303,
+      "timeZone": "America/Argentina/Ushuaia"
+    },
+    {
+      "id": "tromso",
+      "latitude": 69.6492,
+      "longitude": 18.9553,
+      "timeZone": "Europe/Oslo"
+    }
+  ],
+  "profiles": [
+    "sunni-mwl-shadow1-local-relative-v1",
+    "sunni-mwl-shadow2-local-relative-v1"
+  ],
+  "statistics": {
+    "days": 13152,
+    "estimated": 4958,
+    "blocked": 6,
+    "unavailable": 3806,
+    "nonTwilightComparisons": 1728,
+    "unchangedPhysicalTwilight": 19286,
+    "independentEstimateChecks": 4958,
+    "independentAnnualChecks": 16,
+    "maxArithmeticErrorMilliseconds": 0,
+    "estimatedTransitionPairs": 5014,
+    "maxEstimatedStepMilliseconds": 300000,
+    "scheduleChecks": 36
+  },
+  "profileReports": {
+    "sunni-mwl-shadow1-local-relative-v1": {
+      "limits": "Behavior comparison only: coverage, chronology and unwrapped UTC phase changes. No official-calendar, observed-twilight or religious accuracy claim.",
+      "clockFrame": "epoch(event) minus UTC midnight of source date; adjacent phase differences without modulo; DST display changes excluded",
+      "years": [
+        2026,
+        2027,
+        2028
+      ],
+      "cities": [
+        "frankfurt",
+        "berlin",
+        "edinburgh",
+        "oslo",
+        "ushuaia",
+        "tromso"
+      ],
+      "plannedDays": 6576,
+      "suppliedRows": 6576,
+      "groups": [
+        {
+          "city": "frankfurt",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 7,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 409.499,
+              "witness": {
+                "from": "2026-07-15",
+                "to": "2026-07-16",
+                "fromUtc": "2026-07-15T00:02:40.498Z",
+                "toUtc": "2026-07-16T00:09:29.997Z",
+                "signedSeconds": 409.499,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 5,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 483.819,
+              "witness": {
+                "from": "2026-06-06",
+                "to": "2026-06-07",
+                "fromUtc": "2026-06-06T23:02:09.420Z",
+                "toUtc": "2026-06-07T23:10:13.239Z",
+                "signedSeconds": 483.819,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "frankfurt",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 7,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 425.014,
+              "witness": {
+                "from": "2027-07-15",
+                "to": "2027-07-16",
+                "fromUtc": "2027-07-15T00:00:54.480Z",
+                "toUtc": "2027-07-16T00:07:59.494Z",
+                "signedSeconds": 425.014,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 6,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 460.745,
+              "witness": {
+                "from": "2027-07-04",
+                "to": "2027-07-05",
+                "fromUtc": "2027-07-04T23:16:00.731Z",
+                "toUtc": "2027-07-05T23:08:19.986Z",
+                "signedSeconds": -460.745,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "frankfurt",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 8,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 585.595,
+              "witness": {
+                "from": "2028-07-13",
+                "to": "2028-07-14",
+                "fromUtc": "2028-07-12T23:49:10.108Z",
+                "toUtc": "2028-07-13T23:58:55.703Z",
+                "signedSeconds": 585.595,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 5,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 512.161,
+              "witness": {
+                "from": "2028-07-03",
+                "to": "2028-07-04",
+                "fromUtc": "2028-07-03T23:18:25.292Z",
+                "toUtc": "2028-07-04T23:09:53.131Z",
+                "signedSeconds": -512.161,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 11,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 445.187,
+              "witness": {
+                "from": "2026-05-14",
+                "to": "2026-05-15",
+                "fromUtc": "2026-05-13T23:54:57.938Z",
+                "toUtc": "2026-05-14T23:47:32.751Z",
+                "signedSeconds": -445.187,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 10,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 439.848,
+              "witness": {
+                "from": "2026-05-18",
+                "to": "2026-05-19",
+                "fromUtc": "2026-05-18T22:14:12.112Z",
+                "toUtc": "2026-05-19T22:21:31.960Z",
+                "signedSeconds": 439.848,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 11,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 452.296,
+              "witness": {
+                "from": "2027-07-29",
+                "to": "2027-07-30",
+                "fromUtc": "2027-07-28T23:56:40.230Z",
+                "toUtc": "2027-07-30T00:04:12.526Z",
+                "signedSeconds": 452.296,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 10,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 440.532,
+              "witness": {
+                "from": "2027-07-23",
+                "to": "2027-07-24",
+                "fromUtc": "2027-07-23T22:33:10.363Z",
+                "toUtc": "2027-07-24T22:25:49.831Z",
+                "signedSeconds": -440.532,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 12,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 479.503,
+              "witness": {
+                "from": "2028-05-14",
+                "to": "2028-05-15",
+                "fromUtc": "2028-05-13T23:51:16.395Z",
+                "toUtc": "2028-05-14T23:43:16.892Z",
+                "signedSeconds": -479.503,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 12,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 475.514,
+              "witness": {
+                "from": "2028-05-18",
+                "to": "2028-05-19",
+                "fromUtc": "2028-05-18T22:17:50.827Z",
+                "toUtc": "2028-05-19T22:25:46.341Z",
+                "signedSeconds": 475.514,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 485.88,
+              "witness": {
+                "from": "2026-04-30",
+                "to": "2026-05-01",
+                "fromUtc": "2026-04-30T01:15:18.814Z",
+                "toUtc": "2026-05-01T01:07:12.934Z",
+                "signedSeconds": -485.88,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.404,
+              "witness": {
+                "from": "2026-08-07",
+                "to": "2026-08-08",
+                "fromUtc": "2026-08-07T23:25:48.727Z",
+                "toUtc": "2026-08-08T23:17:32.323Z",
+                "signedSeconds": -496.404,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 477.52,
+              "witness": {
+                "from": "2027-08-12",
+                "to": "2027-08-13",
+                "fromUtc": "2027-08-12T01:13:49.023Z",
+                "toUtc": "2027-08-13T01:21:46.543Z",
+                "signedSeconds": 477.52,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 476.197,
+              "witness": {
+                "from": "2027-05-03",
+                "to": "2027-05-04",
+                "fromUtc": "2027-05-03T23:06:30.959Z",
+                "toUtc": "2027-05-04T23:14:27.156Z",
+                "signedSeconds": 476.197,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 493.614,
+              "witness": {
+                "from": "2028-08-11",
+                "to": "2028-08-12",
+                "fromUtc": "2028-08-11T01:11:39.450Z",
+                "toUtc": "2028-08-12T01:19:53.064Z",
+                "signedSeconds": 493.614,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 466.861,
+              "witness": {
+                "from": "2028-08-07",
+                "to": "2028-08-08",
+                "fromUtc": "2028-08-07T23:21:23.055Z",
+                "toUtc": "2028-08-08T23:13:36.194Z",
+                "signedSeconds": -466.861,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 523.521,
+              "witness": {
+                "from": "2026-04-17",
+                "to": "2026-04-18",
+                "fromUtc": "2026-04-17T00:33:46.183Z",
+                "toUtc": "2026-04-18T00:25:02.662Z",
+                "signedSeconds": -523.521,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 525.85,
+              "witness": {
+                "from": "2026-08-21",
+                "to": "2026-08-22",
+                "fromUtc": "2026-08-21T22:13:52.777Z",
+                "toUtc": "2026-08-22T22:05:06.927Z",
+                "signedSeconds": -525.85,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 516.453,
+              "witness": {
+                "from": "2027-08-25",
+                "to": "2027-08-26",
+                "fromUtc": "2027-08-25T00:24:11.795Z",
+                "toUtc": "2027-08-26T00:32:48.248Z",
+                "signedSeconds": 516.453,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 19,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 488.259,
+              "witness": {
+                "from": "2027-08-22",
+                "to": "2027-08-23",
+                "fromUtc": "2027-08-22T22:07:10.230Z",
+                "toUtc": "2027-08-23T21:59:01.971Z",
+                "signedSeconds": -488.259,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.063,
+              "witness": {
+                "from": "2028-04-16",
+                "to": "2028-04-17",
+                "fromUtc": "2028-04-16T00:37:41.120Z",
+                "toUtc": "2028-04-17T00:29:22.057Z",
+                "signedSeconds": -499.063,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.283,
+              "witness": {
+                "from": "2028-08-21",
+                "to": "2028-08-22",
+                "fromUtc": "2028-08-21T22:09:14.008Z",
+                "toUtc": "2028-08-22T22:00:54.725Z",
+                "signedSeconds": -499.283,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 484.109,
+              "witness": {
+                "from": "2026-02-04",
+                "to": "2026-02-05",
+                "fromUtc": "2026-02-04T05:42:45.931Z",
+                "toUtc": "2026-02-05T05:50:50.040Z",
+                "signedSeconds": 484.109,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.979,
+              "witness": {
+                "from": "2026-11-09",
+                "to": "2026-11-10",
+                "fromUtc": "2026-11-10T03:18:26.236Z",
+                "toUtc": "2026-11-11T03:26:43.215Z",
+                "signedSeconds": 496.979,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.436,
+              "witness": {
+                "from": "2027-02-04",
+                "to": "2027-02-05",
+                "fromUtc": "2027-02-04T05:40:41.645Z",
+                "toUtc": "2027-02-05T05:49:01.081Z",
+                "signedSeconds": 499.436,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.299,
+              "witness": {
+                "from": "2027-01-30",
+                "to": "2027-01-31",
+                "fromUtc": "2027-01-31T03:57:58.709Z",
+                "toUtc": "2027-02-01T03:49:42.410Z",
+                "signedSeconds": -496.299,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 14,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 456.222,
+              "witness": {
+                "from": "2028-02-05",
+                "to": "2028-02-06",
+                "fromUtc": "2028-02-05T05:47:08.207Z",
+                "toUtc": "2028-02-06T05:54:44.429Z",
+                "signedSeconds": 456.222,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 14,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 467.16,
+              "witness": {
+                "from": "2028-11-08",
+                "to": "2028-11-09",
+                "fromUtc": "2028-11-09T03:14:44.866Z",
+                "toUtc": "2028-11-10T03:22:32.026Z",
+                "signedSeconds": 467.16,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 134,
+          "missing": {
+            "fajr": 174,
+            "sunrise": 116,
+            "dhuhr": 0,
+            "asr": 57,
+            "maghrib": 116,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1193,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 190,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 189,
+              "overFiveMinutes": 44,
+              "overTenMinutes": 10,
+              "maximumAbsoluteSeconds": 2567.232,
+              "witness": {
+                "from": "2026-09-17",
+                "to": "2026-09-18",
+                "fromUtc": "2026-09-16T22:40:29.454Z",
+                "toUtc": "2026-09-17T23:23:16.686Z",
+                "signedSeconds": 2567.232,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 194,
+              "overFiveMinutes": 46,
+              "overTenMinutes": 10,
+              "maximumAbsoluteSeconds": 1733.243,
+              "witness": {
+                "from": "2026-03-27",
+                "to": "2026-03-28",
+                "fromUtc": "2026-03-27T22:00:16.239Z",
+                "toUtc": "2026-03-28T22:29:09.482Z",
+                "signedSeconds": 1733.243,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 132,
+          "missing": {
+            "fajr": 175,
+            "sunrise": 117,
+            "dhuhr": 0,
+            "asr": 58,
+            "maghrib": 117,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1189,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 190,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 189,
+              "overFiveMinutes": 43,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1188.819,
+              "witness": {
+                "from": "2027-09-18",
+                "to": "2027-09-19",
+                "fromUtc": "2027-09-17T23:17:29.461Z",
+                "toUtc": "2027-09-18T23:37:18.280Z",
+                "signedSeconds": 1188.819,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 195,
+              "overFiveMinutes": 45,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1529.392,
+              "witness": {
+                "from": "2027-09-14",
+                "to": "2027-09-15",
+                "fromUtc": "2027-09-14T22:14:12.172Z",
+                "toUtc": "2027-09-15T21:48:42.780Z",
+                "signedSeconds": -1529.392,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 133,
+          "missing": {
+            "fajr": 174,
+            "sunrise": 118,
+            "dhuhr": 0,
+            "asr": 59,
+            "maghrib": 118,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1192,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 192,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 191,
+              "overFiveMinutes": 43,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1945.758,
+              "witness": {
+                "from": "2028-03-25",
+                "to": "2028-03-26",
+                "fromUtc": "2028-03-24T23:36:14.101Z",
+                "toUtc": "2028-03-25T23:03:48.343Z",
+                "signedSeconds": -1945.758,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 196,
+              "overFiveMinutes": 45,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1935.912,
+              "witness": {
+                "from": "2028-09-13",
+                "to": "2028-09-14",
+                "fromUtc": "2028-09-13T22:25:54.341Z",
+                "toUtc": "2028-09-14T21:53:38.429Z",
+                "signedSeconds": -1935.912,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "sunni-mwl-shadow2-local-relative-v1": {
+      "limits": "Behavior comparison only: coverage, chronology and unwrapped UTC phase changes. No official-calendar, observed-twilight or religious accuracy claim.",
+      "clockFrame": "epoch(event) minus UTC midnight of source date; adjacent phase differences without modulo; DST display changes excluded",
+      "years": [
+        2026,
+        2027,
+        2028
+      ],
+      "cities": [
+        "frankfurt",
+        "berlin",
+        "edinburgh",
+        "oslo",
+        "ushuaia",
+        "tromso"
+      ],
+      "plannedDays": 6576,
+      "suppliedRows": 6576,
+      "groups": [
+        {
+          "city": "frankfurt",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 7,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 409.499,
+              "witness": {
+                "from": "2026-07-15",
+                "to": "2026-07-16",
+                "fromUtc": "2026-07-15T00:02:40.498Z",
+                "toUtc": "2026-07-16T00:09:29.997Z",
+                "signedSeconds": 409.499,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 5,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 483.819,
+              "witness": {
+                "from": "2026-06-06",
+                "to": "2026-06-07",
+                "fromUtc": "2026-06-06T23:02:09.420Z",
+                "toUtc": "2026-06-07T23:10:13.239Z",
+                "signedSeconds": 483.819,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "frankfurt",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 7,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 425.014,
+              "witness": {
+                "from": "2027-07-15",
+                "to": "2027-07-16",
+                "fromUtc": "2027-07-15T00:00:54.480Z",
+                "toUtc": "2027-07-16T00:07:59.494Z",
+                "signedSeconds": 425.014,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 6,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 460.745,
+              "witness": {
+                "from": "2027-07-04",
+                "to": "2027-07-05",
+                "fromUtc": "2027-07-04T23:16:00.731Z",
+                "toUtc": "2027-07-05T23:08:19.986Z",
+                "signedSeconds": -460.745,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "frankfurt",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 8,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 585.595,
+              "witness": {
+                "from": "2028-07-13",
+                "to": "2028-07-14",
+                "fromUtc": "2028-07-12T23:49:10.108Z",
+                "toUtc": "2028-07-13T23:58:55.703Z",
+                "signedSeconds": 585.595,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 5,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 512.161,
+              "witness": {
+                "from": "2028-07-03",
+                "to": "2028-07-04",
+                "fromUtc": "2028-07-03T23:18:25.292Z",
+                "toUtc": "2028-07-04T23:09:53.131Z",
+                "signedSeconds": -512.161,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 11,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 445.187,
+              "witness": {
+                "from": "2026-05-14",
+                "to": "2026-05-15",
+                "fromUtc": "2026-05-13T23:54:57.938Z",
+                "toUtc": "2026-05-14T23:47:32.751Z",
+                "signedSeconds": -445.187,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 10,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 439.848,
+              "witness": {
+                "from": "2026-05-18",
+                "to": "2026-05-19",
+                "fromUtc": "2026-05-18T22:14:12.112Z",
+                "toUtc": "2026-05-19T22:21:31.960Z",
+                "signedSeconds": 439.848,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 11,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 452.296,
+              "witness": {
+                "from": "2027-07-29",
+                "to": "2027-07-30",
+                "fromUtc": "2027-07-28T23:56:40.230Z",
+                "toUtc": "2027-07-30T00:04:12.526Z",
+                "signedSeconds": 452.296,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 10,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 440.532,
+              "witness": {
+                "from": "2027-07-23",
+                "to": "2027-07-24",
+                "fromUtc": "2027-07-23T22:33:10.363Z",
+                "toUtc": "2027-07-24T22:25:49.831Z",
+                "signedSeconds": -440.532,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "berlin",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 12,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 479.503,
+              "witness": {
+                "from": "2028-05-14",
+                "to": "2028-05-15",
+                "fromUtc": "2028-05-13T23:51:16.395Z",
+                "toUtc": "2028-05-14T23:43:16.892Z",
+                "signedSeconds": -479.503,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 12,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 475.514,
+              "witness": {
+                "from": "2028-05-18",
+                "to": "2028-05-19",
+                "fromUtc": "2028-05-18T22:17:50.827Z",
+                "toUtc": "2028-05-19T22:25:46.341Z",
+                "signedSeconds": 475.514,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 485.88,
+              "witness": {
+                "from": "2026-04-30",
+                "to": "2026-05-01",
+                "fromUtc": "2026-04-30T01:15:18.814Z",
+                "toUtc": "2026-05-01T01:07:12.934Z",
+                "signedSeconds": -485.88,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.404,
+              "witness": {
+                "from": "2026-08-07",
+                "to": "2026-08-08",
+                "fromUtc": "2026-08-07T23:25:48.727Z",
+                "toUtc": "2026-08-08T23:17:32.323Z",
+                "signedSeconds": -496.404,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 477.52,
+              "witness": {
+                "from": "2027-08-12",
+                "to": "2027-08-13",
+                "fromUtc": "2027-08-12T01:13:49.023Z",
+                "toUtc": "2027-08-13T01:21:46.543Z",
+                "signedSeconds": 477.52,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 476.197,
+              "witness": {
+                "from": "2027-05-03",
+                "to": "2027-05-04",
+                "fromUtc": "2027-05-03T23:06:30.959Z",
+                "toUtc": "2027-05-04T23:14:27.156Z",
+                "signedSeconds": 476.197,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "edinburgh",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 493.614,
+              "witness": {
+                "from": "2028-08-11",
+                "to": "2028-08-12",
+                "fromUtc": "2028-08-11T01:11:39.450Z",
+                "toUtc": "2028-08-12T01:19:53.064Z",
+                "signedSeconds": 493.614,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 466.861,
+              "witness": {
+                "from": "2028-08-07",
+                "to": "2028-08-08",
+                "fromUtc": "2028-08-07T23:21:23.055Z",
+                "toUtc": "2028-08-08T23:13:36.194Z",
+                "signedSeconds": -466.861,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 523.521,
+              "witness": {
+                "from": "2026-04-17",
+                "to": "2026-04-18",
+                "fromUtc": "2026-04-17T00:33:46.183Z",
+                "toUtc": "2026-04-18T00:25:02.662Z",
+                "signedSeconds": -523.521,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 525.85,
+              "witness": {
+                "from": "2026-08-21",
+                "to": "2026-08-22",
+                "fromUtc": "2026-08-21T22:13:52.777Z",
+                "toUtc": "2026-08-22T22:05:06.927Z",
+                "signedSeconds": -525.85,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 516.453,
+              "witness": {
+                "from": "2027-08-25",
+                "to": "2027-08-26",
+                "fromUtc": "2027-08-25T00:24:11.795Z",
+                "toUtc": "2027-08-26T00:32:48.248Z",
+                "signedSeconds": 516.453,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 19,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 488.259,
+              "witness": {
+                "from": "2027-08-22",
+                "to": "2027-08-23",
+                "fromUtc": "2027-08-22T22:07:10.230Z",
+                "toUtc": "2027-08-23T21:59:01.971Z",
+                "signedSeconds": -488.259,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "oslo",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.063,
+              "witness": {
+                "from": "2028-04-16",
+                "to": "2028-04-17",
+                "fromUtc": "2028-04-16T00:37:41.120Z",
+                "toUtc": "2028-04-17T00:29:22.057Z",
+                "signedSeconds": -499.063,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 20,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.283,
+              "witness": {
+                "from": "2028-08-21",
+                "to": "2028-08-22",
+                "fromUtc": "2028-08-21T22:09:14.008Z",
+                "toUtc": "2028-08-22T22:00:54.725Z",
+                "signedSeconds": -499.283,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 364,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 364,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 484.109,
+              "witness": {
+                "from": "2026-02-04",
+                "to": "2026-02-05",
+                "fromUtc": "2026-02-04T05:42:45.931Z",
+                "toUtc": "2026-02-05T05:50:50.040Z",
+                "signedSeconds": 484.109,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 364,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.979,
+              "witness": {
+                "from": "2026-11-09",
+                "to": "2026-11-10",
+                "fromUtc": "2026-11-10T03:18:26.236Z",
+                "toUtc": "2026-11-11T03:26:43.215Z",
+                "signedSeconds": 496.979,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 365,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1825,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 365,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 365,
+              "overFiveMinutes": 16,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 499.436,
+              "witness": {
+                "from": "2027-02-04",
+                "to": "2027-02-05",
+                "fromUtc": "2027-02-04T05:40:41.645Z",
+                "toUtc": "2027-02-05T05:49:01.081Z",
+                "signedSeconds": 499.436,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 365,
+              "overFiveMinutes": 15,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 496.299,
+              "witness": {
+                "from": "2027-01-30",
+                "to": "2027-01-31",
+                "fromUtc": "2027-01-31T03:57:58.709Z",
+                "toUtc": "2027-02-01T03:49:42.410Z",
+                "signedSeconds": -496.299,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "ushuaia",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 366,
+          "missing": {
+            "fajr": 0,
+            "sunrise": 0,
+            "dhuhr": 0,
+            "asr": 0,
+            "maghrib": 0,
+            "isha": 0
+          },
+          "withinDayOrderChecks": 1830,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 366,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 366,
+              "overFiveMinutes": 14,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 456.222,
+              "witness": {
+                "from": "2028-02-05",
+                "to": "2028-02-06",
+                "fromUtc": "2028-02-05T05:47:08.207Z",
+                "toUtc": "2028-02-06T05:54:44.429Z",
+                "signedSeconds": 456.222,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 366,
+              "overFiveMinutes": 14,
+              "overTenMinutes": 0,
+              "maximumAbsoluteSeconds": 467.16,
+              "witness": {
+                "from": "2028-11-08",
+                "to": "2028-11-09",
+                "fromUtc": "2028-11-09T03:14:44.866Z",
+                "toUtc": "2028-11-10T03:22:32.026Z",
+                "signedSeconds": 467.16,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2026,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 134,
+          "missing": {
+            "fajr": 174,
+            "sunrise": 116,
+            "dhuhr": 0,
+            "asr": 57,
+            "maghrib": 116,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1193,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 190,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 189,
+              "overFiveMinutes": 44,
+              "overTenMinutes": 10,
+              "maximumAbsoluteSeconds": 2567.232,
+              "witness": {
+                "from": "2026-09-17",
+                "to": "2026-09-18",
+                "fromUtc": "2026-09-16T22:40:29.454Z",
+                "toUtc": "2026-09-17T23:23:16.686Z",
+                "signedSeconds": 2567.232,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 194,
+              "overFiveMinutes": 46,
+              "overTenMinutes": 10,
+              "maximumAbsoluteSeconds": 1733.243,
+              "witness": {
+                "from": "2026-03-27",
+                "to": "2026-03-28",
+                "fromUtc": "2026-03-27T22:00:16.239Z",
+                "toUtc": "2026-03-28T22:29:09.482Z",
+                "signedSeconds": 1733.243,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2027,
+          "plannedDays": 365,
+          "presentDays": 365,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 132,
+          "missing": {
+            "fajr": 175,
+            "sunrise": 117,
+            "dhuhr": 0,
+            "asr": 58,
+            "maghrib": 117,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1189,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 190,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 189,
+              "overFiveMinutes": 43,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1188.819,
+              "witness": {
+                "from": "2027-09-18",
+                "to": "2027-09-19",
+                "fromUtc": "2027-09-17T23:17:29.461Z",
+                "toUtc": "2027-09-18T23:37:18.280Z",
+                "signedSeconds": 1188.819,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 195,
+              "overFiveMinutes": 45,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1529.392,
+              "witness": {
+                "from": "2027-09-14",
+                "to": "2027-09-15",
+                "fromUtc": "2027-09-14T22:14:12.172Z",
+                "toUtc": "2027-09-15T21:48:42.780Z",
+                "signedSeconds": -1529.392,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        },
+        {
+          "city": "tromso",
+          "year": 2028,
+          "plannedDays": 366,
+          "presentDays": 366,
+          "absentRows": 0,
+          "errorDays": 0,
+          "completeDays": 133,
+          "missing": {
+            "fajr": 174,
+            "sunrise": 118,
+            "dhuhr": 0,
+            "asr": 59,
+            "maghrib": 118,
+            "isha": 169
+          },
+          "withinDayOrderChecks": 1192,
+          "withinDayOrderViolations": 0,
+          "orderWitnesses": [],
+          "crossNightChecks": 192,
+          "crossNightViolations": 0,
+          "crossNightWitnesses": [],
+          "changes": {
+            "fajr": {
+              "pairs": 191,
+              "overFiveMinutes": 43,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1945.758,
+              "witness": {
+                "from": "2028-03-25",
+                "to": "2028-03-26",
+                "fromUtc": "2028-03-24T23:36:14.101Z",
+                "toUtc": "2028-03-25T23:03:48.343Z",
+                "signedSeconds": -1945.758,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            },
+            "isha": {
+              "pairs": 196,
+              "overFiveMinutes": 45,
+              "overTenMinutes": 9,
+              "maximumAbsoluteSeconds": 1935.912,
+              "witness": {
+                "from": "2028-09-13",
+                "to": "2028-09-14",
+                "fromUtc": "2028-09-13T22:25:54.341Z",
+                "toUtc": "2028-09-14T21:53:38.429Z",
+                "signedSeconds": -1935.912,
+                "fromStatus": "calculated",
+                "toStatus": "calculated"
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "runtime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "tzdb": "2026d",
+    "expectedTzdb": "2026d"
+  },
+  "dependencies": {
+    "core/astronomy/continuous-solver.mjs": "04c8032ddd739d45e3559f97d138f264fff4646e97a2a3c4dfc6de139ad19922",
+    "core/astronomy/solar-usno-v2.mjs": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc",
+    "core/astronomy/spa-coefficients.json": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b",
+    "core/astronomy/spa-point.mjs": "db2cd841739692ab1c7269b914dd69958d7815770a07f19da8e12551916578e8",
+    "core/input.mjs": "0fb93a091d06fac785b6ca1739cda898445b81946a8fc51181f0b86ff0c849cd",
+    "core/local/index.mjs": "c6944fb0040858132bf5ffd6b9395edca6538a505f3be7a9f735c4952264f017",
+    "core/local/local-relative-policy.mjs": "bbb1c03bb973432a4acd00332c0931e5d4d8cbb4bf66214f4a2b484d8eca8ae5",
+    "core/local/night-fraction.mjs": "35d69827377c1d599d04f49b22c332a57159c963f59c3e79ddb9d1b8ed10ae2e",
+    "core/local/northern.mjs": "769b00f7c5d5cfd5bbf3fb8a4732b41ba1b3ec50acb773e0eb7d5a77b74879fa",
+    "core/local/profiles.mjs": "4ddc744aa84b3ed5d082353382611fee082d95b6ca22a351da0bb6dbfdbaae8b",
+    "core/local/schedule.mjs": "8415c2409527a892550f304a7e95792b9a6f29bdc1c3b3a4498c0b8141195555",
+    "core/local/selection.mjs": "f96e2456bc6dffafd7aed2f7754e55ee5f53dba59850c2226a1038566d8f1b72",
+    "core/local/solar.mjs": "deeb0f95301a1b80b831ac8f4a6bea576cd15b89bffab2e4a20062b34ea30250",
+    "core/local/summer.mjs": "932e4cdd65e244f4913022da68d7e1788b3f272f304cd0bd90381499db64517a",
+    "core/local/sunni-profiles.mjs": "d2be47ffe5504f078768f02b1cc41b8893fcdee74ce772d74f8505193bbbb4b0",
+    "core/local/sunni-relative.mjs": "f9b6c81d59bb95a848ddb6e0c8c8de072d255f65a4a1c2f412aeebf1c1c7d46d",
+    "core/local/sunni.mjs": "7767678654c8d3c9a2a9c91d38b071ad9e2285fae949fd778e22ab11dc1171e6"
+  },
+  "runnerSha256": "9fec1ed4e1f481d247e7f3e63754e7796b1fa7fdb26c3ce2c053ac549739664f",
+  "analyzerSha256": "05d070ddc89fbffdf175735bd7a4c5a8653c8533243a0dc035b9d0141d696750",
+  "elapsedMilliseconds": 404665
+}

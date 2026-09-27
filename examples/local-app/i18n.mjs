@@ -141,6 +141,41 @@ Object.assign(messages.tr,{
   'reason.referenceFailure':'Gerekli referans olayı veya geçerli gece oranı bulunmuyor'
 });
 
+// A separate local interpretation of the dated 2009 relative-night procedure.
+Object.assign(messages.en,{
+  'night.local-relative':'MWL 2009 · local summer transitions',
+  'night.mode.local-relative':'local relative estimate with gradual transitions',
+  'night.relativeSummary':'Missing or rapidly changing Fajr/Isha use a local annual night share with gradual transitions. Real sunset and sunrise are required. This optional interpretation covers 48.6°–66.6° north or south.',
+  'night.relativeScope':'Local interpretation of the 2009 MWL/IAC procedure. One annual Isha-to-night ratio is used for both Fajr and Isha when their signs are missing or change by over ten minutes between adjacent days. Entry and return steps are limited to five minutes in a clock frame unaffected by daylight saving. Stable real crossings are kept. Year selection, overlapping transitions and the southern application are declared local conventions; this does not reproduce an official timetable or replace polar horizons.',
+  'rule.relative':'Estimated using the local annual Isha share of the actual night, with bounded entry and return transitions. The original crossing is missing or unstable under the chosen rule.',
+  'source.localrelative':'MWL/IAC 2009 procedure (Arabic original)',
+  'source.localrelativeenglish':'MWL/IAC 2009 overview (English)',
+  'reason.relativeEstimated':'Estimated under the selected local summer-transition rule',
+  'reason.relativeBlocked':'The selected transition rule lacks a valid night, stable anchors or a supported calculation interval'
+});
+Object.assign(messages.de,{
+  'night.local-relative':'MWL 2009 · lokale Sommerübergänge',
+  'night.mode.local-relative':'lokale relative Schätzung mit schrittweisen Übergängen',
+  'night.relativeSummary':'Fehlende oder stark schwankende Fajr-/Ischa-Zeiten werden aus einem lokalen jährlichen Nachtanteil mit schrittweisen Übergängen geschätzt. Echte Sonnenuntergänge und Sonnenaufgänge sind erforderlich. Diese optionale Auslegung gilt zwischen 48,6° und 66,6° Nord oder Süd.',
+  'night.relativeScope':'Lokale Auslegung des MWL/IAC-Verfahrens von 2009. Ein jährlicher Ischa-Nachtanteil gilt für Fajr und Ischa, wenn ihre Zeichen fehlen oder sich zwischen benachbarten Tagen um mehr als zehn Minuten verschieben. Eintritt und Rückkehr sind in einem von der Sommerzeit unabhängigen Zeitmaß auf Schritte von fünf Minuten begrenzt. Stabile echte Übertritte bleiben erhalten. Jahreswahl, überlappende Übergänge und die Anwendung im Süden sind erklärte lokale Konventionen; kein offizieller Kalender und kein Ersatz für fehlende Polarhorizonte.',
+  'rule.relative':'Aus dem lokalen jährlichen Ischa-Anteil an der tatsächlichen Nacht geschätzt, mit begrenzten Eintritts- und Rückkehrübergängen. Der ursprüngliche Übertritt fehlt oder ist nach der gewählten Regel instabil.',
+  'source.localrelative':'MWL/IAC-Verfahren von 2009 (arabisches Original)',
+  'source.localrelativeenglish':'MWL/IAC-Übersicht von 2009 (englisch)',
+  'reason.relativeEstimated':'Nach der gewählten lokalen Sommerübergangsregel geschätzt',
+  'reason.relativeBlocked':'Der gewählten Übergangsregel fehlen eine gültige Nacht, stabile Anker oder ein unterstützter Rechenzeitraum'
+});
+Object.assign(messages.tr,{
+  'night.local-relative':'MWL 2009 · yerel yaz geçişleri',
+  'night.mode.local-relative':'kademeli geçişlerle yerel nispi tahmin',
+  'night.relativeSummary':'Eksik veya hızla değişen imsak/yatsı, yerel yıllık gece oranı ve kademeli geçişlerle tahmin edilir. Gerçek günbatımı ve gündoğumu gerekir. Bu isteğe bağlı yorum 48,6°–66,6° kuzey veya güney enlemleri içindir.',
+  'night.relativeScope':'2009 MWL/IAC yönteminin yerel yorumu. İşaretleri kaybolan veya komşu günlerde on dakikadan fazla değişen imsak ve yatsı için aynı yıllık yatsı/gece oranı kullanılır. Başlangıç ve dönüş adımları, yaz saatinden etkilenmeyen bir zaman ölçüsünde beş dakika ile sınırlıdır. Kararlı gerçek geçişler korunur. Yıl seçimi, örtüşen geçişler ve güney uygulaması açıklanmış yerel kabullerdir; resmî takvim veya bulunmayan kutup ufuklarının ikamesi değildir.',
+  'rule.relative':'Gerçek gecenin yerel yıllık yatsı oranı ve sınırlı başlangıç/dönüş geçişleriyle tahmin edilir. Asıl geçiş bulunmuyor veya seçilen kurala göre kararsız.',
+  'source.localrelative':'2009 MWL/IAC yöntemi (Arapça özgün kaynak)',
+  'source.localrelativeenglish':'2009 MWL/IAC özeti (İngilizce)',
+  'reason.relativeEstimated':'Seçilen yerel yaz geçişi kuralıyla tahmin edildi',
+  'reason.relativeBlocked':'Seçilen geçiş kuralı için geçerli gece, kararlı dayanaklar veya desteklenen hesaplama dönemi yok'
+});
+
 export function normalizeLanguage(value){
   const code=typeof value==='string'?value.trim().toLowerCase().split(/[-_]/)[0]:'';
   return SUPPORTED_LANGUAGES.includes(code)?code:'en';
@@ -190,7 +225,7 @@ export function localizedProfileLabel(profile,language){
 }
 export function localizedProfileScope(profile,language,context={}){
   const lang=normalizeLanguage(language),id=profile.id;
-  if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??(profile.id?.endsWith('-reference45-v1')?'reference45':profile.highLatitudeMode));
+  if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??(profile.id?.endsWith('-reference45-v1')?'reference45':profile.id?.endsWith('-local-relative-v1')?'local-relative':profile.highLatitudeMode));
   if(id.endsWith('-observer-v1'))return translate('scope.observer',lang,{base:translate('scope.composed',lang)});
   const key=id.startsWith('diyanet-published-')?'scope.diyanet':id==='local-northern-seasonal-v1'?'scope.seasonal'
     :id.startsWith('egypt-')?'scope.egypt':id.startsWith('fcna-usa')?'scope.fcna-us'
@@ -211,7 +246,7 @@ export function resolveMethodProfile(method,{asrFactor,nightMode,ramadanMode}={}
   const factor=factors.includes(Number(asrFactor))?Number(asrFactor):fallbackFactor;
   const availableModes=ramadans.length?ramadans:nights;
   const requestedMode=ramadans.length?ramadanMode:nightMode;
-  const fallbackMode=method.defaultProfile.match(/-(physical|angle-night|reference45|calendar|ramadan|ordinary)-v1$/)?.[1]??availableModes[0];
+  const fallbackMode=method.defaultProfile.match(/-(physical|angle-night|reference45|local-relative|calendar|ramadan|ordinary)-v1$/)?.[1]??availableModes[0];
   const mode=availableModes.includes(requestedMode)?requestedMode:fallbackMode;
   if(!mode)return method.defaultProfile;
   const candidate=`sunni-${method.id}-shadow${factor}-${mode}-v1`;
@@ -225,6 +260,7 @@ export function localizedFamilyScope(id,language,mode){
   if(value===key)value=translate('family.scope.other',language);
   if(id==='umm-al-qura')value+=` ${translate('ramadan.note',language)}`;
   if(mode==='reference45')value+=` ${translate('night.reference45Scope',language)}`;
+  if(mode==='local-relative')value+=` ${translate('night.relativeScope',language)}`;
   return value;
 }
 export function localizedStatus(status,role,language){
@@ -235,6 +271,7 @@ export function localizedStatus(status,role,language){
 export function localizedReason(reason,language){
   if(!reason)return'';
   if(reason==='missing-seasonal-crossing-estimated-from-reference45-night-fraction')return translate('reason.referenceEstimated',language);
+  if(reason.startsWith('local-relative-')||reason.startsWith('relative-'))return translate(/estimated|transition-selected|seasonal-replacement/.test(reason)?'reason.relativeEstimated':'reason.relativeBlocked',language);
   if(reason.startsWith('reference45-'))return translate(/scope|latitude|outside-supported/.test(reason)?'reason.referenceScope':/night|horizon/.test(reason)?'reason.referenceNight':'reason.referenceFailure',language);
   if(/policy|seasonal|northern/i.test(reason))return translate('reason.policy',language);
   if(/crossing|solar-cycle|transit|horizon|sun-|twilight|shadow/i.test(reason))return translate('reason.noCrossing',language);
@@ -256,6 +293,7 @@ export function localizedRuleDescription(day,event,language){
   const lang=normalizeLanguage(language),profile=day.profile,rule=day.events[event],meta=day.astronomy?.model??{};
   if(event==='isha'&&day.calculation?.intervalPolicy)return translate('rule.ishaInterval',lang,{minutes:day.calculation.intervalPolicy.minutes});
   if(rule.status==='estimated'&&profile.id.endsWith('-reference45-v1'))return translate('rule.reference45',lang);
+  if(rule.status==='estimated'&&profile.id.endsWith('-local-relative-v1'))return translate('rule.relative',lang);
   if(rule.status==='estimated')return translate('rule.estimated',lang);
   if(profile.northernPolicyThresholdDegrees!==null&&(event==='fajr'||event==='isha')&&day.calculation.northernPolicy){
     const policy=day.calculation.seasonalPolicy;

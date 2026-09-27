@@ -4,6 +4,8 @@ The primary method selector focuses on eight Sunni families: MWL, Karachi, Egypt
 
 For **MWL** and **Egyptian**, the Short nights selector additionally offers **45° reference night · missing twilight only**. This [bounded adaptation](../../core/local/REFERENCE45.md) uses the 1986/2007 council rule with declared coordinate/night mapping, keeps actual crossings, and marks replacements as estimated. It can jump at the transition and does not supply polar-day horizons. The default remains physical crossings only. The [research matrix](../../core/local/SPECIAL-RULES.md) keeps other institutional policies and the distinct 2009 MWL method separate.
 
+For **MWL**, **Short nights → MWL 2009 · local summer transitions** additionally selects the [local relative interpretation](../../core/local/LOCAL-RELATIVE.md). It uses one local annual night fraction for Fajr and Isha and limits steps involving estimates to five minutes in its declared UTC phase frame. Stable actual signs stay unchanged. The UI marks estimated values and explains the latitude, horizon and source limits. This is an explicit option with both Asr factors, not a change to other method families or the default. The first query at a new point/year computes annual context and can take several seconds; later queries reuse a bounded local cache.
+
 Run the prototype from the `public/prayer-times-research` directory:
 
 ```sh

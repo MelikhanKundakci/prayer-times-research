@@ -9,6 +9,19 @@ import {diyanetComparisonRows} from '../examples/local-app/comparison-view.mjs';
 
 const root=new URL('../examples/local-app/',import.meta.url);
 
+test('local relative selection is restricted to MWL and explained in all three languages',()=>{
+  const methods=listAvailableMethods(),mwl=methods.find(m=>m.id==='mwl');
+  for(const factor of [1,2])assert.equal(resolveMethodProfile(mwl,{asrFactor:factor,nightMode:'local-relative'}),`sunni-mwl-shadow${factor}-local-relative-v1`);
+  for(const method of methods.filter(m=>m.id!=='mwl'))assert.ok(!resolveMethodProfile(method,{nightMode:'local-relative'}).includes('local-relative'));
+  for(const lang of ['en','de','tr']){
+    for(const key of ['night.local-relative','night.mode.local-relative','night.relativeSummary','rule.relative','source.localrelative'])assert.notEqual(translate(key,lang),key);
+    assert.equal(localizedReason('local-relative-seasonal-replacement',lang),translate('reason.relativeEstimated',lang));
+    assert.equal(localizedReason('local-relative-actual-night-unavailable',lang),translate('reason.relativeBlocked',lang));
+    assert.match(localizedProfileScope({id:'sunni-mwl-shadow1-local-relative-v1',family:'mwl'},lang),/2009/);
+    assert.equal(localizedRuleDescription({profile:{id:'sunni-mwl-shadow1-local-relative-v1'},events:{fajr:{status:'estimated'}}},'fajr',lang),translate('rule.relative',lang));
+  }
+});
+
 test('English is the safe default and only the language preference is persisted',()=>{
   assert.equal(readLanguage({getItem:()=>null}),'en');
   assert.equal(normalizeLanguage('TR-tr'),'tr');

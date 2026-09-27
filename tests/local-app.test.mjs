@@ -10,8 +10,8 @@ test('Sunni family catalogue and every family default produce matching day/sched
   const base=`http://127.0.0.1:${server.address().port}`;
   const catalog=await(await fetch(base+'/api/profiles')).json();
   assert.deepEqual(catalog.methods.map(m=>m.id),['mwl','karachi','egyptian','umm-al-qura','isna','diyanet','kemenag','jakim']);
-  assert.equal(catalog.profiles.length,66);
-  assert.equal(new Set(catalog.profiles.map(p=>p.id)).size,66);
+  assert.equal(catalog.profiles.length,68);
+  assert.equal(new Set(catalog.profiles.map(p=>p.id)).size,68);
   for(const method of catalog.methods){
     assert.ok(method.profiles.every(id=>catalog.profiles.some(p=>p.id===id)));
     const location=method.id==='kemenag'?{latitude:-6.2,longitude:106.8,timeZone:'Asia/Jakarta'}
@@ -51,6 +51,28 @@ test('reference-night option is limited to the sourced families and stays estima
       assert.equal(entry.epochMilliseconds,day.events[entry.event].epochMilliseconds);
       assert.equal(entry.status,day.events[entry.event].status);
     }
+  }
+});
+
+test('local relative summer transitions are an explicit MWL option with consistent schedule instants',async t=>{
+  const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base=`http://127.0.0.1:${server.address().port}`;
+  const catalog=await(await fetch(base+'/api/profiles')).json();
+  assert.deepEqual(catalog.methods.filter(m=>m.nightModes.includes('local-relative')).map(m=>m.id),['mwl']);
+  assert.equal(catalog.methods.find(m=>m.id==='mwl').defaultProfile,'sunni-mwl-shadow1-physical-v1');
+  const profile='sunni-mwl-shadow2-local-relative-v1';
+  const response=await fetch(base+'/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({
+    date:'2027-06-21',latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin',profile})});
+  assert.equal(response.status,200);
+  const {day,schedule}=await response.json();
+  assert.equal(day.profile.id,profile);assert.equal(day.profile.official,false);
+  assert.equal(day.coverage.prayerStartsComplete,true);assert.equal(schedule.complete,true);
+  assert.deepEqual(day.coverage.estimatedEvents,['fajr','isha']);
+  assert.equal(schedule.context.calculationVersion,day.calculation.version);
+  for(const entry of schedule.entries.filter(e=>e.sourceDate===day.date)){
+    assert.equal(entry.epochMilliseconds,day.events[entry.event].epochMilliseconds);
+    assert.equal(entry.status,day.events[entry.event].status);
   }
 });
 

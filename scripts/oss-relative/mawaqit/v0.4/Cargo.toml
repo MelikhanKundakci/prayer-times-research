@@ -1,0 +1,10 @@
+[package]
+name = "mawaqit-relative-benchmark-v040"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[dependencies]
+chrono = "=0.4.45"
+mawaqit = { git = "https://github.com/sniper1720/mawaqit", rev = "50f18017317a6858058fb8734a68fd415073f5e7" }
+serde_json = "=1.0.151"

@@ -1,0 +1,27 @@
+{
+  "generated_on": "2026-09-27",
+  "library": "github.com/hablullah/go-prayer v1.1.1",
+  "library_commit": "02a763f9afd0eba1d93489bd9a47370695aba44b",
+  "toolchain": "go1.27.1 darwin/arm64",
+  "direct_dependencies": {
+    "github.com/hablullah/go-prayer": "v1.1.1",
+    "github.com/hablullah/go-sampa": "v1.0.0",
+    "github.com/hablullah/go-juliandays": "v1.0.1-0.20220316153050-f56193695a5b"
+  },
+  "iana_tzdata": "2026c-rearguard (host timezone database)",
+  "configuration": "LocalRelativeEstimation, MWL Fajr 18 degrees / Isha 17 degrees, Shafii Asr factor 1, precise seconds, no offsets",
+  "years": [2026, 2027, 2028],
+  "locations": {
+    "frankfurt": "Europe/Berlin",
+    "berlin": "Europe/Berlin",
+    "edinburgh": "Europe/London",
+    "oslo": "Europe/Oslo",
+    "ushuaia": "America/Argentina/Ushuaia",
+    "tromso": "Europe/Oslo"
+  },
+  "row_count": 6576,
+  "calculation_errors": 0,
+  "rows_with_one_or_more_missing_events": 670,
+  "root_common_sha256": "7fc7018914e66e888cc3ca04148f9c3858c423f8d6a90781ff6842b3f96af282",
+  "interpretation": "Implementation behavior comparison only; these outputs are not independent accuracy validation and do not use or compare Diyanet published calendars."
+}

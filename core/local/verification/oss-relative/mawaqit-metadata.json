@@ -1,0 +1,60 @@
+{
+  "generated_utc_date": "2026-09-27",
+  "harness_source": "scripts/oss-relative/mawaqit/",
+  "runtime": {
+    "rustc": "rustc 1.97.1 (8bab26f4f 2026-07-14) (Homebrew)",
+    "cargo": "cargo 1.97.1 (c980f4866 2026-06-30) (Homebrew)",
+    "target": "aarch64-apple-darwin"
+  },
+  "library": {
+    "name": "mawaqit",
+    "license": "MIT (verified from the pinned source LICENSE and Cargo.toml)",
+    "v0.5.0": {
+      "tag": "v0.5.0",
+      "commit": "aa31f98b0128e54c936b6e8e37841102ce90d454",
+      "source": "https://github.com/sniper1720/mawaqit/tree/aa31f98b0128e54c936b6e8e37841102ce90d454"
+    },
+    "v0.4.0": {
+      "tag": "v0.4.0",
+      "commit": "50f18017317a6858058fb8734a68fd415073f5e7",
+      "source": "https://github.com/sniper1720/mawaqit/tree/50f18017317a6858058fb8734a68fd415073f5e7"
+    }
+  },
+  "dependencies_v0_5_0": {
+    "chrono": "0.4.45",
+    "iana-time-zone": "0.1.65",
+    "core-foundation-sys": "0.8.7",
+    "num-traits": "0.2.19",
+    "autocfg": "1.5.1",
+    "serde_json": "1.0.151",
+    "serde_core": "1.0.229",
+    "zmij": "1.0.23",
+    "memchr": "2.8.3",
+    "itoa": "1.0.18"
+  },
+  "configuration": {
+    "method": "MuslimWorldLeague",
+    "fajr_angle_deg": 18.0,
+    "isha_angle_deg": 17.0,
+    "madhab": "Shafi_factor_1",
+    "high_latitude_rule": "LocalRelativeEstimation",
+    "polar_estimation": null,
+    "rounding": "None",
+    "manual_adjustments": "none"
+  },
+  "cities": {
+    "frankfurt": [50.1109, 8.6821],
+    "berlin": [52.52, 13.405],
+    "edinburgh": [55.9533, -3.1883],
+    "oslo": [59.9139, 10.7522],
+    "ushuaia": [-54.8019, -68.303],
+    "tromso": [69.6492, 18.9553]
+  },
+  "outputs": {
+    "events-v0.5.0-2026.jsonl": {"rows": 2190, "errors": 365},
+    "events-v0.5.0-2027.jsonl": {"rows": 2190, "errors": 365},
+    "events-v0.5.0-2028.jsonl": {"rows": 2196, "errors": 366},
+    "events-v0.4.0-2027.jsonl": {"rows": 2190, "errors": 365}
+  },
+  "caveat": "These outputs expose library behavior for the specified grid only; they are not independent accuracy validation or evidence of equivalence to Diyanet or MWL institutional calendars. Errors are retained and not replaced."
+}
