@@ -26,9 +26,15 @@
           <p id="method-help" class="hint" data-i18n="family.help">Choose the name you know from your mosque or calendar. These are independent local calculations; times can differ from official calendars.</p>
           <p id="method-description" class="hint" hidden></p>
           <div id="family-options" hidden>
+            <div class="automatic-card" role="status" aria-live="polite"><strong id="settings-mode"></strong><p id="settings-summary"></p><p id="settings-policy"></p></div>
+            <details id="family-advanced"><summary data-i18n="settings.advanced">Advanced settings</summary>
+            <label class="checkbox"><input id="automatic-settings" type="checkbox" checked><span data-i18n="settings.automaticToggle">Use automatic settings for this method</span></label>
+            <p class="hint" data-i18n="settings.defaultsNote">These are this app’s defaults. You can adjust supported choices to match your mosque.</p>
+            <div id="family-manual" hidden>
             <label><span data-i18n="field.family-asr">Asr shadow method</span><select id="familyShadow"></select></label>
             <label id="family-night-label"><span data-i18n="field.short-night">Short nights</span><select id="familyNight"><option value="physical" data-i18n="night.physical">No estimates</option><option value="angle-night" data-i18n="night.angle">Angle fraction of night · estimated rule</option></select></label>
             <label id="family-ramadan-label" hidden><span data-i18n="field.ramadan">Umm al-Qura Isha schedule</span><select id="ramadan"><option value="calendar" data-i18n="ramadan.calendar">Use the date-based calendar schedule</option><option value="ramadan" data-i18n="ramadan.month">Ramadan schedule · 120 minutes</option><option value="ordinary" data-i18n="ramadan.ordinary">Ordinary schedule · 90 minutes</option></select></label>
+            </div></details>
             <details><summary data-i18n="family.details">Method details and limitations</summary><p class="hint" id="family-note"></p></details>
           </div>
           <div id="other-profiles" hidden><label><span data-i18n="field.other-profile">Other point profiles</span><select id="profile"></select></label><p class="hint" id="other-profile-note"></p></div>

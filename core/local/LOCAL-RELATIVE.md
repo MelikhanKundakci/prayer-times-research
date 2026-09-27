@@ -2,7 +2,7 @@
 
 This optional, versioned calculation fills missing or unstable MWL twilight with a local annual night fraction and bounded entry/return transitions. It runs entirely offline at the supplied coordinates. It is a **declared local interpretation**, not a recovered institutional backend, an official Diyanet method or a measurement of observed dawn accuracy.
 
-The two profiles are `sunni-mwl-shadow1-local-relative-v1` and `sunni-mwl-shadow2-local-relative-v1`. They use the unchanged MWL physical profile: Fajr 18°, Isha 17°, SPA astronomy, a flat −50′ horizon, the selected Asr shadow factor and transit +1 minute for Dhuhr. The other four events keep their original values. Ordinary, undisturbed Fajr/Isha also remain unchanged. The default MWL profile still uses physical crossings only.
+The two profiles are `sunni-mwl-shadow1-local-relative-v1` and `sunni-mwl-shadow2-local-relative-v1`. They use the unchanged MWL physical profile: Fajr 18°, Isha 17°, SPA astronomy, a flat −50′ horizon, the selected Asr shadow factor and transit +1 minute for Dhuhr. The other four events keep their original values. Ordinary, undisturbed Fajr/Isha also remain unchanged. The frozen catalogue default still uses physical crossings only; the browser’s [automatic settings](../../examples/local-app/AUTOMATIC-SETTINGS.md) now select this separate interpretation.
 
 ## Evidence and explicit choices
 
@@ -58,7 +58,7 @@ console.log(day.events.fajr.status); // estimated
 console.log(day.events.fajr.selection.segment.annualRatio);
 ```
 
-In the browser choose **MWL → Short nights → MWL 2009 · local summer transitions**. All three UI languages explain the scope. Estimates carry the mode, actual night, both anchors, annual sample counts, mean year and fraction. `astronomy` retains the unmodified physical events. Failed policy checks clear selected time fields rather than returning a fallback clock. Returned diagnostics are detached from bounded point/year caches.
+In the browser, automatic **MWL** settings select this interpretation. For manual choices, open **Advanced settings**, turn off automatic settings, then use **Short nights → MWL 2009 · local summer transitions**. All three UI languages explain the scope. Estimates carry the mode, actual night, both anchors, annual sample counts, mean year and fraction. `astronomy` retains the unmodified physical events. Failed policy checks clear selected time fields rather than returning a fallback clock. Returned diagnostics are detached from bounded point/year caches.
 
 ## Verification
 

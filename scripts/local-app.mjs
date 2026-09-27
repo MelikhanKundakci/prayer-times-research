@@ -17,6 +17,7 @@ const assets=new Map([
   ['/app.mjs',['app.mjs','text/javascript; charset=utf-8']],
   ['/comparison-view.mjs',['comparison-view.mjs','text/javascript; charset=utf-8']],
   ['/i18n.mjs',['i18n.mjs','text/javascript; charset=utf-8']],
+  ['/method-settings.mjs',['method-settings.mjs','text/javascript; charset=utf-8']],
   ['/style.css',['style.css','text/css; charset=utf-8']],
 ]);
 function respond(res,status,value,type='application/json; charset=utf-8'){

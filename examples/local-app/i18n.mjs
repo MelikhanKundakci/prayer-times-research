@@ -71,27 +71,27 @@ Object.assign(messages.en,{
   'field.family':"Prayer-time calculation method",'family.mwl':"Muslim World League (MWL)",'family.karachi':"Karachi method · Pakistan",'family.egyptian':"Egyptian method",'family.umm-al-qura':"Umm al-Qura · Saudi Arabia",'family.isna':"Islamic Society of North America (ISNA)",'family.diyanet':"Diyanet · Türkiye’s religious authority",'family.kemenag':"Kemenag · Indonesia’s religious ministry",'family.jakim':"JAKIM · Malaysia’s Islamic affairs",'family.custom':'Custom local rules','family.other':'Other point profiles',
   'field.family-asr':'Asr shadow factor','family.factor1':'Factor 1 · first shadow','family.factor2':'Factor 2 · second shadow','field.ramadan':'Umm al-Qura Isha schedule','ramadan.calendar':'Automatic · date-based schedule','ramadan.month':'Ramadan · 120 minutes after sunset','ramadan.ordinary':'Ordinary days · 90 minutes after sunset','ramadan.note':'The date-based option follows the supplied Umm al-Qura civil date; the manual choices are overrides for local announcements.',
   'field.other-profile':'Other point profiles','family.scope.mwl':'MWL angle family with an offline point-time implementation. This is not an official MWL timetable; horizon, Asr and short-night handling are shown separately.','family.scope.karachi':'Karachi angle family with an offline point-time implementation. This is not an official Karachi timetable; Asr factor and short-night handling are selected separately.','family.scope.egyptian':'Egyptian angle family with locally declared point astronomy, horizon, Asr and schedule conventions. It is not an official Egyptian timetable.','family.scope.isna':'ISNA angle family with an offline point-time implementation. This is not an official ISNA timetable; Asr factor and short-night handling are selected separately.','family.scope.diyanet':'Published Diyanet criteria with the declared local point model. This is not an official Diyanet calendar; unresolved northern summer and transition events remain unavailable.','family.scope.kemenag':'Bounded Kemenag worked-example profile for Indonesia, not a nationwide current-production engine. Its event rounding is explained below.','family.scope.jakim':'Malaysia-oriented point profile using the stated 18°/18° twilight angles, 64-second Dhuhr margin and minute quantization. It does not reproduce a JAKIM zone timetable.','family.scope.custom':'A software combination of independently selected rules. No institution is claimed to publish this full combination.','family.scope.other':'Additional point profiles with their own stated scope and limits.',
-  'family.note.custom':'Choose a named family for its published or documented conventions. Change only the options shown for that family.','family.fixedAsr':'This family uses its fixed Asr convention.','family.fixedNight':'This family does not offer the shared night-fraction estimate. Missing crossings stay unavailable.','family.selected':'Selected family: {family}.','profile.composedNote':'Build a local combination by choosing each rule below. It is not an institutional method.','method.summary':'{family} · Asr factor {factor} · {night}','night.mode.physical':'physical crossings only','night.mode.angle-night':'night-fraction estimate enabled'
+  'family.note.custom':'Choose a named family for its published or documented conventions. Change only the options shown for that family.','family.fixedAsr':'This family uses its fixed Asr convention.','family.fixedNight':'This family does not offer the shared night-fraction estimate. Missing crossings stay unavailable.','family.selected':'Selected family: {family}.','profile.composedNote':'Build a local combination by choosing each rule below. It is not an institutional method.','method.summary':'{family} · Asr: {asr} · {night}','night.mode.physical':'physical crossings only','night.mode.angle-night':'night-fraction estimate enabled'
 });
 Object.assign(messages.de,{
   'field.family':"Berechnungsmethode für Gebetszeiten",'family.mwl':"Islamische Weltliga (MWL)",'family.karachi':"Karachi-Methode · Pakistan",'family.egyptian':"Ägyptische Methode",'family.umm-al-qura':"Umm al-Qura · Saudi-Arabien",'family.isna':"Islamische Gesellschaft Nordamerikas (ISNA)",'family.diyanet':"Diyanet · Türkische Religionsbehörde",'family.kemenag':"Kemenag · Religionsministerium Indonesiens",'family.jakim':"JAKIM · Islamische Verwaltung Malaysias",'family.custom':'Eigene lokale Regeln','family.other':'Weitere Punktprofile',
   'field.family-asr':'Asr-Schattenfaktor','family.factor1':'Faktor 1 · erster Schatten','family.factor2':'Faktor 2 · zweiter Schatten','field.ramadan':'Umm-al-Qura-Ischa-Zeitplan','ramadan.calendar':'Automatisch · datumsabhängiger Zeitplan','ramadan.month':'Ramadan · 120 Minuten nach Sonnenuntergang','ramadan.ordinary':'Übliche Tage · 90 Minuten nach Sonnenuntergang','ramadan.note':'Die datumsabhängige Wahl richtet sich nach dem mitgelieferten Umm-al-Qura-Datum; die manuellen Optionen überschreiben sie für lokale Ankündigungen.',
   'field.other-profile':'Weitere Punktprofile','family.scope.mwl':'MWL-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller MWL-Zeitplan; Horizont, Asr und kurze Nächte werden getrennt ausgewiesen.','family.scope.karachi':'Karachi-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller Karachi-Zeitplan; Asr-Faktor und Umgang mit kurzen Nächten werden getrennt gewählt.','family.scope.egyptian':'Ägyptische Winkelfamilie mit ausdrücklich lokalen Konventionen für Punktastronomie, Horizont, Asr und Zeitplan. Kein offizieller ägyptischer Zeitplan.','family.scope.isna':'ISNA-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller ISNA-Zeitplan; Asr-Faktor und Umgang mit kurzen Nächten werden getrennt gewählt.','family.scope.diyanet':'Veröffentlichte Diyanet-Kriterien mit dem angegebenen lokalen Punktmodell. Kein offizieller Diyanet-Kalender; ungeklärte nördliche Sommer- und Übergangszeiten bleiben nicht verfügbar.','family.scope.kemenag':'Begrenztes Kemenag-Beispielprofil für Indonesien, keine landesweite aktuelle Produktionsberechnung. Die Ereignisrundung wird unten erklärt.','family.scope.jakim':'Auf Malaysia ausgerichtetes Punktprofil mit den angegebenen Dämmerungswinkeln 18°/18°, 64 Sekunden Dhuhr-Abstand und Minutenrundung. Kein JAKIM-Zonenzeitplan.','family.scope.custom':'Eine Softwarekombination einzeln gewählter Regeln. Es wird nicht behauptet, dass eine Institution diese Gesamtkombination veröffentlicht.','family.scope.other':'Zusätzliche Punktprofile mit jeweils angegebenem Umfang und Grenzen.',
-  'family.note.custom':'Wähle eine benannte Familie für ihre veröffentlichten oder dokumentierten Konventionen. Ändere nur die für diese Familie angebotenen Optionen.','family.fixedAsr':'Diese Familie verwendet ihre feste Asr-Konvention.','family.fixedNight':'Diese Familie bietet keine gemeinsame Nachtanteil-Schätzung. Fehlende Übertritte bleiben nicht verfügbar.','family.selected':'Gewählte Familie: {family}.','profile.composedNote':'Stelle eine lokale Kombination aus den unten gewählten Regeln zusammen. Keine institutionelle Methode.','method.summary':'{family} · Asr-Faktor {factor} · {night}','night.mode.physical':'nur echte Sonnenübertritte','night.mode.angle-night':'Nachtanteil-Schätzung aktiviert'
+  'family.note.custom':'Wähle eine benannte Familie für ihre veröffentlichten oder dokumentierten Konventionen. Ändere nur die für diese Familie angebotenen Optionen.','family.fixedAsr':'Diese Familie verwendet ihre feste Asr-Konvention.','family.fixedNight':'Diese Familie bietet keine gemeinsame Nachtanteil-Schätzung. Fehlende Übertritte bleiben nicht verfügbar.','family.selected':'Gewählte Familie: {family}.','profile.composedNote':'Stelle eine lokale Kombination aus den unten gewählten Regeln zusammen. Keine institutionelle Methode.','method.summary':'{family} · Asr: {asr} · {night}','night.mode.physical':'nur echte Sonnenübertritte','night.mode.angle-night':'Nachtanteil-Schätzung aktiviert'
 });
 Object.assign(messages.tr,{
   'field.family':"Namaz vakti hesaplama yöntemi",'family.mwl':"Dünya Müslüman Birliği (MWL)",'family.karachi':"Karaçi yöntemi · Pakistan",'family.egyptian':"Mısır yöntemi",'family.umm-al-qura':"Ümmü’l-Kurâ · Suudi Arabistan",'family.isna':"Kuzey Amerika İslam Toplumu (ISNA)",'family.diyanet':"Diyanet İşleri Başkanlığı · Türkiye",'family.kemenag':"Kemenag · Endonezya Din İşleri Bakanlığı",'family.jakim':"JAKIM · Malezya İslam İşleri",'family.custom':'Özel yerel kurallar','family.other':'Diğer nokta profilleri',
   'field.family-asr':'İkindi gölge faktörü','family.factor1':'Faktör 1 · ilk gölge','family.factor2':'Faktör 2 · ikinci gölge','field.ramadan':'Ümmü’l-Kurâ yatsı programı','ramadan.calendar':'Otomatik · tarihe bağlı program','ramadan.month':'Ramazan · günbatımından 120 dakika sonra','ramadan.ordinary':'Normal günler · günbatımından 90 dakika sonra','ramadan.note':'Tarihe bağlı seçenek, sağlanan Ümmü’l-Kurâ sivil tarihini kullanır; elle seçilen seçenekler yerel duyurular için bunun üzerine yazılır.',
   'field.other-profile':'Diğer nokta profilleri','family.scope.mwl':'Cihazda nokta-vakit hesabıyla uygulanan MWL açı ailesi. Resmî MWL takvimi değildir; ufuk, ikindi ve kısa-gece kuralları ayrıca gösterilir.','family.scope.karachi':'Cihazda nokta-vakit hesabıyla uygulanan Karaçi açı ailesi. Resmî Karaçi takvimi değildir; ikindi faktörü ve kısa-gece kuralı ayrıca seçilir.','family.scope.egyptian':'Nokta astronomisi, ufuk, ikindi ve program kabulleri yerel olarak belirtilmiş Mısır açı ailesi. Resmî Mısır takvimi değildir.','family.scope.isna':'Cihazda nokta-vakit hesabıyla uygulanan ISNA açı ailesi. Resmî ISNA takvimi değildir; ikindi faktörü ve kısa-gece kuralı ayrıca seçilir.','family.scope.diyanet':'Belirtilen yerel nokta modeliyle uygulanan yayımlanmış Diyanet ölçütleri. Resmî Diyanet takvimi değildir; çözümlenmemiş kuzey yaz ve geçiş vakitleri kullanılamaz.','family.scope.kemenag':'Endonezya için sınırlı Kemenag örnek profili; ülke çapında güncel üretim hesabı değildir. Olay yuvarlaması aşağıda açıklanır.','family.scope.jakim':'Belirtilen 18°/18° alacakaranlık açıları, 64 saniye öğle ek süresi ve dakika çözünürlüğüyle Malezya odaklı nokta profili. JAKIM bölge takvimini yeniden oluşturmaz.','family.scope.custom':'Birbirinden bağımsız seçilen kurallardan oluşan yazılım birleşimi. Bir kurumun bu birleşimin tamamını yayımladığı iddia edilmez.','family.scope.other':'Kapsamı ve sınırları ayrı ayrı belirtilen ek nokta profilleri.',
-  'family.note.custom':'Yayımlanmış veya belgelenmiş kabulleri için bir yöntem ailesi seç. Yalnızca o aile için sunulan seçenekleri değiştir.','family.fixedAsr':'Bu aile kendi sabit ikindi kuralını kullanır.','family.fixedNight':'Bu aile ortak bir gece oranı tahmini sunmuyor. Bulunmayan geçişler kullanılamaz kalır.','family.selected':'Seçilen aile: {family}.','profile.composedNote':'Aşağıdaki kuralları ayrı ayrı seçerek yerel bir birleşim oluştur. Kurumsal yöntem değildir.','method.summary':'{family} · ikindi faktörü {factor} · {night}','night.mode.physical':'yalnız gerçek güneş geçişleri','night.mode.angle-night':'gece oranı tahmini açık'
+  'family.note.custom':'Yayımlanmış veya belgelenmiş kabulleri için bir yöntem ailesi seç. Yalnızca o aile için sunulan seçenekleri değiştir.','family.fixedAsr':'Bu aile kendi sabit ikindi kuralını kullanır.','family.fixedNight':'Bu aile ortak bir gece oranı tahmini sunmuyor. Bulunmayan geçişler kullanılamaz kalır.','family.selected':'Seçilen aile: {family}.','profile.composedNote':'Aşağıdaki kuralları ayrı ayrı seçerek yerel bir birleşim oluştur. Kurumsal yöntem değildir.','method.summary':'{family} · ikindi: {asr} · {night}','night.mode.physical':'yalnız gerçek güneş geçişleri','night.mode.angle-night':'gece oranı tahmini açık'
 });
 
 // Plain-language identity and selection help; detailed rule evidence stays separate.
 Object.assign(messages.en,{
   "family.help":"Choose the name you know from your mosque or calendar. These are independent local calculations; times can differ from official calendars.",
   "family.details":"Method details and limitations",
-  "family.description.mwl":"The method named after the Muslim World League, an international Islamic organization. Asr and summer rules are separate choices.",
-  "family.description.karachi":"The prayer-app method named after Karachi, Pakistan. The Asr rule is selected separately.",
+  "family.description.mwl":"The method named after the Muslim World League, an international Islamic organization.",
+  "family.description.karachi":"The prayer-app method named after Karachi, Pakistan.",
   "family.description.egyptian":"Fajr and Isha follow the published criteria of Egypt’s Dar al-Ifta.",
   "family.description.umm-al-qura":"Named after the Saudi Umm al-Qura calendar. Isha follows sunset by a fixed interval, extended in the selected Ramadan mode.",
   "family.description.isna":"ISNA means Islamic Society of North America. This choice uses the ISNA-labelled app method; Canada’s separate FCNA recommendation is not included.",
@@ -102,8 +102,8 @@ Object.assign(messages.en,{
 Object.assign(messages.de,{
   "family.help":"Wähle den Namen, den du von deiner Moschee oder deinem Kalender kennst. Die App berechnet selbst; die Zeiten können von offiziellen Kalendern abweichen.",
   "family.details":"Details und Grenzen der Methode",
-  "family.description.mwl":"Die nach der Islamischen Weltliga benannte Methode. Die Weltliga ist eine internationale islamische Organisation. Asr und Sommerregeln werden getrennt gewählt.",
-  "family.description.karachi":"Die nach Karachi in Pakistan benannte App-Methode. Die Asr-Regel wird getrennt gewählt.",
+  "family.description.mwl":"Die nach der Islamischen Weltliga benannte Methode. Die Weltliga ist eine internationale islamische Organisation.",
+  "family.description.karachi":"Die nach Karachi in Pakistan benannte App-Methode.",
   "family.description.egyptian":"Fajr und Ischa folgen den veröffentlichten Kriterien von Ägyptens Dar al-Ifta.",
   "family.description.umm-al-qura":"Benannt nach dem saudischen Umm-al-Qura-Kalender. Ischa folgt mit festem Abstand auf den Sonnenuntergang; der gewählte Ramadan-Modus verlängert diesen Abstand.",
   "family.description.isna":"ISNA steht für Islamic Society of North America, die Islamische Gesellschaft Nordamerikas. Hier wird die nach ISNA benannte App-Methode verwendet; die kanadische FCNA-Empfehlung ist eine eigene Methode.",
@@ -114,8 +114,8 @@ Object.assign(messages.de,{
 Object.assign(messages.tr,{
   "family.help":"Caminizden veya takviminizden bildiğiniz adı seçin. Uygulama vakitleri kendisi hesaplar; sonuçlar resmî takvimlerden farklı olabilir.",
   "family.details":"Yöntemin ayrıntıları ve sınırları",
-  "family.description.mwl":"Uluslararası bir İslami kuruluş olan Dünya Müslüman Birliği adıyla kullanılan yöntem. İkindi ve yaz kuralları ayrıca seçilir.",
-  "family.description.karachi":"Pakistan’ın Karaçi şehri adıyla kullanılan uygulama yöntemi. İkindi kuralı ayrıca seçilir.",
+  "family.description.mwl":"Uluslararası bir İslami kuruluş olan Dünya Müslüman Birliği adıyla kullanılan yöntem.",
+  "family.description.karachi":"Pakistan’ın Karaçi şehri adıyla kullanılan uygulama yöntemi.",
   "family.description.egyptian":"İmsak ve yatsı, Mısır Dârü’l-İftâsının yayımlanmış ölçütlerine dayanır.",
   "family.description.umm-al-qura":"Adını Suudi Ümmü’l-Kurâ takviminden alır. Yatsı günbatımından belirli bir süre sonradır; seçilen Ramazan modu bu süreyi uzatır.",
   "family.description.isna":"ISNA, Kuzey Amerika İslam Toplumu demektir. Bu seçenek, ISNA adıyla kullanılan uygulama yöntemidir; FCNA’nın Kanada önerisi ayrı bir yöntemdir.",
@@ -276,6 +276,59 @@ export function localizedSourceLabel(key,language){
   return result===`source.${normalized}`?key:result;
 }
 export function localizedEventName(event,language){return translate(`event.${event}`,language);}
+// Automatic app settings are separate from these explicit profile choices.
+Object.assign(messages.en,{
+  'settings.advanced':'Advanced settings',
+  'settings.automaticToggle':'Use automatic settings for this method',
+  'settings.defaultsNote':'These are this app’s defaults. You can adjust supported choices to match your mosque.',
+  'settings.automatic':'Automatic settings', 'settings.manual':'Custom settings',
+  'settings.asrSummary':'Asr: {choice}.', 'settings.asr1':'earlier start', 'settings.asr2':'later start',
+  'settings.manualPolicy':'Selected night rule: {choice}.',
+  'settings.policy.mwl':'Summer handling is automatic: our interpretation of the MWL 2009 rule estimates Fajr and Isha when needed in supported regions. Estimates are labelled; polar times may be unavailable.',
+  'settings.policy.karachi':'The app uses the later Asr by default. Fajr and Isha use solar positions; missing summer twilight remains unavailable.',
+  'settings.policy.egyptian':'Fajr and Isha use solar positions. No automatic summer estimate is applied; missing twilight remains unavailable.',
+  'settings.policy.isna':'Fajr and Isha use solar positions. No automatic summer estimate is applied; missing twilight remains unavailable.',
+  'settings.policy.umm-al-qura':'The offline calendar automatically selects Isha’s Ramadan interval for each date. A real sunset is required.',
+  'settings.policy.diyanet':'The published Diyanet rules are applied automatically. Unresolved northern summer times remain unavailable.',
+  'settings.policy.kemenag':'Asr and time margins are set automatically from the documented Indonesian example. Valid within the supported Indonesian region.',
+  'settings.policy.jakim':'Asr and time margins are set automatically from the documented Malaysian rules. Valid within the supported Malaysian region.',
+  'field.family-asr':'Asr timing', 'family.factor1':'Earlier start · shadow factor 1', 'family.factor2':'Later start · shadow factor 2'
+});
+Object.assign(messages.de,{
+  'settings.advanced':'Erweiterte Einstellungen',
+  'settings.automaticToggle':'Einstellungen für diese Methode automatisch wählen',
+  'settings.defaultsNote':'Dies sind die Voreinstellungen unserer App. Verfügbare Optionen kannst du an deine Moschee anpassen.',
+  'settings.automatic':'Automatische Einstellungen', 'settings.manual':'Eigene Einstellungen',
+  'settings.asrSummary':'Asr: {choice}.', 'settings.asr1':'früherer Beginn', 'settings.asr2':'späterer Beginn',
+  'settings.manualPolicy':'Gewählte Nachtregel: {choice}.',
+  'settings.policy.mwl':'Die Sommerregel greift automatisch: Unsere Umsetzung der MWL-Regel von 2009 schätzt Fajr und Ischa bei Bedarf in unterstützten Regionen. Schätzungen sind markiert; Polarzeiten können fehlen.',
+  'settings.policy.karachi':'Die App verwendet standardmäßig den späteren Asr-Beginn. Fajr und Ischa folgen dem Sonnenstand; fehlt die Dämmerung im Sommer, bleibt die Zeit nicht verfügbar.',
+  'settings.policy.egyptian':'Fajr und Ischa folgen dem Sonnenstand. Es wird keine automatische Sommerschätzung eingesetzt; bei fehlender Dämmerung bleibt die Zeit nicht verfügbar.',
+  'settings.policy.isna':'Fajr und Ischa folgen dem Sonnenstand. Es wird keine automatische Sommerschätzung eingesetzt; bei fehlender Dämmerung bleibt die Zeit nicht verfügbar.',
+  'settings.policy.umm-al-qura':'Der Offline-Kalender wählt für jedes Datum automatisch den Ramadan-Abstand für Ischa. Ein tatsächlicher Sonnenuntergang ist erforderlich.',
+  'settings.policy.diyanet':'Die veröffentlichten Diyanet-Regeln werden automatisch angewendet. Ungeklärte Gebetszeiten im Sommer bleiben in nördlichen Regionen nicht verfügbar.',
+  'settings.policy.kemenag':'Asr und Zeitaufschläge werden automatisch aus dem dokumentierten indonesischen Beispiel übernommen. Gültig in der unterstützten Region Indonesiens.',
+  'settings.policy.jakim':'Asr und Zeitaufschläge werden automatisch aus den dokumentierten malaysischen Regeln übernommen. Gültig in der unterstützten Region Malaysias.',
+  'field.family-asr':'Asr-Beginn', 'family.factor1':'Früherer Beginn · Schattenfaktor 1', 'family.factor2':'Späterer Beginn · Schattenfaktor 2'
+});
+Object.assign(messages.tr,{
+  'settings.advanced':'Gelişmiş ayarlar',
+  'settings.automaticToggle':'Bu yöntemin ayarlarını otomatik seç',
+  'settings.defaultsNote':'Bunlar uygulamamızın varsayılan ayarlarıdır. Sunulan seçenekleri caminizin uygulamasına göre değiştirebilirsiniz.',
+  'settings.automatic':'Otomatik ayarlar', 'settings.manual':'Özel ayarlar',
+  'settings.asrSummary':'İkindi: {choice}.', 'settings.asr1':'erken başlangıç', 'settings.asr2':'geç başlangıç',
+  'settings.manualPolicy':'Seçilen gece kuralı: {choice}.',
+  'settings.policy.mwl':'Yaz kuralı otomatik uygulanır: 2009 MWL kuralına dair yorumumuz, desteklenen bölgelerde gerektiğinde imsak ve yatsıyı tahmin eder. Tahminler işaretlenir; kutup vakitleri bulunamayabilir.',
+  'settings.policy.karachi':'Uygulama varsayılan olarak geç ikindi başlangıcını kullanır. İmsak ve yatsı güneş konumuna dayanır; yazın alacakaranlık oluşmazsa vakit verilemez.',
+  'settings.policy.egyptian':'İmsak ve yatsı güneş konumuna dayanır. Otomatik yaz tahmini uygulanmaz; alacakaranlık oluşmazsa vakit verilemez.',
+  'settings.policy.isna':'İmsak ve yatsı güneş konumuna dayanır. Otomatik yaz tahmini uygulanmaz; alacakaranlık oluşmazsa vakit verilemez.',
+  'settings.policy.umm-al-qura':'Çevrimdışı takvim, her tarih için Ramazan yatsı aralığını otomatik seçer. Gerçek günbatımı gerekir.',
+  'settings.policy.diyanet':'Yayımlanmış Diyanet kuralları otomatik uygulanır. Kuzey bölgelerinde henüz çözümlenmemiş yaz vakitleri verilemez.',
+  'settings.policy.kemenag':'İkindi ve zaman payları, belgelenmiş Endonezya örneğinden otomatik alınır. Endonezya’nın desteklenen bölgesinde geçerlidir.',
+  'settings.policy.jakim':'İkindi ve zaman payları, belgelenmiş Malezya kurallarından otomatik alınır. Malezya’nın desteklenen bölgesinde geçerlidir.',
+  'field.family-asr':'İkindi başlangıcı', 'family.factor1':'Erken başlangıç · gölge faktörü 1', 'family.factor2':'Geç başlangıç · gölge faktörü 2'
+});
+
 export function resolveMethodProfile(method,{asrFactor,nightMode,ramadanMode}={}){
   if(!method||typeof method.id!=='string'||typeof method.defaultProfile!=='string')throw new TypeError('A method catalogue entry is required');
   if(method.id==='diyanet'||method.id==='kemenag')return method.defaultProfile;

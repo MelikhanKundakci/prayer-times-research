@@ -70,7 +70,7 @@ const day = calculateReferenceDay({
 
 `listAvailableMethods()` returns the current app catalogue including this option. The older `listSunniMethods()` remains the frozen catalogue for its published verification run. No older numerical modules or pinned historical reports are replaced.
 
-In the browser, choose **MWL** or **Egyptian**, then **Short nights → 45° reference night · missing twilight only**. The choice is explicit; changing language or seconds display preserves it.
+In the browser, choose **MWL** or **Egyptian**, open **Advanced settings**, turn off automatic settings, then choose **Short nights → 45° reference night · missing twilight only**. The choice is explicit; changing language or seconds display preserves it.
 
 ## Verification
 

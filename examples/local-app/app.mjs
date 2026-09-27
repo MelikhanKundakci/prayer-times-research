@@ -1,5 +1,6 @@
 import {diyanetComparisonRows} from './comparison-view.mjs';
-import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedFamilyDescription,localizedFamilyName,localizedFamilyScope,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,resolveMethodProfile,setLanguagePresentation,translate} from './i18n.mjs';
+import {resolveFamilySettings} from './method-settings.mjs';
+import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedFamilyDescription,localizedFamilyName,localizedFamilyScope,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,setLanguagePresentation,translate} from './i18n.mjs';
 
 const $=id=>document.getElementById(id);
 const EVENTS=['fajr','dhuhr','asr','maghrib','isha'];
@@ -7,6 +8,10 @@ const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.97
   'new-york':[40.7128,-74.006,'America/New_York'],jakarta:[-6.2,106.8,'Asia/Jakarta'],sydney:[-33.8688,151.2093,'Australia/Sydney'],oslo:[59.9139,10.7522,'Europe/Oslo']};
 let language=readLanguage(),definitions=[],methods=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0,locationNote={key:'location.sample'},mainMessage={key:'message.preparing'},comparisonMessage=null;
 const t=(key,values)=>translate(key,language,values);
+function familySettings(method=methods.find(item=>item.id===$('methodFamily').value)){
+  return resolveFamilySettings(method,{automatic:$('automatic-settings').checked,
+    asrFactor:$('familyShadow').value,nightMode:$('familyNight').value,ramadanMode:$('ramadan').value});
+}
 const available=e=>e?.role==='prayer-start-model'&&['calculated','estimated'].includes(e.status);
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
 const labelDate=date=>formatDateLabel(date,language);
@@ -22,7 +27,7 @@ function selectedProfile(){
   if(family==='other')return $('profile').value;
   if(family!=='custom'){
     const method=methods.find(item=>item.id===family);if(!method)return'';
-    return resolveMethodProfile(method,{asrFactor:$('familyShadow').value,nightMode:$('familyNight').value,ramadanMode:$('ramadan').value});
+    return familySettings(method).profile;
   }
   const base=`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`;
   return $('astronomy').value==='observer'?base.replace(/-v1$/,'-observer-v1'):base;
@@ -36,7 +41,11 @@ function profileNote(){
   if(family==='custom'){$('family-note').textContent='';$('custom-note').textContent=t('profile.composedNote');return;}
   if(family==='other'){$('other-profile-note').textContent=localizedProfileScope(definitions.find(item=>item.id===selectedProfile())??{id:'',composition:null,sourceScope:''},language);return;}
   const method=methods.find(item=>item.id===family);if(!method)return;
-  const mode=method.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
+  const settings=familySettings(method),mode=settings.ramadanMode??settings.nightMode;
+  $('settings-mode').textContent=t(settings.automatic?'settings.automatic':'settings.manual');
+  $('settings-summary').textContent=t('settings.asrSummary',{choice:t(`settings.asr${settings.asrFactor}`)});
+  $('settings-policy').textContent=settings.automatic?t(`settings.policy.${method.id}`)
+    :t('settings.manualPolicy',{choice:t(settings.ramadanMode?`ramadan.summary.${mode}`:`night.mode.${mode}`)});
   $('family-note').textContent=localizedFamilyScope(method.id,language,['reference45','local-relative'].includes(mode)?undefined:mode)
     +(mode==='reference45'?` ${t('night.reference45Summary')}`:'')
     +(mode==='local-relative'?` ${t('night.relativeSummary')}`:'')
@@ -61,21 +70,22 @@ function renderFamilyOptions(){
 }
 function configureFamily(method,reset=false){
   const shown=Boolean(method);$('family-options').hidden=!shown;if(!shown)return;
-  const factorSelect=$('familyShadow'),priorFactor=factorSelect.value,factorValues=method.asrFactors??[];factorSelect.replaceChildren();
+  if(reset){$('automatic-settings').checked=true;$('family-advanced').open=false;}
+  const settings=familySettings(method);
+  const factorSelect=$('familyShadow'),factorValues=method.asrFactors??[];factorSelect.replaceChildren();
   for(const factor of factorValues){const option=text('option',t(factor===1?'family.factor1':'family.factor2'));option.value=String(factor);factorSelect.append(option);}
-  factorSelect.disabled=factorValues.length<=1;
-  const nightSelect=$('familyNight'),priorNight=nightSelect.value,nightModes=method.nightModes??[];nightSelect.replaceChildren();
+  factorSelect.disabled=settings.automatic||factorValues.length<=1;
+  const nightSelect=$('familyNight'),nightModes=method.nightModes??[];nightSelect.replaceChildren();
   for(const mode of nightModes){const option=text('option',t(mode==='angle-night'?'night.angle':`night.${mode}`));option.value=mode;nightSelect.append(option);}
-  nightSelect.value=nightModes.includes(priorNight)?priorNight:nightModes[0]??'';
+  nightSelect.disabled=settings.automatic;
+  $('ramadan').disabled=settings.automatic;
+  $('family-manual').hidden=settings.automatic;
   $('family-night-label').hidden=nightModes.length<2;
+  $('family-advanced').hidden=factorValues.length<=1&&nightModes.length<=1&&!method.ramadanModes?.length;
   $('family-ramadan-label').hidden=!method.ramadanModes?.length;
-  if(reset){
-    const defaultId=method.defaultProfile??'';
-    factorSelect.value=String(Number(defaultId.match(/shadow([12])/i)?.[1]??factorValues[0]??1));
-    const variant=defaultId.match(/-(physical|angle-night|reference45|local-relative|calendar|ramadan|ordinary)-v1$/)?.[1];
-    if(method.ramadanModes?.length)$('ramadan').value=method.ramadanModes.includes(variant)?variant:method.ramadanModes[0];
-    else $('familyNight').value=method.nightModes?.includes(variant)?variant:method.nightModes?.[0]??'physical';
-  }else factorSelect.value=factorValues.includes(Number(priorFactor))?priorFactor:String(Number(String(method.defaultProfile??'').match(/shadow([12])/i)?.[1]??factorValues[0]??1));
+  factorSelect.value=String(settings.asrFactor);
+  nightSelect.value=settings.nightMode??'';
+  if(settings.ramadanMode)$('ramadan').value=settings.ramadanMode;
   profileNote();
 }
 function render(){
@@ -98,11 +108,12 @@ function render(){
   $('sunrise').textContent=sunrise.time?`${t('sunrise.label')} · ${clock(sunrise)}${clockDate(sunrise)!==day.date?t('status.date',{date:labelDate(clockDate(sunrise))}):''}`:`${t('sunrise.label')} ${t('status.unavailable').toLowerCase()}`;
   $('coverage').textContent=t(day.coverage.prayerStartsComplete?'coverage.complete':'coverage.partial');
   const composition=day.profile.composition,selectedMethod=methods.find(item=>item.id===$('methodFamily').value);
-  const selectedMode=selectedMethod?.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
+  const settings=selectedMethod?familySettings(selectedMethod):null;
+  const selectedMode=settings?.ramadanMode??settings?.nightMode;
   const modeLabel=selectedMethod?.ramadanModes?.length?t(`ramadan.summary.${selectedMode}`):t(`night.mode.${selectedMode||'physical'}`);
-  const summary=selectedMethod?t('method.summary',{family:localizedFamilyName(selectedMethod.id,language),factor:$('familyShadow').value||1,night:modeLabel}):composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
+  const summary=selectedMethod?t('method.summary',{family:localizedFamilyName(selectedMethod.id,language),asr:t(`settings.asr${settings.asrFactor}`),night:modeLabel}):composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
   const estimates=day.coverage.estimatedEvents.length?t('summary.estimated',{events:day.coverage.estimatedEvents.map(name=>localizedEventName(name,language)).join(', ')}):'';
-  $('method-summary').textContent=`${summary}. ${estimates}`;
+  $('method-summary').textContent=`${settings?t(settings.automatic?'settings.automatic':'settings.manual')+' · ':''}${summary}. ${estimates}`;
   const list=document.createElement('ul');
   for(const name of ['fajr','sunrise','dhuhr','asr','maghrib','isha']){
     const event=day.events[name],rule=localizedRuleDescription(day,name,language);
@@ -178,6 +189,9 @@ for(const id of ['latitude','longitude','timeZone','date'])$(id).addEventListene
 for(const id of ['methodFamily','familyShadow','familyNight','ramadan','profile','angles','shadow','night','astronomy'])$(id).addEventListener('change',()=>{
   if(id==='methodFamily')configureFamily(methods.find(item=>item.id===$('methodFamily').value),true);
   invalidate();profileNote();
+});
+$('automatic-settings').addEventListener('change',()=>{
+  configureFamily(methods.find(item=>item.id===$('methodFamily').value));invalidate();
 });
 $('seconds').addEventListener('change',render);
 $('city').addEventListener('change',()=>{const city=cities[$('city').value];if(city){[$('latitude').value,$('longitude').value,$('timeZone').value]=city;locationNote={key:'location.chosen'};}else locationNote={key:'location.sample'};showLocationNote();invalidate();});

@@ -25,4 +25,4 @@ A short description immediately below the picker explains the chosen name and re
 - Describe the Kemenag worked-example basis and the JAKIM local Malaysian composition honestly. Their regional input limits still apply.
 - Treat a country's name as context for identifying the method, not as an automatic choice of a user's faith or practice from GPS.
 
-This presentation change does not alter profile IDs, defaults, astronomical calculations, summer policies or saved language behavior. More complete onboarding and advanced-settings organization remain separate UI work. Read [the local-profile guide](../../core/local/SUNNI.md) for calculation contracts.
+This presentation change does not alter profile IDs, defaults, astronomical calculations, summer policies or saved language behavior. The subsequent [automatic-settings layer](AUTOMATIC-SETTINGS.md) now configures supported Asr and night choices, with manual controls under Advanced settings. Read [the local-profile guide](../../core/local/SUNNI.md) for calculation contracts.

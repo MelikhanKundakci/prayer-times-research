@@ -4,6 +4,7 @@
 
 .language-picker{display:flex;align-items:center;gap:8px;margin:0!important;font-size:11px!important;font-weight:600!important;color:var(--muted)}.language-picker select{width:auto;min-width:112px;padding:8px 26px 8px 9px;font-size:12px;background:#fff}
 .title-primary{font-weight:700;color:#18372e}
+.automatic-card{padding:14px;border-radius:10px;background:#eef4eb;color:var(--green);font-size:12px;line-height:1.6}.automatic-card p{margin:7px 0 0}.automatic-card #settings-policy{color:var(--muted);font-size:11px}#family-advanced>summary{margin-bottom:16px}#family-options{margin-bottom:22px}
 @media(max-width:680px){header{flex-wrap:wrap}.language-picker{margin-left:auto!important}.tag{order:3}.intro h1 .title-primary{font-weight:700;color:#18372e}}
 @media(max-width:390px){header .tag{display:none}.language-picker{gap:5px}.language-picker select{min-width:96px}}
 
