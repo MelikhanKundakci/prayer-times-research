@@ -265,7 +265,7 @@ export function localizedProfileScope(profile,language,context={}){
   const lang=normalizeLanguage(language),id=profile.id;
   if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??(profile.id?.endsWith('-reference45-v1')?'reference45':profile.id?.endsWith('-local-relative-v1')?'local-relative':profile.highLatitudeMode));
   if(id.endsWith('-observer-v1'))return translate('scope.observer',lang,{base:translate('scope.composed',lang)});
-  const key=id.startsWith('diyanet-published-')?'scope.diyanet':id==='local-northern-seasonal-v1'?'scope.seasonal'
+  const key=id==='diyanet-local-seasonal-spa-v1'?'scope.diyanetLocal':id.startsWith('diyanet-published-')?'scope.diyanet':id==='local-northern-seasonal-v1'?'scope.seasonal'
     :id.startsWith('egypt-')?'scope.egypt':id.startsWith('fcna-usa')?'scope.fcna-us'
     :id.startsWith('fcna-canada')?'scope.fcna-ca':id.startsWith('kemenag-')?'scope.kemenag':profile.composition?'scope.composed':'scope.fallback';
   return translate(key,lang,{description:profile.sourceScope});
@@ -329,9 +329,41 @@ Object.assign(messages.tr,{
   'field.family-asr':'İkindi başlangıcı', 'family.factor1':'Erken başlangıç · gölge faktörü 1', 'family.factor2':'Geç başlangıç · gölge faktörü 2'
 });
 
+Object.assign(messages.en,{
+  'profile.diyanet-local-seasonal-spa-v1':'Diyanet criteria + local summer rule',
+  'night.local-seasonal':'Diyanet criteria · local summer estimates',
+  'night.mode.local-seasonal':'local summer estimates and guarded winter times',
+  'family.description.diyanet':'Based on published Diyanet criteria from Türkiye. Automatic settings add our separately documented local summer rule.',
+  'settings.policy.diyanet':'Diyanet criteria + our local summer rule. Fajr and Isha are estimated when the supported summer checks pass; eligible winter times use real solar events. Estimates are labelled. Polar and unresolved cases can still be unavailable.',
+  'scope.diyanetLocal':'Published Diyanet criteria with a separate project-defined SPA summer/winter policy. The night ratio, Fajr candidate and smooth transitions are our explicit interpretation, not Diyanet’s recovered seasonal algorithm. Summer selection needs valid full-year context; limited winter admission keeps the annual and daily transition bounds. Unsupported cases remain unavailable.',
+  'rule.diyanetLocalEstimated':'Estimated with the declared local annual night ratio and gradual transition; not a confirmed Diyanet summer equation.',
+  'rule.diyanetLocalRaw':'A real solar crossing selected under the declared local summer/winter checks. The detailed selection trace is available in the saved result.'
+});
+Object.assign(messages.de,{
+  'profile.diyanet-local-seasonal-spa-v1':'Diyanet-Kriterien + lokale Sommerregel',
+  'night.local-seasonal':'Diyanet-Kriterien · lokale Sommerschätzung',
+  'night.mode.local-seasonal':'lokale Sommerschätzung und geprüfte Winterzeiten',
+  'family.description.diyanet':'Nach veröffentlichten Diyanet-Kriterien aus der Türkei. Die Automatik ergänzt unsere separat dokumentierte lokale Sommerregel.',
+  'settings.policy.diyanet':'Diyanet-Kriterien + unsere lokale Sommerregel. Fajr und Ischa werden bei bestandenen Sommerprüfungen geschätzt; geeignete Winterzeiten folgen echten Sonnenereignissen. Schätzungen sind markiert. Polarzeiten und ungeklärte Fälle können weiterhin fehlen.',
+  'scope.diyanetLocal':'Veröffentlichte Diyanet-Kriterien mit einer eigenen lokalen SPA-Regel für Sommer und Winter. Nachtanteil, Fajr-Ersatzwert und gleitende Übergänge sind unsere erklärte Auslegung, kein nachgebildeter vollständiger Diyanet-Sommeralgorithmus. Die Sommerschätzung benötigt einen gültigen Jahreskontext; die begrenzte Winterfreigabe erhält die jährlichen und täglichen Übergangsgrenzen. Nicht unterstützte Fälle bleiben nicht verfügbar.',
+  'rule.diyanetLocalEstimated':'Nach dem erklärten lokalen Jahresnachtanteil mit gleitendem Übergang geschätzt; keine bestätigte Diyanet-Sommerformel.',
+  'rule.diyanetLocalRaw':'Ein echter Sonnenübertritt, der die erklärten lokalen Sommer-/Winterprüfungen besteht. Die genaue Auswahl ist im gespeicherten Ergebnis dokumentiert.'
+});
+Object.assign(messages.tr,{
+  'profile.diyanet-local-seasonal-spa-v1':'Diyanet ölçütleri + yerel yaz kuralı',
+  'night.local-seasonal':'Diyanet ölçütleri · yerel yaz tahmini',
+  'night.mode.local-seasonal':'yerel yaz tahminleri ve denetlenmiş kış vakitleri',
+  'family.description.diyanet':'Türkiye’deki Diyanet’in yayımlanmış ölçütlerine dayanır. Otomatik ayarlar ayrıca belgelenmiş yerel yaz kuralımızı ekler.',
+  'settings.policy.diyanet':'Diyanet ölçütleri + kendi yerel yaz kuralımız. Desteklenen yaz kontrolleri sağlandığında imsak ve yatsı tahmin edilir; uygun kış vakitleri gerçek güneş olaylarına dayanır. Tahminler işaretlenir. Kutup ve çözümlenmemiş vakitler yine verilemeyebilir.',
+  'scope.diyanetLocal':'Yayımlanmış Diyanet ölçütleriyle birlikte projeye özgü yerel SPA yaz/kış kuralı. Gece oranı, imsak adayı ve kademeli geçişler açıkça belirtilmiş yorumumuzdur; Diyanet’in tam yaz algoritmasının kopyası değildir. Yaz tahmini geçerli bir yıllık bağlam gerektirir; sınırlı kış kabulü yıllık ve günlük geçiş sınırlarını korur. Desteklenmeyen vakitler verilemez.',
+  'rule.diyanetLocalEstimated':'Belirtilen yerel yıllık gece oranı ve kademeli geçişle tahmin edilmiştir; doğrulanmış bir Diyanet yaz denklemi değildir.',
+  'rule.diyanetLocalRaw':'Belirtilen yerel yaz/kış kontrollerini sağlayan gerçek güneş geçişi. Ayrıntılı seçim kaydedilen sonuçta bulunur.'
+});
+
 export function resolveMethodProfile(method,{asrFactor,nightMode,ramadanMode}={}){
   if(!method||typeof method.id!=='string'||typeof method.defaultProfile!=='string')throw new TypeError('A method catalogue entry is required');
-  if(method.id==='diyanet'||method.id==='kemenag')return method.defaultProfile;
+  if(method.id==='diyanet')return nightMode==='local-seasonal'&&method.profiles?.includes('diyanet-local-seasonal-spa-v1')?'diyanet-local-seasonal-spa-v1':method.defaultProfile;
+  if(method.id==='kemenag')return method.defaultProfile;
   const factors=method.asrFactors??[],nights=method.nightModes??[],ramadans=method.ramadanModes??[];
   const fallbackFactor=Number(method.defaultProfile.match(/shadow([12])/i)?.[1]??factors[0]??1);
   const factor=factors.includes(Number(asrFactor))?Number(asrFactor):fallbackFactor;
@@ -386,6 +418,8 @@ export function localizedError(detail,language){
 export function localizedRuleDescription(day,event,language){
   const lang=normalizeLanguage(language),profile=day.profile,rule=day.events[event],meta=day.astronomy?.model??{};
   if(event==='isha'&&day.calculation?.intervalPolicy)return translate('rule.ishaInterval',lang,{minutes:day.calculation.intervalPolicy.minutes});
+  if(profile.id==='diyanet-local-seasonal-spa-v1'&&['fajr','isha'].includes(event)&&day.location?.latitude>=44.5)
+    return translate(rule.status==='estimated'?'rule.diyanetLocalEstimated':rule.status==='calculated'?'rule.diyanetLocalRaw':'rule.missing',lang);
   if(rule.status==='estimated'&&profile.id.endsWith('-reference45-v1'))return translate('rule.reference45',lang);
   if(rule.status==='estimated'&&profile.id.endsWith('-local-relative-v1'))return translate('rule.relative',lang);
   if(rule.status==='estimated')return translate('rule.estimated',lang);

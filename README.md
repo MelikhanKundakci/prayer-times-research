@@ -14,6 +14,10 @@ The app's primary direction is now **local times at the user's point under docum
 
 ## Start here
 
+The [Diyanet local summer/winter extension](core/local/DIYANET-LOCAL.md) now reuses SPA astronomy while preserving all available strict-profile events. It supplies marked local summer estimates under full annual checks and additional physical winter events under a separate bounded admission proof. The automatic app choice explicitly identifies the local extension; strict published-rule selection remains available. It does not claim Diyanet’s recovered seasonal algorithm.
+
+Its independent 2026–2028 verification covers **4,384 complete days** at Frankfurt, Berlin, Bordeaux and Edinburgh, compared with 2,428 complete days under the strict profile. Oslo's 2027 control gains 152 complete winter days; polar and unresolved cases remain incomplete. These are availability and software-conformance results, **not official-calendar accuracy percentages**. The linked guide records the full report and the largest observed daily transition of 7.5607 minutes.
+
 The browser interface defaults to **English** and also supports **German and Turkish**, with a saved language preference. Custom local rules now offer an optional [observer-position solar calculation](core/local/OBSERVER.md), with independently checked solar-parallax geometry and explicit reference-elevation assumptions. Existing calculations stay available; the extension is not a claim of closer institutional-calendar agreement.
 
 The main selector now presents the eight Sunni families. A separate versioned [Sunni API](core/local/sunni.mjs) adds 23 explicit local recipes and routes Diyanet/Kemenag to their unchanged existing profiles. Umm al-Qura includes an offline Ramadan-calendar mode and explicit 90/120-minute overrides. JAKIM provides a documented Malaysian point composition; it does not reproduce zone-wide e-Solat selection. These new profiles have implementation checks, **not newly measured official-calendar accuracy percentages**.

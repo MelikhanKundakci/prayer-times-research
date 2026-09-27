@@ -8,7 +8,7 @@ Distinct reconstructions of published Diyanet/Awqat criteria and sampled institu
 
 The [rule-evidence audit](RULE-EVIDENCE.md) separates confirmed institutional rules, point-versus-area semantics and remaining numerical hypotheses.
 
-**For the app’s current GPS-point direction, start with the [local point core](../../core/local/README.md)** and its explicit profiles. The optional [local summer policy](../../core/local/SEASONAL.md) declares its own transition and night-fraction conventions; it is not the complete Diyanet algorithm.
+**For the app’s current GPS-point direction, start with the [local point core](../../core/local/README.md)** and its explicit profiles. The new [SPA local summer/winter extension](../../core/local/DIYANET-LOCAL.md) preserves available strict point events and adds explicitly labelled local estimates and bounded winter admission. It is separate from the [original USNO summer policy](../../core/local/SEASONAL.md); neither claims the complete Diyanet algorithm.
 
 **For city-calendar reconstruction, use the [standalone offline reconstruction core](../../core/diyanet/README.md).** It consolidates the selected northern, low-latitude and southern recipes behind one day/year/next-prayer API. It computes locally without importing the research implementations or reading calendars. Version 1.2 defaults to the existing civil-date improvement; explicit solar-carrier preserves all 129,210 raw and rounded baseline model fields in the 59-calendar parity check. The [migration and comparison](../../core/diyanet/CIVIL-DATE.md) retain the institutional accuracy limits. The research entry points documented below keep their existing explicit variant semantics.
 

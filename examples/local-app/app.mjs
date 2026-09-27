@@ -46,7 +46,7 @@ function profileNote(){
   $('settings-summary').textContent=t('settings.asrSummary',{choice:t(`settings.asr${settings.asrFactor}`)});
   $('settings-policy').textContent=settings.automatic?t(`settings.policy.${method.id}`)
     :t('settings.manualPolicy',{choice:t(settings.ramadanMode?`ramadan.summary.${mode}`:`night.mode.${mode}`)});
-  $('family-note').textContent=localizedFamilyScope(method.id,language,['reference45','local-relative'].includes(mode)?undefined:mode)
+  $('family-note').textContent=(mode==='local-seasonal'?t('scope.diyanetLocal'):localizedFamilyScope(method.id,language,['reference45','local-relative'].includes(mode)?undefined:mode))
     +(mode==='reference45'?` ${t('night.reference45Summary')}`:'')
     +(mode==='local-relative'?` ${t('night.relativeSummary')}`:'')
     +((method.asrFactors??[]).length===1?` ${t('family.fixedAsr')}`:'')

@@ -9,6 +9,23 @@ import {diyanetComparisonRows} from '../examples/local-app/comparison-view.mjs';
 
 const root=new URL('../examples/local-app/',import.meta.url);
 
+test('Diyanet local summer settings remain distinct from the strict published-rule profile',()=>{
+  const method=listAvailableMethods().find(m=>m.id==='diyanet');
+  assert.equal(resolveMethodProfile(method),method.defaultProfile);
+  assert.equal(resolveMethodProfile(method,{nightMode:'local-seasonal'}),'diyanet-local-seasonal-spa-v1');
+  assert.equal(resolveMethodProfile(method,{nightMode:'physical'}),'diyanet-published-spa-point-v1');
+  for(const lang of ['en','de','tr']){
+    for(const key of ['night.local-seasonal','night.mode.local-seasonal','scope.diyanetLocal','rule.diyanetLocalEstimated','rule.diyanetLocalRaw'])
+      assert.notEqual(translate(key,lang),key);
+    const profile={id:'diyanet-local-seasonal-spa-v1'};
+    assert.equal(localizedProfileScope(profile,lang),translate('scope.diyanetLocal',lang));
+    const day={profile,location:{latitude:50.11},events:{fajr:{status:'estimated'}}};
+    assert.equal(localizedRuleDescription(day,'fajr',lang),translate('rule.diyanetLocalEstimated',lang));
+    day.events.fajr.status='policy-blocked';
+    assert.equal(localizedRuleDescription(day,'fajr',lang),translate('rule.missing',lang));
+  }
+});
+
 test('local relative selection is restricted to MWL and explained in all three languages',()=>{
   const methods=listAvailableMethods(),mwl=methods.find(m=>m.id==='mwl');
   for(const factor of [1,2])assert.equal(resolveMethodProfile(mwl,{asrFactor:factor,nightMode:'local-relative'}),`sunni-mwl-shadow${factor}-local-relative-v1`);

@@ -10,8 +10,8 @@ test('Sunni family catalogue and every family default produce matching day/sched
   const base=`http://127.0.0.1:${server.address().port}`;
   const catalog=await(await fetch(base+'/api/profiles')).json();
   assert.deepEqual(catalog.methods.map(m=>m.id),['mwl','karachi','egyptian','umm-al-qura','isna','diyanet','kemenag','jakim']);
-  assert.equal(catalog.profiles.length,68);
-  assert.equal(new Set(catalog.profiles.map(p=>p.id)).size,68);
+  assert.equal(catalog.profiles.length,69);
+  assert.equal(new Set(catalog.profiles.map(p=>p.id)).size,69);
   for(const method of catalog.methods){
     assert.ok(method.profiles.every(id=>catalog.profiles.some(p=>p.id===id)));
     const location=method.id==='kemenag'?{latitude:-6.2,longitude:106.8,timeZone:'Asia/Jakarta'}

@@ -10,14 +10,14 @@ const method=id=>methods.find(value=>value.id===id);
 const frankfurt={latitude:50.1109,longitude:8.6821,timeZone:'Europe/Berlin'};
 const events=['fajr','sunrise','dhuhr','asr','maghrib','isha'];
 
-test('automatic app settings use each family’s declared Asr and enable only the validated MWL summer policy',()=>{
+test('automatic app settings use each family’s declared Asr and enable the declared local summer policies',()=>{
   const expected={
     mwl:{profile:'sunni-mwl-shadow1-local-relative-v1',asrFactor:1,nightMode:'local-relative',ramadanMode:null},
     karachi:{profile:'sunni-karachi-shadow2-physical-v1',asrFactor:2,nightMode:'physical',ramadanMode:null},
     egyptian:{profile:'sunni-egyptian-shadow1-physical-v1',asrFactor:1,nightMode:'physical',ramadanMode:null},
     'umm-al-qura':{profile:'sunni-umm-al-qura-shadow1-calendar-v1',asrFactor:1,nightMode:null,ramadanMode:'calendar'},
     isna:{profile:'sunni-isna-shadow1-physical-v1',asrFactor:1,nightMode:'physical',ramadanMode:null},
-    diyanet:{profile:'diyanet-published-spa-point-v1',asrFactor:1,nightMode:'physical',ramadanMode:null},
+    diyanet:{profile:'diyanet-local-seasonal-spa-v1',asrFactor:1,nightMode:'local-seasonal',ramadanMode:null},
     kemenag:{profile:'kemenag-worked-example-point-v1',asrFactor:1,nightMode:'physical',ramadanMode:null},
     jakim:{profile:'sunni-jakim-shadow1-physical-v1',asrFactor:1,nightMode:'physical',ramadanMode:null},
   };
@@ -109,11 +109,22 @@ test('automatic profiles reach the local API with marked MWL estimates, unchange
   assert.equal(egypt.day.profile.id,method('egyptian').defaultProfile);
   assert.equal(egypt.day.coverage.prayerStartsComplete,true);assert.deepEqual(egypt.day.coverage.estimatedEvents,[]);
   const diyanet=await calculate('diyanet','2027-06-21');
-  assert.equal(diyanet.day.coverage.prayerStartsComplete,false);
+  assert.equal(diyanet.day.coverage.prayerStartsComplete,true);
+  assert.equal(diyanet.schedule.complete,true);
+  assert.equal(diyanet.day.profile.institutionalEquivalence,'not-claimed');
   for(const name of ['fajr','isha']){
-    assert.equal(diyanet.day.events[name].status,'policy-blocked');
-    assert.equal(diyanet.day.events[name].epochMilliseconds,null);
-    assert.ok(!diyanet.schedule.entries.some(entry=>entry.sourceDate===diyanet.day.date&&entry.event===name));
+    assert.equal(diyanet.day.events[name].status,'estimated');
+    const entry=diyanet.schedule.entries.find(entry=>entry.sourceDate===diyanet.day.date&&entry.event===name);
+    assert.equal(entry.status,'estimated');
+    assert.equal(entry.epochMilliseconds,diyanet.day.events[name].epochMilliseconds);
+  }
+  const strictProfile=resolveFamilySettings(method('diyanet'),{automatic:false,nightMode:'physical'}).profile;
+  const strictResponse=await fetch(base+'/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date:'2027-06-21',...frankfurt,profile:strictProfile})});
+  assert.equal(strictResponse.status,200);
+  const strict=await strictResponse.json();
+  for(const name of ['fajr','isha']){
+    assert.equal(strict.day.events[name].status,'policy-blocked');
+    assert.equal(strict.day.events[name].epochMilliseconds,null);
   }
 });
 
@@ -129,4 +140,10 @@ test('automatic Umm al-Qura resolves Ramadan from the date without a manual seas
     assert.equal(day.calculation.intervalPolicy.minutes,minutes);
     assert.equal(day.events.isha.rawEpochMilliseconds-day.events.maghrib.rawEpochMilliseconds,minutes*60_000);
   }
+});
+
+test('automatic Diyanet fails clearly if the separately labelled local policy is missing',()=>{
+  const historical=listSunniMethods().find(m=>m.id==='diyanet');
+  assert.throws(()=>resolveFamilySettings(historical),/automatic Diyanet local summer profile is unavailable/);
+  assert.equal(resolveFamilySettings(historical,{automatic:false}).profile,historical.defaultProfile);
 });
