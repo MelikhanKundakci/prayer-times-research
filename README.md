@@ -10,11 +10,13 @@ The app's primary direction is now **local times at the user's point under docum
 
 **Status: research preview.** Several implementations closely match the reference calendars tested so far. Others are exploratory or have known failures. Accuracy belongs to a particular method, parameter set, place, date range, and interpretation of the source. The project does not claim a perfect worldwide algorithm or endorsement by the institutions named here.
 
-**Active focus:** Diyanet and complete local profiles for broad community coverage. Türkiye Takvimi research is deferred. The [delivery priorities and acceptance criteria](docs/ROADMAP.md#active-delivery-priorities--26-september-2026) distinguish planned method support from the profiles already implemented.
+**Active focus:** eight Sunni method families: **MWL, Karachi, Egyptian, Umm al-Qura, ISNA, Diyanet, Kemenag and JAKIM**. The [Sunni local-profile guide](core/local/SUNNI.md) documents their implemented rules, independent Asr choices, Ramadan handling and regional limits. Türkiye Takvimi and additional Shia development are deferred; existing research remains available. The [delivery priorities and acceptance criteria](docs/ROADMAP.md#active-delivery-priorities--26-september-2026) distinguish implemented choices from unresolved institutional policies.
 
 ## Start here
 
 The browser interface defaults to **English** and also supports **German and Turkish**, with a saved language preference. Custom local rules now offer an optional [observer-position solar calculation](core/local/OBSERVER.md), with independently checked solar-parallax geometry and explicit reference-elevation assumptions. Existing calculations stay available; the extension is not a claim of closer institutional-calendar agreement.
+
+The main selector now presents the eight Sunni families. A separate versioned [Sunni API](core/local/sunni.mjs) adds 23 explicit local recipes and routes Diyanet/Kemenag to their unchanged existing profiles. Umm al-Qura includes an offline Ramadan-calendar mode and explicit 90/120-minute overrides. JAKIM provides a documented Malaysian point composition; it does not reproduce zone-wide e-Solat selection. These new profiles have implementation checks, **not newly measured official-calendar accuracy percentages**.
 
 - **Try the local calculator:** run `npm run preview:local` and open the printed loopback URL. The [browser prototype](examples/local-app/README.md) shows five prayer starts, explicit twilight/Asr choices, optional night estimates, a seven-day schedule, the next calculated start and a JSON export. It uses no prayer-data service. The [complete local compositions](core/local/COMPOSED.md) use independently checked SPA astronomy; they are distinct from official institution calendars.
 - **Start local app calculations:** the [local point core](core/local/) accepts coordinates, a civil date, IANA timezone and an explicit documented profile. Read the [local validation contract](docs/LOCAL-VALIDATION.md) for numerical evidence, rule coverage and physical limits.
@@ -44,11 +46,13 @@ npm test
 # Open a usable local calculator at http://127.0.0.1:4377.
 npm run preview:local
 
-# List the available method families.
+# List historical research method families and current local profiles.
 node scripts/run.mjs --list
+npm run calculate:local -- --profiles
 
 # Run a documented input using the bundled timezone data.
 npm run calculate:local -- 2027-03-20 41.0082 28.9784 Europe/Istanbul diyanet-published-point-v1
+npm run calculate:local -- 2027-03-20 30.0444 31.2357 Africa/Cairo sunni-egyptian-shadow1-physical-v1
 npm run calculate:diyanet -- 2026-09-26 50.1109 8.6821 Europe/Berlin
 node scripts/run.mjs diyanet --example
 node scripts/run.mjs moonsighting-committee --example

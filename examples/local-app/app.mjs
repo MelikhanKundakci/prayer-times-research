@@ -1,11 +1,11 @@
 import {diyanetComparisonRows} from './comparison-view.mjs';
-import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,setLanguagePresentation,translate} from './i18n.mjs';
+import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedFamilyName,localizedFamilyScope,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,resolveMethodProfile,setLanguagePresentation,translate} from './i18n.mjs';
 
 const $=id=>document.getElementById(id);
 const EVENTS=['fajr','dhuhr','asr','maghrib','isha'];
-const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.9784,'Europe/Istanbul'],cairo:[30.0444,31.2357,'Africa/Cairo'],
+const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.9784,'Europe/Istanbul'],makkah:[21.4225,39.8262,'Asia/Riyadh'],karachi:[24.8607,67.0011,'Asia/Karachi'],cairo:[30.0444,31.2357,'Africa/Cairo'],'kuala-lumpur':[3.139,101.6869,'Asia/Kuala_Lumpur'],
   'new-york':[40.7128,-74.006,'America/New_York'],jakarta:[-6.2,106.8,'Asia/Jakarta'],sydney:[-33.8688,151.2093,'Australia/Sydney'],oslo:[59.9139,10.7522,'Europe/Oslo']};
-let language=readLanguage(),definitions=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0,locationNote={key:'location.sample'},mainMessage={key:'message.preparing'},comparisonMessage=null;
+let language=readLanguage(),definitions=[],methods=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0,locationNote={key:'location.sample'},mainMessage={key:'message.preparing'},comparisonMessage=null;
 const t=(key,values)=>translate(key,language,values);
 const available=e=>e?.role==='prayer-start-model'&&['calculated','estimated'].includes(e.status);
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
@@ -18,26 +18,61 @@ function refreshMessage(){const values=mainMessage.key==='error.calculate'?{deta
 function resetComparison(){comparison=null;comparisonMessage=null;comparisonRequest++;$('comparison-output').hidden=true;$('comparison-message').textContent='';$('compare-diyanet').disabled=false;}
 function invalidate(){generation++;result=null;resetComparison();$('output').hidden=true;message('message.changed');}
 function selectedProfile(){
-  if($('profile').value!=='composed')return $('profile').value;
+  const family=$('methodFamily').value;
+  if(family==='other')return $('profile').value;
+  if(family!=='custom'){
+    const method=methods.find(item=>item.id===family);if(!method)return'';
+    return resolveMethodProfile(method,{asrFactor:$('familyShadow').value,nightMode:$('familyNight').value,ramadanMode:$('ramadan').value});
+  }
   const base=`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`;
   return $('astronomy').value==='observer'?base.replace(/-v1$/,'-observer-v1'):base;
 }
 function profileNote(){
-  const composed=$('profile').value==='composed';$('composition').hidden=!composed;
-  if(composed){$('profile-note').textContent=$('astronomy').value==='observer'?t('astronomy.scope'):t('profile.composedNote');return;}
-  const definition=definitions.find(item=>item.id===selectedProfile());
-  $('profile-note').textContent=definition?localizedProfileScope(definition,language):'';
+  const family=$('methodFamily').value;
+  $('family-options').hidden=!methods.some(item=>item.id===family);
+  $('custom-rules').hidden=family!=='custom';$('other-profiles').hidden=family!=='other';$('profile').required=family==='other';
+  if(family==='custom'){$('family-note').textContent='';$('custom-note').textContent=t('profile.composedNote');return;}
+  if(family==='other'){$('other-profile-note').textContent=localizedProfileScope(definitions.find(item=>item.id===selectedProfile())??{id:'',composition:null,sourceScope:''},language);return;}
+  const method=methods.find(item=>item.id===family);if(!method)return;
+  const mode=method.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
+  $('family-note').textContent=localizedFamilyScope(method.id,language,mode)
+    +((method.asrFactors??[]).length===1?` ${t('family.fixedAsr')}`:'')
+    +((method.asrFactors??[]).length>1?` ${t('family.asrIndependent')}`:'')
+    +((method.nightModes??[]).length===1?` ${t('family.fixedNight')}`:'');
+  if(method.ramadanModes?.length)$('family-note').textContent+=` ${t('ramadan.current',{choice:t(`ramadan.summary.${mode}`)})}`;
+  else if(method.nightModes?.length>1)$('family-note').textContent+=` ${t('family.nightCurrent',{choice:t(mode==='angle-night'?'night.mode.angle-night':'night.mode.physical')})}`;
 }
 function renderProfileOptions(){
   const select=$('profile'),selected=select.value;select.replaceChildren();
-  const option=text('option',t('profile.composed'));option.value='composed';select.append(option);
-  for(const definition of definitions.filter(item=>!item.composition)){
+  for(const definition of definitions.filter(item=>!item.composition&&!item.id.startsWith('sunni-'))){
     const item=text('option',localizedProfileLabel(definition,language));item.value=definition.id;select.append(item);
   }
-  select.value=selected||'composed';
+  select.value=selected||select.options[0]?.value||'';
+}
+function renderFamilyOptions(){
+  const select=$('methodFamily'),selected=select.value;select.replaceChildren();
+  for(const method of methods){const option=text('option',localizedFamilyName(method.id,language));option.value=method.id;select.append(option);}
+  for(const [id,key] of [['custom','family.custom'],['other','family.other']]){const option=text('option',t(key));option.value=id;select.append(option);}
+  select.value=selected||((methods.some(item=>item.id==='mwl')&&'mwl')||methods[0]?.id||'custom');
+}
+function configureFamily(method,reset=false){
+  const shown=Boolean(method);$('family-options').hidden=!shown;if(!shown)return;
+  const factorSelect=$('familyShadow'),priorFactor=factorSelect.value,factorValues=method.asrFactors??[];factorSelect.replaceChildren();
+  for(const factor of factorValues){const option=text('option',t(factor===1?'family.factor1':'family.factor2'));option.value=String(factor);factorSelect.append(option);}
+  factorSelect.disabled=factorValues.length<=1;
+  $('family-night-label').hidden=!method.nightModes?.includes('angle-night');
+  $('family-ramadan-label').hidden=!method.ramadanModes?.length;
+  if(reset){
+    const defaultId=method.defaultProfile??'';
+    factorSelect.value=String(Number(defaultId.match(/shadow([12])/i)?.[1]??factorValues[0]??1));
+    const variant=defaultId.match(/-(physical|angle-night|calendar|ramadan|ordinary)-v1$/)?.[1];
+    if(method.ramadanModes?.length)$('ramadan').value=method.ramadanModes.includes(variant)?variant:method.ramadanModes[0];
+    else $('familyNight').value=method.nightModes?.includes(variant)?variant:method.nightModes?.[0]??'physical';
+  }else factorSelect.value=factorValues.includes(Number(priorFactor))?priorFactor:String(Number(String(method.defaultProfile??'').match(/shadow([12])/i)?.[1]??factorValues[0]??1));
+  profileNote();
 }
 function render(){
-  applyStaticTranslations(document,language);renderProfileOptions();showLocationNote();profileNote();
+  applyStaticTranslations(document,language);renderFamilyOptions();renderProfileOptions();showLocationNote();configureFamily(methods.find(item=>item.id===$('methodFamily').value));profileNote();
   refreshMessage();
   $('comparison-message').textContent=comparisonMessage? t(comparisonMessage.key,comparisonMessage.key==='comparison.failed'?{detail:localizedError(comparisonMessage.values?.detail,language)}:comparisonMessage.values):'';
   if(!result)return;
@@ -55,8 +90,10 @@ function render(){
   const sunrise=day.events.sunrise;
   $('sunrise').textContent=sunrise.time?`${t('sunrise.label')} · ${clock(sunrise)}${clockDate(sunrise)!==day.date?t('status.date',{date:labelDate(clockDate(sunrise))}):''}`:`${t('sunrise.label')} ${t('status.unavailable').toLowerCase()}`;
   $('coverage').textContent=t(day.coverage.prayerStartsComplete?'coverage.complete':'coverage.partial');
-  const composition=day.profile.composition;
-  const summary=composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
+  const composition=day.profile.composition,selectedMethod=methods.find(item=>item.id===$('methodFamily').value);
+  const selectedMode=selectedMethod?.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
+  const modeLabel=selectedMethod?.ramadanModes?.length?t(`ramadan.summary.${selectedMode}`):t(selectedMode==='angle-night'?'night.mode.angle-night':'night.mode.physical');
+  const summary=selectedMethod?t('method.summary',{family:localizedFamilyName(selectedMethod.id,language),factor:$('familyShadow').value||1,night:modeLabel}):composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
   const estimates=day.coverage.estimatedEvents.length?t('summary.estimated',{events:day.coverage.estimatedEvents.map(name=>localizedEventName(name,language)).join(', ')}):'';
   $('method-summary').textContent=`${summary}. ${estimates}`;
   const list=document.createElement('ul');
@@ -64,7 +101,7 @@ function render(){
     const event=day.events[name],rule=localizedRuleDescription(day,name,language);
     list.append(text('li',`${localizedEventName(name,language)}: ${rule}${event.reason?` (${localizedReason(event.reason,language)})`:''}`));
   }
-  $('rules').replaceChildren(list,text('p',localizedProfileScope(day.profile,language)),text('p',t('rules.version',{version:day.calculation.version,tzdb:result.runtime.tzdb})));
+  $('rules').replaceChildren(list,text('p',localizedProfileScope(day.profile,language,day)),text('p',t('rules.version',{version:day.calculation.version,tzdb:result.runtime.tzdb})));
   for(const [key,url] of Object.entries(day.profile.sources??{})){
     const link=text('a',localizedSourceLabel(key,language));link.href=url;link.target='_blank';link.rel='noopener noreferrer';const row=text('p','');row.append(link);$('rules').append(row);
   }
@@ -130,8 +167,10 @@ function changeLanguage(value){
 $('language').value=language;applyStaticTranslations(document,language);
 $('language').addEventListener('change',()=>changeLanguage($('language').value));
 $('settings').addEventListener('submit',calculate);$('compare-diyanet').addEventListener('click',compareDiyanet);
-for(const id of ['latitude','longitude','timeZone','date','profile','angles','shadow','night','astronomy'])$(id).addEventListener('input',()=>{
-  invalidate();if(['profile','angles','shadow','night','astronomy'].includes(id))profileNote();if(['latitude','longitude','timeZone'].includes(id))$('city').value='custom';
+for(const id of ['latitude','longitude','timeZone','date'])$(id).addEventListener('input',()=>{invalidate();if(['latitude','longitude','timeZone'].includes(id))$('city').value='custom';});
+for(const id of ['methodFamily','familyShadow','familyNight','ramadan','profile','angles','shadow','night','astronomy'])$(id).addEventListener('change',()=>{
+  if(id==='methodFamily')configureFamily(methods.find(item=>item.id===$('methodFamily').value),true);
+  invalidate();profileNote();
 });
 $('seconds').addEventListener('change',render);
 $('city').addEventListener('change',()=>{const city=cities[$('city').value];if(city){[$('latitude').value,$('longitude').value,$('timeZone').value]=city;locationNote={key:'location.chosen'};}else locationNote={key:'location.sample'};showLocationNote();invalidate();});
@@ -147,7 +186,11 @@ $('gps').addEventListener('click',()=>{
 $('download').addEventListener('click',()=>{if(!result)return;const url=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download=`prayer-times-${result.day.date}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 try{
   $('date').value=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  const response=await fetch('/api/profiles');if(!response.ok)throw new Error(t('error.prepare'));const data=await response.json();definitions=data.profiles;
-  renderProfileOptions();$('profile').value='composed';profileNote();await calculate();
+  const response=await fetch('/api/profiles');if(!response.ok)throw new Error(t('error.prepare'));const data=await response.json();definitions=data.profiles;methods=Array.isArray(data.methods)?data.methods:[];
+  renderFamilyOptions();renderProfileOptions();
+  if(methods.length){$('methodFamily').value=methods.some(item=>item.id==='mwl')?'mwl':methods[0].id;configureFamily(methods.find(item=>item.id===$('methodFamily').value),true);}
+  else $('methodFamily').value='other';
+  if(!methods.length&&!$('profile').value)$('profile').value=definitions.find(item=>!item.composition&&!item.id.startsWith('sunni-'))?.id??'';
+  profileNote();await calculate();
   }catch(error){message('error.prepare',undefined,true);}
 setInterval(renderNext,15000);

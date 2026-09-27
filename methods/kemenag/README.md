@@ -4,6 +4,8 @@ Own astronomy following the worked recipe in a Kemenag Ephemeris Hisab Rukyat bo
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+The separate [Sunni local catalogue](../../core/local/SUNNI.md) also exposes the existing point profile based on these documented criteria and minute margins. Its continuous USNO astronomy differs from this reconstruction's daily ephemeris lookup convention. Neither profile establishes equivalence with all national or regional Kemenag timetables; the worked-example scope and historical counts below remain unchanged.
+
 ## Run the selected example
 
 Run from the repository root:

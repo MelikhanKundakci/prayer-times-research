@@ -1,5 +1,7 @@
 # Local prayer-time browser prototype
 
+The primary method selector focuses on eight Sunni families: MWL, Karachi, Egyptian, Umm al-Qura, ISNA, Diyanet, Kemenag and JAKIM. Their [local-profile guide](../../core/local/SUNNI.md) states the full recipes and limits. Asr is independently selectable where supported; Karachi initially selects factor two as an application default. Short-night estimates require explicit selection. Umm al-Qura offers automatic offline calendar selection and explicit Ramadan/ordinary interval overrides. JAKIM and Kemenag require points within their declared regional domains. Custom compositions and older source-only profiles remain separately accessible. Named family selection does not claim official institutional equivalence.
+
 Run the prototype from the `public/prayer-times-research` directory:
 
 ```sh

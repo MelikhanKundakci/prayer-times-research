@@ -55,6 +55,50 @@ Object.assign(messages.tr,{
   'location.chosen':'Seçilen konum için örnek koordinatlar.','profile.composedNote':'Aşağıdaki tercihlerle oluşturulmuş tam bir yerel profil. Resmî kurum takvimi değildir.','astronomy.scope':'Sabit 0 m referans yüzeyinde, arazi olmadan isteğe bağlı gözlemci konumu düzeltmesi. Olay vakitlerini çoğunlukla saniyeler düzeyinde kaydırır; kurumsal takvim oluşturmaz.',
   'comparison.minutes':'dk','source.twilight':'Alacakaranlık açısı ölçütleri','source.observatory':'Astronomi kaynağı','source.observer':'Gözlemci konumu düzeltmesi','scope.observer':'{base} Gözlemci düzeltmesi, arazi/yükseklik modeli olmayan sabit 0 m referans yüzeyi kullanır. Bu, isteğe bağlı ayrı bir güneş modelidir; kurumsal takvim eşdeğerliği iddia etmez.','rule.estimated':'Seçilen gece kuralına göre tahmin; bu bir yazılım kabulüdür, fiziksel güneş geçişi değildir.','rule.kemenagAngle':'Örnek yöntemin −{angle}° açı geçişi, sonraki dakikaya yukarı yuvarlanır ve ardından {margin} dakika ayarlanır.','rule.kemenagHorizon':'Örnek yöntemin −{angle}° ufuk geçişi, önceki dakikaya aşağı yuvarlanır ve ardından {margin} dakika ayarlanır.','rule.kemenagDhuhr':'Güneş geçişi sonraki dakikaya yukarı yuvarlanır ve ardından {margin} dakika ayarlanır.','rule.kemenagAsr':'Faktör-{factor} ikindi gölge geçişi sonraki dakikaya yukarı yuvarlanır ve ardından {margin} dakika ayarlanır.','rule.kemenagMaghrib':'−{angle}° günbatımı geçişi sonraki dakikaya yukarı yuvarlanır ve ardından {margin} dakika ayarlanır.','error.other':'Hizmet mesajı: {detail}','error.detail.Expected application/json':'Yerel hizmet geçersiz bir istek aldı.','error.detail.Open the app using its printed local URL.':'Uygulamayı yazdırılan yerel adresten aç.','error.detail.Unknown local route':'İstenen yerel sayfa kullanılamıyor.'
 });
+Object.assign(messages.en,{'city.makkah':'Makkah','city.karachi':'Karachi','city.kuala-lumpur':'Kuala Lumpur','ramadan.summary.calendar':'date-based Isha schedule','ramadan.summary.ramadan':'Ramadan Isha interval','ramadan.summary.ordinary':'ordinary Isha interval'});
+Object.assign(messages.de,{'city.makkah':'Mekka','city.karachi':'Karatschi','city.kuala-lumpur':'Kuala Lumpur','ramadan.summary.calendar':'datumsabhängiger Ischa-Zeitplan','ramadan.summary.ramadan':'Ramadan-Ischa-Intervall','ramadan.summary.ordinary':'übliches Ischa-Intervall'});
+Object.assign(messages.tr,{'city.makkah':'Mekke','city.karachi':'Karaçi','city.kuala-lumpur':'Kuala Lumpur','ramadan.summary.calendar':'tarihe bağlı yatsı programı','ramadan.summary.ramadan':'Ramazan yatsı aralığı','ramadan.summary.ordinary':'normal gün yatsı aralığı'});
+Object.assign(messages.en,{
+  'rule.ishaInterval':'Isha is set {minutes} minutes after calculated sunset under this selected schedule. It is a sunset-interval rule, not an Isha angle crossing.','rule.jakim.fajr':'Fajr crossing at −{angle}°, rounded up to a whole minute.','rule.jakim.isha':'Isha crossing at −{angle}°, rounded up to a whole minute.','rule.jakim.sunrise':'Sunrise marker at the flat −50 arcminute horizon, rounded down to a whole minute.','rule.jakim.dhuhr':'Solar transit plus {seconds} seconds, then rounded up to a whole minute.','rule.jakim.asr':'Factor-{factor} afternoon shadow crossing, rounded up to a whole minute.','rule.jakim.maghrib':'Sunset crossing at the flat −50 arcminute horizon, rounded up to a whole minute.'
+});
+Object.assign(messages.de,{
+  'rule.ishaInterval':'Ischa wird nach dem gewählten Zeitplan {minutes} Minuten nach dem berechneten Sonnenuntergang angesetzt. Das ist ein Zeitabstand ab Sonnenuntergang, kein Ischa-Winkelübertritt.','rule.jakim.fajr':'Fajr-Übertritt bei −{angle}°, auf eine ganze Minute aufgerundet.','rule.jakim.isha':'Ischa-Übertritt bei −{angle}°, auf eine ganze Minute aufgerundet.','rule.jakim.sunrise':'Sonnenaufgangsmarkierung am flachen Horizont von −50 Bogenminuten, auf eine ganze Minute abgerundet.','rule.jakim.dhuhr':'Sonnenhöchststand plus {seconds} Sekunden, danach auf eine ganze Minute aufgerundet.','rule.jakim.asr':'Faktor-{factor}-Schattenübertritt am Nachmittag, auf eine ganze Minute aufgerundet.','rule.jakim.maghrib':'Sonnenuntergang am flachen Horizont von −50 Bogenminuten, auf eine ganze Minute aufgerundet.'
+});
+Object.assign(messages.tr,{
+  'rule.ishaInterval':'Yatsı, seçilen programda hesaplanan günbatımından {minutes} dakika sonra belirlenir. Bu bir günbatımı aralığı kuralıdır, yatsı açı geçişi değildir.','rule.jakim.fajr':'−{angle}° imsak geçişi, tam dakikaya yukarı yuvarlanır.','rule.jakim.isha':'−{angle}° yatsı geçişi, tam dakikaya yukarı yuvarlanır.','rule.jakim.sunrise':'Düz −50 yay dakikalık ufukta güneş doğuş işareti, tam dakikaya aşağı yuvarlanır.','rule.jakim.dhuhr':'Güneş geçişine {seconds} saniye eklenir, ardından tam dakikaya yukarı yuvarlanır.','rule.jakim.asr':'Faktör-{factor} ikindi gölge geçişi, tam dakikaya yukarı yuvarlanır.','rule.jakim.maghrib':'Düz −50 yay dakikalık ufukta günbatımı geçişi, tam dakikaya yukarı yuvarlanır.'
+});
+Object.assign(messages.en,{
+  'field.family':'Prayer-time method family','family.mwl':'Muslim World League (MWL)','family.karachi':'Karachi','family.egyptian':'Egyptian General Authority of Survey','family.umm-al-qura':'Umm al-Qura · Makkah','family.isna':'ISNA · North America','family.diyanet':'Diyanet · Türkiye','family.kemenag':'Kemenag · Indonesia','family.jakim':'JAKIM · Malaysia','family.custom':'Custom local rules','family.other':'Other point profiles',
+  'field.family-asr':'Asr shadow factor','family.factor1':'Factor 1 · first shadow','family.factor2':'Factor 2 · second shadow','field.ramadan':'Umm al-Qura Isha schedule','ramadan.calendar':'Automatic · date-based schedule','ramadan.month':'Ramadan · 120 minutes after sunset','ramadan.ordinary':'Ordinary days · 90 minutes after sunset','ramadan.note':'The date-based option follows the supplied Umm al-Qura civil date; the manual choices are overrides for local announcements.',
+  'field.other-profile':'Other point profiles','family.scope.mwl':'MWL angle family with an offline point-time implementation. This is not an official MWL timetable; horizon, Asr and short-night handling are shown separately.','family.scope.karachi':'Karachi angle family with an offline point-time implementation. This is not an official Karachi timetable; Asr factor and short-night handling are selected separately.','family.scope.egyptian':'Egyptian angle family with locally declared point astronomy, horizon, Asr and schedule conventions. It is not an official Egyptian timetable.','family.scope.isna':'ISNA angle family with an offline point-time implementation. This is not an official ISNA timetable; Asr factor and short-night handling are selected separately.','family.scope.diyanet':'Published Diyanet criteria with the declared local point model. This is not an official Diyanet calendar; unresolved northern summer and transition events remain unavailable.','family.scope.kemenag':'Bounded Kemenag worked-example profile for Indonesia, not a nationwide current-production engine. Its event rounding is explained below.','family.scope.jakim':'Malaysia-oriented point profile using the stated 18°/18° twilight angles, 64-second Dhuhr margin and minute quantization. It does not reproduce a JAKIM zone timetable.','family.scope.custom':'A software combination of independently selected rules. No institution is claimed to publish this full combination.','family.scope.other':'Additional point profiles with their own stated scope and limits.',
+  'family.note.custom':'Choose a named family for its published or documented conventions. Change only the options shown for that family.','family.fixedAsr':'This family uses its fixed Asr convention.','family.fixedNight':'This family does not offer the shared night-fraction estimate. Missing crossings stay unavailable.','family.selected':'Selected family: {family}.','profile.composedNote':'Build a local combination by choosing each rule below. It is not an institutional method.','method.summary':'{family} · Asr factor {factor} · {night}','night.mode.physical':'physical crossings only','night.mode.angle-night':'night-fraction estimate enabled'
+});
+Object.assign(messages.de,{
+  'field.family':'Gebetszeit-Methode','family.mwl':'Muslim World League (MWL)','family.karachi':'Karachi','family.egyptian':'Ägyptische Vermessungsbehörde','family.umm-al-qura':'Umm al-Qura · Mekka','family.isna':'ISNA · Nordamerika','family.diyanet':'Diyanet · Türkei','family.kemenag':'Kemenag · Indonesien','family.jakim':'JAKIM · Malaysia','family.custom':'Eigene lokale Regeln','family.other':'Weitere Punktprofile',
+  'field.family-asr':'Asr-Schattenfaktor','family.factor1':'Faktor 1 · erster Schatten','family.factor2':'Faktor 2 · zweiter Schatten','field.ramadan':'Umm-al-Qura-Ischa-Zeitplan','ramadan.calendar':'Automatisch · datumsabhängiger Zeitplan','ramadan.month':'Ramadan · 120 Minuten nach Sonnenuntergang','ramadan.ordinary':'Übliche Tage · 90 Minuten nach Sonnenuntergang','ramadan.note':'Die datumsabhängige Wahl richtet sich nach dem mitgelieferten Umm-al-Qura-Datum; die manuellen Optionen überschreiben sie für lokale Ankündigungen.',
+  'field.other-profile':'Weitere Punktprofile','family.scope.mwl':'MWL-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller MWL-Zeitplan; Horizont, Asr und kurze Nächte werden getrennt ausgewiesen.','family.scope.karachi':'Karachi-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller Karachi-Zeitplan; Asr-Faktor und Umgang mit kurzen Nächten werden getrennt gewählt.','family.scope.egyptian':'Ägyptische Winkelfamilie mit ausdrücklich lokalen Konventionen für Punktastronomie, Horizont, Asr und Zeitplan. Kein offizieller ägyptischer Zeitplan.','family.scope.isna':'ISNA-Winkelfamilie mit lokaler Punktzeitberechnung. Kein offizieller ISNA-Zeitplan; Asr-Faktor und Umgang mit kurzen Nächten werden getrennt gewählt.','family.scope.diyanet':'Veröffentlichte Diyanet-Kriterien mit dem angegebenen lokalen Punktmodell. Kein offizieller Diyanet-Kalender; ungeklärte nördliche Sommer- und Übergangszeiten bleiben nicht verfügbar.','family.scope.kemenag':'Begrenztes Kemenag-Beispielprofil für Indonesien, keine landesweite aktuelle Produktionsberechnung. Die Ereignisrundung wird unten erklärt.','family.scope.jakim':'Auf Malaysia ausgerichtetes Punktprofil mit den angegebenen Dämmerungswinkeln 18°/18°, 64 Sekunden Dhuhr-Abstand und Minutenrundung. Kein JAKIM-Zonenzeitplan.','family.scope.custom':'Eine Softwarekombination einzeln gewählter Regeln. Es wird nicht behauptet, dass eine Institution diese Gesamtkombination veröffentlicht.','family.scope.other':'Zusätzliche Punktprofile mit jeweils angegebenem Umfang und Grenzen.',
+  'family.note.custom':'Wähle eine benannte Familie für ihre veröffentlichten oder dokumentierten Konventionen. Ändere nur die für diese Familie angebotenen Optionen.','family.fixedAsr':'Diese Familie verwendet ihre feste Asr-Konvention.','family.fixedNight':'Diese Familie bietet keine gemeinsame Nachtanteil-Schätzung. Fehlende Übertritte bleiben nicht verfügbar.','family.selected':'Gewählte Familie: {family}.','profile.composedNote':'Stelle eine lokale Kombination aus den unten gewählten Regeln zusammen. Keine institutionelle Methode.','method.summary':'{family} · Asr-Faktor {factor} · {night}','night.mode.physical':'nur echte Sonnenübertritte','night.mode.angle-night':'Nachtanteil-Schätzung aktiviert'
+});
+Object.assign(messages.tr,{
+  'field.family':'Namaz vakti yöntemi','family.mwl':'Dünya Müslüman Birliği (MWL)','family.karachi':'Karaçi','family.egyptian':'Mısır Genel Ölçme Kurumu','family.umm-al-qura':'Ümmü’l-Kurâ · Mekke','family.isna':'ISNA · Kuzey Amerika','family.diyanet':'Diyanet · Türkiye','family.kemenag':'Kemenag · Endonezya','family.jakim':'JAKIM · Malezya','family.custom':'Özel yerel kurallar','family.other':'Diğer nokta profilleri',
+  'field.family-asr':'İkindi gölge faktörü','family.factor1':'Faktör 1 · ilk gölge','family.factor2':'Faktör 2 · ikinci gölge','field.ramadan':'Ümmü’l-Kurâ yatsı programı','ramadan.calendar':'Otomatik · tarihe bağlı program','ramadan.month':'Ramazan · günbatımından 120 dakika sonra','ramadan.ordinary':'Normal günler · günbatımından 90 dakika sonra','ramadan.note':'Tarihe bağlı seçenek, sağlanan Ümmü’l-Kurâ sivil tarihini kullanır; elle seçilen seçenekler yerel duyurular için bunun üzerine yazılır.',
+  'field.other-profile':'Diğer nokta profilleri','family.scope.mwl':'Cihazda nokta-vakit hesabıyla uygulanan MWL açı ailesi. Resmî MWL takvimi değildir; ufuk, ikindi ve kısa-gece kuralları ayrıca gösterilir.','family.scope.karachi':'Cihazda nokta-vakit hesabıyla uygulanan Karaçi açı ailesi. Resmî Karaçi takvimi değildir; ikindi faktörü ve kısa-gece kuralı ayrıca seçilir.','family.scope.egyptian':'Nokta astronomisi, ufuk, ikindi ve program kabulleri yerel olarak belirtilmiş Mısır açı ailesi. Resmî Mısır takvimi değildir.','family.scope.isna':'Cihazda nokta-vakit hesabıyla uygulanan ISNA açı ailesi. Resmî ISNA takvimi değildir; ikindi faktörü ve kısa-gece kuralı ayrıca seçilir.','family.scope.diyanet':'Belirtilen yerel nokta modeliyle uygulanan yayımlanmış Diyanet ölçütleri. Resmî Diyanet takvimi değildir; çözümlenmemiş kuzey yaz ve geçiş vakitleri kullanılamaz.','family.scope.kemenag':'Endonezya için sınırlı Kemenag örnek profili; ülke çapında güncel üretim hesabı değildir. Olay yuvarlaması aşağıda açıklanır.','family.scope.jakim':'Belirtilen 18°/18° alacakaranlık açıları, 64 saniye öğle ek süresi ve dakika çözünürlüğüyle Malezya odaklı nokta profili. JAKIM bölge takvimini yeniden oluşturmaz.','family.scope.custom':'Birbirinden bağımsız seçilen kurallardan oluşan yazılım birleşimi. Bir kurumun bu birleşimin tamamını yayımladığı iddia edilmez.','family.scope.other':'Kapsamı ve sınırları ayrı ayrı belirtilen ek nokta profilleri.',
+  'family.note.custom':'Yayımlanmış veya belgelenmiş kabulleri için bir yöntem ailesi seç. Yalnızca o aile için sunulan seçenekleri değiştir.','family.fixedAsr':'Bu aile kendi sabit ikindi kuralını kullanır.','family.fixedNight':'Bu aile ortak bir gece oranı tahmini sunmuyor. Bulunmayan geçişler kullanılamaz kalır.','family.selected':'Seçilen aile: {family}.','profile.composedNote':'Aşağıdaki kuralları ayrı ayrı seçerek yerel bir birleşim oluştur. Kurumsal yöntem değildir.','method.summary':'{family} · ikindi faktörü {factor} · {night}','night.mode.physical':'yalnız gerçek güneş geçişleri','night.mode.angle-night':'gece oranı tahmini açık'
+});
+
+// Family scope, independent choices and method-specific source labels.
+Object.assign(messages.en,{
+  'family.scope.umm-al-qura':'Local Umm al-Qura Isha recipe with a date-based schedule or manual Ramadan/ordinary-day choice. It is not an official Umm al-Qura timetable.',
+  'source.catalog':'Adhan method catalogue (English original)','source.jakim':'Pahang prayer-time guidance (Malay original)','source.noon':'Selangor solar-noon explanation (Malay original)','source.malaysiarounding':'Selangor rounding guidance (Malay original)','source.malaysiahorizon':'Malaysian Falak journal article (Malay original)','error.malaysiaDomain':'This point profile is limited to its declared locations in Malaysia.','family.asrIndependent':'Asr shadow factor is selected independently from the twilight angles.','family.nightCurrent':'Current short-night choice: {choice}.','ramadan.current':'Current Isha interval choice: {choice}.'
+});
+Object.assign(messages.de,{
+  'family.scope.umm-al-qura':'Lokale Umm-al-Qura-Ischa-Regel mit datumsabhängigem Zeitplan oder manueller Ramadan-/Normalzeit-Wahl. Kein offizieller Umm-al-Qura-Zeitplan.',
+  'source.catalog':'Adhan-Methodenkatalog (englisches Original)','source.jakim':'Hinweise zu Gebetszeiten aus Pahang (malaiisches Original)','source.noon':'Erläuterung zum Sonnenhöchststand in Selangor (malaiisches Original)','source.malaysiarounding':'Rundungshinweise aus Selangor (malaiisches Original)','source.malaysiahorizon':'Artikel in einer malaysischen Falak-Zeitschrift (malaiisches Original)','error.malaysiaDomain':'Dieses Punktprofil ist auf die angegebenen Standorte in Malaysia begrenzt.','family.asrIndependent':'Der Asr-Schattenfaktor wird unabhängig von den Dämmerungswinkeln gewählt.','family.nightCurrent':'Aktuelle Regel für kurze Nächte: {choice}.','ramadan.current':'Aktuelle Ischa-Zeitoption: {choice}.'
+});
+Object.assign(messages.tr,{
+  'family.scope.umm-al-qura':'Tarihe bağlı program veya elle seçilen Ramazan/normal gün seçeneği sunan yerel Ümmü’l-Kurâ yatsı uygulaması. Resmî Ümmü’l-Kurâ takvimi değildir.',
+  'source.catalog':'Adhan yöntem kataloğu (İngilizce özgün kaynak)','source.jakim':'Pahang namaz vakti rehberi (Malayca özgün kaynak)','source.noon':'Selangor güneş geçişi açıklaması (Malayca özgün kaynak)','source.malaysiarounding':'Selangor yuvarlama rehberi (Malayca özgün kaynak)','source.malaysiahorizon':'Malezya Falak dergisi makalesi (Malayca özgün kaynak)','error.malaysiaDomain':'Bu nokta profili, Malezya içindeki belirtilen konumlarla sınırlıdır.','family.asrIndependent':'İkindi gölge faktörü, alacakaranlık açılarından bağımsız seçilir.','family.nightCurrent':'Geçerli kısa-gece seçimi: {choice}.','ramadan.current':'Geçerli yatsı aralığı seçimi: {choice}.'
+});
 
 export function normalizeLanguage(value){
   const code=typeof value==='string'?value.trim().toLowerCase().split(/[-_]/)[0]:'';
@@ -103,8 +147,9 @@ export function localizedProfileLabel(profile,language){
   }
   return profile.label;
 }
-export function localizedProfileScope(profile,language){
+export function localizedProfileScope(profile,language,context={}){
   const lang=normalizeLanguage(language),id=profile.id;
+  if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??profile.highLatitudeMode);
   if(id.endsWith('-observer-v1'))return translate('scope.observer',lang,{base:translate('scope.composed',lang)});
   const key=id.startsWith('diyanet-published-')?'scope.diyanet':id==='local-northern-seasonal-v1'?'scope.seasonal'
     :id.startsWith('egypt-')?'scope.egypt':id.startsWith('fcna-usa')?'scope.fcna-us'
@@ -117,6 +162,29 @@ export function localizedSourceLabel(key,language){
   return result===`source.${normalized}`?key:result;
 }
 export function localizedEventName(event,language){return translate(`event.${event}`,language);}
+export function resolveMethodProfile(method,{asrFactor,nightMode,ramadanMode}={}){
+  if(!method||typeof method.id!=='string'||typeof method.defaultProfile!=='string')throw new TypeError('A method catalogue entry is required');
+  if(method.id==='diyanet'||method.id==='kemenag')return method.defaultProfile;
+  const factors=method.asrFactors??[],nights=method.nightModes??[],ramadans=method.ramadanModes??[];
+  const fallbackFactor=Number(method.defaultProfile.match(/shadow([12])/i)?.[1]??factors[0]??1);
+  const factor=factors.includes(Number(asrFactor))?Number(asrFactor):fallbackFactor;
+  const availableModes=ramadans.length?ramadans:nights;
+  const requestedMode=ramadans.length?ramadanMode:nightMode;
+  const fallbackMode=method.defaultProfile.match(/-(physical|angle-night|calendar|ramadan|ordinary)-v1$/)?.[1]??availableModes[0];
+  const mode=availableModes.includes(requestedMode)?requestedMode:fallbackMode;
+  if(!mode)return method.defaultProfile;
+  const candidate=`sunni-${method.id}-shadow${factor}-${mode}-v1`;
+  return method.profiles?.includes(candidate)?candidate:method.defaultProfile;
+}
+export function localizedFamilyName(id,language){
+  const key=`family.${id}`;const value=translate(key,language);return value===key?id:value;
+}
+export function localizedFamilyScope(id,language,mode){
+  const key=`family.scope.${id}`;let value=translate(key,language);
+  if(value===key)value=translate('family.scope.other',language);
+  if(id==='umm-al-qura')value+=` ${translate('ramadan.note',language)}`;
+  return value;
+}
 export function localizedStatus(status,role,language){
   if(role&&role!=='prayer-start-model')return translate('status.marker',language);
   const value=translate(`status.${status}`,language);
@@ -131,6 +199,7 @@ export function localizedReason(reason,language){
 export function localizedError(detail,language){
   const normalized=normalizeLanguage(language),exact=translate(`error.detail.${detail}`,normalized);
   if(exact!==`error.detail.${detail}`)return exact;
+  if(/malaysia|malaysian/i.test(detail))return translate('error.malaysiaDomain',normalized);
   if(/outside.*(domain|supported)/i.test(detail))return translate('error.domain',normalized);
   if(/transit.*(civil date|local date)|multiple apparent solar transit/i.test(detail))return translate('error.transit',normalized);
   if(/time.?zone|IANA/i.test(detail))return translate('error.timezone',normalized);
@@ -141,6 +210,7 @@ export function localizedError(detail,language){
 }
 export function localizedRuleDescription(day,event,language){
   const lang=normalizeLanguage(language),profile=day.profile,rule=day.events[event],meta=day.astronomy?.model??{};
+  if(event==='isha'&&day.calculation?.intervalPolicy)return translate('rule.ishaInterval',lang,{minutes:day.calculation.intervalPolicy.minutes});
   if(rule.status==='estimated')return translate('rule.estimated',lang);
   if(profile.northernPolicyThresholdDegrees!==null&&(event==='fajr'||event==='isha')&&day.calculation.northernPolicy){
     const policy=day.calculation.seasonalPolicy;
@@ -151,6 +221,14 @@ export function localizedRuleDescription(day,event,language){
   if(profile.id==='kemenag-worked-example-point-v1'&&event==='dhuhr')return translate('rule.kemenagDhuhr',lang,{margin:rule.adjustmentMinutes??0});
   if(profile.id==='kemenag-worked-example-point-v1'&&event==='asr')return translate('rule.kemenagAsr',lang,{factor:meta.asrShadowFactor??1,margin:rule.adjustmentMinutes??0});
   if(profile.id==='kemenag-worked-example-point-v1'&&event==='maghrib')return translate('rule.kemenagMaghrib',lang,{angle:meta.horizonDepressionDegrees??1,margin:rule.adjustmentMinutes??0});
+  if(profile.id==='sunni-jakim-shadow1-physical-v1'){
+    const angle=event==='fajr'?(meta.fajrAngleDegrees??18):(meta.ishaAngleDegrees??18);
+    if(event==='fajr'||event==='isha')return translate(`rule.jakim.${event}`,lang,{angle});
+    if(event==='sunrise')return translate('rule.jakim.sunrise',lang);
+    if(event==='dhuhr')return translate('rule.jakim.dhuhr',lang,{seconds:Math.round((rule.adjustmentMinutes??0)*60)});
+    if(event==='asr')return translate('rule.jakim.asr',lang,{factor:meta.asrShadowFactor??1});
+    if(event==='maghrib')return translate('rule.jakim.maghrib',lang);
+  }
   if(event==='sunrise')return translate('rule.sunrise',lang,{margin:rule.adjustmentMinutes??0});
   if(event==='dhuhr')return translate(rule.role==='solar-noon-marker'?'rule.noonMarker':'rule.dhuhr',lang,{margin:rule.adjustmentMinutes??0});
   if(event==='asr')return translate('rule.asr',lang,{factor:meta.asrShadowFactor??profile.composition?.asrShadowFactor??1,margin:rule.adjustmentMinutes??0});

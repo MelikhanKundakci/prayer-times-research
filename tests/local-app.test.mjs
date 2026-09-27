@@ -4,6 +4,32 @@ import {get} from 'node:http';
 import {createLocalAppServer} from '../scripts/local-app.mjs';
 import {compareDiyanetPointDay} from '../core/diagnostics/diyanet-comparison.mjs';
 
+test('Sunni family catalogue and every family default produce matching day/schedule results',async t=>{
+  const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+  t.after(()=>new Promise(resolve=>server.close(resolve)));
+  const base=`http://127.0.0.1:${server.address().port}`;
+  const catalog=await(await fetch(base+'/api/profiles')).json();
+  assert.deepEqual(catalog.methods.map(m=>m.id),['mwl','karachi','egyptian','umm-al-qura','isna','diyanet','kemenag','jakim']);
+  assert.equal(catalog.profiles.length,62);
+  assert.equal(new Set(catalog.profiles.map(p=>p.id)).size,62);
+  for(const method of catalog.methods){
+    assert.ok(method.profiles.every(id=>catalog.profiles.some(p=>p.id===id)));
+    const location=method.id==='kemenag'?{latitude:-6.2,longitude:106.8,timeZone:'Asia/Jakarta'}
+      :method.id==='jakim'?{latitude:3.139,longitude:101.6869,timeZone:'Asia/Kuala_Lumpur'}
+      :{latitude:21.4225,longitude:39.8262,timeZone:'Asia/Riyadh'};
+    const response=await fetch(base+'/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({date:'2027-03-20',...location,profile:method.defaultProfile})});
+    assert.equal(response.status,200,method.id);
+    const {day,schedule}=await response.json();
+    assert.equal(day.profile.id,method.defaultProfile);
+    assert.equal(day.coverage.prayerStartsComplete,true,method.id);
+    assert.equal(schedule.context.calculationVersion,day.calculation.version);
+    assert.equal(schedule.entries.length,40);
+    for(const entry of schedule.entries.filter(e=>e.sourceDate===day.date))
+      assert.equal(entry.epochMilliseconds,day.events[entry.event].epochMilliseconds);
+  }
+});
+
 test('local app exposes complete dated point schedules without external services or arbitrary files',async t=>{
   const server=createLocalAppServer();await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
   t.after(()=>new Promise(resolve=>server.close(resolve)));

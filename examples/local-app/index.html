@@ -15,14 +15,22 @@
       <section class="settings panel" aria-labelledby="settings-title">
         <h2 id="settings-title" data-i18n="settings.title">Location and calculation</h2>
         <form id="settings">
-          <label><span data-i18n="field.city">Sample location</span><select id="city"><option value="frankfurt" data-i18n="city.frankfurt">Frankfurt am Main</option><option value="istanbul" data-i18n="city.istanbul">Istanbul</option><option value="cairo" data-i18n="city.cairo">Cairo</option><option value="new-york" data-i18n="city.new-york">New York</option><option value="jakarta" data-i18n="city.jakarta">Jakarta</option><option value="sydney" data-i18n="city.sydney">Sydney</option><option value="oslo" data-i18n="city.oslo">Oslo</option><option value="custom" data-i18n="city.custom">Custom location</option></select></label>
+          <label><span data-i18n="field.city">Sample location</span><select id="city"><option value="frankfurt" data-i18n="city.frankfurt">Frankfurt am Main</option><option value="istanbul" data-i18n="city.istanbul">Istanbul</option><option value="makkah" data-i18n="city.makkah">Makkah</option><option value="karachi" data-i18n="city.karachi">Karachi</option><option value="cairo" data-i18n="city.cairo">Cairo</option><option value="kuala-lumpur" data-i18n="city.kuala-lumpur">Kuala Lumpur</option><option value="new-york" data-i18n="city.new-york">New York</option><option value="jakarta" data-i18n="city.jakarta">Jakarta</option><option value="sydney" data-i18n="city.sydney">Sydney</option><option value="oslo" data-i18n="city.oslo">Oslo</option><option value="custom" data-i18n="city.custom">Custom location</option></select></label>
           <div class="two"><label><span data-i18n="field.latitude">Latitude</span><input id="latitude" type="number" min="-89" max="89" step="any" required value="50.1109"></label><label><span data-i18n="field.longitude">Longitude</span><input id="longitude" type="number" min="-180" max="180" step="any" required value="8.6821"></label></div>
           <button class="secondary" type="button" id="gps" data-i18n="gps.use">Use my location</button>
           <p id="location-note" class="hint" data-i18n="location.sample">Sample coordinates. Your location is requested only if you choose to use it.</p>
           <label><span data-i18n="field.timezone">Time zone</span><input id="timeZone" required value="Europe/Berlin" list="zones" autocomplete="off"></label>
-          <datalist id="zones"><option value="Europe/Berlin"><option value="Europe/Istanbul"><option value="Africa/Cairo"><option value="America/New_York"><option value="Asia/Jakarta"><option value="Asia/Makassar"><option value="Asia/Jayapura"><option value="Australia/Sydney"><option value="Europe/Oslo"><option value="UTC"></datalist>
+          <datalist id="zones"><option value="Europe/Berlin"><option value="Europe/Istanbul"><option value="Asia/Riyadh"><option value="Asia/Karachi"><option value="Africa/Cairo"><option value="Asia/Kuala_Lumpur"><option value="America/New_York"><option value="Asia/Jakarta"><option value="Asia/Makassar"><option value="Asia/Jayapura"><option value="Australia/Sydney"><option value="Europe/Oslo"><option value="UTC"></datalist>
           <label><span data-i18n="field.date">Date</span><input id="date" type="date" min="2002-01-01" max="2097-12-24" required></label>
-          <label><span data-i18n="field.profile">Calculation profile</span><select id="profile" required></select></label>
+          <label><span data-i18n="field.family">Calculation method</span><select id="methodFamily" required></select></label>
+          <div id="family-options" hidden>
+            <label><span data-i18n="field.family-asr">Asr shadow method</span><select id="familyShadow"></select></label>
+            <label id="family-night-label"><span data-i18n="field.short-night">Short nights</span><select id="familyNight"><option value="physical" data-i18n="night.physical">No estimates</option><option value="angle-night" data-i18n="night.angle">Angle fraction of night · estimated rule</option></select></label>
+            <label id="family-ramadan-label" hidden><span data-i18n="field.ramadan">Umm al-Qura Isha schedule</span><select id="ramadan"><option value="calendar" data-i18n="ramadan.calendar">Use the date-based calendar schedule</option><option value="ramadan" data-i18n="ramadan.month">Ramadan schedule · 120 minutes</option><option value="ordinary" data-i18n="ramadan.ordinary">Ordinary schedule · 90 minutes</option></select></label>
+            <p class="hint" id="family-note"></p>
+          </div>
+          <div id="other-profiles" hidden><label><span data-i18n="field.other-profile">Other point profiles</span><select id="profile"></select></label><p class="hint" id="other-profile-note"></p></div>
+          <div id="custom-rules" hidden>
           <div id="composition">
             <label><span data-i18n="field.angles">Fajr / Isha</span><select id="angles"><option value="18-17" data-i18n="angle.diyanet">18° / 17° · published Diyanet angles</option><option value="19p5-17p5" data-i18n="angle.egypt">19.5° / 17.5° · Egyptian angles</option><option value="15-15" data-i18n="angle.fcna-us">15° / 15° · FCNA USA 2017</option><option value="13-13" data-i18n="angle.fcna-ca">13° / 13° · FCNA Canada 2017</option></select></label>
             <label><span data-i18n="field.shadow">Asr shadow factor</span><select id="shadow"><option value="1" data-i18n="shadow.one">Factor 1 · first Asr</option><option value="2" data-i18n="shadow.two">Factor 2 · second Asr</option></select></label>
@@ -31,7 +39,8 @@
             <p class="hint" data-i18n="astronomy.note">The optional correction uses a fixed 0 m reference surface with no terrain. It mainly changes times by seconds and is not an institutional-calendar match.</p>
             <p class="hint" data-i18n="composition.note">Local rule combination: Dhuhr one minute after solar transit; Maghrib at the calculated sunset. The optional night rule also limits very early or late twilight. It is not a universal religious rule.</p>
           </div>
-          <p class="hint" id="profile-note"></p>
+          <p class="hint" id="custom-note" data-i18n="profile.composedNote">Build a local combination by choosing each rule below. It is not an institutional method.</p>
+          </div>
           <label class="checkbox"><input id="seconds" type="checkbox"><span data-i18n="seconds.toggle">Show model times with seconds</span></label>
           <p class="hint" data-i18n="seconds.note">Seconds show calculation resolution, not proven accuracy of an observed prayer time.</p>
           <button type="submit" id="calculate" data-i18n="calculate">Calculate prayer times</button>

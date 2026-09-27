@@ -2,18 +2,18 @@
 
 ## Active delivery priorities — 26 September 2026
 
-**Diyanet and broad community coverage are the active priorities. Türkiye Takvimi is deferred.** Its existing studies stay available for provenance, but its discrepancies do not determine the next implementation work.
+**Update, 27 September 2026: focus on the eight Sunni families MWL, Karachi, Egyptian, Umm al-Qura, ISNA, Diyanet, Kemenag and JAKIM.** Türkiye Takvimi and additional Shia implementation work are deferred; existing studies remain available.
 
 This is a product scope decision, not a measured worldwide popularity ranking. The [Adhan method catalogue](https://github.com/batoulapps/adhan-js/blob/develop/METHODS.md) and [AlAdhan method catalogue](https://aladhan.com/calculation-methods) identify software interoperability targets; inclusion does not prove an institution's complete specification, endorsement, or user count. Research continues from public explanatory publications and retained evidence, without institutional contact or new prayer-calendar/API acquisition. Runtime calculations remain offline.
 
 | Priority | Target | Concrete remaining work |
 |---|---|---|
 | First | **Diyanet** | The optional SPA point profile now applies the same published criteria, margins and ordinary-only northern guard with one provider across daily and annual calculations. Next resolve supported summer/transition behavior and actual event dates. Keep local point rules distinct from the older city-calendar reconstruction. |
-| First expansion | **MWL, Karachi, Egyptian criteria, ISNA and FCNA** | Complete per-prayer rule contracts and trace each convention to its actual source. Add missing method support only under an honest scope label. A matching twilight pair does not establish MWL=Diyanet, ISNA=FCNA, or Karachi=Banuri Town. Keep the Asr choice explicit. |
-| First expansion | **Umm al-Qura** | Add a dated interval-based Isha rule for the explicitly attributed software reconstruction, with an offline Ramadan-calendar convention and month-boundary tests. The [source audit](../methods/umm-al-qura/RULE-EVIDENCE.md) does not establish the complete official numerical recipe; retain that distinction. Do not represent an interval method as another twilight angle. |
+| Active | **MWL, Karachi, Egyptian criteria and ISNA** | The [Sunni local recipes](../core/local/SUNNI.md) now define all five starts with explicit Asr choices and optional night estimates. Continue independent rule review; a matching twilight pair does not establish MWL=Diyanet, ISNA=FCNA, or Karachi=Banuri Town. FCNA's separate source profiles remain available. |
+| Active | **Umm al-Qura** | A dated sunset-interval recipe now implements 90/120 minutes, offline calendar selection and explicit caller overrides. The [source audit](../methods/umm-al-qura/RULE-EVIDENCE.md) still does not establish the complete official numerical recipe. Preserve calendar-announcement and source-date boundaries. |
 | First expansion | **Kemenag / Indonesia** | Extend the bounded worked-example evidence toward a complete local rule contract; retain its stated minute arithmetic and domain. Do not turn an alternative dawn angle into a complete community-specific method. |
-| Regional expansion | **JAKIM, MUIS, UAE/Awqaf** | Preserve each method's zone/point, horizon and margin semantics. Verify complete local profiles before presenting them as national-calendar equivalents. |
-| Community coverage | **Named Ja'fari/Tehran and other Shia profiles** | Specify Maghrib, prayer windows, combined-prayer semantics and missing event rules for the named source. One generic “Shia” angle preset does not cover these differences. |
+| Active | **JAKIM** | The Malaysian point recipe now composes sourced angles, a 64-second noon adjustment and explicit whole-minute selection. It does not implement national zone aggregation or every state's variation. |
+| Deferred expansion | **MUIS, UAE/Awqaf and named Shia profiles** | Preserve existing research; resume broader work after the eight Sunni families. Zone semantics and legally defined prayer windows need separate contracts. |
 | Reuse existing work | **Moonsighting Committee** | Evaluate its existing reconstruction for the local schedule interface while preserving seasonal rules, both Asr choices, unavailable events and legal event-time timezone handling. Historical clock-match scores alone do not authorize an automatic migration. |
 
 The first expansion items can be investigated in parallel, but each is delivered as a complete, independently checked rule package for a stated domain. Expanding the selector is not the acceptance criterion.
@@ -31,6 +31,8 @@ The starting evidence differs: [FCNA](../methods/fcna/RULE-EVIDENCE.md) and [Egy
 The optional [`diyanet-published-spa-point-v1`](../core/local/README.md) profile is now part of the local API. It is a second astronomy-provider choice, not a correction to the existing USNO point profile: both preserve the selected published angles and margins, while the SPA profile uses its provider consistently for daily roots and its annual northern guard. Unsupported summer transitions remain blocked. Any future report of calendar-comparison results must come from the separately frozen replay; the new model alone establishes neither closer Diyanet agreement nor the unpublished transition rule.
 
 ## Current implementation
+
+The [Sunni API](../core/local/SUNNI.md) adds 23 versioned local recipes and maps the other two family choices to existing Diyanet/Kemenag profiles. The browser exposes all eight families in English, German and Turkish. Original modules and their historical validation records retain their numerical behavior. New source-attributed recipes are local application models, not new official-calendar matches.
 
 The app's primary calculation direction is a documented local-point model in [`core/local/`](../core/local/README.md), separate from reconstruction of institution-published city calendars. Version 0.6.0 provides 23 profiles: six original profiles, one optional Diyanet SPA point profile, and 16 software compositions combining four Fajr/Isha angle pairs, Asr shadow factors 1/2 and physical-only or opt-in angle/night twilight handling. The SPA profile and compositions use the SPA point provider; the six original profiles retain USNO. These are outputs under declared rules, not proof of observed or religious superiority, exact-second accuracy, or notification readiness. The [local browser prototype](../examples/local-app/README.md) presents one-day results, a seven-day schedule, next available prayer, rule sources and JSON export.
 
@@ -53,7 +55,7 @@ The research track below remains useful, but it addresses a different question: 
 
 ## Coverage still to establish
 
-The current 15 families are a research starting point. Other commonly named profiles, such as Muslim World League, ISNA, Karachi, and local mosque conventions, need separately verified specifications and source-calendar evidence before we claim their behavior. Matching the Fajr/Isha angles of another included profile is not enough to establish equivalence. Observation-based practices, congregation times, lunar-calendar announcements, and legally defined shared prayer windows also require their own data and semantics.
+The 15 historical research families and eight-family local app catalogue serve different purposes. MWL, ISNA and Karachi now have explicit software recipes; full institutional equivalence still requires separately verified specifications and evidence. Matching the Fajr/Isha angles is not enough. Observation-based practices, congregation times, lunar-calendar announcements, and legally defined shared prayer windows also require their own data and semantics.
 
 ## Contributor-sized tasks
 

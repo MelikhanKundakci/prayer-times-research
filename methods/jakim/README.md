@@ -4,6 +4,8 @@ Several explicitly different zonal reconstructions against e-Solat, with JUPEM c
 
 **Research only — no official endorsement, universal religious coverage or production-ready accuracy is claimed.**
 
+For a caller's own coordinates, the separate [Sunni local catalogue](../../core/local/SUNNI.md) provides a declared Malaysian point composition. It combines published angles, horizon, shadow and rounding conventions with continuous SPA astronomy; it does not use or reproduce the zonal point sets below. The [rule evidence audit](RULE-EVIDENCE.md) now documents primary support for Dhuhr at transit plus 64 seconds. This evidence update changes neither the historical implementations nor their accuracy counts.
+
 ## Run the selected example
 
 Run from the repository root:
@@ -122,7 +124,7 @@ Counts, definitions and SHA-256 evidence pins are recorded in [`validation.json`
 
 ## Sources
 
-The [rule evidence audit](RULE-EVIDENCE.md) distinguishes the confirmed 18° Fajr criterion and rounding directions from the unconfirmed seconds, zonal points and ephemeris choices.
+The [rule evidence audit](RULE-EVIDENCE.md) distinguishes the documented modern 18° Fajr criterion, 18° Isha, factor-one shadow rule, flat −50′ horizon, 64-second Dhuhr convention and rounding directions from the unconfirmed seconds truncation, zonal point sets and ephemeris sampling choices. Published components do not certify the complete reconstructed backend.
 
 - [Primary JAKIM calendar service](https://www.e-solat.gov.my/)
 - [Primary 2025 coordinate tables and maps](https://www.jupem.gov.my/storage/upload/almanak/almanak2025-1732247258.pdf)
@@ -138,6 +140,6 @@ Source websites and institution names are cited for attribution, not affiliation
 - Can each state provide versioned operational zone polygons and final JUPEM prayer-reference points?
 - Is shared map point 19 operational for KDH03, and which events use it?
 - What is the measured Tg.Rhu calculation point, distinct from the village proxy?
-- Which year-specific instructions confirm the 64-second Dhuhr adjustment, rounding order and extrema policy?
+- Which year-specific operational instructions confirm the exact rounding order, ephemeris sampling and extrema policy, beyond the published 64-second Dhuhr convention?
 
 For a proposed numerical change, document the primary rule or bounded hypothesis, preserve the previous results, freeze the recipe and full forecasts before reading new references, and report every planned date, missing value and regression. Keep coordinate/height provenance independent of timing residuals. Do not promote a city-specific fit to a universal method.

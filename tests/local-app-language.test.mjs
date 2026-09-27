@@ -1,7 +1,9 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
-import {localizedProfileScope,localizedReason,localizedRuleDescription,normalizeLanguage,readLanguage,setLanguagePresentation,translate,writeLanguage,LANGUAGE_STORAGE_KEY} from '../examples/local-app/i18n.mjs';
+import {localizedError} from '../examples/local-app/i18n.mjs';
+import {localizedFamilyName,localizedFamilyScope,localizedProfileScope,localizedReason,localizedRuleDescription,normalizeLanguage,readLanguage,resolveMethodProfile,setLanguagePresentation,translate,writeLanguage,LANGUAGE_STORAGE_KEY} from '../examples/local-app/i18n.mjs';
+import {listSunniMethods} from '../core/local/sunni-profiles.mjs';
 import {diyanetComparisonRows} from '../examples/local-app/comparison-view.mjs';
 
 const root=new URL('../examples/local-app/',import.meta.url);
@@ -22,13 +24,13 @@ test('English is the safe default and only the language preference is persisted'
 });
 
 test('language choice translates and redraws without invoking a calculation or changing form state',()=>{
-  const values=new Map([['date','2026-09-27'],['latitude','50.11'],['timeZone','Europe/Berlin'],['profile','diyanet-published-spa-point-v1'],['result','kept']]);
+  const values=new Map([['date','2026-09-27'],['latitude','50.11'],['timeZone','Europe/Berlin'],['profile','sunni-karachi-shadow2-physical-v1'],['methodFamily','karachi'],['familyShadow','2'],['result','kept']]);
   const storage={getItem:key=>values.get(key)??null,setItem:(key,value)=>values.set(key,value)};
   const doc={documentElement:{lang:'en'},title:'',querySelectorAll:()=>[]};let renders=0;
   const selected=setLanguagePresentation('de',{storage,document:doc,render:()=>renders++});
   assert.equal(selected,'de');assert.equal(doc.documentElement.lang,'de');assert.equal(doc.title,'Lokale Gebetszeiten');
   assert.equal(renders,1);assert.equal(values.get('date'),'2026-09-27');assert.equal(values.get('latitude'),'50.11');
-  assert.equal(values.get('timeZone'),'Europe/Berlin');assert.equal(values.get('profile'),'diyanet-published-spa-point-v1');assert.equal(values.get('result'),'kept');
+  assert.equal(values.get('timeZone'),'Europe/Berlin');assert.equal(values.get('profile'),'sunni-karachi-shadow2-physical-v1');assert.equal(values.get('methodFamily'),'karachi');assert.equal(values.get('familyShadow'),'2');assert.equal(values.get('result'),'kept');
 });
 
 test('visible static translation keys in the app have English, German and Turkish values',async()=>{
@@ -67,4 +69,38 @@ test('rule explanations distinguish estimated twilight, Kemenag horizon and minu
   assert.match(localizedRuleDescription(kemenag,'maghrib','en'),/−1°.*rounded up.*2 minutes/);
   const observer={id:'local-18-17-shadow1-physical-observer-v1',composition:{},northernPolicyThresholdDegrees:null,sourceScope:'base'};
   assert.match(localizedProfileScope(observer,'en'),/0 m reference surface/);
+});
+
+test('eight family selector profiles resolve defaults and independent controls from the method catalogue',()=>{
+  const methods=listSunniMethods(),ids=['mwl','karachi','egyptian','umm-al-qura','isna','diyanet','kemenag','jakim'];
+  assert.deepEqual(methods.map(method=>method.id),ids);
+  for(const method of methods){
+    assert.equal(resolveMethodProfile(method),method.defaultProfile);
+    for(const language of ['en','de','tr']){
+      assert.notEqual(localizedFamilyName(method.id,language),`family.${method.id}`);
+      assert.ok(localizedFamilyScope(method.id,language).length>40);
+    }
+  }
+  const karachi=methods.find(method=>method.id==='karachi');
+  assert.match(karachi.defaultProfile,/shadow2-physical/);
+  assert.equal(resolveMethodProfile(karachi,{asrFactor:1,nightMode:'angle-night'}),'sunni-karachi-shadow1-angle-night-v1');
+  const mwl=methods.find(method=>method.id==='mwl');
+  assert.equal(resolveMethodProfile(mwl,{asrFactor:2,nightMode:'angle-night'}),'sunni-mwl-shadow2-angle-night-v1');
+  const umm=methods.find(method=>method.id==='umm-al-qura');
+  assert.equal(resolveMethodProfile(umm,{asrFactor:2,ramadanMode:'ordinary'}),'sunni-umm-al-qura-shadow2-ordinary-v1');
+  assert.match(localizedFamilyScope('umm-al-qura','en','ordinary'),/manual Ramadan\/ordinary-day choice/);
+  assert.equal(resolveMethodProfile(methods.find(method=>method.id==='diyanet'),{asrFactor:2,nightMode:'angle-night'}),'diyanet-published-spa-point-v1');
+  assert.equal(resolveMethodProfile(methods.find(method=>method.id==='kemenag'),{asrFactor:2,nightMode:'angle-night'}),'kemenag-worked-example-point-v1');
+});
+
+test('region-specific city choices and source labels are translated for all UI languages',async()=>{
+  const html=await readFile(new URL('index.html',root),'utf8');
+  for(const key of ['city.makkah','city.karachi','city.kuala-lumpur'])assert.ok(html.includes(`data-i18n="${key}"`));
+  const {localizedSourceLabel}=await import('../examples/local-app/i18n.mjs');
+  for(const language of ['en','de','tr']){
+    assert.notEqual(localizedSourceLabel('catalog',language),'catalog');
+    assert.notEqual(localizedSourceLabel('jakim',language),'jakim');
+    assert.notEqual(localizedSourceLabel('malaysiaRounding',language),'malaysiaRounding');
+    assert.match(localizedError('location is outside the declared Malaysian point domain',language),/Malaysia|Malezya/i);
+  }
 });
