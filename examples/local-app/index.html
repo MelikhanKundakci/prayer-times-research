@@ -1,62 +1,66 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="color-scheme" content="light"><title>Lokale Gebetszeiten</title>
+  <meta name="color-scheme" content="light"><title>Local prayer times</title>
   <link rel="stylesheet" href="/style.css"><script type="module" src="/app.mjs"></script>
 </head>
 <body>
   <main>
-    <header><a class="brand" href="/">◒ &nbsp; NAMAZ VAKTI</a><span class="tag">Lokal berechnet · ohne Werbung</span></header>
-    <section class="intro"><p class="eyebrow">DEIN ORT. DEINE AUSWAHL.</p><h1>Deine Gebetszeiten.<br><span>Nachvollziehbar berechnet.</span></h1><p>Wähle den Ort und die Regeln, denen du folgen möchtest. Die Berechnung bleibt auf deinem Gerät.</p><a class="adjust" href="#settings-title">Ort &amp; Regeln anpassen ↓</a></section>
+    <header><a class="brand" href="/">◒ &nbsp; NAMAZ VAKTI</a><span class="tag" data-i18n="brand.tag">Calculated locally · no ads</span>
+      <label class="language-picker"><span data-i18n="language.label">Language</span><select id="language" data-i18n-aria-label="language.label" aria-label="Language"><option value="en">English</option><option value="de">Deutsch</option><option value="tr">Türkçe</option></select></label>
+    </header>
+    <section class="intro"><p class="eyebrow" data-i18n="hero.eyebrow">YOUR PLACE. YOUR CHOICE.</p><h1><span class="title-primary" data-i18n="hero.title">Your prayer times.</span><br><span data-i18n="hero.title2">Calculated transparently.</span></h1><p data-i18n="hero.body">Choose the place and rules you want to follow. The calculation stays on your device.</p><a class="adjust" href="#settings-title" data-i18n="hero.adjust">Adjust place and rules ↓</a></section>
     <div class="layout">
       <section class="settings panel" aria-labelledby="settings-title">
-        <h2 id="settings-title">Ort &amp; Berechnung</h2>
+        <h2 id="settings-title" data-i18n="settings.title">Location and calculation</h2>
         <form id="settings">
-          <label>Beispielort<select id="city"><option value="frankfurt">Frankfurt am Main</option><option value="istanbul">Istanbul</option><option value="cairo">Kairo</option><option value="new-york">New York</option><option value="jakarta">Jakarta</option><option value="sydney">Sydney</option><option value="oslo">Oslo</option><option value="custom">Eigener Standort</option></select></label>
-          <div class="two"><label>Breitengrad<input id="latitude" type="number" min="-89" max="89" step="any" required value="50.1109"></label><label>Längengrad<input id="longitude" type="number" min="-180" max="180" step="any" required value="8.6821"></label></div>
-          <button class="secondary" type="button" id="gps">Meinen Standort verwenden</button>
-          <p id="location-note" class="hint">Beispielkoordinaten. GPS wird nur auf deinen Wunsch abgefragt.</p>
-          <label>Zeitzone<input id="timeZone" required value="Europe/Berlin" list="zones" autocomplete="off"></label>
+          <label><span data-i18n="field.city">Sample location</span><select id="city"><option value="frankfurt" data-i18n="city.frankfurt">Frankfurt am Main</option><option value="istanbul" data-i18n="city.istanbul">Istanbul</option><option value="cairo" data-i18n="city.cairo">Cairo</option><option value="new-york" data-i18n="city.new-york">New York</option><option value="jakarta" data-i18n="city.jakarta">Jakarta</option><option value="sydney" data-i18n="city.sydney">Sydney</option><option value="oslo" data-i18n="city.oslo">Oslo</option><option value="custom" data-i18n="city.custom">Custom location</option></select></label>
+          <div class="two"><label><span data-i18n="field.latitude">Latitude</span><input id="latitude" type="number" min="-89" max="89" step="any" required value="50.1109"></label><label><span data-i18n="field.longitude">Longitude</span><input id="longitude" type="number" min="-180" max="180" step="any" required value="8.6821"></label></div>
+          <button class="secondary" type="button" id="gps" data-i18n="gps.use">Use my location</button>
+          <p id="location-note" class="hint" data-i18n="location.sample">Sample coordinates. Your location is requested only if you choose to use it.</p>
+          <label><span data-i18n="field.timezone">Time zone</span><input id="timeZone" required value="Europe/Berlin" list="zones" autocomplete="off"></label>
           <datalist id="zones"><option value="Europe/Berlin"><option value="Europe/Istanbul"><option value="Africa/Cairo"><option value="America/New_York"><option value="Asia/Jakarta"><option value="Asia/Makassar"><option value="Asia/Jayapura"><option value="Australia/Sydney"><option value="Europe/Oslo"><option value="UTC"></datalist>
-          <label>Datum<input id="date" type="date" min="2002-01-01" max="2097-12-24" required></label>
-          <label>Berechnungsprofil<select id="profile" required></select></label>
+          <label><span data-i18n="field.date">Date</span><input id="date" type="date" min="2002-01-01" max="2097-12-24" required></label>
+          <label><span data-i18n="field.profile">Calculation profile</span><select id="profile" required></select></label>
           <div id="composition">
-            <label>Fajr / Ischa<select id="angles"><option value="18-17">18° / 17° · veröffentlichte Diyanet-Winkel</option><option value="19p5-17p5">19,5° / 17,5° · ägyptische Winkel</option><option value="15-15">15° / 15° · FCNA USA 2017</option><option value="13-13">13° / 13° · FCNA Kanada 2017</option></select></label>
-            <label>Asr-Schattenfaktor<select id="shadow"><option value="1">Faktor 1 · Asr-i evvel</option><option value="2">Faktor 2 · Asr-i sani</option></select></label>
-            <label>Kurze Nächte<select id="night"><option value="physical">Keine Schätzungen</option><option value="angle-night">Winkelanteil der Nacht · Schätzregel</option></select></label>
-            <p class="hint">Eigene lokale Kombination: Dhuhr eine Minute nach Sonnenhöchststand, Maghrib beim berechneten Sonnenuntergang. Die optionale Nachtregel begrenzt auch sehr frühe/späte Dämmerungszeiten. Sie ist keine allgemeingültige religiöse Vorgabe.</p>
+            <label><span data-i18n="field.angles">Fajr / Isha</span><select id="angles"><option value="18-17" data-i18n="angle.diyanet">18° / 17° · published Diyanet angles</option><option value="19p5-17p5" data-i18n="angle.egypt">19.5° / 17.5° · Egyptian angles</option><option value="15-15" data-i18n="angle.fcna-us">15° / 15° · FCNA USA 2017</option><option value="13-13" data-i18n="angle.fcna-ca">13° / 13° · FCNA Canada 2017</option></select></label>
+            <label><span data-i18n="field.shadow">Asr shadow factor</span><select id="shadow"><option value="1" data-i18n="shadow.one">Factor 1 · first Asr</option><option value="2" data-i18n="shadow.two">Factor 2 · second Asr</option></select></label>
+            <label><span data-i18n="field.short-night">Short nights</span><select id="night"><option value="physical" data-i18n="night.physical">No estimates</option><option value="angle-night" data-i18n="night.angle">Angle fraction of night · estimated rule</option></select></label>
+            <label><span data-i18n="field.astronomy">Solar calculation</span><select id="astronomy"><option value="geocentric" data-i18n="astronomy.geocentric">Current solar model</option><option value="observer" data-i18n="astronomy.observer">Observer-position correction</option></select></label>
+            <p class="hint" data-i18n="astronomy.note">The optional correction uses a fixed 0 m reference surface with no terrain. It mainly changes times by seconds and is not an institutional-calendar match.</p>
+            <p class="hint" data-i18n="composition.note">Local rule combination: Dhuhr one minute after solar transit; Maghrib at the calculated sunset. The optional night rule also limits very early or late twilight. It is not a universal religious rule.</p>
           </div>
           <p class="hint" id="profile-note"></p>
-          <label class="checkbox"><input id="seconds" type="checkbox"> Modellzeiten mit Sekunden anzeigen</label>
-          <p class="hint">Sekunden zeigen die Rechenauflösung, nicht eine nachgewiesene Genauigkeit der beobachteten Gebetszeit.</p>
-          <button type="submit" id="calculate">Gebetszeiten berechnen</button>
+          <label class="checkbox"><input id="seconds" type="checkbox"><span data-i18n="seconds.toggle">Show model times with seconds</span></label>
+          <p class="hint" data-i18n="seconds.note">Seconds show calculation resolution, not proven accuracy of an observed prayer time.</p>
+          <button type="submit" id="calculate" data-i18n="calculate">Calculate prayer times</button>
         </form>
       </section>
-      <section class="results" aria-label="Berechnete Gebetszeiten">
-        <div id="message" role="status" aria-live="polite">Berechnung wird vorbereitet …</div>
+      <section class="results" aria-label="Calculated prayer times" data-i18n-aria-label="results.label">
+        <div id="message" role="status" aria-live="polite" data-i18n="message.preparing">Preparing calculation…</div>
         <div id="output" hidden>
-          <section class="next panel"><p class="eyebrow">NÄCHSTER BERECHNETER GEBETSBEGINN</p><div id="next">—</div><p id="next-detail"></p></section>
-          <div class="day-heading"><div><h2 id="day-title"></h2><p id="day-subtitle"></p></div><button id="download" class="text-button" type="button">Ergebnis speichern ↓</button></div>
+          <section class="next panel"><p class="eyebrow" data-i18n="next.eyebrow">NEXT CALCULATED PRAYER START</p><div id="next">—</div><p id="next-detail"></p></section>
+          <div class="day-heading"><div><h2 id="day-title"></h2><p id="day-subtitle"></p></div><button id="download" class="text-button" type="button" data-i18n="day.download">Save result ↓</button></div>
           <div id="prayers" class="prayers"></div>
           <p id="sunrise" class="sunrise"></p>
-          <section class="panel explanation"><h2>Was diese Zeiten bedeuten</h2><p id="coverage"></p><p id="method-summary"></p><details><summary>Regeln und Quellen ansehen</summary><div id="rules"></div></details></section>
+          <section class="panel explanation"><h2 data-i18n="explanation.title">What these times mean</h2><p id="coverage"></p><p id="method-summary"></p><details><summary data-i18n="rules.title">View rules and sources</summary><div id="rules"></div></details></section>
           <section id="diyanet-comparison" class="panel explanation" hidden aria-labelledby="comparison-title">
-            <h2 id="comparison-title">Diyanet-Berechnungen vergleichen</h2>
-            <p>Vergleiche die lokale Sonnenberechnung mit unserer Kalendernachbildung für denselben Ort und Tag. Beide rechnen auf deinem Gerät. Es werden keine offiziellen Diyanet-Zeiten abgerufen.</p>
-            <button id="compare-diyanet" class="secondary" type="button">Mit Kalendernachbildung vergleichen</button>
+            <h2 id="comparison-title" data-i18n="comparison.title">Compare Diyanet calculations</h2>
+            <p data-i18n="comparison.body">Compare the local solar calculation with our calendar reconstruction for the same place and day. Both run on your device. No official Diyanet times are retrieved.</p>
+            <button id="compare-diyanet" class="secondary" type="button" data-i18n="comparison.run">Compare with calendar reconstruction</button>
             <p id="comparison-message" role="status" aria-live="polite"></p>
             <div id="comparison-output" hidden>
-              <div class="table-scroll"><table><thead><tr><th>Gebet / Markierung</th><th>Lokale Berechnung</th><th>Kalendernachbildung</th><th>Unterschied</th></tr></thead><tbody id="comparison-rows"></tbody></table></div>
-              <p class="hint">Minus: Die lokale Berechnung ist früher. Plus: Sie ist später. Der Minutenunterschied bezieht sich auf die gerundeten Uhrzeiten einschließlich ihres Datums. Darunter steht der Unterschied vor der Minutenrundung.</p>
-              <p class="hint">Die Kalendernachbildung enthält auch ungeklärte saisonale Annahmen. Geschätzte und fehlende Zeiten bleiben gekennzeichnet. Dieser Vergleich ändert weder deine Gebetszeiten noch den nächsten berechneten Beginn.</p>
+              <div class="table-scroll"><table><thead><tr><th data-i18n="comparison.table.event">Prayer / marker</th><th data-i18n="comparison.table.local">Local calculation</th><th data-i18n="comparison.table.calendar">Calendar reconstruction</th><th data-i18n="comparison.table.difference">Difference</th></tr></thead><tbody id="comparison-rows"></tbody></table></div>
+              <p class="hint" data-i18n="comparison.sign">Minus: the local calculation is earlier. Plus: it is later. The minute difference uses rounded clock times including their dates. The difference before minute rounding is shown below.</p>
+              <p class="hint" data-i18n="comparison.limit">The calendar reconstruction also contains unresolved seasonal assumptions. Estimated and missing times remain marked. This comparison changes neither your prayer times nor the next calculated start.</p>
             </div>
           </section>
-          <section class="panel week"><h2>Die nächsten sieben Tage</h2><div class="table-scroll"><table><thead><tr><th>Datum</th><th>Fajr</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Ischa</th></tr></thead><tbody id="week"></tbody></table></div><p class="hint">* Geschätzter Beginn nach der ausdrücklich gewählten Regel. Ein Strich bedeutet: kein berechneter Gebetsbeginn verfügbar.</p></section>
+          <section class="panel week"><h2 data-i18n="week.title">Next seven days</h2><div class="table-scroll"><table><thead><tr><th data-i18n="week.date">Date</th><th data-i18n="event.fajr">Fajr</th><th data-i18n="event.dhuhr">Dhuhr</th><th data-i18n="event.asr">Asr</th><th data-i18n="event.maghrib">Maghrib</th><th data-i18n="event.isha">Isha</th></tr></thead><tbody id="week"></tbody></table></div><p class="hint" data-i18n="week.estimate">* Estimated start under the explicitly selected rule. A dash means no calculated prayer start is available.</p></section>
         </div>
       </section>
     </div>
-    <footer>Lokaler Prototyp · Keine Verbindung zu Gebetszeiten-APIs · Keine Gerätebenachrichtigungen<br>Freier Horizont ohne Gelände- oder Höhenmodell. Eigenständige Berechnung, kein offizieller Kalender eines Instituts.</footer>
+    <footer><span data-i18n="footer">Local prototype · No prayer-time APIs · No device notifications</span><br><span data-i18n="footer.model">Flat horizon without terrain or elevation model. Independent calculation, not an official institutional calendar.</span></footer>
   </main>
 </body>
 </html>

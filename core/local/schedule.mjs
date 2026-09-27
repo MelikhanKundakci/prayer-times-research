@@ -19,7 +19,7 @@ function checkDate(value,name){
   return epoch;
 }
 
-function checkInput(input){
+function checkInput(input,profileLookup=getLocalProfile){
   fields(input,['startDate','dayCount','latitude','longitude','timeZone','profile']);
   const startEpoch=checkDate(input.startDate,'startDate');
   if(!Number.isInteger(input.dayCount)||input.dayCount<1||input.dayCount>31)throw new RangeError('dayCount must be an integer from 1 through 31');
@@ -30,7 +30,7 @@ function checkInput(input){
   if(typeof input.timeZone!=='string'||!(input.timeZone==='UTC'||input.timeZone.includes('/')))throw new RangeError('An explicit IANA timezone is required');
   try{new Intl.DateTimeFormat('en-US',{timeZone:input.timeZone}).format(0);}
   catch{throw new RangeError('timeZone must be a supported IANA identifier');}
-  const profile=getLocalProfile(input.profile);
+  const profile=profileLookup(input.profile);
   const longitude=normalizedLongitude(input.longitude);
   if(profile.domain){
     if(input.latitude<profile.domain.latitude[0]||input.latitude>profile.domain.latitude[1]
@@ -63,14 +63,27 @@ function solarDateFailure(error){
 
 /** Calculate 1–31 explicitly dated local point days without using a clock or network. */
 export function calculateLocalSchedule(input){
-  const x=checkInput(input),entries=[],missing=[],days=[],dateFingerprints=[];
+  return composeSchedule(input,calculateLocalDay,getLocalProfile,LOCAL_VERSION);
+}
+
+/** Reuse dated schedule/order handling with trusted, versioned local profile calculators. */
+export function createLocalScheduleCalculator(configuration){
+  fields(configuration,['calculateDay','getProfile','version']);
+  const {calculateDay,getProfile,version}=configuration;
+  if(typeof calculateDay!=='function'||typeof getProfile!=='function'||typeof version!=='string'||!version)
+    throw new TypeError('A day calculator, profile lookup and nonempty version are required');
+  return input=>composeSchedule(input,calculateDay,getProfile,version);
+}
+
+function composeSchedule(input,calculateDay,profileLookup,version){
+  const x=checkInput(input,profileLookup),entries=[],missing=[],days=[],dateFingerprints=[];
   const location={latitude:x.latitude,longitude:x.longitude,timeZone:x.timeZone};
   const sourceDates=[];
   for(let index=0;index<input.dayCount;index++)sourceDates.push(dateFromEpoch(x.startEpoch+index*DAY_MS));
 
   for(const sourceDate of sourceDates){
     let day;
-    try{day=calculateLocalDay({date:sourceDate,...location,profile:x.profile.id});}
+    try{day=calculateDay({date:sourceDate,...location,profile:x.profile.id});}
     catch(error){
       if(!solarDateFailure(error))throw error;
       const detail=error.message;
@@ -108,12 +121,12 @@ export function calculateLocalSchedule(input){
   const eventIndex=new Map(EVENT_ORDER.map((name,index)=>[name,index]));
   entries.sort((a,b)=>a.epochMilliseconds-b.epochMilliseconds
     ||a.sourceDate.localeCompare(b.sourceDate)||(eventIndex.get(a.event)-eventIndex.get(b.event)));
-  const context={formatVersion:'local-schedule-v1',calculationVersion:LOCAL_VERSION,
+  const context={formatVersion:'local-schedule-v1',calculationVersion:version,
     profileId:x.profile.id,profile:x.profile,location,startDate:input.startDate,lastDate:x.lastDate,dayCount:input.dayCount,
     localDateFingerprint:'selected-dated-event-instants-and-local-date-offsets-v1',dateFingerprints};
   const signature=JSON.stringify(context);
   for(const entry of entries)entry.id=`local-prayer-entry-v1:${JSON.stringify([
-    LOCAL_VERSION,x.profile.id,x.latitude,x.longitude,x.timeZone,entry.sourceDate,entry.event,
+    version,x.profile.id,x.latitude,x.longitude,x.timeZone,entry.sourceDate,entry.event,
   ])}`;
   const complete=days.every(day=>day.complete);
   return{id:`local-schedule-v1:${signature}`,signature,context,status:complete?'complete':'partial',complete,partial:!complete,

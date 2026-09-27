@@ -1,140 +1,153 @@
 import {diyanetComparisonRows} from './comparison-view.mjs';
+import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,setLanguagePresentation,translate} from './i18n.mjs';
+
 const $=id=>document.getElementById(id);
-const names={fajr:'Fajr',dhuhr:'Dhuhr',asr:'Asr',maghrib:'Maghrib',isha:'Ischa'};
-const profileLabels={
-  'diyanet-published-spa-point-v1':'Diyanet-Regeln · neue lokale Sonnenberechnung',
-  'diyanet-published-point-v1':'Diyanet-Regeln · bisherige lokale Sonnenberechnung',
-};
-const profileNotes={
-  'diyanet-published-spa-point-v1':'Veröffentlichte Diyanet-Regeln mit SPA-Sonnenberechnung, auch für die jährliche Prüfung nördlicher Zeiten. Kein offizieller Diyanet-Kalender. Noch ungeklärte Sommer- und Übergangszeiten bleiben offen.',
-  'diyanet-published-point-v1':'Veröffentlichte Diyanet-Regeln mit der bisherigen USNO-Sonnenberechnung. Kein offizieller Diyanet-Kalender. Noch ungeklärte Sommer- und Übergangszeiten bleiben offen.',
-};
+const EVENTS=['fajr','dhuhr','asr','maghrib','isha'];
 const cities={frankfurt:[50.1109,8.6821,'Europe/Berlin'],istanbul:[41.0082,28.9784,'Europe/Istanbul'],cairo:[30.0444,31.2357,'Africa/Cairo'],
   'new-york':[40.7128,-74.006,'America/New_York'],jakarta:[-6.2,106.8,'Asia/Jakarta'],sydney:[-33.8688,151.2093,'Australia/Sydney'],oslo:[59.9139,10.7522,'Europe/Oslo']};
-let definitions=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0;
+let language=readLanguage(),definitions=[],result=null,generation=0,requestSequence=0,comparison=null,comparisonRequest=0,locationNote={key:'location.sample'},mainMessage={key:'message.preparing'},comparisonMessage=null;
+const t=(key,values)=>translate(key,language,values);
 const available=e=>e?.role==='prayer-start-model'&&['calculated','estimated'].includes(e.status);
 const text=(tag,value,className)=>{const e=document.createElement(tag);e.textContent=value;if(className)e.className=className;return e;};
-const labelDate=date=>new Intl.DateTimeFormat('de-DE',{dateStyle:'medium',timeZone:'UTC'}).format(new Date(`${date}T12:00:00Z`));
+const labelDate=date=>formatDateLabel(date,language);
 function clock(e){return $('seconds').checked&&e.seconds?e.seconds:e.time;}
 function clockDate(e){return $('seconds').checked&&e.seconds?e.secondsDate:e.calendarDate;}
-function message(value,error=false){$('message').textContent=value;$('message').classList.toggle('error',error);$('message').hidden=!value;}
-function resetComparison(){comparison=null;comparisonRequest++;$('comparison-output').hidden=true;$('comparison-message').textContent='';$('compare-diyanet').disabled=false;}
-function invalidate(){generation++;result=null;resetComparison();$('output').hidden=true;message('Eingaben geändert. Bitte neu berechnen.');}
-function selectedProfile(){return $('profile').value==='composed'?`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`:$('profile').value;}
-function profileNote(){const composed=$('profile').value==='composed';$('composition').hidden=!composed;const d=definitions.find(d=>d.id===selectedProfile());$('profile-note').textContent=composed?'Vollständiges lokales Profil mit den unten gewählten Regeln. Kein offizieller Institutskalender.':profileNotes[d?.id]??d?.sourceScope??'';}
+function showLocationNote(){ $('location-note').textContent=t(locationNote.key,locationNote.values); }
+function message(key,values,error=false){mainMessage={key,values,error};refreshMessage();}
+function refreshMessage(){const values=mainMessage.key==='error.calculate'?{detail:localizedError(mainMessage.values?.detail,language)}:mainMessage.values;const value=t(mainMessage.key,values);$('message').textContent=value;$('message').classList.toggle('error',mainMessage.error);$('message').hidden=!value;}
+function resetComparison(){comparison=null;comparisonMessage=null;comparisonRequest++;$('comparison-output').hidden=true;$('comparison-message').textContent='';$('compare-diyanet').disabled=false;}
+function invalidate(){generation++;result=null;resetComparison();$('output').hidden=true;message('message.changed');}
+function selectedProfile(){
+  if($('profile').value!=='composed')return $('profile').value;
+  const base=`local-${$('angles').value}-shadow${$('shadow').value}-${$('night').value}-v1`;
+  return $('astronomy').value==='observer'?base.replace(/-v1$/,'-observer-v1'):base;
+}
+function profileNote(){
+  const composed=$('profile').value==='composed';$('composition').hidden=!composed;
+  if(composed){$('profile-note').textContent=$('astronomy').value==='observer'?t('astronomy.scope'):t('profile.composedNote');return;}
+  const definition=definitions.find(item=>item.id===selectedProfile());
+  $('profile-note').textContent=definition?localizedProfileScope(definition,language):'';
+}
+function renderProfileOptions(){
+  const select=$('profile'),selected=select.value;select.replaceChildren();
+  const option=text('option',t('profile.composed'));option.value='composed';select.append(option);
+  for(const definition of definitions.filter(item=>!item.composition)){
+    const item=text('option',localizedProfileLabel(definition,language));item.value=definition.id;select.append(item);
+  }
+  select.value=selected||'composed';
+}
 function render(){
+  applyStaticTranslations(document,language);renderProfileOptions();showLocationNote();profileNote();
+  refreshMessage();
+  $('comparison-message').textContent=comparisonMessage? t(comparisonMessage.key,comparisonMessage.key==='comparison.failed'?{detail:localizedError(comparisonMessage.values?.detail,language)}:comparisonMessage.values):'';
   if(!result)return;
-  const {day,schedule}=result;
-  $('output').hidden=false;$('day-title').textContent=labelDate(day.date);$('day-subtitle').textContent=`${$('city').value==='custom'?`${day.location.latitude.toFixed(4)}°, ${day.location.longitude.toFixed(4)}°`:$('city').selectedOptions[0].textContent} · ${day.location.timeZone}`;
-  $('prayers').replaceChildren();
-  for(const name of Object.keys(names)){
-    const e=day.events[name],ok=available(e),card=text('article','',`prayer ${ok?e.status:'unavailable'}`);
-    card.append(text('h3',names[name]),text('div',ok?clock(e):'—','time'));
-    let status=!ok?'Nicht verfügbar':e.status==='estimated'?'Geschätzt':'Berechnet';
-    if(e.role!=='prayer-start-model')status='Nur Sonnenmarkierung';
-    if(ok&&clockDate(e)!==day.date)status+=` · ${labelDate(clockDate(e))}`;
+  const {day,schedule}=result;$('output').hidden=false;$('day-title').textContent=labelDate(day.date);
+  const place=$('city').value==='custom'?`${day.location.latitude.toFixed(4)}°, ${day.location.longitude.toFixed(4)}°`:$('city').selectedOptions[0].textContent;
+  $('day-subtitle').textContent=`${place} · ${day.location.timeZone}`;$('prayers').replaceChildren();
+  for(const name of EVENTS){
+    const event=day.events[name],ok=available(event),card=text('article','',`prayer ${ok?event.status:'unavailable'}`);
+    card.append(text('h3',localizedEventName(name,language)),text('div',ok?clock(event):'—','time'));
+    let status=localizedStatus(event.status,event.role,language);
+    if(ok&&clockDate(event)!==day.date)status+=t('status.date',{date:labelDate(clockDate(event))});
+    if(!ok&&event.reason)status+=` · ${localizedReason(event.reason,language)}`;
     card.append(text('p',status,'status'));$('prayers').append(card);
   }
   const sunrise=day.events.sunrise;
-  $('sunrise').textContent=sunrise.time?`Sonnenaufgangsmarkierung · ${clock(sunrise)}${clockDate(sunrise)!==day.date?` · ${labelDate(clockDate(sunrise))}`:''}`:'Sonnenaufgangsmarkierung nicht verfügbar';
-  $('coverage').textContent=day.coverage.prayerStartsComplete?'Alle fünf Gebetsbeginne sind für diesen Tag nach dem gewählten Profil berechnet.':
-    'Dieses Profil liefert hier keine vollständigen fünf Gebetsbeginne. Fehlende Zeiten werden nicht erfunden. Wähle bei Bedarf bewusst ein vollständiges lokales Profil oder eine passende Schätzregel.';
+  $('sunrise').textContent=sunrise.time?`${t('sunrise.label')} · ${clock(sunrise)}${clockDate(sunrise)!==day.date?t('status.date',{date:labelDate(clockDate(sunrise))}):''}`:`${t('sunrise.label')} ${t('status.unavailable').toLowerCase()}`;
+  $('coverage').textContent=t(day.coverage.prayerStartsComplete?'coverage.complete':'coverage.partial');
   const composition=day.profile.composition;
-  $('method-summary').textContent=`${composition?`Lokale Regeln · Asr-Faktor ${composition.asrShadowFactor} · ${composition.highLatitudeMode==='physical'?'ohne Schätzung':'mit gewählter Nachtregel'}`:profileLabels[day.profile.id]??day.profile.label}. ${day.coverage.estimatedEvents.length?`Geschätzt: ${day.coverage.estimatedEvents.map(n=>names[n]??n).join(', ')}.`:''}`;
+  const summary=composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
+  const estimates=day.coverage.estimatedEvents.length?t('summary.estimated',{events:day.coverage.estimatedEvents.map(name=>localizedEventName(name,language)).join(', ')}):'';
+  $('method-summary').textContent=`${summary}. ${estimates}`;
   const list=document.createElement('ul');
-  for(const name of Object.keys(names)){const e=day.events[name];list.append(text('li',`${names[name]}: ${e.ruleEvidence.description}${e.reason?` (${e.reason})`:''}`));}
-  $('rules').replaceChildren(list,text('p',day.profile.sourceScope),text('p',`Berechnungsversion ${day.calculation.version}; Zeitzonendaten ${result.runtime.tzdb}.`));
-  for(const [key,url] of Object.entries(day.profile.sources)){const a=text('a',key);a.href=url;a.target='_blank';a.rel='noopener noreferrer';const p=text('p','');p.append(a);$('rules').append(p);}
+  for(const name of ['fajr','sunrise','dhuhr','asr','maghrib','isha']){
+    const event=day.events[name],rule=localizedRuleDescription(day,name,language);
+    list.append(text('li',`${localizedEventName(name,language)}: ${rule}${event.reason?` (${localizedReason(event.reason,language)})`:''}`));
+  }
+  $('rules').replaceChildren(list,text('p',localizedProfileScope(day.profile,language)),text('p',t('rules.version',{version:day.calculation.version,tzdb:result.runtime.tzdb})));
+  for(const [key,url] of Object.entries(day.profile.sources??{})){
+    const link=text('a',localizedSourceLabel(key,language));link.href=url;link.target='_blank';link.rel='noopener noreferrer';const row=text('p','');row.append(link);$('rules').append(row);
+  }
+  renderComparison();renderNext();renderWeek();
+}
+function renderWeek(){
   $('week').replaceChildren();
-  for(let i=0;i<7;i++){
-    const date=new Date(Date.parse(`${day.date}T00:00:00Z`)+i*86400000).toISOString().slice(0,10),row=document.createElement('tr');
-    row.append(text('td',labelDate(date)));
-    for(const name of Object.keys(names)){
-      const e=schedule.entries.find(e=>e.sourceDate===date&&e.event===name);
-      const cell=text('td',e?`${$('seconds').checked&&e.displaySeconds?e.displaySeconds:e.displayTime}${e.status==='estimated'?' *':''}`:'—');
-      const displayDate=e&&$('seconds').checked&&e.displaySeconds?e.displaySecondsDate:e?.calendarDate;
-      if(e&&displayDate!==date)cell.append(text('small',` (${labelDate(displayDate)})`));
-      row.append(cell);
+  for(let index=0;index<7;index++){
+    const date=new Date(Date.parse(`${result.day.date}T00:00:00Z`)+index*86400000).toISOString().slice(0,10),row=document.createElement('tr');row.append(text('td',labelDate(date)));
+    for(const name of EVENTS){
+      const entry=result.schedule.entries.find(item=>item.sourceDate===date&&item.event===name),cell=text('td',entry?`${$('seconds').checked&&entry.displaySeconds?entry.displaySeconds:entry.displayTime}${entry.status==='estimated'?' *':''}`:'—');
+      const shownDate=entry&&$('seconds').checked&&entry.displaySeconds?entry.displaySecondsDate:entry?.calendarDate;
+      if(entry&&shownDate!==date)cell.append(text('small',` (${labelDate(shownDate)})`));row.append(cell);
     }
     $('week').append(row);
   }
-  renderComparison();renderNext();
 }
 function renderComparison(){
-  $('diyanet-comparison').hidden=result?.day.profile.id!=='diyanet-published-spa-point-v1';
-  $('comparison-output').hidden=!comparison;
-  if(!comparison)return;
-  $('comparison-rows').replaceChildren();
-  for(const row of diyanetComparisonRows(comparison,{seconds:$('seconds').checked})){
+  $('diyanet-comparison').hidden=result?.day.profile.id!=='diyanet-published-spa-point-v1';$('comparison-output').hidden=!comparison;
+  if(!comparison)return;$('comparison-rows').replaceChildren();
+  for(const row of diyanetComparisonRows(comparison,{seconds:$('seconds').checked,language})){
     const tr=document.createElement('tr');tr.append(text('th',row.name));tr.firstChild.scope='row';
-    for(const side of [row.local,row.calendar]){
-      const td=text('td',side.clock);td.append(text('small',side.status));
-      if(side.date&&side.date!==comparison.input.date)td.append(text('small',labelDate(side.date)));
-      tr.append(td);
-    }
-    const difference=text('td',row.difference);difference.append(text('small',row.rawDifference));tr.append(difference);
-    $('comparison-rows').append(tr);
+    for(const side of [row.local,row.calendar]){const cell=text('td',side.clock);cell.append(text('small',side.status));if(side.date&&side.date!==comparison.input.date)cell.append(text('small',labelDate(side.date)));tr.append(cell);}
+    const delta=text('td',row.difference);delta.append(text('small',row.rawDifference));tr.append(delta);$('comparison-rows').append(tr);
   }
 }
 async function compareDiyanet(){
   if(result?.day.profile.id!=='diyanet-published-spa-point-v1')return;
-  const token=generation,request=++comparisonRequest;
-  const {date,location:{latitude,longitude,timeZone}}=result.day;
-  comparison=null;$('comparison-output').hidden=true;$('compare-diyanet').disabled=true;
-  $('comparison-message').textContent='Beide Berechnungen werden für deinen Ort verglichen …';
+  const token=generation,request=++comparisonRequest,{date,location:{latitude,longitude,timeZone}}=result.day;
+  comparison=null;comparisonMessage={key:'comparison.busy'};$('comparison-output').hidden=true;$('compare-diyanet').disabled=true;$('comparison-message').textContent=t('comparison.busy');
   try{
-    const response=await fetch('/api/compare-diyanet',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date,latitude,longitude,timeZone})});
-    const data=await response.json();
-    if(token!==generation||request!==comparisonRequest)return;
-    if(!response.ok)throw new Error(data.error);
-    comparison=data;$('comparison-message').textContent='Vergleich berechnet. Deine gewählten Gebetszeiten bleiben unverändert.';renderComparison();
-  }catch(error){if(token===generation&&request===comparisonRequest)$('comparison-message').textContent=`Vergleich nicht möglich: ${error.message}. Deine Gebetszeiten bleiben unverändert.`;}
+    const response=await fetch('/api/compare-diyanet',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({date,latitude,longitude,timeZone})}),data=await response.json();
+    if(token!==generation||request!==comparisonRequest)return;if(!response.ok)throw new Error(data.error);
+    comparison=data;comparisonMessage={key:'comparison.done'};$('comparison-message').textContent=t('comparison.done');renderComparison();
+  }catch(error){if(token===generation&&request===comparisonRequest){comparisonMessage={key:'comparison.failed',values:{detail:error.message}};$('comparison-message').textContent=t(comparisonMessage.key,{detail:localizedError(error.message,language)});}}
   finally{if(token===generation&&request===comparisonRequest)$('compare-diyanet').disabled=false;}
 }
 function renderNext(){
-  if(!result)return;
-  const now=Date.now(),next=result.schedule.entries.find(e=>e.epochMilliseconds>=now&&e.localDate>=result.day.date);
-  if(!next){$('next').textContent='Kein weiterer Beginn';$('next-detail').textContent='Im ausgewählten Zeitraum liegt kein berechneter Beginn mehr in der Zukunft.';return;}
+  if(!result)return;const now=Date.now(),next=result.schedule.entries.find(entry=>entry.epochMilliseconds>=now&&entry.localDate>=result.day.date);
+  if(!next){$('next').textContent=t('next.none');$('next-detail').textContent=t('next.noneDetail');return;}
   const shown=$('seconds').checked&&next.displaySeconds?next.displaySeconds:next.displayTime;
-  $('next').textContent=`${names[next.event]} · ${shown}`;
-  const minutes=Math.max(0,Math.ceil((next.epochMilliseconds-now)/60000)),duration=minutes<60?`${minutes} Min.`:`${Math.floor(minutes/60)} Std. ${minutes%60} Min.`;
+  $('next').textContent=t('next.label',{event:localizedEventName(next.event,language),time:shown});
+  const minutes=Math.max(0,Math.ceil((next.epochMilliseconds-now)/60000)),duration=minutes<60?t('duration.minutes',{n:minutes}):t('duration.hours',{h:Math.floor(minutes/60),m:minutes%60});
   const displayDate=$('seconds').checked&&next.displaySeconds?next.displaySecondsDate:next.calendarDate;
-  $('next-detail').textContent=`${labelDate(displayDate)} · in ${duration}${next.status==='estimated'?' · geschätzt':''}${!result.schedule.complete?' · Unvollständiger Zeitraum: frühere fehlende Gebetsbeginne sind möglich.':''}`;
+  $('next-detail').textContent=`${labelDate(displayDate)} · ${t('next.in',{duration})}${next.status==='estimated'?t('next.estimated'):''}${!result.schedule.complete?t('week.incomplete'):''}`;
 }
 async function calculate(event){
   event?.preventDefault();if(!$('settings').reportValidity())return;
-  const token=++generation,request=++requestSequence;result=null;resetComparison();$('output').hidden=true;$('calculate').disabled=true;message('Die Zeiten werden lokal berechnet …');
+  const token=++generation,request=++requestSequence;result=null;resetComparison();$('output').hidden=true;$('calculate').disabled=true;message('message.calculating');
   const input={date:$('date').value,latitude:Number($('latitude').value),longitude:Number($('longitude').value),timeZone:$('timeZone').value.trim(),profile:selectedProfile()};
   try{
     const response=await fetch('/api/calculate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(input)}),data=await response.json();
-    if(token!==generation)return;if(!response.ok)throw new Error(data.error);
-    result=data;message(data.schedule.complete?'Berechnet · vollständiger Zeitraum':'Berechnet · einzelne Gebetsbeginne fehlen');render();
-  }catch(error){if(token===generation)message(`Berechnung nicht möglich: ${error.message}`,true);}
+    if(token!==generation)return;if(!response.ok)throw new Error(data.error);result=data;
+    message(data.schedule.complete?'message.complete':'message.partial');render();
+  }catch(error){if(token===generation)message('error.calculate',{detail:error.message},true);}
   finally{if(request===requestSequence)$('calculate').disabled=false;}
 }
-$('settings').addEventListener('submit',calculate);
-$('compare-diyanet').addEventListener('click',compareDiyanet);
-for(const id of ['latitude','longitude','timeZone','date','profile','angles','shadow','night'])$(id).addEventListener('input',()=>{invalidate();if(['profile','angles','shadow','night'].includes(id))profileNote();if(['latitude','longitude','timeZone'].includes(id))$('city').value='custom';});
-$('seconds').addEventListener('change',render);
-$('city').addEventListener('change',()=>{const c=cities[$('city').value];if(c){[$('latitude').value,$('longitude').value,$('timeZone').value]=c;$('location-note').textContent='Beispielkoordinaten für den gewählten Ort.';}invalidate();});
-$('gps').addEventListener('click',()=>{
-  if(!navigator.geolocation){$('location-note').textContent='Dieser Browser stellt keinen Standort bereit. Bitte Koordinaten eingeben.';return;}
-  const gpsGeneration=generation;
-  $('gps').disabled=true;$('location-note').textContent='Standort wird abgefragt …';
-  navigator.geolocation.getCurrentPosition(p=>{
-    if(gpsGeneration!==generation){$('gps').disabled=false;$('location-note').textContent='Deine zwischenzeitlich geänderten Eingaben bleiben erhalten. Standort bei Bedarf erneut abfragen.';return;}
-    $('latitude').value=p.coords.latitude.toFixed(6);$('longitude').value=p.coords.longitude.toFixed(6);$('city').value='custom';
-    $('timeZone').value=Intl.DateTimeFormat().resolvedOptions().timeZone;
-    $('location-note').textContent=`Standortgenauigkeit laut Gerät: etwa ${Math.round(p.coords.accuracy)} m. Die Zeitzone stammt aus deiner Geräteeinstellung; bitte für diesen Ort prüfen.`;
-    $('gps').disabled=false;invalidate();
-  },()=>{$('gps').disabled=false;$('location-note').textContent='Standort nicht verfügbar oder nicht erlaubt. Du kannst Koordinaten weiterhin selbst eingeben.';},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+function changeLanguage(value){
+  language=setLanguagePresentation(value,{render:selected=>{language=selected;render();}});$('language').value=language;
+  // Language selection is presentation-only: preserve the current result and all request/input state.
+}
+
+$('language').value=language;applyStaticTranslations(document,language);
+$('language').addEventListener('change',()=>changeLanguage($('language').value));
+$('settings').addEventListener('submit',calculate);$('compare-diyanet').addEventListener('click',compareDiyanet);
+for(const id of ['latitude','longitude','timeZone','date','profile','angles','shadow','night','astronomy'])$(id).addEventListener('input',()=>{
+  invalidate();if(['profile','angles','shadow','night','astronomy'].includes(id))profileNote();if(['latitude','longitude','timeZone'].includes(id))$('city').value='custom';
 });
-$('download').addEventListener('click',()=>{if(!result)return;const url=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`prayer-times-${result.day.date}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
+$('seconds').addEventListener('change',render);
+$('city').addEventListener('change',()=>{const city=cities[$('city').value];if(city){[$('latitude').value,$('longitude').value,$('timeZone').value]=city;locationNote={key:'location.chosen'};}else locationNote={key:'location.sample'};showLocationNote();invalidate();});
+$('gps').addEventListener('click',()=>{
+  if(!navigator.geolocation){locationNote={key:'gps.noApi'};showLocationNote();return;}
+  const gpsGeneration=generation;$('gps').disabled=true;locationNote={key:'gps.pending'};showLocationNote();
+  navigator.geolocation.getCurrentPosition(position=>{
+    if(gpsGeneration!==generation){$('gps').disabled=false;locationNote={key:'gps.changed'};showLocationNote();return;}
+    $('latitude').value=position.coords.latitude.toFixed(6);$('longitude').value=position.coords.longitude.toFixed(6);$('city').value='custom';$('timeZone').value=Intl.DateTimeFormat().resolvedOptions().timeZone;
+    locationNote={key:'gps.success',values:{accuracy:Math.round(position.coords.accuracy)}};$('gps').disabled=false;showLocationNote();invalidate();
+  },()=>{$('gps').disabled=false;locationNote={key:'gps.failed'};showLocationNote();},{enableHighAccuracy:true,timeout:15000,maximumAge:60000});
+});
+$('download').addEventListener('click',()=>{if(!result)return;const url=URL.createObjectURL(new Blob([JSON.stringify(result,null,2)],{type:'application/json'})),link=document.createElement('a');link.href=url;link.download=`prayer-times-${result.day.date}.json`;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
 try{
   $('date').value=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  const response=await fetch('/api/profiles');if(!response.ok)throw new Error('Profilauswahl nicht verfügbar');const data=await response.json();definitions=data.profiles;
-  const composed=text('option','Eigene lokale Regeln · fünf Gebete');composed.value='composed';$('profile').append(composed);
-  for(const d of definitions.filter(d=>!d.composition)){const option=text('option',profileLabels[d.id]??d.label);option.value=d.id;$('profile').append(option);}
-  $('profile').value='composed';profileNote();await calculate();
-}catch(error){message(error.message,true);}
+  const response=await fetch('/api/profiles');if(!response.ok)throw new Error(t('error.prepare'));const data=await response.json();definitions=data.profiles;
+  renderProfileOptions();$('profile').value='composed';profileNote();await calculate();
+  }catch(error){message('error.prepare',undefined,true);}
 setInterval(renderNext,15000);

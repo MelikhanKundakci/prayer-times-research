@@ -14,6 +14,8 @@ The app's primary direction is now **local times at the user's point under docum
 
 ## Start here
 
+The browser interface defaults to **English** and also supports **German and Turkish**, with a saved language preference. Custom local rules now offer an optional [observer-position solar calculation](core/local/OBSERVER.md), with independently checked solar-parallax geometry and explicit reference-elevation assumptions. Existing calculations stay available; the extension is not a claim of closer institutional-calendar agreement.
+
 - **Try the local calculator:** run `npm run preview:local` and open the printed loopback URL. The [browser prototype](examples/local-app/README.md) shows five prayer starts, explicit twilight/Asr choices, optional night estimates, a seven-day schedule, the next calculated start and a JSON export. It uses no prayer-data service. The [complete local compositions](core/local/COMPOSED.md) use independently checked SPA astronomy; they are distinct from official institution calendars.
 - **Start local app calculations:** the [local point core](core/local/) accepts coordinates, a civil date, IANA timezone and an explicit documented profile. Read the [local validation contract](docs/LOCAL-VALIDATION.md) for numerical evidence, rule coverage and physical limits.
 - **Try Diyanet criteria with SPA astronomy:** version 0.6.0 adds the separately selected `diyanet-published-spa-point-v1` local profile, using the same solar provider for daily events and the annual northern guard. Published angles and margins are retained; unresolved summer rules remain explicit. This is an astronomical-model option, not a new claim of official-calendar agreement.

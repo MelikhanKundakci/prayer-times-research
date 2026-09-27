@@ -30,6 +30,8 @@ All five fields are required; unknown fields and executable/getter inputs are re
 
 ## Shared profile registry
 
+An additional **16 opt-in observer-position compositions** are provided by the separate versioned [`observer.mjs`](observer.mjs) API. They add solar parallax at a fixed 0 m reference surface, including the Asr noon-shadow calculation. Read [OBSERVER.md](OBSERVER.md) for equations, verification and limits. The browser and CLI expose both registries; existing profile IDs and results remain unchanged.
+
 Version **0.6.0** defines **23 local profiles** in [profiles.mjs](profiles.mjs), with per-event roles, source evidence, margins, quantization and resolution: six original profiles, an optional Diyanet-criteria profile using SPA astronomy, and 16 explicitly composed five-prayer profiles. The six original profile outputs retain their USNO model. Read [PROFILES.md](PROFILES.md) for the source-versus-convention boundary, [COMPOSED.md](COMPOSED.md) for the compositions, and [RULES.md](RULES.md) for the new Diyanet SPA option. The angle/night variants require opting into their estimate rule.
 
 ```js

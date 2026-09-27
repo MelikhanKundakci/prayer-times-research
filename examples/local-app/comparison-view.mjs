@@ -1,25 +1,27 @@
-const labels={fajr:'Fajr',sunrise:'Sonnenaufgang',dhuhr:'Dhuhr',asr:'Asr',maghrib:'Maghrib',isha:'Ischa'};
-const statuses={calculated:'Berechnet',estimated:'Geschätzt','policy-blocked':'Regel ungeklärt',unavailable:'Nicht verfügbar'};
+import {localizedEventName,localizedStatus,normalizeLanguage,translate} from './i18n.mjs';
+
+const EVENTS=['fajr','sunrise','dhuhr','asr','maghrib','isha'];
 const available=event=>['calculated','estimated'].includes(event.status)&&typeof event.time==='string';
 
-function side(event,seconds){
+function side(event,seconds,language){
   const present=available(event);
   return{available:present,clock:present?(seconds&&event.seconds?event.seconds:event.time):'—',
     date:present?(seconds&&event.seconds?event.secondsDate:event.calendarDate):null,
-    status:statuses[event.status]??'Nicht verfügbar'};
+    status:localizedStatus(event.status,event.role,language)};
 }
-
-function signed(value,digits){
+function signed(value,digits,language){
   const rounded=Number(value.toFixed(digits));
-  return`${rounded<0?'−':rounded>0?'+':''}${Math.abs(rounded).toLocaleString('de-DE',{maximumFractionDigits:digits})}`;
+  const locale={en:'en-GB',de:'de-DE',tr:'tr-TR'}[normalizeLanguage(language)];
+  return`${rounded<0?'−':rounded>0?'+':''}${Math.abs(rounded).toLocaleString(locale,{maximumFractionDigits:digits})}`;
 }
 
 /** Presentation only: preserve both models' availability, dates and absolute-time differences. */
-export function diyanetComparisonRows(comparison,{seconds=false}={}){
-  return Object.entries(labels).map(([event,name])=>{
+export function diyanetComparisonRows(comparison,{seconds=false,language='en'}={}){
+  const lang=normalizeLanguage(language);
+  return EVENTS.map(event=>{
     const pair=comparison.events[event],paired=pair.localAvailable&&pair.calendarAvailable;
-    return{event,name,local:side(pair.local,seconds),calendar:side(pair.calendar,seconds),
-      difference:paired?`${signed(pair.roundedEpochDifferenceMilliseconds/60000,0)} Min.`:'—',
-      rawDifference:paired?`Vor Minutenrundung: ${signed(pair.rawDifferenceSeconds,1)} Sek.`:'Kein gemeinsamer Zeitwert'};
+    return{event,name:localizedEventName(event,lang),local:side(pair.local,seconds,lang),calendar:side(pair.calendar,seconds,lang),
+      difference:paired?`${signed(pair.roundedEpochDifferenceMilliseconds/60000,0,lang)} ${translate('comparison.minutes',lang)}`:'—',
+      rawDifference:paired?translate('comparison.raw',lang,{value:signed(pair.rawDifferenceSeconds,1,lang)}):translate('comparison.rawMissing',lang)};
   });
 }
