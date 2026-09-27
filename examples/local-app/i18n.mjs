@@ -100,6 +100,47 @@ Object.assign(messages.tr,{
   'source.catalog':'Adhan yöntem kataloğu (İngilizce özgün kaynak)','source.jakim':'Pahang namaz vakti rehberi (Malayca özgün kaynak)','source.noon':'Selangor güneş geçişi açıklaması (Malayca özgün kaynak)','source.malaysiarounding':'Selangor yuvarlama rehberi (Malayca özgün kaynak)','source.malaysiahorizon':'Malezya Falak dergisi makalesi (Malayca özgün kaynak)','error.malaysiaDomain':'Bu nokta profili, Malezya içindeki belirtilen konumlarla sınırlıdır.','family.asrIndependent':'İkindi gölge faktörü, alacakaranlık açılarından bağımsız seçilir.','family.nightCurrent':'Geçerli kısa-gece seçimi: {choice}.','ramadan.current':'Geçerli yatsı aralığı seçimi: {choice}.'
 });
 
+// The reference-latitude option follows a separately dated council ruling.
+Object.assign(messages.en,{
+  'night.reference45':'45° reference night · missing twilight only',
+  'night.mode.reference45':'45° reference estimate for missing twilight',
+  'night.reference45Summary':'Missing Fajr/Isha use a 45° reference night; existing crossings stay. This option applies between 48° and 66° north or south, with actual sunset and sunrise. Large daily jumps can occur when the signs disappear or return.',
+  'night.reference45Scope':'Chosen option: the 1986/2007 council reference-night rule, with explicit local conventions. Between 48° and 66° north or south, missing Fajr/Isha use the night proportions at 45° on the same longitude. Existing crossings are kept. Times may jump when signs disappear or return; no transition smoothing or polar-day replacement is applied. This is separate from the 2009 local-relative method.',
+  'rule.reference45':'Estimated from this prayer’s proportion of the night at 45° in the same hemisphere and longitude, applied to the actual local sunset-to-sunrise night. The local twilight crossing is absent.',
+  'source.referencecouncil':'Saudi Press Agency report of the MWL council (Arabic original)',
+  'source.referenceclarification':'MWL council clarification via Dar al-Ifta (Arabic original)',
+  'reason.referenceScope':'The chosen estimate covers missing twilight only between 48° and 66° latitude',
+  'reason.referenceEstimated':'Missing twilight replaced under the selected reference-night rule',
+  'reason.referenceNight':'This estimate needs real sunset and sunrise at both locations',
+  'reason.referenceFailure':'A required reference event or valid night proportion is unavailable'
+});
+Object.assign(messages.de,{
+  'night.reference45':'Referenznacht bei 45° · nur fehlende Dämmerung',
+  'night.mode.reference45':'45°-Referenzschätzung bei fehlender Dämmerung',
+  'night.reference45Summary':'Fehlende Fajr-/Ischa-Zeiten werden anhand einer Referenznacht bei 45° geschätzt; vorhandene Übertritte bleiben erhalten. Gilt zwischen 48° und 66° Nord oder Süd bei echtem Sonnenuntergang und Sonnenaufgang. Beim Verschwinden oder Wiederkehren der Zeichen sind große tägliche Zeitsprünge möglich.',
+  'night.reference45Scope':'Gewählte Option: Referenznacht-Regel des Rates von 1986/2007 mit ausdrücklich lokalen Konventionen. Zwischen 48° und 66° Nord oder Süd werden fehlende Fajr-/Ischa-Zeiten anhand der Nachtanteile bei 45° auf demselben Längengrad geschätzt. Vorhandene Übertritte bleiben erhalten. Beim Verschwinden oder Wiederkehren der Zeichen können Zeiten springen; keine Übergangsglättung und kein Ersatz bei Polartag. Die Methode von 2009 mit lokalem Jahresmittel ist ein anderes Verfahren.',
+  'rule.reference45':'Geschätzt aus dem Nachtanteil dieses Gebets bei 45° auf derselben Halbkugel und demselben Längengrad, übertragen auf die tatsächliche lokale Nacht von Sonnenuntergang bis Sonnenaufgang. Der lokale Dämmerungsübertritt fehlt.',
+  'source.referencecouncil':'Bericht der Saudi Press Agency zum MWL-Rat (arabisches Original)',
+  'source.referenceclarification':'MWL-Ratsklärung bei Dar al-Ifta (arabisches Original)',
+  'reason.referenceScope':'Die gewählte Schätzung gilt nur für fehlende Dämmerung zwischen 48° und 66° Breite',
+  'reason.referenceEstimated':'Fehlende Dämmerung nach der gewählten Referenznacht-Regel geschätzt',
+  'reason.referenceNight':'Diese Schätzung benötigt echte Sonnenuntergänge und Sonnenaufgänge an beiden Orten',
+  'reason.referenceFailure':'Ein erforderliches Referenzereignis oder ein gültiger Nachtanteil fehlt'
+});
+Object.assign(messages.tr,{
+  'night.reference45':'45° referans gecesi · yalnız eksik alacakaranlık',
+  'night.mode.reference45':'Eksik alacakaranlık için 45° referans tahmini',
+  'night.reference45Summary':'Eksik imsak/yatsı, 45° referans gecesiyle tahmin edilir; gerçek geçişler korunur. Gerçek günbatımı ve gündoğumu bulunan 48°–66° kuzey veya güney enlemleri içindir. İşaretler kaybolurken veya geri dönerken günlük vakitlerde büyük sıçramalar olabilir.',
+  'night.reference45Scope':'Seçilen seçenek: açık yerel kabullerle 1986/2007 konseyinin referans-gece kuralı. 48°–66° kuzey veya güney enlemlerinde bulunmayan imsak/yatsı, aynı boylamdaki 45° noktasının gece oranlarıyla tahmin edilir. Gerçek geçişler korunur. İşaretler kaybolurken veya geri dönerken vakitler sıçrayabilir; geçiş yumuşatması veya kutup gündüzü ikamesi uygulanmaz. 2009 yerel nispi yöntemi bundan ayrıdır.',
+  'rule.reference45':'Aynı yarımküre ve boylamda 45° noktasındaki bu namazın gece oranı, gerçek yerel günbatımı–gündoğumu gecesine uygulanarak tahmin edilir. Yerel alacakaranlık geçişi bulunmamaktadır.',
+  'source.referencecouncil':'Saudi Press Agency MWL konsey haberi (Arapça özgün kaynak)',
+  'source.referenceclarification':'Dar al-İfta’da MWL konsey açıklaması (Arapça özgün kaynak)',
+  'reason.referenceScope':'Seçilen tahmin yalnızca 48°–66° arasında eksik alacakaranlık için geçerlidir',
+  'reason.referenceEstimated':'Eksik alacakaranlık, seçilen referans-gece kuralıyla tahmin edildi',
+  'reason.referenceNight':'Bu tahmin her iki konumda gerçek günbatımı ve gündoğumu gerektirir',
+  'reason.referenceFailure':'Gerekli referans olayı veya geçerli gece oranı bulunmuyor'
+});
+
 export function normalizeLanguage(value){
   const code=typeof value==='string'?value.trim().toLowerCase().split(/[-_]/)[0]:'';
   return SUPPORTED_LANGUAGES.includes(code)?code:'en';
@@ -149,7 +190,7 @@ export function localizedProfileLabel(profile,language){
 }
 export function localizedProfileScope(profile,language,context={}){
   const lang=normalizeLanguage(language),id=profile.id;
-  if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??profile.highLatitudeMode);
+  if(profile.family)return localizedFamilyScope(profile.family,lang,context.calculation?.intervalPolicy?.mode??(profile.id?.endsWith('-reference45-v1')?'reference45':profile.highLatitudeMode));
   if(id.endsWith('-observer-v1'))return translate('scope.observer',lang,{base:translate('scope.composed',lang)});
   const key=id.startsWith('diyanet-published-')?'scope.diyanet':id==='local-northern-seasonal-v1'?'scope.seasonal'
     :id.startsWith('egypt-')?'scope.egypt':id.startsWith('fcna-usa')?'scope.fcna-us'
@@ -170,7 +211,7 @@ export function resolveMethodProfile(method,{asrFactor,nightMode,ramadanMode}={}
   const factor=factors.includes(Number(asrFactor))?Number(asrFactor):fallbackFactor;
   const availableModes=ramadans.length?ramadans:nights;
   const requestedMode=ramadans.length?ramadanMode:nightMode;
-  const fallbackMode=method.defaultProfile.match(/-(physical|angle-night|calendar|ramadan|ordinary)-v1$/)?.[1]??availableModes[0];
+  const fallbackMode=method.defaultProfile.match(/-(physical|angle-night|reference45|calendar|ramadan|ordinary)-v1$/)?.[1]??availableModes[0];
   const mode=availableModes.includes(requestedMode)?requestedMode:fallbackMode;
   if(!mode)return method.defaultProfile;
   const candidate=`sunni-${method.id}-shadow${factor}-${mode}-v1`;
@@ -183,6 +224,7 @@ export function localizedFamilyScope(id,language,mode){
   const key=`family.scope.${id}`;let value=translate(key,language);
   if(value===key)value=translate('family.scope.other',language);
   if(id==='umm-al-qura')value+=` ${translate('ramadan.note',language)}`;
+  if(mode==='reference45')value+=` ${translate('night.reference45Scope',language)}`;
   return value;
 }
 export function localizedStatus(status,role,language){
@@ -192,6 +234,8 @@ export function localizedStatus(status,role,language){
 }
 export function localizedReason(reason,language){
   if(!reason)return'';
+  if(reason==='missing-seasonal-crossing-estimated-from-reference45-night-fraction')return translate('reason.referenceEstimated',language);
+  if(reason.startsWith('reference45-'))return translate(/scope|latitude|outside-supported/.test(reason)?'reason.referenceScope':/night|horizon/.test(reason)?'reason.referenceNight':'reason.referenceFailure',language);
   if(/policy|seasonal|northern/i.test(reason))return translate('reason.policy',language);
   if(/crossing|solar-cycle|transit|horizon|sun-|twilight|shadow/i.test(reason))return translate('reason.noCrossing',language);
   return translate('reason.unknown',language,{reason});
@@ -211,6 +255,7 @@ export function localizedError(detail,language){
 export function localizedRuleDescription(day,event,language){
   const lang=normalizeLanguage(language),profile=day.profile,rule=day.events[event],meta=day.astronomy?.model??{};
   if(event==='isha'&&day.calculation?.intervalPolicy)return translate('rule.ishaInterval',lang,{minutes:day.calculation.intervalPolicy.minutes});
+  if(rule.status==='estimated'&&profile.id.endsWith('-reference45-v1'))return translate('rule.reference45',lang);
   if(rule.status==='estimated')return translate('rule.estimated',lang);
   if(profile.northernPolicyThresholdDegrees!==null&&(event==='fajr'||event==='isha')&&day.calculation.northernPolicy){
     const policy=day.calculation.seasonalPolicy;

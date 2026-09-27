@@ -1,0 +1,3603 @@
+{
+  "result": "PASS",
+  "method": "Independent recomputation from physical-profile raw event instants; no use of reference45 selection trace for expected estimates.",
+  "transitionMetric": "Largest normalized UTC event-clock change between adjacent civil dates where either event is estimated; includes the ordinary day-to-day shift and is not a separate estimator-step size.",
+  "limits": "Source-free rule and chronology verification only. Not an observed-accuracy, timetable-parity, religious-validity, or institutional-equivalence study.",
+  "profiles": [
+    "sunni-mwl-shadow1-reference45-v1",
+    "sunni-mwl-shadow2-reference45-v1",
+    "sunni-egyptian-shadow1-reference45-v1",
+    "sunni-egyptian-shadow2-reference45-v1"
+  ],
+  "annual": {
+    "years": [
+      2027
+    ],
+    "points": [
+      "frankfurt",
+      "berlin",
+      "edinburgh",
+      "oslo",
+      "ushuaia"
+    ],
+    "plannedProfileDays": 7300,
+    "plannedEventRows": 43800,
+    "summaries": {
+      "sunni-mwl-shadow1-reference45-v1": {
+        "family": "mwl",
+        "factor": 1,
+        "plannedDays": 1825,
+        "events": 10950,
+        "calculated": 10175,
+        "estimated": 775,
+        "unavailable": 0,
+        "policyBlocked": 0,
+        "estimatedFajr": 410,
+        "estimatedIsha": 365,
+        "rawTwilightMissing": 775,
+        "rawMissingFajr": 410,
+        "rawMissingIsha": 365,
+        "nonTwilightBitIdentical": 7300,
+        "physicalTwilightBitIdentical": 2875,
+        "independentEstimateChecks": 775,
+        "maxEstimateArithmeticErrorMilliseconds": 0,
+        "maxAdjacentNormalizedChangeMilliseconds": 9214277,
+        "crossNightChecks": 1820,
+        "orderChecks": 9125,
+        "transitionPairs": 783,
+        "maxAdjacentNormalizedChangeInvolvingEstimateMilliseconds": 9214277,
+        "transitionWitness": {
+          "point": "oslo",
+          "event": "fajr",
+          "from": "2027-04-22",
+          "to": "2027-04-23",
+          "changeMilliseconds": 9214277,
+          "fromStatus": "calculated",
+          "toStatus": "estimated",
+          "fromUtc": "2027-04-21T23:28:18.572Z",
+          "toUtc": "2027-04-23T02:01:52.849Z",
+          "fromLocalTime": "01:28",
+          "toLocalTime": "04:02"
+        },
+        "perPoint": [
+          {
+            "point": "frankfurt",
+            "latitude": 50.1109,
+            "longitude": 8.6821,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 323,
+            "estimates": 68,
+            "blocked": 0
+          },
+          {
+            "point": "berlin",
+            "latitude": 52.52,
+            "longitude": 13.405,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 296,
+            "estimates": 129,
+            "blocked": 0
+          },
+          {
+            "point": "edinburgh",
+            "latitude": 55.9533,
+            "longitude": -3.1883,
+            "timeZone": "Europe/London",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 269,
+            "estimates": 185,
+            "blocked": 0
+          },
+          {
+            "point": "oslo",
+            "latitude": 59.9139,
+            "longitude": 10.7522,
+            "timeZone": "Europe/Oslo",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 244,
+            "estimates": 236,
+            "blocked": 0
+          },
+          {
+            "point": "ushuaia",
+            "latitude": -54.8019,
+            "longitude": -68.303,
+            "timeZone": "America/Argentina/Ushuaia",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 283,
+            "estimates": 157,
+            "blocked": 0
+          }
+        ],
+        "referenceFractionRange": [
+          0.175949604613206,
+          0.3050159825941366
+        ]
+      },
+      "sunni-mwl-shadow2-reference45-v1": {
+        "family": "mwl",
+        "factor": 2,
+        "plannedDays": 1825,
+        "events": 10950,
+        "calculated": 10175,
+        "estimated": 775,
+        "unavailable": 0,
+        "policyBlocked": 0,
+        "estimatedFajr": 410,
+        "estimatedIsha": 365,
+        "rawTwilightMissing": 775,
+        "rawMissingFajr": 410,
+        "rawMissingIsha": 365,
+        "nonTwilightBitIdentical": 7300,
+        "physicalTwilightBitIdentical": 2875,
+        "independentEstimateChecks": 775,
+        "maxEstimateArithmeticErrorMilliseconds": 0,
+        "maxAdjacentNormalizedChangeMilliseconds": 9214277,
+        "crossNightChecks": 1820,
+        "orderChecks": 9125,
+        "transitionPairs": 783,
+        "maxAdjacentNormalizedChangeInvolvingEstimateMilliseconds": 9214277,
+        "transitionWitness": {
+          "point": "oslo",
+          "event": "fajr",
+          "from": "2027-04-22",
+          "to": "2027-04-23",
+          "changeMilliseconds": 9214277,
+          "fromStatus": "calculated",
+          "toStatus": "estimated",
+          "fromUtc": "2027-04-21T23:28:18.572Z",
+          "toUtc": "2027-04-23T02:01:52.849Z",
+          "fromLocalTime": "01:28",
+          "toLocalTime": "04:02"
+        },
+        "perPoint": [
+          {
+            "point": "frankfurt",
+            "latitude": 50.1109,
+            "longitude": 8.6821,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 323,
+            "estimates": 68,
+            "blocked": 0
+          },
+          {
+            "point": "berlin",
+            "latitude": 52.52,
+            "longitude": 13.405,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 296,
+            "estimates": 129,
+            "blocked": 0
+          },
+          {
+            "point": "edinburgh",
+            "latitude": 55.9533,
+            "longitude": -3.1883,
+            "timeZone": "Europe/London",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 269,
+            "estimates": 185,
+            "blocked": 0
+          },
+          {
+            "point": "oslo",
+            "latitude": 59.9139,
+            "longitude": 10.7522,
+            "timeZone": "Europe/Oslo",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 244,
+            "estimates": 236,
+            "blocked": 0
+          },
+          {
+            "point": "ushuaia",
+            "latitude": -54.8019,
+            "longitude": -68.303,
+            "timeZone": "America/Argentina/Ushuaia",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 283,
+            "estimates": 157,
+            "blocked": 0
+          }
+        ],
+        "referenceFractionRange": [
+          0.175949604613206,
+          0.3050159825941366
+        ]
+      },
+      "sunni-egyptian-shadow1-reference45-v1": {
+        "family": "egyptian",
+        "factor": 1,
+        "plannedDays": 1825,
+        "events": 10950,
+        "calculated": 10091,
+        "estimated": 859,
+        "unavailable": 0,
+        "policyBlocked": 0,
+        "estimatedFajr": 470,
+        "estimatedIsha": 389,
+        "rawTwilightMissing": 859,
+        "rawMissingFajr": 470,
+        "rawMissingIsha": 389,
+        "nonTwilightBitIdentical": 7300,
+        "physicalTwilightBitIdentical": 2791,
+        "independentEstimateChecks": 859,
+        "maxEstimateArithmeticErrorMilliseconds": 0,
+        "maxAdjacentNormalizedChangeMilliseconds": 9703858,
+        "crossNightChecks": 1820,
+        "orderChecks": 9125,
+        "transitionPairs": 867,
+        "maxAdjacentNormalizedChangeInvolvingEstimateMilliseconds": 9703858,
+        "transitionWitness": {
+          "point": "oslo",
+          "event": "fajr",
+          "from": "2027-08-25",
+          "to": "2027-08-26",
+          "changeMilliseconds": -9703858,
+          "fromStatus": "estimated",
+          "toStatus": "calculated",
+          "fromUtc": "2027-08-25T02:08:29.176Z",
+          "toUtc": "2027-08-25T23:26:45.318Z",
+          "fromLocalTime": "04:08",
+          "toLocalTime": "01:27"
+        },
+        "perPoint": [
+          {
+            "point": "frankfurt",
+            "latitude": 50.1109,
+            "longitude": 8.6821,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 305,
+            "estimates": 95,
+            "blocked": 0
+          },
+          {
+            "point": "berlin",
+            "latitude": 52.52,
+            "longitude": 13.405,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 283,
+            "estimates": 146,
+            "blocked": 0
+          },
+          {
+            "point": "edinburgh",
+            "latitude": 55.9533,
+            "longitude": -3.1883,
+            "timeZone": "Europe/London",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 259,
+            "estimates": 198,
+            "blocked": 0
+          },
+          {
+            "point": "oslo",
+            "latitude": 59.9139,
+            "longitude": 10.7522,
+            "timeZone": "Europe/Oslo",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 235,
+            "estimates": 249,
+            "blocked": 0
+          },
+          {
+            "point": "ushuaia",
+            "latitude": -54.8019,
+            "longitude": -68.303,
+            "timeZone": "America/Argentina/Ushuaia",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 273,
+            "estimates": 171,
+            "blocked": 0
+          }
+        ],
+        "referenceFractionRange": [
+          0.17849819671358802,
+          0.35246441444050297
+        ]
+      },
+      "sunni-egyptian-shadow2-reference45-v1": {
+        "family": "egyptian",
+        "factor": 2,
+        "plannedDays": 1825,
+        "events": 10950,
+        "calculated": 10091,
+        "estimated": 859,
+        "unavailable": 0,
+        "policyBlocked": 0,
+        "estimatedFajr": 470,
+        "estimatedIsha": 389,
+        "rawTwilightMissing": 859,
+        "rawMissingFajr": 470,
+        "rawMissingIsha": 389,
+        "nonTwilightBitIdentical": 7300,
+        "physicalTwilightBitIdentical": 2791,
+        "independentEstimateChecks": 859,
+        "maxEstimateArithmeticErrorMilliseconds": 0,
+        "maxAdjacentNormalizedChangeMilliseconds": 9703858,
+        "crossNightChecks": 1820,
+        "orderChecks": 9125,
+        "transitionPairs": 867,
+        "maxAdjacentNormalizedChangeInvolvingEstimateMilliseconds": 9703858,
+        "transitionWitness": {
+          "point": "oslo",
+          "event": "fajr",
+          "from": "2027-08-25",
+          "to": "2027-08-26",
+          "changeMilliseconds": -9703858,
+          "fromStatus": "estimated",
+          "toStatus": "calculated",
+          "fromUtc": "2027-08-25T02:08:29.176Z",
+          "toUtc": "2027-08-25T23:26:45.318Z",
+          "fromLocalTime": "04:08",
+          "toLocalTime": "01:27"
+        },
+        "perPoint": [
+          {
+            "point": "frankfurt",
+            "latitude": 50.1109,
+            "longitude": 8.6821,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 305,
+            "estimates": 95,
+            "blocked": 0
+          },
+          {
+            "point": "berlin",
+            "latitude": 52.52,
+            "longitude": 13.405,
+            "timeZone": "Europe/Berlin",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 283,
+            "estimates": 146,
+            "blocked": 0
+          },
+          {
+            "point": "edinburgh",
+            "latitude": 55.9533,
+            "longitude": -3.1883,
+            "timeZone": "Europe/London",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 259,
+            "estimates": 198,
+            "blocked": 0
+          },
+          {
+            "point": "oslo",
+            "latitude": 59.9139,
+            "longitude": 10.7522,
+            "timeZone": "Europe/Oslo",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 235,
+            "estimates": 249,
+            "blocked": 0
+          },
+          {
+            "point": "ushuaia",
+            "latitude": -54.8019,
+            "longitude": -68.303,
+            "timeZone": "America/Argentina/Ushuaia",
+            "days": 365,
+            "completeDays": 365,
+            "basePhysicalCompleteDays": 273,
+            "estimates": 171,
+            "blocked": 0
+          }
+        ],
+        "referenceFractionRange": [
+          0.17849819671358802,
+          0.35246441444050297
+        ]
+      }
+    }
+  },
+  "schedules": {
+    "calls": 20,
+    "plannedDays": 200,
+    "checks": [
+      {
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "point": "frankfurt",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "point": "berlin",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "point": "edinburgh",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "point": "oslo",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "point": "ushuaia",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "point": "frankfurt",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "point": "berlin",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "point": "edinburgh",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "point": "oslo",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "point": "ushuaia",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "point": "frankfurt",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "point": "berlin",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "point": "edinburgh",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "point": "oslo",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "point": "ushuaia",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "point": "frankfurt",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "point": "berlin",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "point": "edinburgh",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "point": "oslo",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      },
+      {
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "point": "ushuaia",
+        "dayCount": 10,
+        "completeDays": 10,
+        "partialDays": 0,
+        "unavailableDays": 0,
+        "entries": 50,
+        "missing": 0,
+        "crossNightChecks": 9
+      }
+    ]
+  },
+  "boundary": {
+    "plannedRows": 192,
+    "points": [
+      "lat47.99-n",
+      "lat48-n",
+      "lat66-n",
+      "lat66.01-n",
+      "lat47.99-s",
+      "lat48-s",
+      "lat66-s",
+      "lat66.01-s",
+      "tromso",
+      "ushuaia-summer",
+      "dst-berlin",
+      "dst-london"
+    ],
+    "dates": [
+      "2027-03-28",
+      "2027-10-31",
+      "2027-06-21",
+      "2027-12-21"
+    ],
+    "checks": [
+      {
+        "point": "lat47.99-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-n",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat47.99-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat48-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-night-or-anchor-unavailable"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "lat66.01-s",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          },
+          "isha": {
+            "status": "policy-blocked",
+            "reason": "reference45-outside-supported-48-to-66-degree-band"
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "tromso",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "ushuaia-summer",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-berlin",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-03-28",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-03-28",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-10-31",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-10-31",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-06-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-06-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          },
+          "isha": {
+            "status": "estimated",
+            "reason": "missing-seasonal-crossing-estimated-from-reference45-night-fraction"
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-12-21",
+        "profile": "sunni-mwl-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow1-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      },
+      {
+        "point": "dst-london",
+        "date": "2027-12-21",
+        "profile": "sunni-egyptian-shadow2-reference45-v1",
+        "events": {
+          "fajr": {
+            "status": "calculated",
+            "reason": null
+          },
+          "isha": {
+            "status": "calculated",
+            "reason": null
+          }
+        }
+      }
+    ]
+  },
+  "dependencies": {
+    "core/astronomy/continuous-solver.mjs": "04c8032ddd739d45e3559f97d138f264fff4646e97a2a3c4dfc6de139ad19922",
+    "core/astronomy/solar-usno-v2.mjs": "8651186fa663deecfb4ca1a88526882bc27f806224fe6fc061436a1d7ef480dc",
+    "core/astronomy/spa-coefficients.json": "0fd5e321ff52cd9ecdf5b29b3248b39713b8e6d298c974e8c8c39e6d77c3873b",
+    "core/astronomy/spa-point.mjs": "db2cd841739692ab1c7269b914dd69958d7815770a07f19da8e12551916578e8",
+    "core/input.mjs": "0fb93a091d06fac785b6ca1739cda898445b81946a8fc51181f0b86ff0c849cd",
+    "core/local/index.mjs": "c6944fb0040858132bf5ffd6b9395edca6538a505f3be7a9f735c4952264f017",
+    "core/local/night-fraction.mjs": "35d69827377c1d599d04f49b22c332a57159c963f59c3e79ddb9d1b8ed10ae2e",
+    "core/local/northern.mjs": "769b00f7c5d5cfd5bbf3fb8a4732b41ba1b3ec50acb773e0eb7d5a77b74879fa",
+    "core/local/profiles.mjs": "4ddc744aa84b3ed5d082353382611fee082d95b6ca22a351da0bb6dbfdbaae8b",
+    "core/local/schedule.mjs": "8415c2409527a892550f304a7e95792b9a6f29bdc1c3b3a4498c0b8141195555",
+    "core/local/selection.mjs": "f96e2456bc6dffafd7aed2f7754e55ee5f53dba59850c2226a1038566d8f1b72",
+    "core/local/solar.mjs": "deeb0f95301a1b80b831ac8f4a6bea576cd15b89bffab2e4a20062b34ea30250",
+    "core/local/summer.mjs": "932e4cdd65e244f4913022da68d7e1788b3f272f304cd0bd90381499db64517a",
+    "core/local/sunni-profiles.mjs": "d2be47ffe5504f078768f02b1cc41b8893fcdee74ce772d74f8505193bbbb4b0",
+    "core/local/sunni-reference.mjs": "4ded489b2e221dacf12e718b4b590686a9476db88543b288c128d85f1c5a6249",
+    "core/local/sunni.mjs": "7767678654c8d3c9a2a9c91d38b071ad9e2285fae949fd778e22ab11dc1171e6"
+  },
+  "physicalCache": {
+    "uniqueEntries": 9328
+  },
+  "dstChecks": [
+    {
+      "id": "berlin-spring-2027",
+      "timeZone": "Europe/Berlin",
+      "date": "2027-03-28",
+      "utcOffsetsMinutes": [
+        60,
+        120
+      ],
+      "dstTransitionExercised": true
+    },
+    {
+      "id": "london-spring-2027",
+      "timeZone": "Europe/London",
+      "date": "2027-03-28",
+      "utcOffsetsMinutes": [
+        0,
+        60
+      ],
+      "dstTransitionExercised": true
+    }
+  ],
+  "timezoneRuntime": {
+    "node": "v26.7.0",
+    "icu": "78.3",
+    "cldr": "48.0",
+    "tzdb": "2026d",
+    "timezoneManifestSha256": "2ca6b2910eef8737271991b25e7bfe0eba581ae0a51bceeb0849a7a63566db9f"
+  },
+  "runnerSha256": "c084ff79b875c83c38f025007e644ec957399662c9856bd9c986dd66055451ca",
+  "elapsedMilliseconds": 504144
+}

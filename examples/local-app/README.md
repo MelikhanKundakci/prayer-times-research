@@ -2,6 +2,8 @@
 
 The primary method selector focuses on eight Sunni families: MWL, Karachi, Egyptian, Umm al-Qura, ISNA, Diyanet, Kemenag and JAKIM. Their [local-profile guide](../../core/local/SUNNI.md) states the full recipes and limits. Asr is independently selectable where supported; Karachi initially selects factor two as an application default. Short-night estimates require explicit selection. Umm al-Qura offers automatic offline calendar selection and explicit Ramadan/ordinary interval overrides. JAKIM and Kemenag require points within their declared regional domains. Custom compositions and older source-only profiles remain separately accessible. Named family selection does not claim official institutional equivalence.
 
+For **MWL** and **Egyptian**, the Short nights selector additionally offers **45° reference night · missing twilight only**. This [bounded adaptation](../../core/local/REFERENCE45.md) uses the 1986/2007 council rule with declared coordinate/night mapping, keeps actual crossings, and marks replacements as estimated. It can jump at the transition and does not supply polar-day horizons. The default remains physical crossings only. The [research matrix](../../core/local/SPECIAL-RULES.md) keeps other institutional policies and the distinct 2009 MWL method separate.
+
 Run the prototype from the `public/prayer-times-research` directory:
 
 ```sh

@@ -35,12 +35,13 @@ function profileNote(){
   if(family==='other'){$('other-profile-note').textContent=localizedProfileScope(definitions.find(item=>item.id===selectedProfile())??{id:'',composition:null,sourceScope:''},language);return;}
   const method=methods.find(item=>item.id===family);if(!method)return;
   const mode=method.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
-  $('family-note').textContent=localizedFamilyScope(method.id,language,mode)
+  $('family-note').textContent=localizedFamilyScope(method.id,language,mode==='reference45'?undefined:mode)
+    +(mode==='reference45'?` ${t('night.reference45Summary')}`:'')
     +((method.asrFactors??[]).length===1?` ${t('family.fixedAsr')}`:'')
     +((method.asrFactors??[]).length>1?` ${t('family.asrIndependent')}`:'')
     +((method.nightModes??[]).length===1?` ${t('family.fixedNight')}`:'');
   if(method.ramadanModes?.length)$('family-note').textContent+=` ${t('ramadan.current',{choice:t(`ramadan.summary.${mode}`)})}`;
-  else if(method.nightModes?.length>1)$('family-note').textContent+=` ${t('family.nightCurrent',{choice:t(mode==='angle-night'?'night.mode.angle-night':'night.mode.physical')})}`;
+  else if(method.nightModes?.length>1)$('family-note').textContent+=` ${t('family.nightCurrent',{choice:t(`night.mode.${mode}`)})}`;
 }
 function renderProfileOptions(){
   const select=$('profile'),selected=select.value;select.replaceChildren();
@@ -60,12 +61,15 @@ function configureFamily(method,reset=false){
   const factorSelect=$('familyShadow'),priorFactor=factorSelect.value,factorValues=method.asrFactors??[];factorSelect.replaceChildren();
   for(const factor of factorValues){const option=text('option',t(factor===1?'family.factor1':'family.factor2'));option.value=String(factor);factorSelect.append(option);}
   factorSelect.disabled=factorValues.length<=1;
-  $('family-night-label').hidden=!method.nightModes?.includes('angle-night');
+  const nightSelect=$('familyNight'),priorNight=nightSelect.value,nightModes=method.nightModes??[];nightSelect.replaceChildren();
+  for(const mode of nightModes){const option=text('option',t(mode==='angle-night'?'night.angle':`night.${mode}`));option.value=mode;nightSelect.append(option);}
+  nightSelect.value=nightModes.includes(priorNight)?priorNight:nightModes[0]??'';
+  $('family-night-label').hidden=nightModes.length<2;
   $('family-ramadan-label').hidden=!method.ramadanModes?.length;
   if(reset){
     const defaultId=method.defaultProfile??'';
     factorSelect.value=String(Number(defaultId.match(/shadow([12])/i)?.[1]??factorValues[0]??1));
-    const variant=defaultId.match(/-(physical|angle-night|calendar|ramadan|ordinary)-v1$/)?.[1];
+    const variant=defaultId.match(/-(physical|angle-night|reference45|calendar|ramadan|ordinary)-v1$/)?.[1];
     if(method.ramadanModes?.length)$('ramadan').value=method.ramadanModes.includes(variant)?variant:method.ramadanModes[0];
     else $('familyNight').value=method.nightModes?.includes(variant)?variant:method.nightModes?.[0]??'physical';
   }else factorSelect.value=factorValues.includes(Number(priorFactor))?priorFactor:String(Number(String(method.defaultProfile??'').match(/shadow([12])/i)?.[1]??factorValues[0]??1));
@@ -92,7 +96,7 @@ function render(){
   $('coverage').textContent=t(day.coverage.prayerStartsComplete?'coverage.complete':'coverage.partial');
   const composition=day.profile.composition,selectedMethod=methods.find(item=>item.id===$('methodFamily').value);
   const selectedMode=selectedMethod?.ramadanModes?.length?$('ramadan').value:$('familyNight').value;
-  const modeLabel=selectedMethod?.ramadanModes?.length?t(`ramadan.summary.${selectedMode}`):t(selectedMode==='angle-night'?'night.mode.angle-night':'night.mode.physical');
+  const modeLabel=selectedMethod?.ramadanModes?.length?t(`ramadan.summary.${selectedMode}`):t(`night.mode.${selectedMode||'physical'}`);
   const summary=selectedMethod?t('method.summary',{family:localizedFamilyName(selectedMethod.id,language),factor:$('familyShadow').value||1,night:modeLabel}):composition?t('summary.composed',{factor:composition.asrShadowFactor,night:t(composition.highLatitudeMode==='physical'?'summary.noEstimate':'summary.nightEstimate')}):localizedProfileLabel(day.profile,language);
   const estimates=day.coverage.estimatedEvents.length?t('summary.estimated',{events:day.coverage.estimatedEvents.map(name=>localizedEventName(name,language)).join(', ')}):'';
   $('method-summary').textContent=`${summary}. ${estimates}`;

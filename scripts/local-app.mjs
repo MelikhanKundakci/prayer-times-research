@@ -7,7 +7,9 @@ import {calculateLocalDay,listLocalProfiles,LOCAL_VERSION} from '../core/local/i
 import {calculateLocalSchedule} from '../core/local/schedule.mjs';
 import {compareDiyanetPointDay} from '../core/diagnostics/diyanet-comparison.mjs';
 import {calculateObserverDay,calculateObserverSchedule,listObserverProfiles,LOCAL_OBSERVER_PROFILES} from '../core/local/observer.mjs';
-import {calculateSunniDay,calculateSunniSchedule,listSunniProfiles,listSunniMethods,LOCAL_SUNNI_PROFILES,LOCAL_SUNNI_VERSION} from '../core/local/sunni.mjs';
+import {calculateSunniDay,calculateSunniSchedule,listSunniProfiles,LOCAL_SUNNI_PROFILES,LOCAL_SUNNI_VERSION} from '../core/local/sunni.mjs';
+import {calculateReferenceDay,calculateReferenceSchedule,listReferenceProfiles,LOCAL_REFERENCE_PROFILES,LOCAL_REFERENCE_VERSION} from '../core/local/sunni-reference.mjs';
+import {listAvailableMethods} from '../core/local/methods.mjs';
 
 const assets=new Map([
   ['/', ['index.html','text/html; charset=utf-8']],
@@ -40,8 +42,8 @@ export function createLocalAppServer(){
         const [name,type]=assets.get(req.url);
         return respond(res,200,await readFile(new URL(`../examples/local-app/${name}`,import.meta.url)),type);
       }
-      if(req.method==='GET'&&req.url==='/api/profiles')return respond(res,200,{version:LOCAL_VERSION,sunniVersion:LOCAL_SUNNI_VERSION,
-        profiles:[...listLocalProfiles(),...listObserverProfiles(),...listSunniProfiles()],methods:listSunniMethods(),
+      if(req.method==='GET'&&req.url==='/api/profiles')return respond(res,200,{version:LOCAL_VERSION,sunniVersion:LOCAL_SUNNI_VERSION,referenceVersion:LOCAL_REFERENCE_VERSION,
+        profiles:[...listLocalProfiles(),...listObserverProfiles(),...listSunniProfiles(),...listReferenceProfiles()],methods:listAvailableMethods(),
         runtime:{node:process.versions.node,tzdb:process.versions.tz}});
       if(req.method==='POST'&&req.url==='/api/compare-diyanet'){
         return respond(res,200,compareDiyanetPointDay(await input(req)));
@@ -50,12 +52,13 @@ export function createLocalAppServer(){
         const point=await input(req);
         const observer=LOCAL_OBSERVER_PROFILES.includes(point?.profile);
         const sunni=LOCAL_SUNNI_PROFILES.includes(point?.profile);
-        const day=(sunni?calculateSunniDay:observer?calculateObserverDay:calculateLocalDay)(point);
+        const reference=LOCAL_REFERENCE_PROFILES.includes(point?.profile);
+        const day=(reference?calculateReferenceDay:sunni?calculateSunniDay:observer?calculateObserverDay:calculateLocalDay)(point);
         // Include the preceding solar day: its Isha may fall after midnight on
         // the displayed day and must not disappear from next-start selection.
         const previous=new Date(Date.parse(`${point.date}T00:00:00Z`)-86400000).toISOString().slice(0,10);
         const padded=previous>='2001-01-01';
-        const schedule=(sunni?calculateSunniSchedule:observer?calculateObserverSchedule:calculateLocalSchedule)({startDate:padded?previous:point.date,dayCount:padded?8:7,latitude:point.latitude,longitude:point.longitude,timeZone:point.timeZone,profile:point.profile});
+        const schedule=(reference?calculateReferenceSchedule:sunni?calculateSunniSchedule:observer?calculateObserverSchedule:calculateLocalSchedule)({startDate:padded?previous:point.date,dayCount:padded?8:7,latitude:point.latitude,longitude:point.longitude,timeZone:point.timeZone,profile:point.profile});
         return respond(res,200,{day,schedule,displayRange:{startDate:point.date,dayCount:7,precedingSolarDayIncluded:padded},runtime:{node:process.versions.node,tzdb:process.versions.tz}});
       }
       return respond(res,404,{error:'Unknown local route'});

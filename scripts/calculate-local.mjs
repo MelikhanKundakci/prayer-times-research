@@ -1,19 +1,20 @@
 import {calculateLocalDay,LOCAL_EVENTS,LOCAL_PROFILES,listLocalProfiles} from '../core/local/index.mjs';
 import {calculateObserverDay,LOCAL_OBSERVER_PROFILES,listObserverProfiles} from '../core/local/observer.mjs';
 import {calculateSunniDay,LOCAL_SUNNI_PROFILES,listSunniProfiles} from '../core/local/sunni.mjs';
+import {calculateReferenceDay,LOCAL_REFERENCE_PROFILES,listReferenceProfiles} from '../core/local/sunni-reference.mjs';
 
-const usage=`Usage: npm run calculate:local -- YYYY-MM-DD LATITUDE LONGITUDE IANA_TIME_ZONE ${[...LOCAL_PROFILES,...LOCAL_OBSERVER_PROFILES,...LOCAL_SUNNI_PROFILES].join('|')} [--json]`;
+const usage=`Usage: npm run calculate:local -- YYYY-MM-DD LATITUDE LONGITUDE IANA_TIME_ZONE ${[...LOCAL_PROFILES,...LOCAL_OBSERVER_PROFILES,...LOCAL_SUNNI_PROFILES,...LOCAL_REFERENCE_PROFILES].join('|')} [--json]`;
 const args=process.argv.slice(2);
 if(args.length===1&&args[0]==='--help')console.log(usage+'\nList documented profiles with --profiles');
 else if(args.length===1&&args[0]==='--profiles'){
-  for(const profile of [...listLocalProfiles(),...listObserverProfiles(),...listSunniProfiles()])console.log(`${profile.id} · ${profile.label}`);
+  for(const profile of [...listLocalProfiles(),...listObserverProfiles(),...listSunniProfiles(),...listReferenceProfiles()])console.log(`${profile.id} · ${profile.label}`);
 }
 else{
   try{
     if(args.length<5||args.length>6||(args.length===6&&args[5]!=='--json'))throw new TypeError(usage);
     const [date,lat,lon,timeZone,profile]=args;
     if(!lat.trim()||!lon.trim())throw new TypeError('Coordinates cannot be empty');
-    const calculate=LOCAL_SUNNI_PROFILES.includes(profile)?calculateSunniDay:LOCAL_OBSERVER_PROFILES.includes(profile)?calculateObserverDay:calculateLocalDay;
+    const calculate=LOCAL_REFERENCE_PROFILES.includes(profile)?calculateReferenceDay:LOCAL_SUNNI_PROFILES.includes(profile)?calculateSunniDay:LOCAL_OBSERVER_PROFILES.includes(profile)?calculateObserverDay:calculateLocalDay;
     const result=calculate({date,latitude:Number(lat),longitude:Number(lon),timeZone,profile});
     if(args[5]==='--json')console.log(JSON.stringify(result,null,2));
     else{

@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {localizedError} from '../examples/local-app/i18n.mjs';
 import {localizedFamilyName,localizedFamilyScope,localizedProfileScope,localizedReason,localizedRuleDescription,normalizeLanguage,readLanguage,resolveMethodProfile,setLanguagePresentation,translate,writeLanguage,LANGUAGE_STORAGE_KEY} from '../examples/local-app/i18n.mjs';
+import {listAvailableMethods} from '../core/local/methods.mjs';
 import {listSunniMethods} from '../core/local/sunni-profiles.mjs';
 import {diyanetComparisonRows} from '../examples/local-app/comparison-view.mjs';
 
@@ -102,5 +103,22 @@ test('region-specific city choices and source labels are translated for all UI l
     assert.notEqual(localizedSourceLabel('jakim',language),'jakim');
     assert.notEqual(localizedSourceLabel('malaysiaRounding',language),'malaysiaRounding');
     assert.match(localizedError('location is outside the declared Malaysian point domain',language),/Malaysia|Malezya/i);
+  }
+});
+
+test('reference-night profile selection and explanation do not become a generic family fallback',()=>{
+  const methods=listAvailableMethods();
+  for(const family of ['mwl','egyptian']){
+    const method=methods.find(m=>m.id===family);
+    assert.equal(resolveMethodProfile(method),method.defaultProfile);
+    for(const asrFactor of [1,2])assert.equal(resolveMethodProfile(method,{asrFactor,nightMode:'reference45'}),`sunni-${family}-shadow${asrFactor}-reference45-v1`);
+  }
+  for(const method of methods.filter(m=>!['mwl','egyptian'].includes(m.id)))
+    assert.equal(resolveMethodProfile(method,{nightMode:'reference45'}),method.defaultProfile);
+  const profile={id:'sunni-mwl-shadow1-reference45-v1',family:'mwl'};
+  for(const lang of ['en','de','tr']){
+    assert.match(localizedProfileScope(profile,lang),/1986\/2007/);
+    assert.match(localizedRuleDescription({profile,events:{fajr:{status:'estimated'}},calculation:{}},'fajr',lang),/45°/);
+    for(const key of ['night.reference45','night.mode.reference45','night.reference45Summary','source.referencecouncil','source.referenceclarification'])assert.notEqual(translate(key,lang),key);
   }
 });

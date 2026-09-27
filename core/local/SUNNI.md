@@ -4,6 +4,8 @@ This registry adds a practical set of named local-point profiles around a shared
 
 ## Available choices
 
+This document describes the frozen `0.1.0-sunni` registry. The current application also offers the separate [reference-night extension](REFERENCE45.md) for MWL and Egyptian missing twilight; use `listAvailableMethods()` from [`methods.mjs`](methods.mjs) for the extended catalogue. Read the [special-rule audit](SPECIAL-RULES.md) before treating any generic software fallback as an institution's rule.
+
 | Profile family | Fajr / Isha rule | Additional convention and scope |
 |---|---|---|
 | MWL | 18° / 17° | Common calculation-software convention. MWL's inspected official prayer-time pages provide location-based times but do not publish this complete numerical recipe. |
