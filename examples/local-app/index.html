@@ -22,12 +22,14 @@
           <label><span data-i18n="field.timezone">Time zone</span><input id="timeZone" required value="Europe/Berlin" list="zones" autocomplete="off"></label>
           <datalist id="zones"><option value="Europe/Berlin"><option value="Europe/Istanbul"><option value="Asia/Riyadh"><option value="Asia/Karachi"><option value="Africa/Cairo"><option value="Asia/Kuala_Lumpur"><option value="America/New_York"><option value="Asia/Jakarta"><option value="Asia/Makassar"><option value="Asia/Jayapura"><option value="Australia/Sydney"><option value="Europe/Oslo"><option value="UTC"></datalist>
           <label><span data-i18n="field.date">Date</span><input id="date" type="date" min="2002-01-01" max="2097-12-24" required></label>
-          <label><span data-i18n="field.family">Calculation method</span><select id="methodFamily" required></select></label>
+          <label><span data-i18n="field.family">Calculation method</span><select id="methodFamily" aria-describedby="method-help method-description" required></select></label>
+          <p id="method-help" class="hint" data-i18n="family.help">Choose the name you know from your mosque or calendar. These are independent local calculations; times can differ from official calendars.</p>
+          <p id="method-description" class="hint" hidden></p>
           <div id="family-options" hidden>
             <label><span data-i18n="field.family-asr">Asr shadow method</span><select id="familyShadow"></select></label>
             <label id="family-night-label"><span data-i18n="field.short-night">Short nights</span><select id="familyNight"><option value="physical" data-i18n="night.physical">No estimates</option><option value="angle-night" data-i18n="night.angle">Angle fraction of night · estimated rule</option></select></label>
             <label id="family-ramadan-label" hidden><span data-i18n="field.ramadan">Umm al-Qura Isha schedule</span><select id="ramadan"><option value="calendar" data-i18n="ramadan.calendar">Use the date-based calendar schedule</option><option value="ramadan" data-i18n="ramadan.month">Ramadan schedule · 120 minutes</option><option value="ordinary" data-i18n="ramadan.ordinary">Ordinary schedule · 90 minutes</option></select></label>
-            <p class="hint" id="family-note"></p>
+            <details><summary data-i18n="family.details">Method details and limitations</summary><p class="hint" id="family-note"></p></details>
           </div>
           <div id="other-profiles" hidden><label><span data-i18n="field.other-profile">Other point profiles</span><select id="profile"></select></label><p class="hint" id="other-profile-note"></p></div>
           <div id="custom-rules" hidden>

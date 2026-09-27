@@ -1,5 +1,5 @@
 import {diyanetComparisonRows} from './comparison-view.mjs';
-import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedFamilyName,localizedFamilyScope,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,resolveMethodProfile,setLanguagePresentation,translate} from './i18n.mjs';
+import {applyStaticTranslations,formatDateLabel,localizedError,localizedEventName,localizedFamilyDescription,localizedFamilyName,localizedFamilyScope,localizedProfileLabel,localizedProfileScope,localizedReason,localizedRuleDescription,localizedSourceLabel,localizedStatus,readLanguage,resolveMethodProfile,setLanguagePresentation,translate} from './i18n.mjs';
 
 const $=id=>document.getElementById(id);
 const EVENTS=['fajr','dhuhr','asr','maghrib','isha'];
@@ -29,6 +29,8 @@ function selectedProfile(){
 }
 function profileNote(){
   const family=$('methodFamily').value;
+  $('method-description').textContent=localizedFamilyDescription(family,language);
+  $('method-description').hidden=!$('method-description').textContent;
   $('family-options').hidden=!methods.some(item=>item.id===family);
   $('custom-rules').hidden=family!=='custom';$('other-profiles').hidden=family!=='other';$('profile').required=family==='other';
   if(family==='custom'){$('family-note').textContent='';$('custom-note').textContent=t('profile.composedNote');return;}
